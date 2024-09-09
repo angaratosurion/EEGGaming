@@ -1,0 +1,39 @@
+[gd_scene load_steps=2 format=3 uid="uid://cspbudt86ogta"]
+
+[ext_resource type="Script" path="res://Code/GameOver.cs" id="1_2bxo1"]
+
+[node name="Control" type="Window"]
+transparent_bg = true
+initial_position = 2
+size = Vector2i(1080, 700)
+borderless = true
+transparent = true
+script = ExtResource("1_2bxo1")
+
+[node name="Label" type="Label" parent="."]
+offset_right = 1057.0
+offset_bottom = 267.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_font_sizes/font_size = 195
+text = "Game Over"
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 165.0
+offset_top = 342.0
+offset_right = 359.0
+offset_bottom = 425.0
+theme_override_colors/font_color = Color(0, 0.996078, 0, 1)
+theme_override_font_sizes/font_size = 60
+text = "Score: "
+
+[node name="lblScore" type="Label" parent="."]
+offset_left = 419.0
+offset_top = 353.0
+offset_right = 1109.0
+offset_bottom = 436.0
+size_flags_horizontal = 3
+size_flags_vertical = 6
+theme_override_colors/font_color = Color(0.827451, 0.588235, 0, 1)
+theme_override_font_sizes/font_size = 60
+text = "0.0"
+autowrap_mode = 3

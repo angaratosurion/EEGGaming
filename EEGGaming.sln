@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34018.315
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EEGGaming.Core", "EEGGaming.Core\EEGGaming.Core.csproj", "{6C0034D3-88C4-4F45-BE02-2BCF305EC66E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EEGGaming.Trainer", "EEGGaming.Trainer\EEGGaming.Trainer.csproj", "{2A93F665-A3C7-45E6-B334-F1F01CC30051}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6C0034D3-88C4-4F45-BE02-2BCF305EC66E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C0034D3-88C4-4F45-BE02-2BCF305EC66E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C0034D3-88C4-4F45-BE02-2BCF305EC66E}.Debug|x64.ActiveCfg = Debug|x64
+		{6C0034D3-88C4-4F45-BE02-2BCF305EC66E}.Debug|x64.Build.0 = Debug|x64
+		{6C0034D3-88C4-4F45-BE02-2BCF305EC66E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C0034D3-88C4-4F45-BE02-2BCF305EC66E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C0034D3-88C4-4F45-BE02-2BCF305EC66E}.Release|x64.ActiveCfg = Release|x64
+		{6C0034D3-88C4-4F45-BE02-2BCF305EC66E}.Release|x64.Build.0 = Release|x64
+		{2A93F665-A3C7-45E6-B334-F1F01CC30051}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A93F665-A3C7-45E6-B334-F1F01CC30051}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A93F665-A3C7-45E6-B334-F1F01CC30051}.Debug|x64.ActiveCfg = Debug|x64
+		{2A93F665-A3C7-45E6-B334-F1F01CC30051}.Debug|x64.Build.0 = Debug|x64
+		{2A93F665-A3C7-45E6-B334-F1F01CC30051}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A93F665-A3C7-45E6-B334-F1F01CC30051}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A93F665-A3C7-45E6-B334-F1F01CC30051}.Release|x64.ActiveCfg = Release|x64
+		{2A93F665-A3C7-45E6-B334-F1F01CC30051}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EAC3EE8C-932C-4769-AACE-2EA5B43DF76A}
+	EndGlobalSection
+EndGlobal

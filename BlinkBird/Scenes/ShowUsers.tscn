@@ -1,0 +1,110 @@
+[gd_scene load_steps=7 format=3 uid="uid://cxym2fk6idfyx"]
+
+[ext_resource type="Script" path="res://Code/ShowUsers.cs" id="1_cdss5"]
+[ext_resource type="StyleBox" uid="uid://buk4qdoea48nc" path="res://Styles/Theme.tres" id="2_rgfcg"]
+
+[sub_resource type="Theme" id="Theme_hcgak"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cems7"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="Theme" id="Theme_xumlq"]
+PanelContainer/styles/panel = SubResource("StyleBoxFlat_cems7")
+
+[sub_resource type="Theme" id="Theme_a0tvr"]
+ItemList/colors/font_color = Color(0, 0, 0, 1)
+ItemList/styles/panel = ExtResource("2_rgfcg")
+
+[node name="ShowUsers" type="Window"]
+mode = 2
+initial_position = 2
+size = Vector2i(1000, 500)
+theme = SubResource("Theme_hcgak")
+script = ExtResource("1_cdss5")
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+z_index = -1
+offset_right = 1153.0
+offset_bottom = 646.0
+theme = SubResource("Theme_xumlq")
+theme_override_styles/panel = ExtResource("2_rgfcg")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 137.0
+offset_top = 1.0
+offset_right = 221.0
+offset_bottom = 29.0
+theme_override_font_sizes/font_size = 20
+text = "User List"
+
+[node name="lstUsers" type="ItemList" parent="."]
+offset_left = 22.0
+offset_top = 147.0
+offset_right = 654.0
+offset_bottom = 647.0
+theme = SubResource("Theme_a0tvr")
+max_columns = 5
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 20.0
+offset_top = 98.0
+offset_right = 37.0
+offset_bottom = 121.0
+text = "ID"
+
+[node name="Label3" type="Label" parent="."]
+offset_left = 70.0
+offset_top = 100.0
+offset_right = 117.0
+offset_bottom = 123.0
+text = "Name"
+
+[node name="Label4" type="Label" parent="."]
+offset_left = 151.0
+offset_top = 101.0
+offset_right = 178.0
+offset_bottom = 124.0
+text = "Sex"
+
+[node name="Label5" type="Label" parent="."]
+offset_left = 238.0
+offset_top = 104.0
+offset_right = 267.0
+offset_bottom = 127.0
+text = "Age"
+
+[node name="Label6" type="Label" parent="."]
+offset_left = 297.0
+offset_top = 104.0
+offset_right = 374.0
+offset_bottom = 127.0
+text = "Education"
+
+[node name="btnAddNew" type="Button" parent="."]
+offset_left = 12.0
+offset_top = 47.0
+offset_right = 130.0
+offset_bottom = 78.0
+text = "Add New User"
+
+[node name="btnShowUserDetails" type="Button" parent="."]
+offset_left = 158.0
+offset_top = 44.0
+offset_right = 304.0
+offset_bottom = 75.0
+text = "Show User details"
+
+[node name="btnCancel" type="Button" parent="."]
+offset_left = 340.0
+offset_top = 49.0
+offset_right = 400.0
+offset_bottom = 80.0
+text = "Cancel"

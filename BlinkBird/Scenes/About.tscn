@@ -1,0 +1,93 @@
+[gd_scene load_steps=4 format=3 uid="uid://brjjpsa0wmpqn"]
+
+[ext_resource type="Script" path="res://Code/About.cs" id="1_num15"]
+[ext_resource type="StyleBox" uid="uid://cky6fxdtocaxq" path="res://Styles/StyleBox.tres" id="2_w3rsh"]
+[ext_resource type="Texture2D" uid="uid://ubuyiox2mrnj" path="res://Images/player.png" id="2_xxrca"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_num15")
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+offset_right = 1153.0
+offset_bottom = 646.0
+theme_override_styles/panel = ExtResource("2_w3rsh")
+
+[node name="HSplitContainer" type="HSplitContainer" parent="."]
+offset_left = 406.0
+offset_top = 20.0
+offset_right = 985.0
+offset_bottom = 178.0
+
+[node name="logo" type="Sprite2D" parent="HSplitContainer"]
+position = Vector2(56, 84)
+scale = Vector2(0.101277, 0.101277)
+texture = ExtResource("2_xxrca")
+
+[node name="lblAppNameAndVersion" type="Label" parent="HSplitContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "BlinkBird"
+horizontal_alignment = 1
+
+[node name="HSplitContainer2" type="HSplitContainer" parent="."]
+offset_left = 420.0
+offset_top = 245.0
+offset_right = 577.0
+offset_bottom = 268.0
+
+[node name="Label" type="Label" parent="HSplitContainer2"]
+layout_mode = 2
+text = "Core Library"
+
+[node name="lblCoreVersion" type="Label" parent="HSplitContainer2"]
+layout_mode = 2
+text = "0.0.0.0"
+
+[node name="HSplitContainer3" type="HSplitContainer" parent="."]
+offset_left = 413.0
+offset_top = 284.0
+offset_right = 1551.0
+offset_bottom = 324.0
+
+[node name="Label" type="Label" parent="HSplitContainer3"]
+layout_mode = 2
+text = "Copyright"
+
+[node name="lblCoreCopyRight" type="Label" parent="HSplitContainer3"]
+layout_mode = 2
+text = "copyrgiht"
+
+[node name="HSplitContainer4" type="HSplitContainer" parent="."]
+offset_left = 414.0
+offset_top = 346.0
+offset_right = 1552.0
+offset_bottom = 386.0
+
+[node name="Label" type="Label" parent="HSplitContainer4"]
+layout_mode = 2
+text = "Developer"
+
+[node name="lblCoreDeveloper" type="Label" parent="HSplitContainer4"]
+layout_mode = 2
+text = "Developer"
+
+[node name="HSplitContainer6" type="HSplitContainer" parent="."]
+offset_left = 413.0
+offset_top = 395.0
+offset_right = 1551.0
+offset_bottom = 435.0
+
+[node name="Label" type="Label" parent="HSplitContainer6"]
+layout_mode = 2
+text = "Core Library Last Modified (UTC):"
+
+[node name="lblCoreLastModified" type="Label" parent="HSplitContainer6"]
+layout_mode = 2
+text = "15/4/2024"
+
+[node name="btnClose" type="Button" parent="."]
+offset_left = 338.0
+offset_top = 467.0
+offset_right = 801.0
+offset_bottom = 507.0
+text = "Close"

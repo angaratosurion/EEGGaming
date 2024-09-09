@@ -1,0 +1,259 @@
+[gd_scene load_steps=4 format=3 uid="uid://b0poubu4hwr5a"]
+
+[ext_resource type="Texture2D" uid="uid://bv0plk3r5h448" path="res://Images/mountains.png" id="1_203rq"]
+[ext_resource type="Script" path="res://Code/Mountains.cs" id="1_kfahd"]
+[ext_resource type="Script" path="res://Code/Mountain.cs" id="2_0yma4"]
+
+[node name="Mountains" type="Node2D"]
+position = Vector2(214, 501)
+scale = Vector2(0.523643, 0.523643)
+script = ExtResource("1_kfahd")
+
+[node name="Mountain" type="Sprite2D" parent="."]
+position = Vector2(312.754, 470.232)
+scale = Vector2(2.25555, 1.55789)
+texture = ExtResource("1_203rq")
+script = ExtResource("2_0yma4")
+metadata/_edit_group_ = true
+
+[node name="Mountain2" type="Sprite2D" parent="."]
+position = Vector2(701.451, 587.495)
+scale = Vector2(1.33371, 1.18685)
+texture = ExtResource("1_203rq")
+script = ExtResource("2_0yma4")
+metadata/_edit_group_ = true
+
+[node name="Mountain3" type="Sprite2D" parent="."]
+position = Vector2(1336.96, 481.104)
+scale = Vector2(1.39546, 1.42668)
+texture = ExtResource("1_203rq")
+script = ExtResource("2_0yma4")
+metadata/_edit_group_ = true
+
+[node name="Mountain4" type="Sprite2D" parent="."]
+position = Vector2(2279.73, 345.793)
+scale = Vector2(1.81443, 1.79465)
+texture = ExtResource("1_203rq")
+script = ExtResource("2_0yma4")
+metadata/_edit_group_ = true
+
+[node name="Mountain5" type="Sprite2D" parent="."]
+position = Vector2(3390.22, 325.741)
+scale = Vector2(1.77515, 1.67572)
+texture = ExtResource("1_203rq")
+script = ExtResource("2_0yma4")
+metadata/_edit_group_ = true
+
+[node name="Mountain6" type="Sprite2D" parent="."]
+position = Vector2(4157.41, 571)
+texture = ExtResource("1_203rq")
+script = ExtResource("2_0yma4")
+metadata/_edit_group_ = true
+
+[node name="Mountain7" type="Sprite2D" parent="."]
+position = Vector2(5057.32, 369.017)
+scale = Vector2(2.25555, 1.55789)
+texture = ExtResource("1_203rq")
+script = ExtResource("2_0yma4")
+metadata/_edit_group_ = true
+
+[node name="Mountain8" type="Sprite2D" parent="."]
+position = Vector2(5446.01, 486.28)
+scale = Vector2(1.33371, 1.18685)
+texture = ExtResource("1_203rq")
+script = ExtResource("2_0yma4")
+metadata/_edit_group_ = true
+
+[node name="Mountain9" type="Sprite2D" parent="."]
+position = Vector2(6081.52, 379.889)
+scale = Vector2(1.39546, 1.42668)
+texture = ExtResource("1_203rq")
+script = ExtResource("2_0yma4")
+metadata/_edit_group_ = true
+
+[node name="Mountain10" type="Sprite2D" parent="."]
+position = Vector2(7024.29, 244.578)
+scale = Vector2(1.81443, 1.79465)
+texture = ExtResource("1_203rq")
+script = ExtResource("2_0yma4")
+metadata/_edit_group_ = true
+
+[node name="Mountain11" type="Sprite2D" parent="."]
+position = Vector2(8134.78, 224.526)
+scale = Vector2(1.77515, 1.67572)
+texture = ExtResource("1_203rq")
+script = ExtResource("2_0yma4")
+metadata/_edit_group_ = true
+
+[node name="Mountain12" type="Sprite2D" parent="."]
+position = Vector2(9255.87, 302.179)
+scale = Vector2(2.25555, 1.55789)
+texture = ExtResource("1_203rq")
+script = ExtResource("2_0yma4")
+metadata/_edit_group_ = true
+
+[node name="Mountain13" type="Sprite2D" parent="."]
+position = Vector2(9644.56, 419.442)
+scale = Vector2(1.33371, 1.18685)
+texture = ExtResource("1_203rq")
+script = ExtResource("2_0yma4")
+metadata/_edit_group_ = true
+
+[node name="Mountain14" type="Sprite2D" parent="."]
+position = Vector2(10280.1, 313.051)
+scale = Vector2(1.39546, 1.42668)
+texture = ExtResource("1_203rq")
+script = ExtResource("2_0yma4")
+metadata/_edit_group_ = true
+
+[node name="Mountain15" type="Sprite2D" parent="."]
+position = Vector2(11222.8, 177.74)
+scale = Vector2(1.81443, 1.79465)
+texture = ExtResource("1_203rq")
+script = ExtResource("2_0yma4")
+metadata/_edit_group_ = true
+
+[node name="Mountain16" type="Sprite2D" parent="."]
+position = Vector2(12333.3, 157.688)
+scale = Vector2(1.77515, 1.67572)
+texture = ExtResource("1_203rq")
+script = ExtResource("2_0yma4")
+metadata/_edit_group_ = true
+
+[node name="Mountain17" type="Sprite2D" parent="."]
+position = Vector2(13100.5, 402.947)
+texture = ExtResource("1_203rq")
+script = ExtResource("2_0yma4")
+metadata/_edit_group_ = true
+
+[node name="Mountain18" type="Sprite2D" parent="."]
+position = Vector2(14000.4, 200.964)
+scale = Vector2(2.25555, 1.55789)
+texture = ExtResource("1_203rq")
+script = ExtResource("2_0yma4")
+metadata/_edit_group_ = true
+
+[node name="Mountain19" type="Sprite2D" parent="."]
+position = Vector2(14389.1, 318.227)
+scale = Vector2(1.33371, 1.18685)
+texture = ExtResource("1_203rq")
+script = ExtResource("2_0yma4")
+metadata/_edit_group_ = true
+
+[node name="Mountain20" type="Sprite2D" parent="."]
+position = Vector2(15024.6, 211.836)
+scale = Vector2(1.39546, 1.42668)
+texture = ExtResource("1_203rq")
+script = ExtResource("2_0yma4")
+metadata/_edit_group_ = true
+
+[node name="Mountain21" type="Sprite2D" parent="."]
+position = Vector2(15967.4, 76.5247)
+scale = Vector2(1.81443, 1.79465)
+texture = ExtResource("1_203rq")
+script = ExtResource("2_0yma4")
+metadata/_edit_group_ = true
+
+[node name="Mountain22" type="Sprite2D" parent="."]
+position = Vector2(17077.9, 56.4726)
+scale = Vector2(1.77515, 1.67572)
+texture = ExtResource("1_203rq")
+script = ExtResource("2_0yma4")
+metadata/_edit_group_ = true
+
+[node name="Mountain23" type="Sprite2D" parent="."]
+position = Vector2(18248.6, 118.848)
+scale = Vector2(2.25555, 1.55789)
+texture = ExtResource("1_203rq")
+script = ExtResource("2_0yma4")
+metadata/_edit_group_ = true
+
+[node name="Mountain24" type="Sprite2D" parent="."]
+position = Vector2(18637.3, 236.111)
+scale = Vector2(1.33371, 1.18685)
+texture = ExtResource("1_203rq")
+script = ExtResource("2_0yma4")
+metadata/_edit_group_ = true
+
+[node name="Mountain25" type="Sprite2D" parent="."]
+position = Vector2(19272.8, 129.72)
+scale = Vector2(1.39546, 1.42668)
+texture = ExtResource("1_203rq")
+script = ExtResource("2_0yma4")
+metadata/_edit_group_ = true
+
+[node name="Mountain26" type="Sprite2D" parent="."]
+position = Vector2(20215.6, -5.59155)
+scale = Vector2(1.81443, 1.79465)
+texture = ExtResource("1_203rq")
+script = ExtResource("2_0yma4")
+metadata/_edit_group_ = true
+
+[node name="Mountain27" type="Sprite2D" parent="."]
+position = Vector2(21326.1, -25.6434)
+scale = Vector2(1.77515, 1.67572)
+texture = ExtResource("1_203rq")
+script = ExtResource("2_0yma4")
+metadata/_edit_group_ = true
+
+[node name="Mountain28" type="Sprite2D" parent="."]
+position = Vector2(22093.3, 219.616)
+texture = ExtResource("1_203rq")
+script = ExtResource("2_0yma4")
+metadata/_edit_group_ = true
+
+[node name="Mountain29" type="Sprite2D" parent="."]
+position = Vector2(22993.2, 17.6325)
+scale = Vector2(2.25555, 1.55789)
+texture = ExtResource("1_203rq")
+script = ExtResource("2_0yma4")
+metadata/_edit_group_ = true
+
+[node name="Mountain30" type="Sprite2D" parent="."]
+position = Vector2(23381.9, 134.896)
+scale = Vector2(1.33371, 1.18685)
+texture = ExtResource("1_203rq")
+script = ExtResource("2_0yma4")
+metadata/_edit_group_ = true
+
+[node name="Mountain31" type="Sprite2D" parent="."]
+position = Vector2(24017.4, 28.5046)
+scale = Vector2(1.39546, 1.42668)
+texture = ExtResource("1_203rq")
+script = ExtResource("2_0yma4")
+metadata/_edit_group_ = true
+
+[node name="Mountain32" type="Sprite2D" parent="."]
+position = Vector2(24960.2, -106.806)
+scale = Vector2(1.81443, 1.79465)
+texture = ExtResource("1_203rq")
+script = ExtResource("2_0yma4")
+metadata/_edit_group_ = true
+
+[node name="Mountain33" type="Sprite2D" parent="."]
+position = Vector2(26070.7, -126.858)
+scale = Vector2(1.77515, 1.67572)
+texture = ExtResource("1_203rq")
+script = ExtResource("2_0yma4")
+metadata/_edit_group_ = true
+
+[node name="Mountain34" type="Sprite2D" parent="."]
+position = Vector2(24960.2, -106.806)
+scale = Vector2(1.81443, 1.79465)
+texture = ExtResource("1_203rq")
+script = ExtResource("2_0yma4")
+metadata/_edit_group_ = true
+
+[node name="Mountain35" type="Sprite2D" parent="."]
+position = Vector2(26070.7, -126.858)
+scale = Vector2(1.77515, 1.67572)
+texture = ExtResource("1_203rq")
+script = ExtResource("2_0yma4")
+metadata/_edit_group_ = true
+
+[node name="Mountain36" type="Sprite2D" parent="."]
+position = Vector2(27160.2, -187.014)
+scale = Vector2(1.81443, 1.79465)
+texture = ExtResource("1_203rq")
+script = ExtResource("2_0yma4")
+metadata/_edit_group_ = true

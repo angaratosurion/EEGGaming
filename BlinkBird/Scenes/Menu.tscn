@@ -1,0 +1,122 @@
+[gd_scene load_steps=3 format=3 uid="uid://eih0q1avxyo1"]
+
+[ext_resource type="Script" path="res://Code/Menu.cs" id="1_3j7hb"]
+[ext_resource type="Texture2D" uid="uid://ubuyiox2mrnj" path="res://Images/player.png" id="2_pdo7l"]
+
+[node name="MainWin" type="Control"]
+layout_mode = 3
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -576.0
+offset_right = -576.0
+grow_horizontal = 2
+script = ExtResource("1_3j7hb")
+
+[node name="VSplitContainer" type="VSplitContainer" parent="."]
+layout_mode = 1
+offset_left = 330.0
+offset_top = 14.0
+offset_right = 771.0
+offset_bottom = 151.0
+
+[node name="Gamelogo" type="Sprite2D" parent="VSplitContainer"]
+position = Vector2(-122, 78)
+scale = Vector2(0.0910977, 0.0824049)
+texture = ExtResource("2_pdo7l")
+
+[node name="lblAppName" type="Label" parent="VSplitContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 100
+text = "BlinkBird"
+horizontal_alignment = 1
+
+[node name="btnNewGame" type="Button" parent="."]
+layout_mode = 2
+offset_left = 298.0
+offset_top = 252.0
+offset_right = 761.0
+offset_bottom = 292.0
+text = "New Game"
+
+[node name="btnAddNewUser" type="Button" parent="."]
+layout_mode = 2
+offset_left = 298.0
+offset_top = 295.0
+offset_right = 761.0
+offset_bottom = 335.0
+text = "Add new User
+"
+
+[node name="btnSelectUser" type="Button" parent="."]
+layout_mode = 2
+offset_left = 300.0
+offset_top = 346.0
+offset_right = 763.0
+offset_bottom = 386.0
+text = "Select User"
+
+[node name="btnShowUsers" type="Button" parent="."]
+layout_mode = 0
+offset_left = 298.0
+offset_top = 396.0
+offset_right = 761.0
+offset_bottom = 436.0
+text = "Show Users"
+
+[node name="btnAbout" type="Button" parent="."]
+layout_mode = 0
+offset_left = 297.0
+offset_top = 449.0
+offset_right = 760.0
+offset_bottom = 489.0
+text = "About"
+
+[node name="btnExit" type="Button" parent="."]
+layout_mode = 0
+offset_left = 295.0
+offset_top = 511.0
+offset_right = 758.0
+offset_bottom = 551.0
+text = "Exit"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 590.0
+offset_right = 117.0
+offset_bottom = 613.0
+text = "Device Name : "
+
+[node name="lblDeviceName" type="Label" parent="."]
+layout_mode = 0
+offset_left = 120.0
+offset_top = 592.0
+offset_right = 241.0
+offset_bottom = 615.0
+text = "%devicename%"
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 615.0
+offset_right = 106.0
+offset_bottom = 638.0
+text = "Device State:
+"
+
+[node name="lblDeviceState" type="Label" parent="."]
+layout_mode = 0
+offset_left = 125.0
+offset_top = 617.0
+offset_right = 239.0
+offset_bottom = 640.0
+text = "%Deice state%"
+
+[node name="btnConnectEEGDevice" type="Button" parent="."]
+layout_mode = 0
+offset_left = 301.0
+offset_top = 195.0
+offset_right = 764.0
+offset_bottom = 235.0
+text = "Connect EEGDevice"

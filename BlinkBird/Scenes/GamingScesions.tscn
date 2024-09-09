@@ -1,0 +1,109 @@
+[gd_scene load_steps=5 format=3 uid="uid://da4b6ky1ieiq4"]
+
+[ext_resource type="Script" path="res://Code/GamingScesions.cs" id="1_ml8ra"]
+[ext_resource type="StyleBox" uid="uid://cky6fxdtocaxq" path="res://Styles/StyleBox.tres" id="2_a0npi"]
+
+[sub_resource type="Theme" id="Theme_sfadr"]
+
+[sub_resource type="Theme" id="Theme_ng1xv"]
+ItemList/styles/panel = ExtResource("2_a0npi")
+
+[node name="GamingScesions" type="Window"]
+mode = 2
+initial_position = 2
+size = Vector2i(1000, 1000)
+theme = SubResource("Theme_sfadr")
+script = ExtResource("1_ml8ra")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 438.0
+offset_top = 9.0
+offset_right = 553.0
+offset_bottom = 32.0
+theme_override_font_sizes/font_size = 20
+text = "Gaming Sessions"
+
+[node name="btnExportToCSV" type="Button" parent="."]
+offset_left = 10.0
+offset_top = 131.0
+offset_right = 219.0
+offset_bottom = 162.0
+text = "Export  Select Data To CsV"
+
+[node name="btnDelete" type="Button" parent="."]
+offset_left = 243.0
+offset_top = 132.0
+offset_right = 302.0
+offset_bottom = 163.0
+text = "Delete"
+
+[node name="btnMakeGraphs" type="Button" parent="."]
+offset_left = 332.0
+offset_top = 134.0
+offset_right = 443.0
+offset_bottom = 165.0
+text = "Make Graphs"
+
+[node name="btnImportCSV" type="Button" parent="."]
+offset_left = 479.0
+offset_top = 134.0
+offset_right = 574.0
+offset_bottom = 165.0
+text = "Import CSV"
+
+[node name="btnClose" type="Button" parent="."]
+offset_left = 620.0
+offset_top = 134.0
+offset_right = 670.0
+offset_bottom = 165.0
+text = "Close"
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 10.0
+offset_top = 226.0
+offset_right = 50.0
+offset_bottom = 249.0
+text = "ID"
+
+[node name="Label5" type="Label" parent="."]
+offset_left = 60.0
+offset_top = 226.0
+offset_right = 152.0
+offset_bottom = 249.0
+text = "UserNaame"
+
+[node name="Label3" type="Label" parent="."]
+offset_left = 200.0
+offset_top = 226.0
+offset_right = 240.0
+offset_bottom = 249.0
+text = "Start"
+
+[node name="Label4" type="Label" parent="."]
+offset_left = 300.0
+offset_top = 226.0
+offset_right = 340.0
+offset_bottom = 249.0
+text = "End"
+
+[node name="Label6" type="Label" parent="."]
+offset_left = 400.0
+offset_top = 226.0
+offset_right = 443.0
+offset_bottom = 249.0
+text = "Score
+"
+
+[node name="lstGamingsessions" type="ItemList" parent="."]
+offset_left = 8.0
+offset_top = 270.0
+offset_right = 1141.0
+offset_bottom = 646.0
+theme = SubResource("Theme_ng1xv")
+
+[node name="OpenFileDialog" type="FileDialog" parent="."]
+mode = 2
+title = "Open a File"
+ok_button_text = "Open"
+file_mode = 0
+access = 2

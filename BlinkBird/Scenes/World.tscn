@@ -1,0 +1,93 @@
+[gd_scene load_steps=9 format=3 uid="uid://6yfja6dbyjqb"]
+
+[ext_resource type="Script" path="res://Code/World.cs" id="1_udo11"]
+[ext_resource type="Texture2D" uid="uid://btfhlxkb4vsb0" path="res://Images/BG.png" id="2_3kcpm"]
+[ext_resource type="Script" path="res://Code/Player.cs" id="2_hdlif"]
+[ext_resource type="Texture2D" uid="uid://ubuyiox2mrnj" path="res://Images/player.png" id="3_i5lqk"]
+[ext_resource type="Script" path="res://Code/ScoreandTime.cs" id="4_4cx6w"]
+[ext_resource type="Script" path="res://Code/Camera.cs" id="5_vetoq"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_ceo68"]
+font_color = Color(1, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_pvjgf"]
+font_color = Color(1, 0, 0, 1)
+
+[node name="World" type="Node2D"]
+script = ExtResource("1_udo11")
+
+[node name="Background" type="TextureRect" parent="."]
+offset_top = -5.0
+offset_right = 4000.0
+offset_bottom = 745.0
+scale = Vector2(1.23554, 0.943674)
+texture = ExtResource("2_3kcpm")
+
+[node name="Camera" type="Camera2D" parent="."]
+anchor_mode = 0
+script = ExtResource("5_vetoq")
+
+[node name="TmrTimer" type="Timer" parent="."]
+
+[node name="ScoreandTime" type="HSplitContainer" parent="."]
+offset_top = -1.0
+offset_right = 615.0
+offset_bottom = 39.0
+script = ExtResource("4_4cx6w")
+
+[node name="HSplitContainer" type="HSplitContainer" parent="ScoreandTime"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="ScoreandTime/HSplitContainer"]
+layout_mode = 2
+text = "Elapded : "
+label_settings = SubResource("LabelSettings_ceo68")
+
+[node name="lblElapsed" type="Label" parent="ScoreandTime/HSplitContainer"]
+layout_mode = 2
+text = "0;0;0;:0"
+label_settings = SubResource("LabelSettings_pvjgf")
+
+[node name="HSplitContainer2" type="HSplitContainer" parent="ScoreandTime"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="ScoreandTime/HSplitContainer2"]
+layout_mode = 2
+text = "Score: "
+label_settings = SubResource("LabelSettings_ceo68")
+
+[node name="lblScore" type="Label" parent="ScoreandTime/HSplitContainer2"]
+layout_mode = 2
+text = "0"
+label_settings = SubResource("LabelSettings_pvjgf")
+
+[node name="Player" type="Sprite2D" parent="."]
+position = Vector2(126, 281)
+scale = Vector2(0.101277, 0.101277)
+texture = ExtResource("3_i5lqk")
+script = ExtResource("2_hdlif")
+
+[node name="HSdrHorizontalSpeed" type="HSlider" parent="."]
+offset_left = 403.0
+offset_top = 8.0
+offset_right = 557.0
+offset_bottom = 24.0
+value = 10.0
+
+[node name="Label" type="Label" parent="HSdrHorizontalSpeed"]
+layout_mode = 0
+offset_left = -100.0
+offset_top = -4.0
+offset_right = -44.0
+offset_bottom = 19.0
+theme_override_colors/font_color = Color(0.984314, 0, 0, 1)
+text = "Speed  "
+
+[node name="lblSpeedPercent" type="Label" parent="HSdrHorizontalSpeed"]
+layout_mode = 0
+offset_left = -47.0
+offset_top = -3.0
+offset_right = -7.0
+offset_bottom = 20.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+text = "0"

@@ -1,0 +1,144 @@
+[gd_scene load_steps=4 format=3 uid="uid://dvmwwwte31th5"]
+
+[ext_resource type="Script" path="res://Code/AddUserDetails.cs" id="1_sehff"]
+[ext_resource type="StyleBox" uid="uid://buk4qdoea48nc" path="res://Styles/Theme.tres" id="2_wx27y"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_f06ow"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_sehff")
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+layout_mode = 0
+offset_right = 1153.0
+offset_bottom = 646.0
+theme_override_styles/panel = ExtResource("2_wx27y")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 0
+offset_right = 380.0
+offset_bottom = 646.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_f06ow")
+
+[node name="Label" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = 133.0
+offset_top = 37.0
+offset_right = 227.0
+offset_bottom = 60.0
+text = "User Details"
+
+[node name="HSplitContainer" type="HSplitContainer" parent="Panel"]
+layout_mode = 0
+offset_left = 133.0
+offset_top = 207.0
+offset_right = 246.0
+offset_bottom = 238.0
+
+[node name="lblAGe" type="Label" parent="Panel/HSplitContainer"]
+layout_mode = 2
+text = "Age:"
+
+[node name="txtAge" type="LineEdit" parent="Panel/HSplitContainer"]
+layout_mode = 2
+
+[node name="HSplitContainer2" type="HSplitContainer" parent="Panel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -70.0
+offset_top = -15.5
+offset_right = 70.0
+offset_bottom = 15.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="lblSex" type="Label" parent="Panel/HSplitContainer2"]
+layout_mode = 2
+text = "Sex"
+
+[node name="optionSex" type="OptionButton" parent="Panel/HSplitContainer2"]
+layout_mode = 2
+item_count = 2
+popup/item_0/text = "Female"
+popup/item_0/id = 0
+popup/item_1/text = "Male"
+popup/item_1/id = 1
+
+[node name="HSplitContainer3" type="HSplitContainer" parent="Panel"]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -265.0
+offset_top = -244.0
+offset_right = -109.0
+offset_bottom = -213.0
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="lblEducation" type="Label" parent="Panel/HSplitContainer3"]
+layout_mode = 2
+text = "Education
+"
+
+[node name="optEducation" type="OptionButton" parent="Panel/HSplitContainer3"]
+layout_mode = 2
+item_count = 5
+popup/item_0/text = "ΑΕΙ"
+popup/item_0/id = 0
+popup/item_1/text = "ΛΥΚΕΙΟ"
+popup/item_1/id = 1
+popup/item_2/text = "ΓΥΜΑΝΣΙΟ"
+popup/item_2/id = 2
+popup/item_3/text = "ΔΗΜΟΤΙΚΟ"
+popup/item_3/id = 3
+popup/item_4/text = " "
+popup/item_4/id = 4
+
+[node name="HSplitContainer4" type="HSplitContainer" parent="Panel"]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -260.0
+offset_top = -165.0
+offset_right = -128.0
+offset_bottom = -134.0
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="btnCancel" type="Button" parent="Panel/HSplitContainer4"]
+layout_mode = 2
+text = "Cancel"
+
+[node name="btnCreate" type="Button" parent="Panel/HSplitContainer4"]
+layout_mode = 2
+text = "Create"
+
+[node name="HSplitContainer5" type="HSplitContainer" parent="Panel"]
+layout_mode = 0
+offset_left = 127.0
+offset_top = 167.0
+offset_right = 670.0
+offset_bottom = 198.0
+
+[node name="lblName" type="Label" parent="Panel/HSplitContainer5"]
+layout_mode = 2
+text = "Name:"
+
+[node name="txtName" type="LineEdit" parent="Panel/HSplitContainer5"]
+layout_mode = 2
