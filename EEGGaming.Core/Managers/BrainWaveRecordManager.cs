@@ -731,7 +731,7 @@ namespace EEGGaming.Core.Managers
                         blinkcnt++;
 
                     }
-                    if (blinkcnt > 2)//(blinkcnt > 3)
+                   // if (blinkcnt > 2)//(blinkcnt > 3)
                         {
 
                         Blinked = true;

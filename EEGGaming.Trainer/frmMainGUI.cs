@@ -22,11 +22,12 @@ namespace EEGGaming.Trainer
         BrainWaveRecordManager recordManager = new BrainWaveRecordManager();
         String winTitle = Application.ProductName + " - " + Application.ProductVersion + " Core Library version : " + CommonTools.GetEEGGamingCoreVersion();
         DateTime started;
+        SoundPlayer simpleSound;
         public frmMainGUI()
         {
             InitializeComponent();
             this.Text = winTitle;// +" "+Convert.ToString( recordManager.FFTBinsFor1Hz);
-            recordManager.OnBlinked += RecordManager_OnBlinked;
+         
             recordManager.ActiveGamingSessionId = 1;
             recordManager.ActiveUserId = 1;
             // recordManager.AutoSave= true;
@@ -35,9 +36,10 @@ namespace EEGGaming.Trainer
 
         private void RecordManager_OnBlinked()
         {
-            SoundPlayer simpleSound = new SoundPlayer(@"c:\Windows\Media\chimes.wav");
+              simpleSound = new SoundPlayer(@"c:\Windows\Media\chimes.wav");
             simpleSound.Play();
-            var waves=this.recordManager.GetBrainwavesFromDBByMilisconds(0);
+            TimeSpan secs = DateTime.Now.Subtract(this.started);
+            var waves=this.recordManager.GetBrainwavesFromDBByMilisconds(secs.TotalMilliseconds);
             if (waves != null)
             {
                 foreach (var wave in waves)
@@ -55,7 +57,7 @@ namespace EEGGaming.Trainer
             {
 
 
-
+                recordManager.OnBlinked += RecordManager_OnBlinked;
                 recordManager.EnableFiltering = cbxEnableFiltering.Checked;
 
                 recordManager.Start();
@@ -88,6 +90,12 @@ namespace EEGGaming.Trainer
 
                 this.timer1.Stop();
                 this.timer1.Enabled = false;
+                this.recordManager.OnBlinked -= this.RecordManager_OnBlinked;
+                if ( simpleSound!= null )
+                {
+                    simpleSound.Stop();
+                    simpleSound.Dispose();
+                }
             }
             catch (Exception ex)
             {

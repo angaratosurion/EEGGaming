@@ -94,7 +94,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new System.Drawing.Point(11, 399);
+            label1.Location = new System.Drawing.Point(3, 67);
             label1.Name = "label1";
             label1.Size = new System.Drawing.Size(55, 19);
             label1.TabIndex = 4;
@@ -104,7 +104,7 @@
             // lblElapsed
             // 
             lblElapsed.AutoSize = true;
-            lblElapsed.Location = new System.Drawing.Point(95, 403);
+            lblElapsed.Location = new System.Drawing.Point(87, 71);
             lblElapsed.Name = "lblElapsed";
             lblElapsed.Size = new System.Drawing.Size(17, 19);
             lblElapsed.TabIndex = 5;
@@ -113,7 +113,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new System.Drawing.Point(363, 399);
+            label2.Location = new System.Drawing.Point(355, 67);
             label2.Name = "label2";
             label2.Size = new System.Drawing.Size(131, 19);
             label2.TabIndex = 6;
@@ -122,7 +122,7 @@
             // lblBatteryLvl
             // 
             lblBatteryLvl.AutoSize = true;
-            lblBatteryLvl.Location = new System.Drawing.Point(531, 403);
+            lblBatteryLvl.Location = new System.Drawing.Point(523, 71);
             lblBatteryLvl.Name = "lblBatteryLvl";
             lblBatteryLvl.Size = new System.Drawing.Size(28, 19);
             lblBatteryLvl.TabIndex = 7;
@@ -155,7 +155,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new System.Drawing.Point(601, 402);
+            label3.Location = new System.Drawing.Point(593, 70);
             label3.Name = "label3";
             label3.Size = new System.Drawing.Size(164, 19);
             label3.TabIndex = 11;
@@ -164,7 +164,7 @@
             // lblSampleCount
             // 
             lblSampleCount.AutoSize = true;
-            lblSampleCount.Location = new System.Drawing.Point(776, 402);
+            lblSampleCount.Location = new System.Drawing.Point(768, 70);
             lblSampleCount.Name = "lblSampleCount";
             lblSampleCount.Size = new System.Drawing.Size(17, 19);
             lblSampleCount.TabIndex = 12;
@@ -185,7 +185,7 @@
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            ClientSize = new System.Drawing.Size(1021, 103);
+            ClientSize = new System.Drawing.Size(1021, 100);
             Controls.Add(btnMakeGraphs);
             Controls.Add(lblSampleCount);
             Controls.Add(label3);
