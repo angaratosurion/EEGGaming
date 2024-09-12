@@ -37,6 +37,16 @@ namespace EEGGaming.Trainer
         {
             SoundPlayer simpleSound = new SoundPlayer(@"c:\Windows\Media\chimes.wav");
             simpleSound.Play();
+            var waves=this.recordManager.GetBrainwavesFromDBByMilisconds(0);
+            if (waves != null)
+            {
+                foreach (var wave in waves)
+                {
+                    wave.Blinked = true;
+                    
+                }
+                this.recordManager.EditRange(waves.ToArray());
+            }
         }
 
         private void btnStart_Click(object sender, EventArgs e)

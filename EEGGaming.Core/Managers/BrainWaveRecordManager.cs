@@ -10,6 +10,7 @@ using EEGGaming.Core.Data.Models;
 using NLog.LayoutRenderers.Wrappers;
 using ScottPlot;
 using System.Collections.Generic;
+using System.Collections.Immutable;
 //using NLog.Filters;
 
 namespace EEGGaming.Core.Managers
@@ -18,7 +19,7 @@ namespace EEGGaming.Core.Managers
     public  class BrainWaveRecordManager:BaseManager
     {
        int blinkcnt = 0;
-      //  List<BrainwavesRecord> records = new List<BrainwavesRecord> ();
+       
        public static NeuroSDK.Scanner scanner = new NeuroSDK.Scanner(SensorFamily.SensorLEBrainBit);
         public List<BrainwavesRecord> Records { get; set; }
         const double VOLTENERG = 0.0001;
@@ -28,7 +29,7 @@ namespace EEGGaming.Core.Managers
         DateTime startedat;
         double newalphaval, newavbgo1o2 = 0,newvalalpharel,totalbinpower;
         public System.Timers.Timer tmrBlink { get; set; }
-        //public System.Timers.Timer tmrAutoSave { get; set; }
+          
         
         public event OnBlinked OnBlinked;
         public int SamplesRecorded { get{ return Records.Count(); } }
@@ -42,7 +43,7 @@ namespace EEGGaming.Core.Managers
         { get { return sensor; }
         }
         public Boolean Blinked { get; set; }
-        //public Boolean AutoSave { get; set; }
+         
         public int ActiveUserId { get; set; }
         public int ActiveGamingSessionId { get; set; }
         public bool UsesDb { get; set; }
@@ -635,57 +636,7 @@ namespace EEGGaming.Core.Managers
             }
 
         }
-        public void AddNew(BrainwavesRecord record)
-        {
-            try
-            {
-                if (record != null)
-                {
-                    record.Id = PredictLastId("BrainwavesRecord")+ 1;
-                    DbContext.BrainWaves.Add(record);   
-                    DbContext.SaveChanges();
-                }
-
-            }
-            catch (Exception ex)
-            {
-                throw;
-
-                CommonTools.ErrorReporting(ex);
-
-            }
-
-        }
-        public void AddNewRange (BrainwavesRecord []  record)
-        {
-            try
-            {
-                if (record != null)
-                {
-                    //  DbContext.BrainWaves.AddRange(record);
-
-                    foreach (var record2 in record)
-                    {
-                        //var qu= DbContext.BrainWaves.First(x => x.Date == record2.Date);
-                        // if (qu== null)
-                        // {
-                        AddNew(record2);
-                     
-                }
-                DbContext.SaveChanges();
-                }
-
-            }
-            catch (Exception ex)
-            {
-                throw;
-
-                CommonTools.ErrorReporting(ex);
-
-            }
-
-        }
-        
+       
 
         private void TmrBlink_Elapsed(object? sender, System.Timers.ElapsedEventArgs e)
         {
@@ -833,7 +784,107 @@ namespace EEGGaming.Core.Managers
                 return false;
             }
         }
+        public void AddNew(BrainwavesRecord record)
+        {
+            try
+            {
+                if (record != null)
+                {
+                    record.Id = PredictLastId("BrainwavesRecord") + 1;
+                    DbContext.BrainWaves.Add(record);
+                    DbContext.SaveChanges();
+                }
 
+            }
+            catch (Exception ex)
+            {
+                throw;
+
+                CommonTools.ErrorReporting(ex);
+
+            }
+
+        }
+        public void AddNewRange(BrainwavesRecord[] record)
+        {
+            try
+            {
+                if (record != null)
+                {
+                    //  DbContext.BrainWaves.AddRange(record);
+
+                    foreach (var record2 in record)
+                    {
+                        //var qu= DbContext.BrainWaves.First(x => x.Date == record2.Date);
+                        // if (qu== null)
+                        // {
+                        AddNew(record2);
+
+                    }
+                    DbContext.SaveChanges();
+                }
+
+            }
+            catch (Exception ex)
+            {
+                throw;
+
+                CommonTools.ErrorReporting(ex);
+
+            }
+
+        }
+        public void Edit (int id ,BrainwavesRecord record)
+        {
+            try
+            {
+                if (record != null && id > 0)
+                {
+                    var oldrec = this.GetBrainwaveFromDBById(id);
+                    if (oldrec != null)
+                    {
+                        record.Id = oldrec.Id;
+                        DbContext.Entry(oldrec).CurrentValues.SetValues(record);
+                        DbContext.SaveChanges();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw;
+
+                CommonTools.ErrorReporting(ex);
+
+            }
+        }
+        public void EditRange(   BrainwavesRecord []  records)
+        {
+            try
+            {
+
+                if (records != null  )
+                {
+                    foreach (var record in records)
+                    {
+                        var oldrec = this.GetBrainwaveFromDBById(record.Id);
+                        if (oldrec != null)
+                        {
+                            record.Id = oldrec.Id;
+                            DbContext.Entry(oldrec).CurrentValues.SetValues(record);
+                           
+                        }
+                    }
+                    DbContext.SaveChanges();
+                }
+            }
+            catch (Exception ex)
+            {
+                throw;
+
+                CommonTools.ErrorReporting(ex);
+
+            }
+        }
         public List<BrainwavesRecord> GetBrainwavesFromDB()
         {
             try
@@ -849,7 +900,7 @@ namespace EEGGaming.Core.Managers
             }
 
         }
-        public void  GetBrainwavesFromDBByUserId(int id)
+        public List<BrainwavesRecord> GetBrainwavesFromDBByUserId(int id)
         {
             try
             {
@@ -862,19 +913,46 @@ namespace EEGGaming.Core.Managers
 
 
 
-                this.Records.Clear();
-                this.Records = ap;
+                return ap;
 
             }
             catch (Exception ex)
             {
 
                 CommonTools.ErrorReporting(ex);
+
+                return null;
                
             }
 
         }
-        public void  GetBrainwavesFromDBByGamingSessionId(int id)
+        public BrainwavesRecord GetBrainwaveFromDBById(int id)
+        {
+            try
+            {
+                BrainwavesRecord ap;
+
+
+                var tap = this.GetBrainwavesFromDB();
+
+                ap = tap.Find(x => x.Id == id);
+
+
+
+                return ap;
+
+            }
+            catch (Exception ex)
+            {
+
+                CommonTools.ErrorReporting(ex);
+
+                return null;
+
+            }
+
+        }
+        public List<BrainwavesRecord> GetBrainwavesFromDBByGamingSessionId(int id)
         {
             try
             {
@@ -885,17 +963,42 @@ namespace EEGGaming.Core.Managers
 
                 ap = tap.FindAll(x => x.GamingSessionId == id);
 
-                this.Records.Clear();
-                this.Records = ap;
+                return ap;
 
-                 
+
 
             }
             catch (Exception ex)
             {
 
                 CommonTools.ErrorReporting(ex);
+                return null;
                  
+            }
+
+        }
+        public List<BrainwavesRecord> GetBrainwavesFromDBByMilisconds(double milsecond)
+        {
+            try
+            {
+                List<BrainwavesRecord> ap;
+
+
+                var tap = this.GetBrainwavesFromDB();
+
+                ap = tap.FindAll(x => x.MiliSecond== milsecond);
+
+
+
+                return ap;
+
+            }
+            catch (Exception ex)
+            {
+
+                CommonTools.ErrorReporting(ex);
+                return null;
+
             }
 
         }

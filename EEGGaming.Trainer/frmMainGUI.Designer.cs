@@ -49,10 +49,9 @@
             // 
             // btnStart
             // 
-            btnStart.Location = new System.Drawing.Point(24, 9);
-            btnStart.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            btnStart.Location = new System.Drawing.Point(27, 11);
             btnStart.Name = "btnStart";
-            btnStart.Size = new System.Drawing.Size(82, 22);
+            btnStart.Size = new System.Drawing.Size(94, 28);
             btnStart.TabIndex = 0;
             btnStart.Text = "Start";
             btnStart.UseVisualStyleBackColor = true;
@@ -60,10 +59,9 @@
             // 
             // btnStop
             // 
-            btnStop.Location = new System.Drawing.Point(560, 22);
-            btnStop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            btnStop.Location = new System.Drawing.Point(149, 16);
             btnStop.Name = "btnStop";
-            btnStop.Size = new System.Drawing.Size(82, 22);
+            btnStop.Size = new System.Drawing.Size(94, 28);
             btnStop.TabIndex = 1;
             btnStop.Text = "Stop";
             btnStop.UseVisualStyleBackColor = true;
@@ -71,10 +69,9 @@
             // 
             // btnBlinked
             // 
-            btnBlinked.Location = new System.Drawing.Point(249, 99);
-            btnBlinked.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            btnBlinked.Location = new System.Drawing.Point(891, 12);
             btnBlinked.Name = "btnBlinked";
-            btnBlinked.Size = new System.Drawing.Size(82, 22);
+            btnBlinked.Size = new System.Drawing.Size(94, 28);
             btnBlinked.TabIndex = 2;
             btnBlinked.Text = "i Blinked";
             btnBlinked.UseVisualStyleBackColor = true;
@@ -82,10 +79,9 @@
             // 
             // btnSave
             // 
-            btnSave.Location = new System.Drawing.Point(202, 190);
-            btnSave.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            btnSave.Location = new System.Drawing.Point(400, 16);
             btnSave.Name = "btnSave";
-            btnSave.Size = new System.Drawing.Size(82, 22);
+            btnSave.Size = new System.Drawing.Size(94, 28);
             btnSave.TabIndex = 3;
             btnSave.Text = "Save";
             btnSave.UseVisualStyleBackColor = true;
@@ -98,9 +94,9 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new System.Drawing.Point(10, 315);
+            label1.Location = new System.Drawing.Point(11, 399);
             label1.Name = "label1";
-            label1.Size = new System.Drawing.Size(47, 15);
+            label1.Size = new System.Drawing.Size(55, 19);
             label1.TabIndex = 4;
             label1.Text = "Elapsed";
             label1.Click += label1_Click;
@@ -108,37 +104,36 @@
             // lblElapsed
             // 
             lblElapsed.AutoSize = true;
-            lblElapsed.Location = new System.Drawing.Point(83, 318);
+            lblElapsed.Location = new System.Drawing.Point(95, 403);
             lblElapsed.Name = "lblElapsed";
-            lblElapsed.Size = new System.Drawing.Size(13, 15);
+            lblElapsed.Size = new System.Drawing.Size(17, 19);
             lblElapsed.TabIndex = 5;
             lblElapsed.Text = "0";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new System.Drawing.Point(318, 315);
+            label2.Location = new System.Drawing.Point(363, 399);
             label2.Name = "label2";
-            label2.Size = new System.Drawing.Size(112, 15);
+            label2.Size = new System.Drawing.Size(131, 19);
             label2.TabIndex = 6;
             label2.Text = "Battery Percentage: ";
             // 
             // lblBatteryLvl
             // 
             lblBatteryLvl.AutoSize = true;
-            lblBatteryLvl.Location = new System.Drawing.Point(465, 318);
+            lblBatteryLvl.Location = new System.Drawing.Point(531, 403);
             lblBatteryLvl.Name = "lblBatteryLvl";
-            lblBatteryLvl.Size = new System.Drawing.Size(23, 15);
+            lblBatteryLvl.Size = new System.Drawing.Size(28, 19);
             lblBatteryLvl.TabIndex = 7;
             lblBatteryLvl.Text = "0%";
             // 
             // cbxEnableFiltering
             // 
             cbxEnableFiltering.AutoSize = true;
-            cbxEnableFiltering.Location = new System.Drawing.Point(260, 56);
-            cbxEnableFiltering.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            cbxEnableFiltering.Location = new System.Drawing.Point(738, 16);
             cbxEnableFiltering.Name = "cbxEnableFiltering";
-            cbxEnableFiltering.Size = new System.Drawing.Size(107, 19);
+            cbxEnableFiltering.Size = new System.Drawing.Size(121, 23);
             cbxEnableFiltering.TabIndex = 8;
             cbxEnableFiltering.Text = "Enable Filtering";
             cbxEnableFiltering.UseVisualStyleBackColor = true;
@@ -149,10 +144,9 @@
             // 
             // btnLoadCsv
             // 
-            btnLoadCsv.Location = new System.Drawing.Point(472, 237);
-            btnLoadCsv.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            btnLoadCsv.Location = new System.Drawing.Point(274, 16);
             btnLoadCsv.Name = "btnLoadCsv";
-            btnLoadCsv.Size = new System.Drawing.Size(82, 22);
+            btnLoadCsv.Size = new System.Drawing.Size(94, 28);
             btnLoadCsv.TabIndex = 10;
             btnLoadCsv.Text = "Load CSV";
             btnLoadCsv.UseVisualStyleBackColor = true;
@@ -161,26 +155,27 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new System.Drawing.Point(526, 317);
+            label3.Location = new System.Drawing.Point(601, 402);
             label3.Name = "label3";
-            label3.Size = new System.Drawing.Size(142, 15);
+            label3.Size = new System.Drawing.Size(164, 19);
             label3.TabIndex = 11;
             label3.Text = "Number Of Sample Taken";
             // 
             // lblSampleCount
             // 
             lblSampleCount.AutoSize = true;
-            lblSampleCount.Location = new System.Drawing.Point(679, 317);
+            lblSampleCount.Location = new System.Drawing.Point(776, 402);
             lblSampleCount.Name = "lblSampleCount";
-            lblSampleCount.Size = new System.Drawing.Size(13, 15);
+            lblSampleCount.Size = new System.Drawing.Size(17, 19);
             lblSampleCount.TabIndex = 12;
             lblSampleCount.Text = "0";
             // 
             // btnMakeGraphs
             // 
-            btnMakeGraphs.Location = new System.Drawing.Point(550, 177);
+            btnMakeGraphs.Location = new System.Drawing.Point(518, 10);
+            btnMakeGraphs.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             btnMakeGraphs.Name = "btnMakeGraphs";
-            btnMakeGraphs.Size = new System.Drawing.Size(173, 23);
+            btnMakeGraphs.Size = new System.Drawing.Size(198, 29);
             btnMakeGraphs.TabIndex = 13;
             btnMakeGraphs.Text = "Make Graphs";
             btnMakeGraphs.UseVisualStyleBackColor = true;
@@ -188,9 +183,9 @@
             // 
             // frmMainGUI
             // 
-            AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            ClientSize = new System.Drawing.Size(893, 338);
+            ClientSize = new System.Drawing.Size(1021, 103);
             Controls.Add(btnMakeGraphs);
             Controls.Add(lblSampleCount);
             Controls.Add(label3);
@@ -205,7 +200,6 @@
             Controls.Add(btnStop);
             Controls.Add(btnStart);
             FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             Name = "frmMainGUI";
             Text = "Form1";
             Load += frmMainGUI_Load;
