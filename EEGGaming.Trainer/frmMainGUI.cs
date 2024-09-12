@@ -20,7 +20,10 @@ namespace EEGGaming.Trainer
     public partial class frmMainGUI : Form
     {
         BrainWaveRecordManager recordManager = new BrainWaveRecordManager();
-        String winTitle = Application.ProductName + " - " + Application.ProductVersion + " Core Library version : " + CommonTools.GetEEGGamingCoreVersion();
+        static string    pdver = Application.ProductVersion.Substring(0, Application.ProductVersion.IndexOf('+'));
+        String winTitle = Application.ProductName + " - " + 
+            pdver + " Core Library version : " +
+            CommonTools.GetEEGGamingCoreVersion();
         DateTime started;
         SoundPlayer simpleSound;
         public frmMainGUI()

@@ -6,10 +6,13 @@
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <Platforms>AnyCPU;x64</Platforms>
-    <AssemblyVersion>0.0.2.0</AssemblyVersion>
-    <FileVersion>0.0.2.0</FileVersion>
+    <AssemblyVersion>0.0.5.0</AssemblyVersion>
+    <FileVersion>$(AssemblyVersion)</FileVersion>
     <ApplicationHighDpiMode>SystemAware</ApplicationHighDpiMode>
     <ForceDesignerDpiUnaware>true</ForceDesignerDpiUnaware>
+    <Version>$(AssemblyVersion)</Version>
+    <ProductVersion> $(AssemblyVersion)</ProductVersion>
+    
   </PropertyGroup>
 
   <ItemGroup>

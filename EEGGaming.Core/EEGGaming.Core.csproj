@@ -6,7 +6,7 @@
     <Nullable>enable</Nullable>
     <Platforms>AnyCPU;x64</Platforms>
     <AssemblyVersion />
-    <Version>0.2.2.0</Version>
+    <Version>0.2.5.0</Version>
     <Copyright>Kyparissis Koutsioukis</Copyright>
     <Authors>Kyparissis Koutsioukis</Authors>
   </PropertyGroup>

@@ -728,10 +728,10 @@ namespace EEGGaming.Core.Managers
                     if (this.DetectBlinkusingAlpha(oldval, chn1val))
                     {
                          blinkcnt++;
-                        blinkcnt++;
+                        
 
                     }
-                   // if (blinkcnt > 2)//(blinkcnt > 3)
+                   if (blinkcnt > 2)//(blinkcnt > 3)
                         {
 
                         Blinked = true;
