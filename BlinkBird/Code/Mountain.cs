@@ -42,9 +42,8 @@ public partial class Mountain : Sprite2D
 
             } else if ( GetRect().End.X<= World.player.Position.X)
 			{
-				//GD.Print("mountain x: "+GetRect().End.X);
-				//            GD.Print("player x: " + player.Position.X);
-				double score = World.Score + (World.RAISESCOREBY / (40 * 30));// *1000);
+
+				double score = World.Score + (World.RAISESCOREBY / (40 * 30));
 
 				World.Score =  (double)Math.Round(score,3);
 			}

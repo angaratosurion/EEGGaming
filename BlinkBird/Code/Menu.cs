@@ -26,8 +26,7 @@ public partial class Menu : Control
     }
     public override void _Ready()
 	{
-		//Label appname=this.GetNode<Label>("lblAppName");
-		//appname.Size = new Vector2(1000, 1000);
+		 
 		BaseManager bm= new BaseManager();
 		bm.CreateDatabase();
 		var t = bm.DbContext.Database.ProviderName;
@@ -57,12 +56,7 @@ public partial class Menu : Control
 		}
  	BrainWaveRecordManager.scanner.Start();
 		var sensors = BrainWaveRecordManager.scanner.Sensors;
-		//while (  sensors.Count == 0)
-		//{
-		//	BrainWaveRecordManager.scanner.Start();
-		//	GD.Print(sensors.Count);
-			
-		//}
+		 
 
 		
 		if (  sensors.Count > 0)
@@ -139,7 +133,7 @@ public partial class Menu : Control
 		 NewUserDetailsPackedScene= (PackedScene)GD.Load("res://Scenes/AddUserDetails.tscn");
 		Control control = (Control)NewUserDetailsPackedScene.Instantiate();
 		this.AddSibling(control);
-		//this.Hide();
+		 
 	}
 
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -156,27 +150,14 @@ public partial class Menu : Control
 
 		}
 		var sensors = BrainWaveRecordManager.scanner.Sensors;
-		//if (sensors != null && sensors.Count > 0)
-		//{
-		//	Label lblDeviceName = (Label)this.FindChild("lblDeviceName", true);
-		//	lblDeviceName.Text = sensors[0].Name;
-		//	Label lblDeviceState = (Label)this.FindChild("lblDeviceState", true);
-		//	recordManager.Connect(sensors[0]);
-		//	lblDeviceState.Text = recordManager.Sensor.State.ToString();
-  //          BrainWaveRecordManager.scanner.Stop();
-
-  //      }
-		//else
-		//{
-		////	BrainWaveRecordManager.scanner.Stop();
-  //      }
+		 
 	}
 	public void bbtnNewGame_pressed()
 	{
 		newGamepackedScene = (PackedScene)GD.Load("res://Scenes/World.tscn");
 		Node2D sprite = (Node2D)newGamepackedScene.Instantiate();
 		this.AddSibling(sprite);
-		//this.Hide();
+		 
 		
 
 

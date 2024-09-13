@@ -397,3 +397,5 @@ FodyWeavers.xsd
 # JetBrains Rider
 *.sln.iml
 *.sqllite-wal
+BlinkBird/Output/data_BlinkBird_windows_x86_64/AppData/EEGGaming.sqllite-shm
+BlinkBird/Output/data_BlinkBird_windows_x86_64/AppData/EEGGaming.sqllite-wal

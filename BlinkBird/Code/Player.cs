@@ -16,18 +16,12 @@ public partial class Player : Sprite2D
 		 
 	}
 
-	//private void RecordManager_OnBlinked()
-	//{
-	//	this.Position += new Vector2(+0, -YMOVEMENT);
-	//	GD.Print("blinked");
-
-	//}
+	 
 
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
 	public override void _Process(double delta)
 	{
-        //this.Position += new Vector2(+MOVEMENT,0);
-        //GD.Print("player pos y: " + this.Position.Y);
+        
         if (this.Position.Y >=0 && World.HslSpeed!=null)
 		{
 			
@@ -35,9 +29,9 @@ public partial class Player : Sprite2D
 			this.Position += new Vector2(+XMOVEMENT * (float)World.HslSpeed.Value, +0);
 			if (Menu.recordManager.Blinked)
 			{
-				this.Position += new Vector2(+0, -YMOVEMENT*(float)World.HslSpeed.Value);
+				this.Position += new Vector2(+0, -YMOVEMENT ); 
 
-				GD.Print("blinked");
+				//GD.Print("blinked");
 			}
 			if (Input.IsKeyPressed(Key.Space))
 			{

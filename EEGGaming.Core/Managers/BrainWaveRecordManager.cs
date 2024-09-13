@@ -310,36 +310,35 @@ namespace EEGGaming.Core.Managers
                     while  (sensor == null && scanner.Sensors.Count==0 
                        )
                     {
-                      //  scanner.Stop();
+                      
                        scanner.Start();
                         Thread.Sleep(15000 );
-                        //sensor = (BrainBitSensor?)scanner.CreateSensor(scanner.Sensors[0]);
+                        
                         this.Connect(scanner.Sensors[0]);
-                        // scanner.Stop();
+                       
                     }
-                  //  this.Connect(scanner.Sensors[0]);
+                 
                     if (EnableFiltering)
                     {
                         this.InitFiltering();
                     }
                     math = new SpectrumMath(SamplingRate, FFtWindow, ProcessWinRate);
                     sensor.ExecCommand(SensorCommand.CommandStartSignal);
-                    //sensor.ExecCommand(SensorCommand.CommandStartResist);
+                    
                     Records.Clear();
-                    //this.bitdata.Clear();
-                    //this.RawSpectrumDatas.Clear();
+                   
                     startedat = DateTime.Now;
 
                      tmrBlink.Start();
-                   // this.DetectBlink();
+                   
                     
                     if (( this.ActiveUserId != 0 && this.ActiveGamingSessionId != 0) &&(this.UsesDb==true))
                     {
                        
                         this.AddNewRange(Records.ToArray());
-                        //this.Records.Clear();
+                        
                     }
-                    //}
+                    
                    
 
 
@@ -401,11 +400,7 @@ namespace EEGGaming.Core.Managers
                     {
                         flist.Dispose();
                     }
-                    //if(Records != null && this.ActiveGamingSessionId!=0 && this.ActiveUserId !=0 )
-                    //{
-                    //    var recs = Records.ToArray();
-                    //    this.AddNewRange(recs);
-                    //}
+                    
                     SavetoDatabse();
                 }
 
@@ -416,7 +411,7 @@ namespace EEGGaming.Core.Managers
                 CommonTools.ErrorReporting(ex);
             }
         }
-        public void SavetoDatabse()
+        public async void SavetoDatabse()
         {
             try
             {
@@ -434,7 +429,7 @@ namespace EEGGaming.Core.Managers
                         }
                         var recs = Records.ToArray();
 
-                        this.AddNewRange(recs);
+                        await this.AddNewRange(recs);
                     }
                 
             }
@@ -792,7 +787,7 @@ namespace EEGGaming.Core.Managers
                 {
                     record.Id = PredictLastId("BrainwavesRecord") + 1;
                     DbContext.BrainWaves.Add(record);
-                    DbContext.SaveChanges();
+                    DbContext.SaveChangesAsync();
                 }
 
             }
@@ -805,23 +800,23 @@ namespace EEGGaming.Core.Managers
             }
 
         }
-        public void AddNewRange(BrainwavesRecord[] record)
+        public async         Task
+AddNewRange(BrainwavesRecord[] record)
         {
             try
             {
                 if (record != null)
                 {
-                    //  DbContext.BrainWaves.AddRange(record);
+                     
 
                     foreach (var record2 in record)
                     {
-                        //var qu= DbContext.BrainWaves.First(x => x.Date == record2.Date);
-                        // if (qu== null)
-                        // {
-                        AddNew(record2);
+                        record2.Id = PredictLastId("BrainwavesRecord") + 1;
+                        
 
                     }
-                    DbContext.SaveChanges();
+                   await  DbContext.BrainWaves.AddRangeAsync(record);
+                   await  DbContext.SaveChangesAsync();
                 }
 
             }
