@@ -9,15 +9,31 @@ using System.Threading.Tasks;
 
 namespace EEGGaming.Core.Data.Models
 {
+    /// <summary>
+    /// The class represanation of the Brainwavesin the database
+    /// </summary>
     public  class BrainwavesRecord:Brainwaves
     {
+        /// <summary>
+        /// An auto-incremented value id
+        /// </summary>
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         [Required]
         public int Id { get; set; }
+        /// <summary>
+        /// he id ofthe user the record belongs
+        /// </summary>
         [Required]
         public int UserId { get; set; }
+        /// <summary>
+        /// The Id of the gamingsession therecord belongs
+        /// </summary>
         [Required]
         public int GamingSessionId { get; set; }
+        /// <summary>
+        /// Import the data from the Brainwaves model to the record model
+        /// </summary>
+        /// <param name="model">the class representation of the brainwaves</param>
         public void ImportToModel(Brainwaves model)
         {
             if ( model!=null)
