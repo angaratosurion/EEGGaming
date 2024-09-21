@@ -9,10 +9,18 @@ using System.Threading.Tasks;
 
 namespace EEGGaming.Core.Managers
 {
+    /// <summary>
+    /// The  class that includes the mostly common methods,properties and fuctions of the 
+    /// Manager classes
+    /// </summary>
     public  class BaseManager
     {
+        /// <summary>
+        /// The DatabaseContext of the library
+        /// </summary>
         public EEGGamingDbContext DbContext { get; set; }
-        public BaseManager() {
+        public BaseManager() 
+        {
             if (Directory.Exists(CommonTools.GetAppRootDataFolderAbsolutePath()) == false)
             {
                 Directory.CreateDirectory(CommonTools.GetAppRootDataFolderAbsolutePath());
@@ -24,12 +32,20 @@ namespace EEGGaming.Core.Managers
 
         
         }
+        /// <summary>
+        /// Creates the Database
+        /// </summary>
         public void CreateDatabase()
         {
             DbContext.Database.EnsureCreated();
             DbContext.Database.MigrateAsync();
             
         }
+        /// <summary>
+        /// It predicts the last value of the id's property from the given table's name
+        /// </summary>
+        /// <param name="tablename">the name of the table  the we wat to get the id</param>
+        /// <returns>last value of the id's property from the given table's name</returns>
         public int PredictLastId(string tablename)
         {
             try

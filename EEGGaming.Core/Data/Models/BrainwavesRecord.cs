@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 namespace EEGGaming.Core.Data.Models
 {
     /// <summary>
-    /// The class represanation of the Brainwavesin the database
+    /// The class represanation of the Brainwaves in the database
     /// </summary>
     public  class BrainwavesRecord:Brainwaves
     {

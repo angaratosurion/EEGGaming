@@ -15,12 +15,22 @@ using System.Collections.Immutable;
 
 namespace EEGGaming.Core.Managers
 {
+    /// <summary>
+    /// This event occurs when an eye blink occured
+    /// </summary>
     public delegate void OnBlinked();
+    /// <summary>
+    /// The Manager that manages the records of the BrainWave table and detectsif an 
+    /// eye blink occured
+    /// </summary>
     public  class BrainWaveRecordManager:BaseManager
     {
        int blinkcnt = 0;
        
        public static NeuroSDK.Scanner scanner = new NeuroSDK.Scanner(SensorFamily.SensorLEBrainBit);
+        /// <summary>
+        /// The Brainwave records curently captured
+        /// </summary>
         public List<BrainwavesRecord> Records { get; set; }
         const double VOLTENERG = 0.0001;
         BrainBitSensor? sensor = null;
@@ -28,27 +38,63 @@ namespace EEGGaming.Core.Managers
         FilterList flist;//= new FilterList();
         DateTime startedat;
         double newalphaval, newavbgo1o2 = 0,newvalalpharel,totalbinpower;
+        /// <summary>
+        /// The timer for the Blink
+        /// </summary>
         public System.Timers.Timer tmrBlink { get; set; }
-          
-        
+
+        /// <summary>
+        /// This event occurs when an eye blink occured
+        /// </summary>
         public event OnBlinked OnBlinked;
+        /// <summary>
+        /// The namber of the recorded samples/records
+        /// </summary>
         public int SamplesRecorded { get{ return Records.Count(); } }
+        /// <summary>
+        /// Eanble or Disable the ability to filter the samples
+        /// </summary>
         public Boolean EnableFiltering { get; set; }
+        /// <summary>
+        /// The Sample Rate the sensor will capture samples
+        /// </summary>
         public int SamplingRate { get; set; }
+        /// <summary>
+        /// The fftWindow
+        /// </summary>
         public int FFtWindow { get; set; }
+        /// <summary>
+        /// The ProcessWinRate
+        /// </summary>
         public int ProcessWinRate { get; set; }
+        /// <summary>
+        /// The FFT Bins For 1Hz
+        /// </summary>
         public double FFTBinsFor1Hz { get
             { return math.GetFFTBinsFor1Hz(); } }
+        /// <summary>
+        /// The Sensor that captures the brainwaves
+        /// </summary>
         public BrainBitSensor ?Sensor 
         { get { return sensor; }
         }
+        /// <summary>
+        /// The result of the eye blink detection
+        /// </summary>
         public Boolean Blinked { get; set; }
-         
+        /// <summary>
+        /// The id of  the user  it captures the packet from.
+        /// </summary>         
         public int ActiveUserId { get; set; }
+        /// <summary>
+        /// The Id of the GamingSession that occurs
+        /// </summary>
         public int ActiveGamingSessionId { get; set; }
+        /// <summary>
+        /// It sets whenever the library will use Database or not
+        /// </summary>
         public bool UsesDb { get; set; }
-        //
-        //scanner.EventSensorsChanged +=  onDeviceFound;
+        
         public BrainWaveRecordManager():base()
         {
 
@@ -76,6 +122,10 @@ namespace EEGGaming.Core.Managers
 
 
         }
+        /// <summary>
+        /// It Loads thedata from the given file
+        /// </summary>
+        /// <param name="filename">the full path of the file with the data </param>
         public void LoadCsv(string filename)
         {
             try
@@ -99,6 +149,10 @@ namespace EEGGaming.Core.Managers
 
             }
         }
+        /// <summary>
+        /// Generates the graphs in images
+        /// </summary>
+        /// <param name="filename">the name and path of the images</param>
         public void MakeGraphs(string filename)
         {
             try
@@ -278,7 +332,10 @@ namespace EEGGaming.Core.Managers
 
             }
         }
-
+        /// <summary>
+        /// Connectsto the sensor with the given info
+        /// </summary>
+        /// <param name="sens"> information of the sensor to connect</param>
         public void Connect(SensorInfo sens)
         {
             try
@@ -299,7 +356,9 @@ namespace EEGGaming.Core.Managers
             }
         }
 
-       
+        /// <summary>
+        /// Starts thecapture of brainwaves
+        /// </summary>
         public void Start ()
         {
             try
@@ -355,6 +414,9 @@ namespace EEGGaming.Core.Managers
                 CommonTools.ErrorReporting(ex);
             }
         }
+        /// <summary>
+        /// Stops the capture of brainwaves
+        /// </summary>
 
         public void Stop()
         {
@@ -383,6 +445,9 @@ namespace EEGGaming.Core.Managers
                 CommonTools.ErrorReporting(ex);
             }
         }
+        /// <summary>
+        /// Stops the capture of brainwaves and saves them to the database
+        /// </summary>
         public void StopAndSavetoDatabse()
         {
             try
@@ -411,6 +476,9 @@ namespace EEGGaming.Core.Managers
                 CommonTools.ErrorReporting(ex);
             }
         }
+        /// <summary>
+        /// Saves the BrainWaves  to the database
+        /// </summary>
         public async void SavetoDatabse()
         {
             try
@@ -440,6 +508,10 @@ namespace EEGGaming.Core.Managers
                  CommonTools.ErrorReporting(ex);
             }
         }
+        /// <summary>
+        /// Saves theBrainWave datato Comma seperated file
+        /// </summary>
+        /// <param name="filename">the full path of the file</param>
         public  void SaveToCSV(string filename)
         {
             try
@@ -468,6 +540,11 @@ namespace EEGGaming.Core.Managers
                 CommonTools.ErrorReporting(ex);
             }
         }
+        /// <summary>
+        /// It occurs when device is found 
+        /// </summary>
+        /// <param name="scanner"> the scanner </param>
+        /// <param name="sensors">a list of sensors </param>
      void onDeviceFound(NeuroSDK.IScanner scanner, IReadOnlyList<SensorInfo> sensors)
         {
             try
@@ -484,6 +561,11 @@ namespace EEGGaming.Core.Managers
                 CommonTools.ErrorReporting(ex);
             }
         }
+        /// <summary>
+        /// It occurs when the headset receives data 
+        /// </summary>
+        /// <param name="sensor">sensor</param>
+        /// <param name="data"> data captured by thee headeset </param>
         private void onBrainBitSignalDataRecived(ISensor sensor, BrainBitSignalData[] data)
         {
             try
@@ -632,7 +714,11 @@ namespace EEGGaming.Core.Managers
 
         }
        
-
+        /// <summary>
+        /// It occurs every timer blink timeouted 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void TmrBlink_Elapsed(object? sender, System.Timers.ElapsedEventArgs e)
         {
             try
@@ -646,7 +732,10 @@ namespace EEGGaming.Core.Managers
                 CommonTools.ErrorReporting(ex);
             }
         }
-
+        /// <summary>
+        /// Applies the filters
+        /// </summary>
+        /// <param name="vals">The array with the values that neeed filters to be applied </param>
         public void FilterArrayInPlace( double[] vals)
         {
             try
@@ -667,7 +756,9 @@ namespace EEGGaming.Core.Managers
                 CommonTools.ErrorReporting(ex);
             }
         }
-       
+       /// <summary>
+       /// Initites the array withcurrent filters
+       /// </summary>
         public void InitFiltering()
         {
             try
@@ -701,6 +792,10 @@ namespace EEGGaming.Core.Managers
                 CommonTools.ErrorReporting(ex);
             }
         }
+        /// <summary>
+        /// Detects if user had blinked or not 
+        /// </summary>
+        /// <returns>true if an eye blinked detected and flase otherwise</returns>
         public Boolean DetectBlink()
         {
             try
@@ -751,7 +846,13 @@ namespace EEGGaming.Core.Managers
                 return false;
             }
         }
-        public Boolean DetectBlinkusingAlpha(double[] oldvals, double [] chanel1vals)//,double [] chanenl2vals)
+        /// <summary>
+        /// Detects eye blinks using the alpha band
+        /// </summary>
+        /// <param name="oldvals">array with old alpha band values </param>
+        /// <param name="chanel1vals">array eith new values of alpha band values </param>
+        /// <returns>true if an eye blinked detected and flase otherwise</returns>
+        public Boolean DetectBlinkusingAlpha(double[] oldvals, double [] chanel1vals)
         {
             try
             {
@@ -779,6 +880,10 @@ namespace EEGGaming.Core.Managers
                 return false;
             }
         }
+        /// <summary>
+        /// Adds a new record in the Brainwave's table
+        /// </summary>
+        /// <param name="record">record to be added</param>
         public void AddNew(BrainwavesRecord record)
         {
             try
@@ -800,8 +905,12 @@ namespace EEGGaming.Core.Managers
             }
 
         }
-        public async         Task
-AddNewRange(BrainwavesRecord[] record)
+        /// <summary>
+        /// Add an array of brainwaves data in the brainwaves' table
+        /// </summary>
+        /// <param name="record">an array of brainwaves</param>
+        
+        public async  Task AddNewRange(BrainwavesRecord[] record)
         {
             try
             {
@@ -829,6 +938,11 @@ AddNewRange(BrainwavesRecord[] record)
             }
 
         }
+        /// <summary>
+        /// Edits  the record with the given id 
+        /// </summary>
+        /// <param name="id"> thevalue of the id to be edited</param>
+        /// <param name="record"> newvalues of the record</param>
         public void Edit (int id ,BrainwavesRecord record)
         {
             try
@@ -852,6 +966,11 @@ AddNewRange(BrainwavesRecord[] record)
 
             }
         }
+        /// <summary>
+        /// Edits a numberof Brainwave records
+        /// </summary>
+        /// <param name="records"> thearray with  Brainwaves' records with 
+        /// the new values except the ids </param>
         public void EditRange(   BrainwavesRecord []  records)
         {
             try
@@ -880,6 +999,10 @@ AddNewRange(BrainwavesRecord[] record)
 
             }
         }
+        /// <summary>
+        /// Gets the Records from the BrainWaves' table
+        /// </summary>
+        /// <returns>Records from the BrainWaves' table</returns>
         public List<BrainwavesRecord> GetBrainwavesFromDB()
         {
             try
@@ -895,6 +1018,12 @@ AddNewRange(BrainwavesRecord[] record)
             }
 
         }
+        /// <summary>
+        /// Get  the Records from the BrainWaves' table of the user with the given id 
+        /// </summary>
+        /// <param name="id">user's id </param>
+        /// <returns>the Records from the BrainWaves' 
+        /// table of the user with the given id </returns>
         public List<BrainwavesRecord> GetBrainwavesFromDBByUserId(int id)
         {
             try
@@ -921,6 +1050,11 @@ AddNewRange(BrainwavesRecord[] record)
             }
 
         }
+        /// <summary>
+        /// Gets the BrainWave record by it's Id 
+        /// </summary>
+        /// <param name="id">idof the Brainwave record </param>
+        /// <returns> the BrainWave record by it's Id </returns>
         public BrainwavesRecord GetBrainwaveFromDBById(int id)
         {
             try
@@ -947,6 +1081,12 @@ AddNewRange(BrainwavesRecord[] record)
             }
 
         }
+        /// <summary>
+        /// Get  the Records from the BrainWaves' table of the gamingsession  with the given id 
+        /// </summary>
+        /// <param name="id">the id of the gaming session</param>
+        /// <returns>the Records from the BrainWaves' table of the
+        /// gamingsession  with the given id</returns>
         public List<BrainwavesRecord> GetBrainwavesFromDBByGamingSessionId(int id)
         {
             try
@@ -972,6 +1112,11 @@ AddNewRange(BrainwavesRecord[] record)
             }
 
         }
+        /// <summary>
+        /// the Records from the BrainWaves' table by the miliseconds
+        /// </summary>
+        /// <param name="milsecond">miliseconds </param>
+        /// <returns>Records from the BrainWaves' table by the miliseconds</returns>
         public List<BrainwavesRecord> GetBrainwavesFromDBByMilisconds(double milsecond)
         {
             try

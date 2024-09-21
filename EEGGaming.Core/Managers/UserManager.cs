@@ -12,9 +12,15 @@ using System.Xml.Linq;
 
 namespace EEGGaming.Core.Managers
 {
+    /// <summary>
+    /// Class that manages user's and their info
+    /// </summary>
     public class UserManager:BaseManager
     {
-         
+         /// <summary>
+         /// Adds new user to the database
+         /// </summary>
+         /// <param name="user"> new user info</param>
         public void AddNew(User user)
         {
             try
@@ -35,6 +41,10 @@ namespace EEGGaming.Core.Managers
             }
 
         }
+        /// <summary>
+        /// Gets all the users
+        /// </summary>
+        /// <returns>all the users</returns>
         public List<User> List ()
         {
 
@@ -51,6 +61,11 @@ namespace EEGGaming.Core.Managers
 
             }
         }
+        /// <summary>
+        /// Gets the user of the given id
+        /// </summary>
+        /// <param name="id">id of the user we are looking for </param>
+        /// <returns>user of the given id</returns>
         public User GetUser(int id)
         {
             try
@@ -67,6 +82,11 @@ namespace EEGGaming.Core.Managers
 
             }
         }
+        /// <summary>
+        /// Gets the user of the given name
+        /// </summary>
+        /// <param name="name">name of the user we are looking for </param>
+        /// <returns>user of the given name</returns>
         public User GetUser(string name)
         {
             try
@@ -82,6 +102,11 @@ namespace EEGGaming.Core.Managers
 
             }
         }
+        /// <summary>
+        /// Edits the info of the user with the given id 
+        /// </summary>
+        /// <param name="id"> id of the user</param>
+        /// <param name="user">new values of the user</param>
         public void Edit(int? id , User user)
         {
             try
@@ -107,6 +132,10 @@ namespace EEGGaming.Core.Managers
 
             }
         }
+        /// <summary>
+        /// Deletes theuser with the given nme
+        /// </summary>
+        /// <param name="username">name of the user tobeleteed </param>
         public void Delete(string username)
         {
             try

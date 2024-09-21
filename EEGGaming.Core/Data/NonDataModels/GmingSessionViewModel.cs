@@ -8,12 +8,21 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace EEGGaming.Core.Data.NonDataModels
-{
+{/// <summary>
+/// The View Model representation of GamingSession table
+/// </summary>
     public  class GmingSessionViewModel:GamingSesion
     {
+        /// <summary>
+        /// Thename of the  User
+        /// </summary>
         [Required]
         // [Key]
         public string UserName { get; set; }
+        /// <summary>
+        /// Import the data of the GamingSession data model to theView Model
+        /// </summary>
+        /// <param name="model">data model with initial data</param>
         public void ImportToModel(GamingSesion model)
         {
             if (model != null)

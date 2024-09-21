@@ -9,10 +9,15 @@ using System.Threading.Tasks;
 using EEGGaming.Core.Data.NonDataModels;
 
 namespace EEGGaming.Core.Managers
-{
+{/// <summary>
+/// The Class that manages the gaming sessin
+/// </summary>
    public  class GamingSesionManager:BaseManager
     {
-       // EEGGamingDbContext db = new EEGGamingDbContext();
+        /// <summary>
+        /// Get all the gaming sessions
+        /// </summary>
+        /// <returns>all the gaming sessions</returns>
         public List<GamingSesion> List()
         {
             try
@@ -28,6 +33,10 @@ namespace EEGGaming.Core.Managers
 
             }
         }
+        /// <summary>
+        /// Get all the gaming sessions as ViewModels
+        /// </summary>
+        /// <returns>all the gaming sessions as ViewModels</returns>
         public List<GmingSessionViewModel> ListasViewModel()
         {
             try
@@ -56,6 +65,11 @@ namespace EEGGaming.Core.Managers
 
             }
         }
+        /// <summary>
+        /// Gets the gamingsession with the given Id
+        /// </summary>
+        /// <param name="id">id of the gamingsession</param>
+        /// <returns>gamingsession with the given Id</returns>
         public GamingSesion Get(int id)
         {
             try
@@ -80,6 +94,11 @@ namespace EEGGaming.Core.Managers
 
             }
         }
+        /// <summary>
+        /// checks if a gamingsession has thegivn id 
+        /// </summary>
+        /// <param name="id"> the id of the gamingsession we are searching for </param>
+        /// <returns>true if it exists false it isnt </returns>
         public bool Exists(int id)
         {
             try
@@ -99,6 +118,10 @@ namespace EEGGaming.Core.Managers
 
             }
         }
+        /// <summary>
+        /// updates the gamingsession record
+        /// </summary>
+        /// <param name="gamingSesion"> the new values of gamingsession</param>
         public void Update(GamingSesion gamingSesion)
         {
             try
@@ -119,6 +142,10 @@ namespace EEGGaming.Core.Managers
 
             }
         }
+        /// <summary>
+        /// Delete the record with thegiven id
+        /// </summary>
+        /// <param name="id">idof the record to bedeeted</param>
         public void Delete(int id)
         {
             try
@@ -138,6 +165,11 @@ namespace EEGGaming.Core.Managers
 
             }
         }
+        /// <summary>
+        /// Adds a new record to the gamingsession and it returns it 
+        /// </summary>
+        /// <param name="gamingSesion"> new recordof gamingsession to be added</param>
+        /// <returns> new record to the gamingsession and it returns it </returns>
         public GamingSesion AddGamingSession(GamingSesion gamingSesion)
         {
             try

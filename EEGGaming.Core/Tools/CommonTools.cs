@@ -11,9 +11,15 @@ using System.Text;
 
 namespace EEGGaming.Core.Tools
 {
+    /// <summary>
+    /// Classwith some common tools
+    /// </summary>
     public  class CommonTools
     {
-        public static Logger logger;//= LogManager.Setup().LoadConfigurationFromAppSettings().GetCurrentClassLogger();
+        public static Logger logger;
+        /// <summary>
+        ///  Creates  the Loger
+        /// </summary>
         public static void CreateLogger()
         {
             try
@@ -39,7 +45,11 @@ namespace EEGGaming.Core.Tools
         }
      
 
-        //public static FileRecordManager FileRecordManager = new FileRecordManager(usrmng.Context);
+        /// <summary>
+        /// Checks if a string is empty
+        /// </summary>
+        /// <param name="str">string to be checked </param>
+        /// <returns> true f its empty flase otherwise</returns>
         public static Boolean isEmpty(string str)
         {
             try
@@ -59,10 +69,13 @@ namespace EEGGaming.Core.Tools
                 return true;
             }
         }
+        /// <summary>
+        /// SavesErrors to log file
+        /// </summary>
+        /// <param name="ex">error that occured</param>
         public static void ErrorReporting(Exception ex)
         {
-            //throw (ex);
-            //SlimeWeb.Core.Configuration.SlimeWeb.CoreSettingManager conf = new Configuration.SlimeWeb.CoreSettingManager();
+            
             if (ex.GetBaseException() is ValidationException)
             {
                 // ValidationErrorReporting((ValidationException)ex);
@@ -76,28 +89,17 @@ namespace EEGGaming.Core.Tools
                 CreateLogger();
 
 
-                //(new CompactJsonFormatter());
-
-
-
-                //.ReadFrom.Services(services)
-                //  .Enrich.FromLogContext()
-
-                // .WriteTo.File(new CompactJsonFormatter(), "/wwwroot/AppData/logs/logs.json"))
-                //.CreateBootstrapLogger())
-
+                
                 logger.Fatal(ex.ToString());
                 NLog.LogManager.Flush();
-                // logger.Fatal(ex);
-                // if (conf.ExceptionShownOnBrowser() == true)
-                //  {
-                //  Console.WriteLine(ex.ToString());
-                //throw (ex);
-                //   logger.TraceException(ex.Message, ex);
-                //  }
+                
             }
 
         }
+        /// <summary>
+        /// Gets the absolute path of the app's binary folder
+        /// </summary>
+        /// <returns>the absolute path of the app's binary folder</returns>
         public static string GetAppRootBinaryFolderAbsolutePath()
         {
             try
@@ -110,9 +112,8 @@ namespace EEGGaming.Core.Tools
                 pathwithextention = AppContext.BaseDirectory;
 
 
-                ;//System.Reflection.Assembly.GetExecutingAssembly().CodeBase;
-                string path;//= System.IO.Path.GetDirectoryName(pathwithextention).Replace("file:\\", "");
-                //ap = pathwithextention.Replace("file:\\", "");
+                
+                string path;
                 path = AppContext.BaseDirectory;
                 if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
                 {
@@ -134,6 +135,10 @@ namespace EEGGaming.Core.Tools
                 return "";
             }
         }
+        /// <summary>
+        /// gets the absolute path of  app's data folder
+        /// </summary>
+        /// <returns>absolute path of  app's data folder</returns>
         public static string GetAppRootDataFolderAbsolutePath()
         {
             try
@@ -170,6 +175,9 @@ namespace EEGGaming.Core.Tools
                 return "";
             }
         }
+        /// <summary>
+        /// Createsthe app's data folder
+        /// </summary>
         public static void CreateAppRootdataFolder()
         {
             try
@@ -191,28 +199,10 @@ namespace EEGGaming.Core.Tools
         }
 
 
-        
-        public static bool checkifDoubleTableisnotAll0(double[] ar)
-        {
-            try
-            {
-                bool ap = false;
-                if( ar!=null)
-                {
-                    
-                }
-
-                return ap;
-
-
-            }
-            catch (Exception ex)
-            {
-
-                CommonTools.ErrorReporting(ex);
-                return false;
-            }
-        }
+        /// <summary>
+        /// Gets the version of EEGGaming Core
+        /// </summary>
+        /// <returns>version of EEGGaming Core</returns>
 
         public static string GetEEGGamingCoreVersion()
         {
@@ -231,6 +221,10 @@ namespace EEGGaming.Core.Tools
                 return null;
             }
         }
+        /// <summary>
+        /// Gets the version of Blinkbird
+        /// </summary>
+        /// <returns>version of Blinkbird</returns>
         public static string GetBlinkBirdbVersion()
         {
             try
@@ -252,6 +246,10 @@ namespace EEGGaming.Core.Tools
                 return null;
             }
         }
+        /// <summary>
+        /// Gets the Developer of BlinkBird
+        /// </summary>
+        /// <returns>Developer of BlinkBird</returns>
         public static string GetBlinkBirdDeveloper()
         {
             try
@@ -276,6 +274,10 @@ namespace EEGGaming.Core.Tools
                 return null;
             }
         }
+        /// <summary>
+        /// gwts the copyright of blinkbird
+        /// </summary>
+        /// <returns>the copyright of blinkbird</returns>
         public static string GetBlinkBirdCopyright()
         {
             try
@@ -300,7 +302,11 @@ namespace EEGGaming.Core.Tools
                 return null;
             }
         }
-      
+        /// <summary>
+        /// Gets the developer of  EEGGaming Core 
+        /// </summary>
+        /// <returns>developer of  EEGGaming Core </returns>
+
         public static string GetEEGGamingCoreDeveloper()
         {
             try
@@ -325,6 +331,10 @@ namespace EEGGaming.Core.Tools
                 return null;
             }
         }
+        /// <summary>
+        /// Gets the copyright of  EEGGaming Core 
+        /// </summary>
+        /// <returns>copyright of  EEGGaming Core </returns>
         public static string GetEEGGamingCoreCopyright()
         {
             try
@@ -349,6 +359,10 @@ namespace EEGGaming.Core.Tools
                 return null;
             }
         }
+        /// <summary>
+        /// Gets the date EEGGaming Core  last modified  
+        /// </summary>
+        /// <returns>date EEGGaming Core  last modified  </returns>
         public static string GetEEGGamingCoreLastModifiedDateUTC()
         {
             try
@@ -367,6 +381,10 @@ namespace EEGGaming.Core.Tools
                 return null;
             }
         }
+        /// <summary>
+        /// Gets the date BlinkBird  last modified
+        /// </summary>
+        /// <returns>date BlinkBird  last modified</returns>
         public static string GetBlickBirdbLastModifiedDateUTC()
         {
             try
@@ -385,7 +403,11 @@ namespace EEGGaming.Core.Tools
                 return null;
             }
         }
-       
+        /// <summary>
+        /// Gets the MDM5 Hash of Blinkbird 
+        /// </summary>
+        /// <returns>Hash of Blinkbird </returns>
+
         public static string GetBlinBirdMD5Hash()
         {
             try

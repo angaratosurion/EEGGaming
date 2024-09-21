@@ -11,12 +11,18 @@ using ConfigurationBuilder = Microsoft.Extensions.Configuration.ConfigurationBui
 
 namespace EEGGaming.Core.Managers
 {
+    /// <summary>
+    /// This classmanages the settings of the library
+    /// </summary>
    public static class AppSettingsManager
     {
         static string pathwithextention;
 
         static ConfigurationBuilder builder;
-        static IConfigurationRoot config;//= builder.Build();//
+        static IConfigurationRoot config; 
+        /// <summary>
+        /// The class that starts reading the configuration file and  
+        /// </summary>
         public static void Init()
         {
             try
@@ -49,6 +55,10 @@ namespace EEGGaming.Core.Managers
             }
 
         }
+        /// <summary>
+        /// Gets the Conenction string from the config
+        /// </summary>
+        /// <returns>the connection string of the database</returns>
         public static string GetDefaultConnectionString()
         {
             try

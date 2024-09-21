@@ -1,110 +1,16 @@
 ﻿using System.Runtime.CompilerServices;
 
 namespace EEGGaming.Core.Tools
-{
+{/// <summary>
+/// Class that does Mathematic Calculations 
+/// </summary>
     public static class Calculations
     {
-        //List<BrainwavesRecord> records = new List<BrainwavesRecord>();
-
-        /*  var window = new FftSharp.Windows.Hanning();
-                window.ApplyInPlace(vals);
-
-                math.ComputeSpectrum(vals);
-                // Calculate the FFT as an array of complex numbers
-                System.Numerics.Complex[] spectrum = FftSharp.FFT.Forward(vals);
-
-        //        // or get the magnitude (units²) or power (dB) as real numbers
-        //        double[] magnitude = FftSharp.FFT.Magnitude(spectrum);*/
-        //public  static  double[] FFTMagnitude(double[] vals)
-        //{
-        //    try
-        //    {
-        //        double[] ap = null ;
-        //        if (vals != null)
-        //        {
-        //            var window = new FftSharp.Windows.Hanning();
-        //            window.ApplyInPlace(vals);
-
-
-        //            // Calculate the FFT as an array of complex numbers
-        //            System.Numerics.Complex[] spectrum = FftSharp.FFT.Forward(vals);
-
-        //            // or get the magnitude (units²) or power (dB) as real numbers
-        //            double[] magnitude = FftSharp.FFT.Magnitude(spectrum);
-
-        //            // Calculate the FFT as an array of complex numbers
-
-        //            ap = magnitude;
-        //        }
-        //        return ap;
-        //    }
-        //    catch (Exception ex)
-        //    {
-
-        //        CommonTools.ErrorReporting(ex);
-        //        return null;
-        //    }
-        //}
-        //public static double[] FFTPower(double[] vals)
-        //{
-        //    try
-        //    {
-        //        double[] ap = null;
-        //        if (vals != null)
-        //        {
-        //            var window = new FftSharp.Windows.Hanning();
-        //            window.ApplyInPlace(vals);
-
-
-        //            // Calculate the FFT as an array of complex numbers
-        //            System.Numerics.Complex[] spectrum = FftSharp.FFT.Forward(vals);
-
-        //            // or get the magnitude (units²) or power (dB) as real numbers
-        //            double[] magnitude = FftSharp.FFT.Power(spectrum);
-
-        //            // Calculate the FFT as an array of complex numbers
-
-        //            ap = magnitude;
-        //        }
-        //        return ap;
-        //    }
-        //    catch (Exception ex)
-        //    {
-
-        //        CommonTools.ErrorReporting(ex);
-        //        return null;
-        //    }
-        //}
-        //public static double[] FFTAmplitude(double[] vals)
-        //{
-        //    try
-        //    {
-        //        double[] ap = null;
-        //        if (vals != null)
-        //        {
-        //            var window = new FftSharp.Windows.Hanning();
-        //            window.ApplyInPlace(vals);
-
-
-        //            // Calculate the FFT as an array of complex numbers
-        //            System.Numerics.Complex[] spectrum = FftSharp.FFT.Forward(vals);
-
-        //            // or get the magnitude (units²) or power (dB) as real numbers
-        //            //  double[] magnitude = FftSharp.FFT.Power(spectrum);
-
-        //            // Calculate the FFT as an array of complex numbers
-
-        //            ap = vals;
-        //        }
-        //        return ap;
-        //    }
-        //    catch (Exception ex)
-        //    {
-
-        //        CommonTools.ErrorReporting(ex);
-        //        return null;
-        //    }
-        //}
+        /// <summary>
+        /// Calculates the absolute values of the given's array average
+        /// </summary>
+        /// <param name="vals">array to calculate it's average value </param>
+        /// <returns>the absolute values of the given's array average</returns>
         public static double AverageAbs(double[] vals)
         {
             try
@@ -123,6 +29,11 @@ namespace EEGGaming.Core.Tools
             }
 
         }
+        /// <summary>
+        /// Calculates the average of the given array
+        /// </summary>
+        /// <param name="vals">the array we want to get its average value </param>
+        /// <returns>average of the given array</returns>
         public static double Average(double[] vals)
         {
             try
@@ -141,6 +52,12 @@ namespace EEGGaming.Core.Tools
             }
 
         }
+        /// <summary>
+        /// Subtracts val2 from val1
+        /// </summary>
+        /// <param name="val1">the valueto subtruck from </param>
+        /// <param name="val2"> the value to   subtruct</param>
+        /// <returns>the difference of val1-val2</returns>
         public static double Subtruck(double val1,double val2)
         {
             try
@@ -158,25 +75,7 @@ namespace EEGGaming.Core.Tools
             }
 
         }
-        public static double ConvertfromWtoUV(double power, double res)
-        {
-
-            try
-            {
-                double ap = 0;
-
-                ap = Math.Sqrt(power * res*1000);
-
-                return power;
-
-
-            }
-            catch (Exception ex)
-            {
-                CommonTools.ErrorReporting(ex);
-                return 0;
-            }
-        }
+ 
       
     }
 }
