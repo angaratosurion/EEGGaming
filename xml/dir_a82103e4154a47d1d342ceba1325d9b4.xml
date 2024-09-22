@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="dir_a82103e4154a47d1d342ceba1325d9b4" kind="dir">
+    <compoundname>EEGGaming.Core/Data/Models</compoundname>
+    <innerfile refid="_brainwaves_record_8cs">BrainwavesRecord.cs</innerfile>
+    <innerfile refid="_gaming_sesion_8cs">GamingSesion.cs</innerfile>
+    <innerfile refid="_user_8cs">User.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="EEGGaming.Core/Data/Models/"/>
+  </compounddef>
+</doxygen>

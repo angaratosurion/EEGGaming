@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_gming_session_view_model" xml:lang="en-US">
+<title>EEGGaming.Core.Data.NonDataModels.GmingSessionViewModel Class Reference</title>
+<indexterm><primary>EEGGaming.Core.Data.NonDataModels.GmingSessionViewModel</primary></indexterm>
+<para>Inheritance diagram for EEGGaming.Core.Data.NonDataModels.GmingSessionViewModel:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_gming_session_view_model.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_gming_session_view_model_1aca2a41f4c7b35096799bb3684c529e8d">ImportToModel</link> (<link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion">GamingSesion</link> model)</para>
+
+<para>Import the data of the GamingSession data model to theView Model. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para>string <link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_gming_session_view_model_1ab19010b9d5fa93dcfd54d4bf731c5724">UserName</link><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>Thename of the User. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Properties inherited from <link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion">EEGGaming.Core.Data.Models.GamingSesion</link>        <itemizedlist>
+            <listitem><para>int <link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion_1ae768cd0296695bb3d3f346ae5cb67ab6">Id</link><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>An auto-incremented value id. </para>
+</listitem>
+            <listitem><para>DateTime <link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion_1a1691ad2ee4ae57863a57f3ac7a0236e3">Start</link><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>The time and date the gaming session start. </para>
+</listitem>
+            <listitem><para>DateTime <link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion_1a409a923d21437aeab8568bd1ddf93252">End</link><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>The time and date the gaming session end. </para>
+</listitem>
+            <listitem><para>int <link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion_1acbce3f3c7d81fe021cca2aba31c1ab6b">User</link><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>The user&apos;sid that plays in the current session. </para>
+</listitem>
+            <listitem><para>double <link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion_1a16505d61fb4668e87ceba41175ff8478">Score</link><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>The score the user scored in this gaming session. </para>
+</listitem>
+        </itemizedlist>
+<section>
+<title>Detailed Description</title>
+
+<para>The View Model representation of GamingSession table </para>
+<para>
+Definition at line <link linkend="__gming_session_view_model_8cs_source_1l00014">14</link> of file <link linkend="__gming_session_view_model_8cs_source">GmingSessionViewModel.cs</link>.</para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_gming_session_view_model_1aca2a41f4c7b35096799bb3684c529e8d"/><section>
+    <title>ImportToModel()</title>
+<indexterm><primary>ImportToModel</primary><secondary>EEGGaming.Core.Data.NonDataModels.GmingSessionViewModel</secondary></indexterm>
+<indexterm><primary>EEGGaming.Core.Data.NonDataModels.GmingSessionViewModel</primary><secondary>ImportToModel</secondary></indexterm>
+<para><computeroutput>void EEGGaming.Core.Data.NonDataModels.GmingSessionViewModel.ImportToModel (<link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion">GamingSesion</link> model)</computeroutput></para><para>
+
+<para>Import the data of the GamingSession data model to theView Model. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>model</entry><entry>
+<para>data model with initial data</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line <link linkend="__gming_session_view_model_8cs_source_1l00026">26</link> of file <link linkend="__gming_session_view_model_8cs_source">GmingSessionViewModel.cs</link>.</para>
+</section>
+</section>
+<section>
+<title>Property Documentation</title>
+<anchor xml:id="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_gming_session_view_model_1ab19010b9d5fa93dcfd54d4bf731c5724"/><section>
+    <title>UserName</title>
+<indexterm><primary>UserName</primary><secondary>EEGGaming.Core.Data.NonDataModels.GmingSessionViewModel</secondary></indexterm>
+<indexterm><primary>EEGGaming.Core.Data.NonDataModels.GmingSessionViewModel</primary><secondary>UserName</secondary></indexterm>
+<para><computeroutput>string EEGGaming.Core.Data.NonDataModels.GmingSessionViewModel.UserName<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+
+<para>Thename of the User. </para>
+</para>
+<para>
+Definition at line <link linkend="__gming_session_view_model_8cs_source_1l00021">21</link> of file <link linkend="__gming_session_view_model_8cs_source">GmingSessionViewModel.cs</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+D:/Cloud Folder/OneDrive/My Programs/Post-Graduate/Master in Information Systems (PLS)/Thesis/Code/EEGGaming/EEGGaming.Core/Data/NonDataModels/GmingSessionViewModel.cs</section>
+</section>

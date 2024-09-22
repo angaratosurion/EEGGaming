@@ -1,0 +1,623 @@
+\doxysection{EEGGaming.\+Core.\+Data.\+Non\+Data\+Models.\+Brainwaves Class Reference}
+\hypertarget{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves}{}\label{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves}\index{EEGGaming.Core.Data.NonDataModels.Brainwaves@{EEGGaming.Core.Data.NonDataModels.Brainwaves}}
+
+
+The class representation of the packets containing the data coming from the headset.  
+
+
+Inheritance diagram for EEGGaming.\+Core.\+Data.\+Non\+Data\+Models.\+Brainwaves\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+uint \mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_aa16d9b59118af76918fd6b4cc701aa6c}{Pack\+Number}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Thenumber of the packet. \end{DoxyCompactList}\item 
+byte \mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_a80f504aeac234e88a8818e6936823ab9}{Marker}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The packet marker. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_a950aba497ae3bdd977170593f6de9cf3}{Date}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The date the packet is captured. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_a2e3a64fab9331c33712a488543cff3da}{Time}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The time the packet is captured. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_ae28ec52a5a7be45534f6a6560af0426d}{Second}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The second the packet is captured. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_ab00930f70ab5d893084ea1fbbd4da426}{Mili\+Second}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The milisecond the packet is captured. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_a680e14c0046817b3567caf02966b74c7}{Delta\+\_\+avgch}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The average of Delta band value of the 2 channels. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_a4bf15df56f8fb89009e39c38406c1688}{Theta\+\_\+avgch}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The average of Theta band value of the 2 channels. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_a0ec844c3fed086ed6cb792d6735ba8e6}{Alpha1\+\_\+avgch}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The average of Alpha band value of the 2 channels. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_a38ec6b776e8bd4a148725c597aef4641}{Beta1\+\_\+avgch}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The average of Beta band value of the 2 channels. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_ab4063c82226ea208a66f02269c3bb72e}{Gamma1\+\_\+avgch}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The average of Gamma band value of the 2 channels. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_a7771e5e3d2a3f39d7f537c24181a869b}{Delta\+\_\+\+Rel\+\_\+avgch}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The average of Delta band Relative value of the 2 channels. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_acabf8affae82307c0668b465b68e767c}{Theta\+\_\+\+Rel\+\_\+avgch}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The average of Theta band Relative value of the 2 channels. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_aa06696dfe4f8d2bb5dd4e891e78cfdcf}{Alpha1\+\_\+\+Rel\+\_\+avgch}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The average of Alpha band Relative value of the 2 channels. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_a8731b0f6050fd9e91e2ce1ea17de746a}{Beta1\+\_\+\+Rel\+\_\+avgch}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The average of Beta band Relative value of the 2 channels. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_acfa0890ecc394496ec2a6c936ddad133}{Gamma1\+\_\+\+Rel\+\_\+avgch}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The average of Gamma band Relative value of the 2 channels. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_a2a0cc026fbbae7634d45821762149197}{Delta\+\_\+ch1}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The value of Delta band from the channel 1. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_aaf137cc421c7b97930fa849cb5ffb7ec}{Theta\+\_\+ch1}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The value of Theta band from the channel 1. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_add0cfaba9a1c999ebdcded7175112c5f}{Alpha1\+\_\+ch1}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The value of Alpha band from the channel 1. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_a7544850d6df71fc153f43906f4aa151e}{Beta1\+\_\+ch1}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The value of Beta band from the channel 1. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_aac1400696bdef6ef00f7dfb8dd6c0ddc}{Gamma1\+\_\+ch1}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The value of Gamma band from the channel 1. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_a10d1f43856ef32f2562ea5e5da819b95}{Delta\+\_\+\+Rel\+\_\+ch1}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The Relative value of Delta band from the channel 1. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_a403ba98fa57db02035a9ea6c28f0f478}{Theta\+\_\+\+Rel\+\_\+ch1}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The Relative value of Theta band from the channel 1. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_ae08ab2f953a2965a62906bf4978b9e1f}{Alpha1\+\_\+\+Rel\+\_\+ch1}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The Relative value of Alpha band from the channel 1. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_a29e6af2b4053477e4889d828e3e34168}{Beta1\+\_\+\+Rel\+\_\+ch1}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The Relative value of Beta band from the channel 1. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_ac54a8ed1b67a480413702c8b2cd13992}{Gamma1\+\_\+\+Rel\+\_\+ch1}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The Relative value of Gamma band from the channel 1. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_aac5c7ec74d531d70796a4d59d466525d}{Delta\+\_\+ch2}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The value of Delta band from the channel 2. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_ae2011ba99ff79d76bee549c3ee565756}{Theta\+\_\+ch2}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The value of Theta band from the channel 2. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_a7670d63eb7e1f2fbff5316b4af021c28}{Alpha1\+\_\+ch2}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The value of Alpha band from the channel 2. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_a2f39307b7696bb3fa25e23d3e4a04e78}{Beta1\+\_\+ch2}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The value of Beta band from the channel 2. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_a9d2828c831703530d75da6f2a64075ea}{Gamma1\+\_\+ch2}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The value of Gamma band from the channel 2. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_a2d8355effb5729dc271faf9bc1b8aa2b}{Delta\+\_\+\+Rel\+\_\+ch2}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The Relative value of Delta band from the channel 2. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_a5f85e0db6ee5b85b636783e1d0c0422d}{Theta\+\_\+\+Rel\+\_\+ch2}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The Relative value of Theta band from the channel 2. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_a5b39203658fa975edb57d60995dc9c4f}{Alpha1\+\_\+\+Rel\+\_\+ch2}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The Relative value of Alpha band from the channel 2. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_a3aea0f827833c1af52f7ff8b4d4d98e5}{Beta1\+\_\+\+Rel\+\_\+ch2}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The Relative value of Beta band from the channel 2. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_a3a1fc86d09f84045859f4933e3dcf0a7}{Gamma1\+\_\+\+Rel\+\_\+ch2}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The Relative value of Gamma band from the channel 2. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_a7da82ea78dfc47df6f183f180170a0fb}{Blinked}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em If user had blinked. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The class representation of the packets containing the data coming from the headset. 
+
+Definition at line \mbox{\hyperlink{_brainwaves_8cs_source_l00016}{16}} of file \mbox{\hyperlink{_brainwaves_8cs_source}{Brainwaves.\+cs}}.
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_a0ec844c3fed086ed6cb792d6735ba8e6}\index{EEGGaming.Core.Data.NonDataModels.Brainwaves@{EEGGaming.Core.Data.NonDataModels.Brainwaves}!Alpha1\_avgch@{Alpha1\_avgch}}
+\index{Alpha1\_avgch@{Alpha1\_avgch}!EEGGaming.Core.Data.NonDataModels.Brainwaves@{EEGGaming.Core.Data.NonDataModels.Brainwaves}}
+\doxysubsubsection{\texorpdfstring{Alpha1\_avgch}{Alpha1\_avgch}}
+{\footnotesize\ttfamily \label{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_a0ec844c3fed086ed6cb792d6735ba8e6} 
+double EEGGaming.\+Core.\+Data.\+Non\+Data\+Models.\+Brainwaves.\+Alpha1\+\_\+avgch\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The average of Alpha band value of the 2 channels. 
+
+
+
+Definition at line \mbox{\hyperlink{_brainwaves_8cs_source_l00054}{54}} of file \mbox{\hyperlink{_brainwaves_8cs_source}{Brainwaves.\+cs}}.
+
+\Hypertarget{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_add0cfaba9a1c999ebdcded7175112c5f}\index{EEGGaming.Core.Data.NonDataModels.Brainwaves@{EEGGaming.Core.Data.NonDataModels.Brainwaves}!Alpha1\_ch1@{Alpha1\_ch1}}
+\index{Alpha1\_ch1@{Alpha1\_ch1}!EEGGaming.Core.Data.NonDataModels.Brainwaves@{EEGGaming.Core.Data.NonDataModels.Brainwaves}}
+\doxysubsubsection{\texorpdfstring{Alpha1\_ch1}{Alpha1\_ch1}}
+{\footnotesize\ttfamily \label{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_add0cfaba9a1c999ebdcded7175112c5f} 
+double EEGGaming.\+Core.\+Data.\+Non\+Data\+Models.\+Brainwaves.\+Alpha1\+\_\+ch1\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The value of Alpha band from the channel 1. 
+
+
+
+Definition at line \mbox{\hyperlink{_brainwaves_8cs_source_l00101}{101}} of file \mbox{\hyperlink{_brainwaves_8cs_source}{Brainwaves.\+cs}}.
+
+\Hypertarget{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_a7670d63eb7e1f2fbff5316b4af021c28}\index{EEGGaming.Core.Data.NonDataModels.Brainwaves@{EEGGaming.Core.Data.NonDataModels.Brainwaves}!Alpha1\_ch2@{Alpha1\_ch2}}
+\index{Alpha1\_ch2@{Alpha1\_ch2}!EEGGaming.Core.Data.NonDataModels.Brainwaves@{EEGGaming.Core.Data.NonDataModels.Brainwaves}}
+\doxysubsubsection{\texorpdfstring{Alpha1\_ch2}{Alpha1\_ch2}}
+{\footnotesize\ttfamily \label{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_a7670d63eb7e1f2fbff5316b4af021c28} 
+double EEGGaming.\+Core.\+Data.\+Non\+Data\+Models.\+Brainwaves.\+Alpha1\+\_\+ch2\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The value of Alpha band from the channel 2. 
+
+
+
+Definition at line \mbox{\hyperlink{_brainwaves_8cs_source_l00144}{144}} of file \mbox{\hyperlink{_brainwaves_8cs_source}{Brainwaves.\+cs}}.
+
+\Hypertarget{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_aa06696dfe4f8d2bb5dd4e891e78cfdcf}\index{EEGGaming.Core.Data.NonDataModels.Brainwaves@{EEGGaming.Core.Data.NonDataModels.Brainwaves}!Alpha1\_Rel\_avgch@{Alpha1\_Rel\_avgch}}
+\index{Alpha1\_Rel\_avgch@{Alpha1\_Rel\_avgch}!EEGGaming.Core.Data.NonDataModels.Brainwaves@{EEGGaming.Core.Data.NonDataModels.Brainwaves}}
+\doxysubsubsection{\texorpdfstring{Alpha1\_Rel\_avgch}{Alpha1\_Rel\_avgch}}
+{\footnotesize\ttfamily \label{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_aa06696dfe4f8d2bb5dd4e891e78cfdcf} 
+double EEGGaming.\+Core.\+Data.\+Non\+Data\+Models.\+Brainwaves.\+Alpha1\+\_\+\+Rel\+\_\+avgch\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The average of Alpha band Relative value of the 2 channels. 
+
+
+
+Definition at line \mbox{\hyperlink{_brainwaves_8cs_source_l00078}{78}} of file \mbox{\hyperlink{_brainwaves_8cs_source}{Brainwaves.\+cs}}.
+
+\Hypertarget{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_ae08ab2f953a2965a62906bf4978b9e1f}\index{EEGGaming.Core.Data.NonDataModels.Brainwaves@{EEGGaming.Core.Data.NonDataModels.Brainwaves}!Alpha1\_Rel\_ch1@{Alpha1\_Rel\_ch1}}
+\index{Alpha1\_Rel\_ch1@{Alpha1\_Rel\_ch1}!EEGGaming.Core.Data.NonDataModels.Brainwaves@{EEGGaming.Core.Data.NonDataModels.Brainwaves}}
+\doxysubsubsection{\texorpdfstring{Alpha1\_Rel\_ch1}{Alpha1\_Rel\_ch1}}
+{\footnotesize\ttfamily \label{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_ae08ab2f953a2965a62906bf4978b9e1f} 
+double EEGGaming.\+Core.\+Data.\+Non\+Data\+Models.\+Brainwaves.\+Alpha1\+\_\+\+Rel\+\_\+ch1\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The Relative value of Alpha band from the channel 1. 
+
+
+
+Definition at line \mbox{\hyperlink{_brainwaves_8cs_source_l00123}{123}} of file \mbox{\hyperlink{_brainwaves_8cs_source}{Brainwaves.\+cs}}.
+
+\Hypertarget{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_a5b39203658fa975edb57d60995dc9c4f}\index{EEGGaming.Core.Data.NonDataModels.Brainwaves@{EEGGaming.Core.Data.NonDataModels.Brainwaves}!Alpha1\_Rel\_ch2@{Alpha1\_Rel\_ch2}}
+\index{Alpha1\_Rel\_ch2@{Alpha1\_Rel\_ch2}!EEGGaming.Core.Data.NonDataModels.Brainwaves@{EEGGaming.Core.Data.NonDataModels.Brainwaves}}
+\doxysubsubsection{\texorpdfstring{Alpha1\_Rel\_ch2}{Alpha1\_Rel\_ch2}}
+{\footnotesize\ttfamily \label{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_a5b39203658fa975edb57d60995dc9c4f} 
+double EEGGaming.\+Core.\+Data.\+Non\+Data\+Models.\+Brainwaves.\+Alpha1\+\_\+\+Rel\+\_\+ch2\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The Relative value of Alpha band from the channel 2. 
+
+
+
+Definition at line \mbox{\hyperlink{_brainwaves_8cs_source_l00166}{166}} of file \mbox{\hyperlink{_brainwaves_8cs_source}{Brainwaves.\+cs}}.
+
+\Hypertarget{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_a38ec6b776e8bd4a148725c597aef4641}\index{EEGGaming.Core.Data.NonDataModels.Brainwaves@{EEGGaming.Core.Data.NonDataModels.Brainwaves}!Beta1\_avgch@{Beta1\_avgch}}
+\index{Beta1\_avgch@{Beta1\_avgch}!EEGGaming.Core.Data.NonDataModels.Brainwaves@{EEGGaming.Core.Data.NonDataModels.Brainwaves}}
+\doxysubsubsection{\texorpdfstring{Beta1\_avgch}{Beta1\_avgch}}
+{\footnotesize\ttfamily \label{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_a38ec6b776e8bd4a148725c597aef4641} 
+double EEGGaming.\+Core.\+Data.\+Non\+Data\+Models.\+Brainwaves.\+Beta1\+\_\+avgch\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The average of Beta band value of the 2 channels. 
+
+
+
+Definition at line \mbox{\hyperlink{_brainwaves_8cs_source_l00059}{59}} of file \mbox{\hyperlink{_brainwaves_8cs_source}{Brainwaves.\+cs}}.
+
+\Hypertarget{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_a7544850d6df71fc153f43906f4aa151e}\index{EEGGaming.Core.Data.NonDataModels.Brainwaves@{EEGGaming.Core.Data.NonDataModels.Brainwaves}!Beta1\_ch1@{Beta1\_ch1}}
+\index{Beta1\_ch1@{Beta1\_ch1}!EEGGaming.Core.Data.NonDataModels.Brainwaves@{EEGGaming.Core.Data.NonDataModels.Brainwaves}}
+\doxysubsubsection{\texorpdfstring{Beta1\_ch1}{Beta1\_ch1}}
+{\footnotesize\ttfamily \label{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_a7544850d6df71fc153f43906f4aa151e} 
+double EEGGaming.\+Core.\+Data.\+Non\+Data\+Models.\+Brainwaves.\+Beta1\+\_\+ch1\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The value of Beta band from the channel 1. 
+
+
+
+Definition at line \mbox{\hyperlink{_brainwaves_8cs_source_l00106}{106}} of file \mbox{\hyperlink{_brainwaves_8cs_source}{Brainwaves.\+cs}}.
+
+\Hypertarget{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_a2f39307b7696bb3fa25e23d3e4a04e78}\index{EEGGaming.Core.Data.NonDataModels.Brainwaves@{EEGGaming.Core.Data.NonDataModels.Brainwaves}!Beta1\_ch2@{Beta1\_ch2}}
+\index{Beta1\_ch2@{Beta1\_ch2}!EEGGaming.Core.Data.NonDataModels.Brainwaves@{EEGGaming.Core.Data.NonDataModels.Brainwaves}}
+\doxysubsubsection{\texorpdfstring{Beta1\_ch2}{Beta1\_ch2}}
+{\footnotesize\ttfamily \label{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_a2f39307b7696bb3fa25e23d3e4a04e78} 
+double EEGGaming.\+Core.\+Data.\+Non\+Data\+Models.\+Brainwaves.\+Beta1\+\_\+ch2\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The value of Beta band from the channel 2. 
+
+
+
+Definition at line \mbox{\hyperlink{_brainwaves_8cs_source_l00149}{149}} of file \mbox{\hyperlink{_brainwaves_8cs_source}{Brainwaves.\+cs}}.
+
+\Hypertarget{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_a8731b0f6050fd9e91e2ce1ea17de746a}\index{EEGGaming.Core.Data.NonDataModels.Brainwaves@{EEGGaming.Core.Data.NonDataModels.Brainwaves}!Beta1\_Rel\_avgch@{Beta1\_Rel\_avgch}}
+\index{Beta1\_Rel\_avgch@{Beta1\_Rel\_avgch}!EEGGaming.Core.Data.NonDataModels.Brainwaves@{EEGGaming.Core.Data.NonDataModels.Brainwaves}}
+\doxysubsubsection{\texorpdfstring{Beta1\_Rel\_avgch}{Beta1\_Rel\_avgch}}
+{\footnotesize\ttfamily \label{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_a8731b0f6050fd9e91e2ce1ea17de746a} 
+double EEGGaming.\+Core.\+Data.\+Non\+Data\+Models.\+Brainwaves.\+Beta1\+\_\+\+Rel\+\_\+avgch\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The average of Beta band Relative value of the 2 channels. 
+
+
+
+Definition at line \mbox{\hyperlink{_brainwaves_8cs_source_l00083}{83}} of file \mbox{\hyperlink{_brainwaves_8cs_source}{Brainwaves.\+cs}}.
+
+\Hypertarget{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_a29e6af2b4053477e4889d828e3e34168}\index{EEGGaming.Core.Data.NonDataModels.Brainwaves@{EEGGaming.Core.Data.NonDataModels.Brainwaves}!Beta1\_Rel\_ch1@{Beta1\_Rel\_ch1}}
+\index{Beta1\_Rel\_ch1@{Beta1\_Rel\_ch1}!EEGGaming.Core.Data.NonDataModels.Brainwaves@{EEGGaming.Core.Data.NonDataModels.Brainwaves}}
+\doxysubsubsection{\texorpdfstring{Beta1\_Rel\_ch1}{Beta1\_Rel\_ch1}}
+{\footnotesize\ttfamily \label{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_a29e6af2b4053477e4889d828e3e34168} 
+double EEGGaming.\+Core.\+Data.\+Non\+Data\+Models.\+Brainwaves.\+Beta1\+\_\+\+Rel\+\_\+ch1\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The Relative value of Beta band from the channel 1. 
+
+
+
+Definition at line \mbox{\hyperlink{_brainwaves_8cs_source_l00128}{128}} of file \mbox{\hyperlink{_brainwaves_8cs_source}{Brainwaves.\+cs}}.
+
+\Hypertarget{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_a3aea0f827833c1af52f7ff8b4d4d98e5}\index{EEGGaming.Core.Data.NonDataModels.Brainwaves@{EEGGaming.Core.Data.NonDataModels.Brainwaves}!Beta1\_Rel\_ch2@{Beta1\_Rel\_ch2}}
+\index{Beta1\_Rel\_ch2@{Beta1\_Rel\_ch2}!EEGGaming.Core.Data.NonDataModels.Brainwaves@{EEGGaming.Core.Data.NonDataModels.Brainwaves}}
+\doxysubsubsection{\texorpdfstring{Beta1\_Rel\_ch2}{Beta1\_Rel\_ch2}}
+{\footnotesize\ttfamily \label{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_a3aea0f827833c1af52f7ff8b4d4d98e5} 
+double EEGGaming.\+Core.\+Data.\+Non\+Data\+Models.\+Brainwaves.\+Beta1\+\_\+\+Rel\+\_\+ch2\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The Relative value of Beta band from the channel 2. 
+
+
+
+Definition at line \mbox{\hyperlink{_brainwaves_8cs_source_l00171}{171}} of file \mbox{\hyperlink{_brainwaves_8cs_source}{Brainwaves.\+cs}}.
+
+\Hypertarget{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_a7da82ea78dfc47df6f183f180170a0fb}\index{EEGGaming.Core.Data.NonDataModels.Brainwaves@{EEGGaming.Core.Data.NonDataModels.Brainwaves}!Blinked@{Blinked}}
+\index{Blinked@{Blinked}!EEGGaming.Core.Data.NonDataModels.Brainwaves@{EEGGaming.Core.Data.NonDataModels.Brainwaves}}
+\doxysubsubsection{\texorpdfstring{Blinked}{Blinked}}
+{\footnotesize\ttfamily \label{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_a7da82ea78dfc47df6f183f180170a0fb} 
+bool EEGGaming.\+Core.\+Data.\+Non\+Data\+Models.\+Brainwaves.\+Blinked\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+If user had blinked. 
+
+
+
+Definition at line \mbox{\hyperlink{_brainwaves_8cs_source_l00182}{182}} of file \mbox{\hyperlink{_brainwaves_8cs_source}{Brainwaves.\+cs}}.
+
+\Hypertarget{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_a950aba497ae3bdd977170593f6de9cf3}\index{EEGGaming.Core.Data.NonDataModels.Brainwaves@{EEGGaming.Core.Data.NonDataModels.Brainwaves}!Date@{Date}}
+\index{Date@{Date}!EEGGaming.Core.Data.NonDataModels.Brainwaves@{EEGGaming.Core.Data.NonDataModels.Brainwaves}}
+\doxysubsubsection{\texorpdfstring{Date}{Date}}
+{\footnotesize\ttfamily \label{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_a950aba497ae3bdd977170593f6de9cf3} 
+string EEGGaming.\+Core.\+Data.\+Non\+Data\+Models.\+Brainwaves.\+Date\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The date the packet is captured. 
+
+
+
+Definition at line \mbox{\hyperlink{_brainwaves_8cs_source_l00029}{29}} of file \mbox{\hyperlink{_brainwaves_8cs_source}{Brainwaves.\+cs}}.
+
+\Hypertarget{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_a680e14c0046817b3567caf02966b74c7}\index{EEGGaming.Core.Data.NonDataModels.Brainwaves@{EEGGaming.Core.Data.NonDataModels.Brainwaves}!Delta\_avgch@{Delta\_avgch}}
+\index{Delta\_avgch@{Delta\_avgch}!EEGGaming.Core.Data.NonDataModels.Brainwaves@{EEGGaming.Core.Data.NonDataModels.Brainwaves}}
+\doxysubsubsection{\texorpdfstring{Delta\_avgch}{Delta\_avgch}}
+{\footnotesize\ttfamily \label{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_a680e14c0046817b3567caf02966b74c7} 
+double EEGGaming.\+Core.\+Data.\+Non\+Data\+Models.\+Brainwaves.\+Delta\+\_\+avgch\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The average of Delta band value of the 2 channels. 
+
+
+
+Definition at line \mbox{\hyperlink{_brainwaves_8cs_source_l00046}{46}} of file \mbox{\hyperlink{_brainwaves_8cs_source}{Brainwaves.\+cs}}.
+
+\Hypertarget{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_a2a0cc026fbbae7634d45821762149197}\index{EEGGaming.Core.Data.NonDataModels.Brainwaves@{EEGGaming.Core.Data.NonDataModels.Brainwaves}!Delta\_ch1@{Delta\_ch1}}
+\index{Delta\_ch1@{Delta\_ch1}!EEGGaming.Core.Data.NonDataModels.Brainwaves@{EEGGaming.Core.Data.NonDataModels.Brainwaves}}
+\doxysubsubsection{\texorpdfstring{Delta\_ch1}{Delta\_ch1}}
+{\footnotesize\ttfamily \label{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_a2a0cc026fbbae7634d45821762149197} 
+double EEGGaming.\+Core.\+Data.\+Non\+Data\+Models.\+Brainwaves.\+Delta\+\_\+ch1\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The value of Delta band from the channel 1. 
+
+
+
+Definition at line \mbox{\hyperlink{_brainwaves_8cs_source_l00093}{93}} of file \mbox{\hyperlink{_brainwaves_8cs_source}{Brainwaves.\+cs}}.
+
+\Hypertarget{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_aac5c7ec74d531d70796a4d59d466525d}\index{EEGGaming.Core.Data.NonDataModels.Brainwaves@{EEGGaming.Core.Data.NonDataModels.Brainwaves}!Delta\_ch2@{Delta\_ch2}}
+\index{Delta\_ch2@{Delta\_ch2}!EEGGaming.Core.Data.NonDataModels.Brainwaves@{EEGGaming.Core.Data.NonDataModels.Brainwaves}}
+\doxysubsubsection{\texorpdfstring{Delta\_ch2}{Delta\_ch2}}
+{\footnotesize\ttfamily \label{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_aac5c7ec74d531d70796a4d59d466525d} 
+double EEGGaming.\+Core.\+Data.\+Non\+Data\+Models.\+Brainwaves.\+Delta\+\_\+ch2\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The value of Delta band from the channel 2. 
+
+
+
+Definition at line \mbox{\hyperlink{_brainwaves_8cs_source_l00136}{136}} of file \mbox{\hyperlink{_brainwaves_8cs_source}{Brainwaves.\+cs}}.
+
+\Hypertarget{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_a7771e5e3d2a3f39d7f537c24181a869b}\index{EEGGaming.Core.Data.NonDataModels.Brainwaves@{EEGGaming.Core.Data.NonDataModels.Brainwaves}!Delta\_Rel\_avgch@{Delta\_Rel\_avgch}}
+\index{Delta\_Rel\_avgch@{Delta\_Rel\_avgch}!EEGGaming.Core.Data.NonDataModels.Brainwaves@{EEGGaming.Core.Data.NonDataModels.Brainwaves}}
+\doxysubsubsection{\texorpdfstring{Delta\_Rel\_avgch}{Delta\_Rel\_avgch}}
+{\footnotesize\ttfamily \label{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_a7771e5e3d2a3f39d7f537c24181a869b} 
+double EEGGaming.\+Core.\+Data.\+Non\+Data\+Models.\+Brainwaves.\+Delta\+\_\+\+Rel\+\_\+avgch\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The average of Delta band Relative value of the 2 channels. 
+
+
+
+Definition at line \mbox{\hyperlink{_brainwaves_8cs_source_l00070}{70}} of file \mbox{\hyperlink{_brainwaves_8cs_source}{Brainwaves.\+cs}}.
+
+\Hypertarget{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_a10d1f43856ef32f2562ea5e5da819b95}\index{EEGGaming.Core.Data.NonDataModels.Brainwaves@{EEGGaming.Core.Data.NonDataModels.Brainwaves}!Delta\_Rel\_ch1@{Delta\_Rel\_ch1}}
+\index{Delta\_Rel\_ch1@{Delta\_Rel\_ch1}!EEGGaming.Core.Data.NonDataModels.Brainwaves@{EEGGaming.Core.Data.NonDataModels.Brainwaves}}
+\doxysubsubsection{\texorpdfstring{Delta\_Rel\_ch1}{Delta\_Rel\_ch1}}
+{\footnotesize\ttfamily \label{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_a10d1f43856ef32f2562ea5e5da819b95} 
+double EEGGaming.\+Core.\+Data.\+Non\+Data\+Models.\+Brainwaves.\+Delta\+\_\+\+Rel\+\_\+ch1\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The Relative value of Delta band from the channel 1. 
+
+
+
+Definition at line \mbox{\hyperlink{_brainwaves_8cs_source_l00115}{115}} of file \mbox{\hyperlink{_brainwaves_8cs_source}{Brainwaves.\+cs}}.
+
+\Hypertarget{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_a2d8355effb5729dc271faf9bc1b8aa2b}\index{EEGGaming.Core.Data.NonDataModels.Brainwaves@{EEGGaming.Core.Data.NonDataModels.Brainwaves}!Delta\_Rel\_ch2@{Delta\_Rel\_ch2}}
+\index{Delta\_Rel\_ch2@{Delta\_Rel\_ch2}!EEGGaming.Core.Data.NonDataModels.Brainwaves@{EEGGaming.Core.Data.NonDataModels.Brainwaves}}
+\doxysubsubsection{\texorpdfstring{Delta\_Rel\_ch2}{Delta\_Rel\_ch2}}
+{\footnotesize\ttfamily \label{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_a2d8355effb5729dc271faf9bc1b8aa2b} 
+double EEGGaming.\+Core.\+Data.\+Non\+Data\+Models.\+Brainwaves.\+Delta\+\_\+\+Rel\+\_\+ch2\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The Relative value of Delta band from the channel 2. 
+
+
+
+Definition at line \mbox{\hyperlink{_brainwaves_8cs_source_l00158}{158}} of file \mbox{\hyperlink{_brainwaves_8cs_source}{Brainwaves.\+cs}}.
+
+\Hypertarget{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_ab4063c82226ea208a66f02269c3bb72e}\index{EEGGaming.Core.Data.NonDataModels.Brainwaves@{EEGGaming.Core.Data.NonDataModels.Brainwaves}!Gamma1\_avgch@{Gamma1\_avgch}}
+\index{Gamma1\_avgch@{Gamma1\_avgch}!EEGGaming.Core.Data.NonDataModels.Brainwaves@{EEGGaming.Core.Data.NonDataModels.Brainwaves}}
+\doxysubsubsection{\texorpdfstring{Gamma1\_avgch}{Gamma1\_avgch}}
+{\footnotesize\ttfamily \label{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_ab4063c82226ea208a66f02269c3bb72e} 
+double EEGGaming.\+Core.\+Data.\+Non\+Data\+Models.\+Brainwaves.\+Gamma1\+\_\+avgch\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The average of Gamma band value of the 2 channels. 
+
+
+
+Definition at line \mbox{\hyperlink{_brainwaves_8cs_source_l00064}{64}} of file \mbox{\hyperlink{_brainwaves_8cs_source}{Brainwaves.\+cs}}.
+
+\Hypertarget{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_aac1400696bdef6ef00f7dfb8dd6c0ddc}\index{EEGGaming.Core.Data.NonDataModels.Brainwaves@{EEGGaming.Core.Data.NonDataModels.Brainwaves}!Gamma1\_ch1@{Gamma1\_ch1}}
+\index{Gamma1\_ch1@{Gamma1\_ch1}!EEGGaming.Core.Data.NonDataModels.Brainwaves@{EEGGaming.Core.Data.NonDataModels.Brainwaves}}
+\doxysubsubsection{\texorpdfstring{Gamma1\_ch1}{Gamma1\_ch1}}
+{\footnotesize\ttfamily \label{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_aac1400696bdef6ef00f7dfb8dd6c0ddc} 
+double EEGGaming.\+Core.\+Data.\+Non\+Data\+Models.\+Brainwaves.\+Gamma1\+\_\+ch1\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The value of Gamma band from the channel 1. 
+
+
+
+Definition at line \mbox{\hyperlink{_brainwaves_8cs_source_l00111}{111}} of file \mbox{\hyperlink{_brainwaves_8cs_source}{Brainwaves.\+cs}}.
+
+\Hypertarget{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_a9d2828c831703530d75da6f2a64075ea}\index{EEGGaming.Core.Data.NonDataModels.Brainwaves@{EEGGaming.Core.Data.NonDataModels.Brainwaves}!Gamma1\_ch2@{Gamma1\_ch2}}
+\index{Gamma1\_ch2@{Gamma1\_ch2}!EEGGaming.Core.Data.NonDataModels.Brainwaves@{EEGGaming.Core.Data.NonDataModels.Brainwaves}}
+\doxysubsubsection{\texorpdfstring{Gamma1\_ch2}{Gamma1\_ch2}}
+{\footnotesize\ttfamily \label{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_a9d2828c831703530d75da6f2a64075ea} 
+double EEGGaming.\+Core.\+Data.\+Non\+Data\+Models.\+Brainwaves.\+Gamma1\+\_\+ch2\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The value of Gamma band from the channel 2. 
+
+
+
+Definition at line \mbox{\hyperlink{_brainwaves_8cs_source_l00154}{154}} of file \mbox{\hyperlink{_brainwaves_8cs_source}{Brainwaves.\+cs}}.
+
+\Hypertarget{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_acfa0890ecc394496ec2a6c936ddad133}\index{EEGGaming.Core.Data.NonDataModels.Brainwaves@{EEGGaming.Core.Data.NonDataModels.Brainwaves}!Gamma1\_Rel\_avgch@{Gamma1\_Rel\_avgch}}
+\index{Gamma1\_Rel\_avgch@{Gamma1\_Rel\_avgch}!EEGGaming.Core.Data.NonDataModels.Brainwaves@{EEGGaming.Core.Data.NonDataModels.Brainwaves}}
+\doxysubsubsection{\texorpdfstring{Gamma1\_Rel\_avgch}{Gamma1\_Rel\_avgch}}
+{\footnotesize\ttfamily \label{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_acfa0890ecc394496ec2a6c936ddad133} 
+double EEGGaming.\+Core.\+Data.\+Non\+Data\+Models.\+Brainwaves.\+Gamma1\+\_\+\+Rel\+\_\+avgch\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The average of Gamma band Relative value of the 2 channels. 
+
+
+
+Definition at line \mbox{\hyperlink{_brainwaves_8cs_source_l00088}{88}} of file \mbox{\hyperlink{_brainwaves_8cs_source}{Brainwaves.\+cs}}.
+
+\Hypertarget{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_ac54a8ed1b67a480413702c8b2cd13992}\index{EEGGaming.Core.Data.NonDataModels.Brainwaves@{EEGGaming.Core.Data.NonDataModels.Brainwaves}!Gamma1\_Rel\_ch1@{Gamma1\_Rel\_ch1}}
+\index{Gamma1\_Rel\_ch1@{Gamma1\_Rel\_ch1}!EEGGaming.Core.Data.NonDataModels.Brainwaves@{EEGGaming.Core.Data.NonDataModels.Brainwaves}}
+\doxysubsubsection{\texorpdfstring{Gamma1\_Rel\_ch1}{Gamma1\_Rel\_ch1}}
+{\footnotesize\ttfamily \label{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_ac54a8ed1b67a480413702c8b2cd13992} 
+double EEGGaming.\+Core.\+Data.\+Non\+Data\+Models.\+Brainwaves.\+Gamma1\+\_\+\+Rel\+\_\+ch1\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The Relative value of Gamma band from the channel 1. 
+
+
+
+Definition at line \mbox{\hyperlink{_brainwaves_8cs_source_l00132}{132}} of file \mbox{\hyperlink{_brainwaves_8cs_source}{Brainwaves.\+cs}}.
+
+\Hypertarget{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_a3a1fc86d09f84045859f4933e3dcf0a7}\index{EEGGaming.Core.Data.NonDataModels.Brainwaves@{EEGGaming.Core.Data.NonDataModels.Brainwaves}!Gamma1\_Rel\_ch2@{Gamma1\_Rel\_ch2}}
+\index{Gamma1\_Rel\_ch2@{Gamma1\_Rel\_ch2}!EEGGaming.Core.Data.NonDataModels.Brainwaves@{EEGGaming.Core.Data.NonDataModels.Brainwaves}}
+\doxysubsubsection{\texorpdfstring{Gamma1\_Rel\_ch2}{Gamma1\_Rel\_ch2}}
+{\footnotesize\ttfamily \label{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_a3a1fc86d09f84045859f4933e3dcf0a7} 
+double EEGGaming.\+Core.\+Data.\+Non\+Data\+Models.\+Brainwaves.\+Gamma1\+\_\+\+Rel\+\_\+ch2\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The Relative value of Gamma band from the channel 2. 
+
+
+
+Definition at line \mbox{\hyperlink{_brainwaves_8cs_source_l00176}{176}} of file \mbox{\hyperlink{_brainwaves_8cs_source}{Brainwaves.\+cs}}.
+
+\Hypertarget{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_a80f504aeac234e88a8818e6936823ab9}\index{EEGGaming.Core.Data.NonDataModels.Brainwaves@{EEGGaming.Core.Data.NonDataModels.Brainwaves}!Marker@{Marker}}
+\index{Marker@{Marker}!EEGGaming.Core.Data.NonDataModels.Brainwaves@{EEGGaming.Core.Data.NonDataModels.Brainwaves}}
+\doxysubsubsection{\texorpdfstring{Marker}{Marker}}
+{\footnotesize\ttfamily \label{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_a80f504aeac234e88a8818e6936823ab9} 
+byte EEGGaming.\+Core.\+Data.\+Non\+Data\+Models.\+Brainwaves.\+Marker\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The packet marker. 
+
+
+
+Definition at line \mbox{\hyperlink{_brainwaves_8cs_source_l00025}{25}} of file \mbox{\hyperlink{_brainwaves_8cs_source}{Brainwaves.\+cs}}.
+
+\Hypertarget{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_ab00930f70ab5d893084ea1fbbd4da426}\index{EEGGaming.Core.Data.NonDataModels.Brainwaves@{EEGGaming.Core.Data.NonDataModels.Brainwaves}!MiliSecond@{MiliSecond}}
+\index{MiliSecond@{MiliSecond}!EEGGaming.Core.Data.NonDataModels.Brainwaves@{EEGGaming.Core.Data.NonDataModels.Brainwaves}}
+\doxysubsubsection{\texorpdfstring{MiliSecond}{MiliSecond}}
+{\footnotesize\ttfamily \label{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_ab00930f70ab5d893084ea1fbbd4da426} 
+double EEGGaming.\+Core.\+Data.\+Non\+Data\+Models.\+Brainwaves.\+Mili\+Second\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The milisecond the packet is captured. 
+
+
+
+Definition at line \mbox{\hyperlink{_brainwaves_8cs_source_l00041}{41}} of file \mbox{\hyperlink{_brainwaves_8cs_source}{Brainwaves.\+cs}}.
+
+\Hypertarget{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_aa16d9b59118af76918fd6b4cc701aa6c}\index{EEGGaming.Core.Data.NonDataModels.Brainwaves@{EEGGaming.Core.Data.NonDataModels.Brainwaves}!PackNumber@{PackNumber}}
+\index{PackNumber@{PackNumber}!EEGGaming.Core.Data.NonDataModels.Brainwaves@{EEGGaming.Core.Data.NonDataModels.Brainwaves}}
+\doxysubsubsection{\texorpdfstring{PackNumber}{PackNumber}}
+{\footnotesize\ttfamily \label{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_aa16d9b59118af76918fd6b4cc701aa6c} 
+uint EEGGaming.\+Core.\+Data.\+Non\+Data\+Models.\+Brainwaves.\+Pack\+Number\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Thenumber of the packet. 
+
+
+
+Definition at line \mbox{\hyperlink{_brainwaves_8cs_source_l00021}{21}} of file \mbox{\hyperlink{_brainwaves_8cs_source}{Brainwaves.\+cs}}.
+
+\Hypertarget{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_ae28ec52a5a7be45534f6a6560af0426d}\index{EEGGaming.Core.Data.NonDataModels.Brainwaves@{EEGGaming.Core.Data.NonDataModels.Brainwaves}!Second@{Second}}
+\index{Second@{Second}!EEGGaming.Core.Data.NonDataModels.Brainwaves@{EEGGaming.Core.Data.NonDataModels.Brainwaves}}
+\doxysubsubsection{\texorpdfstring{Second}{Second}}
+{\footnotesize\ttfamily \label{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_ae28ec52a5a7be45534f6a6560af0426d} 
+double EEGGaming.\+Core.\+Data.\+Non\+Data\+Models.\+Brainwaves.\+Second\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The second the packet is captured. 
+
+
+
+Definition at line \mbox{\hyperlink{_brainwaves_8cs_source_l00037}{37}} of file \mbox{\hyperlink{_brainwaves_8cs_source}{Brainwaves.\+cs}}.
+
+\Hypertarget{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_a4bf15df56f8fb89009e39c38406c1688}\index{EEGGaming.Core.Data.NonDataModels.Brainwaves@{EEGGaming.Core.Data.NonDataModels.Brainwaves}!Theta\_avgch@{Theta\_avgch}}
+\index{Theta\_avgch@{Theta\_avgch}!EEGGaming.Core.Data.NonDataModels.Brainwaves@{EEGGaming.Core.Data.NonDataModels.Brainwaves}}
+\doxysubsubsection{\texorpdfstring{Theta\_avgch}{Theta\_avgch}}
+{\footnotesize\ttfamily \label{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_a4bf15df56f8fb89009e39c38406c1688} 
+double EEGGaming.\+Core.\+Data.\+Non\+Data\+Models.\+Brainwaves.\+Theta\+\_\+avgch\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The average of Theta band value of the 2 channels. 
+
+
+
+Definition at line \mbox{\hyperlink{_brainwaves_8cs_source_l00050}{50}} of file \mbox{\hyperlink{_brainwaves_8cs_source}{Brainwaves.\+cs}}.
+
+\Hypertarget{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_aaf137cc421c7b97930fa849cb5ffb7ec}\index{EEGGaming.Core.Data.NonDataModels.Brainwaves@{EEGGaming.Core.Data.NonDataModels.Brainwaves}!Theta\_ch1@{Theta\_ch1}}
+\index{Theta\_ch1@{Theta\_ch1}!EEGGaming.Core.Data.NonDataModels.Brainwaves@{EEGGaming.Core.Data.NonDataModels.Brainwaves}}
+\doxysubsubsection{\texorpdfstring{Theta\_ch1}{Theta\_ch1}}
+{\footnotesize\ttfamily \label{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_aaf137cc421c7b97930fa849cb5ffb7ec} 
+double EEGGaming.\+Core.\+Data.\+Non\+Data\+Models.\+Brainwaves.\+Theta\+\_\+ch1\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The value of Theta band from the channel 1. 
+
+
+
+Definition at line \mbox{\hyperlink{_brainwaves_8cs_source_l00097}{97}} of file \mbox{\hyperlink{_brainwaves_8cs_source}{Brainwaves.\+cs}}.
+
+\Hypertarget{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_ae2011ba99ff79d76bee549c3ee565756}\index{EEGGaming.Core.Data.NonDataModels.Brainwaves@{EEGGaming.Core.Data.NonDataModels.Brainwaves}!Theta\_ch2@{Theta\_ch2}}
+\index{Theta\_ch2@{Theta\_ch2}!EEGGaming.Core.Data.NonDataModels.Brainwaves@{EEGGaming.Core.Data.NonDataModels.Brainwaves}}
+\doxysubsubsection{\texorpdfstring{Theta\_ch2}{Theta\_ch2}}
+{\footnotesize\ttfamily \label{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_ae2011ba99ff79d76bee549c3ee565756} 
+double EEGGaming.\+Core.\+Data.\+Non\+Data\+Models.\+Brainwaves.\+Theta\+\_\+ch2\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The value of Theta band from the channel 2. 
+
+
+
+Definition at line \mbox{\hyperlink{_brainwaves_8cs_source_l00140}{140}} of file \mbox{\hyperlink{_brainwaves_8cs_source}{Brainwaves.\+cs}}.
+
+\Hypertarget{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_acabf8affae82307c0668b465b68e767c}\index{EEGGaming.Core.Data.NonDataModels.Brainwaves@{EEGGaming.Core.Data.NonDataModels.Brainwaves}!Theta\_Rel\_avgch@{Theta\_Rel\_avgch}}
+\index{Theta\_Rel\_avgch@{Theta\_Rel\_avgch}!EEGGaming.Core.Data.NonDataModels.Brainwaves@{EEGGaming.Core.Data.NonDataModels.Brainwaves}}
+\doxysubsubsection{\texorpdfstring{Theta\_Rel\_avgch}{Theta\_Rel\_avgch}}
+{\footnotesize\ttfamily \label{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_acabf8affae82307c0668b465b68e767c} 
+double EEGGaming.\+Core.\+Data.\+Non\+Data\+Models.\+Brainwaves.\+Theta\+\_\+\+Rel\+\_\+avgch\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The average of Theta band Relative value of the 2 channels. 
+
+
+
+Definition at line \mbox{\hyperlink{_brainwaves_8cs_source_l00074}{74}} of file \mbox{\hyperlink{_brainwaves_8cs_source}{Brainwaves.\+cs}}.
+
+\Hypertarget{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_a403ba98fa57db02035a9ea6c28f0f478}\index{EEGGaming.Core.Data.NonDataModels.Brainwaves@{EEGGaming.Core.Data.NonDataModels.Brainwaves}!Theta\_Rel\_ch1@{Theta\_Rel\_ch1}}
+\index{Theta\_Rel\_ch1@{Theta\_Rel\_ch1}!EEGGaming.Core.Data.NonDataModels.Brainwaves@{EEGGaming.Core.Data.NonDataModels.Brainwaves}}
+\doxysubsubsection{\texorpdfstring{Theta\_Rel\_ch1}{Theta\_Rel\_ch1}}
+{\footnotesize\ttfamily \label{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_a403ba98fa57db02035a9ea6c28f0f478} 
+double EEGGaming.\+Core.\+Data.\+Non\+Data\+Models.\+Brainwaves.\+Theta\+\_\+\+Rel\+\_\+ch1\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The Relative value of Theta band from the channel 1. 
+
+
+
+Definition at line \mbox{\hyperlink{_brainwaves_8cs_source_l00119}{119}} of file \mbox{\hyperlink{_brainwaves_8cs_source}{Brainwaves.\+cs}}.
+
+\Hypertarget{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_a5f85e0db6ee5b85b636783e1d0c0422d}\index{EEGGaming.Core.Data.NonDataModels.Brainwaves@{EEGGaming.Core.Data.NonDataModels.Brainwaves}!Theta\_Rel\_ch2@{Theta\_Rel\_ch2}}
+\index{Theta\_Rel\_ch2@{Theta\_Rel\_ch2}!EEGGaming.Core.Data.NonDataModels.Brainwaves@{EEGGaming.Core.Data.NonDataModels.Brainwaves}}
+\doxysubsubsection{\texorpdfstring{Theta\_Rel\_ch2}{Theta\_Rel\_ch2}}
+{\footnotesize\ttfamily \label{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_a5f85e0db6ee5b85b636783e1d0c0422d} 
+double EEGGaming.\+Core.\+Data.\+Non\+Data\+Models.\+Brainwaves.\+Theta\+\_\+\+Rel\+\_\+ch2\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The Relative value of Theta band from the channel 2. 
+
+
+
+Definition at line \mbox{\hyperlink{_brainwaves_8cs_source_l00162}{162}} of file \mbox{\hyperlink{_brainwaves_8cs_source}{Brainwaves.\+cs}}.
+
+\Hypertarget{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_a2e3a64fab9331c33712a488543cff3da}\index{EEGGaming.Core.Data.NonDataModels.Brainwaves@{EEGGaming.Core.Data.NonDataModels.Brainwaves}!Time@{Time}}
+\index{Time@{Time}!EEGGaming.Core.Data.NonDataModels.Brainwaves@{EEGGaming.Core.Data.NonDataModels.Brainwaves}}
+\doxysubsubsection{\texorpdfstring{Time}{Time}}
+{\footnotesize\ttfamily \label{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_a2e3a64fab9331c33712a488543cff3da} 
+string EEGGaming.\+Core.\+Data.\+Non\+Data\+Models.\+Brainwaves.\+Time\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The time the packet is captured. 
+
+
+
+Definition at line \mbox{\hyperlink{_brainwaves_8cs_source_l00033}{33}} of file \mbox{\hyperlink{_brainwaves_8cs_source}{Brainwaves.\+cs}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Cloud Folder/\+One\+Drive/\+My Programs/\+Post-\/\+Graduate/\+Master in Information Systems (\+PLS)/\+Thesis/\+Code/\+EEGGaming/\+EEGGaming.\+Core/\+Data/\+Non\+Data\+Models/Brainwaves.\+cs\end{DoxyCompactItemize}

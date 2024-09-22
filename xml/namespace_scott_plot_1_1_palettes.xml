@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="namespace_scott_plot_1_1_palettes" kind="namespace" language="C#">
+    <compoundname>ScottPlot::Palettes</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="EEGGaming.Core/Managers/UserManager.cs" line="5" column="25"/>
+  </compounddef>
+</doxygen>

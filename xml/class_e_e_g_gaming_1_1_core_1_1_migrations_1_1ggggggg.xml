@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="class_e_e_g_gaming_1_1_core_1_1_migrations_1_1ggggggg" kind="class" language="C#" prot="public">
+    <compoundname>EEGGaming::Core::Migrations::ggggggg</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Migration</basecompoundref>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_e_e_g_gaming_1_1_core_1_1_migrations_1_1ggggggg_1ac6796285af6dc9874105dcc4ae18f6db" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void EEGGaming.Core.Migrations.ggggggg.Up</definition>
+        <argsstring>(MigrationBuilder migrationBuilder)</argsstring>
+        <name>Up</name>
+        <qualifiedname>EEGGaming.Core.Migrations.ggggggg.Up</qualifiedname>
+        <param>
+          <type>MigrationBuilder</type>
+          <declname>migrationBuilder</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Migrations/20240831175225_ggggggg.cs" line="11" column="33" bodyfile="EEGGaming.Core/Migrations/20240831175225_ggggggg.cs" bodystart="11" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_e_e_g_gaming_1_1_core_1_1_migrations_1_1ggggggg_1a8a110df446ddfd4e7a058607334d8ae1" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void EEGGaming.Core.Migrations.ggggggg.Down</definition>
+        <argsstring>(MigrationBuilder migrationBuilder)</argsstring>
+        <name>Down</name>
+        <qualifiedname>EEGGaming.Core.Migrations.ggggggg.Down</qualifiedname>
+        <param>
+          <type>MigrationBuilder</type>
+          <declname>migrationBuilder</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Migrations/20240831175225_ggggggg.cs" line="17" column="33" bodyfile="EEGGaming.Core/Migrations/20240831175225_ggggggg.cs" bodystart="17" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_e_e_g_gaming_1_1_core_1_1_migrations_1_1ggggggg_1aab452b9d7e9b4b16232176fbb5e83b6f" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void EEGGaming.Core.Migrations.ggggggg.BuildTargetModel</definition>
+        <argsstring>(ModelBuilder modelBuilder)</argsstring>
+        <name>BuildTargetModel</name>
+        <qualifiedname>EEGGaming.Core.Migrations.ggggggg.BuildTargetModel</qualifiedname>
+        <param>
+          <type>ModelBuilder</type>
+          <declname>modelBuilder</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Migrations/20240831175225_ggggggg.Designer.cs" line="18" column="33" bodyfile="EEGGaming.Core/Migrations/20240831175225_ggggggg.Designer.cs" bodystart="18" bodyend="202"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>EEGGaming.Core.Migrations.ggggggg</label>
+        <link refid="class_e_e_g_gaming_1_1_core_1_1_migrations_1_1ggggggg"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Migration</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>EEGGaming.Core.Migrations.ggggggg</label>
+        <link refid="class_e_e_g_gaming_1_1_core_1_1_migrations_1_1ggggggg"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Migration</label>
+      </node>
+    </collaborationgraph>
+    <location file="EEGGaming.Core/Migrations/20240831175225_ggggggg.cs" line="8" column="19" bodyfile="EEGGaming.Core/Migrations/20240831175225_ggggggg.Designer.cs" bodystart="16" bodyend="203"/>
+    <listofallmembers>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_migrations_1_1ggggggg_1aab452b9d7e9b4b16232176fbb5e83b6f" prot="protected" virt="non-virtual"><scope>EEGGaming::Core::Migrations::ggggggg</scope><name>BuildTargetModel</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_migrations_1_1ggggggg_1a8a110df446ddfd4e7a058607334d8ae1" prot="protected" virt="non-virtual"><scope>EEGGaming::Core::Migrations::ggggggg</scope><name>Down</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_migrations_1_1ggggggg_1ac6796285af6dc9874105dcc4ae18f6db" prot="protected" virt="non-virtual"><scope>EEGGaming::Core::Migrations::ggggggg</scope><name>Up</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

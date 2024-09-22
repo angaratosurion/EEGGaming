@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="namespace_e_e_g_gaming_1_1_core_1_1_migrations" kind="namespace" language="C#">
+    <compoundname>EEGGaming::Core::Migrations</compoundname>
+    <innerclass refid="class_e_e_g_gaming_1_1_core_1_1_migrations_1_1addedscoreongamingsession" prot="public">EEGGaming::Core::Migrations::addedscoreongamingsession</innerclass>
+    <innerclass refid="class_e_e_g_gaming_1_1_core_1_1_migrations_1_1addedusername" prot="public">EEGGaming::Core::Migrations::addedusername</innerclass>
+    <innerclass refid="class_e_e_g_gaming_1_1_core_1_1_migrations_1_1changedscoretype" prot="public">EEGGaming::Core::Migrations::changedscoretype</innerclass>
+    <innerclass refid="class_e_e_g_gaming_1_1_core_1_1_migrations_1_1changesoretype" prot="public">EEGGaming::Core::Migrations::changesoretype</innerclass>
+    <innerclass refid="class_e_e_g_gaming_1_1_core_1_1_migrations_1_1chnagedtobrainwaveemodel" prot="public">EEGGaming::Core::Migrations::chnagedtobrainwaveemodel</innerclass>
+    <innerclass refid="class_e_e_g_gaming_1_1_core_1_1_migrations_1_1dddddddd" prot="public">EEGGaming::Core::Migrations::dddddddd</innerclass>
+    <innerclass refid="class_e_e_g_gaming_1_1_core_1_1_migrations_1_1_e_e_g_gaming_db_context_model_snapshot" prot="public">EEGGaming::Core::Migrations::EEGGamingDbContextModelSnapshot</innerclass>
+    <innerclass refid="class_e_e_g_gaming_1_1_core_1_1_migrations_1_1fff" prot="public">EEGGaming::Core::Migrations::fff</innerclass>
+    <innerclass refid="class_e_e_g_gaming_1_1_core_1_1_migrations_1_1ggggggg" prot="public">EEGGaming::Core::Migrations::ggggggg</innerclass>
+    <innerclass refid="class_e_e_g_gaming_1_1_core_1_1_migrations_1_1initailcreation" prot="public">EEGGaming::Core::Migrations::initailcreation</innerclass>
+    <innerclass refid="class_e_e_g_gaming_1_1_core_1_1_migrations_1_1initial" prot="public">EEGGaming::Core::Migrations::initial</innerclass>
+    <innerclass refid="class_e_e_g_gaming_1_1_core_1_1_migrations_1_1madethenamepropertyakey" prot="public">EEGGaming::Core::Migrations::madethenamepropertyakey</innerclass>
+    <innerclass refid="class_e_e_g_gaming_1_1_core_1_1_migrations_1_1removedmode" prot="public">EEGGaming::Core::Migrations::removedmode</innerclass>
+    <innerclass refid="class_e_e_g_gaming_1_1_core_1_1_migrations_1_1unmadethenamepropertyakey" prot="public">EEGGaming::Core::Migrations::unmadethenamepropertyakey</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="EEGGaming.Core/Migrations/20230828223053_initial.cs" line="6" column="1"/>
+  </compounddef>
+</doxygen>

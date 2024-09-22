@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="class_h_sdr_horizontal_speed" kind="class" language="C#" prot="public">
+    <compoundname>HSdrHorizontalSpeed</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">HSlider</basecompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_h_sdr_horizontal_speed_1aeb52719977ab833664b996073195ec58" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void HSdrHorizontalSpeed._Ready</definition>
+        <argsstring>()</argsstring>
+        <name>_Ready</name>
+        <qualifiedname>HSdrHorizontalSpeed._Ready</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BlinkBird/Code/HSdrHorizontalSpeed.cs" line="8" column="26" bodyfile="BlinkBird/Code/HSdrHorizontalSpeed.cs" bodystart="8" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="function" id="class_h_sdr_horizontal_speed_1aaca49ca4ce0e6dcc92c109f91adf4283" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void HSdrHorizontalSpeed._Process</definition>
+        <argsstring>(double delta)</argsstring>
+        <name>_Process</name>
+        <qualifiedname>HSdrHorizontalSpeed._Process</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>delta</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BlinkBird/Code/HSdrHorizontalSpeed.cs" line="14" column="22" bodyfile="BlinkBird/Code/HSdrHorizontalSpeed.cs" bodystart="14" bodyend="20"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>HSdrHorizontalSpeed</label>
+        <link refid="class_h_sdr_horizontal_speed"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>HSlider</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>HSdrHorizontalSpeed</label>
+        <link refid="class_h_sdr_horizontal_speed"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>HSlider</label>
+      </node>
+    </collaborationgraph>
+    <location file="BlinkBird/Code/HSdrHorizontalSpeed.cs" line="4" column="15" bodyfile="BlinkBird/Code/HSdrHorizontalSpeed.cs" bodystart="5" bodyend="21"/>
+    <listofallmembers>
+      <member refid="class_h_sdr_horizontal_speed_1aaca49ca4ce0e6dcc92c109f91adf4283" prot="public" virt="non-virtual"><scope>HSdrHorizontalSpeed</scope><name>_Process</name></member>
+      <member refid="class_h_sdr_horizontal_speed_1aeb52719977ab833664b996073195ec58" prot="public" virt="non-virtual"><scope>HSdrHorizontalSpeed</scope><name>_Ready</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

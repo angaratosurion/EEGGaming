@@ -1,0 +1,570 @@
+.TH "EEGGaming.Core.Managers.BrainWaveRecordManager" 3 "Version 0.2.6.0" "EEGGaming And Blinkbird" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+EEGGaming.Core.Managers.BrainWaveRecordManager \- The Manager that manages the records of the BrainWave table and detectsif an eye blink occured\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBEEGGaming\&.Core\&.Managers\&.BaseManager\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBLoadCsv\fP (string filename)"
+.br
+.RI "It Loads thedata from the given file\&. "
+.ti -1c
+.RI "void \fBMakeGraphs\fP (string filename)"
+.br
+.RI "Generates the graphs in images\&. "
+.ti -1c
+.RI "void \fBConnect\fP (SensorInfo sens)"
+.br
+.RI "Connects to the sensor with the given info\&. "
+.ti -1c
+.RI "void \fBStart\fP ()"
+.br
+.RI "Starts the capture of brainwaves\&. "
+.ti -1c
+.RI "void \fBStop\fP ()"
+.br
+.RI "Stops the capture of brainwaves\&. "
+.ti -1c
+.RI "void \fBStopAndSavetoDatabse\fP ()"
+.br
+.RI "Stops the capture of brainwaves and saves them to the database\&. "
+.ti -1c
+.RI "async void \fBSavetoDatabse\fP ()"
+.br
+.RI "Saves the BrainWaves to the database\&. "
+.ti -1c
+.RI "void \fBSaveToCSV\fP (string filename)"
+.br
+.RI "Saves the BrainWave datato Comma seperated file\&. "
+.ti -1c
+.RI "void \fBFilterArrayInPlace\fP (double[] vals)"
+.br
+.RI "Applies the filters\&. "
+.ti -1c
+.RI "void \fBInitFiltering\fP ()"
+.br
+.RI "Initites the array with current filters\&. "
+.ti -1c
+.RI "Boolean \fBDetectBlink\fP ()"
+.br
+.RI "Detects if user had blinked or not\&. "
+.ti -1c
+.RI "Boolean \fBDetectBlinkusingAlpha\fP (double[] oldvals, double[] chanel1vals)"
+.br
+.RI "Detects eye blinks using the alpha band\&. "
+.ti -1c
+.RI "void \fBAddNew\fP (\fBBrainwavesRecord\fP record)"
+.br
+.RI "Adds a new record in the Brainwave's table\&. "
+.ti -1c
+.RI "async Task \fBAddNewRange\fP (\fBBrainwavesRecord\fP[] record)"
+.br
+.RI "Add an array of brainwaves data in the brainwaves' table\&. "
+.ti -1c
+.RI "void \fBEdit\fP (int id, \fBBrainwavesRecord\fP record)"
+.br
+.RI "Edits the record with the given id\&. "
+.ti -1c
+.RI "void \fBEditRange\fP (\fBBrainwavesRecord\fP[] records)"
+.br
+.RI "Edits a numberof Brainwave records\&. "
+.ti -1c
+.RI "List< \fBBrainwavesRecord\fP > \fBGetBrainwavesFromDB\fP ()"
+.br
+.RI "Gets the Records from the BrainWaves' table\&. "
+.ti -1c
+.RI "List< \fBBrainwavesRecord\fP > \fBGetBrainwavesFromDBByUserId\fP (int id)"
+.br
+.RI "Get the Records from the BrainWaves' table of the user with the given id\&. "
+.ti -1c
+.RI "\fBBrainwavesRecord\fP \fBGetBrainwaveFromDBById\fP (int id)"
+.br
+.RI "Gets the BrainWave record by it's Id\&. "
+.ti -1c
+.RI "List< \fBBrainwavesRecord\fP > \fBGetBrainwavesFromDBByGamingSessionId\fP (int id)"
+.br
+.RI "Get the Records from the BrainWaves' table of the gamingsession with the given id\&. "
+.ti -1c
+.RI "List< \fBBrainwavesRecord\fP > \fBGetBrainwavesFromDBByMilisconds\fP (double milsecond)"
+.br
+.RI "the Records from the BrainWaves' table by the miliseconds "
+.in -1c
+
+Public Member Functions inherited from \fBEEGGaming\&.Core\&.Managers\&.BaseManager\fP
+.in +1c
+.ti -1c
+.RI "void \fBCreateDatabase\fP ()"
+.br
+.RI "Creates the Database\&. "
+.ti -1c
+.RI "int \fBPredictLastId\fP (string tablename)"
+.br
+.RI "It predicts the last value of the id's property from the given table's name\&. "
+.in -1c
+.SS "Static Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "static NeuroSDK\&.Scanner \fBscanner\fP = new NeuroSDK\&.Scanner(SensorFamily\&.SensorLEBrainBit)"
+.br
+.in -1c
+.SS "Properties"
+
+.in +1c
+.ti -1c
+.RI "List< \fBBrainwavesRecord\fP > \fBRecords\fP\fR [get, set]\fP"
+.br
+.RI "The Brainwave records curently captured\&. "
+.ti -1c
+.RI "System\&.Timers\&.Timer \fBtmrBlink\fP\fR [get, set]\fP"
+.br
+.RI "The timer for the Blink\&. "
+.ti -1c
+.RI "int \fBSamplesRecorded\fP\fR [get]\fP"
+.br
+.RI "The namber of the recorded samples/records\&. "
+.ti -1c
+.RI "Boolean \fBEnableFiltering\fP\fR [get, set]\fP"
+.br
+.RI "Eanble or Disable the ability to filter the samples\&. "
+.ti -1c
+.RI "int \fBSamplingRate\fP\fR [get, set]\fP"
+.br
+.RI "The Sample Rate the sensor will capture samples\&. "
+.ti -1c
+.RI "int \fBFFtWindow\fP\fR [get, set]\fP"
+.br
+.RI "The fftWindow\&. "
+.ti -1c
+.RI "int \fBProcessWinRate\fP\fR [get, set]\fP"
+.br
+.RI "The ProcessWinRate\&. "
+.ti -1c
+.RI "double \fBFFTBinsFor1Hz\fP\fR [get]\fP"
+.br
+.RI "The FFT Bins For 1Hz\&. "
+.ti -1c
+.RI "BrainBitSensor? \fBSensor\fP\fR [get]\fP"
+.br
+.RI "The Sensor that captures the brainwaves\&. "
+.ti -1c
+.RI "Boolean \fBBlinked\fP\fR [get, set]\fP"
+.br
+.RI "The result of the eye blink detection\&. "
+.ti -1c
+.RI "int \fBActiveUserId\fP\fR [get, set]\fP"
+.br
+.RI "The id of the user it captures the packet from\&. "
+.ti -1c
+.RI "int \fBActiveGamingSessionId\fP\fR [get, set]\fP"
+.br
+.RI "The Id of the GamingSession that occurs\&. "
+.ti -1c
+.RI "bool \fBUsesDb\fP\fR [get, set]\fP"
+.br
+.RI "It sets whenever the library will use Database or not\&. "
+.in -1c
+
+Properties inherited from \fBEEGGaming\&.Core\&.Managers\&.BaseManager\fP
+.in +1c
+.ti -1c
+.RI "\fBEEGGamingDbContext\fP \fBDbContext\fP\fR [get, set]\fP"
+.br
+.RI "The DatabaseContext of the library\&. "
+.in -1c
+.SS "Events"
+
+.in +1c
+.ti -1c
+.RI "OnBlinked \fBOnBlinked\fP"
+.br
+.RI "This event occurs when an eye blink occured\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+The Manager that manages the records of the BrainWave table and detectsif an eye blink occured\&. 
+.PP
+Definition at line \fB26\fP of file \fBBrainWaveRecordManager\&.cs\fP\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "EEGGaming\&.Core\&.Managers\&.BrainWaveRecordManager\&.BrainWaveRecordManager ()"
+
+.PP
+Definition at line \fB98\fP of file \fBBrainWaveRecordManager\&.cs\fP\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void EEGGaming\&.Core\&.Managers\&.BrainWaveRecordManager\&.AddNew (\fBBrainwavesRecord\fP record)"
+
+.PP
+Adds a new record in the Brainwave's table\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIrecord\fP record to be added
+.RE
+.PP
+
+.PP
+Definition at line \fB887\fP of file \fBBrainWaveRecordManager\&.cs\fP\&.
+.SS "async Task EEGGaming\&.Core\&.Managers\&.BrainWaveRecordManager\&.AddNewRange (\fBBrainwavesRecord\fP[] record)"
+
+.PP
+Add an array of brainwaves data in the brainwaves' table\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIrecord\fP an array of brainwaves
+.RE
+.PP
+
+.PP
+Definition at line \fB913\fP of file \fBBrainWaveRecordManager\&.cs\fP\&.
+.SS "void EEGGaming\&.Core\&.Managers\&.BrainWaveRecordManager\&.Connect (SensorInfo sens)"
+
+.PP
+Connects to the sensor with the given info\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIsens\fP information of the sensor to connect
+.RE
+.PP
+
+.PP
+Definition at line \fB339\fP of file \fBBrainWaveRecordManager\&.cs\fP\&.
+.SS "Boolean EEGGaming\&.Core\&.Managers\&.BrainWaveRecordManager\&.DetectBlink ()"
+
+.PP
+Detects if user had blinked or not\&. 
+.PP
+\fBReturns\fP
+.RS 4
+true if an eye blinked detected and flase otherwise
+.RE
+.PP
+
+.PP
+Definition at line \fB799\fP of file \fBBrainWaveRecordManager\&.cs\fP\&.
+.SS "Boolean EEGGaming\&.Core\&.Managers\&.BrainWaveRecordManager\&.DetectBlinkusingAlpha (double[] oldvals, double[] chanel1vals)"
+
+.PP
+Detects eye blinks using the alpha band\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIoldvals\fP array with old alpha band values 
+.br
+\fIchanel1vals\fP array eith new values of alpha band values 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+true if an eye blinked detected and false otherwise
+.RE
+.PP
+
+.PP
+Definition at line \fB855\fP of file \fBBrainWaveRecordManager\&.cs\fP\&.
+.SS "void EEGGaming\&.Core\&.Managers\&.BrainWaveRecordManager\&.Edit (int id, \fBBrainwavesRecord\fP record)"
+
+.PP
+Edits the record with the given id\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIid\fP thevalue of the id to be edited
+.br
+\fIrecord\fP newvalues of the record
+.RE
+.PP
+
+.PP
+Definition at line \fB946\fP of file \fBBrainWaveRecordManager\&.cs\fP\&.
+.SS "void EEGGaming\&.Core\&.Managers\&.BrainWaveRecordManager\&.EditRange (\fBBrainwavesRecord\fP[] records)"
+
+.PP
+Edits a numberof Brainwave records\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIrecords\fP the array with Brainwaves' records with the new values except the ids 
+.RE
+.PP
+
+.PP
+Definition at line \fB974\fP of file \fBBrainWaveRecordManager\&.cs\fP\&.
+.SS "void EEGGaming\&.Core\&.Managers\&.BrainWaveRecordManager\&.FilterArrayInPlace (double[] vals)"
+
+.PP
+Applies the filters\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIvals\fP The array with the values that neeed filters to be applied 
+.RE
+.PP
+
+.PP
+Definition at line \fB739\fP of file \fBBrainWaveRecordManager\&.cs\fP\&.
+.SS "\fBBrainwavesRecord\fP EEGGaming\&.Core\&.Managers\&.BrainWaveRecordManager\&.GetBrainwaveFromDBById (int id)"
+
+.PP
+Gets the BrainWave record by it's Id\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIid\fP id of the Brainwave record 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+the BrainWave record by it's Id 
+.RE
+.PP
+
+.PP
+Definition at line \fB1058\fP of file \fBBrainWaveRecordManager\&.cs\fP\&.
+.SS "List< \fBBrainwavesRecord\fP > EEGGaming\&.Core\&.Managers\&.BrainWaveRecordManager\&.GetBrainwavesFromDB ()"
+
+.PP
+Gets the Records from the BrainWaves' table\&. 
+.PP
+\fBReturns\fP
+.RS 4
+Records from the BrainWaves' table
+.RE
+.PP
+
+.PP
+Definition at line \fB1006\fP of file \fBBrainWaveRecordManager\&.cs\fP\&.
+.SS "List< \fBBrainwavesRecord\fP > EEGGaming\&.Core\&.Managers\&.BrainWaveRecordManager\&.GetBrainwavesFromDBByGamingSessionId (int id)"
+
+.PP
+Get the Records from the BrainWaves' table of the gamingsession with the given id\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIid\fP the id of the gaming session
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+the Records from the BrainWaves' table of the gamingsession with the given id
+.RE
+.PP
+
+.PP
+Definition at line \fB1090\fP of file \fBBrainWaveRecordManager\&.cs\fP\&.
+.SS "List< \fBBrainwavesRecord\fP > EEGGaming\&.Core\&.Managers\&.BrainWaveRecordManager\&.GetBrainwavesFromDBByMilisconds (double milsecond)"
+
+.PP
+the Records from the BrainWaves' table by the miliseconds 
+.PP
+\fBParameters\fP
+.RS 4
+\fImilsecond\fP miliseconds 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Records from the BrainWaves' table by the miliseconds
+.RE
+.PP
+
+.PP
+Definition at line \fB1120\fP of file \fBBrainWaveRecordManager\&.cs\fP\&.
+.SS "List< \fBBrainwavesRecord\fP > EEGGaming\&.Core\&.Managers\&.BrainWaveRecordManager\&.GetBrainwavesFromDBByUserId (int id)"
+
+.PP
+Get the Records from the BrainWaves' table of the user with the given id\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIid\fP user's id 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+the Records from the BrainWaves' table of the user with the given id 
+.RE
+.PP
+
+.PP
+Definition at line \fB1027\fP of file \fBBrainWaveRecordManager\&.cs\fP\&.
+.SS "void EEGGaming\&.Core\&.Managers\&.BrainWaveRecordManager\&.InitFiltering ()"
+
+.PP
+Initites the array with current filters\&. 
+.PP
+Definition at line \fB762\fP of file \fBBrainWaveRecordManager\&.cs\fP\&.
+.SS "void EEGGaming\&.Core\&.Managers\&.BrainWaveRecordManager\&.LoadCsv (string filename)"
+
+.PP
+It Loads thedata from the given file\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIfilename\fP the full path of the file with the data 
+.RE
+.PP
+
+.PP
+Definition at line \fB129\fP of file \fBBrainWaveRecordManager\&.cs\fP\&.
+.SS "void EEGGaming\&.Core\&.Managers\&.BrainWaveRecordManager\&.MakeGraphs (string filename)"
+
+.PP
+Generates the graphs in images\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIfilename\fP the name and path of the images
+.RE
+.PP
+
+.PP
+Definition at line \fB156\fP of file \fBBrainWaveRecordManager\&.cs\fP\&.
+.SS "void EEGGaming\&.Core\&.Managers\&.BrainWaveRecordManager\&.SaveToCSV (string filename)"
+
+.PP
+Saves the BrainWave datato Comma seperated file\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIfilename\fP the full path of the file
+.RE
+.PP
+
+.PP
+Definition at line \fB515\fP of file \fBBrainWaveRecordManager\&.cs\fP\&.
+.SS "async void EEGGaming\&.Core\&.Managers\&.BrainWaveRecordManager\&.SavetoDatabse ()"
+
+.PP
+Saves the BrainWaves to the database\&. 
+.PP
+Definition at line \fB482\fP of file \fBBrainWaveRecordManager\&.cs\fP\&.
+.SS "void EEGGaming\&.Core\&.Managers\&.BrainWaveRecordManager\&.Start ()"
+
+.PP
+Starts the capture of brainwaves\&. 
+.PP
+Definition at line \fB362\fP of file \fBBrainWaveRecordManager\&.cs\fP\&.
+.SS "void EEGGaming\&.Core\&.Managers\&.BrainWaveRecordManager\&.Stop ()"
+
+.PP
+Stops the capture of brainwaves\&. 
+.PP
+Definition at line \fB421\fP of file \fBBrainWaveRecordManager\&.cs\fP\&.
+.SS "void EEGGaming\&.Core\&.Managers\&.BrainWaveRecordManager\&.StopAndSavetoDatabse ()"
+
+.PP
+Stops the capture of brainwaves and saves them to the database\&. 
+.PP
+Definition at line \fB451\fP of file \fBBrainWaveRecordManager\&.cs\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "NeuroSDK\&.Scanner EEGGaming\&.Core\&.Managers\&.BrainWaveRecordManager\&.scanner = new NeuroSDK\&.Scanner(SensorFamily\&.SensorLEBrainBit)\fR [static]\fP"
+
+.PP
+Definition at line \fB30\fP of file \fBBrainWaveRecordManager\&.cs\fP\&.
+.SH "Property Documentation"
+.PP 
+.SS "int EEGGaming\&.Core\&.Managers\&.BrainWaveRecordManager\&.ActiveGamingSessionId\fR [get]\fP, \fR [set]\fP"
+
+.PP
+The Id of the GamingSession that occurs\&. 
+.PP
+Definition at line \fB92\fP of file \fBBrainWaveRecordManager\&.cs\fP\&.
+.SS "int EEGGaming\&.Core\&.Managers\&.BrainWaveRecordManager\&.ActiveUserId\fR [get]\fP, \fR [set]\fP"
+
+.PP
+The id of the user it captures the packet from\&. 
+.br
+ 
+.PP
+Definition at line \fB88\fP of file \fBBrainWaveRecordManager\&.cs\fP\&.
+.SS "Boolean EEGGaming\&.Core\&.Managers\&.BrainWaveRecordManager\&.Blinked\fR [get]\fP, \fR [set]\fP"
+
+.PP
+The result of the eye blink detection\&. 
+.PP
+Definition at line \fB84\fP of file \fBBrainWaveRecordManager\&.cs\fP\&.
+.SS "Boolean EEGGaming\&.Core\&.Managers\&.BrainWaveRecordManager\&.EnableFiltering\fR [get]\fP, \fR [set]\fP"
+
+.PP
+Eanble or Disable the ability to filter the samples\&. 
+.PP
+Definition at line \fB57\fP of file \fBBrainWaveRecordManager\&.cs\fP\&.
+.SS "double EEGGaming\&.Core\&.Managers\&.BrainWaveRecordManager\&.FFTBinsFor1Hz\fR [get]\fP"
+
+.PP
+The FFT Bins For 1Hz\&. 
+.PP
+Definition at line \fB73\fP of file \fBBrainWaveRecordManager\&.cs\fP\&.
+.SS "int EEGGaming\&.Core\&.Managers\&.BrainWaveRecordManager\&.FFtWindow\fR [get]\fP, \fR [set]\fP"
+
+.PP
+The fftWindow\&. 
+.PP
+Definition at line \fB65\fP of file \fBBrainWaveRecordManager\&.cs\fP\&.
+.SS "int EEGGaming\&.Core\&.Managers\&.BrainWaveRecordManager\&.ProcessWinRate\fR [get]\fP, \fR [set]\fP"
+
+.PP
+The ProcessWinRate\&. 
+.PP
+Definition at line \fB69\fP of file \fBBrainWaveRecordManager\&.cs\fP\&.
+.SS "List<\fBBrainwavesRecord\fP> EEGGaming\&.Core\&.Managers\&.BrainWaveRecordManager\&.Records\fR [get]\fP, \fR [set]\fP"
+
+.PP
+The Brainwave records curently captured\&. 
+.PP
+Definition at line \fB34\fP of file \fBBrainWaveRecordManager\&.cs\fP\&.
+.SS "int EEGGaming\&.Core\&.Managers\&.BrainWaveRecordManager\&.SamplesRecorded\fR [get]\fP"
+
+.PP
+The namber of the recorded samples/records\&. 
+.PP
+Definition at line \fB53\fP of file \fBBrainWaveRecordManager\&.cs\fP\&.
+.SS "int EEGGaming\&.Core\&.Managers\&.BrainWaveRecordManager\&.SamplingRate\fR [get]\fP, \fR [set]\fP"
+
+.PP
+The Sample Rate the sensor will capture samples\&. 
+.PP
+Definition at line \fB61\fP of file \fBBrainWaveRecordManager\&.cs\fP\&.
+.SS "BrainBitSensor? EEGGaming\&.Core\&.Managers\&.BrainWaveRecordManager\&.Sensor\fR [get]\fP"
+
+.PP
+The Sensor that captures the brainwaves\&. 
+.PP
+Definition at line \fB78\fP of file \fBBrainWaveRecordManager\&.cs\fP\&.
+.SS "System\&.Timers\&.Timer EEGGaming\&.Core\&.Managers\&.BrainWaveRecordManager\&.tmrBlink\fR [get]\fP, \fR [set]\fP"
+
+.PP
+The timer for the Blink\&. 
+.PP
+Definition at line \fB44\fP of file \fBBrainWaveRecordManager\&.cs\fP\&.
+.SS "bool EEGGaming\&.Core\&.Managers\&.BrainWaveRecordManager\&.UsesDb\fR [get]\fP, \fR [set]\fP"
+
+.PP
+It sets whenever the library will use Database or not\&. 
+.PP
+Definition at line \fB96\fP of file \fBBrainWaveRecordManager\&.cs\fP\&.
+.SH "Event Documentation"
+.PP 
+.SS "OnBlinked EEGGaming\&.Core\&.Managers\&.BrainWaveRecordManager\&.OnBlinked"
+
+.PP
+This event occurs when an eye blink occured\&. 
+.PP
+Definition at line \fB49\fP of file \fBBrainWaveRecordManager\&.cs\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for EEGGaming And Blinkbird from the source code\&.

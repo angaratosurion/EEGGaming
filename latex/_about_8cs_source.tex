@@ -1,0 +1,44 @@
+\doxysection{About.\+cs}
+\hypertarget{_about_8cs_source}{}\label{_about_8cs_source}\index{BlinkBird/Code/About.cs@{BlinkBird/Code/About.cs}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_about_8cs_source_l00001}00001\ \textcolor{keyword}{using\ }\mbox{\hyperlink{namespace_e_e_g_gaming_1_1_core_1_1_tools}{EEGGaming.Core.Tools}};}
+\DoxyCodeLine{\Hypertarget{_about_8cs_source_l00002}00002\ \textcolor{keyword}{using\ }Godot;}
+\DoxyCodeLine{\Hypertarget{_about_8cs_source_l00003}00003\ \textcolor{keyword}{using\ }System;}
+\DoxyCodeLine{\Hypertarget{_about_8cs_source_l00004}00004\ }
+\DoxyCodeLine{\Hypertarget{_about_8cs_source_l00005}\mbox{\hyperlink{class_about}{00005}}\ \textcolor{keyword}{public}\ \textcolor{keyword}{partial\ class\ }\mbox{\hyperlink{class_about}{About}}\ :\ Node2D}
+\DoxyCodeLine{\Hypertarget{_about_8cs_source_l00006}00006\ \{}
+\DoxyCodeLine{\Hypertarget{_about_8cs_source_l00007}00007\ \ \ \ \ \textcolor{comment}{//\ Called\ when\ the\ node\ enters\ the\ scene\ tree\ for\ the\ first\ time.}}
+\DoxyCodeLine{\Hypertarget{_about_8cs_source_l00008}00008\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{override}\ \textcolor{keywordtype}{void}\ \_Ready()}
+\DoxyCodeLine{\Hypertarget{_about_8cs_source_l00009}00009\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_about_8cs_source_l00010}00010\ \ \ \ \ \ \ \ \ Label\ lblAppNameAndVersion\ =\ (Label)this.FindChild(\textcolor{stringliteral}{"{}lblAppNameAndVersion"{}},\ \textcolor{keyword}{true});}
+\DoxyCodeLine{\Hypertarget{_about_8cs_source_l00011}00011\ \ \ \ \ \ \ \ \ GD.Print(\textcolor{stringliteral}{"{}fff"{}}+\mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_tools_1_1_common_tools}{CommonTools}}.\mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_tools_1_1_common_tools_af25b2229b38ff9fec1e67d2f5560b521}{GetBlinkBirdbVersion}}());}
+\DoxyCodeLine{\Hypertarget{_about_8cs_source_l00012}00012\ \ \ \ \ \ \ \ \ lblAppNameAndVersion.Text\ +=\ \mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_tools_1_1_common_tools}{CommonTools}}.\mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_tools_1_1_common_tools_af25b2229b38ff9fec1e67d2f5560b521}{GetBlinkBirdbVersion}}();}
+\DoxyCodeLine{\Hypertarget{_about_8cs_source_l00013}00013\ \ \ \ \ \ \ \ \ Label\ lblCoreVersion\ =\ (Label)this.FindChild(\textcolor{stringliteral}{"{}lblCoreVersion"{}},\ \textcolor{keyword}{true});}
+\DoxyCodeLine{\Hypertarget{_about_8cs_source_l00014}00014\ \ \ \ \ \ \ \ \ lblCoreVersion.Text=\ \mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_tools_1_1_common_tools}{CommonTools}}.\mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_tools_1_1_common_tools_abc9d2f32eaa71518650c4b010557d60f}{GetEEGGamingCoreVersion}}();}
+\DoxyCodeLine{\Hypertarget{_about_8cs_source_l00015}00015\ \ \ \ \ \ \ \ \ Label\ lblCoreCopyright\ =\ (Label)this.FindChild(\textcolor{stringliteral}{"{}lblCoreCopyRight"{}},\ \textcolor{keyword}{true});}
+\DoxyCodeLine{\Hypertarget{_about_8cs_source_l00016}00016\ \ \ \ \ \ \ \ \ lblCoreCopyright.Text\ =\ \mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_tools_1_1_common_tools}{CommonTools}}.\mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_tools_1_1_common_tools_ac63619323565e63d6a7e4bac1bfdf08a}{GetEEGGamingCoreCopyright}}();}
+\DoxyCodeLine{\Hypertarget{_about_8cs_source_l00017}00017\ \ \ \ \ \ \ \ \ Label\ lblDeveloper\ =\ (Label)this.FindChild(\textcolor{stringliteral}{"{}lblCoreDeveloper"{}},\ \textcolor{keyword}{true});}
+\DoxyCodeLine{\Hypertarget{_about_8cs_source_l00018}00018\ \ \ \ \ \ \ \ \ lblDeveloper.Text=\mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_tools_1_1_common_tools}{CommonTools}}.\mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_tools_1_1_common_tools_af122948c33cabf286bc8b242ddbbd87a}{GetEEGGamingCoreDeveloper}}();}
+\DoxyCodeLine{\Hypertarget{_about_8cs_source_l00019}00019\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_about_8cs_source_l00020}00020\ \ \ \ \ \ \ \ \ Label\ lblCoreLastModified\ =\ (Label)this.FindChild(\textcolor{stringliteral}{"{}lblCoreLastModified"{}},\ \textcolor{keyword}{true});}
+\DoxyCodeLine{\Hypertarget{_about_8cs_source_l00021}00021\ \ \ \ \ \ \ \ \ lblCoreLastModified.Text=\ \mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_tools_1_1_common_tools}{CommonTools}}.\mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_tools_1_1_common_tools_af855835037afae36f06cb3ae7e024ce9}{GetEEGGamingCoreLastModifiedDateUTC}}();}
+\DoxyCodeLine{\Hypertarget{_about_8cs_source_l00022}00022\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_about_8cs_source_l00023}00023\ \ \ \ \ \ \ \ \ Button\ btnClose\ =\ (Button)this.FindChild(\textcolor{stringliteral}{"{}btnClose"{}},\ \textcolor{keyword}{true});}
+\DoxyCodeLine{\Hypertarget{_about_8cs_source_l00024}00024\ \ \ \ \ \ \ \ \ btnClose.Pressed\ +=\ BtnClose\_Pressed;}
+\DoxyCodeLine{\Hypertarget{_about_8cs_source_l00025}00025\ }
+\DoxyCodeLine{\Hypertarget{_about_8cs_source_l00026}00026\ }
+\DoxyCodeLine{\Hypertarget{_about_8cs_source_l00027}00027\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_about_8cs_source_l00028}00028\ }
+\DoxyCodeLine{\Hypertarget{_about_8cs_source_l00029}00029\ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{void}\ BtnClose\_Pressed()}
+\DoxyCodeLine{\Hypertarget{_about_8cs_source_l00030}00030\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_about_8cs_source_l00031}00031\ \ \ \ \ \ \ \ \ this.Hide();}
+\DoxyCodeLine{\Hypertarget{_about_8cs_source_l00032}00032\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_about_8cs_source_l00033}00033\ }
+\DoxyCodeLine{\Hypertarget{_about_8cs_source_l00034}00034\ \ \ \ \ \textcolor{comment}{//\ Called\ every\ frame.\ 'delta'\ is\ the\ elapsed\ time\ since\ the\ previous\ frame.}}
+\DoxyCodeLine{\Hypertarget{_about_8cs_source_l00035}00035\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{override}\ \textcolor{keywordtype}{void}\ \_Process(\textcolor{keywordtype}{double}\ delta)}
+\DoxyCodeLine{\Hypertarget{_about_8cs_source_l00036}00036\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_about_8cs_source_l00037}00037\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_about_8cs_source_l00038}00038\ \}}
+
+\end{DoxyCode}

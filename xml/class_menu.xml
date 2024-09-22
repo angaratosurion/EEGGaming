@@ -1,0 +1,408 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="class_menu" kind="class" language="C#" prot="public">
+    <compoundname>Menu</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Control</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_menu_1a105d6e2b549cb4235e710c459596f7af" prot="private" static="no" mutable="no">
+        <type>PackedScene</type>
+        <definition>PackedScene Menu.newGamepackedScene</definition>
+        <argsstring></argsstring>
+        <name>newGamepackedScene</name>
+        <qualifiedname>Menu.newGamepackedScene</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BlinkBird/Code/Menu.cs" line="10" column="13" bodyfile="BlinkBird/Code/Menu.cs" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_menu_1abcf566ea35f586a3db792bd0b215daa6" prot="private" static="no" mutable="no">
+        <type>PackedScene</type>
+        <definition>PackedScene Menu.NewUserDetailsPackedScene</definition>
+        <argsstring></argsstring>
+        <name>NewUserDetailsPackedScene</name>
+        <qualifiedname>Menu.NewUserDetailsPackedScene</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BlinkBird/Code/Menu.cs" line="10" column="31" bodyfile="BlinkBird/Code/Menu.cs" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_menu_1a77c4e57de9500bb86bb287b15d79db50" prot="private" static="no" mutable="no">
+        <type>PackedScene</type>
+        <definition>PackedScene Menu.SelectUserScene</definition>
+        <argsstring></argsstring>
+        <name>SelectUserScene</name>
+        <qualifiedname>Menu.SelectUserScene</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BlinkBird/Code/Menu.cs" line="10" column="56" bodyfile="BlinkBird/Code/Menu.cs" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_menu_1aa2e28765cc50f72020f541868fca8940" prot="private" static="no" mutable="no">
+        <type>PackedScene</type>
+        <definition>PackedScene Menu.AboutScene</definition>
+        <argsstring></argsstring>
+        <name>AboutScene</name>
+        <qualifiedname>Menu.AboutScene</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BlinkBird/Code/Menu.cs" line="10" column="71" bodyfile="BlinkBird/Code/Menu.cs" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_menu_1afd554fb1b507dfe296ac6fe056b20b0d" prot="private" static="no" mutable="no">
+        <type>PackedScene</type>
+        <definition>PackedScene Menu.ShowusersScene</definition>
+        <argsstring></argsstring>
+        <name>ShowusersScene</name>
+        <qualifiedname>Menu.ShowusersScene</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BlinkBird/Code/Menu.cs" line="10" column="81" bodyfile="BlinkBird/Code/Menu.cs" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_menu_1a1d033880f240c54a8437c65f8e2892a2" prot="private" static="no" mutable="no">
+        <type>Button</type>
+        <definition>Button Menu.btnNewGame</definition>
+        <argsstring></argsstring>
+        <name>btnNewGame</name>
+        <qualifiedname>Menu.btnNewGame</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BlinkBird/Code/Menu.cs" line="11" column="8" bodyfile="BlinkBird/Code/Menu.cs" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_menu_1a0f5f753616914a269e9acad62bee9e1d" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Menu.ignoreUserselectionandconstateofdevice</definition>
+        <argsstring></argsstring>
+        <name>ignoreUserselectionandconstateofdevice</name>
+        <qualifiedname>Menu.ignoreUserselectionandconstateofdevice</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BlinkBird/Code/Menu.cs" line="17" column="6" bodyfile="BlinkBird/Code/Menu.cs" bodystart="17" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_menu_1aa005ebd5a38e50bc52accdb70c081008" prot="public" static="yes" mutable="no">
+        <type><ref refid="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager" kindref="compound">BrainWaveRecordManager</ref></type>
+        <definition>BrainWaveRecordManager Menu.recordManager</definition>
+        <argsstring></argsstring>
+        <name>recordManager</name>
+        <qualifiedname>Menu.recordManager</qualifiedname>
+        <initializer>= new <ref refid="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager" kindref="compound">BrainWaveRecordManager</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BlinkBird/Code/Menu.cs" line="12" column="38" bodyfile="BlinkBird/Code/Menu.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_menu_1ab91d795226479c5d356b975407d6d456" prot="public" static="yes" mutable="no">
+        <type><ref refid="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_gaming_sesion_manager" kindref="compound">GamingSesionManager</ref></type>
+        <definition>GamingSesionManager Menu.gamingSesionManager</definition>
+        <argsstring></argsstring>
+        <name>gamingSesionManager</name>
+        <qualifiedname>Menu.gamingSesionManager</qualifiedname>
+        <initializer>= new <ref refid="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_gaming_sesion_manager" kindref="compound">GamingSesionManager</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BlinkBird/Code/Menu.cs" line="13" column="35" bodyfile="BlinkBird/Code/Menu.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_menu_1a6aa76feb83b7956cd553c35b5e926f4e" prot="public" static="yes" mutable="no">
+        <type><ref refid="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_user_manager" kindref="compound">UserManager</ref></type>
+        <definition>UserManager Menu.userManager</definition>
+        <argsstring></argsstring>
+        <name>userManager</name>
+        <qualifiedname>Menu.userManager</qualifiedname>
+        <initializer>= new <ref refid="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_user_manager" kindref="compound">UserManager</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BlinkBird/Code/Menu.cs" line="14" column="27" bodyfile="BlinkBird/Code/Menu.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_menu_1a2cdd0aa13fc2a0c1a0f2fdb2195c475c" prot="public" static="yes" mutable="no">
+        <type><ref refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_user" kindref="compound">User</ref></type>
+        <definition>User Menu.SelectedUser</definition>
+        <argsstring></argsstring>
+        <name>SelectedUser</name>
+        <qualifiedname>Menu.SelectedUser</qualifiedname>
+        <initializer>= null</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BlinkBird/Code/Menu.cs" line="16" column="20" bodyfile="BlinkBird/Code/Menu.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_menu_1ab4749d59147615a8d8289be37cb49a83" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Menu.SaveDataToDb</definition>
+        <argsstring>()</argsstring>
+        <name>SaveDataToDb</name>
+        <qualifiedname>Menu.SaveDataToDb</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BlinkBird/Code/Menu.cs" line="18" column="25" bodyfile="BlinkBird/Code/Menu.cs" bodystart="18" bodyend="26"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_menu_1a8749d8124f3d908e7dc30d71c08f6e28" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void Menu._Ready</definition>
+        <argsstring>()</argsstring>
+        <name>_Ready</name>
+        <qualifiedname>Menu._Ready</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BlinkBird/Code/Menu.cs" line="27" column="26" bodyfile="BlinkBird/Code/Menu.cs" bodystart="27" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="class_menu_1aa5214bdaf8eaaa4ea25d41c57331c221" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void Menu._Process</definition>
+        <argsstring>(double delta)</argsstring>
+        <name>_Process</name>
+        <qualifiedname>Menu._Process</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>delta</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BlinkBird/Code/Menu.cs" line="140" column="22" bodyfile="BlinkBird/Code/Menu.cs" bodystart="140" bodyend="154"/>
+      </memberdef>
+      <memberdef kind="function" id="class_menu_1a9a2ffafb1592a5438156816758e2bd64" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Menu.bbtnNewGame_pressed</definition>
+        <argsstring>()</argsstring>
+        <name>bbtnNewGame_pressed</name>
+        <qualifiedname>Menu.bbtnNewGame_pressed</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BlinkBird/Code/Menu.cs" line="155" column="13" bodyfile="BlinkBird/Code/Menu.cs" bodystart="155" bodyend="164"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_menu_1a1d04bfb0616e2beb46a2af3bc6c6863e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Menu.BtnShowUsers_Pressed</definition>
+        <argsstring>()</argsstring>
+        <name>BtnShowUsers_Pressed</name>
+        <qualifiedname>Menu.BtnShowUsers_Pressed</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BlinkBird/Code/Menu.cs" line="78" column="14" bodyfile="BlinkBird/Code/Menu.cs" bodystart="78" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="class_menu_1ac6e2a243b9faa0307568ac2d52b09c4f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Menu.BtnConnectEEGDevice_Pressed</definition>
+        <argsstring>()</argsstring>
+        <name>BtnConnectEEGDevice_Pressed</name>
+        <qualifiedname>Menu.BtnConnectEEGDevice_Pressed</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BlinkBird/Code/Menu.cs" line="86" column="14" bodyfile="BlinkBird/Code/Menu.cs" bodystart="86" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="class_menu_1a0cb506b1dda91a886d4a71a0a56218c0" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Menu.BtnAbout_Pressed</definition>
+        <argsstring>()</argsstring>
+        <name>BtnAbout_Pressed</name>
+        <qualifiedname>Menu.BtnAbout_Pressed</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BlinkBird/Code/Menu.cs" line="110" column="14" bodyfile="BlinkBird/Code/Menu.cs" bodystart="110" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="function" id="class_menu_1a70d636a1399c2eca4064452602834353" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Menu.BtnExit_Pressed</definition>
+        <argsstring>()</argsstring>
+        <name>BtnExit_Pressed</name>
+        <qualifiedname>Menu.BtnExit_Pressed</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BlinkBird/Code/Menu.cs" line="118" column="14" bodyfile="BlinkBird/Code/Menu.cs" bodystart="118" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="class_menu_1a0b35e187f66e6fc7442985ebe9549152" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Menu.BtnSelectUser_Pressed</definition>
+        <argsstring>()</argsstring>
+        <name>BtnSelectUser_Pressed</name>
+        <qualifiedname>Menu.BtnSelectUser_Pressed</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BlinkBird/Code/Menu.cs" line="123" column="14" bodyfile="BlinkBird/Code/Menu.cs" bodystart="123" bodyend="129"/>
+      </memberdef>
+      <memberdef kind="function" id="class_menu_1ad55639725b69dd4723d52cbeeaf89c47" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Menu.BtnNewuser_Pressed</definition>
+        <argsstring>()</argsstring>
+        <name>BtnNewuser_Pressed</name>
+        <qualifiedname>Menu.BtnNewuser_Pressed</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BlinkBird/Code/Menu.cs" line="131" column="14" bodyfile="BlinkBird/Code/Menu.cs" bodystart="131" bodyend="137"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Control</label>
+      </node>
+      <node id="1">
+        <label>Menu</label>
+        <link refid="class_menu"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4">
+        <label>BaseManager</label>
+        <link refid="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_base_manager"/>
+      </node>
+      <node id="2">
+        <label>Control</label>
+      </node>
+      <node id="7">
+        <label>EEGGaming.Core.Data.Models.User</label>
+        <link refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_user"/>
+      </node>
+      <node id="3">
+        <label>EEGGaming.Core.Managers.BrainWaveRecordManager</label>
+        <link refid="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>EEGGaming.Core.Managers.GamingSesionManager</label>
+        <link refid="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_gaming_sesion_manager"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>EEGGaming.Core.Managers.UserManager</label>
+        <link refid="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_user_manager"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Menu</label>
+        <link refid="class_menu"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>recordManager</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>gamingSesionManager</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>userManager</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>SelectedUser</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="BlinkBird/Code/Menu.cs" line="7" column="15" bodyfile="BlinkBird/Code/Menu.cs" bodystart="8" bodyend="165"/>
+    <listofallmembers>
+      <member refid="class_menu_1aa5214bdaf8eaaa4ea25d41c57331c221" prot="public" virt="non-virtual"><scope>Menu</scope><name>_Process</name></member>
+      <member refid="class_menu_1a8749d8124f3d908e7dc30d71c08f6e28" prot="public" virt="non-virtual"><scope>Menu</scope><name>_Ready</name></member>
+      <member refid="class_menu_1aa2e28765cc50f72020f541868fca8940" prot="private" virt="non-virtual"><scope>Menu</scope><name>AboutScene</name></member>
+      <member refid="class_menu_1a9a2ffafb1592a5438156816758e2bd64" prot="public" virt="non-virtual"><scope>Menu</scope><name>bbtnNewGame_pressed</name></member>
+      <member refid="class_menu_1a0cb506b1dda91a886d4a71a0a56218c0" prot="private" virt="non-virtual"><scope>Menu</scope><name>BtnAbout_Pressed</name></member>
+      <member refid="class_menu_1ac6e2a243b9faa0307568ac2d52b09c4f" prot="private" virt="non-virtual"><scope>Menu</scope><name>BtnConnectEEGDevice_Pressed</name></member>
+      <member refid="class_menu_1a70d636a1399c2eca4064452602834353" prot="private" virt="non-virtual"><scope>Menu</scope><name>BtnExit_Pressed</name></member>
+      <member refid="class_menu_1a1d033880f240c54a8437c65f8e2892a2" prot="private" virt="non-virtual"><scope>Menu</scope><name>btnNewGame</name></member>
+      <member refid="class_menu_1ad55639725b69dd4723d52cbeeaf89c47" prot="private" virt="non-virtual"><scope>Menu</scope><name>BtnNewuser_Pressed</name></member>
+      <member refid="class_menu_1a0b35e187f66e6fc7442985ebe9549152" prot="private" virt="non-virtual"><scope>Menu</scope><name>BtnSelectUser_Pressed</name></member>
+      <member refid="class_menu_1a1d04bfb0616e2beb46a2af3bc6c6863e" prot="private" virt="non-virtual"><scope>Menu</scope><name>BtnShowUsers_Pressed</name></member>
+      <member refid="class_menu_1ab91d795226479c5d356b975407d6d456" prot="public" virt="non-virtual"><scope>Menu</scope><name>gamingSesionManager</name></member>
+      <member refid="class_menu_1a0f5f753616914a269e9acad62bee9e1d" prot="private" virt="non-virtual"><scope>Menu</scope><name>ignoreUserselectionandconstateofdevice</name></member>
+      <member refid="class_menu_1a105d6e2b549cb4235e710c459596f7af" prot="private" virt="non-virtual"><scope>Menu</scope><name>newGamepackedScene</name></member>
+      <member refid="class_menu_1abcf566ea35f586a3db792bd0b215daa6" prot="private" virt="non-virtual"><scope>Menu</scope><name>NewUserDetailsPackedScene</name></member>
+      <member refid="class_menu_1aa005ebd5a38e50bc52accdb70c081008" prot="public" virt="non-virtual"><scope>Menu</scope><name>recordManager</name></member>
+      <member refid="class_menu_1ab4749d59147615a8d8289be37cb49a83" prot="public" virt="non-virtual"><scope>Menu</scope><name>SaveDataToDb</name></member>
+      <member refid="class_menu_1a2cdd0aa13fc2a0c1a0f2fdb2195c475c" prot="public" virt="non-virtual"><scope>Menu</scope><name>SelectedUser</name></member>
+      <member refid="class_menu_1a77c4e57de9500bb86bb287b15d79db50" prot="private" virt="non-virtual"><scope>Menu</scope><name>SelectUserScene</name></member>
+      <member refid="class_menu_1afd554fb1b507dfe296ac6fe056b20b0d" prot="private" virt="non-virtual"><scope>Menu</scope><name>ShowusersScene</name></member>
+      <member refid="class_menu_1a6aa76feb83b7956cd553c35b5e926f4e" prot="public" virt="non-virtual"><scope>Menu</scope><name>userManager</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

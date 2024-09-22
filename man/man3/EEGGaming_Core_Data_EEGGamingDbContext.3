@@ -1,0 +1,93 @@
+.TH "EEGGaming.Core.Data.EEGGamingDbContext" 3 "Version 0.2.6.0" "EEGGaming And Blinkbird" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+EEGGaming.Core.Data.EEGGamingDbContext \- DbContext of the \fBEEGGaming\fP library\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits DbContext\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBEEGGamingDbContext\fP (string DefaultConnection)"
+.br
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "override void \fBOnConfiguring\fP (DbContextOptionsBuilder optionsBuilder)"
+.br
+.ti -1c
+.RI "override void \fBOnModelCreating\fP (ModelBuilder modelBuilder)"
+.br
+.in -1c
+.SS "Properties"
+
+.in +1c
+.ti -1c
+.RI "DbSet< \fBUser\fP > \fBUsers\fP\fR [get, set]\fP"
+.br
+.RI "The list of Users' table records\&. "
+.ti -1c
+.RI "DbSet< \fBGamingSesion\fP > \fBGameSession\fP\fR [get, set]\fP"
+.br
+.RI "The list of GamingSession's table records\&. "
+.ti -1c
+.RI "DbSet< \fBBrainwavesRecord\fP > \fBBrainWaves\fP\fR [get, set]\fP"
+.br
+.RI "The list of Brainwaves' table records\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+DbContext of the \fBEEGGaming\fP library\&. 
+.PP
+Definition at line \fB15\fP of file \fBEEGGamingDbContext\&.cs\fP\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "EEGGaming\&.Core\&.Data\&.EEGGamingDbContext\&.EEGGamingDbContext ()"
+
+.PP
+Definition at line \fB29\fP of file \fBEEGGamingDbContext\&.cs\fP\&.
+.SS "EEGGaming\&.Core\&.Data\&.EEGGamingDbContext\&.EEGGamingDbContext (string DefaultConnection)"
+
+.PP
+Definition at line \fB37\fP of file \fBEEGGamingDbContext\&.cs\fP\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "override void EEGGaming\&.Core\&.Data\&.EEGGamingDbContext\&.OnConfiguring (DbContextOptionsBuilder optionsBuilder)\fR [protected]\fP"
+
+.PP
+Definition at line \fB41\fP of file \fBEEGGamingDbContext\&.cs\fP\&.
+.SS "override void EEGGaming\&.Core\&.Data\&.EEGGamingDbContext\&.OnModelCreating (ModelBuilder modelBuilder)\fR [protected]\fP"
+
+.PP
+Definition at line \fB49\fP of file \fBEEGGamingDbContext\&.cs\fP\&.
+.SH "Property Documentation"
+.PP 
+.SS "DbSet<\fBBrainwavesRecord\fP> EEGGaming\&.Core\&.Data\&.EEGGamingDbContext\&.BrainWaves\fR [get]\fP, \fR [set]\fP"
+
+.PP
+The list of Brainwaves' table records\&. 
+.PP
+Definition at line \fB28\fP of file \fBEEGGamingDbContext\&.cs\fP\&.
+.SS "DbSet<\fBGamingSesion\fP> EEGGaming\&.Core\&.Data\&.EEGGamingDbContext\&.GameSession\fR [get]\fP, \fR [set]\fP"
+
+.PP
+The list of GamingSession's table records\&. 
+.PP
+Definition at line \fB24\fP of file \fBEEGGamingDbContext\&.cs\fP\&.
+.SS "DbSet<\fBUser\fP> EEGGaming\&.Core\&.Data\&.EEGGamingDbContext\&.Users\fR [get]\fP, \fR [set]\fP"
+
+.PP
+The list of Users' table records\&. 
+.PP
+Definition at line \fB20\fP of file \fBEEGGamingDbContext\&.cs\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for EEGGaming And Blinkbird from the source code\&.

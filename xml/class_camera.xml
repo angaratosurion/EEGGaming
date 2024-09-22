@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="class_camera" kind="class" language="C#" prot="public">
+    <compoundname>Camera</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Camera2D</basecompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_camera_1a0b82ad1b9831e861ab65711e220d5441" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void Camera._Ready</definition>
+        <argsstring>()</argsstring>
+        <name>_Ready</name>
+        <qualifiedname>Camera._Ready</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BlinkBird/Code/Camera.cs" line="9" column="26" bodyfile="BlinkBird/Code/Camera.cs" bodystart="9" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="class_camera_1ad7352cad7a9773f186fe0e341e181e68" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void Camera._Process</definition>
+        <argsstring>(double delta)</argsstring>
+        <name>_Process</name>
+        <qualifiedname>Camera._Process</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>delta</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BlinkBird/Code/Camera.cs" line="22" column="22" bodyfile="BlinkBird/Code/Camera.cs" bodystart="22" bodyend="30"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Camera</label>
+        <link refid="class_camera"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Camera2D</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Camera</label>
+        <link refid="class_camera"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Camera2D</label>
+      </node>
+    </collaborationgraph>
+    <location file="BlinkBird/Code/Camera.cs" line="4" column="15" bodyfile="BlinkBird/Code/Camera.cs" bodystart="5" bodyend="31"/>
+    <listofallmembers>
+      <member refid="class_camera_1ad7352cad7a9773f186fe0e341e181e68" prot="public" virt="non-virtual"><scope>Camera</scope><name>_Process</name></member>
+      <member refid="class_camera_1a0b82ad1b9831e861ab65711e220d5441" prot="public" virt="non-virtual"><scope>Camera</scope><name>_Ready</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

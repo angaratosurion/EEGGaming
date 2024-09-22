@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="namespace_e_e_g_gaming_1_1_core_1_1_data_1_1_models" kind="namespace" language="C#">
+    <compoundname>EEGGaming::Core::Data::Models</compoundname>
+    <innerclass refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_brainwaves_record" prot="public">EEGGaming::Core::Data::Models::BrainwavesRecord</innerclass>
+    <innerclass refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion" prot="public">EEGGaming::Core::Data::Models::GamingSesion</innerclass>
+    <innerclass refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_user" prot="public">EEGGaming::Core::Data::Models::User</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="EEGGaming.Core/Data/Models/BrainwavesRecord.cs" line="10" column="1"/>
+  </compounddef>
+</doxygen>

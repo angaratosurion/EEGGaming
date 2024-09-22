@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="dir_0aa91ec3ccfa5b25b798718529ce4ae8" kind="dir">
+    <compoundname>EEGGaming.Trainer/obj/Debug</compoundname>
+    <innerdir refid="dir_168fb29a19499809bab95bc91b90c33b">EEGGaming.Trainer/obj/Debug/net5.0-windows</innerdir>
+    <innerdir refid="dir_1c0516f6ec9683dfc58f96a7c92c2ab4">EEGGaming.Trainer/obj/Debug/net6.0-windows7.0</innerdir>
+    <innerdir refid="dir_f3a8f3d6b6a0bd3f24b6601933d403ce">EEGGaming.Trainer/obj/Debug/net8.0-windows7.0</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="EEGGaming.Trainer/obj/Debug/"/>
+  </compounddef>
+</doxygen>

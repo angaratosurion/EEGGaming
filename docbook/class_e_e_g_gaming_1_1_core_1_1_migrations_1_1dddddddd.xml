@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_e_e_g_gaming_1_1_core_1_1_migrations_1_1dddddddd" xml:lang="en-US">
+<title>EEGGaming.Core.Migrations.dddddddd Class Reference</title>
+<indexterm><primary>EEGGaming.Core.Migrations.dddddddd</primary></indexterm>
+<para>
+ 
+</para>
+<para>Inheritance diagram for EEGGaming.Core.Migrations.dddddddd:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_e_e_g_gaming_1_1_core_1_1_migrations_1_1dddddddd.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Protected Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>override void <link linkend="_class_e_e_g_gaming_1_1_core_1_1_migrations_1_1dddddddd_1a48c3e596ddd0331563ca03fae4366512">Up</link> (MigrationBuilder migrationBuilder)</para>
+</listitem>
+            <listitem><para>override void <link linkend="_class_e_e_g_gaming_1_1_core_1_1_migrations_1_1dddddddd_1ae64fd24fa61275be148400729f2d3824">Down</link> (MigrationBuilder migrationBuilder)</para>
+</listitem>
+            <listitem><para>override void <link linkend="_class_e_e_g_gaming_1_1_core_1_1_migrations_1_1dddddddd_1adbc79242d6bd42500f12912e0001d050">BuildTargetModel</link> (ModelBuilder modelBuilder)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+<para>
+Definition at line <link linkend="_20240831174927__dddddddd_8_designer_8cs_source_1l00015">15</link> of file <link linkend="_20240831174927__dddddddd_8_designer_8cs_source">20240831174927_dddddddd.Designer.cs</link>.</para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_e_e_g_gaming_1_1_core_1_1_migrations_1_1dddddddd_1adbc79242d6bd42500f12912e0001d050"/><section>
+    <title>BuildTargetModel()</title>
+<indexterm><primary>BuildTargetModel</primary><secondary>EEGGaming.Core.Migrations.dddddddd</secondary></indexterm>
+<indexterm><primary>EEGGaming.Core.Migrations.dddddddd</primary><secondary>BuildTargetModel</secondary></indexterm>
+<para><computeroutput>override void EEGGaming.Core.Migrations.dddddddd.BuildTargetModel (ModelBuilder modelBuilder)<computeroutput>[protected]</computeroutput></computeroutput></para><para>
+</para>
+<para>
+Definition at line <link linkend="_20240831174927__dddddddd_8_designer_8cs_source_1l00018">18</link> of file <link linkend="_20240831174927__dddddddd_8_designer_8cs_source">20240831174927_dddddddd.Designer.cs</link>.</para>
+</section>
+<anchor xml:id="_class_e_e_g_gaming_1_1_core_1_1_migrations_1_1dddddddd_1ae64fd24fa61275be148400729f2d3824"/><section>
+    <title>Down()</title>
+<indexterm><primary>Down</primary><secondary>EEGGaming.Core.Migrations.dddddddd</secondary></indexterm>
+<indexterm><primary>EEGGaming.Core.Migrations.dddddddd</primary><secondary>Down</secondary></indexterm>
+<para><computeroutput>override void EEGGaming.Core.Migrations.dddddddd.Down (MigrationBuilder migrationBuilder)<computeroutput>[protected]</computeroutput></computeroutput></para><para>
+</para>
+<para>
+Definition at line <link linkend="_20240831174927__dddddddd_8cs_source_1l00017">17</link> of file <link linkend="_20240831174927__dddddddd_8cs_source">20240831174927_dddddddd.cs</link>.</para>
+</section>
+<anchor xml:id="_class_e_e_g_gaming_1_1_core_1_1_migrations_1_1dddddddd_1a48c3e596ddd0331563ca03fae4366512"/><section>
+    <title>Up()</title>
+<indexterm><primary>Up</primary><secondary>EEGGaming.Core.Migrations.dddddddd</secondary></indexterm>
+<indexterm><primary>EEGGaming.Core.Migrations.dddddddd</primary><secondary>Up</secondary></indexterm>
+<para><computeroutput>override void EEGGaming.Core.Migrations.dddddddd.Up (MigrationBuilder migrationBuilder)<computeroutput>[protected]</computeroutput></computeroutput></para><para>
+</para>
+<para>
+Definition at line <link linkend="_20240831174927__dddddddd_8cs_source_1l00011">11</link> of file <link linkend="_20240831174927__dddddddd_8cs_source">20240831174927_dddddddd.cs</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following files:</para>
+EEGGaming.Core/Migrations/20240831174927_dddddddd.csEEGGaming.Core/Migrations/20240831174927_dddddddd.Designer.cs</section>
+</section>

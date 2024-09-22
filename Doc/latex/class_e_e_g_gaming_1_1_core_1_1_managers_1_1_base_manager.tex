@@ -1,0 +1,106 @@
+\doxysection{EEGGaming.\+Core.\+Managers.\+Base\+Manager Class Reference}
+\hypertarget{class_e_e_g_gaming_1_1_core_1_1_managers_1_1_base_manager}{}\label{class_e_e_g_gaming_1_1_core_1_1_managers_1_1_base_manager}\index{EEGGaming.Core.Managers.BaseManager@{EEGGaming.Core.Managers.BaseManager}}
+
+
+The class that includes the mostly common methods,properties and fuctions of the Manager classes.  
+
+
+Inheritance diagram for EEGGaming.\+Core.\+Managers.\+Base\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.104536cm]{class_e_e_g_gaming_1_1_core_1_1_managers_1_1_base_manager}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_managers_1_1_base_manager_a9248c1be1118bf2a1da15a2ba731a4fc}{Create\+Database}} ()
+\begin{DoxyCompactList}\small\item\em Creates the Database. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_managers_1_1_base_manager_a7c286778992f94800563ebdbc55ff778}{Predict\+Last\+Id}} (string tablename)
+\begin{DoxyCompactList}\small\item\em It predicts the last value of the id\textquotesingle{}s property from the given table\textquotesingle{}s name. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_data_1_1_e_e_g_gaming_db_context}{EEGGaming\+Db\+Context}} \mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_managers_1_1_base_manager_ab03ecddd3cb836526101a168e1b408ef}{Db\+Context}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The Database\+Context of the library. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The class that includes the mostly common methods,properties and fuctions of the Manager classes. 
+
+Definition at line \mbox{\hyperlink{_base_manager_8cs_source_l00016}{16}} of file \mbox{\hyperlink{_base_manager_8cs_source}{Base\+Manager.\+cs}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_e_e_g_gaming_1_1_core_1_1_managers_1_1_base_manager_a0698b890b345d2fe9f6b7d0bf762af70}\index{EEGGaming.Core.Managers.BaseManager@{EEGGaming.Core.Managers.BaseManager}!BaseManager@{BaseManager}}
+\index{BaseManager@{BaseManager}!EEGGaming.Core.Managers.BaseManager@{EEGGaming.Core.Managers.BaseManager}}
+\doxysubsubsection{\texorpdfstring{BaseManager()}{BaseManager()}}
+{\footnotesize\ttfamily \label{class_e_e_g_gaming_1_1_core_1_1_managers_1_1_base_manager_a0698b890b345d2fe9f6b7d0bf762af70} 
+EEGGaming.\+Core.\+Managers.\+Base\+Manager.\+Base\+Manager (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_base_manager_8cs_source_l00022}{22}} of file \mbox{\hyperlink{_base_manager_8cs_source}{Base\+Manager.\+cs}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_e_e_g_gaming_1_1_core_1_1_managers_1_1_base_manager_a9248c1be1118bf2a1da15a2ba731a4fc}\index{EEGGaming.Core.Managers.BaseManager@{EEGGaming.Core.Managers.BaseManager}!CreateDatabase@{CreateDatabase}}
+\index{CreateDatabase@{CreateDatabase}!EEGGaming.Core.Managers.BaseManager@{EEGGaming.Core.Managers.BaseManager}}
+\doxysubsubsection{\texorpdfstring{CreateDatabase()}{CreateDatabase()}}
+{\footnotesize\ttfamily \label{class_e_e_g_gaming_1_1_core_1_1_managers_1_1_base_manager_a9248c1be1118bf2a1da15a2ba731a4fc} 
+void EEGGaming.\+Core.\+Managers.\+Base\+Manager.\+Create\+Database (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Creates the Database. 
+
+
+
+Definition at line \mbox{\hyperlink{_base_manager_8cs_source_l00038}{38}} of file \mbox{\hyperlink{_base_manager_8cs_source}{Base\+Manager.\+cs}}.
+
+\Hypertarget{class_e_e_g_gaming_1_1_core_1_1_managers_1_1_base_manager_a7c286778992f94800563ebdbc55ff778}\index{EEGGaming.Core.Managers.BaseManager@{EEGGaming.Core.Managers.BaseManager}!PredictLastId@{PredictLastId}}
+\index{PredictLastId@{PredictLastId}!EEGGaming.Core.Managers.BaseManager@{EEGGaming.Core.Managers.BaseManager}}
+\doxysubsubsection{\texorpdfstring{PredictLastId()}{PredictLastId()}}
+{\footnotesize\ttfamily \label{class_e_e_g_gaming_1_1_core_1_1_managers_1_1_base_manager_a7c286778992f94800563ebdbc55ff778} 
+int EEGGaming.\+Core.\+Managers.\+Base\+Manager.\+Predict\+Last\+Id (\begin{DoxyParamCaption}\item[{string}]{tablename}{}\end{DoxyParamCaption})}
+
+
+
+It predicts the last value of the id\textquotesingle{}s property from the given table\textquotesingle{}s name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tablename} & the name of the table the we wat to get the id\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+last value of the id\textquotesingle{}s property from the given table\textquotesingle{}s name
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_base_manager_8cs_source_l00049}{49}} of file \mbox{\hyperlink{_base_manager_8cs_source}{Base\+Manager.\+cs}}.
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{class_e_e_g_gaming_1_1_core_1_1_managers_1_1_base_manager_ab03ecddd3cb836526101a168e1b408ef}\index{EEGGaming.Core.Managers.BaseManager@{EEGGaming.Core.Managers.BaseManager}!DbContext@{DbContext}}
+\index{DbContext@{DbContext}!EEGGaming.Core.Managers.BaseManager@{EEGGaming.Core.Managers.BaseManager}}
+\doxysubsubsection{\texorpdfstring{DbContext}{DbContext}}
+{\footnotesize\ttfamily \label{class_e_e_g_gaming_1_1_core_1_1_managers_1_1_base_manager_ab03ecddd3cb836526101a168e1b408ef} 
+\mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_data_1_1_e_e_g_gaming_db_context}{EEGGaming\+Db\+Context}} EEGGaming.\+Core.\+Managers.\+Base\+Manager.\+Db\+Context\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The Database\+Context of the library. 
+
+
+
+Definition at line \mbox{\hyperlink{_base_manager_8cs_source_l00021}{21}} of file \mbox{\hyperlink{_base_manager_8cs_source}{Base\+Manager.\+cs}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Cloud Folder/\+One\+Drive/\+My Programs/\+Post-\/\+Graduate/\+Master in Information Systems (\+PLS)/\+Thesis/\+Code/\+EEGGaming/\+EEGGaming.\+Core/\+Managers/Base\+Manager.\+cs\end{DoxyCompactItemize}

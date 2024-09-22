@@ -1,0 +1,621 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves" kind="class" language="C#" prot="public">
+    <compoundname>EEGGaming::Core::Data::NonDataModels::Brainwaves</compoundname>
+    <derivedcompoundref refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_brainwaves_record" prot="public" virt="non-virtual">EEGGaming.Core.Data.Models.BrainwavesRecord</derivedcompoundref>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1aa16d9b59118af76918fd6b4cc701aa6c" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>uint</type>
+        <definition>uint EEGGaming.Core.Data.NonDataModels.Brainwaves.PackNumber</definition>
+        <argsstring></argsstring>
+        <name>PackNumber</name>
+        <qualifiedname>EEGGaming.Core.Data.NonDataModels.Brainwaves.PackNumber</qualifiedname>
+        <briefdescription>
+<para>Thenumber of the packet. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Data/NonDataModels/Brainwaves.cs" line="21" column="21" bodyfile="EEGGaming.Core/Data/NonDataModels/Brainwaves.cs" bodystart="21" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="property" id="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a80f504aeac234e88a8818e6936823ab9" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>byte</type>
+        <definition>byte EEGGaming.Core.Data.NonDataModels.Brainwaves.Marker</definition>
+        <argsstring></argsstring>
+        <name>Marker</name>
+        <qualifiedname>EEGGaming.Core.Data.NonDataModels.Brainwaves.Marker</qualifiedname>
+        <briefdescription>
+<para>The packet marker. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Data/NonDataModels/Brainwaves.cs" line="25" column="21" bodyfile="EEGGaming.Core/Data/NonDataModels/Brainwaves.cs" bodystart="25" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="property" id="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a950aba497ae3bdd977170593f6de9cf3" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string EEGGaming.Core.Data.NonDataModels.Brainwaves.Date</definition>
+        <argsstring></argsstring>
+        <name>Date</name>
+        <qualifiedname>EEGGaming.Core.Data.NonDataModels.Brainwaves.Date</qualifiedname>
+        <briefdescription>
+<para>The date the packet is captured. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Data/NonDataModels/Brainwaves.cs" line="29" column="23" bodyfile="EEGGaming.Core/Data/NonDataModels/Brainwaves.cs" bodystart="29" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="property" id="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a2e3a64fab9331c33712a488543cff3da" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string EEGGaming.Core.Data.NonDataModels.Brainwaves.Time</definition>
+        <argsstring></argsstring>
+        <name>Time</name>
+        <qualifiedname>EEGGaming.Core.Data.NonDataModels.Brainwaves.Time</qualifiedname>
+        <briefdescription>
+<para>The time the packet is captured. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Data/NonDataModels/Brainwaves.cs" line="33" column="23" bodyfile="EEGGaming.Core/Data/NonDataModels/Brainwaves.cs" bodystart="33" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="property" id="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1ae28ec52a5a7be45534f6a6560af0426d" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>double</type>
+        <definition>double EEGGaming.Core.Data.NonDataModels.Brainwaves.Second</definition>
+        <argsstring></argsstring>
+        <name>Second</name>
+        <qualifiedname>EEGGaming.Core.Data.NonDataModels.Brainwaves.Second</qualifiedname>
+        <briefdescription>
+<para>The second the packet is captured. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Data/NonDataModels/Brainwaves.cs" line="37" column="23" bodyfile="EEGGaming.Core/Data/NonDataModels/Brainwaves.cs" bodystart="37" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="property" id="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1ab00930f70ab5d893084ea1fbbd4da426" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>double</type>
+        <definition>double EEGGaming.Core.Data.NonDataModels.Brainwaves.MiliSecond</definition>
+        <argsstring></argsstring>
+        <name>MiliSecond</name>
+        <qualifiedname>EEGGaming.Core.Data.NonDataModels.Brainwaves.MiliSecond</qualifiedname>
+        <briefdescription>
+<para>The milisecond the packet is captured. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Data/NonDataModels/Brainwaves.cs" line="41" column="23" bodyfile="EEGGaming.Core/Data/NonDataModels/Brainwaves.cs" bodystart="41" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="property" id="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a680e14c0046817b3567caf02966b74c7" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>double</type>
+        <definition>double EEGGaming.Core.Data.NonDataModels.Brainwaves.Delta_avgch</definition>
+        <argsstring></argsstring>
+        <name>Delta_avgch</name>
+        <qualifiedname>EEGGaming.Core.Data.NonDataModels.Brainwaves.Delta_avgch</qualifiedname>
+        <briefdescription>
+<para>The average of Delta band value of the 2 channels. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Data/NonDataModels/Brainwaves.cs" line="46" column="23" bodyfile="EEGGaming.Core/Data/NonDataModels/Brainwaves.cs" bodystart="46" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="property" id="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a4bf15df56f8fb89009e39c38406c1688" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>double</type>
+        <definition>double EEGGaming.Core.Data.NonDataModels.Brainwaves.Theta_avgch</definition>
+        <argsstring></argsstring>
+        <name>Theta_avgch</name>
+        <qualifiedname>EEGGaming.Core.Data.NonDataModels.Brainwaves.Theta_avgch</qualifiedname>
+        <briefdescription>
+<para>The average of Theta band value of the 2 channels. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Data/NonDataModels/Brainwaves.cs" line="50" column="23" bodyfile="EEGGaming.Core/Data/NonDataModels/Brainwaves.cs" bodystart="50" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="property" id="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a0ec844c3fed086ed6cb792d6735ba8e6" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>double</type>
+        <definition>double EEGGaming.Core.Data.NonDataModels.Brainwaves.Alpha1_avgch</definition>
+        <argsstring></argsstring>
+        <name>Alpha1_avgch</name>
+        <qualifiedname>EEGGaming.Core.Data.NonDataModels.Brainwaves.Alpha1_avgch</qualifiedname>
+        <briefdescription>
+<para>The average of Alpha band value of the 2 channels. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Data/NonDataModels/Brainwaves.cs" line="54" column="23" bodyfile="EEGGaming.Core/Data/NonDataModels/Brainwaves.cs" bodystart="54" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="property" id="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a38ec6b776e8bd4a148725c597aef4641" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>double</type>
+        <definition>double EEGGaming.Core.Data.NonDataModels.Brainwaves.Beta1_avgch</definition>
+        <argsstring></argsstring>
+        <name>Beta1_avgch</name>
+        <qualifiedname>EEGGaming.Core.Data.NonDataModels.Brainwaves.Beta1_avgch</qualifiedname>
+        <briefdescription>
+<para>The average of Beta band value of the 2 channels. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Data/NonDataModels/Brainwaves.cs" line="59" column="23" bodyfile="EEGGaming.Core/Data/NonDataModels/Brainwaves.cs" bodystart="59" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="property" id="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1ab4063c82226ea208a66f02269c3bb72e" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>double</type>
+        <definition>double EEGGaming.Core.Data.NonDataModels.Brainwaves.Gamma1_avgch</definition>
+        <argsstring></argsstring>
+        <name>Gamma1_avgch</name>
+        <qualifiedname>EEGGaming.Core.Data.NonDataModels.Brainwaves.Gamma1_avgch</qualifiedname>
+        <briefdescription>
+<para>The average of Gamma band value of the 2 channels. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Data/NonDataModels/Brainwaves.cs" line="64" column="23" bodyfile="EEGGaming.Core/Data/NonDataModels/Brainwaves.cs" bodystart="64" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="property" id="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a7771e5e3d2a3f39d7f537c24181a869b" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>double</type>
+        <definition>double EEGGaming.Core.Data.NonDataModels.Brainwaves.Delta_Rel_avgch</definition>
+        <argsstring></argsstring>
+        <name>Delta_Rel_avgch</name>
+        <qualifiedname>EEGGaming.Core.Data.NonDataModels.Brainwaves.Delta_Rel_avgch</qualifiedname>
+        <briefdescription>
+<para>The average of Delta band Relative value of the 2 channels. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Data/NonDataModels/Brainwaves.cs" line="70" column="23" bodyfile="EEGGaming.Core/Data/NonDataModels/Brainwaves.cs" bodystart="70" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="property" id="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1acabf8affae82307c0668b465b68e767c" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>double</type>
+        <definition>double EEGGaming.Core.Data.NonDataModels.Brainwaves.Theta_Rel_avgch</definition>
+        <argsstring></argsstring>
+        <name>Theta_Rel_avgch</name>
+        <qualifiedname>EEGGaming.Core.Data.NonDataModels.Brainwaves.Theta_Rel_avgch</qualifiedname>
+        <briefdescription>
+<para>The average of Theta band Relative value of the 2 channels. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Data/NonDataModels/Brainwaves.cs" line="74" column="23" bodyfile="EEGGaming.Core/Data/NonDataModels/Brainwaves.cs" bodystart="74" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="property" id="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1aa06696dfe4f8d2bb5dd4e891e78cfdcf" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>double</type>
+        <definition>double EEGGaming.Core.Data.NonDataModels.Brainwaves.Alpha1_Rel_avgch</definition>
+        <argsstring></argsstring>
+        <name>Alpha1_Rel_avgch</name>
+        <qualifiedname>EEGGaming.Core.Data.NonDataModels.Brainwaves.Alpha1_Rel_avgch</qualifiedname>
+        <briefdescription>
+<para>The average of Alpha band Relative value of the 2 channels. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Data/NonDataModels/Brainwaves.cs" line="78" column="23" bodyfile="EEGGaming.Core/Data/NonDataModels/Brainwaves.cs" bodystart="78" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="property" id="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a8731b0f6050fd9e91e2ce1ea17de746a" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>double</type>
+        <definition>double EEGGaming.Core.Data.NonDataModels.Brainwaves.Beta1_Rel_avgch</definition>
+        <argsstring></argsstring>
+        <name>Beta1_Rel_avgch</name>
+        <qualifiedname>EEGGaming.Core.Data.NonDataModels.Brainwaves.Beta1_Rel_avgch</qualifiedname>
+        <briefdescription>
+<para>The average of Beta band Relative value of the 2 channels. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Data/NonDataModels/Brainwaves.cs" line="83" column="23" bodyfile="EEGGaming.Core/Data/NonDataModels/Brainwaves.cs" bodystart="83" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="property" id="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1acfa0890ecc394496ec2a6c936ddad133" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>double</type>
+        <definition>double EEGGaming.Core.Data.NonDataModels.Brainwaves.Gamma1_Rel_avgch</definition>
+        <argsstring></argsstring>
+        <name>Gamma1_Rel_avgch</name>
+        <qualifiedname>EEGGaming.Core.Data.NonDataModels.Brainwaves.Gamma1_Rel_avgch</qualifiedname>
+        <briefdescription>
+<para>The average of Gamma band Relative value of the 2 channels. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Data/NonDataModels/Brainwaves.cs" line="88" column="23" bodyfile="EEGGaming.Core/Data/NonDataModels/Brainwaves.cs" bodystart="88" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="property" id="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a2a0cc026fbbae7634d45821762149197" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>double</type>
+        <definition>double EEGGaming.Core.Data.NonDataModels.Brainwaves.Delta_ch1</definition>
+        <argsstring></argsstring>
+        <name>Delta_ch1</name>
+        <qualifiedname>EEGGaming.Core.Data.NonDataModels.Brainwaves.Delta_ch1</qualifiedname>
+        <briefdescription>
+<para>The value of Delta band from the channel 1. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Data/NonDataModels/Brainwaves.cs" line="93" column="23" bodyfile="EEGGaming.Core/Data/NonDataModels/Brainwaves.cs" bodystart="93" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="property" id="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1aaf137cc421c7b97930fa849cb5ffb7ec" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>double</type>
+        <definition>double EEGGaming.Core.Data.NonDataModels.Brainwaves.Theta_ch1</definition>
+        <argsstring></argsstring>
+        <name>Theta_ch1</name>
+        <qualifiedname>EEGGaming.Core.Data.NonDataModels.Brainwaves.Theta_ch1</qualifiedname>
+        <briefdescription>
+<para>The value of Theta band from the channel 1. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Data/NonDataModels/Brainwaves.cs" line="97" column="23" bodyfile="EEGGaming.Core/Data/NonDataModels/Brainwaves.cs" bodystart="97" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="property" id="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1add0cfaba9a1c999ebdcded7175112c5f" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>double</type>
+        <definition>double EEGGaming.Core.Data.NonDataModels.Brainwaves.Alpha1_ch1</definition>
+        <argsstring></argsstring>
+        <name>Alpha1_ch1</name>
+        <qualifiedname>EEGGaming.Core.Data.NonDataModels.Brainwaves.Alpha1_ch1</qualifiedname>
+        <briefdescription>
+<para>The value of Alpha band from the channel 1. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Data/NonDataModels/Brainwaves.cs" line="101" column="23" bodyfile="EEGGaming.Core/Data/NonDataModels/Brainwaves.cs" bodystart="101" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="property" id="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a7544850d6df71fc153f43906f4aa151e" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>double</type>
+        <definition>double EEGGaming.Core.Data.NonDataModels.Brainwaves.Beta1_ch1</definition>
+        <argsstring></argsstring>
+        <name>Beta1_ch1</name>
+        <qualifiedname>EEGGaming.Core.Data.NonDataModels.Brainwaves.Beta1_ch1</qualifiedname>
+        <briefdescription>
+<para>The value of Beta band from the channel 1. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Data/NonDataModels/Brainwaves.cs" line="106" column="23" bodyfile="EEGGaming.Core/Data/NonDataModels/Brainwaves.cs" bodystart="106" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="property" id="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1aac1400696bdef6ef00f7dfb8dd6c0ddc" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>double</type>
+        <definition>double EEGGaming.Core.Data.NonDataModels.Brainwaves.Gamma1_ch1</definition>
+        <argsstring></argsstring>
+        <name>Gamma1_ch1</name>
+        <qualifiedname>EEGGaming.Core.Data.NonDataModels.Brainwaves.Gamma1_ch1</qualifiedname>
+        <briefdescription>
+<para>The value of Gamma band from the channel 1. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Data/NonDataModels/Brainwaves.cs" line="111" column="23" bodyfile="EEGGaming.Core/Data/NonDataModels/Brainwaves.cs" bodystart="111" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="property" id="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a10d1f43856ef32f2562ea5e5da819b95" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>double</type>
+        <definition>double EEGGaming.Core.Data.NonDataModels.Brainwaves.Delta_Rel_ch1</definition>
+        <argsstring></argsstring>
+        <name>Delta_Rel_ch1</name>
+        <qualifiedname>EEGGaming.Core.Data.NonDataModels.Brainwaves.Delta_Rel_ch1</qualifiedname>
+        <briefdescription>
+<para>The Relative value of Delta band from the channel 1. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Data/NonDataModels/Brainwaves.cs" line="115" column="23" bodyfile="EEGGaming.Core/Data/NonDataModels/Brainwaves.cs" bodystart="115" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="property" id="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a403ba98fa57db02035a9ea6c28f0f478" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>double</type>
+        <definition>double EEGGaming.Core.Data.NonDataModels.Brainwaves.Theta_Rel_ch1</definition>
+        <argsstring></argsstring>
+        <name>Theta_Rel_ch1</name>
+        <qualifiedname>EEGGaming.Core.Data.NonDataModels.Brainwaves.Theta_Rel_ch1</qualifiedname>
+        <briefdescription>
+<para>The Relative value of Theta band from the channel 1. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Data/NonDataModels/Brainwaves.cs" line="119" column="23" bodyfile="EEGGaming.Core/Data/NonDataModels/Brainwaves.cs" bodystart="119" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="property" id="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1ae08ab2f953a2965a62906bf4978b9e1f" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>double</type>
+        <definition>double EEGGaming.Core.Data.NonDataModels.Brainwaves.Alpha1_Rel_ch1</definition>
+        <argsstring></argsstring>
+        <name>Alpha1_Rel_ch1</name>
+        <qualifiedname>EEGGaming.Core.Data.NonDataModels.Brainwaves.Alpha1_Rel_ch1</qualifiedname>
+        <briefdescription>
+<para>The Relative value of Alpha band from the channel 1. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Data/NonDataModels/Brainwaves.cs" line="123" column="23" bodyfile="EEGGaming.Core/Data/NonDataModels/Brainwaves.cs" bodystart="123" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="property" id="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a29e6af2b4053477e4889d828e3e34168" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>double</type>
+        <definition>double EEGGaming.Core.Data.NonDataModels.Brainwaves.Beta1_Rel_ch1</definition>
+        <argsstring></argsstring>
+        <name>Beta1_Rel_ch1</name>
+        <qualifiedname>EEGGaming.Core.Data.NonDataModels.Brainwaves.Beta1_Rel_ch1</qualifiedname>
+        <briefdescription>
+<para>The Relative value of Beta band from the channel 1. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Data/NonDataModels/Brainwaves.cs" line="128" column="23" bodyfile="EEGGaming.Core/Data/NonDataModels/Brainwaves.cs" bodystart="128" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="property" id="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1ac54a8ed1b67a480413702c8b2cd13992" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>double</type>
+        <definition>double EEGGaming.Core.Data.NonDataModels.Brainwaves.Gamma1_Rel_ch1</definition>
+        <argsstring></argsstring>
+        <name>Gamma1_Rel_ch1</name>
+        <qualifiedname>EEGGaming.Core.Data.NonDataModels.Brainwaves.Gamma1_Rel_ch1</qualifiedname>
+        <briefdescription>
+<para>The Relative value of Gamma band from the channel 1. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Data/NonDataModels/Brainwaves.cs" line="132" column="23" bodyfile="EEGGaming.Core/Data/NonDataModels/Brainwaves.cs" bodystart="132" bodyend="132"/>
+      </memberdef>
+      <memberdef kind="property" id="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1aac5c7ec74d531d70796a4d59d466525d" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>double</type>
+        <definition>double EEGGaming.Core.Data.NonDataModels.Brainwaves.Delta_ch2</definition>
+        <argsstring></argsstring>
+        <name>Delta_ch2</name>
+        <qualifiedname>EEGGaming.Core.Data.NonDataModels.Brainwaves.Delta_ch2</qualifiedname>
+        <briefdescription>
+<para>The value of Delta band from the channel 2. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Data/NonDataModels/Brainwaves.cs" line="136" column="23" bodyfile="EEGGaming.Core/Data/NonDataModels/Brainwaves.cs" bodystart="136" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="property" id="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1ae2011ba99ff79d76bee549c3ee565756" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>double</type>
+        <definition>double EEGGaming.Core.Data.NonDataModels.Brainwaves.Theta_ch2</definition>
+        <argsstring></argsstring>
+        <name>Theta_ch2</name>
+        <qualifiedname>EEGGaming.Core.Data.NonDataModels.Brainwaves.Theta_ch2</qualifiedname>
+        <briefdescription>
+<para>The value of Theta band from the channel 2. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Data/NonDataModels/Brainwaves.cs" line="140" column="23" bodyfile="EEGGaming.Core/Data/NonDataModels/Brainwaves.cs" bodystart="140" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="property" id="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a7670d63eb7e1f2fbff5316b4af021c28" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>double</type>
+        <definition>double EEGGaming.Core.Data.NonDataModels.Brainwaves.Alpha1_ch2</definition>
+        <argsstring></argsstring>
+        <name>Alpha1_ch2</name>
+        <qualifiedname>EEGGaming.Core.Data.NonDataModels.Brainwaves.Alpha1_ch2</qualifiedname>
+        <briefdescription>
+<para>The value of Alpha band from the channel 2. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Data/NonDataModels/Brainwaves.cs" line="144" column="23" bodyfile="EEGGaming.Core/Data/NonDataModels/Brainwaves.cs" bodystart="144" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="property" id="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a2f39307b7696bb3fa25e23d3e4a04e78" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>double</type>
+        <definition>double EEGGaming.Core.Data.NonDataModels.Brainwaves.Beta1_ch2</definition>
+        <argsstring></argsstring>
+        <name>Beta1_ch2</name>
+        <qualifiedname>EEGGaming.Core.Data.NonDataModels.Brainwaves.Beta1_ch2</qualifiedname>
+        <briefdescription>
+<para>The value of Beta band from the channel 2. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Data/NonDataModels/Brainwaves.cs" line="149" column="23" bodyfile="EEGGaming.Core/Data/NonDataModels/Brainwaves.cs" bodystart="149" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="property" id="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a9d2828c831703530d75da6f2a64075ea" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>double</type>
+        <definition>double EEGGaming.Core.Data.NonDataModels.Brainwaves.Gamma1_ch2</definition>
+        <argsstring></argsstring>
+        <name>Gamma1_ch2</name>
+        <qualifiedname>EEGGaming.Core.Data.NonDataModels.Brainwaves.Gamma1_ch2</qualifiedname>
+        <briefdescription>
+<para>The value of Gamma band from the channel 2. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Data/NonDataModels/Brainwaves.cs" line="154" column="23" bodyfile="EEGGaming.Core/Data/NonDataModels/Brainwaves.cs" bodystart="154" bodyend="154"/>
+      </memberdef>
+      <memberdef kind="property" id="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a2d8355effb5729dc271faf9bc1b8aa2b" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>double</type>
+        <definition>double EEGGaming.Core.Data.NonDataModels.Brainwaves.Delta_Rel_ch2</definition>
+        <argsstring></argsstring>
+        <name>Delta_Rel_ch2</name>
+        <qualifiedname>EEGGaming.Core.Data.NonDataModels.Brainwaves.Delta_Rel_ch2</qualifiedname>
+        <briefdescription>
+<para>The Relative value of Delta band from the channel 2. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Data/NonDataModels/Brainwaves.cs" line="158" column="23" bodyfile="EEGGaming.Core/Data/NonDataModels/Brainwaves.cs" bodystart="158" bodyend="158"/>
+      </memberdef>
+      <memberdef kind="property" id="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a5f85e0db6ee5b85b636783e1d0c0422d" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>double</type>
+        <definition>double EEGGaming.Core.Data.NonDataModels.Brainwaves.Theta_Rel_ch2</definition>
+        <argsstring></argsstring>
+        <name>Theta_Rel_ch2</name>
+        <qualifiedname>EEGGaming.Core.Data.NonDataModels.Brainwaves.Theta_Rel_ch2</qualifiedname>
+        <briefdescription>
+<para>The Relative value of Theta band from the channel 2. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Data/NonDataModels/Brainwaves.cs" line="162" column="23" bodyfile="EEGGaming.Core/Data/NonDataModels/Brainwaves.cs" bodystart="162" bodyend="162"/>
+      </memberdef>
+      <memberdef kind="property" id="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a5b39203658fa975edb57d60995dc9c4f" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>double</type>
+        <definition>double EEGGaming.Core.Data.NonDataModels.Brainwaves.Alpha1_Rel_ch2</definition>
+        <argsstring></argsstring>
+        <name>Alpha1_Rel_ch2</name>
+        <qualifiedname>EEGGaming.Core.Data.NonDataModels.Brainwaves.Alpha1_Rel_ch2</qualifiedname>
+        <briefdescription>
+<para>The Relative value of Alpha band from the channel 2. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Data/NonDataModels/Brainwaves.cs" line="166" column="23" bodyfile="EEGGaming.Core/Data/NonDataModels/Brainwaves.cs" bodystart="166" bodyend="166"/>
+      </memberdef>
+      <memberdef kind="property" id="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a3aea0f827833c1af52f7ff8b4d4d98e5" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>double</type>
+        <definition>double EEGGaming.Core.Data.NonDataModels.Brainwaves.Beta1_Rel_ch2</definition>
+        <argsstring></argsstring>
+        <name>Beta1_Rel_ch2</name>
+        <qualifiedname>EEGGaming.Core.Data.NonDataModels.Brainwaves.Beta1_Rel_ch2</qualifiedname>
+        <briefdescription>
+<para>The Relative value of Beta band from the channel 2. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Data/NonDataModels/Brainwaves.cs" line="171" column="23" bodyfile="EEGGaming.Core/Data/NonDataModels/Brainwaves.cs" bodystart="171" bodyend="171"/>
+      </memberdef>
+      <memberdef kind="property" id="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a3a1fc86d09f84045859f4933e3dcf0a7" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>double</type>
+        <definition>double EEGGaming.Core.Data.NonDataModels.Brainwaves.Gamma1_Rel_ch2</definition>
+        <argsstring></argsstring>
+        <name>Gamma1_Rel_ch2</name>
+        <qualifiedname>EEGGaming.Core.Data.NonDataModels.Brainwaves.Gamma1_Rel_ch2</qualifiedname>
+        <briefdescription>
+<para>The Relative value of Gamma band from the channel 2. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Data/NonDataModels/Brainwaves.cs" line="176" column="23" bodyfile="EEGGaming.Core/Data/NonDataModels/Brainwaves.cs" bodystart="176" bodyend="176"/>
+      </memberdef>
+      <memberdef kind="property" id="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a7da82ea78dfc47df6f183f180170a0fb" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>bool</type>
+        <definition>bool EEGGaming.Core.Data.NonDataModels.Brainwaves.Blinked</definition>
+        <argsstring></argsstring>
+        <name>Blinked</name>
+        <qualifiedname>EEGGaming.Core.Data.NonDataModels.Brainwaves.Blinked</qualifiedname>
+        <briefdescription>
+<para>If user had blinked. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Data/NonDataModels/Brainwaves.cs" line="182" column="21" bodyfile="EEGGaming.Core/Data/NonDataModels/Brainwaves.cs" bodystart="182" bodyend="182"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>The class representation of the packets containing the data coming from the headset. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>EEGGaming.Core.Data.NonDataModels.Brainwaves</label>
+        <link refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves"/>
+      </node>
+      <node id="2">
+        <label>EEGGaming.Core.Data.Models.BrainwavesRecord</label>
+        <link refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_brainwaves_record"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="EEGGaming.Core/Data/NonDataModels/Brainwaves.cs" line="16" column="11" bodyfile="EEGGaming.Core/Data/NonDataModels/Brainwaves.cs" bodystart="17" bodyend="186"/>
+    <listofallmembers>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a0ec844c3fed086ed6cb792d6735ba8e6" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Data::NonDataModels::Brainwaves</scope><name>Alpha1_avgch</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1add0cfaba9a1c999ebdcded7175112c5f" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Data::NonDataModels::Brainwaves</scope><name>Alpha1_ch1</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a7670d63eb7e1f2fbff5316b4af021c28" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Data::NonDataModels::Brainwaves</scope><name>Alpha1_ch2</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1aa06696dfe4f8d2bb5dd4e891e78cfdcf" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Data::NonDataModels::Brainwaves</scope><name>Alpha1_Rel_avgch</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1ae08ab2f953a2965a62906bf4978b9e1f" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Data::NonDataModels::Brainwaves</scope><name>Alpha1_Rel_ch1</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a5b39203658fa975edb57d60995dc9c4f" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Data::NonDataModels::Brainwaves</scope><name>Alpha1_Rel_ch2</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a38ec6b776e8bd4a148725c597aef4641" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Data::NonDataModels::Brainwaves</scope><name>Beta1_avgch</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a7544850d6df71fc153f43906f4aa151e" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Data::NonDataModels::Brainwaves</scope><name>Beta1_ch1</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a2f39307b7696bb3fa25e23d3e4a04e78" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Data::NonDataModels::Brainwaves</scope><name>Beta1_ch2</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a8731b0f6050fd9e91e2ce1ea17de746a" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Data::NonDataModels::Brainwaves</scope><name>Beta1_Rel_avgch</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a29e6af2b4053477e4889d828e3e34168" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Data::NonDataModels::Brainwaves</scope><name>Beta1_Rel_ch1</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a3aea0f827833c1af52f7ff8b4d4d98e5" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Data::NonDataModels::Brainwaves</scope><name>Beta1_Rel_ch2</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a7da82ea78dfc47df6f183f180170a0fb" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Data::NonDataModels::Brainwaves</scope><name>Blinked</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a950aba497ae3bdd977170593f6de9cf3" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Data::NonDataModels::Brainwaves</scope><name>Date</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a680e14c0046817b3567caf02966b74c7" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Data::NonDataModels::Brainwaves</scope><name>Delta_avgch</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a2a0cc026fbbae7634d45821762149197" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Data::NonDataModels::Brainwaves</scope><name>Delta_ch1</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1aac5c7ec74d531d70796a4d59d466525d" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Data::NonDataModels::Brainwaves</scope><name>Delta_ch2</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a7771e5e3d2a3f39d7f537c24181a869b" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Data::NonDataModels::Brainwaves</scope><name>Delta_Rel_avgch</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a10d1f43856ef32f2562ea5e5da819b95" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Data::NonDataModels::Brainwaves</scope><name>Delta_Rel_ch1</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a2d8355effb5729dc271faf9bc1b8aa2b" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Data::NonDataModels::Brainwaves</scope><name>Delta_Rel_ch2</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1ab4063c82226ea208a66f02269c3bb72e" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Data::NonDataModels::Brainwaves</scope><name>Gamma1_avgch</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1aac1400696bdef6ef00f7dfb8dd6c0ddc" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Data::NonDataModels::Brainwaves</scope><name>Gamma1_ch1</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a9d2828c831703530d75da6f2a64075ea" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Data::NonDataModels::Brainwaves</scope><name>Gamma1_ch2</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1acfa0890ecc394496ec2a6c936ddad133" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Data::NonDataModels::Brainwaves</scope><name>Gamma1_Rel_avgch</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1ac54a8ed1b67a480413702c8b2cd13992" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Data::NonDataModels::Brainwaves</scope><name>Gamma1_Rel_ch1</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a3a1fc86d09f84045859f4933e3dcf0a7" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Data::NonDataModels::Brainwaves</scope><name>Gamma1_Rel_ch2</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a80f504aeac234e88a8818e6936823ab9" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Data::NonDataModels::Brainwaves</scope><name>Marker</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1ab00930f70ab5d893084ea1fbbd4da426" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Data::NonDataModels::Brainwaves</scope><name>MiliSecond</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1aa16d9b59118af76918fd6b4cc701aa6c" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Data::NonDataModels::Brainwaves</scope><name>PackNumber</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1ae28ec52a5a7be45534f6a6560af0426d" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Data::NonDataModels::Brainwaves</scope><name>Second</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a4bf15df56f8fb89009e39c38406c1688" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Data::NonDataModels::Brainwaves</scope><name>Theta_avgch</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1aaf137cc421c7b97930fa849cb5ffb7ec" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Data::NonDataModels::Brainwaves</scope><name>Theta_ch1</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1ae2011ba99ff79d76bee549c3ee565756" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Data::NonDataModels::Brainwaves</scope><name>Theta_ch2</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1acabf8affae82307c0668b465b68e767c" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Data::NonDataModels::Brainwaves</scope><name>Theta_Rel_avgch</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a403ba98fa57db02035a9ea6c28f0f478" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Data::NonDataModels::Brainwaves</scope><name>Theta_Rel_ch1</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a5f85e0db6ee5b85b636783e1d0c0422d" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Data::NonDataModels::Brainwaves</scope><name>Theta_Rel_ch2</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a2e3a64fab9331c33712a488543cff3da" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Data::NonDataModels::Brainwaves</scope><name>Time</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

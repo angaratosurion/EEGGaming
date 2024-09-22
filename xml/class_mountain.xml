@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="class_mountain" kind="class" language="C#" prot="public">
+    <compoundname>Mountain</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Sprite2D</basecompoundref>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_mountain_1a9c27e97f1a26c636040b6a7f6bd28164" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>PackedScene</type>
+        <definition>PackedScene Mountain.packedScene</definition>
+        <argsstring></argsstring>
+        <name>packedScene</name>
+        <qualifiedname>Mountain.packedScene</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BlinkBird/Code/Mountain.cs" line="8" column="21" bodyfile="BlinkBird/Code/Mountain.cs" bodystart="8" bodyend="8"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_mountain_1aaf8eef33d903ed3e49f476d73b3e7eff" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void Mountain._Ready</definition>
+        <argsstring>()</argsstring>
+        <name>_Ready</name>
+        <qualifiedname>Mountain._Ready</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BlinkBird/Code/Mountain.cs" line="10" column="22" bodyfile="BlinkBird/Code/Mountain.cs" bodystart="10" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mountain_1a6cfce94e2c1e7e5eddfeb2df09199f01" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void Mountain._Process</definition>
+        <argsstring>(double delta)</argsstring>
+        <name>_Process</name>
+        <qualifiedname>Mountain._Process</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>delta</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BlinkBird/Code/Mountain.cs" line="19" column="26" bodyfile="BlinkBird/Code/Mountain.cs" bodystart="19" bodyend="54"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Mountain</label>
+        <link refid="class_mountain"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Sprite2D</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Mountain</label>
+        <link refid="class_mountain"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Sprite2D</label>
+      </node>
+    </collaborationgraph>
+    <location file="BlinkBird/Code/Mountain.cs" line="5" column="15" bodyfile="BlinkBird/Code/Mountain.cs" bodystart="6" bodyend="56"/>
+    <listofallmembers>
+      <member refid="class_mountain_1a6cfce94e2c1e7e5eddfeb2df09199f01" prot="public" virt="non-virtual"><scope>Mountain</scope><name>_Process</name></member>
+      <member refid="class_mountain_1aaf8eef33d903ed3e49f476d73b3e7eff" prot="public" virt="non-virtual"><scope>Mountain</scope><name>_Ready</name></member>
+      <member refid="class_mountain_1a9c27e97f1a26c636040b6a7f6bd28164" prot="public" virt="non-virtual"><scope>Mountain</scope><name>packedScene</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

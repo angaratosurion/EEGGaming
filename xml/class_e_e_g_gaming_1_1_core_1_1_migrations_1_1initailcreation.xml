@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="class_e_e_g_gaming_1_1_core_1_1_migrations_1_1initailcreation" kind="class" language="C#" prot="public">
+    <compoundname>EEGGaming::Core::Migrations::initailcreation</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Migration</basecompoundref>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_e_e_g_gaming_1_1_core_1_1_migrations_1_1initailcreation_1a93ec61e2f24b55c4ff1baf807116eaf6" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void EEGGaming.Core.Migrations.initailcreation.Up</definition>
+        <argsstring>(MigrationBuilder migrationBuilder)</argsstring>
+        <name>Up</name>
+        <qualifiedname>EEGGaming.Core.Migrations.initailcreation.Up</qualifiedname>
+        <param>
+          <type>MigrationBuilder</type>
+          <declname>migrationBuilder</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Migrations/20240526192812_initail creation.cs" line="11" column="33" bodyfile="EEGGaming.Core/Migrations/20240526192812_initail creation.cs" bodystart="11" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="class_e_e_g_gaming_1_1_core_1_1_migrations_1_1initailcreation_1a1c4a16aa3a02bbfe296a392098c4d6ae" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void EEGGaming.Core.Migrations.initailcreation.Down</definition>
+        <argsstring>(MigrationBuilder migrationBuilder)</argsstring>
+        <name>Down</name>
+        <qualifiedname>EEGGaming.Core.Migrations.initailcreation.Down</qualifiedname>
+        <param>
+          <type>MigrationBuilder</type>
+          <declname>migrationBuilder</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Migrations/20240526192812_initail creation.cs" line="46" column="33" bodyfile="EEGGaming.Core/Migrations/20240526192812_initail creation.cs" bodystart="46" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="class_e_e_g_gaming_1_1_core_1_1_migrations_1_1initailcreation_1aa38e6b76227a78c26eb18cc7242ada1d" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void EEGGaming.Core.Migrations.initailcreation.BuildTargetModel</definition>
+        <argsstring>(ModelBuilder modelBuilder)</argsstring>
+        <name>BuildTargetModel</name>
+        <qualifiedname>EEGGaming.Core.Migrations.initailcreation.BuildTargetModel</qualifiedname>
+        <param>
+          <type>ModelBuilder</type>
+          <declname>modelBuilder</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Migrations/20240526192812_initail creation.Designer.cs" line="18" column="33" bodyfile="EEGGaming.Core/Migrations/20240526192812_initail creation.Designer.cs" bodystart="18" bodyend="139"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>EEGGaming.Core.Migrations.initailcreation</label>
+        <link refid="class_e_e_g_gaming_1_1_core_1_1_migrations_1_1initailcreation"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Migration</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>EEGGaming.Core.Migrations.initailcreation</label>
+        <link refid="class_e_e_g_gaming_1_1_core_1_1_migrations_1_1initailcreation"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Migration</label>
+      </node>
+    </collaborationgraph>
+    <location file="EEGGaming.Core/Migrations/20240526192812_initail creation.cs" line="8" column="19" bodyfile="EEGGaming.Core/Migrations/20240526192812_initail creation.Designer.cs" bodystart="16" bodyend="140"/>
+    <listofallmembers>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_migrations_1_1initailcreation_1aa38e6b76227a78c26eb18cc7242ada1d" prot="protected" virt="non-virtual"><scope>EEGGaming::Core::Migrations::initailcreation</scope><name>BuildTargetModel</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_migrations_1_1initailcreation_1a1c4a16aa3a02bbfe296a392098c4d6ae" prot="protected" virt="non-virtual"><scope>EEGGaming::Core::Migrations::initailcreation</scope><name>Down</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_migrations_1_1initailcreation_1a93ec61e2f24b55c4ff1baf807116eaf6" prot="protected" virt="non-virtual"><scope>EEGGaming::Core::Migrations::initailcreation</scope><name>Up</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

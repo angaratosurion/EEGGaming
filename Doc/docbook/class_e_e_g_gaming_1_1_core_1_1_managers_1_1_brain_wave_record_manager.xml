@@ -1,0 +1,985 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager" xml:lang="en-US">
+<title>EEGGaming.Core.Managers.BrainWaveRecordManager Class Reference</title>
+<indexterm><primary>EEGGaming.Core.Managers.BrainWaveRecordManager</primary></indexterm>
+<para>
+
+<para>The Manager that manages the records of the BrainWave table and detectsif an eye blink occured. </para>
+ 
+</para>
+<para>Inheritance diagram for EEGGaming.Core.Managers.BrainWaveRecordManager:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_1aa3e82a13471314555aecd2b8a31b1122">LoadCsv</link> (string filename)</para>
+
+<para>It Loads thedata from the given file. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_1aa37393630a5ae47cb49701fcd71e8779">MakeGraphs</link> (string filename)</para>
+
+<para>Generates the graphs in images. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_1ab31d23b3a77ce3a8a2f8dd164843e050">Connect</link> (SensorInfo sens)</para>
+
+<para>Connects to the sensor with the given info. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_1a9eb781697b80a24d1308a558e02eb601">Start</link> ()</para>
+
+<para>Starts the capture of brainwaves. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_1a2b8ea31f82da7e7e8ab4c361f4f6cfee">Stop</link> ()</para>
+
+<para>Stops the capture of brainwaves. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_1ab0cf81d214a96ca2a54fb3a67154271c">StopAndSavetoDatabse</link> ()</para>
+
+<para>Stops the capture of brainwaves and saves them to the database. </para>
+</listitem>
+            <listitem><para>async void <link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_1a901688dbf85985f42956580b8312cb0b">SavetoDatabse</link> ()</para>
+
+<para>Saves the BrainWaves to the database. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_1a6adbb993f6c7382eb2ac39cbeacd93b0">SaveToCSV</link> (string filename)</para>
+
+<para>Saves the BrainWave datato Comma seperated file. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_1afa396e3b44caf9acda5223649df96226">FilterArrayInPlace</link> (double[] vals)</para>
+
+<para>Applies the filters. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_1a3ce8032a1268dfc6cc7c6c2215d62ad3">InitFiltering</link> ()</para>
+
+<para>Initites the array with current filters. </para>
+</listitem>
+            <listitem><para>Boolean <link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_1a33d3746146bd581e19f78469b6375bef">DetectBlink</link> ()</para>
+
+<para>Detects if user had blinked or not. </para>
+</listitem>
+            <listitem><para>Boolean <link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_1a1ae6792b2aec5e9eae94ce477d70d467">DetectBlinkusingAlpha</link> (double[] oldvals, double[] chanel1vals)</para>
+
+<para>Detects eye blinks using the alpha band. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_1ab2e15b1714879a01c895310873da851c">AddNew</link> (<link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_brainwaves_record">BrainwavesRecord</link> record)</para>
+
+<para>Adds a new record in the Brainwave&apos;s table. </para>
+</listitem>
+            <listitem><para>async Task <link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_1a6e78a58dad2b6e69a344a2fbf05564bb">AddNewRange</link> (<link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_brainwaves_record">BrainwavesRecord</link>[] record)</para>
+
+<para>Add an array of brainwaves data in the brainwaves&apos; table. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_1a30ed0888a74e04e4f09919e9d7e5b19c">Edit</link> (int id, <link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_brainwaves_record">BrainwavesRecord</link> record)</para>
+
+<para>Edits the record with the given id. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_1a6dd4ca73dfa09508fdefff14db59e506">EditRange</link> (<link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_brainwaves_record">BrainwavesRecord</link>[] records)</para>
+
+<para>Edits a numberof Brainwave records. </para>
+</listitem>
+            <listitem><para>List&lt; <link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_brainwaves_record">BrainwavesRecord</link> &gt; <link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_1a51e1b7ab0af363d15d54889a13818f8e">GetBrainwavesFromDB</link> ()</para>
+
+<para>Gets the Records from the BrainWaves&apos; table. </para>
+</listitem>
+            <listitem><para>List&lt; <link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_brainwaves_record">BrainwavesRecord</link> &gt; <link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_1a9503c3040c99b079a9e617ccfd302720">GetBrainwavesFromDBByUserId</link> (int id)</para>
+
+<para>Get the Records from the BrainWaves&apos; table of the user with the given id. </para>
+</listitem>
+            <listitem><para><link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_brainwaves_record">BrainwavesRecord</link> <link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_1ab7ef99b75c6b9d73ba859182ac8b81b7">GetBrainwaveFromDBById</link> (int id)</para>
+
+<para>Gets the BrainWave record by it&apos;s Id. </para>
+</listitem>
+            <listitem><para>List&lt; <link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_brainwaves_record">BrainwavesRecord</link> &gt; <link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_1a8d0ce0e4599f0280160826f296073fa5">GetBrainwavesFromDBByGamingSessionId</link> (int id)</para>
+
+<para>Get the Records from the BrainWaves&apos; table of the gamingsession with the given id. </para>
+</listitem>
+            <listitem><para>List&lt; <link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_brainwaves_record">BrainwavesRecord</link> &gt; <link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_1aba99db5f5ef937f86f2bf4c9300a7939">GetBrainwavesFromDBByMilisconds</link> (double milsecond)</para>
+
+<para>the Records from the BrainWaves&apos; table by the miliseconds </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Public Member Functions inherited from <link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_base_manager">EEGGaming.Core.Managers.BaseManager</link>        <itemizedlist>
+            <listitem><para>void <link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_base_manager_1a9248c1be1118bf2a1da15a2ba731a4fc">CreateDatabase</link> ()</para>
+
+<para>Creates the Database. </para>
+</listitem>
+            <listitem><para>int <link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_base_manager_1a7c286778992f94800563ebdbc55ff778">PredictLastId</link> (string tablename)</para>
+
+<para>It predicts the last value of the id&apos;s property from the given table&apos;s name. </para>
+</listitem>
+        </itemizedlist>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>static NeuroSDK.Scanner <link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_1a62018636cfefd0af1f416df70642ddb5">scanner</link> = new NeuroSDK.Scanner(SensorFamily.SensorLEBrainBit)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para>List&lt; <link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_brainwaves_record">BrainwavesRecord</link> &gt; <link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_1a30759f2f9ef705ae50ebf4bfb48102ba">Records</link><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>The Brainwave records curently captured. </para>
+</listitem>
+            <listitem><para>System.Timers.Timer <link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_1a16db3d460dcc5808acbb0175b6aca22f">tmrBlink</link><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>The timer for the Blink. </para>
+</listitem>
+            <listitem><para>int <link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_1ac61db2ab77772f3384c18c2f3e5b86ef">SamplesRecorded</link><computeroutput> [get]</computeroutput>
+</para>
+
+<para>The namber of the recorded samples/records. </para>
+</listitem>
+            <listitem><para>Boolean <link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_1a8d56301d16e7ca43d9b7fe3d10105825">EnableFiltering</link><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>Eanble or Disable the ability to filter the samples. </para>
+</listitem>
+            <listitem><para>int <link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_1a54422622df0ab7f89af4cedf3812225a">SamplingRate</link><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>The Sample Rate the sensor will capture samples. </para>
+</listitem>
+            <listitem><para>int <link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_1ad0777dda2701ae289179e72ce3242582">FFtWindow</link><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>The fftWindow. </para>
+</listitem>
+            <listitem><para>int <link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_1aa56812d0b3b27cb500437404d857d582">ProcessWinRate</link><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>The ProcessWinRate. </para>
+</listitem>
+            <listitem><para>double <link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_1aa295188d71413fb81b49495e4cc51c0e">FFTBinsFor1Hz</link><computeroutput> [get]</computeroutput>
+</para>
+
+<para>The FFT Bins For 1Hz. </para>
+</listitem>
+            <listitem><para>BrainBitSensor? <link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_1aac1139f5f9fcee87ee991987c6f7805b">Sensor</link><computeroutput> [get]</computeroutput>
+</para>
+
+<para>The Sensor that captures the brainwaves. </para>
+</listitem>
+            <listitem><para>Boolean <link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_1abeb21ce299f71f1e29c1016ab6ac3fdc">Blinked</link><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>The result of the eye blink detection. </para>
+</listitem>
+            <listitem><para>int <link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_1a5562dc9811aa8a577c96452f776df844">ActiveUserId</link><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>The id of the user it captures the packet from. </para>
+</listitem>
+            <listitem><para>int <link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_1aed944b68880ed4648646acd8c65d9bc8">ActiveGamingSessionId</link><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>The Id of the GamingSession that occurs. </para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_1afac886f490bf6eb0e8f088cf937ec2de">UsesDb</link><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>It sets whenever the library will use Database or not. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Properties inherited from <link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_base_manager">EEGGaming.Core.Managers.BaseManager</link>        <itemizedlist>
+            <listitem><para><link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_e_e_g_gaming_db_context">EEGGamingDbContext</link> <link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_base_manager_1ab03ecddd3cb836526101a168e1b408ef">DbContext</link><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>The DatabaseContext of the library. </para>
+</listitem>
+        </itemizedlist>
+<simplesect>
+    <title>Events    </title>
+        <itemizedlist>
+            <listitem><para>OnBlinked <link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_1a6cbed9b0969169521a06f6256c007cd7">OnBlinked</link></para>
+
+<para>This event occurs when an eye blink occured. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>The Manager that manages the records of the BrainWave table and detectsif an eye blink occured. </para>
+<para>
+Definition at line <link linkend="__brain_wave_record_manager_8cs_source_1l00026">26</link> of file <link linkend="__brain_wave_record_manager_8cs_source">BrainWaveRecordManager.cs</link>.</para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_1aaa8ebd974e6498603653554f32535359"/><section>
+    <title>BrainWaveRecordManager()</title>
+<indexterm><primary>BrainWaveRecordManager</primary><secondary>EEGGaming.Core.Managers.BrainWaveRecordManager</secondary></indexterm>
+<indexterm><primary>EEGGaming.Core.Managers.BrainWaveRecordManager</primary><secondary>BrainWaveRecordManager</secondary></indexterm>
+<para><computeroutput>EEGGaming.Core.Managers.BrainWaveRecordManager.BrainWaveRecordManager ( )</computeroutput></para><para>
+Definition at line <link linkend="__brain_wave_record_manager_8cs_source_1l00098">98</link> of file <link linkend="__brain_wave_record_manager_8cs_source">BrainWaveRecordManager.cs</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_1ab2e15b1714879a01c895310873da851c"/><section>
+    <title>AddNew()</title>
+<indexterm><primary>AddNew</primary><secondary>EEGGaming.Core.Managers.BrainWaveRecordManager</secondary></indexterm>
+<indexterm><primary>EEGGaming.Core.Managers.BrainWaveRecordManager</primary><secondary>AddNew</secondary></indexterm>
+<para><computeroutput>void EEGGaming.Core.Managers.BrainWaveRecordManager.AddNew (<link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_brainwaves_record">BrainwavesRecord</link> record)</computeroutput></para><para>
+
+<para>Adds a new record in the Brainwave&apos;s table. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>record</entry><entry>
+<para>record to be added</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line <link linkend="__brain_wave_record_manager_8cs_source_1l00887">887</link> of file <link linkend="__brain_wave_record_manager_8cs_source">BrainWaveRecordManager.cs</link>.</para>
+</section>
+<anchor xml:id="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_1a6e78a58dad2b6e69a344a2fbf05564bb"/><section>
+    <title>AddNewRange()</title>
+<indexterm><primary>AddNewRange</primary><secondary>EEGGaming.Core.Managers.BrainWaveRecordManager</secondary></indexterm>
+<indexterm><primary>EEGGaming.Core.Managers.BrainWaveRecordManager</primary><secondary>AddNewRange</secondary></indexterm>
+<para><computeroutput>async Task EEGGaming.Core.Managers.BrainWaveRecordManager.AddNewRange (<link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_brainwaves_record">BrainwavesRecord</link>[] record)</computeroutput></para><para>
+
+<para>Add an array of brainwaves data in the brainwaves&apos; table. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>record</entry><entry>
+<para>an array of brainwaves</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line <link linkend="__brain_wave_record_manager_8cs_source_1l00913">913</link> of file <link linkend="__brain_wave_record_manager_8cs_source">BrainWaveRecordManager.cs</link>.</para>
+</section>
+<anchor xml:id="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_1ab31d23b3a77ce3a8a2f8dd164843e050"/><section>
+    <title>Connect()</title>
+<indexterm><primary>Connect</primary><secondary>EEGGaming.Core.Managers.BrainWaveRecordManager</secondary></indexterm>
+<indexterm><primary>EEGGaming.Core.Managers.BrainWaveRecordManager</primary><secondary>Connect</secondary></indexterm>
+<para><computeroutput>void EEGGaming.Core.Managers.BrainWaveRecordManager.Connect (SensorInfo sens)</computeroutput></para><para>
+
+<para>Connects to the sensor with the given info. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>sens</entry><entry>
+<para>information of the sensor to connect</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line <link linkend="__brain_wave_record_manager_8cs_source_1l00339">339</link> of file <link linkend="__brain_wave_record_manager_8cs_source">BrainWaveRecordManager.cs</link>.</para>
+</section>
+<anchor xml:id="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_1a33d3746146bd581e19f78469b6375bef"/><section>
+    <title>DetectBlink()</title>
+<indexterm><primary>DetectBlink</primary><secondary>EEGGaming.Core.Managers.BrainWaveRecordManager</secondary></indexterm>
+<indexterm><primary>EEGGaming.Core.Managers.BrainWaveRecordManager</primary><secondary>DetectBlink</secondary></indexterm>
+<para><computeroutput>Boolean EEGGaming.Core.Managers.BrainWaveRecordManager.DetectBlink ( )</computeroutput></para><para>
+
+<para>Detects if user had blinked or not. </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>true if an eye blinked detected and flase otherwise</para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="__brain_wave_record_manager_8cs_source_1l00799">799</link> of file <link linkend="__brain_wave_record_manager_8cs_source">BrainWaveRecordManager.cs</link>.</para>
+</section>
+<anchor xml:id="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_1a1ae6792b2aec5e9eae94ce477d70d467"/><section>
+    <title>DetectBlinkusingAlpha()</title>
+<indexterm><primary>DetectBlinkusingAlpha</primary><secondary>EEGGaming.Core.Managers.BrainWaveRecordManager</secondary></indexterm>
+<indexterm><primary>EEGGaming.Core.Managers.BrainWaveRecordManager</primary><secondary>DetectBlinkusingAlpha</secondary></indexterm>
+<para><computeroutput>Boolean EEGGaming.Core.Managers.BrainWaveRecordManager.DetectBlinkusingAlpha (double[] oldvals, double[] chanel1vals)</computeroutput></para><para>
+
+<para>Detects eye blinks using the alpha band. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>oldvals</entry><entry>
+<para>array with old alpha band values </para>
+</entry>
+                            </row>
+                            <row>
+<entry>chanel1vals</entry><entry>
+<para>array eith new values of alpha band values </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>true if an eye blinked detected and false otherwise</para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="__brain_wave_record_manager_8cs_source_1l00855">855</link> of file <link linkend="__brain_wave_record_manager_8cs_source">BrainWaveRecordManager.cs</link>.</para>
+</section>
+<anchor xml:id="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_1a30ed0888a74e04e4f09919e9d7e5b19c"/><section>
+    <title>Edit()</title>
+<indexterm><primary>Edit</primary><secondary>EEGGaming.Core.Managers.BrainWaveRecordManager</secondary></indexterm>
+<indexterm><primary>EEGGaming.Core.Managers.BrainWaveRecordManager</primary><secondary>Edit</secondary></indexterm>
+<para><computeroutput>void EEGGaming.Core.Managers.BrainWaveRecordManager.Edit (int id, <link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_brainwaves_record">BrainwavesRecord</link> record)</computeroutput></para><para>
+
+<para>Edits the record with the given id. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>id</entry><entry>
+<para>thevalue of the id to be edited</para>
+</entry>
+                            </row>
+                            <row>
+<entry>record</entry><entry>
+<para>newvalues of the record</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line <link linkend="__brain_wave_record_manager_8cs_source_1l00946">946</link> of file <link linkend="__brain_wave_record_manager_8cs_source">BrainWaveRecordManager.cs</link>.</para>
+</section>
+<anchor xml:id="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_1a6dd4ca73dfa09508fdefff14db59e506"/><section>
+    <title>EditRange()</title>
+<indexterm><primary>EditRange</primary><secondary>EEGGaming.Core.Managers.BrainWaveRecordManager</secondary></indexterm>
+<indexterm><primary>EEGGaming.Core.Managers.BrainWaveRecordManager</primary><secondary>EditRange</secondary></indexterm>
+<para><computeroutput>void EEGGaming.Core.Managers.BrainWaveRecordManager.EditRange (<link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_brainwaves_record">BrainwavesRecord</link>[] records)</computeroutput></para><para>
+
+<para>Edits a numberof Brainwave records. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>records</entry><entry>
+<para>the array with Brainwaves&apos; records with the new values except the ids </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line <link linkend="__brain_wave_record_manager_8cs_source_1l00974">974</link> of file <link linkend="__brain_wave_record_manager_8cs_source">BrainWaveRecordManager.cs</link>.</para>
+</section>
+<anchor xml:id="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_1afa396e3b44caf9acda5223649df96226"/><section>
+    <title>FilterArrayInPlace()</title>
+<indexterm><primary>FilterArrayInPlace</primary><secondary>EEGGaming.Core.Managers.BrainWaveRecordManager</secondary></indexterm>
+<indexterm><primary>EEGGaming.Core.Managers.BrainWaveRecordManager</primary><secondary>FilterArrayInPlace</secondary></indexterm>
+<para><computeroutput>void EEGGaming.Core.Managers.BrainWaveRecordManager.FilterArrayInPlace (double[] vals)</computeroutput></para><para>
+
+<para>Applies the filters. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>vals</entry><entry>
+<para>The array with the values that neeed filters to be applied </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line <link linkend="__brain_wave_record_manager_8cs_source_1l00739">739</link> of file <link linkend="__brain_wave_record_manager_8cs_source">BrainWaveRecordManager.cs</link>.</para>
+</section>
+<anchor xml:id="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_1ab7ef99b75c6b9d73ba859182ac8b81b7"/><section>
+    <title>GetBrainwaveFromDBById()</title>
+<indexterm><primary>GetBrainwaveFromDBById</primary><secondary>EEGGaming.Core.Managers.BrainWaveRecordManager</secondary></indexterm>
+<indexterm><primary>EEGGaming.Core.Managers.BrainWaveRecordManager</primary><secondary>GetBrainwaveFromDBById</secondary></indexterm>
+<para><computeroutput><link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_brainwaves_record">BrainwavesRecord</link> EEGGaming.Core.Managers.BrainWaveRecordManager.GetBrainwaveFromDBById (int id)</computeroutput></para><para>
+
+<para>Gets the BrainWave record by it&apos;s Id. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>id</entry><entry>
+<para>id of the Brainwave record </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>the BrainWave record by it&apos;s Id </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="__brain_wave_record_manager_8cs_source_1l01058">1058</link> of file <link linkend="__brain_wave_record_manager_8cs_source">BrainWaveRecordManager.cs</link>.</para>
+</section>
+<anchor xml:id="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_1a51e1b7ab0af363d15d54889a13818f8e"/><section>
+    <title>GetBrainwavesFromDB()</title>
+<indexterm><primary>GetBrainwavesFromDB</primary><secondary>EEGGaming.Core.Managers.BrainWaveRecordManager</secondary></indexterm>
+<indexterm><primary>EEGGaming.Core.Managers.BrainWaveRecordManager</primary><secondary>GetBrainwavesFromDB</secondary></indexterm>
+<para><computeroutput>List&lt; <link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_brainwaves_record">BrainwavesRecord</link> &gt; EEGGaming.Core.Managers.BrainWaveRecordManager.GetBrainwavesFromDB ( )</computeroutput></para><para>
+
+<para>Gets the Records from the BrainWaves&apos; table. </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>Records from the BrainWaves&apos; table</para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="__brain_wave_record_manager_8cs_source_1l01006">1006</link> of file <link linkend="__brain_wave_record_manager_8cs_source">BrainWaveRecordManager.cs</link>.</para>
+</section>
+<anchor xml:id="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_1a8d0ce0e4599f0280160826f296073fa5"/><section>
+    <title>GetBrainwavesFromDBByGamingSessionId()</title>
+<indexterm><primary>GetBrainwavesFromDBByGamingSessionId</primary><secondary>EEGGaming.Core.Managers.BrainWaveRecordManager</secondary></indexterm>
+<indexterm><primary>EEGGaming.Core.Managers.BrainWaveRecordManager</primary><secondary>GetBrainwavesFromDBByGamingSessionId</secondary></indexterm>
+<para><computeroutput>List&lt; <link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_brainwaves_record">BrainwavesRecord</link> &gt; EEGGaming.Core.Managers.BrainWaveRecordManager.GetBrainwavesFromDBByGamingSessionId (int id)</computeroutput></para><para>
+
+<para>Get the Records from the BrainWaves&apos; table of the gamingsession with the given id. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>id</entry><entry>
+<para>the id of the gaming session</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>the Records from the BrainWaves&apos; table of the gamingsession with the given id</para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="__brain_wave_record_manager_8cs_source_1l01090">1090</link> of file <link linkend="__brain_wave_record_manager_8cs_source">BrainWaveRecordManager.cs</link>.</para>
+</section>
+<anchor xml:id="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_1aba99db5f5ef937f86f2bf4c9300a7939"/><section>
+    <title>GetBrainwavesFromDBByMilisconds()</title>
+<indexterm><primary>GetBrainwavesFromDBByMilisconds</primary><secondary>EEGGaming.Core.Managers.BrainWaveRecordManager</secondary></indexterm>
+<indexterm><primary>EEGGaming.Core.Managers.BrainWaveRecordManager</primary><secondary>GetBrainwavesFromDBByMilisconds</secondary></indexterm>
+<para><computeroutput>List&lt; <link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_brainwaves_record">BrainwavesRecord</link> &gt; EEGGaming.Core.Managers.BrainWaveRecordManager.GetBrainwavesFromDBByMilisconds (double milsecond)</computeroutput></para><para>
+
+<para>the Records from the BrainWaves&apos; table by the miliseconds </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>milsecond</entry><entry>
+<para>miliseconds </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>Records from the BrainWaves&apos; table by the miliseconds</para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="__brain_wave_record_manager_8cs_source_1l01120">1120</link> of file <link linkend="__brain_wave_record_manager_8cs_source">BrainWaveRecordManager.cs</link>.</para>
+</section>
+<anchor xml:id="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_1a9503c3040c99b079a9e617ccfd302720"/><section>
+    <title>GetBrainwavesFromDBByUserId()</title>
+<indexterm><primary>GetBrainwavesFromDBByUserId</primary><secondary>EEGGaming.Core.Managers.BrainWaveRecordManager</secondary></indexterm>
+<indexterm><primary>EEGGaming.Core.Managers.BrainWaveRecordManager</primary><secondary>GetBrainwavesFromDBByUserId</secondary></indexterm>
+<para><computeroutput>List&lt; <link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_brainwaves_record">BrainwavesRecord</link> &gt; EEGGaming.Core.Managers.BrainWaveRecordManager.GetBrainwavesFromDBByUserId (int id)</computeroutput></para><para>
+
+<para>Get the Records from the BrainWaves&apos; table of the user with the given id. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>id</entry><entry>
+<para>user&apos;s id </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>the Records from the BrainWaves&apos; table of the user with the given id </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="__brain_wave_record_manager_8cs_source_1l01027">1027</link> of file <link linkend="__brain_wave_record_manager_8cs_source">BrainWaveRecordManager.cs</link>.</para>
+</section>
+<anchor xml:id="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_1a3ce8032a1268dfc6cc7c6c2215d62ad3"/><section>
+    <title>InitFiltering()</title>
+<indexterm><primary>InitFiltering</primary><secondary>EEGGaming.Core.Managers.BrainWaveRecordManager</secondary></indexterm>
+<indexterm><primary>EEGGaming.Core.Managers.BrainWaveRecordManager</primary><secondary>InitFiltering</secondary></indexterm>
+<para><computeroutput>void EEGGaming.Core.Managers.BrainWaveRecordManager.InitFiltering ( )</computeroutput></para><para>
+
+<para>Initites the array with current filters. </para>
+</para>
+<para>
+Definition at line <link linkend="__brain_wave_record_manager_8cs_source_1l00762">762</link> of file <link linkend="__brain_wave_record_manager_8cs_source">BrainWaveRecordManager.cs</link>.</para>
+</section>
+<anchor xml:id="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_1aa3e82a13471314555aecd2b8a31b1122"/><section>
+    <title>LoadCsv()</title>
+<indexterm><primary>LoadCsv</primary><secondary>EEGGaming.Core.Managers.BrainWaveRecordManager</secondary></indexterm>
+<indexterm><primary>EEGGaming.Core.Managers.BrainWaveRecordManager</primary><secondary>LoadCsv</secondary></indexterm>
+<para><computeroutput>void EEGGaming.Core.Managers.BrainWaveRecordManager.LoadCsv (string filename)</computeroutput></para><para>
+
+<para>It Loads thedata from the given file. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>filename</entry><entry>
+<para>the full path of the file with the data </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line <link linkend="__brain_wave_record_manager_8cs_source_1l00129">129</link> of file <link linkend="__brain_wave_record_manager_8cs_source">BrainWaveRecordManager.cs</link>.</para>
+</section>
+<anchor xml:id="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_1aa37393630a5ae47cb49701fcd71e8779"/><section>
+    <title>MakeGraphs()</title>
+<indexterm><primary>MakeGraphs</primary><secondary>EEGGaming.Core.Managers.BrainWaveRecordManager</secondary></indexterm>
+<indexterm><primary>EEGGaming.Core.Managers.BrainWaveRecordManager</primary><secondary>MakeGraphs</secondary></indexterm>
+<para><computeroutput>void EEGGaming.Core.Managers.BrainWaveRecordManager.MakeGraphs (string filename)</computeroutput></para><para>
+
+<para>Generates the graphs in images. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>filename</entry><entry>
+<para>the name and path of the images</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line <link linkend="__brain_wave_record_manager_8cs_source_1l00156">156</link> of file <link linkend="__brain_wave_record_manager_8cs_source">BrainWaveRecordManager.cs</link>.</para>
+</section>
+<anchor xml:id="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_1a6adbb993f6c7382eb2ac39cbeacd93b0"/><section>
+    <title>SaveToCSV()</title>
+<indexterm><primary>SaveToCSV</primary><secondary>EEGGaming.Core.Managers.BrainWaveRecordManager</secondary></indexterm>
+<indexterm><primary>EEGGaming.Core.Managers.BrainWaveRecordManager</primary><secondary>SaveToCSV</secondary></indexterm>
+<para><computeroutput>void EEGGaming.Core.Managers.BrainWaveRecordManager.SaveToCSV (string filename)</computeroutput></para><para>
+
+<para>Saves the BrainWave datato Comma seperated file. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>filename</entry><entry>
+<para>the full path of the file</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line <link linkend="__brain_wave_record_manager_8cs_source_1l00515">515</link> of file <link linkend="__brain_wave_record_manager_8cs_source">BrainWaveRecordManager.cs</link>.</para>
+</section>
+<anchor xml:id="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_1a901688dbf85985f42956580b8312cb0b"/><section>
+    <title>SavetoDatabse()</title>
+<indexterm><primary>SavetoDatabse</primary><secondary>EEGGaming.Core.Managers.BrainWaveRecordManager</secondary></indexterm>
+<indexterm><primary>EEGGaming.Core.Managers.BrainWaveRecordManager</primary><secondary>SavetoDatabse</secondary></indexterm>
+<para><computeroutput>async void EEGGaming.Core.Managers.BrainWaveRecordManager.SavetoDatabse ( )</computeroutput></para><para>
+
+<para>Saves the BrainWaves to the database. </para>
+</para>
+<para>
+Definition at line <link linkend="__brain_wave_record_manager_8cs_source_1l00482">482</link> of file <link linkend="__brain_wave_record_manager_8cs_source">BrainWaveRecordManager.cs</link>.</para>
+</section>
+<anchor xml:id="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_1a9eb781697b80a24d1308a558e02eb601"/><section>
+    <title>Start()</title>
+<indexterm><primary>Start</primary><secondary>EEGGaming.Core.Managers.BrainWaveRecordManager</secondary></indexterm>
+<indexterm><primary>EEGGaming.Core.Managers.BrainWaveRecordManager</primary><secondary>Start</secondary></indexterm>
+<para><computeroutput>void EEGGaming.Core.Managers.BrainWaveRecordManager.Start ( )</computeroutput></para><para>
+
+<para>Starts the capture of brainwaves. </para>
+</para>
+<para>
+Definition at line <link linkend="__brain_wave_record_manager_8cs_source_1l00362">362</link> of file <link linkend="__brain_wave_record_manager_8cs_source">BrainWaveRecordManager.cs</link>.</para>
+</section>
+<anchor xml:id="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_1a2b8ea31f82da7e7e8ab4c361f4f6cfee"/><section>
+    <title>Stop()</title>
+<indexterm><primary>Stop</primary><secondary>EEGGaming.Core.Managers.BrainWaveRecordManager</secondary></indexterm>
+<indexterm><primary>EEGGaming.Core.Managers.BrainWaveRecordManager</primary><secondary>Stop</secondary></indexterm>
+<para><computeroutput>void EEGGaming.Core.Managers.BrainWaveRecordManager.Stop ( )</computeroutput></para><para>
+
+<para>Stops the capture of brainwaves. </para>
+</para>
+<para>
+Definition at line <link linkend="__brain_wave_record_manager_8cs_source_1l00421">421</link> of file <link linkend="__brain_wave_record_manager_8cs_source">BrainWaveRecordManager.cs</link>.</para>
+</section>
+<anchor xml:id="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_1ab0cf81d214a96ca2a54fb3a67154271c"/><section>
+    <title>StopAndSavetoDatabse()</title>
+<indexterm><primary>StopAndSavetoDatabse</primary><secondary>EEGGaming.Core.Managers.BrainWaveRecordManager</secondary></indexterm>
+<indexterm><primary>EEGGaming.Core.Managers.BrainWaveRecordManager</primary><secondary>StopAndSavetoDatabse</secondary></indexterm>
+<para><computeroutput>void EEGGaming.Core.Managers.BrainWaveRecordManager.StopAndSavetoDatabse ( )</computeroutput></para><para>
+
+<para>Stops the capture of brainwaves and saves them to the database. </para>
+</para>
+<para>
+Definition at line <link linkend="__brain_wave_record_manager_8cs_source_1l00451">451</link> of file <link linkend="__brain_wave_record_manager_8cs_source">BrainWaveRecordManager.cs</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_1a62018636cfefd0af1f416df70642ddb5"/><section>
+    <title>scanner</title>
+<indexterm><primary>scanner</primary><secondary>EEGGaming.Core.Managers.BrainWaveRecordManager</secondary></indexterm>
+<indexterm><primary>EEGGaming.Core.Managers.BrainWaveRecordManager</primary><secondary>scanner</secondary></indexterm>
+<para><computeroutput>NeuroSDK.Scanner EEGGaming.Core.Managers.BrainWaveRecordManager.scanner = new NeuroSDK.Scanner(SensorFamily.SensorLEBrainBit)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__brain_wave_record_manager_8cs_source_1l00030">30</link> of file <link linkend="__brain_wave_record_manager_8cs_source">BrainWaveRecordManager.cs</link>.</para>
+</section>
+</section>
+<section>
+<title>Property Documentation</title>
+<anchor xml:id="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_1aed944b68880ed4648646acd8c65d9bc8"/><section>
+    <title>ActiveGamingSessionId</title>
+<indexterm><primary>ActiveGamingSessionId</primary><secondary>EEGGaming.Core.Managers.BrainWaveRecordManager</secondary></indexterm>
+<indexterm><primary>EEGGaming.Core.Managers.BrainWaveRecordManager</primary><secondary>ActiveGamingSessionId</secondary></indexterm>
+<para><computeroutput>int EEGGaming.Core.Managers.BrainWaveRecordManager.ActiveGamingSessionId<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+
+<para>The Id of the GamingSession that occurs. </para>
+</para>
+<para>
+Definition at line <link linkend="__brain_wave_record_manager_8cs_source_1l00092">92</link> of file <link linkend="__brain_wave_record_manager_8cs_source">BrainWaveRecordManager.cs</link>.</para>
+</section>
+<anchor xml:id="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_1a5562dc9811aa8a577c96452f776df844"/><section>
+    <title>ActiveUserId</title>
+<indexterm><primary>ActiveUserId</primary><secondary>EEGGaming.Core.Managers.BrainWaveRecordManager</secondary></indexterm>
+<indexterm><primary>EEGGaming.Core.Managers.BrainWaveRecordManager</primary><secondary>ActiveUserId</secondary></indexterm>
+<para><computeroutput>int EEGGaming.Core.Managers.BrainWaveRecordManager.ActiveUserId<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+
+<para>The id of the user it captures the packet from. </para>
+</para>
+
+<para><?linebreak?> </para>
+<para>
+Definition at line <link linkend="__brain_wave_record_manager_8cs_source_1l00088">88</link> of file <link linkend="__brain_wave_record_manager_8cs_source">BrainWaveRecordManager.cs</link>.</para>
+</section>
+<anchor xml:id="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_1abeb21ce299f71f1e29c1016ab6ac3fdc"/><section>
+    <title>Blinked</title>
+<indexterm><primary>Blinked</primary><secondary>EEGGaming.Core.Managers.BrainWaveRecordManager</secondary></indexterm>
+<indexterm><primary>EEGGaming.Core.Managers.BrainWaveRecordManager</primary><secondary>Blinked</secondary></indexterm>
+<para><computeroutput>Boolean EEGGaming.Core.Managers.BrainWaveRecordManager.Blinked<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+
+<para>The result of the eye blink detection. </para>
+</para>
+<para>
+Definition at line <link linkend="__brain_wave_record_manager_8cs_source_1l00084">84</link> of file <link linkend="__brain_wave_record_manager_8cs_source">BrainWaveRecordManager.cs</link>.</para>
+</section>
+<anchor xml:id="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_1a8d56301d16e7ca43d9b7fe3d10105825"/><section>
+    <title>EnableFiltering</title>
+<indexterm><primary>EnableFiltering</primary><secondary>EEGGaming.Core.Managers.BrainWaveRecordManager</secondary></indexterm>
+<indexterm><primary>EEGGaming.Core.Managers.BrainWaveRecordManager</primary><secondary>EnableFiltering</secondary></indexterm>
+<para><computeroutput>Boolean EEGGaming.Core.Managers.BrainWaveRecordManager.EnableFiltering<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+
+<para>Eanble or Disable the ability to filter the samples. </para>
+</para>
+<para>
+Definition at line <link linkend="__brain_wave_record_manager_8cs_source_1l00057">57</link> of file <link linkend="__brain_wave_record_manager_8cs_source">BrainWaveRecordManager.cs</link>.</para>
+</section>
+<anchor xml:id="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_1aa295188d71413fb81b49495e4cc51c0e"/><section>
+    <title>FFTBinsFor1Hz</title>
+<indexterm><primary>FFTBinsFor1Hz</primary><secondary>EEGGaming.Core.Managers.BrainWaveRecordManager</secondary></indexterm>
+<indexterm><primary>EEGGaming.Core.Managers.BrainWaveRecordManager</primary><secondary>FFTBinsFor1Hz</secondary></indexterm>
+<para><computeroutput>double EEGGaming.Core.Managers.BrainWaveRecordManager.FFTBinsFor1Hz<computeroutput>[get]</computeroutput></computeroutput></para><para>
+
+<para>The FFT Bins For 1Hz. </para>
+</para>
+<para>
+Definition at line <link linkend="__brain_wave_record_manager_8cs_source_1l00073">73</link> of file <link linkend="__brain_wave_record_manager_8cs_source">BrainWaveRecordManager.cs</link>.</para>
+</section>
+<anchor xml:id="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_1ad0777dda2701ae289179e72ce3242582"/><section>
+    <title>FFtWindow</title>
+<indexterm><primary>FFtWindow</primary><secondary>EEGGaming.Core.Managers.BrainWaveRecordManager</secondary></indexterm>
+<indexterm><primary>EEGGaming.Core.Managers.BrainWaveRecordManager</primary><secondary>FFtWindow</secondary></indexterm>
+<para><computeroutput>int EEGGaming.Core.Managers.BrainWaveRecordManager.FFtWindow<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+
+<para>The fftWindow. </para>
+</para>
+<para>
+Definition at line <link linkend="__brain_wave_record_manager_8cs_source_1l00065">65</link> of file <link linkend="__brain_wave_record_manager_8cs_source">BrainWaveRecordManager.cs</link>.</para>
+</section>
+<anchor xml:id="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_1aa56812d0b3b27cb500437404d857d582"/><section>
+    <title>ProcessWinRate</title>
+<indexterm><primary>ProcessWinRate</primary><secondary>EEGGaming.Core.Managers.BrainWaveRecordManager</secondary></indexterm>
+<indexterm><primary>EEGGaming.Core.Managers.BrainWaveRecordManager</primary><secondary>ProcessWinRate</secondary></indexterm>
+<para><computeroutput>int EEGGaming.Core.Managers.BrainWaveRecordManager.ProcessWinRate<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+
+<para>The ProcessWinRate. </para>
+</para>
+<para>
+Definition at line <link linkend="__brain_wave_record_manager_8cs_source_1l00069">69</link> of file <link linkend="__brain_wave_record_manager_8cs_source">BrainWaveRecordManager.cs</link>.</para>
+</section>
+<anchor xml:id="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_1a30759f2f9ef705ae50ebf4bfb48102ba"/><section>
+    <title>Records</title>
+<indexterm><primary>Records</primary><secondary>EEGGaming.Core.Managers.BrainWaveRecordManager</secondary></indexterm>
+<indexterm><primary>EEGGaming.Core.Managers.BrainWaveRecordManager</primary><secondary>Records</secondary></indexterm>
+<para><computeroutput>List&lt;<link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_brainwaves_record">BrainwavesRecord</link>&gt; EEGGaming.Core.Managers.BrainWaveRecordManager.Records<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+
+<para>The Brainwave records curently captured. </para>
+</para>
+<para>
+Definition at line <link linkend="__brain_wave_record_manager_8cs_source_1l00034">34</link> of file <link linkend="__brain_wave_record_manager_8cs_source">BrainWaveRecordManager.cs</link>.</para>
+</section>
+<anchor xml:id="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_1ac61db2ab77772f3384c18c2f3e5b86ef"/><section>
+    <title>SamplesRecorded</title>
+<indexterm><primary>SamplesRecorded</primary><secondary>EEGGaming.Core.Managers.BrainWaveRecordManager</secondary></indexterm>
+<indexterm><primary>EEGGaming.Core.Managers.BrainWaveRecordManager</primary><secondary>SamplesRecorded</secondary></indexterm>
+<para><computeroutput>int EEGGaming.Core.Managers.BrainWaveRecordManager.SamplesRecorded<computeroutput>[get]</computeroutput></computeroutput></para><para>
+
+<para>The namber of the recorded samples/records. </para>
+</para>
+<para>
+Definition at line <link linkend="__brain_wave_record_manager_8cs_source_1l00053">53</link> of file <link linkend="__brain_wave_record_manager_8cs_source">BrainWaveRecordManager.cs</link>.</para>
+</section>
+<anchor xml:id="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_1a54422622df0ab7f89af4cedf3812225a"/><section>
+    <title>SamplingRate</title>
+<indexterm><primary>SamplingRate</primary><secondary>EEGGaming.Core.Managers.BrainWaveRecordManager</secondary></indexterm>
+<indexterm><primary>EEGGaming.Core.Managers.BrainWaveRecordManager</primary><secondary>SamplingRate</secondary></indexterm>
+<para><computeroutput>int EEGGaming.Core.Managers.BrainWaveRecordManager.SamplingRate<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+
+<para>The Sample Rate the sensor will capture samples. </para>
+</para>
+<para>
+Definition at line <link linkend="__brain_wave_record_manager_8cs_source_1l00061">61</link> of file <link linkend="__brain_wave_record_manager_8cs_source">BrainWaveRecordManager.cs</link>.</para>
+</section>
+<anchor xml:id="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_1aac1139f5f9fcee87ee991987c6f7805b"/><section>
+    <title>Sensor</title>
+<indexterm><primary>Sensor</primary><secondary>EEGGaming.Core.Managers.BrainWaveRecordManager</secondary></indexterm>
+<indexterm><primary>EEGGaming.Core.Managers.BrainWaveRecordManager</primary><secondary>Sensor</secondary></indexterm>
+<para><computeroutput>BrainBitSensor? EEGGaming.Core.Managers.BrainWaveRecordManager.Sensor<computeroutput>[get]</computeroutput></computeroutput></para><para>
+
+<para>The Sensor that captures the brainwaves. </para>
+</para>
+<para>
+Definition at line <link linkend="__brain_wave_record_manager_8cs_source_1l00078">78</link> of file <link linkend="__brain_wave_record_manager_8cs_source">BrainWaveRecordManager.cs</link>.</para>
+</section>
+<anchor xml:id="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_1a16db3d460dcc5808acbb0175b6aca22f"/><section>
+    <title>tmrBlink</title>
+<indexterm><primary>tmrBlink</primary><secondary>EEGGaming.Core.Managers.BrainWaveRecordManager</secondary></indexterm>
+<indexterm><primary>EEGGaming.Core.Managers.BrainWaveRecordManager</primary><secondary>tmrBlink</secondary></indexterm>
+<para><computeroutput>System.Timers.Timer EEGGaming.Core.Managers.BrainWaveRecordManager.tmrBlink<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+
+<para>The timer for the Blink. </para>
+</para>
+<para>
+Definition at line <link linkend="__brain_wave_record_manager_8cs_source_1l00044">44</link> of file <link linkend="__brain_wave_record_manager_8cs_source">BrainWaveRecordManager.cs</link>.</para>
+</section>
+<anchor xml:id="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_1afac886f490bf6eb0e8f088cf937ec2de"/><section>
+    <title>UsesDb</title>
+<indexterm><primary>UsesDb</primary><secondary>EEGGaming.Core.Managers.BrainWaveRecordManager</secondary></indexterm>
+<indexterm><primary>EEGGaming.Core.Managers.BrainWaveRecordManager</primary><secondary>UsesDb</secondary></indexterm>
+<para><computeroutput>bool EEGGaming.Core.Managers.BrainWaveRecordManager.UsesDb<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+
+<para>It sets whenever the library will use Database or not. </para>
+</para>
+<para>
+Definition at line <link linkend="__brain_wave_record_manager_8cs_source_1l00096">96</link> of file <link linkend="__brain_wave_record_manager_8cs_source">BrainWaveRecordManager.cs</link>.</para>
+</section>
+</section>
+<section>
+<title>Event Documentation</title>
+<anchor xml:id="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_1a6cbed9b0969169521a06f6256c007cd7"/><section>
+    <title>OnBlinked</title>
+<indexterm><primary>OnBlinked</primary><secondary>EEGGaming.Core.Managers.BrainWaveRecordManager</secondary></indexterm>
+<indexterm><primary>EEGGaming.Core.Managers.BrainWaveRecordManager</primary><secondary>OnBlinked</secondary></indexterm>
+<para><computeroutput>OnBlinked EEGGaming.Core.Managers.BrainWaveRecordManager.OnBlinked</computeroutput></para><para>
+
+<para>This event occurs when an eye blink occured. </para>
+</para>
+<para>
+Definition at line <link linkend="__brain_wave_record_manager_8cs_source_1l00049">49</link> of file <link linkend="__brain_wave_record_manager_8cs_source">BrainWaveRecordManager.cs</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+D:/Cloud Folder/OneDrive/My Programs/Post-Graduate/Master in Information Systems (PLS)/Thesis/Code/EEGGaming/EEGGaming.Core/Managers/BrainWaveRecordManager.cs</section>
+</section>

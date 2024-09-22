@@ -1,0 +1,124 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_base_manager" kind="class" language="C#" prot="public">
+    <compoundname>EEGGaming::Core::Managers::BaseManager</compoundname>
+    <derivedcompoundref refid="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager" prot="public" virt="non-virtual">EEGGaming.Core.Managers.BrainWaveRecordManager</derivedcompoundref>
+    <derivedcompoundref refid="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_gaming_sesion_manager" prot="public" virt="non-virtual">EEGGaming.Core.Managers.GamingSesionManager</derivedcompoundref>
+    <derivedcompoundref refid="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_user_manager" prot="public" virt="non-virtual">EEGGaming.Core.Managers.UserManager</derivedcompoundref>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_base_manager_1ab03ecddd3cb836526101a168e1b408ef" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_e_e_g_gaming_db_context" kindref="compound">EEGGamingDbContext</ref></type>
+        <definition>EEGGamingDbContext EEGGaming.Core.Managers.BaseManager.DbContext</definition>
+        <argsstring></argsstring>
+        <name>DbContext</name>
+        <qualifiedname>EEGGaming.Core.Managers.BaseManager.DbContext</qualifiedname>
+        <briefdescription>
+<para>The DatabaseContext of the library. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Managers/BaseManager.cs" line="21" column="35" bodyfile="EEGGaming.Core/Managers/BaseManager.cs" bodystart="21" bodyend="21"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_base_manager_1a0698b890b345d2fe9f6b7d0bf762af70" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>EEGGaming.Core.Managers.BaseManager.BaseManager</definition>
+        <argsstring>()</argsstring>
+        <name>BaseManager</name>
+        <qualifiedname>EEGGaming.Core.Managers.BaseManager.BaseManager</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Managers/BaseManager.cs" line="22" column="16" bodyfile="EEGGaming.Core/Managers/BaseManager.cs" bodystart="22" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_base_manager_1a9248c1be1118bf2a1da15a2ba731a4fc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void EEGGaming.Core.Managers.BaseManager.CreateDatabase</definition>
+        <argsstring>()</argsstring>
+        <name>CreateDatabase</name>
+        <qualifiedname>EEGGaming.Core.Managers.BaseManager.CreateDatabase</qualifiedname>
+        <briefdescription>
+<para>Creates the Database. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Managers/BaseManager.cs" line="38" column="21" bodyfile="EEGGaming.Core/Managers/BaseManager.cs" bodystart="38" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_base_manager_1a7c286778992f94800563ebdbc55ff778" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int EEGGaming.Core.Managers.BaseManager.PredictLastId</definition>
+        <argsstring>(string tablename)</argsstring>
+        <name>PredictLastId</name>
+        <qualifiedname>EEGGaming.Core.Managers.BaseManager.PredictLastId</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>tablename</declname>
+        </param>
+        <briefdescription>
+<para>It predicts the last value of the id&apos;s property from the given table&apos;s name. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tablename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the name of the table the we wat to get the id</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>last value of the id&apos;s property from the given table&apos;s name</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Managers/BaseManager.cs" line="49" column="20" bodyfile="EEGGaming.Core/Managers/BaseManager.cs" bodystart="49" bodyend="113"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>The class that includes the mostly common methods,properties and fuctions of the Manager classes. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>EEGGaming.Core.Managers.BaseManager</label>
+        <link refid="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_base_manager"/>
+      </node>
+      <node id="2">
+        <label>EEGGaming.Core.Managers.BrainWaveRecordManager</label>
+        <link refid="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>EEGGaming.Core.Managers.GamingSesionManager</label>
+        <link refid="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_gaming_sesion_manager"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>EEGGaming.Core.Managers.UserManager</label>
+        <link refid="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_user_manager"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="EEGGaming.Core/Managers/BaseManager.cs" line="16" column="11" bodyfile="EEGGaming.Core/Managers/BaseManager.cs" bodystart="17" bodyend="117"/>
+    <listofallmembers>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_base_manager_1a0698b890b345d2fe9f6b7d0bf762af70" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Managers::BaseManager</scope><name>BaseManager</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_base_manager_1a9248c1be1118bf2a1da15a2ba731a4fc" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Managers::BaseManager</scope><name>CreateDatabase</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_base_manager_1ab03ecddd3cb836526101a168e1b408ef" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Managers::BaseManager</scope><name>DbContext</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_base_manager_1a7c286778992f94800563ebdbc55ff778" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Managers::BaseManager</scope><name>PredictLastId</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

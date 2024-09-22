@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_user" kind="class" language="C#" prot="public">
+    <compoundname>EEGGaming::Core::Data::Models::User</compoundname>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_user_1ae083eaecb33ccf83b56ae6c0fbb6a118" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int EEGGaming.Core.Data.Models.User.Id</definition>
+        <argsstring></argsstring>
+        <name>Id</name>
+        <qualifiedname>EEGGaming.Core.Data.Models.User.Id</qualifiedname>
+        <briefdescription>
+<para>An auto-incremented value id. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Data/Models/User.cs" line="21" column="20" bodyfile="EEGGaming.Core/Data/Models/User.cs" bodystart="21" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="property" id="class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_user_1aa26c5b399972b3fa5cf8950a3c09bc5a" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string EEGGaming.Core.Data.Models.User.Name</definition>
+        <argsstring></argsstring>
+        <name>Name</name>
+        <qualifiedname>EEGGaming.Core.Data.Models.User.Name</qualifiedname>
+        <briefdescription>
+<para>The name of the user. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Data/Models/User.cs" line="27" column="23" bodyfile="EEGGaming.Core/Data/Models/User.cs" bodystart="27" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="property" id="class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_user_1a6633b5c07a78da7a7c31658ab1b765cc" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string EEGGaming.Core.Data.Models.User.Sex</definition>
+        <argsstring></argsstring>
+        <name>Sex</name>
+        <qualifiedname>EEGGaming.Core.Data.Models.User.Sex</qualifiedname>
+        <briefdescription>
+<para>the sex of the user </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Data/Models/User.cs" line="32" column="23" bodyfile="EEGGaming.Core/Data/Models/User.cs" bodystart="32" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="property" id="class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_user_1ac14dc0aec919192a14eb241cdd428ec6" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int EEGGaming.Core.Data.Models.User.Age</definition>
+        <argsstring></argsstring>
+        <name>Age</name>
+        <qualifiedname>EEGGaming.Core.Data.Models.User.Age</qualifiedname>
+        <briefdescription>
+<para>the age of the user </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Data/Models/User.cs" line="37" column="20" bodyfile="EEGGaming.Core/Data/Models/User.cs" bodystart="37" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="property" id="class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_user_1a98705082d654e8cfe493c3902f95d553" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string EEGGaming.Core.Data.Models.User.Education</definition>
+        <argsstring></argsstring>
+        <name>Education</name>
+        <qualifiedname>EEGGaming.Core.Data.Models.User.Education</qualifiedname>
+        <briefdescription>
+<para>The education level of the user. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Data/Models/User.cs" line="42" column="23" bodyfile="EEGGaming.Core/Data/Models/User.cs" bodystart="42" bodyend="42"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="EEGGaming.Core/Data/Models/User.cs" line="12" column="11" bodyfile="EEGGaming.Core/Data/Models/User.cs" bodystart="13" bodyend="43"/>
+    <listofallmembers>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_user_1ac14dc0aec919192a14eb241cdd428ec6" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Data::Models::User</scope><name>Age</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_user_1a98705082d654e8cfe493c3902f95d553" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Data::Models::User</scope><name>Education</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_user_1ae083eaecb33ccf83b56ae6c0fbb6a118" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Data::Models::User</scope><name>Id</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_user_1aa26c5b399972b3fa5cf8950a3c09bc5a" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Data::Models::User</scope><name>Name</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_user_1a6633b5c07a78da7a7c31658ab1b765cc" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Data::Models::User</scope><name>Sex</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,176 @@
+\doxysection{EEGGaming.\+Core.\+Managers.\+User\+Manager Class Reference}
+\hypertarget{class_e_e_g_gaming_1_1_core_1_1_managers_1_1_user_manager}{}\label{class_e_e_g_gaming_1_1_core_1_1_managers_1_1_user_manager}\index{EEGGaming.Core.Managers.UserManager@{EEGGaming.Core.Managers.UserManager}}
+
+
+Class that manages user\textquotesingle{}s and their info.  
+
+
+Inheritance diagram for EEGGaming.\+Core.\+Managers.\+User\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_e_e_g_gaming_1_1_core_1_1_managers_1_1_user_manager}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_managers_1_1_user_manager_a4cd3ef414b3e41132df928da139f1594}{Add\+New}} (\mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_user}{User}} user)
+\begin{DoxyCompactList}\small\item\em Adds new user to the database. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_user}{User}} $>$ \mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_managers_1_1_user_manager_a0ae10eef0d5cff01c0ededc365fcbd36}{List}} ()
+\begin{DoxyCompactList}\small\item\em Gets all the users. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_user}{User}} \mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_managers_1_1_user_manager_a6d1e2fec4d0b142fa2e4696143097dd7}{Get\+User}} (int id)
+\begin{DoxyCompactList}\small\item\em Gets the user of the given id. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_user}{User}} \mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_managers_1_1_user_manager_a1e0960fe023e651636051f9fd0755e9f}{Get\+User}} (string name)
+\begin{DoxyCompactList}\small\item\em Gets the user of the given name. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_managers_1_1_user_manager_ad1823ce41c75fd374eca468c3218617d}{Edit}} (int? id, \mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_user}{User}} user)
+\begin{DoxyCompactList}\small\item\em Edits the info of the user with the given id. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_managers_1_1_user_manager_a6cda0cd8ba728074da56a55dfbb941af}{Delete}} (string username)
+\begin{DoxyCompactList}\small\item\em Deletes theuser with the given nme. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_managers_1_1_base_manager}{EEGGaming.\+Core.\+Managers.\+Base\+Manager}}}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_managers_1_1_base_manager_a9248c1be1118bf2a1da15a2ba731a4fc}{Create\+Database}} ()
+\begin{DoxyCompactList}\small\item\em Creates the Database. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_managers_1_1_base_manager_a7c286778992f94800563ebdbc55ff778}{Predict\+Last\+Id}} (string tablename)
+\begin{DoxyCompactList}\small\item\em It predicts the last value of the id\textquotesingle{}s property from the given table\textquotesingle{}s name. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_managers_1_1_base_manager}{EEGGaming.\+Core.\+Managers.\+Base\+Manager}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_data_1_1_e_e_g_gaming_db_context}{EEGGaming\+Db\+Context}} \mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_managers_1_1_base_manager_ab03ecddd3cb836526101a168e1b408ef}{Db\+Context}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The Database\+Context of the library. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class that manages user\textquotesingle{}s and their info. 
+
+Definition at line \mbox{\hyperlink{_user_manager_8cs_source_l00018}{18}} of file \mbox{\hyperlink{_user_manager_8cs_source}{User\+Manager.\+cs}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_e_e_g_gaming_1_1_core_1_1_managers_1_1_user_manager_a4cd3ef414b3e41132df928da139f1594}\index{EEGGaming.Core.Managers.UserManager@{EEGGaming.Core.Managers.UserManager}!AddNew@{AddNew}}
+\index{AddNew@{AddNew}!EEGGaming.Core.Managers.UserManager@{EEGGaming.Core.Managers.UserManager}}
+\doxysubsubsection{\texorpdfstring{AddNew()}{AddNew()}}
+{\footnotesize\ttfamily \label{class_e_e_g_gaming_1_1_core_1_1_managers_1_1_user_manager_a4cd3ef414b3e41132df928da139f1594} 
+void EEGGaming.\+Core.\+Managers.\+User\+Manager.\+Add\+New (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_user}{User}}}]{user}{}\end{DoxyParamCaption})}
+
+
+
+Adds new user to the database. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & new user info\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_user_manager_8cs_source_l00024}{24}} of file \mbox{\hyperlink{_user_manager_8cs_source}{User\+Manager.\+cs}}.
+
+\Hypertarget{class_e_e_g_gaming_1_1_core_1_1_managers_1_1_user_manager_a6cda0cd8ba728074da56a55dfbb941af}\index{EEGGaming.Core.Managers.UserManager@{EEGGaming.Core.Managers.UserManager}!Delete@{Delete}}
+\index{Delete@{Delete}!EEGGaming.Core.Managers.UserManager@{EEGGaming.Core.Managers.UserManager}}
+\doxysubsubsection{\texorpdfstring{Delete()}{Delete()}}
+{\footnotesize\ttfamily \label{class_e_e_g_gaming_1_1_core_1_1_managers_1_1_user_manager_a6cda0cd8ba728074da56a55dfbb941af} 
+void EEGGaming.\+Core.\+Managers.\+User\+Manager.\+Delete (\begin{DoxyParamCaption}\item[{string}]{username}{}\end{DoxyParamCaption})}
+
+
+
+Deletes theuser with the given nme. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em username} & name of the user tobeleteed \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_user_manager_8cs_source_l00139}{139}} of file \mbox{\hyperlink{_user_manager_8cs_source}{User\+Manager.\+cs}}.
+
+\Hypertarget{class_e_e_g_gaming_1_1_core_1_1_managers_1_1_user_manager_ad1823ce41c75fd374eca468c3218617d}\index{EEGGaming.Core.Managers.UserManager@{EEGGaming.Core.Managers.UserManager}!Edit@{Edit}}
+\index{Edit@{Edit}!EEGGaming.Core.Managers.UserManager@{EEGGaming.Core.Managers.UserManager}}
+\doxysubsubsection{\texorpdfstring{Edit()}{Edit()}}
+{\footnotesize\ttfamily \label{class_e_e_g_gaming_1_1_core_1_1_managers_1_1_user_manager_ad1823ce41c75fd374eca468c3218617d} 
+void EEGGaming.\+Core.\+Managers.\+User\+Manager.\+Edit (\begin{DoxyParamCaption}\item[{int?}]{id}{, }\item[{\mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_user}{User}}}]{user}{}\end{DoxyParamCaption})}
+
+
+
+Edits the info of the user with the given id. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & id of the user\\
+\hline
+{\em user} & new values of the user\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_user_manager_8cs_source_l00110}{110}} of file \mbox{\hyperlink{_user_manager_8cs_source}{User\+Manager.\+cs}}.
+
+\Hypertarget{class_e_e_g_gaming_1_1_core_1_1_managers_1_1_user_manager_a6d1e2fec4d0b142fa2e4696143097dd7}\index{EEGGaming.Core.Managers.UserManager@{EEGGaming.Core.Managers.UserManager}!GetUser@{GetUser}}
+\index{GetUser@{GetUser}!EEGGaming.Core.Managers.UserManager@{EEGGaming.Core.Managers.UserManager}}
+\doxysubsubsection{\texorpdfstring{GetUser()}{GetUser()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_e_e_g_gaming_1_1_core_1_1_managers_1_1_user_manager_a6d1e2fec4d0b142fa2e4696143097dd7} 
+\mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_user}{User}} EEGGaming.\+Core.\+Managers.\+User\+Manager.\+Get\+User (\begin{DoxyParamCaption}\item[{int}]{id}{}\end{DoxyParamCaption})}
+
+
+
+Gets the user of the given id. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & id of the user we are looking for \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+user of the given id
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_user_manager_8cs_source_l00069}{69}} of file \mbox{\hyperlink{_user_manager_8cs_source}{User\+Manager.\+cs}}.
+
+\Hypertarget{class_e_e_g_gaming_1_1_core_1_1_managers_1_1_user_manager_a1e0960fe023e651636051f9fd0755e9f}\index{EEGGaming.Core.Managers.UserManager@{EEGGaming.Core.Managers.UserManager}!GetUser@{GetUser}}
+\index{GetUser@{GetUser}!EEGGaming.Core.Managers.UserManager@{EEGGaming.Core.Managers.UserManager}}
+\doxysubsubsection{\texorpdfstring{GetUser()}{GetUser()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_e_e_g_gaming_1_1_core_1_1_managers_1_1_user_manager_a1e0960fe023e651636051f9fd0755e9f} 
+\mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_user}{User}} EEGGaming.\+Core.\+Managers.\+User\+Manager.\+Get\+User (\begin{DoxyParamCaption}\item[{string}]{name}{}\end{DoxyParamCaption})}
+
+
+
+Gets the user of the given name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & name of the user we are looking for \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+user of the given name
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_user_manager_8cs_source_l00090}{90}} of file \mbox{\hyperlink{_user_manager_8cs_source}{User\+Manager.\+cs}}.
+
+\Hypertarget{class_e_e_g_gaming_1_1_core_1_1_managers_1_1_user_manager_a0ae10eef0d5cff01c0ededc365fcbd36}\index{EEGGaming.Core.Managers.UserManager@{EEGGaming.Core.Managers.UserManager}!List@{List}}
+\index{List@{List}!EEGGaming.Core.Managers.UserManager@{EEGGaming.Core.Managers.UserManager}}
+\doxysubsubsection{\texorpdfstring{List()}{List()}}
+{\footnotesize\ttfamily \label{class_e_e_g_gaming_1_1_core_1_1_managers_1_1_user_manager_a0ae10eef0d5cff01c0ededc365fcbd36} 
+List$<$ \mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_user}{User}} $>$ EEGGaming.\+Core.\+Managers.\+User\+Manager.\+List (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Gets all the users. 
+
+\begin{DoxyReturn}{Returns}
+all the users
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_user_manager_8cs_source_l00048}{48}} of file \mbox{\hyperlink{_user_manager_8cs_source}{User\+Manager.\+cs}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Cloud Folder/\+One\+Drive/\+My Programs/\+Post-\/\+Graduate/\+Master in Information Systems (\+PLS)/\+Thesis/\+Code/\+EEGGaming/\+EEGGaming.\+Core/\+Managers/User\+Manager.\+cs\end{DoxyCompactItemize}

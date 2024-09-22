@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion" kind="class" language="C#" prot="public">
+    <compoundname>EEGGaming::Core::Data::Models::GamingSesion</compoundname>
+    <derivedcompoundref refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_gming_session_view_model" prot="public" virt="non-virtual">EEGGaming.Core.Data.NonDataModels.GmingSessionViewModel</derivedcompoundref>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion_1ae768cd0296695bb3d3f346ae5cb67ab6" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int EEGGaming.Core.Data.Models.GamingSesion.Id</definition>
+        <argsstring></argsstring>
+        <name>Id</name>
+        <qualifiedname>EEGGaming.Core.Data.Models.GamingSesion.Id</qualifiedname>
+        <briefdescription>
+<para>An auto-incremented value id. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Data/Models/GamingSesion.cs" line="22" column="20" bodyfile="EEGGaming.Core/Data/Models/GamingSesion.cs" bodystart="22" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="property" id="class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion_1a1691ad2ee4ae57863a57f3ac7a0236e3" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>DateTime</type>
+        <definition>DateTime EEGGaming.Core.Data.Models.GamingSesion.Start</definition>
+        <argsstring></argsstring>
+        <name>Start</name>
+        <qualifiedname>EEGGaming.Core.Data.Models.GamingSesion.Start</qualifiedname>
+        <briefdescription>
+<para>The time and date the gaming session start. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Data/Models/GamingSesion.cs" line="27" column="26" bodyfile="EEGGaming.Core/Data/Models/GamingSesion.cs" bodystart="27" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="property" id="class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion_1a409a923d21437aeab8568bd1ddf93252" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>DateTime</type>
+        <definition>DateTime EEGGaming.Core.Data.Models.GamingSesion.End</definition>
+        <argsstring></argsstring>
+        <name>End</name>
+        <qualifiedname>EEGGaming.Core.Data.Models.GamingSesion.End</qualifiedname>
+        <briefdescription>
+<para>The time and date the gaming session end. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Data/Models/GamingSesion.cs" line="32" column="25" bodyfile="EEGGaming.Core/Data/Models/GamingSesion.cs" bodystart="32" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="property" id="class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion_1acbce3f3c7d81fe021cca2aba31c1ab6b" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int EEGGaming.Core.Data.Models.GamingSesion.User</definition>
+        <argsstring></argsstring>
+        <name>User</name>
+        <qualifiedname>EEGGaming.Core.Data.Models.GamingSesion.User</qualifiedname>
+        <briefdescription>
+<para>The user&apos;sid that plays in the current session. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Data/Models/GamingSesion.cs" line="38" column="20" bodyfile="EEGGaming.Core/Data/Models/GamingSesion.cs" bodystart="38" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="property" id="class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion_1a16505d61fb4668e87ceba41175ff8478" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>double</type>
+        <definition>double EEGGaming.Core.Data.Models.GamingSesion.Score</definition>
+        <argsstring></argsstring>
+        <name>Score</name>
+        <qualifiedname>EEGGaming.Core.Data.Models.GamingSesion.Score</qualifiedname>
+        <briefdescription>
+<para>The score the user scored in this gaming session. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Data/Models/GamingSesion.cs" line="43" column="23" bodyfile="EEGGaming.Core/Data/Models/GamingSesion.cs" bodystart="43" bodyend="43"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>The class representation of the Gamingsession table from the database. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>EEGGaming.Core.Data.Models.GamingSesion</label>
+        <link refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion"/>
+      </node>
+      <node id="2">
+        <label>EEGGaming.Core.Data.NonDataModels.GmingSessionViewModel</label>
+        <link refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_gming_session_view_model"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="EEGGaming.Core/Data/Models/GamingSesion.cs" line="15" column="11" bodyfile="EEGGaming.Core/Data/Models/GamingSesion.cs" bodystart="16" bodyend="44"/>
+    <listofallmembers>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion_1a409a923d21437aeab8568bd1ddf93252" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Data::Models::GamingSesion</scope><name>End</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion_1ae768cd0296695bb3d3f346ae5cb67ab6" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Data::Models::GamingSesion</scope><name>Id</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion_1a16505d61fb4668e87ceba41175ff8478" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Data::Models::GamingSesion</scope><name>Score</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion_1a1691ad2ee4ae57863a57f3ac7a0236e3" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Data::Models::GamingSesion</scope><name>Start</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion_1acbce3f3c7d81fe021cca2aba31c1ab6b" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Data::Models::GamingSesion</scope><name>User</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

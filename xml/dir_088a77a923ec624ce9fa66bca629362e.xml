@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="dir_088a77a923ec624ce9fa66bca629362e" kind="dir">
+    <compoundname>EEGGaming.Core/obj/ExportRelease</compoundname>
+    <innerdir refid="dir_330230378ab3ce167701409fad66ede9">EEGGaming.Core/obj/ExportRelease/net8.0</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="EEGGaming.Core/obj/ExportRelease/"/>
+  </compounddef>
+</doxygen>

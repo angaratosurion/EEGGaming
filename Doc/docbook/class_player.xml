@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_player" xml:lang="en-US">
+<title>Player Class Reference</title>
+<indexterm><primary>Player</primary></indexterm>
+<para>Inheritance diagram for Player:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_player.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>override void <link linkend="_class_player_1ae192a478a80f0e93e01339d62cdd6f6d">_Ready</link> ()</para>
+</listitem>
+            <listitem><para>override void <link linkend="_class_player_1a81db5dd46c343160498d29f6fa42d611">_Process</link> (double delta)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>const float <link linkend="_class_player_1a9714bf08916ca848e975d59077d10841">YMOVEMENT</link> = (0.025f)*16</para>
+</listitem>
+            <listitem><para>const float <link linkend="_class_player_1a534050be6eff4fb0ab280c75eb3c43e4">XMOVEMENT</link> = (0.025f)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+<para>
+Definition at line <link linkend="__player_8cs_source_1l00006">6</link> of file <link linkend="__player_8cs_source">Player.cs</link>.</para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_player_1a81db5dd46c343160498d29f6fa42d611"/><section>
+    <title>_Process()</title>
+<indexterm><primary>_Process</primary><secondary>Player</secondary></indexterm>
+<indexterm><primary>Player</primary><secondary>_Process</secondary></indexterm>
+<para><computeroutput>override void Player._Process (double delta)</computeroutput></para>
+<para>14832</para>
+<para>
+Definition at line <link linkend="__player_8cs_source_1l00022">22</link> of file <link linkend="__player_8cs_source">Player.cs</link>.</para>
+</section>
+<anchor xml:id="_class_player_1ae192a478a80f0e93e01339d62cdd6f6d"/><section>
+    <title>_Ready()</title>
+<indexterm><primary>_Ready</primary><secondary>Player</secondary></indexterm>
+<indexterm><primary>Player</primary><secondary>_Ready</secondary></indexterm>
+<para><computeroutput>override void Player._Ready ( )</computeroutput></para><para>
+Definition at line <link linkend="__player_8cs_source_1l00014">14</link> of file <link linkend="__player_8cs_source">Player.cs</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_player_1a534050be6eff4fb0ab280c75eb3c43e4"/><section>
+    <title>XMOVEMENT</title>
+<indexterm><primary>XMOVEMENT</primary><secondary>Player</secondary></indexterm>
+<indexterm><primary>Player</primary><secondary>XMOVEMENT</secondary></indexterm>
+<para><computeroutput>const float Player.XMOVEMENT = (0.025f)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__player_8cs_source_1l00010">10</link> of file <link linkend="__player_8cs_source">Player.cs</link>.</para>
+</section>
+<anchor xml:id="_class_player_1a9714bf08916ca848e975d59077d10841"/><section>
+    <title>YMOVEMENT</title>
+<indexterm><primary>YMOVEMENT</primary><secondary>Player</secondary></indexterm>
+<indexterm><primary>Player</primary><secondary>YMOVEMENT</secondary></indexterm>
+<para><computeroutput>const float Player.YMOVEMENT = (0.025f)*16<computeroutput>[static]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__player_8cs_source_1l00009">9</link> of file <link linkend="__player_8cs_source">Player.cs</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+D:/Cloud Folder/OneDrive/My Programs/Post-Graduate/Master in Information Systems (PLS)/Thesis/Code/EEGGaming/BlinkBird/Code/Player.cs</section>
+</section>

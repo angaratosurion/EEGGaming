@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__gaming_sesion_8cs_source" xml:lang="en-US">
+<title>GamingSesion.cs</title>
+<indexterm><primary>D:/Cloud Folder/OneDrive/My Programs/Post-Graduate/Master in Information Systems (PLS)/Thesis/Code/EEGGaming/EEGGaming.Core/Data/Models/GamingSesion.cs</primary></indexterm>
+<programlisting linenumbering="unnumbered"><anchor xml:id="__gaming_sesion_8cs_source_1l00001"/>00001 <emphasis role="keyword">using&#32;</emphasis>System;
+<anchor xml:id="__gaming_sesion_8cs_source_1l00002"/>00002 <emphasis role="keyword">using&#32;</emphasis>System.Collections.Generic;
+<anchor xml:id="__gaming_sesion_8cs_source_1l00003"/>00003 <emphasis role="keyword">using&#32;</emphasis>System.ComponentModel.DataAnnotations.Schema;
+<anchor xml:id="__gaming_sesion_8cs_source_1l00004"/>00004 <emphasis role="keyword">using&#32;</emphasis>System.ComponentModel.DataAnnotations;
+<anchor xml:id="__gaming_sesion_8cs_source_1l00005"/>00005 <emphasis role="keyword">using&#32;</emphasis>System.Linq;
+<anchor xml:id="__gaming_sesion_8cs_source_1l00006"/>00006 <emphasis role="keyword">using&#32;</emphasis>System.Text;
+<anchor xml:id="__gaming_sesion_8cs_source_1l00007"/>00007 <emphasis role="keyword">using&#32;</emphasis>System.Threading.Tasks;
+<anchor xml:id="__gaming_sesion_8cs_source_1l00008"/>00008 <emphasis role="keyword">using&#32;</emphasis>System.Transactions;
+<anchor xml:id="__gaming_sesion_8cs_source_1l00009"/>00009 
+<anchor xml:id="__gaming_sesion_8cs_source_1l00010"/>00010 <emphasis role="keyword">namespace&#32;</emphasis><link linkend="_namespace_e_e_g_gaming_1_1_core_1_1_data_1_1_models">EEGGaming.Core.Data.Models</link>
+<anchor xml:id="__gaming_sesion_8cs_source_1l00011"/>00011 {
+<anchor xml:id="__gaming_sesion_8cs_source_1l00015"/><link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion">00015</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keyword">class&#32;</emphasis><link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion">GamingSesion</link>
+<anchor xml:id="__gaming_sesion_8cs_source_1l00016"/>00016 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__gaming_sesion_8cs_source_1l00020"/>00020 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;[DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+<anchor xml:id="__gaming_sesion_8cs_source_1l00021"/>00021 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;[Required]
+<anchor xml:id="__gaming_sesion_8cs_source_1l00022"/><link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion_1ae768cd0296695bb3d3f346ae5cb67ab6">00022</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion_1ae768cd0296695bb3d3f346ae5cb67ab6">Id</link>&#32;{&#32;<emphasis role="keyword">get</emphasis>;&#32;<emphasis role="keyword">set</emphasis>;&#32;}
+<anchor xml:id="__gaming_sesion_8cs_source_1l00026"/>00026 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;[Required]
+<anchor xml:id="__gaming_sesion_8cs_source_1l00027"/><link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion_1a1691ad2ee4ae57863a57f3ac7a0236e3">00027</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;DateTime&#32;&#32;<link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion_1a1691ad2ee4ae57863a57f3ac7a0236e3">Start</link>&#32;{&#32;<emphasis role="keyword">get</emphasis>;&#32;<emphasis role="keyword">set</emphasis>;&#32;}
+<anchor xml:id="__gaming_sesion_8cs_source_1l00031"/>00031 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;[Required]
+<anchor xml:id="__gaming_sesion_8cs_source_1l00032"/><link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion_1a409a923d21437aeab8568bd1ddf93252">00032</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;DateTime&#32;<link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion_1a409a923d21437aeab8568bd1ddf93252">End</link>&#32;{&#32;<emphasis role="keyword">get</emphasis>;&#32;<emphasis role="keyword">set</emphasis>;&#32;}
+<anchor xml:id="__gaming_sesion_8cs_source_1l00036"/>00036 &#32;&#32;&#32;&#32;&#32;&#32;
+<anchor xml:id="__gaming_sesion_8cs_source_1l00037"/>00037 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;[Required]
+<anchor xml:id="__gaming_sesion_8cs_source_1l00038"/><link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion_1acbce3f3c7d81fe021cca2aba31c1ab6b">00038</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_user">User</link>&#32;{&#32;<emphasis role="keyword">get</emphasis>;&#32;<emphasis role="keyword">set</emphasis>;&#32;}
+<anchor xml:id="__gaming_sesion_8cs_source_1l00042"/>00042 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;[Required]
+<anchor xml:id="__gaming_sesion_8cs_source_1l00043"/><link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion_1a16505d61fb4668e87ceba41175ff8478">00043</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keywordtype">double</emphasis>&#32;<link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion_1a16505d61fb4668e87ceba41175ff8478">Score</link>&#32;{&#32;<emphasis role="keyword">get</emphasis>;&#32;<emphasis role="keyword">set</emphasis>;&#32;}
+<anchor xml:id="__gaming_sesion_8cs_source_1l00044"/>00044 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__gaming_sesion_8cs_source_1l00045"/>00045 }
+</programlisting></section>

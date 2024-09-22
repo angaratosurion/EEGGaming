@@ -333,7 +333,7 @@ namespace EEGGaming.Core.Managers
             }
         }
         /// <summary>
-        /// Connectsto the sensor with the given info
+        /// Connects to the sensor with the given info
         /// </summary>
         /// <param name="sens"> information of the sensor to connect</param>
         public void Connect(SensorInfo sens)
@@ -357,7 +357,7 @@ namespace EEGGaming.Core.Managers
         }
 
         /// <summary>
-        /// Starts thecapture of brainwaves
+        /// Starts the capture of brainwaves
         /// </summary>
         public void Start ()
         {
@@ -509,7 +509,7 @@ namespace EEGGaming.Core.Managers
             }
         }
         /// <summary>
-        /// Saves theBrainWave datato Comma seperated file
+        /// Saves the BrainWave datato Comma seperated file
         /// </summary>
         /// <param name="filename">the full path of the file</param>
         public  void SaveToCSV(string filename)
@@ -757,7 +757,7 @@ namespace EEGGaming.Core.Managers
             }
         }
        /// <summary>
-       /// Initites the array withcurrent filters
+       /// Initites the array with current filters
        /// </summary>
         public void InitFiltering()
         {
@@ -851,7 +851,7 @@ namespace EEGGaming.Core.Managers
         /// </summary>
         /// <param name="oldvals">array with old alpha band values </param>
         /// <param name="chanel1vals">array eith new values of alpha band values </param>
-        /// <returns>true if an eye blinked detected and flase otherwise</returns>
+        /// <returns>true if an eye blinked detected and false otherwise</returns>
         public Boolean DetectBlinkusingAlpha(double[] oldvals, double [] chanel1vals)
         {
             try
@@ -969,7 +969,7 @@ namespace EEGGaming.Core.Managers
         /// <summary>
         /// Edits a numberof Brainwave records
         /// </summary>
-        /// <param name="records"> thearray with  Brainwaves' records with 
+        /// <param name="records"> the array with  Brainwaves' records with 
         /// the new values except the ids </param>
         public void EditRange(   BrainwavesRecord []  records)
         {
@@ -1053,7 +1053,7 @@ namespace EEGGaming.Core.Managers
         /// <summary>
         /// Gets the BrainWave record by it's Id 
         /// </summary>
-        /// <param name="id">idof the Brainwave record </param>
+        /// <param name="id">id of the Brainwave record </param>
         /// <returns> the BrainWave record by it's Id </returns>
         public BrainwavesRecord GetBrainwaveFromDBById(int id)
         {

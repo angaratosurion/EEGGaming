@@ -1,0 +1,62 @@
+\doxysection{Mountain.\+cs}
+\hypertarget{_mountain_8cs_source}{}\label{_mountain_8cs_source}\index{BlinkBird/Code/Mountain.cs@{BlinkBird/Code/Mountain.cs}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_mountain_8cs_source_l00001}00001\ \textcolor{keyword}{using\ }Godot;}
+\DoxyCodeLine{\Hypertarget{_mountain_8cs_source_l00002}00002\ \textcolor{keyword}{using\ }System;}
+\DoxyCodeLine{\Hypertarget{_mountain_8cs_source_l00003}00003\ \textcolor{keyword}{using\ }static\ System.Formats.Asn1.AsnWriter;}
+\DoxyCodeLine{\Hypertarget{_mountain_8cs_source_l00004}00004\ }
+\DoxyCodeLine{\Hypertarget{_mountain_8cs_source_l00005}\mbox{\hyperlink{class_mountain}{00005}}\ \textcolor{keyword}{public}\ \textcolor{keyword}{partial\ class\ }\mbox{\hyperlink{class_mountain}{Mountain}}\ :\ Sprite2D}
+\DoxyCodeLine{\Hypertarget{_mountain_8cs_source_l00006}00006\ \{}
+\DoxyCodeLine{\Hypertarget{_mountain_8cs_source_l00007}00007\ \ \ \ \ \textcolor{comment}{//\ Called\ when\ the\ node\ enters\ the\ scene\ tree\ for\ the\ first\ time.}}
+\DoxyCodeLine{\Hypertarget{_mountain_8cs_source_l00008}00008\ \ \ \textcolor{keyword}{public}\ \ \ \ PackedScene\ packedScene\ \{\ \textcolor{keyword}{get};\ \textcolor{keyword}{set};\ \}}
+\DoxyCodeLine{\Hypertarget{_mountain_8cs_source_l00009}00009\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_mountain_8cs_source_l00010}00010\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{override}\ \textcolor{keywordtype}{void}\ \_Ready()}
+\DoxyCodeLine{\Hypertarget{_mountain_8cs_source_l00011}00011\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_mountain_8cs_source_l00012}00012\ \ \ \ \ \ \ \ \ \textcolor{comment}{//timer\ =\ World.timer;//\ (Timer)this.GetNode<Timer>("{}/root/World/TmrTimer"{});}}
+\DoxyCodeLine{\Hypertarget{_mountain_8cs_source_l00013}00013\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_mountain_8cs_source_l00014}00014\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_mountain_8cs_source_l00015}00015\ }
+\DoxyCodeLine{\Hypertarget{_mountain_8cs_source_l00016}00016\ \ \ \ \ \textcolor{comment}{//\ Called\ every\ frame.\ 'delta'\ is\ the\ elapsed\ time\ since\ the\ previous\ frame.}}
+\DoxyCodeLine{\Hypertarget{_mountain_8cs_source_l00017}00017\ \ \ \ \ \textcolor{comment}{//Timer\ timer;}}
+\DoxyCodeLine{\Hypertarget{_mountain_8cs_source_l00018}00018\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_mountain_8cs_source_l00019}00019\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{override}\ \textcolor{keywordtype}{void}\ \_Process(\textcolor{keywordtype}{double}\ delta)}
+\DoxyCodeLine{\Hypertarget{_mountain_8cs_source_l00020}00020\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_mountain_8cs_source_l00021}00021\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_mountain_8cs_source_l00022}00022\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_mountain_8cs_source_l00023}00023\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_world}{World}}.player\ !=\ \textcolor{keyword}{null}\ \&\&\ \mbox{\hyperlink{class_world}{World}}.player.Visible==\textcolor{keyword}{true})}
+\DoxyCodeLine{\Hypertarget{_mountain_8cs_source_l00024}00024\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_mountain_8cs_source_l00025}00025\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (GetRect().HasPoint(ToLocal(\mbox{\hyperlink{class_world}{World}}.player.Position))\ \&\&\ \mbox{\hyperlink{class_world}{World}}.timer!=\textcolor{keyword}{null})}
+\DoxyCodeLine{\Hypertarget{_mountain_8cs_source_l00026}00026\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_mountain_8cs_source_l00027}00027\ }
+\DoxyCodeLine{\Hypertarget{_mountain_8cs_source_l00028}00028\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_world}{World}}.player.Hide();}
+\DoxyCodeLine{\Hypertarget{_mountain_8cs_source_l00029}00029\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ this.packedScene\ =\ (PackedScene)GD.Load(\textcolor{stringliteral}{"{}res://Scenes/GameOver.tscn"{}});}
+\DoxyCodeLine{\Hypertarget{_mountain_8cs_source_l00030}00030\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Window\ sprite\ =\ (Window)this.packedScene.Instantiate();}
+\DoxyCodeLine{\Hypertarget{_mountain_8cs_source_l00031}00031\ }
+\DoxyCodeLine{\Hypertarget{_mountain_8cs_source_l00032}00032\ }
+\DoxyCodeLine{\Hypertarget{_mountain_8cs_source_l00033}00033\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ this.AddSibling(sprite);}
+\DoxyCodeLine{\Hypertarget{_mountain_8cs_source_l00034}00034\ }
+\DoxyCodeLine{\Hypertarget{_mountain_8cs_source_l00035}00035\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_world}{World}}.timer.Stop();}
+\DoxyCodeLine{\Hypertarget{_mountain_8cs_source_l00036}00036\ }
+\DoxyCodeLine{\Hypertarget{_mountain_8cs_source_l00037}00037\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_menu}{Menu}}.SaveDataToDb();}
+\DoxyCodeLine{\Hypertarget{_mountain_8cs_source_l00038}00038\ }
+\DoxyCodeLine{\Hypertarget{_mountain_8cs_source_l00039}00039\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ this.Hide();}
+\DoxyCodeLine{\Hypertarget{_mountain_8cs_source_l00040}00040\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ this.Free();}
+\DoxyCodeLine{\Hypertarget{_mountain_8cs_source_l00041}00041\ }
+\DoxyCodeLine{\Hypertarget{_mountain_8cs_source_l00042}00042\ }
+\DoxyCodeLine{\Hypertarget{_mountain_8cs_source_l00043}00043\ \ \ \ \ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (\ GetRect().End.X<=\ \mbox{\hyperlink{class_world}{World}}.player.Position.X)}
+\DoxyCodeLine{\Hypertarget{_mountain_8cs_source_l00044}00044\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_mountain_8cs_source_l00045}00045\ }
+\DoxyCodeLine{\Hypertarget{_mountain_8cs_source_l00046}00046\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ score\ =\ World.Score\ +\ (World.RAISESCOREBY\ /\ (40\ *\ 30));}
+\DoxyCodeLine{\Hypertarget{_mountain_8cs_source_l00047}00047\ }
+\DoxyCodeLine{\Hypertarget{_mountain_8cs_source_l00048}00048\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ World.Score\ =\ \ (double)Math.Round(score,3);}
+\DoxyCodeLine{\Hypertarget{_mountain_8cs_source_l00049}00049\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_mountain_8cs_source_l00050}00050\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_mountain_8cs_source_l00051}00051\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_mountain_8cs_source_l00052}00052\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_mountain_8cs_source_l00053}00053\ }
+\DoxyCodeLine{\Hypertarget{_mountain_8cs_source_l00054}00054\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_mountain_8cs_source_l00055}00055\ }
+\DoxyCodeLine{\Hypertarget{_mountain_8cs_source_l00056}00056\ \}}
+
+\end{DoxyCode}

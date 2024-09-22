@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="dir_98615e7510bb23fa500617d387397243" kind="dir">
+    <compoundname>EEGGaming.Core/Managers</compoundname>
+    <innerfile refid="_app_settings_manager_8cs">AppSettingsManager.cs</innerfile>
+    <innerfile refid="_base_manager_8cs">BaseManager.cs</innerfile>
+    <innerfile refid="_brain_wave_record_manager_8cs">BrainWaveRecordManager.cs</innerfile>
+    <innerfile refid="_gaming_sesion_manager_8cs">GamingSesionManager.cs</innerfile>
+    <innerfile refid="_user_manager_8cs">UserManager.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="EEGGaming.Core/Managers/"/>
+  </compounddef>
+</doxygen>

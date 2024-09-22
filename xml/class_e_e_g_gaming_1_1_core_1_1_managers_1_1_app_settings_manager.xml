@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_app_settings_manager" kind="class" language="C#" prot="public">
+    <compoundname>EEGGaming::Core::Managers::AppSettingsManager</compoundname>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_app_settings_manager_1ab760c4547d3fcfed7e43fbe0b11fc6bf" prot="private" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string EEGGaming.Core.Managers.AppSettingsManager.pathwithextention</definition>
+        <argsstring></argsstring>
+        <name>pathwithextention</name>
+        <qualifiedname>EEGGaming.Core.Managers.AppSettingsManager.pathwithextention</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Managers/AppSettingsManager.cs" line="19" column="23" bodyfile="EEGGaming.Core/Managers/AppSettingsManager.cs" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_app_settings_manager_1a79b266d2a55f81484f4e943bec6048db" prot="private" static="yes" mutable="no">
+        <type>ConfigurationBuilder</type>
+        <definition>ConfigurationBuilder EEGGaming.Core.Managers.AppSettingsManager.builder</definition>
+        <argsstring></argsstring>
+        <name>builder</name>
+        <qualifiedname>EEGGaming.Core.Managers.AppSettingsManager.builder</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Managers/AppSettingsManager.cs" line="21" column="37" bodyfile="EEGGaming.Core/Managers/AppSettingsManager.cs" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_app_settings_manager_1a503dea30f95d1d9c2284536010623c42" prot="private" static="yes" mutable="no">
+        <type>IConfigurationRoot</type>
+        <definition>IConfigurationRoot EEGGaming.Core.Managers.AppSettingsManager.config</definition>
+        <argsstring></argsstring>
+        <name>config</name>
+        <qualifiedname>EEGGaming.Core.Managers.AppSettingsManager.config</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Managers/AppSettingsManager.cs" line="22" column="35" bodyfile="EEGGaming.Core/Managers/AppSettingsManager.cs" bodystart="22" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_app_settings_manager_1ade8ad7de7256f0641163c5df0f23f17a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void EEGGaming.Core.Managers.AppSettingsManager.Init</definition>
+        <argsstring>()</argsstring>
+        <name>Init</name>
+        <qualifiedname>EEGGaming.Core.Managers.AppSettingsManager.Init</qualifiedname>
+        <briefdescription>
+<para>The class that starts reading the configuration file and <linebreak/>
+ </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Managers/AppSettingsManager.cs" line="26" column="28" bodyfile="EEGGaming.Core/Managers/AppSettingsManager.cs" bodystart="26" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_app_settings_manager_1a7542736cab536766f1d59e3853b1c3ce" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>static string EEGGaming.Core.Managers.AppSettingsManager.GetDefaultConnectionString</definition>
+        <argsstring>()</argsstring>
+        <name>GetDefaultConnectionString</name>
+        <qualifiedname>EEGGaming.Core.Managers.AppSettingsManager.GetDefaultConnectionString</qualifiedname>
+        <briefdescription>
+<para>Gets the Conenction string from the config. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the connection string of the database</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Managers/AppSettingsManager.cs" line="62" column="30" bodyfile="EEGGaming.Core/Managers/AppSettingsManager.cs" bodystart="62" bodyend="89"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>This classmanages the settings of the library. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="EEGGaming.Core/Managers/AppSettingsManager.cs" line="17" column="18" bodyfile="EEGGaming.Core/Managers/AppSettingsManager.cs" bodystart="18" bodyend="90"/>
+    <listofallmembers>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_app_settings_manager_1a79b266d2a55f81484f4e943bec6048db" prot="private" virt="non-virtual"><scope>EEGGaming::Core::Managers::AppSettingsManager</scope><name>builder</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_app_settings_manager_1a503dea30f95d1d9c2284536010623c42" prot="private" virt="non-virtual"><scope>EEGGaming::Core::Managers::AppSettingsManager</scope><name>config</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_app_settings_manager_1a7542736cab536766f1d59e3853b1c3ce" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Managers::AppSettingsManager</scope><name>GetDefaultConnectionString</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_app_settings_manager_1ade8ad7de7256f0641163c5df0f23f17a" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Managers::AppSettingsManager</scope><name>Init</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_app_settings_manager_1ab760c4547d3fcfed7e43fbe0b11fc6bf" prot="private" virt="non-virtual"><scope>EEGGaming::Core::Managers::AppSettingsManager</scope><name>pathwithextention</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

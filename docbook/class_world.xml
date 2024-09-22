@@ -1,0 +1,135 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_world" xml:lang="en-US">
+<title>World Class Reference</title>
+<indexterm><primary>World</primary></indexterm>
+<para>Inheritance diagram for World:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_world.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>override void <link linkend="_class_world_1ae0441527937def98a753b7d3e62ac7f5">_Ready</link> ()</para>
+</listitem>
+            <listitem><para>override void <link linkend="_class_world_1a0950aa05c0ac9873572cec43475edbfc">_Process</link> (double delta)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>const float <link linkend="_class_world_1a6ca7382a6bb6c8c8e7475abed84f2bda">RAISESCOREBY</link> = (float)(1)</para>
+</listitem>
+            <listitem><para>static double <link linkend="_class_world_1a4e1920e53b368896085fc2e3a8e01f9f">Score</link> = 0</para>
+</listitem>
+            <listitem><para>static <link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion">GamingSesion</link> <link linkend="_class_world_1a37b77de5165f6890caf1803a2c4d3c09">gamingSesion</link> = new <link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion">GamingSesion</link>()</para>
+</listitem>
+            <listitem><para>static Timer <link linkend="_class_world_1a0cf9058ad97c22ccbabfbd13e88898ca">timer</link></para>
+</listitem>
+            <listitem><para>static <link linkend="_class_mountains">Mountains</link> <link linkend="_class_world_1a9c4d37e646e8f2706c6773d6c772b89f">Mountains</link></para>
+</listitem>
+            <listitem><para>static <link linkend="_class_player">Player</link> <link linkend="_class_world_1aa8dddc3497efee297a7ceeea83fd988f">player</link></para>
+</listitem>
+            <listitem><para>static Label <link linkend="_class_world_1a0171f3fda7ddfcdaa3d5ff7558de4e4f">speedvalue</link></para>
+</listitem>
+            <listitem><para>static HSlider <link linkend="_class_world_1ad2ac15fc9e91383cc4ac22b7fc5fb43f">HslSpeed</link></para>
+</listitem>
+            <listitem><para>static <link linkend="_class_camera">Camera</link> <link linkend="_class_world_1a41dfacb786b6bcbc63f729b96bfe3317">Camera</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+<para>
+Definition at line <link linkend="__world_8cs_source_1l00008">8</link> of file <link linkend="__world_8cs_source">World.cs</link>.</para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_world_1a0950aa05c0ac9873572cec43475edbfc"/><section>
+    <title>_Process()</title>
+<indexterm><primary>_Process</primary><secondary>World</secondary></indexterm>
+<indexterm><primary>World</primary><secondary>_Process</secondary></indexterm>
+<para><computeroutput>override void World._Process (double delta)</computeroutput></para><para>
+Definition at line <link linkend="__world_8cs_source_1l00116">116</link> of file <link linkend="__world_8cs_source">World.cs</link>.</para>
+</section>
+<anchor xml:id="_class_world_1ae0441527937def98a753b7d3e62ac7f5"/><section>
+    <title>_Ready()</title>
+<indexterm><primary>_Ready</primary><secondary>World</secondary></indexterm>
+<indexterm><primary>World</primary><secondary>_Ready</secondary></indexterm>
+<para><computeroutput>override void World._Ready ( )</computeroutput></para><para>
+Definition at line <link linkend="__world_8cs_source_1l00032">32</link> of file <link linkend="__world_8cs_source">World.cs</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_world_1a41dfacb786b6bcbc63f729b96bfe3317"/><section>
+    <title>Camera</title>
+<indexterm><primary>Camera</primary><secondary>World</secondary></indexterm>
+<indexterm><primary>World</primary><secondary>Camera</secondary></indexterm>
+<para><computeroutput><link linkend="_class_camera">Camera</link> World.Camera<computeroutput>[static]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__world_8cs_source_1l00024">24</link> of file <link linkend="__world_8cs_source">World.cs</link>.</para>
+</section>
+<anchor xml:id="_class_world_1a37b77de5165f6890caf1803a2c4d3c09"/><section>
+    <title>gamingSesion</title>
+<indexterm><primary>gamingSesion</primary><secondary>World</secondary></indexterm>
+<indexterm><primary>World</primary><secondary>gamingSesion</secondary></indexterm>
+<para><computeroutput><link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion">GamingSesion</link> World.gamingSesion = new <link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion">GamingSesion</link>()<computeroutput>[static]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__world_8cs_source_1l00017">17</link> of file <link linkend="__world_8cs_source">World.cs</link>.</para>
+</section>
+<anchor xml:id="_class_world_1ad2ac15fc9e91383cc4ac22b7fc5fb43f"/><section>
+    <title>HslSpeed</title>
+<indexterm><primary>HslSpeed</primary><secondary>World</secondary></indexterm>
+<indexterm><primary>World</primary><secondary>HslSpeed</secondary></indexterm>
+<para><computeroutput>HSlider World.HslSpeed<computeroutput>[static]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__world_8cs_source_1l00023">23</link> of file <link linkend="__world_8cs_source">World.cs</link>.</para>
+</section>
+<anchor xml:id="_class_world_1a9c4d37e646e8f2706c6773d6c772b89f"/><section>
+    <title>Mountains</title>
+<indexterm><primary>Mountains</primary><secondary>World</secondary></indexterm>
+<indexterm><primary>World</primary><secondary>Mountains</secondary></indexterm>
+<para><computeroutput><link linkend="_class_mountains">Mountains</link> World.Mountains<computeroutput>[static]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__world_8cs_source_1l00019">19</link> of file <link linkend="__world_8cs_source">World.cs</link>.</para>
+</section>
+<anchor xml:id="_class_world_1aa8dddc3497efee297a7ceeea83fd988f"/><section>
+    <title>player</title>
+<indexterm><primary>player</primary><secondary>World</secondary></indexterm>
+<indexterm><primary>World</primary><secondary>player</secondary></indexterm>
+<para><computeroutput><link linkend="_class_player">Player</link> World.player<computeroutput>[static]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__world_8cs_source_1l00020">20</link> of file <link linkend="__world_8cs_source">World.cs</link>.</para>
+</section>
+<anchor xml:id="_class_world_1a6ca7382a6bb6c8c8e7475abed84f2bda"/><section>
+    <title>RAISESCOREBY</title>
+<indexterm><primary>RAISESCOREBY</primary><secondary>World</secondary></indexterm>
+<indexterm><primary>World</primary><secondary>RAISESCOREBY</secondary></indexterm>
+<para><computeroutput>const float World.RAISESCOREBY = (float)(1)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__world_8cs_source_1l00014">14</link> of file <link linkend="__world_8cs_source">World.cs</link>.</para>
+</section>
+<anchor xml:id="_class_world_1a4e1920e53b368896085fc2e3a8e01f9f"/><section>
+    <title>Score</title>
+<indexterm><primary>Score</primary><secondary>World</secondary></indexterm>
+<indexterm><primary>World</primary><secondary>Score</secondary></indexterm>
+<para><computeroutput>double World.Score = 0<computeroutput>[static]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__world_8cs_source_1l00015">15</link> of file <link linkend="__world_8cs_source">World.cs</link>.</para>
+</section>
+<anchor xml:id="_class_world_1a0171f3fda7ddfcdaa3d5ff7558de4e4f"/><section>
+    <title>speedvalue</title>
+<indexterm><primary>speedvalue</primary><secondary>World</secondary></indexterm>
+<indexterm><primary>World</primary><secondary>speedvalue</secondary></indexterm>
+<para><computeroutput>Label World.speedvalue<computeroutput>[static]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__world_8cs_source_1l00022">22</link> of file <link linkend="__world_8cs_source">World.cs</link>.</para>
+</section>
+<anchor xml:id="_class_world_1a0cf9058ad97c22ccbabfbd13e88898ca"/><section>
+    <title>timer</title>
+<indexterm><primary>timer</primary><secondary>World</secondary></indexterm>
+<indexterm><primary>World</primary><secondary>timer</secondary></indexterm>
+<para><computeroutput>Timer World.timer<computeroutput>[static]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__world_8cs_source_1l00018">18</link> of file <link linkend="__world_8cs_source">World.cs</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+BlinkBird/Code/World.cs</section>
+</section>

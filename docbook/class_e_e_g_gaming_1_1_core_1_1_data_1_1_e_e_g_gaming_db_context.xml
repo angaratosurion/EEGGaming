@@ -1,0 +1,133 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_e_e_g_gaming_db_context" xml:lang="en-US">
+<title>EEGGaming.Core.Data.EEGGamingDbContext Class Reference</title>
+<indexterm><primary>EEGGaming.Core.Data.EEGGamingDbContext</primary></indexterm>
+<para>
+
+<para>DbContext of the <link linkend="_namespace_e_e_g_gaming">EEGGaming</link> library. </para>
+ 
+</para>
+<para>Inheritance diagram for EEGGaming.Core.Data.EEGGamingDbContext:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_e_e_g_gaming_1_1_core_1_1_data_1_1_e_e_g_gaming_db_context.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_e_e_g_gaming_db_context_1ac0f434effe51dc17c77c82551ed07a1f">EEGGamingDbContext</link> (string DefaultConnection)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Protected Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>override void <link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_e_e_g_gaming_db_context_1a7e149533751ae2b54293942598c7aeb1">OnConfiguring</link> (DbContextOptionsBuilder optionsBuilder)</para>
+</listitem>
+            <listitem><para>override void <link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_e_e_g_gaming_db_context_1a0d93c73c55c6a3a1bdc6d4bc0729eaf1">OnModelCreating</link> (ModelBuilder modelBuilder)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para>DbSet&lt; <link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_user">User</link> &gt; <link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_e_e_g_gaming_db_context_1a0f17625312a5737ba95ac3fe8e21283b">Users</link><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>The list of Users&apos; table records. </para>
+</listitem>
+            <listitem><para>DbSet&lt; <link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion">GamingSesion</link> &gt; <link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_e_e_g_gaming_db_context_1ae62471c783a52de6ef13fff69e94ba1b">GameSession</link><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>The list of GamingSession&apos;s table records. </para>
+</listitem>
+            <listitem><para>DbSet&lt; <link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_brainwaves_record">BrainwavesRecord</link> &gt; <link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_e_e_g_gaming_db_context_1aced33b3c1fbc02b3af79915746681145">BrainWaves</link><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>The list of Brainwaves&apos; table records. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>DbContext of the <link linkend="_namespace_e_e_g_gaming">EEGGaming</link> library. </para>
+<para>
+Definition at line <link linkend="__e_e_g_gaming_db_context_8cs_source_1l00015">15</link> of file <link linkend="__e_e_g_gaming_db_context_8cs_source">EEGGamingDbContext.cs</link>.</para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_e_e_g_gaming_db_context_1ae748b7eb5ccc9337c15c39e0cb71804c"/><section>
+    <title>EEGGamingDbContext()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>EEGGamingDbContext</primary><secondary>EEGGaming.Core.Data.EEGGamingDbContext</secondary></indexterm>
+<indexterm><primary>EEGGaming.Core.Data.EEGGamingDbContext</primary><secondary>EEGGamingDbContext</secondary></indexterm>
+<para><computeroutput>EEGGaming.Core.Data.EEGGamingDbContext.EEGGamingDbContext ( )</computeroutput></para><para>
+Definition at line <link linkend="__e_e_g_gaming_db_context_8cs_source_1l00029">29</link> of file <link linkend="__e_e_g_gaming_db_context_8cs_source">EEGGamingDbContext.cs</link>.</para>
+</section>
+<anchor xml:id="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_e_e_g_gaming_db_context_1ac0f434effe51dc17c77c82551ed07a1f"/><section>
+    <title>EEGGamingDbContext()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>EEGGamingDbContext</primary><secondary>EEGGaming.Core.Data.EEGGamingDbContext</secondary></indexterm>
+<indexterm><primary>EEGGaming.Core.Data.EEGGamingDbContext</primary><secondary>EEGGamingDbContext</secondary></indexterm>
+<para><computeroutput>EEGGaming.Core.Data.EEGGamingDbContext.EEGGamingDbContext (string DefaultConnection)</computeroutput></para><para>
+Definition at line <link linkend="__e_e_g_gaming_db_context_8cs_source_1l00037">37</link> of file <link linkend="__e_e_g_gaming_db_context_8cs_source">EEGGamingDbContext.cs</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_e_e_g_gaming_db_context_1a7e149533751ae2b54293942598c7aeb1"/><section>
+    <title>OnConfiguring()</title>
+<indexterm><primary>OnConfiguring</primary><secondary>EEGGaming.Core.Data.EEGGamingDbContext</secondary></indexterm>
+<indexterm><primary>EEGGaming.Core.Data.EEGGamingDbContext</primary><secondary>OnConfiguring</secondary></indexterm>
+<para><computeroutput>override void EEGGaming.Core.Data.EEGGamingDbContext.OnConfiguring (DbContextOptionsBuilder optionsBuilder)<computeroutput>[protected]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__e_e_g_gaming_db_context_8cs_source_1l00041">41</link> of file <link linkend="__e_e_g_gaming_db_context_8cs_source">EEGGamingDbContext.cs</link>.</para>
+</section>
+<anchor xml:id="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_e_e_g_gaming_db_context_1a0d93c73c55c6a3a1bdc6d4bc0729eaf1"/><section>
+    <title>OnModelCreating()</title>
+<indexterm><primary>OnModelCreating</primary><secondary>EEGGaming.Core.Data.EEGGamingDbContext</secondary></indexterm>
+<indexterm><primary>EEGGaming.Core.Data.EEGGamingDbContext</primary><secondary>OnModelCreating</secondary></indexterm>
+<para><computeroutput>override void EEGGaming.Core.Data.EEGGamingDbContext.OnModelCreating (ModelBuilder modelBuilder)<computeroutput>[protected]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__e_e_g_gaming_db_context_8cs_source_1l00049">49</link> of file <link linkend="__e_e_g_gaming_db_context_8cs_source">EEGGamingDbContext.cs</link>.</para>
+</section>
+</section>
+<section>
+<title>Property Documentation</title>
+<anchor xml:id="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_e_e_g_gaming_db_context_1aced33b3c1fbc02b3af79915746681145"/><section>
+    <title>BrainWaves</title>
+<indexterm><primary>BrainWaves</primary><secondary>EEGGaming.Core.Data.EEGGamingDbContext</secondary></indexterm>
+<indexterm><primary>EEGGaming.Core.Data.EEGGamingDbContext</primary><secondary>BrainWaves</secondary></indexterm>
+<para><computeroutput>DbSet&lt;<link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_brainwaves_record">BrainwavesRecord</link>&gt; EEGGaming.Core.Data.EEGGamingDbContext.BrainWaves<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+
+<para>The list of Brainwaves&apos; table records. </para>
+</para>
+<para>
+Definition at line <link linkend="__e_e_g_gaming_db_context_8cs_source_1l00028">28</link> of file <link linkend="__e_e_g_gaming_db_context_8cs_source">EEGGamingDbContext.cs</link>.</para>
+</section>
+<anchor xml:id="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_e_e_g_gaming_db_context_1ae62471c783a52de6ef13fff69e94ba1b"/><section>
+    <title>GameSession</title>
+<indexterm><primary>GameSession</primary><secondary>EEGGaming.Core.Data.EEGGamingDbContext</secondary></indexterm>
+<indexterm><primary>EEGGaming.Core.Data.EEGGamingDbContext</primary><secondary>GameSession</secondary></indexterm>
+<para><computeroutput>DbSet&lt;<link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion">GamingSesion</link>&gt; EEGGaming.Core.Data.EEGGamingDbContext.GameSession<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+
+<para>The list of GamingSession&apos;s table records. </para>
+</para>
+<para>
+Definition at line <link linkend="__e_e_g_gaming_db_context_8cs_source_1l00024">24</link> of file <link linkend="__e_e_g_gaming_db_context_8cs_source">EEGGamingDbContext.cs</link>.</para>
+</section>
+<anchor xml:id="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_e_e_g_gaming_db_context_1a0f17625312a5737ba95ac3fe8e21283b"/><section>
+    <title>Users</title>
+<indexterm><primary>Users</primary><secondary>EEGGaming.Core.Data.EEGGamingDbContext</secondary></indexterm>
+<indexterm><primary>EEGGaming.Core.Data.EEGGamingDbContext</primary><secondary>Users</secondary></indexterm>
+<para><computeroutput>DbSet&lt;<link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_user">User</link>&gt; EEGGaming.Core.Data.EEGGamingDbContext.Users<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+
+<para>The list of Users&apos; table records. </para>
+</para>
+<para>
+Definition at line <link linkend="__e_e_g_gaming_db_context_8cs_source_1l00020">20</link> of file <link linkend="__e_e_g_gaming_db_context_8cs_source">EEGGamingDbContext.cs</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+EEGGaming.Core/Data/EEGGamingDbContext.cs</section>
+</section>

@@ -1,0 +1,351 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="class_world" kind="class" language="C#" prot="public">
+    <compoundname>World</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Node2D</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_world_1a5a619bcfe4407fbeee5c737f4b3d329a" prot="private" static="no" mutable="no">
+        <type>PackedScene</type>
+        <definition>PackedScene World.packedScene</definition>
+        <argsstring></argsstring>
+        <name>packedScene</name>
+        <qualifiedname>World.packedScene</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BlinkBird/Code/World.cs" line="11" column="14" bodyfile="BlinkBird/Code/World.cs" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_world_1aeb9939eb7abd13fb122bdf88f0c44be4" prot="private" static="no" mutable="no">
+        <type>DateTime</type>
+        <definition>DateTime World.started</definition>
+        <argsstring></argsstring>
+        <name>started</name>
+        <qualifiedname>World.started</qualifiedname>
+        <initializer>= new DateTime()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BlinkBird/Code/World.cs" line="12" column="10" bodyfile="BlinkBird/Code/World.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_world_1a967d0998d6d2647f3b1fd04b61e66ad6" prot="private" static="no" mutable="no">
+        <type>Label</type>
+        <definition>Label World.lblElapsed</definition>
+        <argsstring></argsstring>
+        <name>lblElapsed</name>
+        <qualifiedname>World.lblElapsed</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BlinkBird/Code/World.cs" line="13" column="7" bodyfile="BlinkBird/Code/World.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_world_1a82cebfb0d7fe62c47da4edd7c2f55647" prot="private" static="no" mutable="no">
+        <type>Label</type>
+        <definition>Label World.lblScore</definition>
+        <argsstring></argsstring>
+        <name>lblScore</name>
+        <qualifiedname>World.lblScore</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BlinkBird/Code/World.cs" line="13" column="18" bodyfile="BlinkBird/Code/World.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_world_1a6ca7382a6bb6c8c8e7475abed84f2bda" prot="public" static="yes" mutable="no">
+        <type>const float</type>
+        <definition>const float World.RAISESCOREBY</definition>
+        <argsstring></argsstring>
+        <name>RAISESCOREBY</name>
+        <qualifiedname>World.RAISESCOREBY</qualifiedname>
+        <initializer>= (float)(1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BlinkBird/Code/World.cs" line="14" column="20" bodyfile="BlinkBird/Code/World.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_world_1a4e1920e53b368896085fc2e3a8e01f9f" prot="public" static="yes" mutable="no">
+        <type>double</type>
+        <definition>double World.Score</definition>
+        <argsstring></argsstring>
+        <name>Score</name>
+        <qualifiedname>World.Score</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BlinkBird/Code/World.cs" line="15" column="22" bodyfile="BlinkBird/Code/World.cs" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_world_1a37b77de5165f6890caf1803a2c4d3c09" prot="public" static="yes" mutable="no">
+        <type><ref refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion" kindref="compound">GamingSesion</ref></type>
+        <definition>GamingSesion World.gamingSesion</definition>
+        <argsstring></argsstring>
+        <name>gamingSesion</name>
+        <qualifiedname>World.gamingSesion</qualifiedname>
+        <initializer>= new <ref refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion" kindref="compound">GamingSesion</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BlinkBird/Code/World.cs" line="17" column="28" bodyfile="BlinkBird/Code/World.cs" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_world_1a0cf9058ad97c22ccbabfbd13e88898ca" prot="public" static="yes" mutable="no">
+        <type>Timer</type>
+        <definition>Timer World.timer</definition>
+        <argsstring></argsstring>
+        <name>timer</name>
+        <qualifiedname>World.timer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BlinkBird/Code/World.cs" line="18" column="22" bodyfile="BlinkBird/Code/World.cs" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_world_1a9c4d37e646e8f2706c6773d6c772b89f" prot="public" static="yes" mutable="no">
+        <type><ref refid="class_mountains" kindref="compound">Mountains</ref></type>
+        <definition>Mountains World.Mountains</definition>
+        <argsstring></argsstring>
+        <name>Mountains</name>
+        <qualifiedname>World.Mountains</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BlinkBird/Code/World.cs" line="19" column="29" bodyfile="BlinkBird/Code/World.cs" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_world_1aa8dddc3497efee297a7ceeea83fd988f" prot="public" static="yes" mutable="no">
+        <type><ref refid="class_player" kindref="compound">Player</ref></type>
+        <definition>Player World.player</definition>
+        <argsstring></argsstring>
+        <name>player</name>
+        <qualifiedname>World.player</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BlinkBird/Code/World.cs" line="20" column="22" bodyfile="BlinkBird/Code/World.cs" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_world_1a0171f3fda7ddfcdaa3d5ff7558de4e4f" prot="public" static="yes" mutable="no">
+        <type>Label</type>
+        <definition>Label World.speedvalue</definition>
+        <argsstring></argsstring>
+        <name>speedvalue</name>
+        <qualifiedname>World.speedvalue</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BlinkBird/Code/World.cs" line="22" column="25" bodyfile="BlinkBird/Code/World.cs" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_world_1ad2ac15fc9e91383cc4ac22b7fc5fb43f" prot="public" static="yes" mutable="no">
+        <type>HSlider</type>
+        <definition>HSlider World.HslSpeed</definition>
+        <argsstring></argsstring>
+        <name>HslSpeed</name>
+        <qualifiedname>World.HslSpeed</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BlinkBird/Code/World.cs" line="23" column="27" bodyfile="BlinkBird/Code/World.cs" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_world_1a41dfacb786b6bcbc63f729b96bfe3317" prot="public" static="yes" mutable="no">
+        <type><ref refid="class_camera" kindref="compound">Camera</ref></type>
+        <definition>Camera World.Camera</definition>
+        <argsstring></argsstring>
+        <name>Camera</name>
+        <qualifiedname>World.Camera</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BlinkBird/Code/World.cs" line="24" column="22" bodyfile="BlinkBird/Code/World.cs" bodystart="24" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_world_1a2a8cc360bb265a98f53deccf0a6387b6" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void World.HSdrHorizontalSpeed_ValueChanged</definition>
+        <argsstring>(double value)</argsstring>
+        <name>HSdrHorizontalSpeed_ValueChanged</name>
+        <qualifiedname>World.HSdrHorizontalSpeed_ValueChanged</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BlinkBird/Code/World.cs" line="26" column="18" bodyfile="BlinkBird/Code/World.cs" bodystart="26" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="class_world_1a7f4190942bbfa1e26372667e26d14e82" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void World.Timer_Timeout</definition>
+        <argsstring>()</argsstring>
+        <name>Timer_Timeout</name>
+        <qualifiedname>World.Timer_Timeout</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BlinkBird/Code/World.cs" line="101" column="18" bodyfile="BlinkBird/Code/World.cs" bodystart="101" bodyend="113"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_world_1ae0441527937def98a753b7d3e62ac7f5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void World._Ready</definition>
+        <argsstring>()</argsstring>
+        <name>_Ready</name>
+        <qualifiedname>World._Ready</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BlinkBird/Code/World.cs" line="32" column="26" bodyfile="BlinkBird/Code/World.cs" bodystart="32" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="class_world_1a0950aa05c0ac9873572cec43475edbfc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void World._Process</definition>
+        <argsstring>(double delta)</argsstring>
+        <name>_Process</name>
+        <qualifiedname>World._Process</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>delta</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BlinkBird/Code/World.cs" line="116" column="22" bodyfile="BlinkBird/Code/World.cs" bodystart="116" bodyend="124"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Node2D</label>
+      </node>
+      <node id="1">
+        <label>World</label>
+        <link refid="class_world"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="7">
+        <label>Camera</label>
+        <link refid="class_camera"/>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>Camera2D</label>
+      </node>
+      <node id="3">
+        <label>EEGGaming.Core.Data.Models.GamingSesion</label>
+        <link refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion"/>
+      </node>
+      <node id="4">
+        <label>Mountains</label>
+        <link refid="class_mountains"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Node2D</label>
+      </node>
+      <node id="5">
+        <label>Player</label>
+        <link refid="class_player"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Sprite2D</label>
+      </node>
+      <node id="1">
+        <label>World</label>
+        <link refid="class_world"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>gamingSesion</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>Mountains</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>player</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>Camera</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="BlinkBird/Code/World.cs" line="8" column="15" bodyfile="BlinkBird/Code/World.cs" bodystart="9" bodyend="125"/>
+    <listofallmembers>
+      <member refid="class_world_1a0950aa05c0ac9873572cec43475edbfc" prot="public" virt="non-virtual"><scope>World</scope><name>_Process</name></member>
+      <member refid="class_world_1ae0441527937def98a753b7d3e62ac7f5" prot="public" virt="non-virtual"><scope>World</scope><name>_Ready</name></member>
+      <member refid="class_world_1a41dfacb786b6bcbc63f729b96bfe3317" prot="public" virt="non-virtual"><scope>World</scope><name>Camera</name></member>
+      <member refid="class_world_1a37b77de5165f6890caf1803a2c4d3c09" prot="public" virt="non-virtual"><scope>World</scope><name>gamingSesion</name></member>
+      <member refid="class_world_1a2a8cc360bb265a98f53deccf0a6387b6" prot="private" virt="non-virtual"><scope>World</scope><name>HSdrHorizontalSpeed_ValueChanged</name></member>
+      <member refid="class_world_1ad2ac15fc9e91383cc4ac22b7fc5fb43f" prot="public" virt="non-virtual"><scope>World</scope><name>HslSpeed</name></member>
+      <member refid="class_world_1a967d0998d6d2647f3b1fd04b61e66ad6" prot="private" virt="non-virtual"><scope>World</scope><name>lblElapsed</name></member>
+      <member refid="class_world_1a82cebfb0d7fe62c47da4edd7c2f55647" prot="private" virt="non-virtual"><scope>World</scope><name>lblScore</name></member>
+      <member refid="class_world_1a9c4d37e646e8f2706c6773d6c772b89f" prot="public" virt="non-virtual"><scope>World</scope><name>Mountains</name></member>
+      <member refid="class_world_1a5a619bcfe4407fbeee5c737f4b3d329a" prot="private" virt="non-virtual"><scope>World</scope><name>packedScene</name></member>
+      <member refid="class_world_1aa8dddc3497efee297a7ceeea83fd988f" prot="public" virt="non-virtual"><scope>World</scope><name>player</name></member>
+      <member refid="class_world_1a6ca7382a6bb6c8c8e7475abed84f2bda" prot="public" virt="non-virtual"><scope>World</scope><name>RAISESCOREBY</name></member>
+      <member refid="class_world_1a4e1920e53b368896085fc2e3a8e01f9f" prot="public" virt="non-virtual"><scope>World</scope><name>Score</name></member>
+      <member refid="class_world_1a0171f3fda7ddfcdaa3d5ff7558de4e4f" prot="public" virt="non-virtual"><scope>World</scope><name>speedvalue</name></member>
+      <member refid="class_world_1aeb9939eb7abd13fb122bdf88f0c44be4" prot="private" virt="non-virtual"><scope>World</scope><name>started</name></member>
+      <member refid="class_world_1a0cf9058ad97c22ccbabfbd13e88898ca" prot="public" virt="non-virtual"><scope>World</scope><name>timer</name></member>
+      <member refid="class_world_1a7f4190942bbfa1e26372667e26d14e82" prot="private" virt="non-virtual"><scope>World</scope><name>Timer_Timeout</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

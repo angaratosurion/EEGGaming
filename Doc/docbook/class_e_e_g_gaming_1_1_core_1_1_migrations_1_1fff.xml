@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_e_e_g_gaming_1_1_core_1_1_migrations_1_1fff" xml:lang="en-US">
+<title>EEGGaming.Core.Migrations.fff Class Reference</title>
+<indexterm><primary>EEGGaming.Core.Migrations.fff</primary></indexterm>
+<para>
+ 
+</para>
+<para>Inheritance diagram for EEGGaming.Core.Migrations.fff:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_e_e_g_gaming_1_1_core_1_1_migrations_1_1fff.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Protected Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>override void <link linkend="_class_e_e_g_gaming_1_1_core_1_1_migrations_1_1fff_1a25225ca2377c74a153cb84294da4cc99">Up</link> (MigrationBuilder migrationBuilder)</para>
+</listitem>
+            <listitem><para>override void <link linkend="_class_e_e_g_gaming_1_1_core_1_1_migrations_1_1fff_1ac25183e6a772c0d499bd6624a6a1b9af">Down</link> (MigrationBuilder migrationBuilder)</para>
+</listitem>
+            <listitem><para>override void <link linkend="_class_e_e_g_gaming_1_1_core_1_1_migrations_1_1fff_1a6581ef61bcd8843bafd4db8279c13e98">BuildTargetModel</link> (ModelBuilder modelBuilder)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+<para>
+Definition at line <link linkend="_20240831173811__fff_8_designer_8cs_source_1l00015">15</link> of file <link linkend="_20240831173811__fff_8_designer_8cs_source">20240831173811_fff.Designer.cs</link>.</para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_e_e_g_gaming_1_1_core_1_1_migrations_1_1fff_1a6581ef61bcd8843bafd4db8279c13e98"/><section>
+    <title>BuildTargetModel()</title>
+<indexterm><primary>BuildTargetModel</primary><secondary>EEGGaming.Core.Migrations.fff</secondary></indexterm>
+<indexterm><primary>EEGGaming.Core.Migrations.fff</primary><secondary>BuildTargetModel</secondary></indexterm>
+<para><computeroutput>override void EEGGaming.Core.Migrations.fff.BuildTargetModel (ModelBuilder modelBuilder)<computeroutput>[protected]</computeroutput></computeroutput></para><para>
+</para>
+<para>
+Definition at line <link linkend="_20240831173811__fff_8_designer_8cs_source_1l00018">18</link> of file <link linkend="_20240831173811__fff_8_designer_8cs_source">20240831173811_fff.Designer.cs</link>.</para>
+</section>
+<anchor xml:id="_class_e_e_g_gaming_1_1_core_1_1_migrations_1_1fff_1ac25183e6a772c0d499bd6624a6a1b9af"/><section>
+    <title>Down()</title>
+<indexterm><primary>Down</primary><secondary>EEGGaming.Core.Migrations.fff</secondary></indexterm>
+<indexterm><primary>EEGGaming.Core.Migrations.fff</primary><secondary>Down</secondary></indexterm>
+<para><computeroutput>override void EEGGaming.Core.Migrations.fff.Down (MigrationBuilder migrationBuilder)<computeroutput>[protected]</computeroutput></computeroutput></para><para>
+</para>
+<para>
+Definition at line <link linkend="_20240831173811__fff_8cs_source_1l00017">17</link> of file <link linkend="_20240831173811__fff_8cs_source">20240831173811_fff.cs</link>.</para>
+</section>
+<anchor xml:id="_class_e_e_g_gaming_1_1_core_1_1_migrations_1_1fff_1a25225ca2377c74a153cb84294da4cc99"/><section>
+    <title>Up()</title>
+<indexterm><primary>Up</primary><secondary>EEGGaming.Core.Migrations.fff</secondary></indexterm>
+<indexterm><primary>EEGGaming.Core.Migrations.fff</primary><secondary>Up</secondary></indexterm>
+<para><computeroutput>override void EEGGaming.Core.Migrations.fff.Up (MigrationBuilder migrationBuilder)<computeroutput>[protected]</computeroutput></computeroutput></para><para>
+</para>
+<para>
+Definition at line <link linkend="_20240831173811__fff_8cs_source_1l00011">11</link> of file <link linkend="_20240831173811__fff_8cs_source">20240831173811_fff.cs</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following files:</para>
+D:/Cloud Folder/OneDrive/My Programs/Post-Graduate/Master in Information Systems (PLS)/Thesis/Code/EEGGaming/EEGGaming.Core/Migrations/20240831173811_fff.csD:/Cloud Folder/OneDrive/My Programs/Post-Graduate/Master in Information Systems (PLS)/Thesis/Code/EEGGaming/EEGGaming.Core/Migrations/20240831173811_fff.Designer.cs</section>
+</section>

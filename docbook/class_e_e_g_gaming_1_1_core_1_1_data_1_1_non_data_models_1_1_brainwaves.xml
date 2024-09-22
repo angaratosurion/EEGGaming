@@ -1,0 +1,627 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves" xml:lang="en-US">
+<title>EEGGaming.Core.Data.NonDataModels.Brainwaves Class Reference</title>
+<indexterm><primary>EEGGaming.Core.Data.NonDataModels.Brainwaves</primary></indexterm>
+<para>
+
+<para>The class representation of the packets containing the data coming from the headset. </para>
+ 
+</para>
+<para>Inheritance diagram for EEGGaming.Core.Data.NonDataModels.Brainwaves:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para>uint <link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1aa16d9b59118af76918fd6b4cc701aa6c">PackNumber</link><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>Thenumber of the packet. </para>
+</listitem>
+            <listitem><para>byte <link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a80f504aeac234e88a8818e6936823ab9">Marker</link><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>The packet marker. </para>
+</listitem>
+            <listitem><para>string <link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a950aba497ae3bdd977170593f6de9cf3">Date</link><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>The date the packet is captured. </para>
+</listitem>
+            <listitem><para>string <link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a2e3a64fab9331c33712a488543cff3da">Time</link><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>The time the packet is captured. </para>
+</listitem>
+            <listitem><para>double <link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1ae28ec52a5a7be45534f6a6560af0426d">Second</link><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>The second the packet is captured. </para>
+</listitem>
+            <listitem><para>double <link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1ab00930f70ab5d893084ea1fbbd4da426">MiliSecond</link><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>The milisecond the packet is captured. </para>
+</listitem>
+            <listitem><para>double <link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a680e14c0046817b3567caf02966b74c7">Delta_avgch</link><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>The average of Delta band value of the 2 channels. </para>
+</listitem>
+            <listitem><para>double <link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a4bf15df56f8fb89009e39c38406c1688">Theta_avgch</link><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>The average of Theta band value of the 2 channels. </para>
+</listitem>
+            <listitem><para>double <link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a0ec844c3fed086ed6cb792d6735ba8e6">Alpha1_avgch</link><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>The average of Alpha band value of the 2 channels. </para>
+</listitem>
+            <listitem><para>double <link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a38ec6b776e8bd4a148725c597aef4641">Beta1_avgch</link><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>The average of Beta band value of the 2 channels. </para>
+</listitem>
+            <listitem><para>double <link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1ab4063c82226ea208a66f02269c3bb72e">Gamma1_avgch</link><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>The average of Gamma band value of the 2 channels. </para>
+</listitem>
+            <listitem><para>double <link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a7771e5e3d2a3f39d7f537c24181a869b">Delta_Rel_avgch</link><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>The average of Delta band Relative value of the 2 channels. </para>
+</listitem>
+            <listitem><para>double <link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1acabf8affae82307c0668b465b68e767c">Theta_Rel_avgch</link><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>The average of Theta band Relative value of the 2 channels. </para>
+</listitem>
+            <listitem><para>double <link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1aa06696dfe4f8d2bb5dd4e891e78cfdcf">Alpha1_Rel_avgch</link><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>The average of Alpha band Relative value of the 2 channels. </para>
+</listitem>
+            <listitem><para>double <link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a8731b0f6050fd9e91e2ce1ea17de746a">Beta1_Rel_avgch</link><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>The average of Beta band Relative value of the 2 channels. </para>
+</listitem>
+            <listitem><para>double <link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1acfa0890ecc394496ec2a6c936ddad133">Gamma1_Rel_avgch</link><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>The average of Gamma band Relative value of the 2 channels. </para>
+</listitem>
+            <listitem><para>double <link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a2a0cc026fbbae7634d45821762149197">Delta_ch1</link><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>The value of Delta band from the channel 1. </para>
+</listitem>
+            <listitem><para>double <link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1aaf137cc421c7b97930fa849cb5ffb7ec">Theta_ch1</link><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>The value of Theta band from the channel 1. </para>
+</listitem>
+            <listitem><para>double <link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1add0cfaba9a1c999ebdcded7175112c5f">Alpha1_ch1</link><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>The value of Alpha band from the channel 1. </para>
+</listitem>
+            <listitem><para>double <link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a7544850d6df71fc153f43906f4aa151e">Beta1_ch1</link><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>The value of Beta band from the channel 1. </para>
+</listitem>
+            <listitem><para>double <link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1aac1400696bdef6ef00f7dfb8dd6c0ddc">Gamma1_ch1</link><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>The value of Gamma band from the channel 1. </para>
+</listitem>
+            <listitem><para>double <link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a10d1f43856ef32f2562ea5e5da819b95">Delta_Rel_ch1</link><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>The Relative value of Delta band from the channel 1. </para>
+</listitem>
+            <listitem><para>double <link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a403ba98fa57db02035a9ea6c28f0f478">Theta_Rel_ch1</link><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>The Relative value of Theta band from the channel 1. </para>
+</listitem>
+            <listitem><para>double <link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1ae08ab2f953a2965a62906bf4978b9e1f">Alpha1_Rel_ch1</link><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>The Relative value of Alpha band from the channel 1. </para>
+</listitem>
+            <listitem><para>double <link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a29e6af2b4053477e4889d828e3e34168">Beta1_Rel_ch1</link><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>The Relative value of Beta band from the channel 1. </para>
+</listitem>
+            <listitem><para>double <link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1ac54a8ed1b67a480413702c8b2cd13992">Gamma1_Rel_ch1</link><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>The Relative value of Gamma band from the channel 1. </para>
+</listitem>
+            <listitem><para>double <link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1aac5c7ec74d531d70796a4d59d466525d">Delta_ch2</link><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>The value of Delta band from the channel 2. </para>
+</listitem>
+            <listitem><para>double <link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1ae2011ba99ff79d76bee549c3ee565756">Theta_ch2</link><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>The value of Theta band from the channel 2. </para>
+</listitem>
+            <listitem><para>double <link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a7670d63eb7e1f2fbff5316b4af021c28">Alpha1_ch2</link><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>The value of Alpha band from the channel 2. </para>
+</listitem>
+            <listitem><para>double <link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a2f39307b7696bb3fa25e23d3e4a04e78">Beta1_ch2</link><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>The value of Beta band from the channel 2. </para>
+</listitem>
+            <listitem><para>double <link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a9d2828c831703530d75da6f2a64075ea">Gamma1_ch2</link><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>The value of Gamma band from the channel 2. </para>
+</listitem>
+            <listitem><para>double <link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a2d8355effb5729dc271faf9bc1b8aa2b">Delta_Rel_ch2</link><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>The Relative value of Delta band from the channel 2. </para>
+</listitem>
+            <listitem><para>double <link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a5f85e0db6ee5b85b636783e1d0c0422d">Theta_Rel_ch2</link><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>The Relative value of Theta band from the channel 2. </para>
+</listitem>
+            <listitem><para>double <link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a5b39203658fa975edb57d60995dc9c4f">Alpha1_Rel_ch2</link><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>The Relative value of Alpha band from the channel 2. </para>
+</listitem>
+            <listitem><para>double <link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a3aea0f827833c1af52f7ff8b4d4d98e5">Beta1_Rel_ch2</link><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>The Relative value of Beta band from the channel 2. </para>
+</listitem>
+            <listitem><para>double <link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a3a1fc86d09f84045859f4933e3dcf0a7">Gamma1_Rel_ch2</link><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>The Relative value of Gamma band from the channel 2. </para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a7da82ea78dfc47df6f183f180170a0fb">Blinked</link><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>If user had blinked. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>The class representation of the packets containing the data coming from the headset. </para>
+<para>
+Definition at line <link linkend="__brainwaves_8cs_source_1l00016">16</link> of file <link linkend="__brainwaves_8cs_source">Brainwaves.cs</link>.</para>
+</section>
+<section>
+<title>Property Documentation</title>
+<anchor xml:id="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a0ec844c3fed086ed6cb792d6735ba8e6"/><section>
+    <title>Alpha1_avgch</title>
+<indexterm><primary>Alpha1_avgch</primary><secondary>EEGGaming.Core.Data.NonDataModels.Brainwaves</secondary></indexterm>
+<indexterm><primary>EEGGaming.Core.Data.NonDataModels.Brainwaves</primary><secondary>Alpha1_avgch</secondary></indexterm>
+<para><computeroutput>double EEGGaming.Core.Data.NonDataModels.Brainwaves.Alpha1_avgch<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+
+<para>The average of Alpha band value of the 2 channels. </para>
+</para>
+<para>
+Definition at line <link linkend="__brainwaves_8cs_source_1l00054">54</link> of file <link linkend="__brainwaves_8cs_source">Brainwaves.cs</link>.</para>
+</section>
+<anchor xml:id="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1add0cfaba9a1c999ebdcded7175112c5f"/><section>
+    <title>Alpha1_ch1</title>
+<indexterm><primary>Alpha1_ch1</primary><secondary>EEGGaming.Core.Data.NonDataModels.Brainwaves</secondary></indexterm>
+<indexterm><primary>EEGGaming.Core.Data.NonDataModels.Brainwaves</primary><secondary>Alpha1_ch1</secondary></indexterm>
+<para><computeroutput>double EEGGaming.Core.Data.NonDataModels.Brainwaves.Alpha1_ch1<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+
+<para>The value of Alpha band from the channel 1. </para>
+</para>
+<para>
+Definition at line <link linkend="__brainwaves_8cs_source_1l00101">101</link> of file <link linkend="__brainwaves_8cs_source">Brainwaves.cs</link>.</para>
+</section>
+<anchor xml:id="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a7670d63eb7e1f2fbff5316b4af021c28"/><section>
+    <title>Alpha1_ch2</title>
+<indexterm><primary>Alpha1_ch2</primary><secondary>EEGGaming.Core.Data.NonDataModels.Brainwaves</secondary></indexterm>
+<indexterm><primary>EEGGaming.Core.Data.NonDataModels.Brainwaves</primary><secondary>Alpha1_ch2</secondary></indexterm>
+<para><computeroutput>double EEGGaming.Core.Data.NonDataModels.Brainwaves.Alpha1_ch2<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+
+<para>The value of Alpha band from the channel 2. </para>
+</para>
+<para>
+Definition at line <link linkend="__brainwaves_8cs_source_1l00144">144</link> of file <link linkend="__brainwaves_8cs_source">Brainwaves.cs</link>.</para>
+</section>
+<anchor xml:id="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1aa06696dfe4f8d2bb5dd4e891e78cfdcf"/><section>
+    <title>Alpha1_Rel_avgch</title>
+<indexterm><primary>Alpha1_Rel_avgch</primary><secondary>EEGGaming.Core.Data.NonDataModels.Brainwaves</secondary></indexterm>
+<indexterm><primary>EEGGaming.Core.Data.NonDataModels.Brainwaves</primary><secondary>Alpha1_Rel_avgch</secondary></indexterm>
+<para><computeroutput>double EEGGaming.Core.Data.NonDataModels.Brainwaves.Alpha1_Rel_avgch<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+
+<para>The average of Alpha band Relative value of the 2 channels. </para>
+</para>
+<para>
+Definition at line <link linkend="__brainwaves_8cs_source_1l00078">78</link> of file <link linkend="__brainwaves_8cs_source">Brainwaves.cs</link>.</para>
+</section>
+<anchor xml:id="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1ae08ab2f953a2965a62906bf4978b9e1f"/><section>
+    <title>Alpha1_Rel_ch1</title>
+<indexterm><primary>Alpha1_Rel_ch1</primary><secondary>EEGGaming.Core.Data.NonDataModels.Brainwaves</secondary></indexterm>
+<indexterm><primary>EEGGaming.Core.Data.NonDataModels.Brainwaves</primary><secondary>Alpha1_Rel_ch1</secondary></indexterm>
+<para><computeroutput>double EEGGaming.Core.Data.NonDataModels.Brainwaves.Alpha1_Rel_ch1<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+
+<para>The Relative value of Alpha band from the channel 1. </para>
+</para>
+<para>
+Definition at line <link linkend="__brainwaves_8cs_source_1l00123">123</link> of file <link linkend="__brainwaves_8cs_source">Brainwaves.cs</link>.</para>
+</section>
+<anchor xml:id="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a5b39203658fa975edb57d60995dc9c4f"/><section>
+    <title>Alpha1_Rel_ch2</title>
+<indexterm><primary>Alpha1_Rel_ch2</primary><secondary>EEGGaming.Core.Data.NonDataModels.Brainwaves</secondary></indexterm>
+<indexterm><primary>EEGGaming.Core.Data.NonDataModels.Brainwaves</primary><secondary>Alpha1_Rel_ch2</secondary></indexterm>
+<para><computeroutput>double EEGGaming.Core.Data.NonDataModels.Brainwaves.Alpha1_Rel_ch2<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+
+<para>The Relative value of Alpha band from the channel 2. </para>
+</para>
+<para>
+Definition at line <link linkend="__brainwaves_8cs_source_1l00166">166</link> of file <link linkend="__brainwaves_8cs_source">Brainwaves.cs</link>.</para>
+</section>
+<anchor xml:id="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a38ec6b776e8bd4a148725c597aef4641"/><section>
+    <title>Beta1_avgch</title>
+<indexterm><primary>Beta1_avgch</primary><secondary>EEGGaming.Core.Data.NonDataModels.Brainwaves</secondary></indexterm>
+<indexterm><primary>EEGGaming.Core.Data.NonDataModels.Brainwaves</primary><secondary>Beta1_avgch</secondary></indexterm>
+<para><computeroutput>double EEGGaming.Core.Data.NonDataModels.Brainwaves.Beta1_avgch<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+
+<para>The average of Beta band value of the 2 channels. </para>
+</para>
+<para>
+Definition at line <link linkend="__brainwaves_8cs_source_1l00059">59</link> of file <link linkend="__brainwaves_8cs_source">Brainwaves.cs</link>.</para>
+</section>
+<anchor xml:id="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a7544850d6df71fc153f43906f4aa151e"/><section>
+    <title>Beta1_ch1</title>
+<indexterm><primary>Beta1_ch1</primary><secondary>EEGGaming.Core.Data.NonDataModels.Brainwaves</secondary></indexterm>
+<indexterm><primary>EEGGaming.Core.Data.NonDataModels.Brainwaves</primary><secondary>Beta1_ch1</secondary></indexterm>
+<para><computeroutput>double EEGGaming.Core.Data.NonDataModels.Brainwaves.Beta1_ch1<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+
+<para>The value of Beta band from the channel 1. </para>
+</para>
+<para>
+Definition at line <link linkend="__brainwaves_8cs_source_1l00106">106</link> of file <link linkend="__brainwaves_8cs_source">Brainwaves.cs</link>.</para>
+</section>
+<anchor xml:id="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a2f39307b7696bb3fa25e23d3e4a04e78"/><section>
+    <title>Beta1_ch2</title>
+<indexterm><primary>Beta1_ch2</primary><secondary>EEGGaming.Core.Data.NonDataModels.Brainwaves</secondary></indexterm>
+<indexterm><primary>EEGGaming.Core.Data.NonDataModels.Brainwaves</primary><secondary>Beta1_ch2</secondary></indexterm>
+<para><computeroutput>double EEGGaming.Core.Data.NonDataModels.Brainwaves.Beta1_ch2<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+
+<para>The value of Beta band from the channel 2. </para>
+</para>
+<para>
+Definition at line <link linkend="__brainwaves_8cs_source_1l00149">149</link> of file <link linkend="__brainwaves_8cs_source">Brainwaves.cs</link>.</para>
+</section>
+<anchor xml:id="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a8731b0f6050fd9e91e2ce1ea17de746a"/><section>
+    <title>Beta1_Rel_avgch</title>
+<indexterm><primary>Beta1_Rel_avgch</primary><secondary>EEGGaming.Core.Data.NonDataModels.Brainwaves</secondary></indexterm>
+<indexterm><primary>EEGGaming.Core.Data.NonDataModels.Brainwaves</primary><secondary>Beta1_Rel_avgch</secondary></indexterm>
+<para><computeroutput>double EEGGaming.Core.Data.NonDataModels.Brainwaves.Beta1_Rel_avgch<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+
+<para>The average of Beta band Relative value of the 2 channels. </para>
+</para>
+<para>
+Definition at line <link linkend="__brainwaves_8cs_source_1l00083">83</link> of file <link linkend="__brainwaves_8cs_source">Brainwaves.cs</link>.</para>
+</section>
+<anchor xml:id="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a29e6af2b4053477e4889d828e3e34168"/><section>
+    <title>Beta1_Rel_ch1</title>
+<indexterm><primary>Beta1_Rel_ch1</primary><secondary>EEGGaming.Core.Data.NonDataModels.Brainwaves</secondary></indexterm>
+<indexterm><primary>EEGGaming.Core.Data.NonDataModels.Brainwaves</primary><secondary>Beta1_Rel_ch1</secondary></indexterm>
+<para><computeroutput>double EEGGaming.Core.Data.NonDataModels.Brainwaves.Beta1_Rel_ch1<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+
+<para>The Relative value of Beta band from the channel 1. </para>
+</para>
+<para>
+Definition at line <link linkend="__brainwaves_8cs_source_1l00128">128</link> of file <link linkend="__brainwaves_8cs_source">Brainwaves.cs</link>.</para>
+</section>
+<anchor xml:id="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a3aea0f827833c1af52f7ff8b4d4d98e5"/><section>
+    <title>Beta1_Rel_ch2</title>
+<indexterm><primary>Beta1_Rel_ch2</primary><secondary>EEGGaming.Core.Data.NonDataModels.Brainwaves</secondary></indexterm>
+<indexterm><primary>EEGGaming.Core.Data.NonDataModels.Brainwaves</primary><secondary>Beta1_Rel_ch2</secondary></indexterm>
+<para><computeroutput>double EEGGaming.Core.Data.NonDataModels.Brainwaves.Beta1_Rel_ch2<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+
+<para>The Relative value of Beta band from the channel 2. </para>
+</para>
+<para>
+Definition at line <link linkend="__brainwaves_8cs_source_1l00171">171</link> of file <link linkend="__brainwaves_8cs_source">Brainwaves.cs</link>.</para>
+</section>
+<anchor xml:id="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a7da82ea78dfc47df6f183f180170a0fb"/><section>
+    <title>Blinked</title>
+<indexterm><primary>Blinked</primary><secondary>EEGGaming.Core.Data.NonDataModels.Brainwaves</secondary></indexterm>
+<indexterm><primary>EEGGaming.Core.Data.NonDataModels.Brainwaves</primary><secondary>Blinked</secondary></indexterm>
+<para><computeroutput>bool EEGGaming.Core.Data.NonDataModels.Brainwaves.Blinked<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+
+<para>If user had blinked. </para>
+</para>
+<para>
+Definition at line <link linkend="__brainwaves_8cs_source_1l00182">182</link> of file <link linkend="__brainwaves_8cs_source">Brainwaves.cs</link>.</para>
+</section>
+<anchor xml:id="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a950aba497ae3bdd977170593f6de9cf3"/><section>
+    <title>Date</title>
+<indexterm><primary>Date</primary><secondary>EEGGaming.Core.Data.NonDataModels.Brainwaves</secondary></indexterm>
+<indexterm><primary>EEGGaming.Core.Data.NonDataModels.Brainwaves</primary><secondary>Date</secondary></indexterm>
+<para><computeroutput>string EEGGaming.Core.Data.NonDataModels.Brainwaves.Date<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+
+<para>The date the packet is captured. </para>
+</para>
+<para>
+Definition at line <link linkend="__brainwaves_8cs_source_1l00029">29</link> of file <link linkend="__brainwaves_8cs_source">Brainwaves.cs</link>.</para>
+</section>
+<anchor xml:id="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a680e14c0046817b3567caf02966b74c7"/><section>
+    <title>Delta_avgch</title>
+<indexterm><primary>Delta_avgch</primary><secondary>EEGGaming.Core.Data.NonDataModels.Brainwaves</secondary></indexterm>
+<indexterm><primary>EEGGaming.Core.Data.NonDataModels.Brainwaves</primary><secondary>Delta_avgch</secondary></indexterm>
+<para><computeroutput>double EEGGaming.Core.Data.NonDataModels.Brainwaves.Delta_avgch<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+
+<para>The average of Delta band value of the 2 channels. </para>
+</para>
+<para>
+Definition at line <link linkend="__brainwaves_8cs_source_1l00046">46</link> of file <link linkend="__brainwaves_8cs_source">Brainwaves.cs</link>.</para>
+</section>
+<anchor xml:id="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a2a0cc026fbbae7634d45821762149197"/><section>
+    <title>Delta_ch1</title>
+<indexterm><primary>Delta_ch1</primary><secondary>EEGGaming.Core.Data.NonDataModels.Brainwaves</secondary></indexterm>
+<indexterm><primary>EEGGaming.Core.Data.NonDataModels.Brainwaves</primary><secondary>Delta_ch1</secondary></indexterm>
+<para><computeroutput>double EEGGaming.Core.Data.NonDataModels.Brainwaves.Delta_ch1<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+
+<para>The value of Delta band from the channel 1. </para>
+</para>
+<para>
+Definition at line <link linkend="__brainwaves_8cs_source_1l00093">93</link> of file <link linkend="__brainwaves_8cs_source">Brainwaves.cs</link>.</para>
+</section>
+<anchor xml:id="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1aac5c7ec74d531d70796a4d59d466525d"/><section>
+    <title>Delta_ch2</title>
+<indexterm><primary>Delta_ch2</primary><secondary>EEGGaming.Core.Data.NonDataModels.Brainwaves</secondary></indexterm>
+<indexterm><primary>EEGGaming.Core.Data.NonDataModels.Brainwaves</primary><secondary>Delta_ch2</secondary></indexterm>
+<para><computeroutput>double EEGGaming.Core.Data.NonDataModels.Brainwaves.Delta_ch2<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+
+<para>The value of Delta band from the channel 2. </para>
+</para>
+<para>
+Definition at line <link linkend="__brainwaves_8cs_source_1l00136">136</link> of file <link linkend="__brainwaves_8cs_source">Brainwaves.cs</link>.</para>
+</section>
+<anchor xml:id="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a7771e5e3d2a3f39d7f537c24181a869b"/><section>
+    <title>Delta_Rel_avgch</title>
+<indexterm><primary>Delta_Rel_avgch</primary><secondary>EEGGaming.Core.Data.NonDataModels.Brainwaves</secondary></indexterm>
+<indexterm><primary>EEGGaming.Core.Data.NonDataModels.Brainwaves</primary><secondary>Delta_Rel_avgch</secondary></indexterm>
+<para><computeroutput>double EEGGaming.Core.Data.NonDataModels.Brainwaves.Delta_Rel_avgch<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+
+<para>The average of Delta band Relative value of the 2 channels. </para>
+</para>
+<para>
+Definition at line <link linkend="__brainwaves_8cs_source_1l00070">70</link> of file <link linkend="__brainwaves_8cs_source">Brainwaves.cs</link>.</para>
+</section>
+<anchor xml:id="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a10d1f43856ef32f2562ea5e5da819b95"/><section>
+    <title>Delta_Rel_ch1</title>
+<indexterm><primary>Delta_Rel_ch1</primary><secondary>EEGGaming.Core.Data.NonDataModels.Brainwaves</secondary></indexterm>
+<indexterm><primary>EEGGaming.Core.Data.NonDataModels.Brainwaves</primary><secondary>Delta_Rel_ch1</secondary></indexterm>
+<para><computeroutput>double EEGGaming.Core.Data.NonDataModels.Brainwaves.Delta_Rel_ch1<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+
+<para>The Relative value of Delta band from the channel 1. </para>
+</para>
+<para>
+Definition at line <link linkend="__brainwaves_8cs_source_1l00115">115</link> of file <link linkend="__brainwaves_8cs_source">Brainwaves.cs</link>.</para>
+</section>
+<anchor xml:id="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a2d8355effb5729dc271faf9bc1b8aa2b"/><section>
+    <title>Delta_Rel_ch2</title>
+<indexterm><primary>Delta_Rel_ch2</primary><secondary>EEGGaming.Core.Data.NonDataModels.Brainwaves</secondary></indexterm>
+<indexterm><primary>EEGGaming.Core.Data.NonDataModels.Brainwaves</primary><secondary>Delta_Rel_ch2</secondary></indexterm>
+<para><computeroutput>double EEGGaming.Core.Data.NonDataModels.Brainwaves.Delta_Rel_ch2<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+
+<para>The Relative value of Delta band from the channel 2. </para>
+</para>
+<para>
+Definition at line <link linkend="__brainwaves_8cs_source_1l00158">158</link> of file <link linkend="__brainwaves_8cs_source">Brainwaves.cs</link>.</para>
+</section>
+<anchor xml:id="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1ab4063c82226ea208a66f02269c3bb72e"/><section>
+    <title>Gamma1_avgch</title>
+<indexterm><primary>Gamma1_avgch</primary><secondary>EEGGaming.Core.Data.NonDataModels.Brainwaves</secondary></indexterm>
+<indexterm><primary>EEGGaming.Core.Data.NonDataModels.Brainwaves</primary><secondary>Gamma1_avgch</secondary></indexterm>
+<para><computeroutput>double EEGGaming.Core.Data.NonDataModels.Brainwaves.Gamma1_avgch<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+
+<para>The average of Gamma band value of the 2 channels. </para>
+</para>
+<para>
+Definition at line <link linkend="__brainwaves_8cs_source_1l00064">64</link> of file <link linkend="__brainwaves_8cs_source">Brainwaves.cs</link>.</para>
+</section>
+<anchor xml:id="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1aac1400696bdef6ef00f7dfb8dd6c0ddc"/><section>
+    <title>Gamma1_ch1</title>
+<indexterm><primary>Gamma1_ch1</primary><secondary>EEGGaming.Core.Data.NonDataModels.Brainwaves</secondary></indexterm>
+<indexterm><primary>EEGGaming.Core.Data.NonDataModels.Brainwaves</primary><secondary>Gamma1_ch1</secondary></indexterm>
+<para><computeroutput>double EEGGaming.Core.Data.NonDataModels.Brainwaves.Gamma1_ch1<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+
+<para>The value of Gamma band from the channel 1. </para>
+</para>
+<para>
+Definition at line <link linkend="__brainwaves_8cs_source_1l00111">111</link> of file <link linkend="__brainwaves_8cs_source">Brainwaves.cs</link>.</para>
+</section>
+<anchor xml:id="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a9d2828c831703530d75da6f2a64075ea"/><section>
+    <title>Gamma1_ch2</title>
+<indexterm><primary>Gamma1_ch2</primary><secondary>EEGGaming.Core.Data.NonDataModels.Brainwaves</secondary></indexterm>
+<indexterm><primary>EEGGaming.Core.Data.NonDataModels.Brainwaves</primary><secondary>Gamma1_ch2</secondary></indexterm>
+<para><computeroutput>double EEGGaming.Core.Data.NonDataModels.Brainwaves.Gamma1_ch2<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+
+<para>The value of Gamma band from the channel 2. </para>
+</para>
+<para>
+Definition at line <link linkend="__brainwaves_8cs_source_1l00154">154</link> of file <link linkend="__brainwaves_8cs_source">Brainwaves.cs</link>.</para>
+</section>
+<anchor xml:id="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1acfa0890ecc394496ec2a6c936ddad133"/><section>
+    <title>Gamma1_Rel_avgch</title>
+<indexterm><primary>Gamma1_Rel_avgch</primary><secondary>EEGGaming.Core.Data.NonDataModels.Brainwaves</secondary></indexterm>
+<indexterm><primary>EEGGaming.Core.Data.NonDataModels.Brainwaves</primary><secondary>Gamma1_Rel_avgch</secondary></indexterm>
+<para><computeroutput>double EEGGaming.Core.Data.NonDataModels.Brainwaves.Gamma1_Rel_avgch<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+
+<para>The average of Gamma band Relative value of the 2 channels. </para>
+</para>
+<para>
+Definition at line <link linkend="__brainwaves_8cs_source_1l00088">88</link> of file <link linkend="__brainwaves_8cs_source">Brainwaves.cs</link>.</para>
+</section>
+<anchor xml:id="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1ac54a8ed1b67a480413702c8b2cd13992"/><section>
+    <title>Gamma1_Rel_ch1</title>
+<indexterm><primary>Gamma1_Rel_ch1</primary><secondary>EEGGaming.Core.Data.NonDataModels.Brainwaves</secondary></indexterm>
+<indexterm><primary>EEGGaming.Core.Data.NonDataModels.Brainwaves</primary><secondary>Gamma1_Rel_ch1</secondary></indexterm>
+<para><computeroutput>double EEGGaming.Core.Data.NonDataModels.Brainwaves.Gamma1_Rel_ch1<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+
+<para>The Relative value of Gamma band from the channel 1. </para>
+</para>
+<para>
+Definition at line <link linkend="__brainwaves_8cs_source_1l00132">132</link> of file <link linkend="__brainwaves_8cs_source">Brainwaves.cs</link>.</para>
+</section>
+<anchor xml:id="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a3a1fc86d09f84045859f4933e3dcf0a7"/><section>
+    <title>Gamma1_Rel_ch2</title>
+<indexterm><primary>Gamma1_Rel_ch2</primary><secondary>EEGGaming.Core.Data.NonDataModels.Brainwaves</secondary></indexterm>
+<indexterm><primary>EEGGaming.Core.Data.NonDataModels.Brainwaves</primary><secondary>Gamma1_Rel_ch2</secondary></indexterm>
+<para><computeroutput>double EEGGaming.Core.Data.NonDataModels.Brainwaves.Gamma1_Rel_ch2<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+
+<para>The Relative value of Gamma band from the channel 2. </para>
+</para>
+<para>
+Definition at line <link linkend="__brainwaves_8cs_source_1l00176">176</link> of file <link linkend="__brainwaves_8cs_source">Brainwaves.cs</link>.</para>
+</section>
+<anchor xml:id="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a80f504aeac234e88a8818e6936823ab9"/><section>
+    <title>Marker</title>
+<indexterm><primary>Marker</primary><secondary>EEGGaming.Core.Data.NonDataModels.Brainwaves</secondary></indexterm>
+<indexterm><primary>EEGGaming.Core.Data.NonDataModels.Brainwaves</primary><secondary>Marker</secondary></indexterm>
+<para><computeroutput>byte EEGGaming.Core.Data.NonDataModels.Brainwaves.Marker<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+
+<para>The packet marker. </para>
+</para>
+<para>
+Definition at line <link linkend="__brainwaves_8cs_source_1l00025">25</link> of file <link linkend="__brainwaves_8cs_source">Brainwaves.cs</link>.</para>
+</section>
+<anchor xml:id="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1ab00930f70ab5d893084ea1fbbd4da426"/><section>
+    <title>MiliSecond</title>
+<indexterm><primary>MiliSecond</primary><secondary>EEGGaming.Core.Data.NonDataModels.Brainwaves</secondary></indexterm>
+<indexterm><primary>EEGGaming.Core.Data.NonDataModels.Brainwaves</primary><secondary>MiliSecond</secondary></indexterm>
+<para><computeroutput>double EEGGaming.Core.Data.NonDataModels.Brainwaves.MiliSecond<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+
+<para>The milisecond the packet is captured. </para>
+</para>
+<para>
+Definition at line <link linkend="__brainwaves_8cs_source_1l00041">41</link> of file <link linkend="__brainwaves_8cs_source">Brainwaves.cs</link>.</para>
+</section>
+<anchor xml:id="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1aa16d9b59118af76918fd6b4cc701aa6c"/><section>
+    <title>PackNumber</title>
+<indexterm><primary>PackNumber</primary><secondary>EEGGaming.Core.Data.NonDataModels.Brainwaves</secondary></indexterm>
+<indexterm><primary>EEGGaming.Core.Data.NonDataModels.Brainwaves</primary><secondary>PackNumber</secondary></indexterm>
+<para><computeroutput>uint EEGGaming.Core.Data.NonDataModels.Brainwaves.PackNumber<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+
+<para>Thenumber of the packet. </para>
+</para>
+<para>
+Definition at line <link linkend="__brainwaves_8cs_source_1l00021">21</link> of file <link linkend="__brainwaves_8cs_source">Brainwaves.cs</link>.</para>
+</section>
+<anchor xml:id="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1ae28ec52a5a7be45534f6a6560af0426d"/><section>
+    <title>Second</title>
+<indexterm><primary>Second</primary><secondary>EEGGaming.Core.Data.NonDataModels.Brainwaves</secondary></indexterm>
+<indexterm><primary>EEGGaming.Core.Data.NonDataModels.Brainwaves</primary><secondary>Second</secondary></indexterm>
+<para><computeroutput>double EEGGaming.Core.Data.NonDataModels.Brainwaves.Second<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+
+<para>The second the packet is captured. </para>
+</para>
+<para>
+Definition at line <link linkend="__brainwaves_8cs_source_1l00037">37</link> of file <link linkend="__brainwaves_8cs_source">Brainwaves.cs</link>.</para>
+</section>
+<anchor xml:id="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a4bf15df56f8fb89009e39c38406c1688"/><section>
+    <title>Theta_avgch</title>
+<indexterm><primary>Theta_avgch</primary><secondary>EEGGaming.Core.Data.NonDataModels.Brainwaves</secondary></indexterm>
+<indexterm><primary>EEGGaming.Core.Data.NonDataModels.Brainwaves</primary><secondary>Theta_avgch</secondary></indexterm>
+<para><computeroutput>double EEGGaming.Core.Data.NonDataModels.Brainwaves.Theta_avgch<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+
+<para>The average of Theta band value of the 2 channels. </para>
+</para>
+<para>
+Definition at line <link linkend="__brainwaves_8cs_source_1l00050">50</link> of file <link linkend="__brainwaves_8cs_source">Brainwaves.cs</link>.</para>
+</section>
+<anchor xml:id="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1aaf137cc421c7b97930fa849cb5ffb7ec"/><section>
+    <title>Theta_ch1</title>
+<indexterm><primary>Theta_ch1</primary><secondary>EEGGaming.Core.Data.NonDataModels.Brainwaves</secondary></indexterm>
+<indexterm><primary>EEGGaming.Core.Data.NonDataModels.Brainwaves</primary><secondary>Theta_ch1</secondary></indexterm>
+<para><computeroutput>double EEGGaming.Core.Data.NonDataModels.Brainwaves.Theta_ch1<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+
+<para>The value of Theta band from the channel 1. </para>
+</para>
+<para>
+Definition at line <link linkend="__brainwaves_8cs_source_1l00097">97</link> of file <link linkend="__brainwaves_8cs_source">Brainwaves.cs</link>.</para>
+</section>
+<anchor xml:id="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1ae2011ba99ff79d76bee549c3ee565756"/><section>
+    <title>Theta_ch2</title>
+<indexterm><primary>Theta_ch2</primary><secondary>EEGGaming.Core.Data.NonDataModels.Brainwaves</secondary></indexterm>
+<indexterm><primary>EEGGaming.Core.Data.NonDataModels.Brainwaves</primary><secondary>Theta_ch2</secondary></indexterm>
+<para><computeroutput>double EEGGaming.Core.Data.NonDataModels.Brainwaves.Theta_ch2<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+
+<para>The value of Theta band from the channel 2. </para>
+</para>
+<para>
+Definition at line <link linkend="__brainwaves_8cs_source_1l00140">140</link> of file <link linkend="__brainwaves_8cs_source">Brainwaves.cs</link>.</para>
+</section>
+<anchor xml:id="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1acabf8affae82307c0668b465b68e767c"/><section>
+    <title>Theta_Rel_avgch</title>
+<indexterm><primary>Theta_Rel_avgch</primary><secondary>EEGGaming.Core.Data.NonDataModels.Brainwaves</secondary></indexterm>
+<indexterm><primary>EEGGaming.Core.Data.NonDataModels.Brainwaves</primary><secondary>Theta_Rel_avgch</secondary></indexterm>
+<para><computeroutput>double EEGGaming.Core.Data.NonDataModels.Brainwaves.Theta_Rel_avgch<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+
+<para>The average of Theta band Relative value of the 2 channels. </para>
+</para>
+<para>
+Definition at line <link linkend="__brainwaves_8cs_source_1l00074">74</link> of file <link linkend="__brainwaves_8cs_source">Brainwaves.cs</link>.</para>
+</section>
+<anchor xml:id="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a403ba98fa57db02035a9ea6c28f0f478"/><section>
+    <title>Theta_Rel_ch1</title>
+<indexterm><primary>Theta_Rel_ch1</primary><secondary>EEGGaming.Core.Data.NonDataModels.Brainwaves</secondary></indexterm>
+<indexterm><primary>EEGGaming.Core.Data.NonDataModels.Brainwaves</primary><secondary>Theta_Rel_ch1</secondary></indexterm>
+<para><computeroutput>double EEGGaming.Core.Data.NonDataModels.Brainwaves.Theta_Rel_ch1<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+
+<para>The Relative value of Theta band from the channel 1. </para>
+</para>
+<para>
+Definition at line <link linkend="__brainwaves_8cs_source_1l00119">119</link> of file <link linkend="__brainwaves_8cs_source">Brainwaves.cs</link>.</para>
+</section>
+<anchor xml:id="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a5f85e0db6ee5b85b636783e1d0c0422d"/><section>
+    <title>Theta_Rel_ch2</title>
+<indexterm><primary>Theta_Rel_ch2</primary><secondary>EEGGaming.Core.Data.NonDataModels.Brainwaves</secondary></indexterm>
+<indexterm><primary>EEGGaming.Core.Data.NonDataModels.Brainwaves</primary><secondary>Theta_Rel_ch2</secondary></indexterm>
+<para><computeroutput>double EEGGaming.Core.Data.NonDataModels.Brainwaves.Theta_Rel_ch2<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+
+<para>The Relative value of Theta band from the channel 2. </para>
+</para>
+<para>
+Definition at line <link linkend="__brainwaves_8cs_source_1l00162">162</link> of file <link linkend="__brainwaves_8cs_source">Brainwaves.cs</link>.</para>
+</section>
+<anchor xml:id="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a2e3a64fab9331c33712a488543cff3da"/><section>
+    <title>Time</title>
+<indexterm><primary>Time</primary><secondary>EEGGaming.Core.Data.NonDataModels.Brainwaves</secondary></indexterm>
+<indexterm><primary>EEGGaming.Core.Data.NonDataModels.Brainwaves</primary><secondary>Time</secondary></indexterm>
+<para><computeroutput>string EEGGaming.Core.Data.NonDataModels.Brainwaves.Time<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+
+<para>The time the packet is captured. </para>
+</para>
+<para>
+Definition at line <link linkend="__brainwaves_8cs_source_1l00033">33</link> of file <link linkend="__brainwaves_8cs_source">Brainwaves.cs</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+EEGGaming.Core/Data/NonDataModels/Brainwaves.cs</section>
+</section>

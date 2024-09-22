@@ -1,0 +1,958 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EEGGaming.Core</name>
+    </assembly>
+    <members>
+        <member name="T:EEGGaming.Core.Data.EEGGamingDbContext">
+            <summary>
+            DbContext of the EEGGaming library
+            </summary>
+        </member>
+        <member name="P:EEGGaming.Core.Data.EEGGamingDbContext.Users">
+            <summary>
+            The list of Users' table records
+            </summary>
+        </member>
+        <member name="P:EEGGaming.Core.Data.EEGGamingDbContext.GameSession">
+            <summary>
+            The list of GamingSession's table records
+            </summary>
+        </member>
+        <member name="P:EEGGaming.Core.Data.EEGGamingDbContext.BrainWaves">
+            <summary>
+            The list of Brainwaves' table records
+            </summary>
+        </member>
+        <member name="T:EEGGaming.Core.Data.Models.BrainwavesRecord">
+            <summary>
+            The class represanation of the Brainwaves in the database
+            </summary>
+        </member>
+        <member name="P:EEGGaming.Core.Data.Models.BrainwavesRecord.Id">
+            <summary>
+            An auto-incremented value id
+            </summary>
+        </member>
+        <member name="P:EEGGaming.Core.Data.Models.BrainwavesRecord.UserId">
+            <summary>
+            he id ofthe user the record belongs
+            </summary>
+        </member>
+        <member name="P:EEGGaming.Core.Data.Models.BrainwavesRecord.GamingSessionId">
+            <summary>
+            The Id of the gamingsession therecord belongs
+            </summary>
+        </member>
+        <member name="M:EEGGaming.Core.Data.Models.BrainwavesRecord.ImportToModel(EEGGaming.Core.Data.NonDataModels.Brainwaves)">
+            <summary>
+            Import the data from the Brainwaves model to the record model
+            </summary>
+            <param name="model">the class representation of the brainwaves</param>
+        </member>
+        <member name="T:EEGGaming.Core.Data.Models.GamingSesion">
+            <summary>
+            The class representation of the Gamingsession table from the database
+            </summary>
+        </member>
+        <member name="P:EEGGaming.Core.Data.Models.GamingSesion.Id">
+            <summary>
+            An auto-incremented value id
+            </summary>
+        </member>
+        <member name="P:EEGGaming.Core.Data.Models.GamingSesion.Start">
+            <summary>
+            The time and date the gaming session start
+            </summary>
+        </member>
+        <member name="P:EEGGaming.Core.Data.Models.GamingSesion.End">
+            <summary>
+            The time and date the gaming session end
+            </summary>
+        </member>
+        <member name="P:EEGGaming.Core.Data.Models.GamingSesion.User">
+            <summary>
+            The user'sid that plays in the current session 
+            </summary>
+        </member>
+        <member name="P:EEGGaming.Core.Data.Models.GamingSesion.Score">
+            <summary>
+            The score the user scored in this gaming session
+            </summary>
+        </member>
+        <member name="P:EEGGaming.Core.Data.Models.User.Id">
+            <summary>
+            An auto-incremented value id
+            </summary>
+        </member>
+        <member name="P:EEGGaming.Core.Data.Models.User.Name">
+            <summary>
+            The name of the user
+            </summary>
+        </member>
+        <member name="P:EEGGaming.Core.Data.Models.User.Sex">
+            <summary>
+            the sex of the user
+            </summary>
+        </member>
+        <member name="P:EEGGaming.Core.Data.Models.User.Age">
+            <summary>
+             the age of the user
+            </summary>
+        </member>
+        <member name="P:EEGGaming.Core.Data.Models.User.Education">
+            <summary>
+            The education level of the user
+            </summary>
+        </member>
+        <member name="T:EEGGaming.Core.Data.NonDataModels.Brainwaves">
+            <summary>
+            The class representation of the packets containing the data coming from the headset
+            </summary>
+        </member>
+        <member name="P:EEGGaming.Core.Data.NonDataModels.Brainwaves.PackNumber">
+            <summary>
+            Thenumber of the packet
+            </summary>
+        </member>
+        <member name="P:EEGGaming.Core.Data.NonDataModels.Brainwaves.Marker">
+            <summary>
+            The packet marker
+            </summary>
+        </member>
+        <member name="P:EEGGaming.Core.Data.NonDataModels.Brainwaves.Date">
+            <summary>
+            The date the packet is captured
+            </summary>
+        </member>
+        <member name="P:EEGGaming.Core.Data.NonDataModels.Brainwaves.Time">
+            <summary>
+            The time  the packet is captured
+            </summary>
+        </member>
+        <member name="P:EEGGaming.Core.Data.NonDataModels.Brainwaves.Second">
+            <summary>
+            The second the packet is captured
+            </summary>
+        </member>
+        <member name="P:EEGGaming.Core.Data.NonDataModels.Brainwaves.MiliSecond">
+            <summary>
+            The milisecond the packet is captured
+            </summary>
+        </member>
+        <member name="P:EEGGaming.Core.Data.NonDataModels.Brainwaves.Delta_avgch">
+            <summary>
+            The average of Delta band value of the 2 channels 
+            </summary>
+        </member>
+        <member name="P:EEGGaming.Core.Data.NonDataModels.Brainwaves.Theta_avgch">
+            <summary>
+            The average of Theta band value of the 2 channels 
+            </summary>
+        </member>
+        <member name="P:EEGGaming.Core.Data.NonDataModels.Brainwaves.Alpha1_avgch">
+            <summary>
+            The average of Alpha band value of the 2 channels 
+            </summary>
+        </member>
+        <member name="P:EEGGaming.Core.Data.NonDataModels.Brainwaves.Beta1_avgch">
+            <summary>
+            The average of Beta band value of the 2 channels 
+            </summary>
+        </member>
+        <member name="P:EEGGaming.Core.Data.NonDataModels.Brainwaves.Gamma1_avgch">
+            <summary>
+            The average of Gamma band value of the 2 channels 
+            </summary>
+        </member>
+        <member name="P:EEGGaming.Core.Data.NonDataModels.Brainwaves.Delta_Rel_avgch">
+            <summary>
+            The average of Delta band  Relative value of the 2 channels 
+            </summary>
+        </member>
+        <member name="P:EEGGaming.Core.Data.NonDataModels.Brainwaves.Theta_Rel_avgch">
+            <summary>
+            The average of Theta band  Relative value of the 2 channels 
+            </summary>
+        </member>
+        <member name="P:EEGGaming.Core.Data.NonDataModels.Brainwaves.Alpha1_Rel_avgch">
+            <summary>
+            The average of Alpha band  Relative value of the 2 channels 
+            </summary>
+        </member>
+        <member name="P:EEGGaming.Core.Data.NonDataModels.Brainwaves.Beta1_Rel_avgch">
+            <summary>
+            The average of Beta band  Relative value of the 2 channels 
+            </summary>
+        </member>
+        <member name="P:EEGGaming.Core.Data.NonDataModels.Brainwaves.Gamma1_Rel_avgch">
+            <summary>
+            The average of Gamma band  Relative value of the 2 channels 
+            </summary>
+        </member>
+        <member name="P:EEGGaming.Core.Data.NonDataModels.Brainwaves.Delta_ch1">
+            <summary>
+            The  value of Delta band  from the channel 1
+            </summary>
+        </member>
+        <member name="P:EEGGaming.Core.Data.NonDataModels.Brainwaves.Theta_ch1">
+            <summary>
+            The  value of Theta band  from the channel 1
+            </summary>
+        </member>
+        <member name="P:EEGGaming.Core.Data.NonDataModels.Brainwaves.Alpha1_ch1">
+            <summary>
+            The  value of Alpha band  from the channel 1
+            </summary>
+        </member>
+        <member name="P:EEGGaming.Core.Data.NonDataModels.Brainwaves.Beta1_ch1">
+            <summary>
+            The  value of Beta band  from the channel 1
+            </summary>
+        </member>
+        <member name="P:EEGGaming.Core.Data.NonDataModels.Brainwaves.Gamma1_ch1">
+            <summary>
+            The  value of Gamma band  from the channel 1
+            </summary>
+        </member>
+        <member name="P:EEGGaming.Core.Data.NonDataModels.Brainwaves.Delta_Rel_ch1">
+            <summary>
+            The  Relative value of Delta band  from the channel 1
+            </summary>
+        </member>
+        <member name="P:EEGGaming.Core.Data.NonDataModels.Brainwaves.Theta_Rel_ch1">
+            <summary>
+            The  Relative value of Theta band  from the channel 1
+            </summary>
+        </member>
+        <member name="P:EEGGaming.Core.Data.NonDataModels.Brainwaves.Alpha1_Rel_ch1">
+            <summary>
+            The  Relative value of Alpha band  from the channel 1
+            </summary>
+        </member>
+        <member name="P:EEGGaming.Core.Data.NonDataModels.Brainwaves.Beta1_Rel_ch1">
+            <summary>
+            The  Relative value of Beta band  from the channel 1
+            </summary>
+        </member>
+        <member name="P:EEGGaming.Core.Data.NonDataModels.Brainwaves.Gamma1_Rel_ch1">
+            <summary>
+            The  Relative value of Gamma band  from the channel 1
+            </summary>
+        </member>
+        <member name="P:EEGGaming.Core.Data.NonDataModels.Brainwaves.Delta_ch2">
+            <summary>
+            The value of Delta band  from the channel  2
+            </summary>
+        </member>
+        <member name="P:EEGGaming.Core.Data.NonDataModels.Brainwaves.Theta_ch2">
+            <summary>
+            The value of Theta band  from the channel  2
+            </summary>
+        </member>
+        <member name="P:EEGGaming.Core.Data.NonDataModels.Brainwaves.Alpha1_ch2">
+            <summary>
+            The value of Alpha band  from the channel  2
+            </summary>
+        </member>
+        <member name="P:EEGGaming.Core.Data.NonDataModels.Brainwaves.Beta1_ch2">
+            <summary>
+            The value of Beta band  from the channel  2
+            </summary>
+        </member>
+        <member name="P:EEGGaming.Core.Data.NonDataModels.Brainwaves.Gamma1_ch2">
+            <summary>
+            The value of Gamma band  from the channel  2
+            </summary>
+        </member>
+        <member name="P:EEGGaming.Core.Data.NonDataModels.Brainwaves.Delta_Rel_ch2">
+            <summary>
+            The Relative value of Delta band  from the channel  2
+            </summary>
+        </member>
+        <member name="P:EEGGaming.Core.Data.NonDataModels.Brainwaves.Theta_Rel_ch2">
+            <summary>
+            The Relative value of Theta band  from the channel  2
+            </summary>
+        </member>
+        <member name="P:EEGGaming.Core.Data.NonDataModels.Brainwaves.Alpha1_Rel_ch2">
+            <summary>
+            The Relative value of Alpha band  from the channel  2
+            </summary>
+        </member>
+        <member name="P:EEGGaming.Core.Data.NonDataModels.Brainwaves.Beta1_Rel_ch2">
+            <summary>
+            The Relative value of Beta band  from the channel  2
+            </summary>
+        </member>
+        <member name="P:EEGGaming.Core.Data.NonDataModels.Brainwaves.Gamma1_Rel_ch2">
+            <summary>
+            The Relative value of Gamma band  from the channel  2
+            </summary>
+        </member>
+        <member name="P:EEGGaming.Core.Data.NonDataModels.Brainwaves.Blinked">
+            <summary>
+            If user had blinked
+            </summary>
+        </member>
+        <member name="T:EEGGaming.Core.Data.NonDataModels.GmingSessionViewModel">
+            <summary>
+            The View Model representation of GamingSession table
+            </summary>
+        </member>
+        <member name="P:EEGGaming.Core.Data.NonDataModels.GmingSessionViewModel.UserName">
+            <summary>
+            Thename of the  User
+            </summary>
+        </member>
+        <member name="M:EEGGaming.Core.Data.NonDataModels.GmingSessionViewModel.ImportToModel(EEGGaming.Core.Data.Models.GamingSesion)">
+            <summary>
+            Import the data of the GamingSession data model to theView Model
+            </summary>
+            <param name="model">data model with initial data</param>
+        </member>
+        <member name="T:EEGGaming.Core.Managers.AppSettingsManager">
+            <summary>
+            This classmanages the settings of the library
+            </summary>
+        </member>
+        <member name="M:EEGGaming.Core.Managers.AppSettingsManager.Init">
+            <summary>
+            The class that starts reading the configuration file and  
+            </summary>
+        </member>
+        <member name="M:EEGGaming.Core.Managers.AppSettingsManager.GetDefaultConnectionString">
+            <summary>
+            Gets the Conenction string from the config
+            </summary>
+            <returns>the connection string of the database</returns>
+        </member>
+        <member name="T:EEGGaming.Core.Managers.BaseManager">
+            <summary>
+            The  class that includes the mostly common methods,properties and fuctions of the 
+            Manager classes
+            </summary>
+        </member>
+        <member name="P:EEGGaming.Core.Managers.BaseManager.DbContext">
+            <summary>
+            The DatabaseContext of the library
+            </summary>
+        </member>
+        <member name="M:EEGGaming.Core.Managers.BaseManager.CreateDatabase">
+            <summary>
+            Creates the Database
+            </summary>
+        </member>
+        <member name="M:EEGGaming.Core.Managers.BaseManager.PredictLastId(System.String)">
+            <summary>
+            It predicts the last value of the id's property from the given table's name
+            </summary>
+            <param name="tablename">the name of the table  the we wat to get the id</param>
+            <returns>last value of the id's property from the given table's name</returns>
+        </member>
+        <member name="T:EEGGaming.Core.Managers.OnBlinked">
+            <summary>
+            This event occurs when an eye blink occured
+            </summary>
+        </member>
+        <member name="T:EEGGaming.Core.Managers.BrainWaveRecordManager">
+            <summary>
+            The Manager that manages the records of the BrainWave table and detectsif an 
+            eye blink occured
+            </summary>
+        </member>
+        <member name="P:EEGGaming.Core.Managers.BrainWaveRecordManager.Records">
+            <summary>
+            The Brainwave records curently captured
+            </summary>
+        </member>
+        <member name="P:EEGGaming.Core.Managers.BrainWaveRecordManager.tmrBlink">
+            <summary>
+            The timer for the Blink
+            </summary>
+        </member>
+        <member name="E:EEGGaming.Core.Managers.BrainWaveRecordManager.OnBlinked">
+            <summary>
+            This event occurs when an eye blink occured
+            </summary>
+        </member>
+        <member name="P:EEGGaming.Core.Managers.BrainWaveRecordManager.SamplesRecorded">
+            <summary>
+            The namber of the recorded samples/records
+            </summary>
+        </member>
+        <member name="P:EEGGaming.Core.Managers.BrainWaveRecordManager.EnableFiltering">
+            <summary>
+            Eanble or Disable the ability to filter the samples
+            </summary>
+        </member>
+        <member name="P:EEGGaming.Core.Managers.BrainWaveRecordManager.SamplingRate">
+            <summary>
+            The Sample Rate the sensor will capture samples
+            </summary>
+        </member>
+        <member name="P:EEGGaming.Core.Managers.BrainWaveRecordManager.FFtWindow">
+            <summary>
+            The fftWindow
+            </summary>
+        </member>
+        <member name="P:EEGGaming.Core.Managers.BrainWaveRecordManager.ProcessWinRate">
+            <summary>
+            The ProcessWinRate
+            </summary>
+        </member>
+        <member name="P:EEGGaming.Core.Managers.BrainWaveRecordManager.FFTBinsFor1Hz">
+            <summary>
+            The FFT Bins For 1Hz
+            </summary>
+        </member>
+        <member name="P:EEGGaming.Core.Managers.BrainWaveRecordManager.Sensor">
+            <summary>
+            The Sensor that captures the brainwaves
+            </summary>
+        </member>
+        <member name="P:EEGGaming.Core.Managers.BrainWaveRecordManager.Blinked">
+            <summary>
+            The result of the eye blink detection
+            </summary>
+        </member>
+        <member name="P:EEGGaming.Core.Managers.BrainWaveRecordManager.ActiveUserId">
+            <summary>
+            The id of  the user  it captures the packet from.
+            </summary>         
+        </member>
+        <member name="P:EEGGaming.Core.Managers.BrainWaveRecordManager.ActiveGamingSessionId">
+            <summary>
+            The Id of the GamingSession that occurs
+            </summary>
+        </member>
+        <member name="P:EEGGaming.Core.Managers.BrainWaveRecordManager.UsesDb">
+            <summary>
+            It sets whenever the library will use Database or not
+            </summary>
+        </member>
+        <member name="M:EEGGaming.Core.Managers.BrainWaveRecordManager.LoadCsv(System.String)">
+            <summary>
+            It Loads thedata from the given file
+            </summary>
+            <param name="filename">the full path of the file with the data </param>
+        </member>
+        <member name="M:EEGGaming.Core.Managers.BrainWaveRecordManager.MakeGraphs(System.String)">
+            <summary>
+            Generates the graphs in images
+            </summary>
+            <param name="filename">the name and path of the images</param>
+        </member>
+        <member name="M:EEGGaming.Core.Managers.BrainWaveRecordManager.Connect(NeuroSDK.SensorInfo)">
+            <summary>
+            Connects to the sensor with the given info
+            </summary>
+            <param name="sens"> information of the sensor to connect</param>
+        </member>
+        <member name="M:EEGGaming.Core.Managers.BrainWaveRecordManager.Start">
+            <summary>
+            Starts the capture of brainwaves
+            </summary>
+        </member>
+        <member name="M:EEGGaming.Core.Managers.BrainWaveRecordManager.Stop">
+            <summary>
+            Stops the capture of brainwaves
+            </summary>
+        </member>
+        <member name="M:EEGGaming.Core.Managers.BrainWaveRecordManager.StopAndSavetoDatabse">
+            <summary>
+            Stops the capture of brainwaves and saves them to the database
+            </summary>
+        </member>
+        <member name="M:EEGGaming.Core.Managers.BrainWaveRecordManager.SavetoDatabse">
+            <summary>
+            Saves the BrainWaves  to the database
+            </summary>
+        </member>
+        <member name="M:EEGGaming.Core.Managers.BrainWaveRecordManager.SaveToCSV(System.String)">
+            <summary>
+            Saves the BrainWave datato Comma seperated file
+            </summary>
+            <param name="filename">the full path of the file</param>
+        </member>
+        <member name="M:EEGGaming.Core.Managers.BrainWaveRecordManager.onDeviceFound(NeuroSDK.IScanner,System.Collections.Generic.IReadOnlyList{NeuroSDK.SensorInfo})">
+            <summary>
+            It occurs when device is found 
+            </summary>
+            <param name="scanner"> the scanner </param>
+            <param name="sensors">a list of sensors </param>
+        </member>
+        <member name="M:EEGGaming.Core.Managers.BrainWaveRecordManager.onBrainBitSignalDataRecived(NeuroSDK.ISensor,NeuroSDK.BrainBitSignalData[])">
+            <summary>
+            It occurs when the headset receives data 
+            </summary>
+            <param name="sensor">sensor</param>
+            <param name="data"> data captured by thee headeset </param>
+        </member>
+        <member name="M:EEGGaming.Core.Managers.BrainWaveRecordManager.TmrBlink_Elapsed(System.Object,System.Timers.ElapsedEventArgs)">
+            <summary>
+            It occurs every timer blink timeouted 
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:EEGGaming.Core.Managers.BrainWaveRecordManager.FilterArrayInPlace(System.Double[])">
+            <summary>
+            Applies the filters
+            </summary>
+            <param name="vals">The array with the values that neeed filters to be applied </param>
+        </member>
+        <member name="M:EEGGaming.Core.Managers.BrainWaveRecordManager.InitFiltering">
+            <summary>
+            Initites the array with current filters
+            </summary>
+        </member>
+        <member name="M:EEGGaming.Core.Managers.BrainWaveRecordManager.DetectBlink">
+            <summary>
+            Detects if user had blinked or not 
+            </summary>
+            <returns>true if an eye blinked detected and flase otherwise</returns>
+        </member>
+        <member name="M:EEGGaming.Core.Managers.BrainWaveRecordManager.DetectBlinkusingAlpha(System.Double[],System.Double[])">
+            <summary>
+            Detects eye blinks using the alpha band
+            </summary>
+            <param name="oldvals">array with old alpha band values </param>
+            <param name="chanel1vals">array eith new values of alpha band values </param>
+            <returns>true if an eye blinked detected and false otherwise</returns>
+        </member>
+        <member name="M:EEGGaming.Core.Managers.BrainWaveRecordManager.AddNew(EEGGaming.Core.Data.Models.BrainwavesRecord)">
+            <summary>
+            Adds a new record in the Brainwave's table
+            </summary>
+            <param name="record">record to be added</param>
+        </member>
+        <member name="M:EEGGaming.Core.Managers.BrainWaveRecordManager.AddNewRange(EEGGaming.Core.Data.Models.BrainwavesRecord[])">
+            <summary>
+            Add an array of brainwaves data in the brainwaves' table
+            </summary>
+            <param name="record">an array of brainwaves</param>
+        </member>
+        <member name="M:EEGGaming.Core.Managers.BrainWaveRecordManager.Edit(System.Int32,EEGGaming.Core.Data.Models.BrainwavesRecord)">
+            <summary>
+            Edits  the record with the given id 
+            </summary>
+            <param name="id"> thevalue of the id to be edited</param>
+            <param name="record"> newvalues of the record</param>
+        </member>
+        <member name="M:EEGGaming.Core.Managers.BrainWaveRecordManager.EditRange(EEGGaming.Core.Data.Models.BrainwavesRecord[])">
+            <summary>
+            Edits a numberof Brainwave records
+            </summary>
+            <param name="records"> the array with  Brainwaves' records with 
+            the new values except the ids </param>
+        </member>
+        <member name="M:EEGGaming.Core.Managers.BrainWaveRecordManager.GetBrainwavesFromDB">
+            <summary>
+            Gets the Records from the BrainWaves' table
+            </summary>
+            <returns>Records from the BrainWaves' table</returns>
+        </member>
+        <member name="M:EEGGaming.Core.Managers.BrainWaveRecordManager.GetBrainwavesFromDBByUserId(System.Int32)">
+            <summary>
+            Get  the Records from the BrainWaves' table of the user with the given id 
+            </summary>
+            <param name="id">user's id </param>
+            <returns>the Records from the BrainWaves' 
+            table of the user with the given id </returns>
+        </member>
+        <member name="M:EEGGaming.Core.Managers.BrainWaveRecordManager.GetBrainwaveFromDBById(System.Int32)">
+            <summary>
+            Gets the BrainWave record by it's Id 
+            </summary>
+            <param name="id">id of the Brainwave record </param>
+            <returns> the BrainWave record by it's Id </returns>
+        </member>
+        <member name="M:EEGGaming.Core.Managers.BrainWaveRecordManager.GetBrainwavesFromDBByGamingSessionId(System.Int32)">
+            <summary>
+            Get  the Records from the BrainWaves' table of the gamingsession  with the given id 
+            </summary>
+            <param name="id">the id of the gaming session</param>
+            <returns>the Records from the BrainWaves' table of the
+            gamingsession  with the given id</returns>
+        </member>
+        <member name="M:EEGGaming.Core.Managers.BrainWaveRecordManager.GetBrainwavesFromDBByMilisconds(System.Double)">
+            <summary>
+            the Records from the BrainWaves' table by the miliseconds
+            </summary>
+            <param name="milsecond">miliseconds </param>
+            <returns>Records from the BrainWaves' table by the miliseconds</returns>
+        </member>
+        <member name="T:EEGGaming.Core.Managers.GamingSesionManager">
+            <summary>
+            The Class that manages the gaming sessin
+            </summary>
+        </member>
+        <member name="M:EEGGaming.Core.Managers.GamingSesionManager.List">
+            <summary>
+            Get all the gaming sessions
+            </summary>
+            <returns>all the gaming sessions</returns>
+        </member>
+        <member name="M:EEGGaming.Core.Managers.GamingSesionManager.ListasViewModel">
+            <summary>
+            Get all the gaming sessions as ViewModels
+            </summary>
+            <returns>all the gaming sessions as ViewModels</returns>
+        </member>
+        <member name="M:EEGGaming.Core.Managers.GamingSesionManager.Get(System.Int32)">
+            <summary>
+            Gets the gamingsession with the given Id
+            </summary>
+            <param name="id">id of the gamingsession</param>
+            <returns>gamingsession with the given Id</returns>
+        </member>
+        <member name="M:EEGGaming.Core.Managers.GamingSesionManager.Exists(System.Int32)">
+            <summary>
+            checks if a gamingsession has thegivn id 
+            </summary>
+            <param name="id"> the id of the gamingsession we are searching for </param>
+            <returns>true if it exists false it isnt </returns>
+        </member>
+        <member name="M:EEGGaming.Core.Managers.GamingSesionManager.Update(EEGGaming.Core.Data.Models.GamingSesion)">
+            <summary>
+            updates the gamingsession record
+            </summary>
+            <param name="gamingSesion"> the new values of gamingsession</param>
+        </member>
+        <member name="M:EEGGaming.Core.Managers.GamingSesionManager.Delete(System.Int32)">
+            <summary>
+            Delete the record with thegiven id
+            </summary>
+            <param name="id">idof the record to bedeeted</param>
+        </member>
+        <member name="M:EEGGaming.Core.Managers.GamingSesionManager.AddGamingSession(EEGGaming.Core.Data.Models.GamingSesion)">
+            <summary>
+            Adds a new record to the gamingsession and it returns it 
+            </summary>
+            <param name="gamingSesion"> new recordof gamingsession to be added</param>
+            <returns> new record to the gamingsession and it returns it </returns>
+        </member>
+        <member name="T:EEGGaming.Core.Managers.UserManager">
+            <summary>
+            Class that manages user's and their info
+            </summary>
+        </member>
+        <member name="M:EEGGaming.Core.Managers.UserManager.AddNew(EEGGaming.Core.Data.Models.User)">
+            <summary>
+            Adds new user to the database
+            </summary>
+            <param name="user"> new user info</param>
+        </member>
+        <member name="M:EEGGaming.Core.Managers.UserManager.List">
+            <summary>
+            Gets all the users
+            </summary>
+            <returns>all the users</returns>
+        </member>
+        <member name="M:EEGGaming.Core.Managers.UserManager.GetUser(System.Int32)">
+            <summary>
+            Gets the user of the given id
+            </summary>
+            <param name="id">id of the user we are looking for </param>
+            <returns>user of the given id</returns>
+        </member>
+        <member name="M:EEGGaming.Core.Managers.UserManager.GetUser(System.String)">
+            <summary>
+            Gets the user of the given name
+            </summary>
+            <param name="name">name of the user we are looking for </param>
+            <returns>user of the given name</returns>
+        </member>
+        <member name="M:EEGGaming.Core.Managers.UserManager.Edit(System.Nullable{System.Int32},EEGGaming.Core.Data.Models.User)">
+            <summary>
+            Edits the info of the user with the given id 
+            </summary>
+            <param name="id"> id of the user</param>
+            <param name="user">new values of the user</param>
+        </member>
+        <member name="M:EEGGaming.Core.Managers.UserManager.Delete(System.String)">
+            <summary>
+            Deletes theuser with the given nme
+            </summary>
+            <param name="username">name of the user tobeleteed </param>
+        </member>
+        <member name="T:EEGGaming.Core.Migrations.initial">
+            <inheritdoc />
+        </member>
+        <member name="M:EEGGaming.Core.Migrations.initial.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:EEGGaming.Core.Migrations.initial.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:EEGGaming.Core.Migrations.initial.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:EEGGaming.Core.Migrations.initailcreation">
+            <inheritdoc />
+        </member>
+        <member name="M:EEGGaming.Core.Migrations.initailcreation.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:EEGGaming.Core.Migrations.initailcreation.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:EEGGaming.Core.Migrations.initailcreation.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:EEGGaming.Core.Migrations.addedusername">
+            <inheritdoc />
+        </member>
+        <member name="M:EEGGaming.Core.Migrations.addedusername.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:EEGGaming.Core.Migrations.addedusername.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:EEGGaming.Core.Migrations.addedusername.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:EEGGaming.Core.Migrations.addedscoreongamingsession">
+            <inheritdoc />
+        </member>
+        <member name="M:EEGGaming.Core.Migrations.addedscoreongamingsession.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:EEGGaming.Core.Migrations.addedscoreongamingsession.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:EEGGaming.Core.Migrations.addedscoreongamingsession.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:EEGGaming.Core.Migrations.removedmode">
+            <inheritdoc />
+        </member>
+        <member name="M:EEGGaming.Core.Migrations.removedmode.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:EEGGaming.Core.Migrations.removedmode.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:EEGGaming.Core.Migrations.removedmode.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:EEGGaming.Core.Migrations.chnagedtobrainwaveemodel">
+            <inheritdoc />
+        </member>
+        <member name="M:EEGGaming.Core.Migrations.chnagedtobrainwaveemodel.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:EEGGaming.Core.Migrations.chnagedtobrainwaveemodel.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:EEGGaming.Core.Migrations.chnagedtobrainwaveemodel.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:EEGGaming.Core.Migrations.changesoretype">
+            <inheritdoc />
+        </member>
+        <member name="M:EEGGaming.Core.Migrations.changesoretype.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:EEGGaming.Core.Migrations.changesoretype.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:EEGGaming.Core.Migrations.changesoretype.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:EEGGaming.Core.Migrations.changedscoretype">
+            <inheritdoc />
+        </member>
+        <member name="M:EEGGaming.Core.Migrations.changedscoretype.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:EEGGaming.Core.Migrations.changedscoretype.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:EEGGaming.Core.Migrations.changedscoretype.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:EEGGaming.Core.Migrations.madethenamepropertyakey">
+            <inheritdoc />
+        </member>
+        <member name="M:EEGGaming.Core.Migrations.madethenamepropertyakey.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:EEGGaming.Core.Migrations.madethenamepropertyakey.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:EEGGaming.Core.Migrations.madethenamepropertyakey.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:EEGGaming.Core.Migrations.unmadethenamepropertyakey">
+            <inheritdoc />
+        </member>
+        <member name="M:EEGGaming.Core.Migrations.unmadethenamepropertyakey.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:EEGGaming.Core.Migrations.unmadethenamepropertyakey.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:EEGGaming.Core.Migrations.unmadethenamepropertyakey.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:EEGGaming.Core.Migrations.fff">
+            <inheritdoc />
+        </member>
+        <member name="M:EEGGaming.Core.Migrations.fff.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:EEGGaming.Core.Migrations.fff.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:EEGGaming.Core.Migrations.fff.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:EEGGaming.Core.Migrations.dddddddd">
+            <inheritdoc />
+        </member>
+        <member name="M:EEGGaming.Core.Migrations.dddddddd.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:EEGGaming.Core.Migrations.dddddddd.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:EEGGaming.Core.Migrations.dddddddd.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:EEGGaming.Core.Migrations.ggggggg">
+            <inheritdoc />
+        </member>
+        <member name="M:EEGGaming.Core.Migrations.ggggggg.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:EEGGaming.Core.Migrations.ggggggg.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:EEGGaming.Core.Migrations.ggggggg.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:EEGGaming.Core.Tools.Calculations">
+            <summary>
+            Class that does Mathematic Calculations 
+            </summary>
+        </member>
+        <member name="M:EEGGaming.Core.Tools.Calculations.AverageAbs(System.Double[])">
+            <summary>
+            Calculates the absolute values of the given's array average
+            </summary>
+            <param name="vals">array to calculate it's average value </param>
+            <returns>the absolute values of the given's array average</returns>
+        </member>
+        <member name="M:EEGGaming.Core.Tools.Calculations.Average(System.Double[])">
+            <summary>
+            Calculates the average of the given array
+            </summary>
+            <param name="vals">the array we want to get its average value </param>
+            <returns>average of the given array</returns>
+        </member>
+        <member name="M:EEGGaming.Core.Tools.Calculations.Subtruck(System.Double,System.Double)">
+            <summary>
+            Subtracts val2 from val1
+            </summary>
+            <param name="val1">the valueto subtruck from </param>
+            <param name="val2"> the value to   subtruct</param>
+            <returns>the difference of val1-val2</returns>
+        </member>
+        <member name="T:EEGGaming.Core.Tools.CommonTools">
+            <summary>
+            Class with some common tools
+            </summary>
+        </member>
+        <member name="M:EEGGaming.Core.Tools.CommonTools.CreateLogger">
+            <summary>
+             Creates  the Loger
+            </summary>
+        </member>
+        <member name="M:EEGGaming.Core.Tools.CommonTools.isEmpty(System.String)">
+            <summary>
+            Checks if a string is empty
+            </summary>
+            <param name="str">string to be checked </param>
+            <returns> true f its empty flase otherwise</returns>
+        </member>
+        <member name="M:EEGGaming.Core.Tools.CommonTools.ErrorReporting(System.Exception)">
+            <summary>
+            SavesErrors to log file
+            </summary>
+            <param name="ex">error that occured</param>
+        </member>
+        <member name="M:EEGGaming.Core.Tools.CommonTools.GetAppRootBinaryFolderAbsolutePath">
+            <summary>
+            Gets the absolute path of the app's binary folder
+            </summary>
+            <returns>the absolute path of the app's binary folder</returns>
+        </member>
+        <member name="M:EEGGaming.Core.Tools.CommonTools.GetAppRootDataFolderAbsolutePath">
+            <summary>
+            gets the absolute path of  app's data folder
+            </summary>
+            <returns>absolute path of  app's data folder</returns>
+        </member>
+        <member name="M:EEGGaming.Core.Tools.CommonTools.CreateAppRootdataFolder">
+            <summary>
+            Createsthe app's data folder
+            </summary>
+        </member>
+        <member name="M:EEGGaming.Core.Tools.CommonTools.GetEEGGamingCoreVersion">
+            <summary>
+            Gets the version of EEGGaming Core
+            </summary>
+            <returns>version of EEGGaming Core</returns>
+        </member>
+        <member name="M:EEGGaming.Core.Tools.CommonTools.GetBlinkBirdbVersion">
+            <summary>
+            Gets the version of Blinkbird
+            </summary>
+            <returns>version of Blinkbird</returns>
+        </member>
+        <member name="M:EEGGaming.Core.Tools.CommonTools.GetBlinkBirdDeveloper">
+            <summary>
+            Gets the Developer of BlinkBird
+            </summary>
+            <returns>Developer of BlinkBird</returns>
+        </member>
+        <member name="M:EEGGaming.Core.Tools.CommonTools.GetBlinkBirdCopyright">
+            <summary>
+            gwts the copyright of blinkbird
+            </summary>
+            <returns>the copyright of blinkbird</returns>
+        </member>
+        <member name="M:EEGGaming.Core.Tools.CommonTools.GetEEGGamingCoreDeveloper">
+            <summary>
+            Gets the developer of  EEGGaming Core 
+            </summary>
+            <returns>developer of  EEGGaming Core </returns>
+        </member>
+        <member name="M:EEGGaming.Core.Tools.CommonTools.GetEEGGamingCoreCopyright">
+            <summary>
+            Gets the copyright of  EEGGaming Core 
+            </summary>
+            <returns>copyright of  EEGGaming Core </returns>
+        </member>
+        <member name="M:EEGGaming.Core.Tools.CommonTools.GetEEGGamingCoreLastModifiedDateUTC">
+            <summary>
+            Gets the date EEGGaming Core  last modified  
+            </summary>
+            <returns>date EEGGaming Core  last modified  </returns>
+        </member>
+        <member name="M:EEGGaming.Core.Tools.CommonTools.GetBlickBirdbLastModifiedDateUTC">
+            <summary>
+            Gets the date BlinkBird  last modified
+            </summary>
+            <returns>date BlinkBird  last modified</returns>
+        </member>
+        <member name="M:EEGGaming.Core.Tools.CommonTools.GetBlinBirdMD5Hash">
+            <summary>
+            Gets the MDM5 Hash of Blinkbird 
+            </summary>
+            <returns>Hash of Blinkbird </returns>
+        </member>
+    </members>
+</doc>

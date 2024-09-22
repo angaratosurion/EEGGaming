@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="dir_a02aa8d90a63d2415704588dc96cf5ac" kind="dir">
+    <compoundname>EEGGaming.Trainer</compoundname>
+    <innerdir refid="dir_4e184f87132aedc9bc35e5b07d4a7de0">EEGGaming.Trainer/obj</innerdir>
+    <innerfile refid="frm_main_g_u_i_8cs">frmMainGUI.cs</innerfile>
+    <innerfile refid="frm_main_g_u_i_8_designer_8cs">frmMainGUI.Designer.cs</innerfile>
+    <innerfile refid="_program_8cs">Program.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="EEGGaming.Trainer/"/>
+  </compounddef>
+</doxygen>

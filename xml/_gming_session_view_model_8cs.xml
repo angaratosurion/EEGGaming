@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="_gming_session_view_model_8cs" kind="file" language="C#">
+    <compoundname>GmingSessionViewModel.cs</compoundname>
+    <innerclass refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_gming_session_view_model" prot="public">EEGGaming::Core::Data::NonDataModels::GmingSessionViewModel</innerclass>
+    <innernamespace refid="namespace_e_e_g_gaming">EEGGaming</innernamespace>
+    <innernamespace refid="namespace_e_e_g_gaming_1_1_core">EEGGaming::Core</innernamespace>
+    <innernamespace refid="namespace_e_e_g_gaming_1_1_core_1_1_data">EEGGaming::Core::Data</innernamespace>
+    <innernamespace refid="namespace_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models">EEGGaming::Core::Data::NonDataModels</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespace_e_e_g_gaming_1_1_core_1_1_data_1_1_models" kindref="compound">EEGGaming.Core.Data.Models</ref>;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespace_e_e_g_gaming_1_1_core_1_1_managers" kindref="compound">EEGGaming.Core.Managers</ref>;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">System;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">System.Collections.Generic;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">System.ComponentModel.DataAnnotations;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">System.Linq;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">System.Text;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">System.Threading.Tasks;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models" kindref="compound">EEGGaming.Core.Data.NonDataModels</ref></highlight></codeline>
+<codeline lineno="11"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="14" refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_gming_session_view_model" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_gming_session_view_model" kindref="compound">GmingSessionViewModel</ref>:<ref refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion" kindref="compound">GamingSesion</ref></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[Required]</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>[Key]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_gming_session_view_model_1ab19010b9d5fa93dcfd54d4bf731c5724" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_gming_session_view_model_1ab19010b9d5fa93dcfd54d4bf731c5724" kindref="member">UserName</ref><sp/>{<sp/></highlight><highlight class="keyword">get</highlight><highlight class="normal">;<sp/></highlight><highlight class="keyword">set</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="26" refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_gming_session_view_model_1aca2a41f4c7b35096799bb3684c529e8d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_gming_session_view_model_1aca2a41f4c7b35096799bb3684c529e8d" kindref="member">ImportToModel</ref>(<ref refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion" kindref="compound">GamingSesion</ref><sp/>model)</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(model<sp/>!=<sp/></highlight><highlight class="keyword">null</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.<ref refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion_1ae768cd0296695bb3d3f346ae5cb67ab6" kindref="member">Id</ref>=model.<ref refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion_1ae768cd0296695bb3d3f346ae5cb67ab6" kindref="member">Id</ref>;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.<ref refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_user" kindref="compound">User</ref>=model.<ref refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion_1acbce3f3c7d81fe021cca2aba31c1ab6b" kindref="member">User</ref>;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.<ref refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion_1a1691ad2ee4ae57863a57f3ac7a0236e3" kindref="member">Start</ref>=model.<ref refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion_1a1691ad2ee4ae57863a57f3ac7a0236e3" kindref="member">Start</ref>;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.<ref refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion_1a409a923d21437aeab8568bd1ddf93252" kindref="member">End</ref>=model.<ref refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion_1a409a923d21437aeab8568bd1ddf93252" kindref="member">End</ref>;<sp/></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.<ref refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion_1a16505d61fb4668e87ceba41175ff8478" kindref="member">Score</ref>=model.<ref refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion_1a16505d61fb4668e87ceba41175ff8478" kindref="member">Score</ref>;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_user_manager" kindref="compound">UserManager</ref><sp/>userManager<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_user_manager" kindref="compound">UserManager</ref>();</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>usr<sp/>=<sp/>userManager.<ref refid="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_user_manager_1a6d1e2fec4d0b142fa2e4696143097dd7" kindref="member">GetUser</ref>(this.<ref refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_user" kindref="compound">User</ref>);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(usr<sp/>!=<sp/></highlight><highlight class="keyword">null</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.UserName<sp/>=<sp/>usr.Name;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="EEGGaming.Core/Data/NonDataModels/GmingSessionViewModel.cs"/>
+  </compounddef>
+</doxygen>

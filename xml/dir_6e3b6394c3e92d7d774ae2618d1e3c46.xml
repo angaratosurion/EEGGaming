@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="dir_6e3b6394c3e92d7d774ae2618d1e3c46" kind="dir">
+    <compoundname>EEGGaming.Core/Migrations</compoundname>
+    <innerfile refid="20230828223053__initial_8cs">20230828223053_initial.cs</innerfile>
+    <innerfile refid="20230828223053__initial_8_designer_8cs">20230828223053_initial.Designer.cs</innerfile>
+    <innerfile refid="20240526192812__initail_01creation_8cs">20240526192812_initail creation.cs</innerfile>
+    <innerfile refid="20240526192812__initail_01creation_8_designer_8cs">20240526192812_initail creation.Designer.cs</innerfile>
+    <innerfile refid="20240530213838__added_01username_8cs">20240530213838_added username.cs</innerfile>
+    <innerfile refid="20240530213838__added_01username_8_designer_8cs">20240530213838_added username.Designer.cs</innerfile>
+    <innerfile refid="20240605230844__added_01score_01on_01gaming_01session_8cs">20240605230844_added score on gaming session.cs</innerfile>
+    <innerfile refid="20240605230844__added_01score_01on_01gaming_01session_8_designer_8cs">20240605230844_added score on gaming session.Designer.cs</innerfile>
+    <innerfile refid="20240607134527__removedmode_8cs">20240607134527_removedmode.cs</innerfile>
+    <innerfile refid="20240607134527__removedmode_8_designer_8cs">20240607134527_removedmode.Designer.cs</innerfile>
+    <innerfile refid="20240607151943__chnagedtobrainwaveemodel_8cs">20240607151943_chnagedtobrainwaveemodel.cs</innerfile>
+    <innerfile refid="20240607151943__chnagedtobrainwaveemodel_8_designer_8cs">20240607151943_chnagedtobrainwaveemodel.Designer.cs</innerfile>
+    <innerfile refid="20240610184717__changesore_01type_8cs">20240610184717_changesore type.cs</innerfile>
+    <innerfile refid="20240610184717__changesore_01type_8_designer_8cs">20240610184717_changesore type.Designer.cs</innerfile>
+    <innerfile refid="20240610212915__changed_01score_01type_8cs">20240610212915_changed score type.cs</innerfile>
+    <innerfile refid="20240610212915__changed_01score_01type_8_designer_8cs">20240610212915_changed score type.Designer.cs</innerfile>
+    <innerfile refid="20240616171828__made_01the_01name_01property_01a_01key_8cs">20240616171828_made the name property a key.cs</innerfile>
+    <innerfile refid="20240616171828__made_01the_01name_01property_01a_01key_8_designer_8cs">20240616171828_made the name property a key.Designer.cs</innerfile>
+    <innerfile refid="20240616172542__unmade_01the_01name_01property_01a_01key_8cs">20240616172542_unmade the name property a key.cs</innerfile>
+    <innerfile refid="20240616172542__unmade_01the_01name_01property_01a_01key_8_designer_8cs">20240616172542_unmade the name property a key.Designer.cs</innerfile>
+    <innerfile refid="20240831173811__fff_8cs">20240831173811_fff.cs</innerfile>
+    <innerfile refid="20240831173811__fff_8_designer_8cs">20240831173811_fff.Designer.cs</innerfile>
+    <innerfile refid="20240831174927__dddddddd_8cs">20240831174927_dddddddd.cs</innerfile>
+    <innerfile refid="20240831174927__dddddddd_8_designer_8cs">20240831174927_dddddddd.Designer.cs</innerfile>
+    <innerfile refid="20240831175225__ggggggg_8cs">20240831175225_ggggggg.cs</innerfile>
+    <innerfile refid="20240831175225__ggggggg_8_designer_8cs">20240831175225_ggggggg.Designer.cs</innerfile>
+    <innerfile refid="_e_e_g_gaming_db_context_model_snapshot_8cs">EEGGamingDbContextModelSnapshot.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="EEGGaming.Core/Migrations/"/>
+  </compounddef>
+</doxygen>

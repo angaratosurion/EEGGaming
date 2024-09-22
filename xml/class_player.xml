@@ -1,0 +1,124 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="class_player" kind="class" language="C#" prot="public">
+    <compoundname>Player</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Sprite2D</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_player_1a9714bf08916ca848e975d59077d10841" prot="public" static="yes" mutable="no">
+        <type>const float</type>
+        <definition>const float Player.YMOVEMENT</definition>
+        <argsstring></argsstring>
+        <name>YMOVEMENT</name>
+        <qualifiedname>Player.YMOVEMENT</qualifiedname>
+        <initializer>= (0.025f)*16</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BlinkBird/Code/Player.cs" line="9" column="20" bodyfile="BlinkBird/Code/Player.cs" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_1a534050be6eff4fb0ab280c75eb3c43e4" prot="public" static="yes" mutable="no">
+        <type>const float</type>
+        <definition>const float Player.XMOVEMENT</definition>
+        <argsstring></argsstring>
+        <name>XMOVEMENT</name>
+        <qualifiedname>Player.XMOVEMENT</qualifiedname>
+        <initializer>= (0.025f)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BlinkBird/Code/Player.cs" line="10" column="24" bodyfile="BlinkBird/Code/Player.cs" bodystart="10" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_player_1a2d4af3cf4feb546eb8e2a488d87de9af" prot="private" static="no" mutable="no">
+        <type>PackedScene</type>
+        <definition>PackedScene Player.packedScene</definition>
+        <argsstring></argsstring>
+        <name>packedScene</name>
+        <qualifiedname>Player.packedScene</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BlinkBird/Code/Player.cs" line="12" column="17" bodyfile="BlinkBird/Code/Player.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_player_1ae192a478a80f0e93e01339d62cdd6f6d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void Player._Ready</definition>
+        <argsstring>()</argsstring>
+        <name>_Ready</name>
+        <qualifiedname>Player._Ready</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BlinkBird/Code/Player.cs" line="14" column="22" bodyfile="BlinkBird/Code/Player.cs" bodystart="14" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_player_1a81db5dd46c343160498d29f6fa42d611" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void Player._Process</definition>
+        <argsstring>(double delta)</argsstring>
+        <name>_Process</name>
+        <qualifiedname>Player._Process</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>delta</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>14832</para>
+        </inbodydescription>
+        <location file="BlinkBird/Code/Player.cs" line="22" column="22" bodyfile="BlinkBird/Code/Player.cs" bodystart="22" bodyend="76"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Player</label>
+        <link refid="class_player"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Sprite2D</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Player</label>
+        <link refid="class_player"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Sprite2D</label>
+      </node>
+    </collaborationgraph>
+    <location file="BlinkBird/Code/Player.cs" line="6" column="15" bodyfile="BlinkBird/Code/Player.cs" bodystart="7" bodyend="77"/>
+    <listofallmembers>
+      <member refid="class_player_1a81db5dd46c343160498d29f6fa42d611" prot="public" virt="non-virtual"><scope>Player</scope><name>_Process</name></member>
+      <member refid="class_player_1ae192a478a80f0e93e01339d62cdd6f6d" prot="public" virt="non-virtual"><scope>Player</scope><name>_Ready</name></member>
+      <member refid="class_player_1a2d4af3cf4feb546eb8e2a488d87de9af" prot="private" virt="non-virtual"><scope>Player</scope><name>packedScene</name></member>
+      <member refid="class_player_1a534050be6eff4fb0ab280c75eb3c43e4" prot="public" virt="non-virtual"><scope>Player</scope><name>XMOVEMENT</name></member>
+      <member refid="class_player_1a9714bf08916ca848e975d59077d10841" prot="public" virt="non-virtual"><scope>Player</scope><name>YMOVEMENT</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

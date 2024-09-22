@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="class_game_over" kind="class" language="C#" prot="public">
+    <compoundname>GameOver</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Window</basecompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_game_over_1a9dff954d9b92b3377bc6c08ad2096d65" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void GameOver._Ready</definition>
+        <argsstring>()</argsstring>
+        <name>_Ready</name>
+        <qualifiedname>GameOver._Ready</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BlinkBird/Code/GameOver.cs" line="8" column="22" bodyfile="BlinkBird/Code/GameOver.cs" bodystart="8" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="class_game_over_1aaabfb20fa692d869cd2acfe81c3e66c6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void GameOver._Process</definition>
+        <argsstring>(double delta)</argsstring>
+        <name>_Process</name>
+        <qualifiedname>GameOver._Process</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>delta</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BlinkBird/Code/GameOver.cs" line="28" column="26" bodyfile="BlinkBird/Code/GameOver.cs" bodystart="28" bodyend="30"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>GameOver</label>
+        <link refid="class_game_over"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Window</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>GameOver</label>
+        <link refid="class_game_over"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Window</label>
+      </node>
+    </collaborationgraph>
+    <location file="BlinkBird/Code/GameOver.cs" line="4" column="15" bodyfile="BlinkBird/Code/GameOver.cs" bodystart="5" bodyend="31"/>
+    <listofallmembers>
+      <member refid="class_game_over_1aaabfb20fa692d869cd2acfe81c3e66c6" prot="public" virt="non-virtual"><scope>GameOver</scope><name>_Process</name></member>
+      <member refid="class_game_over_1a9dff954d9b92b3377bc6c08ad2096d65" prot="public" virt="non-virtual"><scope>GameOver</scope><name>_Ready</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

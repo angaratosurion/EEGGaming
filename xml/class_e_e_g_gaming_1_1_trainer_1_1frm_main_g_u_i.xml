@@ -1,0 +1,689 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="class_e_e_g_gaming_1_1_trainer_1_1frm_main_g_u_i" kind="class" language="C#" prot="public">
+    <compoundname>EEGGaming::Trainer::frmMainGUI</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Form</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_e_e_g_gaming_1_1_trainer_1_1frm_main_g_u_i_1abeae775f9cc88056855a7500ddf86430" prot="private" static="no" mutable="no">
+        <type><ref refid="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager" kindref="compound">BrainWaveRecordManager</ref></type>
+        <definition>BrainWaveRecordManager EEGGaming.Trainer.frmMainGUI.recordManager</definition>
+        <argsstring></argsstring>
+        <name>recordManager</name>
+        <qualifiedname>EEGGaming.Trainer.frmMainGUI.recordManager</qualifiedname>
+        <initializer>= new <ref refid="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager" kindref="compound">BrainWaveRecordManager</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Trainer/frmMainGUI.cs" line="22" column="32" bodyfile="EEGGaming.Trainer/frmMainGUI.cs" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_e_e_g_gaming_1_1_trainer_1_1frm_main_g_u_i_1a065f152085256561b76fc79e221cd2d9" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String EEGGaming.Trainer.frmMainGUI.winTitle</definition>
+        <argsstring></argsstring>
+        <name>winTitle</name>
+        <qualifiedname>EEGGaming.Trainer.frmMainGUI.winTitle</qualifiedname>
+        <initializer>= Application.ProductName + &quot; - &quot; + 
+            pdver + &quot; Core Library version : &quot; +
+            CommonTools.GetEEGGamingCoreVersion()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Trainer/frmMainGUI.cs" line="24" column="16" bodyfile="EEGGaming.Trainer/frmMainGUI.cs" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_e_e_g_gaming_1_1_trainer_1_1frm_main_g_u_i_1a12d59dbb40a3e81c2a573086ac424403" prot="private" static="no" mutable="no">
+        <type>DateTime</type>
+        <definition>DateTime EEGGaming.Trainer.frmMainGUI.started</definition>
+        <argsstring></argsstring>
+        <name>started</name>
+        <qualifiedname>EEGGaming.Trainer.frmMainGUI.started</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Trainer/frmMainGUI.cs" line="27" column="18" bodyfile="EEGGaming.Trainer/frmMainGUI.cs" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_e_e_g_gaming_1_1_trainer_1_1frm_main_g_u_i_1a73260b325453480cdb47c93da5dbd9f8" prot="private" static="no" mutable="no">
+        <type>SoundPlayer</type>
+        <definition>SoundPlayer EEGGaming.Trainer.frmMainGUI.simpleSound</definition>
+        <argsstring></argsstring>
+        <name>simpleSound</name>
+        <qualifiedname>EEGGaming.Trainer.frmMainGUI.simpleSound</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Trainer/frmMainGUI.cs" line="28" column="21" bodyfile="EEGGaming.Trainer/frmMainGUI.cs" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_e_e_g_gaming_1_1_trainer_1_1frm_main_g_u_i_1a26c76215bf50212fc0c1d4fd33f09767" prot="private" static="no" mutable="no">
+        <type>System.ComponentModel.IContainer</type>
+        <definition>System.ComponentModel.IContainer EEGGaming.Trainer.frmMainGUI.components</definition>
+        <argsstring></argsstring>
+        <name>components</name>
+        <qualifiedname>EEGGaming.Trainer.frmMainGUI.components</qualifiedname>
+        <initializer>= null</initializer>
+        <briefdescription>
+<para>Required designer variable. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Trainer/frmMainGUI.Designer.cs" line="8" column="48" bodyfile="EEGGaming.Trainer/frmMainGUI.Designer.cs" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_e_e_g_gaming_1_1_trainer_1_1frm_main_g_u_i_1ac5db547958392e7f062d2b3bd057b17c" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Button</type>
+        <definition>System.Windows.Forms.Button EEGGaming.Trainer.frmMainGUI.btnStart</definition>
+        <argsstring></argsstring>
+        <name>btnStart</name>
+        <qualifiedname>EEGGaming.Trainer.frmMainGUI.btnStart</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Trainer/frmMainGUI.Designer.cs" line="212" column="42" bodyfile="EEGGaming.Trainer/frmMainGUI.Designer.cs" bodystart="212" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_e_e_g_gaming_1_1_trainer_1_1frm_main_g_u_i_1a9182021b76ee778086ef2a9baa4ee7ae" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Button</type>
+        <definition>System.Windows.Forms.Button EEGGaming.Trainer.frmMainGUI.btnStop</definition>
+        <argsstring></argsstring>
+        <name>btnStop</name>
+        <qualifiedname>EEGGaming.Trainer.frmMainGUI.btnStop</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Trainer/frmMainGUI.Designer.cs" line="213" column="42" bodyfile="EEGGaming.Trainer/frmMainGUI.Designer.cs" bodystart="213" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_e_e_g_gaming_1_1_trainer_1_1frm_main_g_u_i_1ad01014fb68984f588f23c49d69e1169e" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Button</type>
+        <definition>System.Windows.Forms.Button EEGGaming.Trainer.frmMainGUI.btnBlinked</definition>
+        <argsstring></argsstring>
+        <name>btnBlinked</name>
+        <qualifiedname>EEGGaming.Trainer.frmMainGUI.btnBlinked</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Trainer/frmMainGUI.Designer.cs" line="214" column="42" bodyfile="EEGGaming.Trainer/frmMainGUI.Designer.cs" bodystart="214" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_e_e_g_gaming_1_1_trainer_1_1frm_main_g_u_i_1a79540f4af27b765f95ca9444f518e247" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Button</type>
+        <definition>System.Windows.Forms.Button EEGGaming.Trainer.frmMainGUI.btnSave</definition>
+        <argsstring></argsstring>
+        <name>btnSave</name>
+        <qualifiedname>EEGGaming.Trainer.frmMainGUI.btnSave</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Trainer/frmMainGUI.Designer.cs" line="215" column="42" bodyfile="EEGGaming.Trainer/frmMainGUI.Designer.cs" bodystart="215" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_e_e_g_gaming_1_1_trainer_1_1frm_main_g_u_i_1a687a6cba6a026f914e4203c4969ebd74" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Timer</type>
+        <definition>System.Windows.Forms.Timer EEGGaming.Trainer.frmMainGUI.timer1</definition>
+        <argsstring></argsstring>
+        <name>timer1</name>
+        <qualifiedname>EEGGaming.Trainer.frmMainGUI.timer1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Trainer/frmMainGUI.Designer.cs" line="216" column="41" bodyfile="EEGGaming.Trainer/frmMainGUI.Designer.cs" bodystart="216" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_e_e_g_gaming_1_1_trainer_1_1frm_main_g_u_i_1a5428eaf2e3f22add6bc7d8898794a229" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Label</type>
+        <definition>System.Windows.Forms.Label EEGGaming.Trainer.frmMainGUI.label1</definition>
+        <argsstring></argsstring>
+        <name>label1</name>
+        <qualifiedname>EEGGaming.Trainer.frmMainGUI.label1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Trainer/frmMainGUI.Designer.cs" line="217" column="41" bodyfile="EEGGaming.Trainer/frmMainGUI.Designer.cs" bodystart="217" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_e_e_g_gaming_1_1_trainer_1_1frm_main_g_u_i_1a3f65b1b22f4718d28d9ca65d7665edd2" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Label</type>
+        <definition>System.Windows.Forms.Label EEGGaming.Trainer.frmMainGUI.lblElapsed</definition>
+        <argsstring></argsstring>
+        <name>lblElapsed</name>
+        <qualifiedname>EEGGaming.Trainer.frmMainGUI.lblElapsed</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Trainer/frmMainGUI.Designer.cs" line="218" column="41" bodyfile="EEGGaming.Trainer/frmMainGUI.Designer.cs" bodystart="218" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_e_e_g_gaming_1_1_trainer_1_1frm_main_g_u_i_1a00c75f1832cafd4d4579728877494b7d" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Label</type>
+        <definition>System.Windows.Forms.Label EEGGaming.Trainer.frmMainGUI.label2</definition>
+        <argsstring></argsstring>
+        <name>label2</name>
+        <qualifiedname>EEGGaming.Trainer.frmMainGUI.label2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Trainer/frmMainGUI.Designer.cs" line="219" column="41" bodyfile="EEGGaming.Trainer/frmMainGUI.Designer.cs" bodystart="219" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_e_e_g_gaming_1_1_trainer_1_1frm_main_g_u_i_1a0cc1a1f7b005149865c1a1bfd2183eb8" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Label</type>
+        <definition>System.Windows.Forms.Label EEGGaming.Trainer.frmMainGUI.lblBatteryLvl</definition>
+        <argsstring></argsstring>
+        <name>lblBatteryLvl</name>
+        <qualifiedname>EEGGaming.Trainer.frmMainGUI.lblBatteryLvl</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Trainer/frmMainGUI.Designer.cs" line="220" column="41" bodyfile="EEGGaming.Trainer/frmMainGUI.Designer.cs" bodystart="220" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_e_e_g_gaming_1_1_trainer_1_1frm_main_g_u_i_1a4df8def25eb608d4e18f16e4b5db56b2" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.CheckBox</type>
+        <definition>System.Windows.Forms.CheckBox EEGGaming.Trainer.frmMainGUI.cbxEnableFiltering</definition>
+        <argsstring></argsstring>
+        <name>cbxEnableFiltering</name>
+        <qualifiedname>EEGGaming.Trainer.frmMainGUI.cbxEnableFiltering</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Trainer/frmMainGUI.Designer.cs" line="221" column="44" bodyfile="EEGGaming.Trainer/frmMainGUI.Designer.cs" bodystart="221" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_e_e_g_gaming_1_1_trainer_1_1frm_main_g_u_i_1a66505d6f17be91438d1af8a05f5a12de" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.OpenFileDialog</type>
+        <definition>System.Windows.Forms.OpenFileDialog EEGGaming.Trainer.frmMainGUI.openFileDialog1</definition>
+        <argsstring></argsstring>
+        <name>openFileDialog1</name>
+        <qualifiedname>EEGGaming.Trainer.frmMainGUI.openFileDialog1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Trainer/frmMainGUI.Designer.cs" line="222" column="50" bodyfile="EEGGaming.Trainer/frmMainGUI.Designer.cs" bodystart="222" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_e_e_g_gaming_1_1_trainer_1_1frm_main_g_u_i_1a97882452db0be0600eb033387b952cf5" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.SaveFileDialog</type>
+        <definition>System.Windows.Forms.SaveFileDialog EEGGaming.Trainer.frmMainGUI.saveFileDialog1</definition>
+        <argsstring></argsstring>
+        <name>saveFileDialog1</name>
+        <qualifiedname>EEGGaming.Trainer.frmMainGUI.saveFileDialog1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Trainer/frmMainGUI.Designer.cs" line="223" column="50" bodyfile="EEGGaming.Trainer/frmMainGUI.Designer.cs" bodystart="223" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_e_e_g_gaming_1_1_trainer_1_1frm_main_g_u_i_1a375358dbbf2e14c61b4b052f1bbc75e8" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Button</type>
+        <definition>System.Windows.Forms.Button EEGGaming.Trainer.frmMainGUI.btnLoadCsv</definition>
+        <argsstring></argsstring>
+        <name>btnLoadCsv</name>
+        <qualifiedname>EEGGaming.Trainer.frmMainGUI.btnLoadCsv</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Trainer/frmMainGUI.Designer.cs" line="224" column="42" bodyfile="EEGGaming.Trainer/frmMainGUI.Designer.cs" bodystart="224" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_e_e_g_gaming_1_1_trainer_1_1frm_main_g_u_i_1a58233b8e28b6a8fee0d2d86f6b8579e8" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Label</type>
+        <definition>System.Windows.Forms.Label EEGGaming.Trainer.frmMainGUI.label3</definition>
+        <argsstring></argsstring>
+        <name>label3</name>
+        <qualifiedname>EEGGaming.Trainer.frmMainGUI.label3</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Trainer/frmMainGUI.Designer.cs" line="225" column="41" bodyfile="EEGGaming.Trainer/frmMainGUI.Designer.cs" bodystart="225" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_e_e_g_gaming_1_1_trainer_1_1frm_main_g_u_i_1ab6ad1efa9e2b74e484d6b9f92462f5b7" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Label</type>
+        <definition>System.Windows.Forms.Label EEGGaming.Trainer.frmMainGUI.lblSampleCount</definition>
+        <argsstring></argsstring>
+        <name>lblSampleCount</name>
+        <qualifiedname>EEGGaming.Trainer.frmMainGUI.lblSampleCount</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Trainer/frmMainGUI.Designer.cs" line="226" column="41" bodyfile="EEGGaming.Trainer/frmMainGUI.Designer.cs" bodystart="226" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_e_e_g_gaming_1_1_trainer_1_1frm_main_g_u_i_1a7df4705ba77bb99108148bac0bfab7d0" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Button</type>
+        <definition>System.Windows.Forms.Button EEGGaming.Trainer.frmMainGUI.btnMakeGraphs</definition>
+        <argsstring></argsstring>
+        <name>btnMakeGraphs</name>
+        <qualifiedname>EEGGaming.Trainer.frmMainGUI.btnMakeGraphs</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Trainer/frmMainGUI.Designer.cs" line="227" column="42" bodyfile="EEGGaming.Trainer/frmMainGUI.Designer.cs" bodystart="227" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_e_e_g_gaming_1_1_trainer_1_1frm_main_g_u_i_1ae5e53f0bf21a8f4103d157df9496f28b" prot="private" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string EEGGaming.Trainer.frmMainGUI.pdver</definition>
+        <argsstring></argsstring>
+        <name>pdver</name>
+        <qualifiedname>EEGGaming.Trainer.frmMainGUI.pdver</qualifiedname>
+        <initializer>= Application.ProductVersion.Substring(0, Application.ProductVersion.IndexOf(&apos;+&apos;))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Trainer/frmMainGUI.cs" line="23" column="26" bodyfile="EEGGaming.Trainer/frmMainGUI.cs" bodystart="23" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_e_e_g_gaming_1_1_trainer_1_1frm_main_g_u_i_1a85d75102cec35ab59afc963019517eed" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>EEGGaming.Trainer.frmMainGUI.frmMainGUI</definition>
+        <argsstring>()</argsstring>
+        <name>frmMainGUI</name>
+        <qualifiedname>EEGGaming.Trainer.frmMainGUI.frmMainGUI</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Trainer/frmMainGUI.cs" line="29" column="16" bodyfile="EEGGaming.Trainer/frmMainGUI.cs" bodystart="29" bodyend="38"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_e_e_g_gaming_1_1_trainer_1_1frm_main_g_u_i_1adb6635c713a3716daee28f66002e3848" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void EEGGaming.Trainer.frmMainGUI.RecordManager_OnBlinked</definition>
+        <argsstring>()</argsstring>
+        <name>RecordManager_OnBlinked</name>
+        <qualifiedname>EEGGaming.Trainer.frmMainGUI.RecordManager_OnBlinked</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Trainer/frmMainGUI.cs" line="40" column="22" bodyfile="EEGGaming.Trainer/frmMainGUI.cs" bodystart="40" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="class_e_e_g_gaming_1_1_trainer_1_1frm_main_g_u_i_1ae8b3e2d7ee282bb22142f91665cb616e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void EEGGaming.Trainer.frmMainGUI.btnStart_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>btnStart_Click</name>
+        <qualifiedname>EEGGaming.Trainer.frmMainGUI.btnStart_Click</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Trainer/frmMainGUI.cs" line="57" column="22" bodyfile="EEGGaming.Trainer/frmMainGUI.cs" bodystart="57" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="class_e_e_g_gaming_1_1_trainer_1_1frm_main_g_u_i_1ab714681bab22e2dd25691f252ec749e4" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void EEGGaming.Trainer.frmMainGUI.btnStop_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>btnStop_Click</name>
+        <qualifiedname>EEGGaming.Trainer.frmMainGUI.btnStop_Click</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Trainer/frmMainGUI.cs" line="87" column="22" bodyfile="EEGGaming.Trainer/frmMainGUI.cs" bodystart="87" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="class_e_e_g_gaming_1_1_trainer_1_1frm_main_g_u_i_1aec47fbbc2c790dfc4f4405f90d3338b2" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void EEGGaming.Trainer.frmMainGUI.btnBlinked_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>btnBlinked_Click</name>
+        <qualifiedname>EEGGaming.Trainer.frmMainGUI.btnBlinked_Click</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Trainer/frmMainGUI.cs" line="112" column="22" bodyfile="EEGGaming.Trainer/frmMainGUI.cs" bodystart="112" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="class_e_e_g_gaming_1_1_trainer_1_1frm_main_g_u_i_1a1a64a69c205df2a3d6c55ab83b19ef90" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void EEGGaming.Trainer.frmMainGUI.frmMainGUI_Load</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>frmMainGUI_Load</name>
+        <qualifiedname>EEGGaming.Trainer.frmMainGUI.frmMainGUI_Load</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Trainer/frmMainGUI.cs" line="125" column="22" bodyfile="EEGGaming.Trainer/frmMainGUI.cs" bodystart="125" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="class_e_e_g_gaming_1_1_trainer_1_1frm_main_g_u_i_1ad113a79754a7f324f2305d7ef710b88f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void EEGGaming.Trainer.frmMainGUI.btnSave_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>btnSave_Click</name>
+        <qualifiedname>EEGGaming.Trainer.frmMainGUI.btnSave_Click</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Trainer/frmMainGUI.cs" line="136" column="22" bodyfile="EEGGaming.Trainer/frmMainGUI.cs" bodystart="136" bodyend="152"/>
+      </memberdef>
+      <memberdef kind="function" id="class_e_e_g_gaming_1_1_trainer_1_1frm_main_g_u_i_1a8bc35855130dea93e9fefbb22444abcd" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void EEGGaming.Trainer.frmMainGUI.label1_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>label1_Click</name>
+        <qualifiedname>EEGGaming.Trainer.frmMainGUI.label1_Click</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Trainer/frmMainGUI.cs" line="154" column="22" bodyfile="EEGGaming.Trainer/frmMainGUI.cs" bodystart="154" bodyend="157"/>
+      </memberdef>
+      <memberdef kind="function" id="class_e_e_g_gaming_1_1_trainer_1_1frm_main_g_u_i_1a9f61e57e69c80e44f8b2f8712fb3aab7" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void EEGGaming.Trainer.frmMainGUI.timer1_Tick</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>timer1_Tick</name>
+        <qualifiedname>EEGGaming.Trainer.frmMainGUI.timer1_Tick</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Trainer/frmMainGUI.cs" line="159" column="22" bodyfile="EEGGaming.Trainer/frmMainGUI.cs" bodystart="159" bodyend="169"/>
+      </memberdef>
+      <memberdef kind="function" id="class_e_e_g_gaming_1_1_trainer_1_1frm_main_g_u_i_1a3c35c1f2e4430b312cc57d0ed8a297c5" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void EEGGaming.Trainer.frmMainGUI.btnfft_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>btnfft_Click</name>
+        <qualifiedname>EEGGaming.Trainer.frmMainGUI.btnfft_Click</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Trainer/frmMainGUI.cs" line="171" column="22" bodyfile="EEGGaming.Trainer/frmMainGUI.cs" bodystart="171" bodyend="179"/>
+      </memberdef>
+      <memberdef kind="function" id="class_e_e_g_gaming_1_1_trainer_1_1frm_main_g_u_i_1a4c4a07d0a3af9f1002796fd87b2d7cb8" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void EEGGaming.Trainer.frmMainGUI.btnLoadCsv_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>btnLoadCsv_Click</name>
+        <qualifiedname>EEGGaming.Trainer.frmMainGUI.btnLoadCsv_Click</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Trainer/frmMainGUI.cs" line="181" column="22" bodyfile="EEGGaming.Trainer/frmMainGUI.cs" bodystart="181" bodyend="189"/>
+      </memberdef>
+      <memberdef kind="function" id="class_e_e_g_gaming_1_1_trainer_1_1frm_main_g_u_i_1ae7a033da8004a27cdf79876fa8488cc4" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void EEGGaming.Trainer.frmMainGUI.btnMakeGraphs_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>btnMakeGraphs_Click</name>
+        <qualifiedname>EEGGaming.Trainer.frmMainGUI.btnMakeGraphs_Click</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Trainer/frmMainGUI.cs" line="191" column="22" bodyfile="EEGGaming.Trainer/frmMainGUI.cs" bodystart="191" bodyend="200"/>
+      </memberdef>
+      <memberdef kind="function" id="class_e_e_g_gaming_1_1_trainer_1_1frm_main_g_u_i_1aa7eb51c693d2ce2a1e828862b4b866ea" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void EEGGaming.Trainer.frmMainGUI.InitializeComponent</definition>
+        <argsstring>()</argsstring>
+        <name>InitializeComponent</name>
+        <qualifiedname>EEGGaming.Trainer.frmMainGUI.InitializeComponent</qualifiedname>
+        <briefdescription>
+<para>Required method for Designer support - do not modify the contents of this method with the code editor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Trainer/frmMainGUI.Designer.cs" line="29" column="22" bodyfile="EEGGaming.Trainer/frmMainGUI.Designer.cs" bodystart="29" bodyend="208"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_e_e_g_gaming_1_1_trainer_1_1frm_main_g_u_i_1a54292447bfca15a76021f58b87773368" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void EEGGaming.Trainer.frmMainGUI.Dispose</definition>
+        <argsstring>(bool disposing)</argsstring>
+        <name>Dispose</name>
+        <qualifiedname>EEGGaming.Trainer.frmMainGUI.Dispose</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>disposing</declname>
+        </param>
+        <briefdescription>
+<para>Clean up any resources being used. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>disposing</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true if managed resources should be disposed; otherwise, false.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Trainer/frmMainGUI.Designer.cs" line="14" column="33" bodyfile="EEGGaming.Trainer/frmMainGUI.Designer.cs" bodystart="14" bodyend="21"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>EEGGaming.Trainer.frmMainGUI</label>
+        <link refid="class_e_e_g_gaming_1_1_trainer_1_1frm_main_g_u_i"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Form</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>EEGGaming.Trainer.frmMainGUI</label>
+        <link refid="class_e_e_g_gaming_1_1_trainer_1_1frm_main_g_u_i"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Form</label>
+      </node>
+    </collaborationgraph>
+    <location file="EEGGaming.Trainer/frmMainGUI.cs" line="20" column="19" bodyfile="EEGGaming.Trainer/frmMainGUI.Designer.cs" bodystart="4" bodyend="228"/>
+    <listofallmembers>
+      <member refid="class_e_e_g_gaming_1_1_trainer_1_1frm_main_g_u_i_1ad01014fb68984f588f23c49d69e1169e" prot="private" virt="non-virtual"><scope>EEGGaming::Trainer::frmMainGUI</scope><name>btnBlinked</name></member>
+      <member refid="class_e_e_g_gaming_1_1_trainer_1_1frm_main_g_u_i_1aec47fbbc2c790dfc4f4405f90d3338b2" prot="private" virt="non-virtual"><scope>EEGGaming::Trainer::frmMainGUI</scope><name>btnBlinked_Click</name></member>
+      <member refid="class_e_e_g_gaming_1_1_trainer_1_1frm_main_g_u_i_1a3c35c1f2e4430b312cc57d0ed8a297c5" prot="private" virt="non-virtual"><scope>EEGGaming::Trainer::frmMainGUI</scope><name>btnfft_Click</name></member>
+      <member refid="class_e_e_g_gaming_1_1_trainer_1_1frm_main_g_u_i_1a375358dbbf2e14c61b4b052f1bbc75e8" prot="private" virt="non-virtual"><scope>EEGGaming::Trainer::frmMainGUI</scope><name>btnLoadCsv</name></member>
+      <member refid="class_e_e_g_gaming_1_1_trainer_1_1frm_main_g_u_i_1a4c4a07d0a3af9f1002796fd87b2d7cb8" prot="private" virt="non-virtual"><scope>EEGGaming::Trainer::frmMainGUI</scope><name>btnLoadCsv_Click</name></member>
+      <member refid="class_e_e_g_gaming_1_1_trainer_1_1frm_main_g_u_i_1a7df4705ba77bb99108148bac0bfab7d0" prot="private" virt="non-virtual"><scope>EEGGaming::Trainer::frmMainGUI</scope><name>btnMakeGraphs</name></member>
+      <member refid="class_e_e_g_gaming_1_1_trainer_1_1frm_main_g_u_i_1ae7a033da8004a27cdf79876fa8488cc4" prot="private" virt="non-virtual"><scope>EEGGaming::Trainer::frmMainGUI</scope><name>btnMakeGraphs_Click</name></member>
+      <member refid="class_e_e_g_gaming_1_1_trainer_1_1frm_main_g_u_i_1a79540f4af27b765f95ca9444f518e247" prot="private" virt="non-virtual"><scope>EEGGaming::Trainer::frmMainGUI</scope><name>btnSave</name></member>
+      <member refid="class_e_e_g_gaming_1_1_trainer_1_1frm_main_g_u_i_1ad113a79754a7f324f2305d7ef710b88f" prot="private" virt="non-virtual"><scope>EEGGaming::Trainer::frmMainGUI</scope><name>btnSave_Click</name></member>
+      <member refid="class_e_e_g_gaming_1_1_trainer_1_1frm_main_g_u_i_1ac5db547958392e7f062d2b3bd057b17c" prot="private" virt="non-virtual"><scope>EEGGaming::Trainer::frmMainGUI</scope><name>btnStart</name></member>
+      <member refid="class_e_e_g_gaming_1_1_trainer_1_1frm_main_g_u_i_1ae8b3e2d7ee282bb22142f91665cb616e" prot="private" virt="non-virtual"><scope>EEGGaming::Trainer::frmMainGUI</scope><name>btnStart_Click</name></member>
+      <member refid="class_e_e_g_gaming_1_1_trainer_1_1frm_main_g_u_i_1a9182021b76ee778086ef2a9baa4ee7ae" prot="private" virt="non-virtual"><scope>EEGGaming::Trainer::frmMainGUI</scope><name>btnStop</name></member>
+      <member refid="class_e_e_g_gaming_1_1_trainer_1_1frm_main_g_u_i_1ab714681bab22e2dd25691f252ec749e4" prot="private" virt="non-virtual"><scope>EEGGaming::Trainer::frmMainGUI</scope><name>btnStop_Click</name></member>
+      <member refid="class_e_e_g_gaming_1_1_trainer_1_1frm_main_g_u_i_1a4df8def25eb608d4e18f16e4b5db56b2" prot="private" virt="non-virtual"><scope>EEGGaming::Trainer::frmMainGUI</scope><name>cbxEnableFiltering</name></member>
+      <member refid="class_e_e_g_gaming_1_1_trainer_1_1frm_main_g_u_i_1a26c76215bf50212fc0c1d4fd33f09767" prot="private" virt="non-virtual"><scope>EEGGaming::Trainer::frmMainGUI</scope><name>components</name></member>
+      <member refid="class_e_e_g_gaming_1_1_trainer_1_1frm_main_g_u_i_1a54292447bfca15a76021f58b87773368" prot="protected" virt="non-virtual"><scope>EEGGaming::Trainer::frmMainGUI</scope><name>Dispose</name></member>
+      <member refid="class_e_e_g_gaming_1_1_trainer_1_1frm_main_g_u_i_1a85d75102cec35ab59afc963019517eed" prot="public" virt="non-virtual"><scope>EEGGaming::Trainer::frmMainGUI</scope><name>frmMainGUI</name></member>
+      <member refid="class_e_e_g_gaming_1_1_trainer_1_1frm_main_g_u_i_1a1a64a69c205df2a3d6c55ab83b19ef90" prot="private" virt="non-virtual"><scope>EEGGaming::Trainer::frmMainGUI</scope><name>frmMainGUI_Load</name></member>
+      <member refid="class_e_e_g_gaming_1_1_trainer_1_1frm_main_g_u_i_1aa7eb51c693d2ce2a1e828862b4b866ea" prot="private" virt="non-virtual"><scope>EEGGaming::Trainer::frmMainGUI</scope><name>InitializeComponent</name></member>
+      <member refid="class_e_e_g_gaming_1_1_trainer_1_1frm_main_g_u_i_1a5428eaf2e3f22add6bc7d8898794a229" prot="private" virt="non-virtual"><scope>EEGGaming::Trainer::frmMainGUI</scope><name>label1</name></member>
+      <member refid="class_e_e_g_gaming_1_1_trainer_1_1frm_main_g_u_i_1a8bc35855130dea93e9fefbb22444abcd" prot="private" virt="non-virtual"><scope>EEGGaming::Trainer::frmMainGUI</scope><name>label1_Click</name></member>
+      <member refid="class_e_e_g_gaming_1_1_trainer_1_1frm_main_g_u_i_1a00c75f1832cafd4d4579728877494b7d" prot="private" virt="non-virtual"><scope>EEGGaming::Trainer::frmMainGUI</scope><name>label2</name></member>
+      <member refid="class_e_e_g_gaming_1_1_trainer_1_1frm_main_g_u_i_1a58233b8e28b6a8fee0d2d86f6b8579e8" prot="private" virt="non-virtual"><scope>EEGGaming::Trainer::frmMainGUI</scope><name>label3</name></member>
+      <member refid="class_e_e_g_gaming_1_1_trainer_1_1frm_main_g_u_i_1a0cc1a1f7b005149865c1a1bfd2183eb8" prot="private" virt="non-virtual"><scope>EEGGaming::Trainer::frmMainGUI</scope><name>lblBatteryLvl</name></member>
+      <member refid="class_e_e_g_gaming_1_1_trainer_1_1frm_main_g_u_i_1a3f65b1b22f4718d28d9ca65d7665edd2" prot="private" virt="non-virtual"><scope>EEGGaming::Trainer::frmMainGUI</scope><name>lblElapsed</name></member>
+      <member refid="class_e_e_g_gaming_1_1_trainer_1_1frm_main_g_u_i_1ab6ad1efa9e2b74e484d6b9f92462f5b7" prot="private" virt="non-virtual"><scope>EEGGaming::Trainer::frmMainGUI</scope><name>lblSampleCount</name></member>
+      <member refid="class_e_e_g_gaming_1_1_trainer_1_1frm_main_g_u_i_1a66505d6f17be91438d1af8a05f5a12de" prot="private" virt="non-virtual"><scope>EEGGaming::Trainer::frmMainGUI</scope><name>openFileDialog1</name></member>
+      <member refid="class_e_e_g_gaming_1_1_trainer_1_1frm_main_g_u_i_1ae5e53f0bf21a8f4103d157df9496f28b" prot="private" virt="non-virtual"><scope>EEGGaming::Trainer::frmMainGUI</scope><name>pdver</name></member>
+      <member refid="class_e_e_g_gaming_1_1_trainer_1_1frm_main_g_u_i_1abeae775f9cc88056855a7500ddf86430" prot="private" virt="non-virtual"><scope>EEGGaming::Trainer::frmMainGUI</scope><name>recordManager</name></member>
+      <member refid="class_e_e_g_gaming_1_1_trainer_1_1frm_main_g_u_i_1adb6635c713a3716daee28f66002e3848" prot="private" virt="non-virtual"><scope>EEGGaming::Trainer::frmMainGUI</scope><name>RecordManager_OnBlinked</name></member>
+      <member refid="class_e_e_g_gaming_1_1_trainer_1_1frm_main_g_u_i_1a97882452db0be0600eb033387b952cf5" prot="private" virt="non-virtual"><scope>EEGGaming::Trainer::frmMainGUI</scope><name>saveFileDialog1</name></member>
+      <member refid="class_e_e_g_gaming_1_1_trainer_1_1frm_main_g_u_i_1a73260b325453480cdb47c93da5dbd9f8" prot="private" virt="non-virtual"><scope>EEGGaming::Trainer::frmMainGUI</scope><name>simpleSound</name></member>
+      <member refid="class_e_e_g_gaming_1_1_trainer_1_1frm_main_g_u_i_1a12d59dbb40a3e81c2a573086ac424403" prot="private" virt="non-virtual"><scope>EEGGaming::Trainer::frmMainGUI</scope><name>started</name></member>
+      <member refid="class_e_e_g_gaming_1_1_trainer_1_1frm_main_g_u_i_1a687a6cba6a026f914e4203c4969ebd74" prot="private" virt="non-virtual"><scope>EEGGaming::Trainer::frmMainGUI</scope><name>timer1</name></member>
+      <member refid="class_e_e_g_gaming_1_1_trainer_1_1frm_main_g_u_i_1a9f61e57e69c80e44f8b2f8712fb3aab7" prot="private" virt="non-virtual"><scope>EEGGaming::Trainer::frmMainGUI</scope><name>timer1_Tick</name></member>
+      <member refid="class_e_e_g_gaming_1_1_trainer_1_1frm_main_g_u_i_1a065f152085256561b76fc79e221cd2d9" prot="private" virt="non-virtual"><scope>EEGGaming::Trainer::frmMainGUI</scope><name>winTitle</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

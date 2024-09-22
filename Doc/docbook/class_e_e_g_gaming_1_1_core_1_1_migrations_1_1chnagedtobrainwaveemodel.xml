@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_e_e_g_gaming_1_1_core_1_1_migrations_1_1chnagedtobrainwaveemodel" xml:lang="en-US">
+<title>EEGGaming.Core.Migrations.chnagedtobrainwaveemodel Class Reference</title>
+<indexterm><primary>EEGGaming.Core.Migrations.chnagedtobrainwaveemodel</primary></indexterm>
+<para>
+ 
+</para>
+<para>Inheritance diagram for EEGGaming.Core.Migrations.chnagedtobrainwaveemodel:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_e_e_g_gaming_1_1_core_1_1_migrations_1_1chnagedtobrainwaveemodel.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Protected Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>override void <link linkend="_class_e_e_g_gaming_1_1_core_1_1_migrations_1_1chnagedtobrainwaveemodel_1a6eb6dd1f1d439de547c216da1420c973">Up</link> (MigrationBuilder migrationBuilder)</para>
+</listitem>
+            <listitem><para>override void <link linkend="_class_e_e_g_gaming_1_1_core_1_1_migrations_1_1chnagedtobrainwaveemodel_1a9cfa7748d812a7bccfbd516c4c5c5d59">Down</link> (MigrationBuilder migrationBuilder)</para>
+</listitem>
+            <listitem><para>override void <link linkend="_class_e_e_g_gaming_1_1_core_1_1_migrations_1_1chnagedtobrainwaveemodel_1aa503944d492572a002abb4f3cb5ca237">BuildTargetModel</link> (ModelBuilder modelBuilder)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+<para>
+Definition at line <link linkend="_20240607151943__chnagedtobrainwaveemodel_8_designer_8cs_source_1l00015">15</link> of file <link linkend="_20240607151943__chnagedtobrainwaveemodel_8_designer_8cs_source">20240607151943_chnagedtobrainwaveemodel.Designer.cs</link>.</para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_e_e_g_gaming_1_1_core_1_1_migrations_1_1chnagedtobrainwaveemodel_1aa503944d492572a002abb4f3cb5ca237"/><section>
+    <title>BuildTargetModel()</title>
+<indexterm><primary>BuildTargetModel</primary><secondary>EEGGaming.Core.Migrations.chnagedtobrainwaveemodel</secondary></indexterm>
+<indexterm><primary>EEGGaming.Core.Migrations.chnagedtobrainwaveemodel</primary><secondary>BuildTargetModel</secondary></indexterm>
+<para><computeroutput>override void EEGGaming.Core.Migrations.chnagedtobrainwaveemodel.BuildTargetModel (ModelBuilder modelBuilder)<computeroutput>[protected]</computeroutput></computeroutput></para><para>
+</para>
+<para>
+Definition at line <link linkend="_20240607151943__chnagedtobrainwaveemodel_8_designer_8cs_source_1l00018">18</link> of file <link linkend="_20240607151943__chnagedtobrainwaveemodel_8_designer_8cs_source">20240607151943_chnagedtobrainwaveemodel.Designer.cs</link>.</para>
+</section>
+<anchor xml:id="_class_e_e_g_gaming_1_1_core_1_1_migrations_1_1chnagedtobrainwaveemodel_1a9cfa7748d812a7bccfbd516c4c5c5d59"/><section>
+    <title>Down()</title>
+<indexterm><primary>Down</primary><secondary>EEGGaming.Core.Migrations.chnagedtobrainwaveemodel</secondary></indexterm>
+<indexterm><primary>EEGGaming.Core.Migrations.chnagedtobrainwaveemodel</primary><secondary>Down</secondary></indexterm>
+<para><computeroutput>override void EEGGaming.Core.Migrations.chnagedtobrainwaveemodel.Down (MigrationBuilder migrationBuilder)<computeroutput>[protected]</computeroutput></computeroutput></para><para>
+</para>
+<para>
+Definition at line <link linkend="_20240607151943__chnagedtobrainwaveemodel_8cs_source_1l00205">205</link> of file <link linkend="_20240607151943__chnagedtobrainwaveemodel_8cs_source">20240607151943_chnagedtobrainwaveemodel.cs</link>.</para>
+</section>
+<anchor xml:id="_class_e_e_g_gaming_1_1_core_1_1_migrations_1_1chnagedtobrainwaveemodel_1a6eb6dd1f1d439de547c216da1420c973"/><section>
+    <title>Up()</title>
+<indexterm><primary>Up</primary><secondary>EEGGaming.Core.Migrations.chnagedtobrainwaveemodel</secondary></indexterm>
+<indexterm><primary>EEGGaming.Core.Migrations.chnagedtobrainwaveemodel</primary><secondary>Up</secondary></indexterm>
+<para><computeroutput>override void EEGGaming.Core.Migrations.chnagedtobrainwaveemodel.Up (MigrationBuilder migrationBuilder)<computeroutput>[protected]</computeroutput></computeroutput></para><para>
+</para>
+<para>
+Definition at line <link linkend="_20240607151943__chnagedtobrainwaveemodel_8cs_source_1l00011">11</link> of file <link linkend="_20240607151943__chnagedtobrainwaveemodel_8cs_source">20240607151943_chnagedtobrainwaveemodel.cs</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following files:</para>
+D:/Cloud Folder/OneDrive/My Programs/Post-Graduate/Master in Information Systems (PLS)/Thesis/Code/EEGGaming/EEGGaming.Core/Migrations/20240607151943_chnagedtobrainwaveemodel.csD:/Cloud Folder/OneDrive/My Programs/Post-Graduate/Master in Information Systems (PLS)/Thesis/Code/EEGGaming/EEGGaming.Core/Migrations/20240607151943_chnagedtobrainwaveemodel.Designer.cs</section>
+</section>

@@ -1,0 +1,396 @@
+.TH "EEGGaming.Core.Data.NonDataModels.Brainwaves" 3 "Version 0.2.6.0" "EEGGaming And Blinkbird" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+EEGGaming.Core.Data.NonDataModels.Brainwaves \- The class representation of the packets containing the data coming from the headset\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherited by \fBEEGGaming\&.Core\&.Data\&.Models\&.BrainwavesRecord\fP\&.
+.SS "Properties"
+
+.in +1c
+.ti -1c
+.RI "uint \fBPackNumber\fP\fR [get, set]\fP"
+.br
+.RI "Thenumber of the packet\&. "
+.ti -1c
+.RI "byte \fBMarker\fP\fR [get, set]\fP"
+.br
+.RI "The packet marker\&. "
+.ti -1c
+.RI "string \fBDate\fP\fR [get, set]\fP"
+.br
+.RI "The date the packet is captured\&. "
+.ti -1c
+.RI "string \fBTime\fP\fR [get, set]\fP"
+.br
+.RI "The time the packet is captured\&. "
+.ti -1c
+.RI "double \fBSecond\fP\fR [get, set]\fP"
+.br
+.RI "The second the packet is captured\&. "
+.ti -1c
+.RI "double \fBMiliSecond\fP\fR [get, set]\fP"
+.br
+.RI "The milisecond the packet is captured\&. "
+.ti -1c
+.RI "double \fBDelta_avgch\fP\fR [get, set]\fP"
+.br
+.RI "The average of Delta band value of the 2 channels\&. "
+.ti -1c
+.RI "double \fBTheta_avgch\fP\fR [get, set]\fP"
+.br
+.RI "The average of Theta band value of the 2 channels\&. "
+.ti -1c
+.RI "double \fBAlpha1_avgch\fP\fR [get, set]\fP"
+.br
+.RI "The average of Alpha band value of the 2 channels\&. "
+.ti -1c
+.RI "double \fBBeta1_avgch\fP\fR [get, set]\fP"
+.br
+.RI "The average of Beta band value of the 2 channels\&. "
+.ti -1c
+.RI "double \fBGamma1_avgch\fP\fR [get, set]\fP"
+.br
+.RI "The average of Gamma band value of the 2 channels\&. "
+.ti -1c
+.RI "double \fBDelta_Rel_avgch\fP\fR [get, set]\fP"
+.br
+.RI "The average of Delta band Relative value of the 2 channels\&. "
+.ti -1c
+.RI "double \fBTheta_Rel_avgch\fP\fR [get, set]\fP"
+.br
+.RI "The average of Theta band Relative value of the 2 channels\&. "
+.ti -1c
+.RI "double \fBAlpha1_Rel_avgch\fP\fR [get, set]\fP"
+.br
+.RI "The average of Alpha band Relative value of the 2 channels\&. "
+.ti -1c
+.RI "double \fBBeta1_Rel_avgch\fP\fR [get, set]\fP"
+.br
+.RI "The average of Beta band Relative value of the 2 channels\&. "
+.ti -1c
+.RI "double \fBGamma1_Rel_avgch\fP\fR [get, set]\fP"
+.br
+.RI "The average of Gamma band Relative value of the 2 channels\&. "
+.ti -1c
+.RI "double \fBDelta_ch1\fP\fR [get, set]\fP"
+.br
+.RI "The value of Delta band from the channel 1\&. "
+.ti -1c
+.RI "double \fBTheta_ch1\fP\fR [get, set]\fP"
+.br
+.RI "The value of Theta band from the channel 1\&. "
+.ti -1c
+.RI "double \fBAlpha1_ch1\fP\fR [get, set]\fP"
+.br
+.RI "The value of Alpha band from the channel 1\&. "
+.ti -1c
+.RI "double \fBBeta1_ch1\fP\fR [get, set]\fP"
+.br
+.RI "The value of Beta band from the channel 1\&. "
+.ti -1c
+.RI "double \fBGamma1_ch1\fP\fR [get, set]\fP"
+.br
+.RI "The value of Gamma band from the channel 1\&. "
+.ti -1c
+.RI "double \fBDelta_Rel_ch1\fP\fR [get, set]\fP"
+.br
+.RI "The Relative value of Delta band from the channel 1\&. "
+.ti -1c
+.RI "double \fBTheta_Rel_ch1\fP\fR [get, set]\fP"
+.br
+.RI "The Relative value of Theta band from the channel 1\&. "
+.ti -1c
+.RI "double \fBAlpha1_Rel_ch1\fP\fR [get, set]\fP"
+.br
+.RI "The Relative value of Alpha band from the channel 1\&. "
+.ti -1c
+.RI "double \fBBeta1_Rel_ch1\fP\fR [get, set]\fP"
+.br
+.RI "The Relative value of Beta band from the channel 1\&. "
+.ti -1c
+.RI "double \fBGamma1_Rel_ch1\fP\fR [get, set]\fP"
+.br
+.RI "The Relative value of Gamma band from the channel 1\&. "
+.ti -1c
+.RI "double \fBDelta_ch2\fP\fR [get, set]\fP"
+.br
+.RI "The value of Delta band from the channel 2\&. "
+.ti -1c
+.RI "double \fBTheta_ch2\fP\fR [get, set]\fP"
+.br
+.RI "The value of Theta band from the channel 2\&. "
+.ti -1c
+.RI "double \fBAlpha1_ch2\fP\fR [get, set]\fP"
+.br
+.RI "The value of Alpha band from the channel 2\&. "
+.ti -1c
+.RI "double \fBBeta1_ch2\fP\fR [get, set]\fP"
+.br
+.RI "The value of Beta band from the channel 2\&. "
+.ti -1c
+.RI "double \fBGamma1_ch2\fP\fR [get, set]\fP"
+.br
+.RI "The value of Gamma band from the channel 2\&. "
+.ti -1c
+.RI "double \fBDelta_Rel_ch2\fP\fR [get, set]\fP"
+.br
+.RI "The Relative value of Delta band from the channel 2\&. "
+.ti -1c
+.RI "double \fBTheta_Rel_ch2\fP\fR [get, set]\fP"
+.br
+.RI "The Relative value of Theta band from the channel 2\&. "
+.ti -1c
+.RI "double \fBAlpha1_Rel_ch2\fP\fR [get, set]\fP"
+.br
+.RI "The Relative value of Alpha band from the channel 2\&. "
+.ti -1c
+.RI "double \fBBeta1_Rel_ch2\fP\fR [get, set]\fP"
+.br
+.RI "The Relative value of Beta band from the channel 2\&. "
+.ti -1c
+.RI "double \fBGamma1_Rel_ch2\fP\fR [get, set]\fP"
+.br
+.RI "The Relative value of Gamma band from the channel 2\&. "
+.ti -1c
+.RI "bool \fBBlinked\fP\fR [get, set]\fP"
+.br
+.RI "If user had blinked\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+The class representation of the packets containing the data coming from the headset\&. 
+.PP
+Definition at line \fB16\fP of file \fBBrainwaves\&.cs\fP\&.
+.SH "Property Documentation"
+.PP 
+.SS "double EEGGaming\&.Core\&.Data\&.NonDataModels\&.Brainwaves\&.Alpha1_avgch\fR [get]\fP, \fR [set]\fP"
+
+.PP
+The average of Alpha band value of the 2 channels\&. 
+.PP
+Definition at line \fB54\fP of file \fBBrainwaves\&.cs\fP\&.
+.SS "double EEGGaming\&.Core\&.Data\&.NonDataModels\&.Brainwaves\&.Alpha1_ch1\fR [get]\fP, \fR [set]\fP"
+
+.PP
+The value of Alpha band from the channel 1\&. 
+.PP
+Definition at line \fB101\fP of file \fBBrainwaves\&.cs\fP\&.
+.SS "double EEGGaming\&.Core\&.Data\&.NonDataModels\&.Brainwaves\&.Alpha1_ch2\fR [get]\fP, \fR [set]\fP"
+
+.PP
+The value of Alpha band from the channel 2\&. 
+.PP
+Definition at line \fB144\fP of file \fBBrainwaves\&.cs\fP\&.
+.SS "double EEGGaming\&.Core\&.Data\&.NonDataModels\&.Brainwaves\&.Alpha1_Rel_avgch\fR [get]\fP, \fR [set]\fP"
+
+.PP
+The average of Alpha band Relative value of the 2 channels\&. 
+.PP
+Definition at line \fB78\fP of file \fBBrainwaves\&.cs\fP\&.
+.SS "double EEGGaming\&.Core\&.Data\&.NonDataModels\&.Brainwaves\&.Alpha1_Rel_ch1\fR [get]\fP, \fR [set]\fP"
+
+.PP
+The Relative value of Alpha band from the channel 1\&. 
+.PP
+Definition at line \fB123\fP of file \fBBrainwaves\&.cs\fP\&.
+.SS "double EEGGaming\&.Core\&.Data\&.NonDataModels\&.Brainwaves\&.Alpha1_Rel_ch2\fR [get]\fP, \fR [set]\fP"
+
+.PP
+The Relative value of Alpha band from the channel 2\&. 
+.PP
+Definition at line \fB166\fP of file \fBBrainwaves\&.cs\fP\&.
+.SS "double EEGGaming\&.Core\&.Data\&.NonDataModels\&.Brainwaves\&.Beta1_avgch\fR [get]\fP, \fR [set]\fP"
+
+.PP
+The average of Beta band value of the 2 channels\&. 
+.PP
+Definition at line \fB59\fP of file \fBBrainwaves\&.cs\fP\&.
+.SS "double EEGGaming\&.Core\&.Data\&.NonDataModels\&.Brainwaves\&.Beta1_ch1\fR [get]\fP, \fR [set]\fP"
+
+.PP
+The value of Beta band from the channel 1\&. 
+.PP
+Definition at line \fB106\fP of file \fBBrainwaves\&.cs\fP\&.
+.SS "double EEGGaming\&.Core\&.Data\&.NonDataModels\&.Brainwaves\&.Beta1_ch2\fR [get]\fP, \fR [set]\fP"
+
+.PP
+The value of Beta band from the channel 2\&. 
+.PP
+Definition at line \fB149\fP of file \fBBrainwaves\&.cs\fP\&.
+.SS "double EEGGaming\&.Core\&.Data\&.NonDataModels\&.Brainwaves\&.Beta1_Rel_avgch\fR [get]\fP, \fR [set]\fP"
+
+.PP
+The average of Beta band Relative value of the 2 channels\&. 
+.PP
+Definition at line \fB83\fP of file \fBBrainwaves\&.cs\fP\&.
+.SS "double EEGGaming\&.Core\&.Data\&.NonDataModels\&.Brainwaves\&.Beta1_Rel_ch1\fR [get]\fP, \fR [set]\fP"
+
+.PP
+The Relative value of Beta band from the channel 1\&. 
+.PP
+Definition at line \fB128\fP of file \fBBrainwaves\&.cs\fP\&.
+.SS "double EEGGaming\&.Core\&.Data\&.NonDataModels\&.Brainwaves\&.Beta1_Rel_ch2\fR [get]\fP, \fR [set]\fP"
+
+.PP
+The Relative value of Beta band from the channel 2\&. 
+.PP
+Definition at line \fB171\fP of file \fBBrainwaves\&.cs\fP\&.
+.SS "bool EEGGaming\&.Core\&.Data\&.NonDataModels\&.Brainwaves\&.Blinked\fR [get]\fP, \fR [set]\fP"
+
+.PP
+If user had blinked\&. 
+.PP
+Definition at line \fB182\fP of file \fBBrainwaves\&.cs\fP\&.
+.SS "string EEGGaming\&.Core\&.Data\&.NonDataModels\&.Brainwaves\&.Date\fR [get]\fP, \fR [set]\fP"
+
+.PP
+The date the packet is captured\&. 
+.PP
+Definition at line \fB29\fP of file \fBBrainwaves\&.cs\fP\&.
+.SS "double EEGGaming\&.Core\&.Data\&.NonDataModels\&.Brainwaves\&.Delta_avgch\fR [get]\fP, \fR [set]\fP"
+
+.PP
+The average of Delta band value of the 2 channels\&. 
+.PP
+Definition at line \fB46\fP of file \fBBrainwaves\&.cs\fP\&.
+.SS "double EEGGaming\&.Core\&.Data\&.NonDataModels\&.Brainwaves\&.Delta_ch1\fR [get]\fP, \fR [set]\fP"
+
+.PP
+The value of Delta band from the channel 1\&. 
+.PP
+Definition at line \fB93\fP of file \fBBrainwaves\&.cs\fP\&.
+.SS "double EEGGaming\&.Core\&.Data\&.NonDataModels\&.Brainwaves\&.Delta_ch2\fR [get]\fP, \fR [set]\fP"
+
+.PP
+The value of Delta band from the channel 2\&. 
+.PP
+Definition at line \fB136\fP of file \fBBrainwaves\&.cs\fP\&.
+.SS "double EEGGaming\&.Core\&.Data\&.NonDataModels\&.Brainwaves\&.Delta_Rel_avgch\fR [get]\fP, \fR [set]\fP"
+
+.PP
+The average of Delta band Relative value of the 2 channels\&. 
+.PP
+Definition at line \fB70\fP of file \fBBrainwaves\&.cs\fP\&.
+.SS "double EEGGaming\&.Core\&.Data\&.NonDataModels\&.Brainwaves\&.Delta_Rel_ch1\fR [get]\fP, \fR [set]\fP"
+
+.PP
+The Relative value of Delta band from the channel 1\&. 
+.PP
+Definition at line \fB115\fP of file \fBBrainwaves\&.cs\fP\&.
+.SS "double EEGGaming\&.Core\&.Data\&.NonDataModels\&.Brainwaves\&.Delta_Rel_ch2\fR [get]\fP, \fR [set]\fP"
+
+.PP
+The Relative value of Delta band from the channel 2\&. 
+.PP
+Definition at line \fB158\fP of file \fBBrainwaves\&.cs\fP\&.
+.SS "double EEGGaming\&.Core\&.Data\&.NonDataModels\&.Brainwaves\&.Gamma1_avgch\fR [get]\fP, \fR [set]\fP"
+
+.PP
+The average of Gamma band value of the 2 channels\&. 
+.PP
+Definition at line \fB64\fP of file \fBBrainwaves\&.cs\fP\&.
+.SS "double EEGGaming\&.Core\&.Data\&.NonDataModels\&.Brainwaves\&.Gamma1_ch1\fR [get]\fP, \fR [set]\fP"
+
+.PP
+The value of Gamma band from the channel 1\&. 
+.PP
+Definition at line \fB111\fP of file \fBBrainwaves\&.cs\fP\&.
+.SS "double EEGGaming\&.Core\&.Data\&.NonDataModels\&.Brainwaves\&.Gamma1_ch2\fR [get]\fP, \fR [set]\fP"
+
+.PP
+The value of Gamma band from the channel 2\&. 
+.PP
+Definition at line \fB154\fP of file \fBBrainwaves\&.cs\fP\&.
+.SS "double EEGGaming\&.Core\&.Data\&.NonDataModels\&.Brainwaves\&.Gamma1_Rel_avgch\fR [get]\fP, \fR [set]\fP"
+
+.PP
+The average of Gamma band Relative value of the 2 channels\&. 
+.PP
+Definition at line \fB88\fP of file \fBBrainwaves\&.cs\fP\&.
+.SS "double EEGGaming\&.Core\&.Data\&.NonDataModels\&.Brainwaves\&.Gamma1_Rel_ch1\fR [get]\fP, \fR [set]\fP"
+
+.PP
+The Relative value of Gamma band from the channel 1\&. 
+.PP
+Definition at line \fB132\fP of file \fBBrainwaves\&.cs\fP\&.
+.SS "double EEGGaming\&.Core\&.Data\&.NonDataModels\&.Brainwaves\&.Gamma1_Rel_ch2\fR [get]\fP, \fR [set]\fP"
+
+.PP
+The Relative value of Gamma band from the channel 2\&. 
+.PP
+Definition at line \fB176\fP of file \fBBrainwaves\&.cs\fP\&.
+.SS "byte EEGGaming\&.Core\&.Data\&.NonDataModels\&.Brainwaves\&.Marker\fR [get]\fP, \fR [set]\fP"
+
+.PP
+The packet marker\&. 
+.PP
+Definition at line \fB25\fP of file \fBBrainwaves\&.cs\fP\&.
+.SS "double EEGGaming\&.Core\&.Data\&.NonDataModels\&.Brainwaves\&.MiliSecond\fR [get]\fP, \fR [set]\fP"
+
+.PP
+The milisecond the packet is captured\&. 
+.PP
+Definition at line \fB41\fP of file \fBBrainwaves\&.cs\fP\&.
+.SS "uint EEGGaming\&.Core\&.Data\&.NonDataModels\&.Brainwaves\&.PackNumber\fR [get]\fP, \fR [set]\fP"
+
+.PP
+Thenumber of the packet\&. 
+.PP
+Definition at line \fB21\fP of file \fBBrainwaves\&.cs\fP\&.
+.SS "double EEGGaming\&.Core\&.Data\&.NonDataModels\&.Brainwaves\&.Second\fR [get]\fP, \fR [set]\fP"
+
+.PP
+The second the packet is captured\&. 
+.PP
+Definition at line \fB37\fP of file \fBBrainwaves\&.cs\fP\&.
+.SS "double EEGGaming\&.Core\&.Data\&.NonDataModels\&.Brainwaves\&.Theta_avgch\fR [get]\fP, \fR [set]\fP"
+
+.PP
+The average of Theta band value of the 2 channels\&. 
+.PP
+Definition at line \fB50\fP of file \fBBrainwaves\&.cs\fP\&.
+.SS "double EEGGaming\&.Core\&.Data\&.NonDataModels\&.Brainwaves\&.Theta_ch1\fR [get]\fP, \fR [set]\fP"
+
+.PP
+The value of Theta band from the channel 1\&. 
+.PP
+Definition at line \fB97\fP of file \fBBrainwaves\&.cs\fP\&.
+.SS "double EEGGaming\&.Core\&.Data\&.NonDataModels\&.Brainwaves\&.Theta_ch2\fR [get]\fP, \fR [set]\fP"
+
+.PP
+The value of Theta band from the channel 2\&. 
+.PP
+Definition at line \fB140\fP of file \fBBrainwaves\&.cs\fP\&.
+.SS "double EEGGaming\&.Core\&.Data\&.NonDataModels\&.Brainwaves\&.Theta_Rel_avgch\fR [get]\fP, \fR [set]\fP"
+
+.PP
+The average of Theta band Relative value of the 2 channels\&. 
+.PP
+Definition at line \fB74\fP of file \fBBrainwaves\&.cs\fP\&.
+.SS "double EEGGaming\&.Core\&.Data\&.NonDataModels\&.Brainwaves\&.Theta_Rel_ch1\fR [get]\fP, \fR [set]\fP"
+
+.PP
+The Relative value of Theta band from the channel 1\&. 
+.PP
+Definition at line \fB119\fP of file \fBBrainwaves\&.cs\fP\&.
+.SS "double EEGGaming\&.Core\&.Data\&.NonDataModels\&.Brainwaves\&.Theta_Rel_ch2\fR [get]\fP, \fR [set]\fP"
+
+.PP
+The Relative value of Theta band from the channel 2\&. 
+.PP
+Definition at line \fB162\fP of file \fBBrainwaves\&.cs\fP\&.
+.SS "string EEGGaming\&.Core\&.Data\&.NonDataModels\&.Brainwaves\&.Time\fR [get]\fP, \fR [set]\fP"
+
+.PP
+The time the packet is captured\&. 
+.PP
+Definition at line \fB33\fP of file \fBBrainwaves\&.cs\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for EEGGaming And Blinkbird from the source code\&.

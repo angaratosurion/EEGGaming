@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="class_about" kind="class" language="C#" prot="public">
+    <compoundname>About</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Node2D</basecompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_about_1a6fd0d191b34bef603946942fd36e9894" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void About._Ready</definition>
+        <argsstring>()</argsstring>
+        <name>_Ready</name>
+        <qualifiedname>About._Ready</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BlinkBird/Code/About.cs" line="8" column="22" bodyfile="BlinkBird/Code/About.cs" bodystart="8" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="class_about_1abdae3e58290a1de1645cd98f573f6f47" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void About._Process</definition>
+        <argsstring>(double delta)</argsstring>
+        <name>_Process</name>
+        <qualifiedname>About._Process</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>delta</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BlinkBird/Code/About.cs" line="35" column="22" bodyfile="BlinkBird/Code/About.cs" bodystart="35" bodyend="37"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_about_1ad96f53be580bb1146ac66a6f72b5a003" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void About.BtnClose_Pressed</definition>
+        <argsstring>()</argsstring>
+        <name>BtnClose_Pressed</name>
+        <qualifiedname>About.BtnClose_Pressed</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BlinkBird/Code/About.cs" line="29" column="14" bodyfile="BlinkBird/Code/About.cs" bodystart="29" bodyend="32"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>About</label>
+        <link refid="class_about"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Node2D</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>About</label>
+        <link refid="class_about"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Node2D</label>
+      </node>
+    </collaborationgraph>
+    <location file="BlinkBird/Code/About.cs" line="5" column="15" bodyfile="BlinkBird/Code/About.cs" bodystart="6" bodyend="38"/>
+    <listofallmembers>
+      <member refid="class_about_1abdae3e58290a1de1645cd98f573f6f47" prot="public" virt="non-virtual"><scope>About</scope><name>_Process</name></member>
+      <member refid="class_about_1a6fd0d191b34bef603946942fd36e9894" prot="public" virt="non-virtual"><scope>About</scope><name>_Ready</name></member>
+      <member refid="class_about_1ad96f53be580bb1146ac66a6f72b5a003" prot="private" virt="non-virtual"><scope>About</scope><name>BtnClose_Pressed</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

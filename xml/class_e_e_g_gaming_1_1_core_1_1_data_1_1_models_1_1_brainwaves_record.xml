@@ -1,0 +1,158 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_brainwaves_record" kind="class" language="C#" prot="public">
+    <compoundname>EEGGaming::Core::Data::Models::BrainwavesRecord</compoundname>
+    <basecompoundref refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves" prot="public" virt="non-virtual">EEGGaming.Core.Data.NonDataModels.Brainwaves</basecompoundref>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_brainwaves_record_1adc273344349b40b3807431335287f267" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int EEGGaming.Core.Data.Models.BrainwavesRecord.Id</definition>
+        <argsstring></argsstring>
+        <name>Id</name>
+        <qualifiedname>EEGGaming.Core.Data.Models.BrainwavesRecord.Id</qualifiedname>
+        <briefdescription>
+<para>An auto-incremented value id. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Data/Models/BrainwavesRecord.cs" line="22" column="20" bodyfile="EEGGaming.Core/Data/Models/BrainwavesRecord.cs" bodystart="22" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="property" id="class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_brainwaves_record_1aeb9ee88268b6443cd69f2de0c6eb2f2e" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int EEGGaming.Core.Data.Models.BrainwavesRecord.UserId</definition>
+        <argsstring></argsstring>
+        <name>UserId</name>
+        <qualifiedname>EEGGaming.Core.Data.Models.BrainwavesRecord.UserId</qualifiedname>
+        <briefdescription>
+<para>he id ofthe user the record belongs </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Data/Models/BrainwavesRecord.cs" line="27" column="20" bodyfile="EEGGaming.Core/Data/Models/BrainwavesRecord.cs" bodystart="27" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="property" id="class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_brainwaves_record_1aedf2aacba40ee60fafc7ab424c8d5cf3" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int EEGGaming.Core.Data.Models.BrainwavesRecord.GamingSessionId</definition>
+        <argsstring></argsstring>
+        <name>GamingSessionId</name>
+        <qualifiedname>EEGGaming.Core.Data.Models.BrainwavesRecord.GamingSessionId</qualifiedname>
+        <briefdescription>
+<para>The Id of the gamingsession therecord belongs. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Data/Models/BrainwavesRecord.cs" line="32" column="20" bodyfile="EEGGaming.Core/Data/Models/BrainwavesRecord.cs" bodystart="32" bodyend="32"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_brainwaves_record_1a623f03f99ed42ac24142497ae55890bf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void EEGGaming.Core.Data.Models.BrainwavesRecord.ImportToModel</definition>
+        <argsstring>(Brainwaves model)</argsstring>
+        <name>ImportToModel</name>
+        <qualifiedname>EEGGaming.Core.Data.Models.BrainwavesRecord.ImportToModel</qualifiedname>
+        <param>
+          <type><ref refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves" kindref="compound">Brainwaves</ref></type>
+          <declname>model</declname>
+        </param>
+        <briefdescription>
+<para>Import the data from the Brainwaves model to the record model. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>model</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the class representation of the brainwaves</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Data/Models/BrainwavesRecord.cs" line="37" column="21" bodyfile="EEGGaming.Core/Data/Models/BrainwavesRecord.cs" bodystart="37" bodyend="78"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>The class represanation of the Brainwaves in the database. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Brainwaves</label>
+        <link refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves"/>
+      </node>
+      <node id="1">
+        <label>EEGGaming.Core.Data.Models.BrainwavesRecord</label>
+        <link refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_brainwaves_record"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Brainwaves</label>
+        <link refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves"/>
+      </node>
+      <node id="1">
+        <label>EEGGaming.Core.Data.Models.BrainwavesRecord</label>
+        <link refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_brainwaves_record"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="EEGGaming.Core/Data/Models/BrainwavesRecord.cs" line="15" column="11" bodyfile="EEGGaming.Core/Data/Models/BrainwavesRecord.cs" bodystart="16" bodyend="80"/>
+    <listofallmembers>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a0ec844c3fed086ed6cb792d6735ba8e6" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Data::Models::BrainwavesRecord</scope><name>Alpha1_avgch</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1add0cfaba9a1c999ebdcded7175112c5f" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Data::Models::BrainwavesRecord</scope><name>Alpha1_ch1</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a7670d63eb7e1f2fbff5316b4af021c28" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Data::Models::BrainwavesRecord</scope><name>Alpha1_ch2</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1aa06696dfe4f8d2bb5dd4e891e78cfdcf" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Data::Models::BrainwavesRecord</scope><name>Alpha1_Rel_avgch</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1ae08ab2f953a2965a62906bf4978b9e1f" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Data::Models::BrainwavesRecord</scope><name>Alpha1_Rel_ch1</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a5b39203658fa975edb57d60995dc9c4f" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Data::Models::BrainwavesRecord</scope><name>Alpha1_Rel_ch2</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a38ec6b776e8bd4a148725c597aef4641" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Data::Models::BrainwavesRecord</scope><name>Beta1_avgch</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a7544850d6df71fc153f43906f4aa151e" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Data::Models::BrainwavesRecord</scope><name>Beta1_ch1</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a2f39307b7696bb3fa25e23d3e4a04e78" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Data::Models::BrainwavesRecord</scope><name>Beta1_ch2</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a8731b0f6050fd9e91e2ce1ea17de746a" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Data::Models::BrainwavesRecord</scope><name>Beta1_Rel_avgch</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a29e6af2b4053477e4889d828e3e34168" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Data::Models::BrainwavesRecord</scope><name>Beta1_Rel_ch1</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a3aea0f827833c1af52f7ff8b4d4d98e5" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Data::Models::BrainwavesRecord</scope><name>Beta1_Rel_ch2</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a7da82ea78dfc47df6f183f180170a0fb" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Data::Models::BrainwavesRecord</scope><name>Blinked</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a950aba497ae3bdd977170593f6de9cf3" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Data::Models::BrainwavesRecord</scope><name>Date</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a680e14c0046817b3567caf02966b74c7" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Data::Models::BrainwavesRecord</scope><name>Delta_avgch</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a2a0cc026fbbae7634d45821762149197" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Data::Models::BrainwavesRecord</scope><name>Delta_ch1</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1aac5c7ec74d531d70796a4d59d466525d" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Data::Models::BrainwavesRecord</scope><name>Delta_ch2</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a7771e5e3d2a3f39d7f537c24181a869b" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Data::Models::BrainwavesRecord</scope><name>Delta_Rel_avgch</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a10d1f43856ef32f2562ea5e5da819b95" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Data::Models::BrainwavesRecord</scope><name>Delta_Rel_ch1</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a2d8355effb5729dc271faf9bc1b8aa2b" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Data::Models::BrainwavesRecord</scope><name>Delta_Rel_ch2</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_brainwaves_record_1aedf2aacba40ee60fafc7ab424c8d5cf3" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Data::Models::BrainwavesRecord</scope><name>GamingSessionId</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1ab4063c82226ea208a66f02269c3bb72e" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Data::Models::BrainwavesRecord</scope><name>Gamma1_avgch</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1aac1400696bdef6ef00f7dfb8dd6c0ddc" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Data::Models::BrainwavesRecord</scope><name>Gamma1_ch1</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a9d2828c831703530d75da6f2a64075ea" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Data::Models::BrainwavesRecord</scope><name>Gamma1_ch2</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1acfa0890ecc394496ec2a6c936ddad133" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Data::Models::BrainwavesRecord</scope><name>Gamma1_Rel_avgch</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1ac54a8ed1b67a480413702c8b2cd13992" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Data::Models::BrainwavesRecord</scope><name>Gamma1_Rel_ch1</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a3a1fc86d09f84045859f4933e3dcf0a7" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Data::Models::BrainwavesRecord</scope><name>Gamma1_Rel_ch2</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_brainwaves_record_1adc273344349b40b3807431335287f267" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Data::Models::BrainwavesRecord</scope><name>Id</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_brainwaves_record_1a623f03f99ed42ac24142497ae55890bf" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Data::Models::BrainwavesRecord</scope><name>ImportToModel</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a80f504aeac234e88a8818e6936823ab9" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Data::Models::BrainwavesRecord</scope><name>Marker</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1ab00930f70ab5d893084ea1fbbd4da426" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Data::Models::BrainwavesRecord</scope><name>MiliSecond</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1aa16d9b59118af76918fd6b4cc701aa6c" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Data::Models::BrainwavesRecord</scope><name>PackNumber</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1ae28ec52a5a7be45534f6a6560af0426d" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Data::Models::BrainwavesRecord</scope><name>Second</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a4bf15df56f8fb89009e39c38406c1688" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Data::Models::BrainwavesRecord</scope><name>Theta_avgch</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1aaf137cc421c7b97930fa849cb5ffb7ec" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Data::Models::BrainwavesRecord</scope><name>Theta_ch1</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1ae2011ba99ff79d76bee549c3ee565756" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Data::Models::BrainwavesRecord</scope><name>Theta_ch2</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1acabf8affae82307c0668b465b68e767c" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Data::Models::BrainwavesRecord</scope><name>Theta_Rel_avgch</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a403ba98fa57db02035a9ea6c28f0f478" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Data::Models::BrainwavesRecord</scope><name>Theta_Rel_ch1</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a5f85e0db6ee5b85b636783e1d0c0422d" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Data::Models::BrainwavesRecord</scope><name>Theta_Rel_ch2</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves_1a2e3a64fab9331c33712a488543cff3da" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Data::Models::BrainwavesRecord</scope><name>Time</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_brainwaves_record_1aeb9ee88268b6443cd69f2de0c6eb2f2e" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Data::Models::BrainwavesRecord</scope><name>UserId</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="class_e_e_g_gaming_1_1_core_1_1_migrations_1_1addedscoreongamingsession" kind="class" language="C#" prot="public">
+    <compoundname>EEGGaming::Core::Migrations::addedscoreongamingsession</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Migration</basecompoundref>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_e_e_g_gaming_1_1_core_1_1_migrations_1_1addedscoreongamingsession_1a69623f4ebf8614f962f61c0c666f6704" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void EEGGaming.Core.Migrations.addedscoreongamingsession.Up</definition>
+        <argsstring>(MigrationBuilder migrationBuilder)</argsstring>
+        <name>Up</name>
+        <qualifiedname>EEGGaming.Core.Migrations.addedscoreongamingsession.Up</qualifiedname>
+        <param>
+          <type>MigrationBuilder</type>
+          <declname>migrationBuilder</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Migrations/20240605230844_added score on gaming session.cs" line="11" column="33" bodyfile="EEGGaming.Core/Migrations/20240605230844_added score on gaming session.cs" bodystart="11" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="class_e_e_g_gaming_1_1_core_1_1_migrations_1_1addedscoreongamingsession_1a5dbc7b98cc217a5fe3be3b8427bd4d5a" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void EEGGaming.Core.Migrations.addedscoreongamingsession.Down</definition>
+        <argsstring>(MigrationBuilder migrationBuilder)</argsstring>
+        <name>Down</name>
+        <qualifiedname>EEGGaming.Core.Migrations.addedscoreongamingsession.Down</qualifiedname>
+        <param>
+          <type>MigrationBuilder</type>
+          <declname>migrationBuilder</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Migrations/20240605230844_added score on gaming session.cs" line="22" column="33" bodyfile="EEGGaming.Core/Migrations/20240605230844_added score on gaming session.cs" bodystart="22" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="class_e_e_g_gaming_1_1_core_1_1_migrations_1_1addedscoreongamingsession_1ab9605180b6d83f3e1908323e12839221" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void EEGGaming.Core.Migrations.addedscoreongamingsession.BuildTargetModel</definition>
+        <argsstring>(ModelBuilder modelBuilder)</argsstring>
+        <name>BuildTargetModel</name>
+        <qualifiedname>EEGGaming.Core.Migrations.addedscoreongamingsession.BuildTargetModel</qualifiedname>
+        <param>
+          <type>ModelBuilder</type>
+          <declname>modelBuilder</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Migrations/20240605230844_added score on gaming session.Designer.cs" line="18" column="33" bodyfile="EEGGaming.Core/Migrations/20240605230844_added score on gaming session.Designer.cs" bodystart="18" bodyend="146"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>EEGGaming.Core.Migrations.addedscoreongamingsession</label>
+        <link refid="class_e_e_g_gaming_1_1_core_1_1_migrations_1_1addedscoreongamingsession"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Migration</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>EEGGaming.Core.Migrations.addedscoreongamingsession</label>
+        <link refid="class_e_e_g_gaming_1_1_core_1_1_migrations_1_1addedscoreongamingsession"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Migration</label>
+      </node>
+    </collaborationgraph>
+    <location file="EEGGaming.Core/Migrations/20240605230844_added score on gaming session.cs" line="8" column="19" bodyfile="EEGGaming.Core/Migrations/20240605230844_added score on gaming session.Designer.cs" bodystart="16" bodyend="147"/>
+    <listofallmembers>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_migrations_1_1addedscoreongamingsession_1ab9605180b6d83f3e1908323e12839221" prot="protected" virt="non-virtual"><scope>EEGGaming::Core::Migrations::addedscoreongamingsession</scope><name>BuildTargetModel</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_migrations_1_1addedscoreongamingsession_1a5dbc7b98cc217a5fe3be3b8427bd4d5a" prot="protected" virt="non-virtual"><scope>EEGGaming::Core::Migrations::addedscoreongamingsession</scope><name>Down</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_migrations_1_1addedscoreongamingsession_1a69623f4ebf8614f962f61c0c666f6704" prot="protected" virt="non-virtual"><scope>EEGGaming::Core::Migrations::addedscoreongamingsession</scope><name>Up</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,80 @@
+.TH "EEGGaming.Core.Managers.BaseManager" 3 "Version 0.2.6.0" "EEGGaming And Blinkbird" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+EEGGaming.Core.Managers.BaseManager \- The class that includes the mostly common methods,properties and fuctions of the Manager classes\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherited by \fBEEGGaming\&.Core\&.Managers\&.BrainWaveRecordManager\fP, \fBEEGGaming\&.Core\&.Managers\&.GamingSesionManager\fP, and \fBEEGGaming\&.Core\&.Managers\&.UserManager\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBCreateDatabase\fP ()"
+.br
+.RI "Creates the Database\&. "
+.ti -1c
+.RI "int \fBPredictLastId\fP (string tablename)"
+.br
+.RI "It predicts the last value of the id's property from the given table's name\&. "
+.in -1c
+.SS "Properties"
+
+.in +1c
+.ti -1c
+.RI "\fBEEGGamingDbContext\fP \fBDbContext\fP\fR [get, set]\fP"
+.br
+.RI "The DatabaseContext of the library\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+The class that includes the mostly common methods,properties and fuctions of the Manager classes\&. 
+.PP
+Definition at line \fB16\fP of file \fBBaseManager\&.cs\fP\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "EEGGaming\&.Core\&.Managers\&.BaseManager\&.BaseManager ()"
+
+.PP
+Definition at line \fB22\fP of file \fBBaseManager\&.cs\fP\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void EEGGaming\&.Core\&.Managers\&.BaseManager\&.CreateDatabase ()"
+
+.PP
+Creates the Database\&. 
+.PP
+Definition at line \fB38\fP of file \fBBaseManager\&.cs\fP\&.
+.SS "int EEGGaming\&.Core\&.Managers\&.BaseManager\&.PredictLastId (string tablename)"
+
+.PP
+It predicts the last value of the id's property from the given table's name\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fItablename\fP the name of the table the we wat to get the id
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+last value of the id's property from the given table's name
+.RE
+.PP
+
+.PP
+Definition at line \fB49\fP of file \fBBaseManager\&.cs\fP\&.
+.SH "Property Documentation"
+.PP 
+.SS "\fBEEGGamingDbContext\fP EEGGaming\&.Core\&.Managers\&.BaseManager\&.DbContext\fR [get]\fP, \fR [set]\fP"
+
+.PP
+The DatabaseContext of the library\&. 
+.PP
+Definition at line \fB21\fP of file \fBBaseManager\&.cs\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for EEGGaming And Blinkbird from the source code\&.

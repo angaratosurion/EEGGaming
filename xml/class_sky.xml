@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="class_sky" kind="class" language="C#" prot="public">
+    <compoundname>Sky</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Sprite2D</basecompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_sky_1a78597c074f927ab9457bb50f628d579c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void Sky._Ready</definition>
+        <argsstring>()</argsstring>
+        <name>_Ready</name>
+        <qualifiedname>Sky._Ready</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BlinkBird/Code/Sky.cs" line="7" column="22" bodyfile="BlinkBird/Code/Sky.cs" bodystart="7" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sky_1aca70cb0eca672bfdfb92eac9fcc9026d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void Sky._Process</definition>
+        <argsstring>(double delta)</argsstring>
+        <name>_Process</name>
+        <qualifiedname>Sky._Process</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>delta</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BlinkBird/Code/Sky.cs" line="13" column="22" bodyfile="BlinkBird/Code/Sky.cs" bodystart="13" bodyend="30"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Sky</label>
+        <link refid="class_sky"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Sprite2D</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Sky</label>
+        <link refid="class_sky"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Sprite2D</label>
+      </node>
+    </collaborationgraph>
+    <location file="BlinkBird/Code/Sky.cs" line="4" column="15" bodyfile="BlinkBird/Code/Sky.cs" bodystart="5" bodyend="31"/>
+    <listofallmembers>
+      <member refid="class_sky_1aca70cb0eca672bfdfb92eac9fcc9026d" prot="public" virt="non-virtual"><scope>Sky</scope><name>_Process</name></member>
+      <member refid="class_sky_1a78597c074f927ab9457bb50f628d579c" prot="public" virt="non-virtual"><scope>Sky</scope><name>_Ready</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="dir_9fbe364ff72607eecf0611039dde3612" kind="dir">
+    <compoundname>BlinkBird/Code</compoundname>
+    <innerfile refid="_about_8cs">About.cs</innerfile>
+    <innerfile refid="_add_user_details_8cs">AddUserDetails.cs</innerfile>
+    <innerfile refid="_camera_8cs">Camera.cs</innerfile>
+    <innerfile refid="_game_over_8cs">GameOver.cs</innerfile>
+    <innerfile refid="_gaming_scesions_8cs">GamingScesions.cs</innerfile>
+    <innerfile refid="_h_sdr_horizontal_speed_8cs">HSdrHorizontalSpeed.cs</innerfile>
+    <innerfile refid="_menu_8cs">Menu.cs</innerfile>
+    <innerfile refid="_mountain_8cs">Mountain.cs</innerfile>
+    <innerfile refid="_mountains_8cs">Mountains.cs</innerfile>
+    <innerfile refid="_player_8cs">Player.cs</innerfile>
+    <innerfile refid="_scoreand_time_8cs">ScoreandTime.cs</innerfile>
+    <innerfile refid="_show_user_details_8cs">ShowUserDetails.cs</innerfile>
+    <innerfile refid="_show_users_8cs">ShowUsers.cs</innerfile>
+    <innerfile refid="_sky_8cs">Sky.cs</innerfile>
+    <innerfile refid="_world_8cs">World.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="BlinkBird/Code/"/>
+  </compounddef>
+</doxygen>

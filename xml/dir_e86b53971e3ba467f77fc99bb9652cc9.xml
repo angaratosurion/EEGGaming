@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="dir_e86b53971e3ba467f77fc99bb9652cc9" kind="dir">
+    <compoundname>BlinkBird</compoundname>
+    <innerdir refid="dir_9fbe364ff72607eecf0611039dde3612">BlinkBird/Code</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="BlinkBird/"/>
+  </compounddef>
+</doxygen>

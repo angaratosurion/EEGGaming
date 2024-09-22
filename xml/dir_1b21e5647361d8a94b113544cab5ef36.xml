@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="dir_1b21e5647361d8a94b113544cab5ef36" kind="dir">
+    <compoundname>EEGGaming.Core/Data</compoundname>
+    <innerdir refid="dir_a82103e4154a47d1d342ceba1325d9b4">EEGGaming.Core/Data/Models</innerdir>
+    <innerdir refid="dir_44ce50d4ad68b8c710a118649f1f1bd5">EEGGaming.Core/Data/NonDataModels</innerdir>
+    <innerfile refid="_e_e_g_gaming_db_context_8cs">EEGGamingDbContext.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="EEGGaming.Core/Data/"/>
+  </compounddef>
+</doxygen>

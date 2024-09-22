@@ -1,0 +1,231 @@
+.TH "EEGGaming.Core.Data.Models.BrainwavesRecord" 3 "Version 0.2.6.0" "EEGGaming And Blinkbird" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+EEGGaming.Core.Data.Models.BrainwavesRecord \- The class represanation of the Brainwaves in the database\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBEEGGaming\&.Core\&.Data\&.NonDataModels\&.Brainwaves\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBImportToModel\fP (\fBBrainwaves\fP model)"
+.br
+.RI "Import the data from the Brainwaves model to the record model\&. "
+.in -1c
+.SS "Properties"
+
+.in +1c
+.ti -1c
+.RI "int \fBId\fP\fR [get, set]\fP"
+.br
+.RI "An auto-incremented value id\&. "
+.ti -1c
+.RI "int \fBUserId\fP\fR [get, set]\fP"
+.br
+.RI "he id ofthe user the record belongs "
+.ti -1c
+.RI "int \fBGamingSessionId\fP\fR [get, set]\fP"
+.br
+.RI "The Id of the gamingsession therecord belongs\&. "
+.in -1c
+
+Properties inherited from \fBEEGGaming\&.Core\&.Data\&.NonDataModels\&.Brainwaves\fP
+.in +1c
+.ti -1c
+.RI "uint \fBPackNumber\fP\fR [get, set]\fP"
+.br
+.RI "Thenumber of the packet\&. "
+.ti -1c
+.RI "byte \fBMarker\fP\fR [get, set]\fP"
+.br
+.RI "The packet marker\&. "
+.ti -1c
+.RI "string \fBDate\fP\fR [get, set]\fP"
+.br
+.RI "The date the packet is captured\&. "
+.ti -1c
+.RI "string \fBTime\fP\fR [get, set]\fP"
+.br
+.RI "The time the packet is captured\&. "
+.ti -1c
+.RI "double \fBSecond\fP\fR [get, set]\fP"
+.br
+.RI "The second the packet is captured\&. "
+.ti -1c
+.RI "double \fBMiliSecond\fP\fR [get, set]\fP"
+.br
+.RI "The milisecond the packet is captured\&. "
+.ti -1c
+.RI "double \fBDelta_avgch\fP\fR [get, set]\fP"
+.br
+.RI "The average of Delta band value of the 2 channels\&. "
+.ti -1c
+.RI "double \fBTheta_avgch\fP\fR [get, set]\fP"
+.br
+.RI "The average of Theta band value of the 2 channels\&. "
+.ti -1c
+.RI "double \fBAlpha1_avgch\fP\fR [get, set]\fP"
+.br
+.RI "The average of Alpha band value of the 2 channels\&. "
+.ti -1c
+.RI "double \fBBeta1_avgch\fP\fR [get, set]\fP"
+.br
+.RI "The average of Beta band value of the 2 channels\&. "
+.ti -1c
+.RI "double \fBGamma1_avgch\fP\fR [get, set]\fP"
+.br
+.RI "The average of Gamma band value of the 2 channels\&. "
+.ti -1c
+.RI "double \fBDelta_Rel_avgch\fP\fR [get, set]\fP"
+.br
+.RI "The average of Delta band Relative value of the 2 channels\&. "
+.ti -1c
+.RI "double \fBTheta_Rel_avgch\fP\fR [get, set]\fP"
+.br
+.RI "The average of Theta band Relative value of the 2 channels\&. "
+.ti -1c
+.RI "double \fBAlpha1_Rel_avgch\fP\fR [get, set]\fP"
+.br
+.RI "The average of Alpha band Relative value of the 2 channels\&. "
+.ti -1c
+.RI "double \fBBeta1_Rel_avgch\fP\fR [get, set]\fP"
+.br
+.RI "The average of Beta band Relative value of the 2 channels\&. "
+.ti -1c
+.RI "double \fBGamma1_Rel_avgch\fP\fR [get, set]\fP"
+.br
+.RI "The average of Gamma band Relative value of the 2 channels\&. "
+.ti -1c
+.RI "double \fBDelta_ch1\fP\fR [get, set]\fP"
+.br
+.RI "The value of Delta band from the channel 1\&. "
+.ti -1c
+.RI "double \fBTheta_ch1\fP\fR [get, set]\fP"
+.br
+.RI "The value of Theta band from the channel 1\&. "
+.ti -1c
+.RI "double \fBAlpha1_ch1\fP\fR [get, set]\fP"
+.br
+.RI "The value of Alpha band from the channel 1\&. "
+.ti -1c
+.RI "double \fBBeta1_ch1\fP\fR [get, set]\fP"
+.br
+.RI "The value of Beta band from the channel 1\&. "
+.ti -1c
+.RI "double \fBGamma1_ch1\fP\fR [get, set]\fP"
+.br
+.RI "The value of Gamma band from the channel 1\&. "
+.ti -1c
+.RI "double \fBDelta_Rel_ch1\fP\fR [get, set]\fP"
+.br
+.RI "The Relative value of Delta band from the channel 1\&. "
+.ti -1c
+.RI "double \fBTheta_Rel_ch1\fP\fR [get, set]\fP"
+.br
+.RI "The Relative value of Theta band from the channel 1\&. "
+.ti -1c
+.RI "double \fBAlpha1_Rel_ch1\fP\fR [get, set]\fP"
+.br
+.RI "The Relative value of Alpha band from the channel 1\&. "
+.ti -1c
+.RI "double \fBBeta1_Rel_ch1\fP\fR [get, set]\fP"
+.br
+.RI "The Relative value of Beta band from the channel 1\&. "
+.ti -1c
+.RI "double \fBGamma1_Rel_ch1\fP\fR [get, set]\fP"
+.br
+.RI "The Relative value of Gamma band from the channel 1\&. "
+.ti -1c
+.RI "double \fBDelta_ch2\fP\fR [get, set]\fP"
+.br
+.RI "The value of Delta band from the channel 2\&. "
+.ti -1c
+.RI "double \fBTheta_ch2\fP\fR [get, set]\fP"
+.br
+.RI "The value of Theta band from the channel 2\&. "
+.ti -1c
+.RI "double \fBAlpha1_ch2\fP\fR [get, set]\fP"
+.br
+.RI "The value of Alpha band from the channel 2\&. "
+.ti -1c
+.RI "double \fBBeta1_ch2\fP\fR [get, set]\fP"
+.br
+.RI "The value of Beta band from the channel 2\&. "
+.ti -1c
+.RI "double \fBGamma1_ch2\fP\fR [get, set]\fP"
+.br
+.RI "The value of Gamma band from the channel 2\&. "
+.ti -1c
+.RI "double \fBDelta_Rel_ch2\fP\fR [get, set]\fP"
+.br
+.RI "The Relative value of Delta band from the channel 2\&. "
+.ti -1c
+.RI "double \fBTheta_Rel_ch2\fP\fR [get, set]\fP"
+.br
+.RI "The Relative value of Theta band from the channel 2\&. "
+.ti -1c
+.RI "double \fBAlpha1_Rel_ch2\fP\fR [get, set]\fP"
+.br
+.RI "The Relative value of Alpha band from the channel 2\&. "
+.ti -1c
+.RI "double \fBBeta1_Rel_ch2\fP\fR [get, set]\fP"
+.br
+.RI "The Relative value of Beta band from the channel 2\&. "
+.ti -1c
+.RI "double \fBGamma1_Rel_ch2\fP\fR [get, set]\fP"
+.br
+.RI "The Relative value of Gamma band from the channel 2\&. "
+.ti -1c
+.RI "bool \fBBlinked\fP\fR [get, set]\fP"
+.br
+.RI "If user had blinked\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+The class represanation of the Brainwaves in the database\&. 
+.PP
+Definition at line \fB15\fP of file \fBBrainwavesRecord\&.cs\fP\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void EEGGaming\&.Core\&.Data\&.Models\&.BrainwavesRecord\&.ImportToModel (\fBBrainwaves\fP model)"
+
+.PP
+Import the data from the Brainwaves model to the record model\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fImodel\fP the class representation of the brainwaves
+.RE
+.PP
+
+.PP
+Definition at line \fB37\fP of file \fBBrainwavesRecord\&.cs\fP\&.
+.SH "Property Documentation"
+.PP 
+.SS "int EEGGaming\&.Core\&.Data\&.Models\&.BrainwavesRecord\&.GamingSessionId\fR [get]\fP, \fR [set]\fP"
+
+.PP
+The Id of the gamingsession therecord belongs\&. 
+.PP
+Definition at line \fB32\fP of file \fBBrainwavesRecord\&.cs\fP\&.
+.SS "int EEGGaming\&.Core\&.Data\&.Models\&.BrainwavesRecord\&.Id\fR [get]\fP, \fR [set]\fP"
+
+.PP
+An auto-incremented value id\&. 
+.PP
+Definition at line \fB22\fP of file \fBBrainwavesRecord\&.cs\fP\&.
+.SS "int EEGGaming\&.Core\&.Data\&.Models\&.BrainwavesRecord\&.UserId\fR [get]\fP, \fR [set]\fP"
+
+.PP
+he id ofthe user the record belongs 
+.PP
+Definition at line \fB27\fP of file \fBBrainwavesRecord\&.cs\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for EEGGaming And Blinkbird from the source code\&.

@@ -1,0 +1,124 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="class_e_e_g_gaming_1_1_core_1_1_tools_1_1_calculations" kind="class" language="C#" prot="public">
+    <compoundname>EEGGaming::Core::Tools::Calculations</compoundname>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_e_e_g_gaming_1_1_core_1_1_tools_1_1_calculations_1a85e23be0bfe81c0e55c9331557a5bd18" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>static double EEGGaming.Core.Tools.Calculations.AverageAbs</definition>
+        <argsstring>(double[] vals)</argsstring>
+        <name>AverageAbs</name>
+        <qualifiedname>EEGGaming.Core.Tools.Calculations.AverageAbs</qualifiedname>
+        <param>
+          <type>double[]</type>
+          <declname>vals</declname>
+        </param>
+        <briefdescription>
+<para>Calculates the absolute values of the given&apos;s array average. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vals</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>array to calculate it&apos;s average value </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the absolute values of the given&apos;s array average</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Tools/Calculations.cs" line="14" column="30" bodyfile="EEGGaming.Core/Tools/Calculations.cs" bodystart="14" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="class_e_e_g_gaming_1_1_core_1_1_tools_1_1_calculations_1ab4387076de246cdaec2943cac053ec39" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>static double EEGGaming.Core.Tools.Calculations.Average</definition>
+        <argsstring>(double[] vals)</argsstring>
+        <name>Average</name>
+        <qualifiedname>EEGGaming.Core.Tools.Calculations.Average</qualifiedname>
+        <param>
+          <type>double[]</type>
+          <declname>vals</declname>
+        </param>
+        <briefdescription>
+<para>Calculates the average of the given array. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vals</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the array we want to get its average value </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>average of the given array</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Tools/Calculations.cs" line="37" column="30" bodyfile="EEGGaming.Core/Tools/Calculations.cs" bodystart="37" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="class_e_e_g_gaming_1_1_core_1_1_tools_1_1_calculations_1a7e6037fc145f8de58e6e878c7349656f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>static double EEGGaming.Core.Tools.Calculations.Subtruck</definition>
+        <argsstring>(double val1, double val2)</argsstring>
+        <name>Subtruck</name>
+        <qualifiedname>EEGGaming.Core.Tools.Calculations.Subtruck</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>val1</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>val2</declname>
+        </param>
+        <briefdescription>
+<para>Subtracts val2 from val1. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>val1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the valueto subtruck from </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>val2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the value to subtruct</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the difference of val1-val2</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Tools/Calculations.cs" line="61" column="30" bodyfile="EEGGaming.Core/Tools/Calculations.cs" bodystart="61" bodyend="77"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Class that does Mathematic Calculations </para>
+    </detaileddescription>
+    <location file="EEGGaming.Core/Tools/Calculations.cs" line="7" column="19" bodyfile="EEGGaming.Core/Tools/Calculations.cs" bodystart="8" bodyend="80"/>
+    <listofallmembers>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_tools_1_1_calculations_1ab4387076de246cdaec2943cac053ec39" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Tools::Calculations</scope><name>Average</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_tools_1_1_calculations_1a85e23be0bfe81c0e55c9331557a5bd18" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Tools::Calculations</scope><name>AverageAbs</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_tools_1_1_calculations_1a7e6037fc145f8de58e6e878c7349656f" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Tools::Calculations</scope><name>Subtruck</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

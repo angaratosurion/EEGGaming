@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_scoreand_time" xml:lang="en-US">
+<title>ScoreandTime Class Reference</title>
+<indexterm><primary>ScoreandTime</primary></indexterm>
+<para>Inheritance diagram for ScoreandTime:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_scoreand_time.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>override void <link linkend="_class_scoreand_time_1acf43770672e85c74a49c81f43c4298f4">_Ready</link> ()</para>
+</listitem>
+            <listitem><para>override void <link linkend="_class_scoreand_time_1a8bf79ff48867eec632f94934b1f77cb5">_Process</link> (double delta)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+<para>
+Definition at line <link linkend="__scoreand_time_8cs_source_1l00005">5</link> of file <link linkend="__scoreand_time_8cs_source">ScoreandTime.cs</link>.</para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_scoreand_time_1a8bf79ff48867eec632f94934b1f77cb5"/><section>
+    <title>_Process()</title>
+<indexterm><primary>_Process</primary><secondary>ScoreandTime</secondary></indexterm>
+<indexterm><primary>ScoreandTime</primary><secondary>_Process</secondary></indexterm>
+<para><computeroutput>override void ScoreandTime._Process (double delta)</computeroutput></para><para>
+Definition at line <link linkend="__scoreand_time_8cs_source_1l00015">15</link> of file <link linkend="__scoreand_time_8cs_source">ScoreandTime.cs</link>.</para>
+</section>
+<anchor xml:id="_class_scoreand_time_1acf43770672e85c74a49c81f43c4298f4"/><section>
+    <title>_Ready()</title>
+<indexterm><primary>_Ready</primary><secondary>ScoreandTime</secondary></indexterm>
+<indexterm><primary>ScoreandTime</primary><secondary>_Ready</secondary></indexterm>
+<para><computeroutput>override void ScoreandTime._Ready ( )</computeroutput></para><para>
+Definition at line <link linkend="__scoreand_time_8cs_source_1l00009">9</link> of file <link linkend="__scoreand_time_8cs_source">ScoreandTime.cs</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+BlinkBird/Code/ScoreandTime.cs</section>
+</section>

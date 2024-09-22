@@ -1,0 +1,337 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="class_e_e_g_gaming_1_1_core_1_1_tools_1_1_common_tools" kind="class" language="C#" prot="public">
+    <compoundname>EEGGaming::Core::Tools::CommonTools</compoundname>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_e_e_g_gaming_1_1_core_1_1_tools_1_1_common_tools_1a59b634479a1286147fe0bc7d4f8aab21" prot="public" static="yes" mutable="no">
+        <type>Logger</type>
+        <definition>Logger EEGGaming.Core.Tools.CommonTools.logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <qualifiedname>EEGGaming.Core.Tools.CommonTools.logger</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Tools/CommonTools.cs" line="19" column="30" bodyfile="EEGGaming.Core/Tools/CommonTools.cs" bodystart="19" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_e_e_g_gaming_1_1_core_1_1_tools_1_1_common_tools_1a2a61dee054c1fe610362b6c30c92a4ed" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void EEGGaming.Core.Tools.CommonTools.CreateLogger</definition>
+        <argsstring>()</argsstring>
+        <name>CreateLogger</name>
+        <qualifiedname>EEGGaming.Core.Tools.CommonTools.CreateLogger</qualifiedname>
+        <briefdescription>
+<para>Creates the Loger. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Tools/CommonTools.cs" line="23" column="28" bodyfile="EEGGaming.Core/Tools/CommonTools.cs" bodystart="23" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="class_e_e_g_gaming_1_1_core_1_1_tools_1_1_common_tools_1aba6000732ddd88a2b590bbfc8b91227c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Boolean</type>
+        <definition>static Boolean EEGGaming.Core.Tools.CommonTools.isEmpty</definition>
+        <argsstring>(string str)</argsstring>
+        <name>isEmpty</name>
+        <qualifiedname>EEGGaming.Core.Tools.CommonTools.isEmpty</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+<para>Checks if a string is empty. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string to be checked </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true f its empty flase otherwise</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Tools/CommonTools.cs" line="53" column="31" bodyfile="EEGGaming.Core/Tools/CommonTools.cs" bodystart="53" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="class_e_e_g_gaming_1_1_core_1_1_tools_1_1_common_tools_1ab1955212d49d99feb256f092999cde4b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void EEGGaming.Core.Tools.CommonTools.ErrorReporting</definition>
+        <argsstring>(Exception ex)</argsstring>
+        <name>ErrorReporting</name>
+        <qualifiedname>EEGGaming.Core.Tools.CommonTools.ErrorReporting</qualifiedname>
+        <param>
+          <type>Exception</type>
+          <declname>ex</declname>
+        </param>
+        <briefdescription>
+<para>SavesErrors to log file. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>error that occured</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Tools/CommonTools.cs" line="76" column="28" bodyfile="EEGGaming.Core/Tools/CommonTools.cs" bodystart="76" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="class_e_e_g_gaming_1_1_core_1_1_tools_1_1_common_tools_1af5e4da4a0dc588a37a4c7f1068e18b59" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>static string EEGGaming.Core.Tools.CommonTools.GetAppRootBinaryFolderAbsolutePath</definition>
+        <argsstring>()</argsstring>
+        <name>GetAppRootBinaryFolderAbsolutePath</name>
+        <qualifiedname>EEGGaming.Core.Tools.CommonTools.GetAppRootBinaryFolderAbsolutePath</qualifiedname>
+        <briefdescription>
+<para>Gets the absolute path of the app&apos;s binary folder. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the absolute path of the app&apos;s binary folder</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Tools/CommonTools.cs" line="103" column="30" bodyfile="EEGGaming.Core/Tools/CommonTools.cs" bodystart="103" bodyend="137"/>
+      </memberdef>
+      <memberdef kind="function" id="class_e_e_g_gaming_1_1_core_1_1_tools_1_1_common_tools_1a3079777a63080f7f88a5f28bb8ac786f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>static string EEGGaming.Core.Tools.CommonTools.GetAppRootDataFolderAbsolutePath</definition>
+        <argsstring>()</argsstring>
+        <name>GetAppRootDataFolderAbsolutePath</name>
+        <qualifiedname>EEGGaming.Core.Tools.CommonTools.GetAppRootDataFolderAbsolutePath</qualifiedname>
+        <briefdescription>
+<para>gets the absolute path of app&apos;s data folder </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>absolute path of app&apos;s data folder</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Tools/CommonTools.cs" line="142" column="30" bodyfile="EEGGaming.Core/Tools/CommonTools.cs" bodystart="142" bodyend="177"/>
+      </memberdef>
+      <memberdef kind="function" id="class_e_e_g_gaming_1_1_core_1_1_tools_1_1_common_tools_1a59d8e947e9e71640e1eaf70fb75bf42a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void EEGGaming.Core.Tools.CommonTools.CreateAppRootdataFolder</definition>
+        <argsstring>()</argsstring>
+        <name>CreateAppRootdataFolder</name>
+        <qualifiedname>EEGGaming.Core.Tools.CommonTools.CreateAppRootdataFolder</qualifiedname>
+        <briefdescription>
+<para>Createsthe app&apos;s data folder. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Tools/CommonTools.cs" line="181" column="28" bodyfile="EEGGaming.Core/Tools/CommonTools.cs" bodystart="181" bodyend="199"/>
+      </memberdef>
+      <memberdef kind="function" id="class_e_e_g_gaming_1_1_core_1_1_tools_1_1_common_tools_1abc9d2f32eaa71518650c4b010557d60f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>static string EEGGaming.Core.Tools.CommonTools.GetEEGGamingCoreVersion</definition>
+        <argsstring>()</argsstring>
+        <name>GetEEGGamingCoreVersion</name>
+        <qualifiedname>EEGGaming.Core.Tools.CommonTools.GetEEGGamingCoreVersion</qualifiedname>
+        <briefdescription>
+<para>Gets the version of <ref refid="namespace_e_e_g_gaming" kindref="compound">EEGGaming</ref> <ref refid="namespace_e_e_g_gaming_1_1_core" kindref="compound">Core</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>version of <ref refid="namespace_e_e_g_gaming" kindref="compound">EEGGaming</ref> <ref refid="namespace_e_e_g_gaming_1_1_core" kindref="compound">Core</ref></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Tools/CommonTools.cs" line="207" column="30" bodyfile="EEGGaming.Core/Tools/CommonTools.cs" bodystart="207" bodyend="223"/>
+      </memberdef>
+      <memberdef kind="function" id="class_e_e_g_gaming_1_1_core_1_1_tools_1_1_common_tools_1af25b2229b38ff9fec1e67d2f5560b521" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>static string EEGGaming.Core.Tools.CommonTools.GetBlinkBirdbVersion</definition>
+        <argsstring>()</argsstring>
+        <name>GetBlinkBirdbVersion</name>
+        <qualifiedname>EEGGaming.Core.Tools.CommonTools.GetBlinkBirdbVersion</qualifiedname>
+        <briefdescription>
+<para>Gets the version of Blinkbird. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>version of Blinkbird</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Tools/CommonTools.cs" line="228" column="30" bodyfile="EEGGaming.Core/Tools/CommonTools.cs" bodystart="228" bodyend="248"/>
+      </memberdef>
+      <memberdef kind="function" id="class_e_e_g_gaming_1_1_core_1_1_tools_1_1_common_tools_1ab0b0db218160b2829b0660a8c89643c4" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>static string EEGGaming.Core.Tools.CommonTools.GetBlinkBirdDeveloper</definition>
+        <argsstring>()</argsstring>
+        <name>GetBlinkBirdDeveloper</name>
+        <qualifiedname>EEGGaming.Core.Tools.CommonTools.GetBlinkBirdDeveloper</qualifiedname>
+        <briefdescription>
+<para>Gets the Developer of BlinkBird. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Developer of BlinkBird</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Tools/CommonTools.cs" line="253" column="30" bodyfile="EEGGaming.Core/Tools/CommonTools.cs" bodystart="253" bodyend="276"/>
+      </memberdef>
+      <memberdef kind="function" id="class_e_e_g_gaming_1_1_core_1_1_tools_1_1_common_tools_1a09c990166b3450b743f6eec0eeb61683" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>static string EEGGaming.Core.Tools.CommonTools.GetBlinkBirdCopyright</definition>
+        <argsstring>()</argsstring>
+        <name>GetBlinkBirdCopyright</name>
+        <qualifiedname>EEGGaming.Core.Tools.CommonTools.GetBlinkBirdCopyright</qualifiedname>
+        <briefdescription>
+<para>gwts the copyright of blinkbird </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the copyright of blinkbird</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Tools/CommonTools.cs" line="281" column="30" bodyfile="EEGGaming.Core/Tools/CommonTools.cs" bodystart="281" bodyend="304"/>
+      </memberdef>
+      <memberdef kind="function" id="class_e_e_g_gaming_1_1_core_1_1_tools_1_1_common_tools_1af122948c33cabf286bc8b242ddbbd87a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>static string EEGGaming.Core.Tools.CommonTools.GetEEGGamingCoreDeveloper</definition>
+        <argsstring>()</argsstring>
+        <name>GetEEGGamingCoreDeveloper</name>
+        <qualifiedname>EEGGaming.Core.Tools.CommonTools.GetEEGGamingCoreDeveloper</qualifiedname>
+        <briefdescription>
+<para>Gets the developer of <ref refid="namespace_e_e_g_gaming" kindref="compound">EEGGaming</ref> <ref refid="namespace_e_e_g_gaming_1_1_core" kindref="compound">Core</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>developer of <ref refid="namespace_e_e_g_gaming" kindref="compound">EEGGaming</ref> <ref refid="namespace_e_e_g_gaming_1_1_core" kindref="compound">Core</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Tools/CommonTools.cs" line="310" column="30" bodyfile="EEGGaming.Core/Tools/CommonTools.cs" bodystart="310" bodyend="333"/>
+      </memberdef>
+      <memberdef kind="function" id="class_e_e_g_gaming_1_1_core_1_1_tools_1_1_common_tools_1ac63619323565e63d6a7e4bac1bfdf08a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>static string EEGGaming.Core.Tools.CommonTools.GetEEGGamingCoreCopyright</definition>
+        <argsstring>()</argsstring>
+        <name>GetEEGGamingCoreCopyright</name>
+        <qualifiedname>EEGGaming.Core.Tools.CommonTools.GetEEGGamingCoreCopyright</qualifiedname>
+        <briefdescription>
+<para>Gets the copyright of <ref refid="namespace_e_e_g_gaming" kindref="compound">EEGGaming</ref> <ref refid="namespace_e_e_g_gaming_1_1_core" kindref="compound">Core</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>copyright of <ref refid="namespace_e_e_g_gaming" kindref="compound">EEGGaming</ref> <ref refid="namespace_e_e_g_gaming_1_1_core" kindref="compound">Core</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Tools/CommonTools.cs" line="338" column="30" bodyfile="EEGGaming.Core/Tools/CommonTools.cs" bodystart="338" bodyend="361"/>
+      </memberdef>
+      <memberdef kind="function" id="class_e_e_g_gaming_1_1_core_1_1_tools_1_1_common_tools_1af855835037afae36f06cb3ae7e024ce9" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>static string EEGGaming.Core.Tools.CommonTools.GetEEGGamingCoreLastModifiedDateUTC</definition>
+        <argsstring>()</argsstring>
+        <name>GetEEGGamingCoreLastModifiedDateUTC</name>
+        <qualifiedname>EEGGaming.Core.Tools.CommonTools.GetEEGGamingCoreLastModifiedDateUTC</qualifiedname>
+        <briefdescription>
+<para>Gets the date <ref refid="namespace_e_e_g_gaming" kindref="compound">EEGGaming</ref> <ref refid="namespace_e_e_g_gaming_1_1_core" kindref="compound">Core</ref> last modified <linebreak/>
+ </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>date <ref refid="namespace_e_e_g_gaming" kindref="compound">EEGGaming</ref> <ref refid="namespace_e_e_g_gaming_1_1_core" kindref="compound">Core</ref> last modified </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Tools/CommonTools.cs" line="366" column="30" bodyfile="EEGGaming.Core/Tools/CommonTools.cs" bodystart="366" bodyend="383"/>
+      </memberdef>
+      <memberdef kind="function" id="class_e_e_g_gaming_1_1_core_1_1_tools_1_1_common_tools_1afe7f237c5369d70ce34383caa3be37c1" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>static string EEGGaming.Core.Tools.CommonTools.GetBlickBirdbLastModifiedDateUTC</definition>
+        <argsstring>()</argsstring>
+        <name>GetBlickBirdbLastModifiedDateUTC</name>
+        <qualifiedname>EEGGaming.Core.Tools.CommonTools.GetBlickBirdbLastModifiedDateUTC</qualifiedname>
+        <briefdescription>
+<para>Gets the date BlinkBird last modified. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>date BlinkBird last modified</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Tools/CommonTools.cs" line="388" column="30" bodyfile="EEGGaming.Core/Tools/CommonTools.cs" bodystart="388" bodyend="405"/>
+      </memberdef>
+      <memberdef kind="function" id="class_e_e_g_gaming_1_1_core_1_1_tools_1_1_common_tools_1acf9d4d882562f7b13e3c770f9a1b3d83" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>static string EEGGaming.Core.Tools.CommonTools.GetBlinBirdMD5Hash</definition>
+        <argsstring>()</argsstring>
+        <name>GetBlinBirdMD5Hash</name>
+        <qualifiedname>EEGGaming.Core.Tools.CommonTools.GetBlinBirdMD5Hash</qualifiedname>
+        <briefdescription>
+<para>Gets the MDM5 Hash of Blinkbird. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Hash of Blinkbird </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Tools/CommonTools.cs" line="411" column="30" bodyfile="EEGGaming.Core/Tools/CommonTools.cs" bodystart="411" bodyend="442"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Class with some common tools. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="EEGGaming.Core/Tools/CommonTools.cs" line="17" column="11" bodyfile="EEGGaming.Core/Tools/CommonTools.cs" bodystart="18" bodyend="443"/>
+    <listofallmembers>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_tools_1_1_common_tools_1a59d8e947e9e71640e1eaf70fb75bf42a" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Tools::CommonTools</scope><name>CreateAppRootdataFolder</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_tools_1_1_common_tools_1a2a61dee054c1fe610362b6c30c92a4ed" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Tools::CommonTools</scope><name>CreateLogger</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_tools_1_1_common_tools_1ab1955212d49d99feb256f092999cde4b" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Tools::CommonTools</scope><name>ErrorReporting</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_tools_1_1_common_tools_1af5e4da4a0dc588a37a4c7f1068e18b59" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Tools::CommonTools</scope><name>GetAppRootBinaryFolderAbsolutePath</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_tools_1_1_common_tools_1a3079777a63080f7f88a5f28bb8ac786f" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Tools::CommonTools</scope><name>GetAppRootDataFolderAbsolutePath</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_tools_1_1_common_tools_1afe7f237c5369d70ce34383caa3be37c1" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Tools::CommonTools</scope><name>GetBlickBirdbLastModifiedDateUTC</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_tools_1_1_common_tools_1acf9d4d882562f7b13e3c770f9a1b3d83" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Tools::CommonTools</scope><name>GetBlinBirdMD5Hash</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_tools_1_1_common_tools_1af25b2229b38ff9fec1e67d2f5560b521" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Tools::CommonTools</scope><name>GetBlinkBirdbVersion</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_tools_1_1_common_tools_1a09c990166b3450b743f6eec0eeb61683" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Tools::CommonTools</scope><name>GetBlinkBirdCopyright</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_tools_1_1_common_tools_1ab0b0db218160b2829b0660a8c89643c4" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Tools::CommonTools</scope><name>GetBlinkBirdDeveloper</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_tools_1_1_common_tools_1ac63619323565e63d6a7e4bac1bfdf08a" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Tools::CommonTools</scope><name>GetEEGGamingCoreCopyright</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_tools_1_1_common_tools_1af122948c33cabf286bc8b242ddbbd87a" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Tools::CommonTools</scope><name>GetEEGGamingCoreDeveloper</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_tools_1_1_common_tools_1af855835037afae36f06cb3ae7e024ce9" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Tools::CommonTools</scope><name>GetEEGGamingCoreLastModifiedDateUTC</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_tools_1_1_common_tools_1abc9d2f32eaa71518650c4b010557d60f" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Tools::CommonTools</scope><name>GetEEGGamingCoreVersion</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_tools_1_1_common_tools_1aba6000732ddd88a2b590bbfc8b91227c" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Tools::CommonTools</scope><name>isEmpty</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_tools_1_1_common_tools_1a59b634479a1286147fe0bc7d4f8aab21" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Tools::CommonTools</scope><name>logger</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

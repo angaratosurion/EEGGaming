@@ -12,7 +12,7 @@ using System.Text;
 namespace EEGGaming.Core.Tools
 {
     /// <summary>
-    /// Classwith some common tools
+    /// Class with some common tools
     /// </summary>
     public  class CommonTools
     {

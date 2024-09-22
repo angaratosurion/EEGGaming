@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="_e_e_g_gaming_db_context_8cs" kind="file" language="C#">
+    <compoundname>EEGGamingDbContext.cs</compoundname>
+    <innerclass refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_e_e_g_gaming_db_context" prot="public">EEGGaming::Core::Data::EEGGamingDbContext</innerclass>
+    <innernamespace refid="namespace_e_e_g_gaming">EEGGaming</innernamespace>
+    <innernamespace refid="namespace_e_e_g_gaming_1_1_core">EEGGaming::Core</innernamespace>
+    <innernamespace refid="namespace_e_e_g_gaming_1_1_core_1_1_data">EEGGaming::Core::Data</innernamespace>
+    <innernamespace refid="namespace_microsoft_1_1_entity_framework_core">Microsoft::EntityFrameworkCore</innernamespace>
+    <innernamespace refid="namespace_system_1_1_runtime_1_1_compiler_services">System::Runtime::CompilerServices</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespace_e_e_g_gaming_1_1_core_1_1_data_1_1_models" kindref="compound">EEGGaming.Core.Data.Models</ref>;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespace_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models" kindref="compound">EEGGaming.Core.Data.NonDataModels</ref>;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespace_e_e_g_gaming_1_1_core_1_1_managers" kindref="compound">EEGGaming.Core.Managers</ref>;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">Microsoft.EntityFrameworkCore;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">System.Runtime.CompilerServices;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="namespace_e_e_g_gaming" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_e_e_g_gaming_1_1_core_1_1_data" kindref="compound">EEGGaming.Core.Data</ref></highlight></codeline>
+<codeline lineno="11"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="15" refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_e_e_g_gaming_db_context" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_e_e_g_gaming_db_context" kindref="compound">EEGGamingDbContext</ref><sp/>:DbContext</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="20" refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_e_e_g_gaming_db_context_1a0f17625312a5737ba95ac3fe8e21283b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>DbSet&lt;User&gt;<sp/><ref refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_e_e_g_gaming_db_context_1a0f17625312a5737ba95ac3fe8e21283b" kindref="member">Users</ref><sp/>{<sp/></highlight><highlight class="keyword">get</highlight><highlight class="normal">;<sp/></highlight><highlight class="keyword">set</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="24" refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_e_e_g_gaming_db_context_1ae62471c783a52de6ef13fff69e94ba1b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>DbSet&lt;GamingSesion&gt;<sp/><ref refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_e_e_g_gaming_db_context_1ae62471c783a52de6ef13fff69e94ba1b" kindref="member">GameSession</ref><sp/>{<sp/></highlight><highlight class="keyword">get</highlight><highlight class="normal">;<sp/></highlight><highlight class="keyword">set</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="28" refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_e_e_g_gaming_db_context_1aced33b3c1fbc02b3af79915746681145" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>DbSet&lt;BrainwavesRecord&gt;<sp/><ref refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_e_e_g_gaming_db_context_1aced33b3c1fbc02b3af79915746681145" kindref="member">BrainWaves</ref>{<sp/></highlight><highlight class="keyword">get</highlight><highlight class="normal">;<sp/></highlight><highlight class="keyword">set</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_e_e_g_gaming_db_context" kindref="compound">EEGGamingDbContext</ref>(<sp/>)</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_e_e_g_gaming_db_context" kindref="compound">EEGGamingDbContext</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>DefaultConnection)<sp/><sp/></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>OnConfiguring(DbContextOptionsBuilder<sp/>optionsBuilder)</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>base.OnConfiguring(optionsBuilder);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>optionsBuilder.UseSqlite(AppSettingsManager.GetDefaultConnectionString());</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>OnModelCreating(ModelBuilder<sp/>modelBuilder)</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>modelBuilder.Entity&lt;<ref refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_brainwaves_record" kindref="compound">BrainwavesRecord</ref>&gt;()</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.Property(e<sp/>=&gt;<sp/>e.Id)</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.ValueGeneratedOnAdd();</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="59"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="EEGGaming.Core/Data/EEGGamingDbContext.cs"/>
+  </compounddef>
+</doxygen>

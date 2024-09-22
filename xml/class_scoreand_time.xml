@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="class_scoreand_time" kind="class" language="C#" prot="public">
+    <compoundname>ScoreandTime</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">HSplitContainer</basecompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_scoreand_time_1acf43770672e85c74a49c81f43c4298f4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void ScoreandTime._Ready</definition>
+        <argsstring>()</argsstring>
+        <name>_Ready</name>
+        <qualifiedname>ScoreandTime._Ready</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BlinkBird/Code/ScoreandTime.cs" line="9" column="26" bodyfile="BlinkBird/Code/ScoreandTime.cs" bodystart="9" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scoreand_time_1a8bf79ff48867eec632f94934b1f77cb5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void ScoreandTime._Process</definition>
+        <argsstring>(double delta)</argsstring>
+        <name>_Process</name>
+        <qualifiedname>ScoreandTime._Process</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>delta</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BlinkBird/Code/ScoreandTime.cs" line="15" column="22" bodyfile="BlinkBird/Code/ScoreandTime.cs" bodystart="15" bodyend="23"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>HSplitContainer</label>
+      </node>
+      <node id="1">
+        <label>ScoreandTime</label>
+        <link refid="class_scoreand_time"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>HSplitContainer</label>
+      </node>
+      <node id="1">
+        <label>ScoreandTime</label>
+        <link refid="class_scoreand_time"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="BlinkBird/Code/ScoreandTime.cs" line="5" column="15" bodyfile="BlinkBird/Code/ScoreandTime.cs" bodystart="6" bodyend="24"/>
+    <listofallmembers>
+      <member refid="class_scoreand_time_1a8bf79ff48867eec632f94934b1f77cb5" prot="public" virt="non-virtual"><scope>ScoreandTime</scope><name>_Process</name></member>
+      <member refid="class_scoreand_time_1acf43770672e85c74a49c81f43c4298f4" prot="public" virt="non-virtual"><scope>ScoreandTime</scope><name>_Ready</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

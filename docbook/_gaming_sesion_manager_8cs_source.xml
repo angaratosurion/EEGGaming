@@ -1,0 +1,166 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__gaming_sesion_manager_8cs_source" xml:lang="en-US">
+<title>GamingSesionManager.cs</title>
+<indexterm><primary>EEGGaming.Core/Managers/GamingSesionManager.cs</primary></indexterm>
+<programlisting linenumbering="unnumbered"><anchor xml:id="__gaming_sesion_manager_8cs_source_1l00001"/>00001 <emphasis role="keyword">using&#32;</emphasis><link linkend="_namespace_e_e_g_gaming_1_1_core_1_1_data_1_1_models">EEGGaming.Core.Data.Models</link>;
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00002"/>00002 <emphasis role="keyword">using&#32;</emphasis><link linkend="_namespace_e_e_g_gaming_1_1_core_1_1_data">EEGGaming.Core.Data</link>;
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00003"/>00003 <emphasis role="keyword">using&#32;</emphasis><link linkend="_namespace_e_e_g_gaming_1_1_core_1_1_tools">EEGGaming.Core.Tools</link>;
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00004"/>00004 <emphasis role="keyword">using&#32;</emphasis>System;
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00005"/>00005 <emphasis role="keyword">using&#32;</emphasis>System.Collections.Generic;
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00006"/>00006 <emphasis role="keyword">using&#32;</emphasis>System.Linq;
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00007"/>00007 <emphasis role="keyword">using&#32;</emphasis>System.Text;
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00008"/>00008 <emphasis role="keyword">using&#32;</emphasis>System.Threading.Tasks;
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00009"/>00009 <emphasis role="keyword">using&#32;</emphasis><link linkend="_namespace_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models">EEGGaming.Core.Data.NonDataModels</link>;
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00010"/>00010 
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00011"/>00011 <emphasis role="keyword">namespace&#32;</emphasis><link linkend="_namespace_e_e_g_gaming_1_1_core_1_1_managers">EEGGaming.Core.Managers</link>
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00012"/>00012 {
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00015"/><link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_gaming_sesion_manager">00015</link> &#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;&#32;<emphasis role="keyword">class&#32;</emphasis><link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_gaming_sesion_manager">GamingSesionManager</link>:<link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_base_manager">BaseManager</link>
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00016"/>00016 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00021"/><link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_gaming_sesion_manager_1a2a50694374519532ca716f7c7c15a71e">00021</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_gaming_sesion_manager_1a2a50694374519532ca716f7c7c15a71e">List&lt;GamingSesion&gt;</link>&#32;<link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_gaming_sesion_manager_1a2a50694374519532ca716f7c7c15a71e">List</link>()
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00022"/>00022 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00023"/>00023 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">try</emphasis>
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00024"/>00024 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00025"/>00025 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;this.DbContext.GameSession.ToList();
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00026"/>00026 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00027"/>00027 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">catch</emphasis>&#32;(Exception&#32;ex)
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00028"/>00028 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00029"/>00029 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_e_e_g_gaming_1_1_core_1_1_tools_1_1_common_tools">CommonTools</link>.<link linkend="_class_e_e_g_gaming_1_1_core_1_1_tools_1_1_common_tools_1ab1955212d49d99feb256f092999cde4b">ErrorReporting</link>(ex);
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00030"/>00030 
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00031"/>00031 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;<emphasis role="keyword">null</emphasis>;
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00032"/>00032 
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00033"/>00033 
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00034"/>00034 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00035"/>00035 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00040"/><link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_gaming_sesion_manager_1a7619f530f8ca34c9ad89f88e1a61fcfb">00040</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_gaming_sesion_manager_1a2a50694374519532ca716f7c7c15a71e">List&lt;GmingSessionViewModel&gt;</link>&#32;<link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_gaming_sesion_manager_1a7619f530f8ca34c9ad89f88e1a61fcfb">ListasViewModel</link>()
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00041"/>00041 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00042"/>00042 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">try</emphasis>
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00043"/>00043 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00044"/>00044 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_gaming_sesion_manager_1a2a50694374519532ca716f7c7c15a71e">List&lt;GmingSessionViewModel&gt;</link>&#32;ap&#32;=&#32;<emphasis role="keyword">null</emphasis>;
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00045"/>00045 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;var&#32;sessions&#32;=&#32;this.<link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_gaming_sesion_manager_1a2a50694374519532ca716f7c7c15a71e">List</link>();
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00046"/>00046 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(sessions&#32;!=&#32;<emphasis role="keyword">null</emphasis>)
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00047"/>00047 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00048"/>00048 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;ap&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;<link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_gaming_sesion_manager_1a2a50694374519532ca716f7c7c15a71e">List&lt;GmingSessionViewModel&gt;</link>();
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00049"/>00049 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">foreach</emphasis>&#32;(var&#32;session&#32;<emphasis role="keywordflow">in</emphasis>&#32;sessions)
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00050"/>00050 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00051"/>00051 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_gming_session_view_model">GmingSessionViewModel</link>&#32;vm&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;<link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_gming_session_view_model">GmingSessionViewModel</link>();
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00052"/>00052 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;vm.<link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_gming_session_view_model_1aca2a41f4c7b35096799bb3684c529e8d">ImportToModel</link>(session);
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00053"/>00053 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;ap.Add(vm);
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00054"/>00054 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00055"/>00055 
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00056"/>00056 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00057"/>00057 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;ap;
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00058"/>00058 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00059"/>00059 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">catch</emphasis>&#32;(Exception&#32;ex)
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00060"/>00060 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00061"/>00061 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_e_e_g_gaming_1_1_core_1_1_tools_1_1_common_tools">CommonTools</link>.<link linkend="_class_e_e_g_gaming_1_1_core_1_1_tools_1_1_common_tools_1ab1955212d49d99feb256f092999cde4b">ErrorReporting</link>(ex);
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00062"/>00062 
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00063"/>00063 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;<emphasis role="keyword">null</emphasis>;
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00064"/>00064 
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00065"/>00065 
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00066"/>00066 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00067"/>00067 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00073"/><link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_gaming_sesion_manager_1a10e6347d9ac5b94d1cbb262df71ea872">00073</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion">GamingSesion</link>&#32;<link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_gaming_sesion_manager_1a10e6347d9ac5b94d1cbb262df71ea872">Get</link>(<emphasis role="keywordtype">int</emphasis>&#32;<emphasis role="keywordtype">id</emphasis>)
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00074"/>00074 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00075"/>00075 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">try</emphasis>
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00076"/>00076 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{&#32;<link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion">GamingSesion</link>&#32;ap=&#32;<emphasis role="keyword">null</emphasis>;
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00077"/>00077 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;ap=&#32;this.DbContext.GameSession.Find(<emphasis role="keywordtype">id</emphasis>);
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00078"/>00078 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//if&#32;(ap&#32;!=&#32;null)</emphasis>
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00079"/>00079 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//{</emphasis>
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00080"/>00080 
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00081"/>00081 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;ap;
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00082"/>00082 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//}</emphasis>
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00083"/>00083 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;&#32;&#32;&#32;else</emphasis>
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00084"/>00084 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//{</emphasis>
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00085"/>00085 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;&#32;&#32;&#32;ap&#32;=&#32;new&#32;GamingSesion();</emphasis>
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00086"/>00086 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;&#32;&#32;&#32;return&#32;ap;</emphasis>
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00087"/>00087 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//}</emphasis>
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00088"/>00088 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00089"/>00089 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">catch</emphasis>&#32;(Exception&#32;ex)
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00090"/>00090 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00091"/>00091 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_e_e_g_gaming_1_1_core_1_1_tools_1_1_common_tools">CommonTools</link>.<link linkend="_class_e_e_g_gaming_1_1_core_1_1_tools_1_1_common_tools_1ab1955212d49d99feb256f092999cde4b">ErrorReporting</link>(ex);
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00092"/>00092 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;<emphasis role="keyword">null</emphasis>;
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00093"/>00093 
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00094"/>00094 
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00095"/>00095 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00096"/>00096 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00102"/><link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_gaming_sesion_manager_1aa0281778dd85a9e0d4fd057dced33f8e">00102</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_gaming_sesion_manager_1aa0281778dd85a9e0d4fd057dced33f8e">Exists</link>(<emphasis role="keywordtype">int</emphasis>&#32;<emphasis role="keywordtype">id</emphasis>)
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00103"/>00103 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00104"/>00104 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">try</emphasis>
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00105"/>00105 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00106"/>00106 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;exists&#32;=&#32;<emphasis role="keyword">false</emphasis>;
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00107"/>00107 
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00108"/>00108 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(this.<link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_gaming_sesion_manager_1a10e6347d9ac5b94d1cbb262df71ea872">Get</link>(<emphasis role="keywordtype">id</emphasis>)&#32;!=&#32;<emphasis role="keyword">null</emphasis>)
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00109"/>00109 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{&#32;exists&#32;=&#32;<emphasis role="keyword">true</emphasis>;&#32;}
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00110"/>00110 
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00111"/>00111 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;exists;
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00112"/>00112 
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00113"/>00113 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00114"/>00114 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">catch</emphasis>&#32;(Exception&#32;ex)
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00115"/>00115 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00116"/>00116 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;<emphasis role="keyword">false</emphasis>;
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00117"/>00117 
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00118"/>00118 
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00119"/>00119 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00120"/>00120 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00125"/><link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_gaming_sesion_manager_1a2d2589c4a290f77f776662e0a2197586">00125</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_gaming_sesion_manager_1a2d2589c4a290f77f776662e0a2197586">Update</link>(<link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion">GamingSesion</link>&#32;gamingSesion)
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00126"/>00126 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00127"/>00127 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">try</emphasis>
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00128"/>00128 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00129"/>00129 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(gamingSesion&#32;!=&#32;<emphasis role="keyword">null</emphasis>&#32;&amp;&amp;&#32;this.<link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_gaming_sesion_manager_1aa0281778dd85a9e0d4fd057dced33f8e">Exists</link>(gamingSesion.<link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion_1ae768cd0296695bb3d3f346ae5cb67ab6">Id</link>))
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00130"/>00130 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00131"/>00131 
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00132"/>00132 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;var&#32;oldvalues&#32;=&#32;this.<link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_gaming_sesion_manager_1a10e6347d9ac5b94d1cbb262df71ea872">Get</link>(gamingSesion.<link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion_1ae768cd0296695bb3d3f346ae5cb67ab6">Id</link>);
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00133"/>00133 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.DbContext.Entry(oldvalues).State&#32;=&#32;Microsoft.EntityFrameworkCore.EntityState.Modified;
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00134"/>00134 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.DbContext.SaveChanges();
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00135"/>00135 
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00136"/>00136 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00137"/>00137 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00138"/>00138 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">catch</emphasis>&#32;(Exception&#32;ex)
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00139"/>00139 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00140"/>00140 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_e_e_g_gaming_1_1_core_1_1_tools_1_1_common_tools">CommonTools</link>.<link linkend="_class_e_e_g_gaming_1_1_core_1_1_tools_1_1_common_tools_1ab1955212d49d99feb256f092999cde4b">ErrorReporting</link>(ex);
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00141"/>00141 
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00142"/>00142 
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00143"/>00143 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00144"/>00144 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00149"/><link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_gaming_sesion_manager_1aaa3bdbc922da5afc95591467af76fe92">00149</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_gaming_sesion_manager_1aaa3bdbc922da5afc95591467af76fe92">Delete</link>(<emphasis role="keywordtype">int</emphasis>&#32;<emphasis role="keywordtype">id</emphasis>)
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00150"/>00150 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00151"/>00151 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">try</emphasis>
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00152"/>00152 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00153"/>00153 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(this.<link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_gaming_sesion_manager_1aa0281778dd85a9e0d4fd057dced33f8e">Exists</link>(<emphasis role="keywordtype">id</emphasis>))
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00154"/>00154 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00155"/>00155 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;var&#32;&#32;tobedelete&#32;=&#32;this.<link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_gaming_sesion_manager_1a10e6347d9ac5b94d1cbb262df71ea872">Get</link>(<emphasis role="keywordtype">id</emphasis>);
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00156"/>00156 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.DbContext.GameSession.Remove(&#32;tobedelete);
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00157"/>00157 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.DbContext.SaveChanges();
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00158"/>00158 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00159"/>00159 
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00160"/>00160 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00161"/>00161 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">catch</emphasis>&#32;(Exception&#32;ex)
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00162"/>00162 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00163"/>00163 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_e_e_g_gaming_1_1_core_1_1_tools_1_1_common_tools">CommonTools</link>.<link linkend="_class_e_e_g_gaming_1_1_core_1_1_tools_1_1_common_tools_1ab1955212d49d99feb256f092999cde4b">ErrorReporting</link>(ex);
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00164"/>00164 
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00165"/>00165 
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00166"/>00166 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00167"/>00167 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00173"/><link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_gaming_sesion_manager_1a81fddbba739d42b0481ad9c67de0f335">00173</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion">GamingSesion</link>&#32;<link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_gaming_sesion_manager_1a81fddbba739d42b0481ad9c67de0f335">AddGamingSession</link>(<link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion">GamingSesion</link>&#32;gamingSesion)
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00174"/>00174 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00175"/>00175 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">try</emphasis>
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00176"/>00176 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00177"/>00177 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion">GamingSesion</link>&#32;ap&#32;=&#32;<emphasis role="keyword">null</emphasis>;
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00178"/>00178 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;<emphasis role="keywordtype">id</emphasis>&#32;=&#32;this.<link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_base_manager_1a7c286778992f94800563ebdbc55ff778">PredictLastId</link>(<emphasis role="stringliteral">&quot;GamingSesion&quot;</emphasis>)&#32;+1;
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00179"/>00179 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;gamingSesion.<link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion_1ae768cd0296695bb3d3f346ae5cb67ab6">Id</link>=&#32;id;
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00180"/>00180 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.DbContext.GameSession.Add(gamingSesion);
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00181"/>00181 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.DbContext.SaveChanges();
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00182"/>00182 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;ap&#32;=&#32;gamingSesion;
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00183"/>00183 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;ap;
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00184"/>00184 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00185"/>00185 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">catch</emphasis>&#32;(Exception&#32;ex)
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00186"/>00186 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00187"/>00187 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">throw</emphasis>;
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00188"/>00188 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_e_e_g_gaming_1_1_core_1_1_tools_1_1_common_tools">CommonTools</link>.<link linkend="_class_e_e_g_gaming_1_1_core_1_1_tools_1_1_common_tools_1ab1955212d49d99feb256f092999cde4b">ErrorReporting</link>(ex);
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00189"/>00189 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;<emphasis role="keyword">null</emphasis>;
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00190"/>00190 
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00191"/>00191 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00192"/>00192 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00193"/>00193 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__gaming_sesion_manager_8cs_source_1l00194"/>00194 }
+</programlisting></section>

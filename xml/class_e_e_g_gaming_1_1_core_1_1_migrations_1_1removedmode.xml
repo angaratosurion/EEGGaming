@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="class_e_e_g_gaming_1_1_core_1_1_migrations_1_1removedmode" kind="class" language="C#" prot="public">
+    <compoundname>EEGGaming::Core::Migrations::removedmode</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Migration</basecompoundref>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_e_e_g_gaming_1_1_core_1_1_migrations_1_1removedmode_1a1f4cd651e85874c3542280c6a6003226" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void EEGGaming.Core.Migrations.removedmode.Up</definition>
+        <argsstring>(MigrationBuilder migrationBuilder)</argsstring>
+        <name>Up</name>
+        <qualifiedname>EEGGaming.Core.Migrations.removedmode.Up</qualifiedname>
+        <param>
+          <type>MigrationBuilder</type>
+          <declname>migrationBuilder</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Migrations/20240607134527_removedmode.cs" line="11" column="33" bodyfile="EEGGaming.Core/Migrations/20240607134527_removedmode.cs" bodystart="11" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_e_e_g_gaming_1_1_core_1_1_migrations_1_1removedmode_1a73511e5f328f3deeab56564abbde30a0" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void EEGGaming.Core.Migrations.removedmode.Down</definition>
+        <argsstring>(MigrationBuilder migrationBuilder)</argsstring>
+        <name>Down</name>
+        <qualifiedname>EEGGaming.Core.Migrations.removedmode.Down</qualifiedname>
+        <param>
+          <type>MigrationBuilder</type>
+          <declname>migrationBuilder</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Migrations/20240607134527_removedmode.cs" line="19" column="33" bodyfile="EEGGaming.Core/Migrations/20240607134527_removedmode.cs" bodystart="19" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="class_e_e_g_gaming_1_1_core_1_1_migrations_1_1removedmode_1aa1ca4e168606bc3e7d990044225ba567" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void EEGGaming.Core.Migrations.removedmode.BuildTargetModel</definition>
+        <argsstring>(ModelBuilder modelBuilder)</argsstring>
+        <name>BuildTargetModel</name>
+        <qualifiedname>EEGGaming.Core.Migrations.removedmode.BuildTargetModel</qualifiedname>
+        <param>
+          <type>ModelBuilder</type>
+          <declname>modelBuilder</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Migrations/20240607134527_removedmode.Designer.cs" line="18" column="33" bodyfile="EEGGaming.Core/Migrations/20240607134527_removedmode.Designer.cs" bodystart="18" bodyend="142"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>EEGGaming.Core.Migrations.removedmode</label>
+        <link refid="class_e_e_g_gaming_1_1_core_1_1_migrations_1_1removedmode"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Migration</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>EEGGaming.Core.Migrations.removedmode</label>
+        <link refid="class_e_e_g_gaming_1_1_core_1_1_migrations_1_1removedmode"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Migration</label>
+      </node>
+    </collaborationgraph>
+    <location file="EEGGaming.Core/Migrations/20240607134527_removedmode.cs" line="8" column="19" bodyfile="EEGGaming.Core/Migrations/20240607134527_removedmode.Designer.cs" bodystart="16" bodyend="143"/>
+    <listofallmembers>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_migrations_1_1removedmode_1aa1ca4e168606bc3e7d990044225ba567" prot="protected" virt="non-virtual"><scope>EEGGaming::Core::Migrations::removedmode</scope><name>BuildTargetModel</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_migrations_1_1removedmode_1a73511e5f328f3deeab56564abbde30a0" prot="protected" virt="non-virtual"><scope>EEGGaming::Core::Migrations::removedmode</scope><name>Down</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_migrations_1_1removedmode_1a1f4cd651e85874c3542280c6a6003226" prot="protected" virt="non-virtual"><scope>EEGGaming::Core::Migrations::removedmode</scope><name>Up</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

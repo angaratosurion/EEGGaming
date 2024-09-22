@@ -1,0 +1,274 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_user_manager" xml:lang="en-US">
+<title>EEGGaming.Core.Managers.UserManager Class Reference</title>
+<indexterm><primary>EEGGaming.Core.Managers.UserManager</primary></indexterm>
+<para>
+
+<para>Class that manages user&apos;s and their info. </para>
+ 
+</para>
+<para>Inheritance diagram for EEGGaming.Core.Managers.UserManager:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_user_manager.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_user_manager_1a4cd3ef414b3e41132df928da139f1594">AddNew</link> (<link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_user">User</link> user)</para>
+
+<para>Adds new user to the database. </para>
+</listitem>
+            <listitem><para>List&lt; <link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_user">User</link> &gt; <link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_user_manager_1a0ae10eef0d5cff01c0ededc365fcbd36">List</link> ()</para>
+
+<para>Gets all the users. </para>
+</listitem>
+            <listitem><para><link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_user">User</link> <link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_user_manager_1a6d1e2fec4d0b142fa2e4696143097dd7">GetUser</link> (int id)</para>
+
+<para>Gets the user of the given id. </para>
+</listitem>
+            <listitem><para><link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_user">User</link> <link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_user_manager_1a1e0960fe023e651636051f9fd0755e9f">GetUser</link> (string name)</para>
+
+<para>Gets the user of the given name. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_user_manager_1ad1823ce41c75fd374eca468c3218617d">Edit</link> (int? id, <link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_user">User</link> user)</para>
+
+<para>Edits the info of the user with the given id. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_user_manager_1a6cda0cd8ba728074da56a55dfbb941af">Delete</link> (string username)</para>
+
+<para>Deletes theuser with the given nme. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Public Member Functions inherited from <link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_base_manager">EEGGaming.Core.Managers.BaseManager</link>        <itemizedlist>
+            <listitem><para>void <link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_base_manager_1a9248c1be1118bf2a1da15a2ba731a4fc">CreateDatabase</link> ()</para>
+
+<para>Creates the Database. </para>
+</listitem>
+            <listitem><para>int <link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_base_manager_1a7c286778992f94800563ebdbc55ff778">PredictLastId</link> (string tablename)</para>
+
+<para>It predicts the last value of the id&apos;s property from the given table&apos;s name. </para>
+</listitem>
+        </itemizedlist>
+<simplesect>
+    <title>Additional Inherited Members    </title>
+Properties inherited from <link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_base_manager">EEGGaming.Core.Managers.BaseManager</link>        <itemizedlist>
+            <listitem><para><link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_e_e_g_gaming_db_context">EEGGamingDbContext</link> <link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_base_manager_1ab03ecddd3cb836526101a168e1b408ef">DbContext</link><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>The DatabaseContext of the library. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Class that manages user&apos;s and their info. </para>
+<para>
+Definition at line <link linkend="__user_manager_8cs_source_1l00018">18</link> of file <link linkend="__user_manager_8cs_source">UserManager.cs</link>.</para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_user_manager_1a4cd3ef414b3e41132df928da139f1594"/><section>
+    <title>AddNew()</title>
+<indexterm><primary>AddNew</primary><secondary>EEGGaming.Core.Managers.UserManager</secondary></indexterm>
+<indexterm><primary>EEGGaming.Core.Managers.UserManager</primary><secondary>AddNew</secondary></indexterm>
+<para><computeroutput>void EEGGaming.Core.Managers.UserManager.AddNew (<link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_user">User</link> user)</computeroutput></para><para>
+
+<para>Adds new user to the database. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>user</entry><entry>
+<para>new user info</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line <link linkend="__user_manager_8cs_source_1l00024">24</link> of file <link linkend="__user_manager_8cs_source">UserManager.cs</link>.</para>
+</section>
+<anchor xml:id="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_user_manager_1a6cda0cd8ba728074da56a55dfbb941af"/><section>
+    <title>Delete()</title>
+<indexterm><primary>Delete</primary><secondary>EEGGaming.Core.Managers.UserManager</secondary></indexterm>
+<indexterm><primary>EEGGaming.Core.Managers.UserManager</primary><secondary>Delete</secondary></indexterm>
+<para><computeroutput>void EEGGaming.Core.Managers.UserManager.Delete (string username)</computeroutput></para><para>
+
+<para>Deletes theuser with the given nme. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>username</entry><entry>
+<para>name of the user tobeleteed </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line <link linkend="__user_manager_8cs_source_1l00139">139</link> of file <link linkend="__user_manager_8cs_source">UserManager.cs</link>.</para>
+</section>
+<anchor xml:id="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_user_manager_1ad1823ce41c75fd374eca468c3218617d"/><section>
+    <title>Edit()</title>
+<indexterm><primary>Edit</primary><secondary>EEGGaming.Core.Managers.UserManager</secondary></indexterm>
+<indexterm><primary>EEGGaming.Core.Managers.UserManager</primary><secondary>Edit</secondary></indexterm>
+<para><computeroutput>void EEGGaming.Core.Managers.UserManager.Edit (int? id, <link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_user">User</link> user)</computeroutput></para><para>
+
+<para>Edits the info of the user with the given id. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>id</entry><entry>
+<para>id of the user</para>
+</entry>
+                            </row>
+                            <row>
+<entry>user</entry><entry>
+<para>new values of the user</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line <link linkend="__user_manager_8cs_source_1l00110">110</link> of file <link linkend="__user_manager_8cs_source">UserManager.cs</link>.</para>
+</section>
+<anchor xml:id="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_user_manager_1a6d1e2fec4d0b142fa2e4696143097dd7"/><section>
+    <title>GetUser()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>GetUser</primary><secondary>EEGGaming.Core.Managers.UserManager</secondary></indexterm>
+<indexterm><primary>EEGGaming.Core.Managers.UserManager</primary><secondary>GetUser</secondary></indexterm>
+<para><computeroutput><link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_user">User</link> EEGGaming.Core.Managers.UserManager.GetUser (int id)</computeroutput></para><para>
+
+<para>Gets the user of the given id. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>id</entry><entry>
+<para>id of the user we are looking for </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>user of the given id</para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="__user_manager_8cs_source_1l00069">69</link> of file <link linkend="__user_manager_8cs_source">UserManager.cs</link>.</para>
+</section>
+<anchor xml:id="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_user_manager_1a1e0960fe023e651636051f9fd0755e9f"/><section>
+    <title>GetUser()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>GetUser</primary><secondary>EEGGaming.Core.Managers.UserManager</secondary></indexterm>
+<indexterm><primary>EEGGaming.Core.Managers.UserManager</primary><secondary>GetUser</secondary></indexterm>
+<para><computeroutput><link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_user">User</link> EEGGaming.Core.Managers.UserManager.GetUser (string name)</computeroutput></para><para>
+
+<para>Gets the user of the given name. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>name</entry><entry>
+<para>name of the user we are looking for </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>user of the given name</para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="__user_manager_8cs_source_1l00090">90</link> of file <link linkend="__user_manager_8cs_source">UserManager.cs</link>.</para>
+</section>
+<anchor xml:id="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_user_manager_1a0ae10eef0d5cff01c0ededc365fcbd36"/><section>
+    <title>List()</title>
+<indexterm><primary>List</primary><secondary>EEGGaming.Core.Managers.UserManager</secondary></indexterm>
+<indexterm><primary>EEGGaming.Core.Managers.UserManager</primary><secondary>List</secondary></indexterm>
+<para><computeroutput>List&lt; <link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_user">User</link> &gt; EEGGaming.Core.Managers.UserManager.List ( )</computeroutput></para><para>
+
+<para>Gets all the users. </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>all the users</para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="__user_manager_8cs_source_1l00048">48</link> of file <link linkend="__user_manager_8cs_source">UserManager.cs</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+D:/Cloud Folder/OneDrive/My Programs/Post-Graduate/Master in Information Systems (PLS)/Thesis/Code/EEGGaming/EEGGaming.Core/Managers/UserManager.cs</section>
+</section>

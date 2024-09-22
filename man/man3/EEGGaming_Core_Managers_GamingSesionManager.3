@@ -1,0 +1,181 @@
+.TH "EEGGaming.Core.Managers.GamingSesionManager" 3 "Version 0.2.6.0" "EEGGaming And Blinkbird" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+EEGGaming.Core.Managers.GamingSesionManager
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBEEGGaming\&.Core\&.Managers\&.BaseManager\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "List< \fBGamingSesion\fP > \fBList\fP ()"
+.br
+.RI "Get all the gaming sessions\&. "
+.ti -1c
+.RI "\fBList\fP< \fBGmingSessionViewModel\fP > \fBListasViewModel\fP ()"
+.br
+.RI "Get all the gaming sessions as ViewModels\&. "
+.ti -1c
+.RI "\fBGamingSesion\fP \fBGet\fP (int id)"
+.br
+.RI "Gets the gamingsession with the given Id\&. "
+.ti -1c
+.RI "bool \fBExists\fP (int id)"
+.br
+.RI "checks if a gamingsession has thegivn id "
+.ti -1c
+.RI "void \fBUpdate\fP (\fBGamingSesion\fP gamingSesion)"
+.br
+.RI "updates the gamingsession record "
+.ti -1c
+.RI "void \fBDelete\fP (int id)"
+.br
+.RI "Delete the record with thegiven id\&. "
+.ti -1c
+.RI "\fBGamingSesion\fP \fBAddGamingSession\fP (\fBGamingSesion\fP gamingSesion)"
+.br
+.RI "Adds a new record to the gamingsession and it returns it\&. "
+.in -1c
+
+Public Member Functions inherited from \fBEEGGaming\&.Core\&.Managers\&.BaseManager\fP
+.in +1c
+.ti -1c
+.RI "void \fBCreateDatabase\fP ()"
+.br
+.RI "Creates the Database\&. "
+.ti -1c
+.RI "int \fBPredictLastId\fP (string tablename)"
+.br
+.RI "It predicts the last value of the id's property from the given table's name\&. "
+.in -1c
+.SS "Additional Inherited Members"
+
+
+Properties inherited from \fBEEGGaming\&.Core\&.Managers\&.BaseManager\fP
+.in +1c
+.ti -1c
+.RI "\fBEEGGamingDbContext\fP \fBDbContext\fP\fR [get, set]\fP"
+.br
+.RI "The DatabaseContext of the library\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+The Class that manages the gaming sessin 
+.PP
+Definition at line \fB15\fP of file \fBGamingSesionManager\&.cs\fP\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBGamingSesion\fP EEGGaming\&.Core\&.Managers\&.GamingSesionManager\&.AddGamingSession (\fBGamingSesion\fP gamingSesion)"
+
+.PP
+Adds a new record to the gamingsession and it returns it\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIgamingSesion\fP new recordof gamingsession to be added
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+new record to the gamingsession and it returns it 
+.RE
+.PP
+
+.PP
+Definition at line \fB173\fP of file \fBGamingSesionManager\&.cs\fP\&.
+.SS "void EEGGaming\&.Core\&.Managers\&.GamingSesionManager\&.Delete (int id)"
+
+.PP
+Delete the record with thegiven id\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIid\fP idof the record to bedeeted
+.RE
+.PP
+
+.PP
+Definition at line \fB149\fP of file \fBGamingSesionManager\&.cs\fP\&.
+.SS "bool EEGGaming\&.Core\&.Managers\&.GamingSesionManager\&.Exists (int id)"
+
+.PP
+checks if a gamingsession has thegivn id 
+.PP
+\fBParameters\fP
+.RS 4
+\fIid\fP the id of the gamingsession we are searching for 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+true if it exists false it isnt 
+.RE
+.PP
+
+.PP
+Definition at line \fB102\fP of file \fBGamingSesionManager\&.cs\fP\&.
+.SS "\fBGamingSesion\fP EEGGaming\&.Core\&.Managers\&.GamingSesionManager\&.Get (int id)"
+
+.PP
+Gets the gamingsession with the given Id\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIid\fP id of the gamingsession
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+gamingsession with the given Id
+.RE
+.PP
+
+.PP
+Definition at line \fB73\fP of file \fBGamingSesionManager\&.cs\fP\&.
+.SS "List< \fBGamingSesion\fP > EEGGaming\&.Core\&.Managers\&.GamingSesionManager\&.List ()"
+
+.PP
+Get all the gaming sessions\&. 
+.PP
+\fBReturns\fP
+.RS 4
+all the gaming sessions
+.RE
+.PP
+
+.PP
+Definition at line \fB21\fP of file \fBGamingSesionManager\&.cs\fP\&.
+.SS "\fBList\fP< \fBGmingSessionViewModel\fP > EEGGaming\&.Core\&.Managers\&.GamingSesionManager\&.ListasViewModel ()"
+
+.PP
+Get all the gaming sessions as ViewModels\&. 
+.PP
+\fBReturns\fP
+.RS 4
+all the gaming sessions as ViewModels
+.RE
+.PP
+
+.PP
+Definition at line \fB40\fP of file \fBGamingSesionManager\&.cs\fP\&.
+.SS "void EEGGaming\&.Core\&.Managers\&.GamingSesionManager\&.Update (\fBGamingSesion\fP gamingSesion)"
+
+.PP
+updates the gamingsession record 
+.PP
+\fBParameters\fP
+.RS 4
+\fIgamingSesion\fP the new values of gamingsession
+.RE
+.PP
+
+.PP
+Definition at line \fB125\fP of file \fBGamingSesionManager\&.cs\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for EEGGaming And Blinkbird from the source code\&.

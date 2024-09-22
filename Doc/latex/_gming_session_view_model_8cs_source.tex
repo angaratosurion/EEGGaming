@@ -1,0 +1,42 @@
+\doxysection{Gming\+Session\+View\+Model.\+cs}
+\hypertarget{_gming_session_view_model_8cs_source}{}\label{_gming_session_view_model_8cs_source}\index{D:/Cloud Folder/OneDrive/My Programs/Post-\/Graduate/Master in Information Systems (PLS)/Thesis/Code/EEGGaming/EEGGaming.Core/Data/NonDataModels/GmingSessionViewModel.cs@{D:/Cloud Folder/OneDrive/My Programs/Post-\/Graduate/Master in Information Systems (PLS)/Thesis/Code/EEGGaming/EEGGaming.Core/Data/NonDataModels/GmingSessionViewModel.cs}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_gming_session_view_model_8cs_source_l00001}00001\ \textcolor{keyword}{using\ }\mbox{\hyperlink{namespace_e_e_g_gaming_1_1_core_1_1_data_1_1_models}{EEGGaming.Core.Data.Models}};}
+\DoxyCodeLine{\Hypertarget{_gming_session_view_model_8cs_source_l00002}00002\ \textcolor{keyword}{using\ }\mbox{\hyperlink{namespace_e_e_g_gaming_1_1_core_1_1_managers}{EEGGaming.Core.Managers}};}
+\DoxyCodeLine{\Hypertarget{_gming_session_view_model_8cs_source_l00003}00003\ \textcolor{keyword}{using\ }System;}
+\DoxyCodeLine{\Hypertarget{_gming_session_view_model_8cs_source_l00004}00004\ \textcolor{keyword}{using\ }System.Collections.Generic;}
+\DoxyCodeLine{\Hypertarget{_gming_session_view_model_8cs_source_l00005}00005\ \textcolor{keyword}{using\ }System.ComponentModel.DataAnnotations;}
+\DoxyCodeLine{\Hypertarget{_gming_session_view_model_8cs_source_l00006}00006\ \textcolor{keyword}{using\ }System.Linq;}
+\DoxyCodeLine{\Hypertarget{_gming_session_view_model_8cs_source_l00007}00007\ \textcolor{keyword}{using\ }System.Text;}
+\DoxyCodeLine{\Hypertarget{_gming_session_view_model_8cs_source_l00008}00008\ \textcolor{keyword}{using\ }System.Threading.Tasks;}
+\DoxyCodeLine{\Hypertarget{_gming_session_view_model_8cs_source_l00009}00009\ }
+\DoxyCodeLine{\Hypertarget{_gming_session_view_model_8cs_source_l00010}00010\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models}{EEGGaming.Core.Data.NonDataModels}}}
+\DoxyCodeLine{\Hypertarget{_gming_session_view_model_8cs_source_l00011}00011\ \{}
+\DoxyCodeLine{\Hypertarget{_gming_session_view_model_8cs_source_l00014}\mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_gming_session_view_model}{00014}}\ \ \ \ \ \textcolor{keyword}{public}\ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_gming_session_view_model}{GmingSessionViewModel}}:\mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion}{GamingSesion}}}
+\DoxyCodeLine{\Hypertarget{_gming_session_view_model_8cs_source_l00015}00015\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_gming_session_view_model_8cs_source_l00019}00019\ \ \ \ \ \ \ \ \ [Required]}
+\DoxyCodeLine{\Hypertarget{_gming_session_view_model_8cs_source_l00020}00020\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ [Key]}}
+\DoxyCodeLine{\Hypertarget{_gming_session_view_model_8cs_source_l00021}\mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_gming_session_view_model_ab19010b9d5fa93dcfd54d4bf731c5724}{00021}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_gming_session_view_model_ab19010b9d5fa93dcfd54d4bf731c5724}{UserName}}\ \{\ \textcolor{keyword}{get};\ \textcolor{keyword}{set};\ \}}
+\DoxyCodeLine{\Hypertarget{_gming_session_view_model_8cs_source_l00026}\mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_gming_session_view_model_aca2a41f4c7b35096799bb3684c529e8d}{00026}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_gming_session_view_model_aca2a41f4c7b35096799bb3684c529e8d}{ImportToModel}}(\mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion}{GamingSesion}}\ model)}
+\DoxyCodeLine{\Hypertarget{_gming_session_view_model_8cs_source_l00027}00027\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_gming_session_view_model_8cs_source_l00028}00028\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (model\ !=\ \textcolor{keyword}{null})}
+\DoxyCodeLine{\Hypertarget{_gming_session_view_model_8cs_source_l00029}00029\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_gming_session_view_model_8cs_source_l00030}00030\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ this.\mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion_ae768cd0296695bb3d3f346ae5cb67ab6}{Id}}=model.\mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion_ae768cd0296695bb3d3f346ae5cb67ab6}{Id}};}
+\DoxyCodeLine{\Hypertarget{_gming_session_view_model_8cs_source_l00031}00031\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ this.\mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_user}{User}}=model.\mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion_acbce3f3c7d81fe021cca2aba31c1ab6b}{User}};}
+\DoxyCodeLine{\Hypertarget{_gming_session_view_model_8cs_source_l00032}00032\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ this.\mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion_a1691ad2ee4ae57863a57f3ac7a0236e3}{Start}}=model.\mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion_a1691ad2ee4ae57863a57f3ac7a0236e3}{Start}};}
+\DoxyCodeLine{\Hypertarget{_gming_session_view_model_8cs_source_l00033}00033\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ this.\mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion_a409a923d21437aeab8568bd1ddf93252}{End}}=model.\mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion_a409a923d21437aeab8568bd1ddf93252}{End}};\ }
+\DoxyCodeLine{\Hypertarget{_gming_session_view_model_8cs_source_l00034}00034\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ this.\mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion_a16505d61fb4668e87ceba41175ff8478}{Score}}=model.\mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion_a16505d61fb4668e87ceba41175ff8478}{Score}};}
+\DoxyCodeLine{\Hypertarget{_gming_session_view_model_8cs_source_l00035}00035\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_managers_1_1_user_manager}{UserManager}}\ userManager\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_managers_1_1_user_manager}{UserManager}}();}
+\DoxyCodeLine{\Hypertarget{_gming_session_view_model_8cs_source_l00036}00036\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ var\ usr\ =\ userManager.\mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_managers_1_1_user_manager_a6d1e2fec4d0b142fa2e4696143097dd7}{GetUser}}(this.\mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_user}{User}});}
+\DoxyCodeLine{\Hypertarget{_gming_session_view_model_8cs_source_l00037}00037\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (usr\ !=\ \textcolor{keyword}{null})}
+\DoxyCodeLine{\Hypertarget{_gming_session_view_model_8cs_source_l00038}00038\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_gming_session_view_model_8cs_source_l00039}00039\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ this.UserName\ =\ usr.Name;}
+\DoxyCodeLine{\Hypertarget{_gming_session_view_model_8cs_source_l00040}00040\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_gming_session_view_model_8cs_source_l00041}00041\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_gming_session_view_model_8cs_source_l00042}00042\ }
+\DoxyCodeLine{\Hypertarget{_gming_session_view_model_8cs_source_l00043}00043\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_gming_session_view_model_8cs_source_l00044}00044\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_gming_session_view_model_8cs_source_l00045}00045\ \}}
+
+\end{DoxyCode}

@@ -1,0 +1,163 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="class_e_e_g_gaming_1_1_core_1_1_data_1_1_e_e_g_gaming_db_context" kind="class" language="C#" prot="public">
+    <compoundname>EEGGaming::Core::Data::EEGGamingDbContext</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">DbContext</basecompoundref>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_e_e_g_gaming_1_1_core_1_1_data_1_1_e_e_g_gaming_db_context_1a0f17625312a5737ba95ac3fe8e21283b" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>DbSet&lt; <ref refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_user" kindref="compound">User</ref> &gt;</type>
+        <definition>DbSet&lt;User&gt; EEGGaming.Core.Data.EEGGamingDbContext.Users</definition>
+        <argsstring></argsstring>
+        <name>Users</name>
+        <qualifiedname>EEGGaming.Core.Data.EEGGamingDbContext.Users</qualifiedname>
+        <briefdescription>
+<para>The list of Users&apos; table records. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Data/EEGGamingDbContext.cs" line="20" column="22" bodyfile="EEGGaming.Core/Data/EEGGamingDbContext.cs" bodystart="20" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="property" id="class_e_e_g_gaming_1_1_core_1_1_data_1_1_e_e_g_gaming_db_context_1ae62471c783a52de6ef13fff69e94ba1b" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>DbSet&lt; <ref refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion" kindref="compound">GamingSesion</ref> &gt;</type>
+        <definition>DbSet&lt;GamingSesion&gt; EEGGaming.Core.Data.EEGGamingDbContext.GameSession</definition>
+        <argsstring></argsstring>
+        <name>GameSession</name>
+        <qualifiedname>EEGGaming.Core.Data.EEGGamingDbContext.GameSession</qualifiedname>
+        <briefdescription>
+<para>The list of GamingSession&apos;s table records. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Data/EEGGamingDbContext.cs" line="24" column="22" bodyfile="EEGGaming.Core/Data/EEGGamingDbContext.cs" bodystart="24" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="property" id="class_e_e_g_gaming_1_1_core_1_1_data_1_1_e_e_g_gaming_db_context_1aced33b3c1fbc02b3af79915746681145" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>DbSet&lt; <ref refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_brainwaves_record" kindref="compound">BrainwavesRecord</ref> &gt;</type>
+        <definition>DbSet&lt;BrainwavesRecord&gt; EEGGaming.Core.Data.EEGGamingDbContext.BrainWaves</definition>
+        <argsstring></argsstring>
+        <name>BrainWaves</name>
+        <qualifiedname>EEGGaming.Core.Data.EEGGamingDbContext.BrainWaves</qualifiedname>
+        <briefdescription>
+<para>The list of Brainwaves&apos; table records. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Data/EEGGamingDbContext.cs" line="28" column="22" bodyfile="EEGGaming.Core/Data/EEGGamingDbContext.cs" bodystart="28" bodyend="28"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_e_e_g_gaming_1_1_core_1_1_data_1_1_e_e_g_gaming_db_context_1ae748b7eb5ccc9337c15c39e0cb71804c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>EEGGaming.Core.Data.EEGGamingDbContext.EEGGamingDbContext</definition>
+        <argsstring>()</argsstring>
+        <name>EEGGamingDbContext</name>
+        <qualifiedname>EEGGaming.Core.Data.EEGGamingDbContext.EEGGamingDbContext</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Data/EEGGamingDbContext.cs" line="29" column="16" bodyfile="EEGGaming.Core/Data/EEGGamingDbContext.cs" bodystart="29" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="class_e_e_g_gaming_1_1_core_1_1_data_1_1_e_e_g_gaming_db_context_1ac0f434effe51dc17c77c82551ed07a1f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>EEGGaming.Core.Data.EEGGamingDbContext.EEGGamingDbContext</definition>
+        <argsstring>(string DefaultConnection)</argsstring>
+        <name>EEGGamingDbContext</name>
+        <qualifiedname>EEGGaming.Core.Data.EEGGamingDbContext.EEGGamingDbContext</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>DefaultConnection</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Data/EEGGamingDbContext.cs" line="37" column="16" bodyfile="EEGGaming.Core/Data/EEGGamingDbContext.cs" bodystart="37" bodyend="40"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_e_e_g_gaming_1_1_core_1_1_data_1_1_e_e_g_gaming_db_context_1a7e149533751ae2b54293942598c7aeb1" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void EEGGaming.Core.Data.EEGGamingDbContext.OnConfiguring</definition>
+        <argsstring>(DbContextOptionsBuilder optionsBuilder)</argsstring>
+        <name>OnConfiguring</name>
+        <qualifiedname>EEGGaming.Core.Data.EEGGamingDbContext.OnConfiguring</qualifiedname>
+        <param>
+          <type>DbContextOptionsBuilder</type>
+          <declname>optionsBuilder</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Data/EEGGamingDbContext.cs" line="41" column="33" bodyfile="EEGGaming.Core/Data/EEGGamingDbContext.cs" bodystart="41" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="class_e_e_g_gaming_1_1_core_1_1_data_1_1_e_e_g_gaming_db_context_1a0d93c73c55c6a3a1bdc6d4bc0729eaf1" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void EEGGaming.Core.Data.EEGGamingDbContext.OnModelCreating</definition>
+        <argsstring>(ModelBuilder modelBuilder)</argsstring>
+        <name>OnModelCreating</name>
+        <qualifiedname>EEGGaming.Core.Data.EEGGamingDbContext.OnModelCreating</qualifiedname>
+        <param>
+          <type>ModelBuilder</type>
+          <declname>modelBuilder</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Data/EEGGamingDbContext.cs" line="49" column="33" bodyfile="EEGGaming.Core/Data/EEGGamingDbContext.cs" bodystart="49" bodyend="57"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>DbContext of the <ref refid="namespace_e_e_g_gaming" kindref="compound">EEGGaming</ref> library. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>DbContext</label>
+      </node>
+      <node id="1">
+        <label>EEGGaming.Core.Data.EEGGamingDbContext</label>
+        <link refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_e_e_g_gaming_db_context"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>DbContext</label>
+      </node>
+      <node id="1">
+        <label>EEGGaming.Core.Data.EEGGamingDbContext</label>
+        <link refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_e_e_g_gaming_db_context"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="EEGGaming.Core/Data/EEGGamingDbContext.cs" line="15" column="11" bodyfile="EEGGaming.Core/Data/EEGGamingDbContext.cs" bodystart="16" bodyend="58"/>
+    <listofallmembers>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_e_e_g_gaming_db_context_1aced33b3c1fbc02b3af79915746681145" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Data::EEGGamingDbContext</scope><name>BrainWaves</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_e_e_g_gaming_db_context_1ae748b7eb5ccc9337c15c39e0cb71804c" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Data::EEGGamingDbContext</scope><name>EEGGamingDbContext</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_e_e_g_gaming_db_context_1ac0f434effe51dc17c77c82551ed07a1f" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Data::EEGGamingDbContext</scope><name>EEGGamingDbContext</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_e_e_g_gaming_db_context_1ae62471c783a52de6ef13fff69e94ba1b" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Data::EEGGamingDbContext</scope><name>GameSession</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_e_e_g_gaming_db_context_1a7e149533751ae2b54293942598c7aeb1" prot="protected" virt="non-virtual"><scope>EEGGaming::Core::Data::EEGGamingDbContext</scope><name>OnConfiguring</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_e_e_g_gaming_db_context_1a0d93c73c55c6a3a1bdc6d4bc0729eaf1" prot="protected" virt="non-virtual"><scope>EEGGaming::Core::Data::EEGGamingDbContext</scope><name>OnModelCreating</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_e_e_g_gaming_db_context_1a0f17625312a5737ba95ac3fe8e21283b" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Data::EEGGamingDbContext</scope><name>Users</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

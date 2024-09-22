@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespace_e_e_g_gaming_1_1_core_1_1_tools" xml:lang="en-US">
+<title>EEGGaming.Core.Tools Namespace Reference</title>
+<indexterm><primary>EEGGaming.Core.Tools</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <emphasis role="strong">Calculations</emphasis></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_e_e_g_gaming_1_1_core_1_1_tools_1_1_common_tools">CommonTools</link></para>
+
+<para>Class with some common tools. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

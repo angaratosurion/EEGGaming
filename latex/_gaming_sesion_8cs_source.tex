@@ -1,0 +1,33 @@
+\doxysection{Gaming\+Sesion.\+cs}
+\hypertarget{_gaming_sesion_8cs_source}{}\label{_gaming_sesion_8cs_source}\index{EEGGaming.Core/Data/Models/GamingSesion.cs@{EEGGaming.Core/Data/Models/GamingSesion.cs}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_gaming_sesion_8cs_source_l00001}00001\ \textcolor{keyword}{using\ }System;}
+\DoxyCodeLine{\Hypertarget{_gaming_sesion_8cs_source_l00002}00002\ \textcolor{keyword}{using\ }System.Collections.Generic;}
+\DoxyCodeLine{\Hypertarget{_gaming_sesion_8cs_source_l00003}00003\ \textcolor{keyword}{using\ }System.ComponentModel.DataAnnotations.Schema;}
+\DoxyCodeLine{\Hypertarget{_gaming_sesion_8cs_source_l00004}00004\ \textcolor{keyword}{using\ }System.ComponentModel.DataAnnotations;}
+\DoxyCodeLine{\Hypertarget{_gaming_sesion_8cs_source_l00005}00005\ \textcolor{keyword}{using\ }System.Linq;}
+\DoxyCodeLine{\Hypertarget{_gaming_sesion_8cs_source_l00006}00006\ \textcolor{keyword}{using\ }System.Text;}
+\DoxyCodeLine{\Hypertarget{_gaming_sesion_8cs_source_l00007}00007\ \textcolor{keyword}{using\ }System.Threading.Tasks;}
+\DoxyCodeLine{\Hypertarget{_gaming_sesion_8cs_source_l00008}00008\ \textcolor{keyword}{using\ }System.Transactions;}
+\DoxyCodeLine{\Hypertarget{_gaming_sesion_8cs_source_l00009}00009\ }
+\DoxyCodeLine{\Hypertarget{_gaming_sesion_8cs_source_l00010}00010\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_e_e_g_gaming_1_1_core_1_1_data_1_1_models}{EEGGaming.Core.Data.Models}}}
+\DoxyCodeLine{\Hypertarget{_gaming_sesion_8cs_source_l00011}00011\ \{}
+\DoxyCodeLine{\Hypertarget{_gaming_sesion_8cs_source_l00015}\mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion}{00015}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion}{GamingSesion}}}
+\DoxyCodeLine{\Hypertarget{_gaming_sesion_8cs_source_l00016}00016\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_gaming_sesion_8cs_source_l00020}00020\ \ \ \ \ \ \ \ \ [DatabaseGenerated(DatabaseGeneratedOption.Identity)]}
+\DoxyCodeLine{\Hypertarget{_gaming_sesion_8cs_source_l00021}00021\ \ \ \ \ \ \ \ \ [Required]}
+\DoxyCodeLine{\Hypertarget{_gaming_sesion_8cs_source_l00022}\mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion_ae768cd0296695bb3d3f346ae5cb67ab6}{00022}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion_ae768cd0296695bb3d3f346ae5cb67ab6}{Id}}\ \{\ \textcolor{keyword}{get};\ \textcolor{keyword}{set};\ \}}
+\DoxyCodeLine{\Hypertarget{_gaming_sesion_8cs_source_l00026}00026\ \ \ \ \ \ \ \ \ [Required]}
+\DoxyCodeLine{\Hypertarget{_gaming_sesion_8cs_source_l00027}\mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion_a1691ad2ee4ae57863a57f3ac7a0236e3}{00027}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ DateTime\ \ \mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion_a1691ad2ee4ae57863a57f3ac7a0236e3}{Start}}\ \{\ \textcolor{keyword}{get};\ \textcolor{keyword}{set};\ \}}
+\DoxyCodeLine{\Hypertarget{_gaming_sesion_8cs_source_l00031}00031\ \ \ \ \ \ \ \ \ [Required]}
+\DoxyCodeLine{\Hypertarget{_gaming_sesion_8cs_source_l00032}\mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion_a409a923d21437aeab8568bd1ddf93252}{00032}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ DateTime\ \mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion_a409a923d21437aeab8568bd1ddf93252}{End}}\ \{\ \textcolor{keyword}{get};\ \textcolor{keyword}{set};\ \}}
+\DoxyCodeLine{\Hypertarget{_gaming_sesion_8cs_source_l00036}00036\ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_gaming_sesion_8cs_source_l00037}00037\ \ \ \ \ \ \ \ \ [Required]}
+\DoxyCodeLine{\Hypertarget{_gaming_sesion_8cs_source_l00038}\mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion_acbce3f3c7d81fe021cca2aba31c1ab6b}{00038}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_user}{User}}\ \{\ \textcolor{keyword}{get};\ \textcolor{keyword}{set};\ \}}
+\DoxyCodeLine{\Hypertarget{_gaming_sesion_8cs_source_l00042}00042\ \ \ \ \ \ \ \ \ [Required]}
+\DoxyCodeLine{\Hypertarget{_gaming_sesion_8cs_source_l00043}\mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion_a16505d61fb4668e87ceba41175ff8478}{00043}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion_a16505d61fb4668e87ceba41175ff8478}{Score}}\ \{\ \textcolor{keyword}{get};\ \textcolor{keyword}{set};\ \}}
+\DoxyCodeLine{\Hypertarget{_gaming_sesion_8cs_source_l00044}00044\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_gaming_sesion_8cs_source_l00045}00045\ \}}
+
+\end{DoxyCode}

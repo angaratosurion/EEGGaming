@@ -1,0 +1,230 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_user_manager" kind="class" language="C#" prot="public">
+    <compoundname>EEGGaming::Core::Managers::UserManager</compoundname>
+    <basecompoundref refid="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_base_manager" prot="public" virt="non-virtual">EEGGaming.Core.Managers.BaseManager</basecompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_user_manager_1a4cd3ef414b3e41132df928da139f1594" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void EEGGaming.Core.Managers.UserManager.AddNew</definition>
+        <argsstring>(User user)</argsstring>
+        <name>AddNew</name>
+        <qualifiedname>EEGGaming.Core.Managers.UserManager.AddNew</qualifiedname>
+        <param>
+          <type><ref refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_user" kindref="compound">User</ref></type>
+          <declname>user</declname>
+        </param>
+        <briefdescription>
+<para>Adds new user to the database. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>user</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new user info</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Managers/UserManager.cs" line="24" column="21" bodyfile="EEGGaming.Core/Managers/UserManager.cs" bodystart="24" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_user_manager_1a0ae10eef0d5cff01c0ededc365fcbd36" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; <ref refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_user" kindref="compound">User</ref> &gt;</type>
+        <definition>List&lt; User &gt; EEGGaming.Core.Managers.UserManager.List</definition>
+        <argsstring>()</argsstring>
+        <name>List</name>
+        <qualifiedname>EEGGaming.Core.Managers.UserManager.List</qualifiedname>
+        <briefdescription>
+<para>Gets all the users. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>all the users</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Managers/UserManager.cs" line="48" column="21" bodyfile="EEGGaming.Core/Managers/UserManager.cs" bodystart="48" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_user_manager_1a6d1e2fec4d0b142fa2e4696143097dd7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_user" kindref="compound">User</ref></type>
+        <definition>User EEGGaming.Core.Managers.UserManager.GetUser</definition>
+        <argsstring>(int id)</argsstring>
+        <name>GetUser</name>
+        <qualifiedname>EEGGaming.Core.Managers.UserManager.GetUser</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+<para>Gets the user of the given id. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>id of the user we are looking for </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>user of the given id</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Managers/UserManager.cs" line="69" column="21" bodyfile="EEGGaming.Core/Managers/UserManager.cs" bodystart="69" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_user_manager_1a1e0960fe023e651636051f9fd0755e9f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_user" kindref="compound">User</ref></type>
+        <definition>User EEGGaming.Core.Managers.UserManager.GetUser</definition>
+        <argsstring>(string name)</argsstring>
+        <name>GetUser</name>
+        <qualifiedname>EEGGaming.Core.Managers.UserManager.GetUser</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Gets the user of the given name. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>name of the user we are looking for </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>user of the given name</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Managers/UserManager.cs" line="90" column="21" bodyfile="EEGGaming.Core/Managers/UserManager.cs" bodystart="90" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_user_manager_1ad1823ce41c75fd374eca468c3218617d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void EEGGaming.Core.Managers.UserManager.Edit</definition>
+        <argsstring>(int? id, User user)</argsstring>
+        <name>Edit</name>
+        <qualifiedname>EEGGaming.Core.Managers.UserManager.Edit</qualifiedname>
+        <param>
+          <type>int?</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type><ref refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_user" kindref="compound">User</ref></type>
+          <declname>user</declname>
+        </param>
+        <briefdescription>
+<para>Edits the info of the user with the given id. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>id of the user</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>user</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new values of the user</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Managers/UserManager.cs" line="110" column="21" bodyfile="EEGGaming.Core/Managers/UserManager.cs" bodystart="110" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_user_manager_1a6cda0cd8ba728074da56a55dfbb941af" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void EEGGaming.Core.Managers.UserManager.Delete</definition>
+        <argsstring>(string username)</argsstring>
+        <name>Delete</name>
+        <qualifiedname>EEGGaming.Core.Managers.UserManager.Delete</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>username</declname>
+        </param>
+        <briefdescription>
+<para>Deletes theuser with the given nme. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>username</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>name of the user tobeleteed </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Managers/UserManager.cs" line="139" column="21" bodyfile="EEGGaming.Core/Managers/UserManager.cs" bodystart="139" bodyend="162"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Class that manages user&apos;s and their info. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>BaseManager</label>
+        <link refid="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_base_manager"/>
+      </node>
+      <node id="1">
+        <label>EEGGaming.Core.Managers.UserManager</label>
+        <link refid="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_user_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>BaseManager</label>
+        <link refid="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_base_manager"/>
+      </node>
+      <node id="1">
+        <label>EEGGaming.Core.Managers.UserManager</label>
+        <link refid="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_user_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="EEGGaming.Core/Managers/UserManager.cs" line="18" column="11" bodyfile="EEGGaming.Core/Managers/UserManager.cs" bodystart="19" bodyend="164"/>
+    <listofallmembers>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_user_manager_1a4cd3ef414b3e41132df928da139f1594" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Managers::UserManager</scope><name>AddNew</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_base_manager_1a0698b890b345d2fe9f6b7d0bf762af70" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Managers::UserManager</scope><name>BaseManager</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_base_manager_1a9248c1be1118bf2a1da15a2ba731a4fc" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Managers::UserManager</scope><name>CreateDatabase</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_base_manager_1ab03ecddd3cb836526101a168e1b408ef" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Managers::UserManager</scope><name>DbContext</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_user_manager_1a6cda0cd8ba728074da56a55dfbb941af" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Managers::UserManager</scope><name>Delete</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_user_manager_1ad1823ce41c75fd374eca468c3218617d" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Managers::UserManager</scope><name>Edit</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_user_manager_1a6d1e2fec4d0b142fa2e4696143097dd7" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Managers::UserManager</scope><name>GetUser</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_user_manager_1a1e0960fe023e651636051f9fd0755e9f" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Managers::UserManager</scope><name>GetUser</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_user_manager_1a0ae10eef0d5cff01c0ededc365fcbd36" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Managers::UserManager</scope><name>List</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_base_manager_1a7c286778992f94800563ebdbc55ff778" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Managers::UserManager</scope><name>PredictLastId</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="class_e_e_g_gaming_1_1_core_1_1_migrations_1_1chnagedtobrainwaveemodel" kind="class" language="C#" prot="public">
+    <compoundname>EEGGaming::Core::Migrations::chnagedtobrainwaveemodel</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Migration</basecompoundref>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_e_e_g_gaming_1_1_core_1_1_migrations_1_1chnagedtobrainwaveemodel_1a6eb6dd1f1d439de547c216da1420c973" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void EEGGaming.Core.Migrations.chnagedtobrainwaveemodel.Up</definition>
+        <argsstring>(MigrationBuilder migrationBuilder)</argsstring>
+        <name>Up</name>
+        <qualifiedname>EEGGaming.Core.Migrations.chnagedtobrainwaveemodel.Up</qualifiedname>
+        <param>
+          <type>MigrationBuilder</type>
+          <declname>migrationBuilder</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Migrations/20240607151943_chnagedtobrainwaveemodel.cs" line="11" column="33" bodyfile="EEGGaming.Core/Migrations/20240607151943_chnagedtobrainwaveemodel.cs" bodystart="11" bodyend="202"/>
+      </memberdef>
+      <memberdef kind="function" id="class_e_e_g_gaming_1_1_core_1_1_migrations_1_1chnagedtobrainwaveemodel_1a9cfa7748d812a7bccfbd516c4c5c5d59" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void EEGGaming.Core.Migrations.chnagedtobrainwaveemodel.Down</definition>
+        <argsstring>(MigrationBuilder migrationBuilder)</argsstring>
+        <name>Down</name>
+        <qualifiedname>EEGGaming.Core.Migrations.chnagedtobrainwaveemodel.Down</qualifiedname>
+        <param>
+          <type>MigrationBuilder</type>
+          <declname>migrationBuilder</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Migrations/20240607151943_chnagedtobrainwaveemodel.cs" line="205" column="33" bodyfile="EEGGaming.Core/Migrations/20240607151943_chnagedtobrainwaveemodel.cs" bodystart="205" bodyend="336"/>
+      </memberdef>
+      <memberdef kind="function" id="class_e_e_g_gaming_1_1_core_1_1_migrations_1_1chnagedtobrainwaveemodel_1aa503944d492572a002abb4f3cb5ca237" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void EEGGaming.Core.Migrations.chnagedtobrainwaveemodel.BuildTargetModel</definition>
+        <argsstring>(ModelBuilder modelBuilder)</argsstring>
+        <name>BuildTargetModel</name>
+        <qualifiedname>EEGGaming.Core.Migrations.chnagedtobrainwaveemodel.BuildTargetModel</qualifiedname>
+        <param>
+          <type>ModelBuilder</type>
+          <declname>modelBuilder</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Migrations/20240607151943_chnagedtobrainwaveemodel.Designer.cs" line="18" column="33" bodyfile="EEGGaming.Core/Migrations/20240607151943_chnagedtobrainwaveemodel.Designer.cs" bodystart="18" bodyend="202"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>EEGGaming.Core.Migrations.chnagedtobrainwaveemodel</label>
+        <link refid="class_e_e_g_gaming_1_1_core_1_1_migrations_1_1chnagedtobrainwaveemodel"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Migration</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>EEGGaming.Core.Migrations.chnagedtobrainwaveemodel</label>
+        <link refid="class_e_e_g_gaming_1_1_core_1_1_migrations_1_1chnagedtobrainwaveemodel"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Migration</label>
+      </node>
+    </collaborationgraph>
+    <location file="EEGGaming.Core/Migrations/20240607151943_chnagedtobrainwaveemodel.cs" line="8" column="19" bodyfile="EEGGaming.Core/Migrations/20240607151943_chnagedtobrainwaveemodel.Designer.cs" bodystart="16" bodyend="203"/>
+    <listofallmembers>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_migrations_1_1chnagedtobrainwaveemodel_1aa503944d492572a002abb4f3cb5ca237" prot="protected" virt="non-virtual"><scope>EEGGaming::Core::Migrations::chnagedtobrainwaveemodel</scope><name>BuildTargetModel</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_migrations_1_1chnagedtobrainwaveemodel_1a9cfa7748d812a7bccfbd516c4c5c5d59" prot="protected" virt="non-virtual"><scope>EEGGaming::Core::Migrations::chnagedtobrainwaveemodel</scope><name>Down</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_migrations_1_1chnagedtobrainwaveemodel_1a6eb6dd1f1d439de547c216da1420c973" prot="protected" virt="non-virtual"><scope>EEGGaming::Core::Migrations::chnagedtobrainwaveemodel</scope><name>Up</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

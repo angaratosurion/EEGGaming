@@ -1,0 +1,289 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_gaming_sesion_manager" xml:lang="en-US">
+<title>EEGGaming.Core.Managers.GamingSesionManager Class Reference</title>
+<indexterm><primary>EEGGaming.Core.Managers.GamingSesionManager</primary></indexterm>
+<para>Inheritance diagram for EEGGaming.Core.Managers.GamingSesionManager:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_gaming_sesion_manager.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>List&lt; <link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion">GamingSesion</link> &gt; <link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_gaming_sesion_manager_1a2a50694374519532ca716f7c7c15a71e">List</link> ()</para>
+
+<para>Get all the gaming sessions. </para>
+</listitem>
+            <listitem><para><link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_gaming_sesion_manager_1a2a50694374519532ca716f7c7c15a71e">List</link>&lt; <link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_gming_session_view_model">GmingSessionViewModel</link> &gt; <link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_gaming_sesion_manager_1a7619f530f8ca34c9ad89f88e1a61fcfb">ListasViewModel</link> ()</para>
+
+<para>Get all the gaming sessions as ViewModels. </para>
+</listitem>
+            <listitem><para><link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion">GamingSesion</link> <link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_gaming_sesion_manager_1a10e6347d9ac5b94d1cbb262df71ea872">Get</link> (int id)</para>
+
+<para>Gets the gamingsession with the given Id. </para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_gaming_sesion_manager_1aa0281778dd85a9e0d4fd057dced33f8e">Exists</link> (int id)</para>
+
+<para>checks if a gamingsession has thegivn id </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_gaming_sesion_manager_1a2d2589c4a290f77f776662e0a2197586">Update</link> (<link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion">GamingSesion</link> gamingSesion)</para>
+
+<para>updates the gamingsession record </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_gaming_sesion_manager_1aaa3bdbc922da5afc95591467af76fe92">Delete</link> (int id)</para>
+
+<para>Delete the record with thegiven id. </para>
+</listitem>
+            <listitem><para><link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion">GamingSesion</link> <link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_gaming_sesion_manager_1a81fddbba739d42b0481ad9c67de0f335">AddGamingSession</link> (<link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion">GamingSesion</link> gamingSesion)</para>
+
+<para>Adds a new record to the gamingsession and it returns it. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Public Member Functions inherited from <link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_base_manager">EEGGaming.Core.Managers.BaseManager</link>        <itemizedlist>
+            <listitem><para>void <link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_base_manager_1a9248c1be1118bf2a1da15a2ba731a4fc">CreateDatabase</link> ()</para>
+
+<para>Creates the Database. </para>
+</listitem>
+            <listitem><para>int <link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_base_manager_1a7c286778992f94800563ebdbc55ff778">PredictLastId</link> (string tablename)</para>
+
+<para>It predicts the last value of the id&apos;s property from the given table&apos;s name. </para>
+</listitem>
+        </itemizedlist>
+<simplesect>
+    <title>Additional Inherited Members    </title>
+Properties inherited from <link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_base_manager">EEGGaming.Core.Managers.BaseManager</link>        <itemizedlist>
+            <listitem><para><link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_e_e_g_gaming_db_context">EEGGamingDbContext</link> <link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_base_manager_1ab03ecddd3cb836526101a168e1b408ef">DbContext</link><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>The DatabaseContext of the library. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>The Class that manages the gaming sessin </para>
+<para>
+Definition at line <link linkend="__gaming_sesion_manager_8cs_source_1l00015">15</link> of file <link linkend="__gaming_sesion_manager_8cs_source">GamingSesionManager.cs</link>.</para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_gaming_sesion_manager_1a81fddbba739d42b0481ad9c67de0f335"/><section>
+    <title>AddGamingSession()</title>
+<indexterm><primary>AddGamingSession</primary><secondary>EEGGaming.Core.Managers.GamingSesionManager</secondary></indexterm>
+<indexterm><primary>EEGGaming.Core.Managers.GamingSesionManager</primary><secondary>AddGamingSession</secondary></indexterm>
+<para><computeroutput><link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion">GamingSesion</link> EEGGaming.Core.Managers.GamingSesionManager.AddGamingSession (<link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion">GamingSesion</link> gamingSesion)</computeroutput></para><para>
+
+<para>Adds a new record to the gamingsession and it returns it. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>gamingSesion</entry><entry>
+<para>new recordof gamingsession to be added</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>new record to the gamingsession and it returns it </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="__gaming_sesion_manager_8cs_source_1l00173">173</link> of file <link linkend="__gaming_sesion_manager_8cs_source">GamingSesionManager.cs</link>.</para>
+</section>
+<anchor xml:id="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_gaming_sesion_manager_1aaa3bdbc922da5afc95591467af76fe92"/><section>
+    <title>Delete()</title>
+<indexterm><primary>Delete</primary><secondary>EEGGaming.Core.Managers.GamingSesionManager</secondary></indexterm>
+<indexterm><primary>EEGGaming.Core.Managers.GamingSesionManager</primary><secondary>Delete</secondary></indexterm>
+<para><computeroutput>void EEGGaming.Core.Managers.GamingSesionManager.Delete (int id)</computeroutput></para><para>
+
+<para>Delete the record with thegiven id. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>id</entry><entry>
+<para>idof the record to bedeeted</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line <link linkend="__gaming_sesion_manager_8cs_source_1l00149">149</link> of file <link linkend="__gaming_sesion_manager_8cs_source">GamingSesionManager.cs</link>.</para>
+</section>
+<anchor xml:id="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_gaming_sesion_manager_1aa0281778dd85a9e0d4fd057dced33f8e"/><section>
+    <title>Exists()</title>
+<indexterm><primary>Exists</primary><secondary>EEGGaming.Core.Managers.GamingSesionManager</secondary></indexterm>
+<indexterm><primary>EEGGaming.Core.Managers.GamingSesionManager</primary><secondary>Exists</secondary></indexterm>
+<para><computeroutput>bool EEGGaming.Core.Managers.GamingSesionManager.Exists (int id)</computeroutput></para><para>
+
+<para>checks if a gamingsession has thegivn id </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>id</entry><entry>
+<para>the id of the gamingsession we are searching for </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>true if it exists false it isnt </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="__gaming_sesion_manager_8cs_source_1l00102">102</link> of file <link linkend="__gaming_sesion_manager_8cs_source">GamingSesionManager.cs</link>.</para>
+</section>
+<anchor xml:id="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_gaming_sesion_manager_1a10e6347d9ac5b94d1cbb262df71ea872"/><section>
+    <title>Get()</title>
+<indexterm><primary>Get</primary><secondary>EEGGaming.Core.Managers.GamingSesionManager</secondary></indexterm>
+<indexterm><primary>EEGGaming.Core.Managers.GamingSesionManager</primary><secondary>Get</secondary></indexterm>
+<para><computeroutput><link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion">GamingSesion</link> EEGGaming.Core.Managers.GamingSesionManager.Get (int id)</computeroutput></para><para>
+
+<para>Gets the gamingsession with the given Id. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>id</entry><entry>
+<para>id of the gamingsession</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>gamingsession with the given Id</para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="__gaming_sesion_manager_8cs_source_1l00073">73</link> of file <link linkend="__gaming_sesion_manager_8cs_source">GamingSesionManager.cs</link>.</para>
+</section>
+<anchor xml:id="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_gaming_sesion_manager_1a2a50694374519532ca716f7c7c15a71e"/><section>
+    <title>List()</title>
+<indexterm><primary>List</primary><secondary>EEGGaming.Core.Managers.GamingSesionManager</secondary></indexterm>
+<indexterm><primary>EEGGaming.Core.Managers.GamingSesionManager</primary><secondary>List</secondary></indexterm>
+<para><computeroutput>List&lt; <link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion">GamingSesion</link> &gt; EEGGaming.Core.Managers.GamingSesionManager.List ( )</computeroutput></para><para>
+
+<para>Get all the gaming sessions. </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>all the gaming sessions</para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="__gaming_sesion_manager_8cs_source_1l00021">21</link> of file <link linkend="__gaming_sesion_manager_8cs_source">GamingSesionManager.cs</link>.</para>
+</section>
+<anchor xml:id="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_gaming_sesion_manager_1a7619f530f8ca34c9ad89f88e1a61fcfb"/><section>
+    <title>ListasViewModel()</title>
+<indexterm><primary>ListasViewModel</primary><secondary>EEGGaming.Core.Managers.GamingSesionManager</secondary></indexterm>
+<indexterm><primary>EEGGaming.Core.Managers.GamingSesionManager</primary><secondary>ListasViewModel</secondary></indexterm>
+<para><computeroutput><link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_gaming_sesion_manager_1a2a50694374519532ca716f7c7c15a71e">List</link>&lt; <link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_gming_session_view_model">GmingSessionViewModel</link> &gt; EEGGaming.Core.Managers.GamingSesionManager.ListasViewModel ( )</computeroutput></para><para>
+
+<para>Get all the gaming sessions as ViewModels. </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>all the gaming sessions as ViewModels</para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="__gaming_sesion_manager_8cs_source_1l00040">40</link> of file <link linkend="__gaming_sesion_manager_8cs_source">GamingSesionManager.cs</link>.</para>
+</section>
+<anchor xml:id="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_gaming_sesion_manager_1a2d2589c4a290f77f776662e0a2197586"/><section>
+    <title>Update()</title>
+<indexterm><primary>Update</primary><secondary>EEGGaming.Core.Managers.GamingSesionManager</secondary></indexterm>
+<indexterm><primary>EEGGaming.Core.Managers.GamingSesionManager</primary><secondary>Update</secondary></indexterm>
+<para><computeroutput>void EEGGaming.Core.Managers.GamingSesionManager.Update (<link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion">GamingSesion</link> gamingSesion)</computeroutput></para><para>
+
+<para>updates the gamingsession record </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>gamingSesion</entry><entry>
+<para>the new values of gamingsession</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line <link linkend="__gaming_sesion_manager_8cs_source_1l00125">125</link> of file <link linkend="__gaming_sesion_manager_8cs_source">GamingSesionManager.cs</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+D:/Cloud Folder/OneDrive/My Programs/Post-Graduate/Master in Information Systems (PLS)/Thesis/Code/EEGGaming/EEGGaming.Core/Managers/GamingSesionManager.cs</section>
+</section>

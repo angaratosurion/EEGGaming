@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_gming_session_view_model" kind="class" language="C#" prot="public">
+    <compoundname>EEGGaming::Core::Data::NonDataModels::GmingSessionViewModel</compoundname>
+    <basecompoundref refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion" prot="public" virt="non-virtual">EEGGaming.Core.Data.Models.GamingSesion</basecompoundref>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_gming_session_view_model_1ab19010b9d5fa93dcfd54d4bf731c5724" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string EEGGaming.Core.Data.NonDataModels.GmingSessionViewModel.UserName</definition>
+        <argsstring></argsstring>
+        <name>UserName</name>
+        <qualifiedname>EEGGaming.Core.Data.NonDataModels.GmingSessionViewModel.UserName</qualifiedname>
+        <briefdescription>
+<para>Thename of the User. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Data/NonDataModels/GmingSessionViewModel.cs" line="21" column="23" bodyfile="EEGGaming.Core/Data/NonDataModels/GmingSessionViewModel.cs" bodystart="21" bodyend="21"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_gming_session_view_model_1aca2a41f4c7b35096799bb3684c529e8d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void EEGGaming.Core.Data.NonDataModels.GmingSessionViewModel.ImportToModel</definition>
+        <argsstring>(GamingSesion model)</argsstring>
+        <name>ImportToModel</name>
+        <qualifiedname>EEGGaming.Core.Data.NonDataModels.GmingSessionViewModel.ImportToModel</qualifiedname>
+        <param>
+          <type><ref refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion" kindref="compound">GamingSesion</ref></type>
+          <declname>model</declname>
+        </param>
+        <briefdescription>
+<para>Import the data of the GamingSession data model to theView Model. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>model</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>data model with initial data</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Data/NonDataModels/GmingSessionViewModel.cs" line="26" column="21" bodyfile="EEGGaming.Core/Data/NonDataModels/GmingSessionViewModel.cs" bodystart="26" bodyend="43"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>The View Model representation of GamingSession table </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>EEGGaming.Core.Data.NonDataModels.GmingSessionViewModel</label>
+        <link refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_gming_session_view_model"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>GamingSesion</label>
+        <link refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>EEGGaming.Core.Data.NonDataModels.GmingSessionViewModel</label>
+        <link refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_gming_session_view_model"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>GamingSesion</label>
+        <link refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion"/>
+      </node>
+    </collaborationgraph>
+    <location file="EEGGaming.Core/Data/NonDataModels/GmingSessionViewModel.cs" line="14" column="11" bodyfile="EEGGaming.Core/Data/NonDataModels/GmingSessionViewModel.cs" bodystart="15" bodyend="44"/>
+    <listofallmembers>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion_1a409a923d21437aeab8568bd1ddf93252" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Data::NonDataModels::GmingSessionViewModel</scope><name>End</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion_1ae768cd0296695bb3d3f346ae5cb67ab6" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Data::NonDataModels::GmingSessionViewModel</scope><name>Id</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_gming_session_view_model_1aca2a41f4c7b35096799bb3684c529e8d" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Data::NonDataModels::GmingSessionViewModel</scope><name>ImportToModel</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion_1a16505d61fb4668e87ceba41175ff8478" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Data::NonDataModels::GmingSessionViewModel</scope><name>Score</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion_1a1691ad2ee4ae57863a57f3ac7a0236e3" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Data::NonDataModels::GmingSessionViewModel</scope><name>Start</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion_1acbce3f3c7d81fe021cca2aba31c1ab6b" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Data::NonDataModels::GmingSessionViewModel</scope><name>User</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_gming_session_view_model_1ab19010b9d5fa93dcfd54d4bf731c5724" prot="public" virt="non-virtual"><scope>EEGGaming::Core::Data::NonDataModels::GmingSessionViewModel</scope><name>UserName</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

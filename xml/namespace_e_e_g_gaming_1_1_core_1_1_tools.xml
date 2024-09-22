@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="namespace_e_e_g_gaming_1_1_core_1_1_tools" kind="namespace" language="C#">
+    <compoundname>EEGGaming::Core::Tools</compoundname>
+    <innerclass refid="class_e_e_g_gaming_1_1_core_1_1_tools_1_1_calculations" prot="public">EEGGaming::Core::Tools::Calculations</innerclass>
+    <innerclass refid="class_e_e_g_gaming_1_1_core_1_1_tools_1_1_common_tools" prot="public">EEGGaming::Core::Tools::CommonTools</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="EEGGaming.Core/Tools/Calculations.cs" line="3" column="1"/>
+  </compounddef>
+</doxygen>

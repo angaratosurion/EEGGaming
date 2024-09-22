@@ -1,0 +1,162 @@
+.TH "EEGGaming.Core.Managers.UserManager" 3 "Version 0.2.6.0" "EEGGaming And Blinkbird" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+EEGGaming.Core.Managers.UserManager \- Class that manages user's and their info\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBEEGGaming\&.Core\&.Managers\&.BaseManager\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBAddNew\fP (\fBUser\fP user)"
+.br
+.RI "Adds new user to the database\&. "
+.ti -1c
+.RI "List< \fBUser\fP > \fBList\fP ()"
+.br
+.RI "Gets all the users\&. "
+.ti -1c
+.RI "\fBUser\fP \fBGetUser\fP (int id)"
+.br
+.RI "Gets the user of the given id\&. "
+.ti -1c
+.RI "\fBUser\fP \fBGetUser\fP (string name)"
+.br
+.RI "Gets the user of the given name\&. "
+.ti -1c
+.RI "void \fBEdit\fP (int? id, \fBUser\fP user)"
+.br
+.RI "Edits the info of the user with the given id\&. "
+.ti -1c
+.RI "void \fBDelete\fP (string username)"
+.br
+.RI "Deletes theuser with the given nme\&. "
+.in -1c
+
+Public Member Functions inherited from \fBEEGGaming\&.Core\&.Managers\&.BaseManager\fP
+.in +1c
+.ti -1c
+.RI "void \fBCreateDatabase\fP ()"
+.br
+.RI "Creates the Database\&. "
+.ti -1c
+.RI "int \fBPredictLastId\fP (string tablename)"
+.br
+.RI "It predicts the last value of the id's property from the given table's name\&. "
+.in -1c
+.SS "Additional Inherited Members"
+
+
+Properties inherited from \fBEEGGaming\&.Core\&.Managers\&.BaseManager\fP
+.in +1c
+.ti -1c
+.RI "\fBEEGGamingDbContext\fP \fBDbContext\fP\fR [get, set]\fP"
+.br
+.RI "The DatabaseContext of the library\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Class that manages user's and their info\&. 
+.PP
+Definition at line \fB18\fP of file \fBUserManager\&.cs\fP\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void EEGGaming\&.Core\&.Managers\&.UserManager\&.AddNew (\fBUser\fP user)"
+
+.PP
+Adds new user to the database\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIuser\fP new user info
+.RE
+.PP
+
+.PP
+Definition at line \fB24\fP of file \fBUserManager\&.cs\fP\&.
+.SS "void EEGGaming\&.Core\&.Managers\&.UserManager\&.Delete (string username)"
+
+.PP
+Deletes theuser with the given nme\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIusername\fP name of the user tobeleteed 
+.RE
+.PP
+
+.PP
+Definition at line \fB139\fP of file \fBUserManager\&.cs\fP\&.
+.SS "void EEGGaming\&.Core\&.Managers\&.UserManager\&.Edit (int? id, \fBUser\fP user)"
+
+.PP
+Edits the info of the user with the given id\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIid\fP id of the user
+.br
+\fIuser\fP new values of the user
+.RE
+.PP
+
+.PP
+Definition at line \fB110\fP of file \fBUserManager\&.cs\fP\&.
+.SS "\fBUser\fP EEGGaming\&.Core\&.Managers\&.UserManager\&.GetUser (int id)"
+
+.PP
+Gets the user of the given id\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIid\fP id of the user we are looking for 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+user of the given id
+.RE
+.PP
+
+.PP
+Definition at line \fB69\fP of file \fBUserManager\&.cs\fP\&.
+.SS "\fBUser\fP EEGGaming\&.Core\&.Managers\&.UserManager\&.GetUser (string name)"
+
+.PP
+Gets the user of the given name\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIname\fP name of the user we are looking for 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+user of the given name
+.RE
+.PP
+
+.PP
+Definition at line \fB90\fP of file \fBUserManager\&.cs\fP\&.
+.SS "List< \fBUser\fP > EEGGaming\&.Core\&.Managers\&.UserManager\&.List ()"
+
+.PP
+Gets all the users\&. 
+.PP
+\fBReturns\fP
+.RS 4
+all the users
+.RE
+.PP
+
+.PP
+Definition at line \fB48\fP of file \fBUserManager\&.cs\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for EEGGaming And Blinkbird from the source code\&.

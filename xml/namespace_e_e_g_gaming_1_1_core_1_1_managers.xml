@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="namespace_e_e_g_gaming_1_1_core_1_1_managers" kind="namespace" language="C#">
+    <compoundname>EEGGaming::Core::Managers</compoundname>
+    <innerclass refid="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_app_settings_manager" prot="public">EEGGaming::Core::Managers::AppSettingsManager</innerclass>
+    <innerclass refid="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_base_manager" prot="public">EEGGaming::Core::Managers::BaseManager</innerclass>
+    <innerclass refid="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager" prot="public">EEGGaming::Core::Managers::BrainWaveRecordManager</innerclass>
+    <innerclass refid="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_gaming_sesion_manager" prot="public">EEGGaming::Core::Managers::GamingSesionManager</innerclass>
+    <innerclass refid="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_user_manager" prot="public">EEGGaming::Core::Managers::UserManager</innerclass>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespace_e_e_g_gaming_1_1_core_1_1_managers_1ac5dfc32818fda85c21b2a13fe1822796" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>delegate void</type>
+        <definition>delegate void EEGGaming.Core.Managers.OnBlinked</definition>
+        <argsstring>()</argsstring>
+        <name>OnBlinked</name>
+        <qualifiedname>EEGGaming.Core.Managers.OnBlinked</qualifiedname>
+        <briefdescription>
+<para>This event occurs when an eye blink occured. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Managers/BrainWaveRecordManager.cs" line="21" column="26" declfile="EEGGaming.Core/Managers/BrainWaveRecordManager.cs" declline="21" declcolumn="26"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="EEGGaming.Core/Managers/AppSettingsManager.cs" line="12" column="1"/>
+  </compounddef>
+</doxygen>

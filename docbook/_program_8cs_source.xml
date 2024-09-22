@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__program_8cs_source" xml:lang="en-US">
+<title>Program.cs</title>
+<indexterm><primary>EEGGaming.Trainer/Program.cs</primary></indexterm>
+<programlisting linenumbering="unnumbered"><anchor xml:id="__program_8cs_source_1l00001"/>00001 <emphasis role="keyword">using&#32;</emphasis><link linkend="_namespace_e_e_g_gaming_1_1_core_1_1_tools">EEGGaming.Core.Tools</link>;
+<anchor xml:id="__program_8cs_source_1l00002"/>00002 <emphasis role="keyword">using&#32;</emphasis>System;
+<anchor xml:id="__program_8cs_source_1l00003"/>00003 <emphasis role="keyword">using&#32;</emphasis>System.Collections.Generic;
+<anchor xml:id="__program_8cs_source_1l00004"/>00004 <emphasis role="keyword">using&#32;</emphasis>System.IO;
+<anchor xml:id="__program_8cs_source_1l00005"/>00005 <emphasis role="keyword">using&#32;</emphasis>System.Linq;
+<anchor xml:id="__program_8cs_source_1l00006"/>00006 <emphasis role="keyword">using&#32;</emphasis>System.Threading.Tasks;
+<anchor xml:id="__program_8cs_source_1l00007"/>00007 <emphasis role="keyword">using&#32;</emphasis>System.Windows.Forms;
+<anchor xml:id="__program_8cs_source_1l00008"/>00008 
+<anchor xml:id="__program_8cs_source_1l00009"/>00009 <emphasis role="keyword">namespace&#32;</emphasis><link linkend="_namespace_e_e_g_gaming_1_1_trainer">EEGGaming.Trainer</link>
+<anchor xml:id="__program_8cs_source_1l00010"/>00010 {
+<anchor xml:id="__program_8cs_source_1l00011"/>00011 &#32;&#32;&#32;&#32;<emphasis role="keyword">internal</emphasis>&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">class&#32;</emphasis>Program
+<anchor xml:id="__program_8cs_source_1l00012"/>00012 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__program_8cs_source_1l00016"/>00016 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;[STAThread]
+<anchor xml:id="__program_8cs_source_1l00017"/>00017 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;Main()
+<anchor xml:id="__program_8cs_source_1l00018"/>00018 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__program_8cs_source_1l00019"/>00019 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_e_e_g_gaming_db_context">EEGGaming.Core.Data.EEGGamingDbContext</link>&#32;db&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;Core.Data.EEGGamingDbContext();
+<anchor xml:id="__program_8cs_source_1l00020"/>00020 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(Directory.Exists(<link linkend="_class_e_e_g_gaming_1_1_core_1_1_tools_1_1_common_tools">CommonTools</link>.<link linkend="_class_e_e_g_gaming_1_1_core_1_1_tools_1_1_common_tools_1a3079777a63080f7f88a5f28bb8ac786f">GetAppRootDataFolderAbsolutePath</link>())&#32;==&#32;<emphasis role="keyword">false</emphasis>)
+<anchor xml:id="__program_8cs_source_1l00021"/>00021 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__program_8cs_source_1l00022"/>00022 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Directory.CreateDirectory(<link linkend="_class_e_e_g_gaming_1_1_core_1_1_tools_1_1_common_tools">CommonTools</link>.<link linkend="_class_e_e_g_gaming_1_1_core_1_1_tools_1_1_common_tools_1a3079777a63080f7f88a5f28bb8ac786f">GetAppRootDataFolderAbsolutePath</link>());
+<anchor xml:id="__program_8cs_source_1l00023"/>00023 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__program_8cs_source_1l00024"/>00024 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;db.Database.EnsureCreated();
+<anchor xml:id="__program_8cs_source_1l00025"/>00025 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Application.SetHighDpiMode(HighDpiMode.SystemAware);
+<anchor xml:id="__program_8cs_source_1l00026"/>00026 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Application.EnableVisualStyles();
+<anchor xml:id="__program_8cs_source_1l00027"/>00027 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Application.SetCompatibleTextRenderingDefault(<emphasis role="keyword">false</emphasis>);
+<anchor xml:id="__program_8cs_source_1l00028"/>00028 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Application.Run(<emphasis role="keyword">new</emphasis>&#32;frmMainGUI());
+<anchor xml:id="__program_8cs_source_1l00029"/>00029 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
+<anchor xml:id="__program_8cs_source_1l00030"/>00030 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__program_8cs_source_1l00031"/>00031 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__program_8cs_source_1l00032"/>00032 }
+</programlisting></section>

@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="class_e_e_g_gaming_1_1_core_1_1_migrations_1_1_e_e_g_gaming_db_context_model_snapshot" kind="class" language="C#" prot="public">
+    <compoundname>EEGGaming::Core::Migrations::EEGGamingDbContextModelSnapshot</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">ModelSnapshot</basecompoundref>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_e_e_g_gaming_1_1_core_1_1_migrations_1_1_e_e_g_gaming_db_context_model_snapshot_1a60d18e1c2d1305bc452ca10229a9919e" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void EEGGaming.Core.Migrations.EEGGamingDbContextModelSnapshot.BuildModel</definition>
+        <argsstring>(ModelBuilder modelBuilder)</argsstring>
+        <name>BuildModel</name>
+        <qualifiedname>EEGGaming.Core.Migrations.EEGGamingDbContextModelSnapshot.BuildModel</qualifiedname>
+        <param>
+          <type>ModelBuilder</type>
+          <declname>modelBuilder</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Migrations/EEGGamingDbContextModelSnapshot.cs" line="15" column="33" bodyfile="EEGGaming.Core/Migrations/EEGGamingDbContextModelSnapshot.cs" bodystart="15" bodyend="199"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>EEGGaming.Core.Migrations.EEGGamingDbContextModelSnapshot</label>
+        <link refid="class_e_e_g_gaming_1_1_core_1_1_migrations_1_1_e_e_g_gaming_db_context_model_snapshot"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ModelSnapshot</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>EEGGaming.Core.Migrations.EEGGamingDbContextModelSnapshot</label>
+        <link refid="class_e_e_g_gaming_1_1_core_1_1_migrations_1_1_e_e_g_gaming_db_context_model_snapshot"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ModelSnapshot</label>
+      </node>
+    </collaborationgraph>
+    <location file="EEGGaming.Core/Migrations/EEGGamingDbContextModelSnapshot.cs" line="13" column="12" bodyfile="EEGGaming.Core/Migrations/EEGGamingDbContextModelSnapshot.cs" bodystart="14" bodyend="200"/>
+    <listofallmembers>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_migrations_1_1_e_e_g_gaming_db_context_model_snapshot_1a60d18e1c2d1305bc452ca10229a9919e" prot="protected" virt="non-virtual"><scope>EEGGaming::Core::Migrations::EEGGamingDbContextModelSnapshot</scope><name>BuildModel</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

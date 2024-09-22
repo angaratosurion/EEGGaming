@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="class_add_user_details" kind="class" language="C#" prot="public">
+    <compoundname>AddUserDetails</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Control</basecompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_add_user_details_1ae88360792ced7c96aabbe322902de064" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void AddUserDetails._Ready</definition>
+        <argsstring>()</argsstring>
+        <name>_Ready</name>
+        <qualifiedname>AddUserDetails._Ready</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BlinkBird/Code/AddUserDetails.cs" line="10" column="22" bodyfile="BlinkBird/Code/AddUserDetails.cs" bodystart="10" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="class_add_user_details_1ad7ece054e2749da6c9a61454832f517b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void AddUserDetails._Process</definition>
+        <argsstring>(double delta)</argsstring>
+        <name>_Process</name>
+        <qualifiedname>AddUserDetails._Process</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>delta</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BlinkBird/Code/AddUserDetails.cs" line="47" column="22" bodyfile="BlinkBird/Code/AddUserDetails.cs" bodystart="47" bodyend="49"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_add_user_details_1a52b53c4360747f35184d9709b6fb90c1" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AddUserDetails.BtnCreateNewUser_Pressed</definition>
+        <argsstring>()</argsstring>
+        <name>BtnCreateNewUser_Pressed</name>
+        <qualifiedname>AddUserDetails.BtnCreateNewUser_Pressed</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BlinkBird/Code/AddUserDetails.cs" line="21" column="14" bodyfile="BlinkBird/Code/AddUserDetails.cs" bodystart="21" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="class_add_user_details_1a180c6c59ecf27840837d1ec8c954bda0" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AddUserDetails.BtnCancel_Pressed</definition>
+        <argsstring>()</argsstring>
+        <name>BtnCancel_Pressed</name>
+        <qualifiedname>AddUserDetails.BtnCancel_Pressed</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BlinkBird/Code/AddUserDetails.cs" line="41" column="14" bodyfile="BlinkBird/Code/AddUserDetails.cs" bodystart="41" bodyend="44"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>AddUserDetails</label>
+        <link refid="class_add_user_details"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Control</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>AddUserDetails</label>
+        <link refid="class_add_user_details"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Control</label>
+      </node>
+    </collaborationgraph>
+    <location file="BlinkBird/Code/AddUserDetails.cs" line="7" column="15" bodyfile="BlinkBird/Code/AddUserDetails.cs" bodystart="8" bodyend="50"/>
+    <listofallmembers>
+      <member refid="class_add_user_details_1ad7ece054e2749da6c9a61454832f517b" prot="public" virt="non-virtual"><scope>AddUserDetails</scope><name>_Process</name></member>
+      <member refid="class_add_user_details_1ae88360792ced7c96aabbe322902de064" prot="public" virt="non-virtual"><scope>AddUserDetails</scope><name>_Ready</name></member>
+      <member refid="class_add_user_details_1a180c6c59ecf27840837d1ec8c954bda0" prot="private" virt="non-virtual"><scope>AddUserDetails</scope><name>BtnCancel_Pressed</name></member>
+      <member refid="class_add_user_details_1a52b53c4360747f35184d9709b6fb90c1" prot="private" virt="non-virtual"><scope>AddUserDetails</scope><name>BtnCreateNewUser_Pressed</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

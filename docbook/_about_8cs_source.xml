@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__about_8cs_source" xml:lang="en-US">
+<title>About.cs</title>
+<indexterm><primary>BlinkBird/Code/About.cs</primary></indexterm>
+<programlisting linenumbering="unnumbered"><anchor xml:id="__about_8cs_source_1l00001"/>00001 <emphasis role="keyword">using&#32;</emphasis><link linkend="_namespace_e_e_g_gaming_1_1_core_1_1_tools">EEGGaming.Core.Tools</link>;
+<anchor xml:id="__about_8cs_source_1l00002"/>00002 <emphasis role="keyword">using&#32;</emphasis>Godot;
+<anchor xml:id="__about_8cs_source_1l00003"/>00003 <emphasis role="keyword">using&#32;</emphasis>System;
+<anchor xml:id="__about_8cs_source_1l00004"/>00004 
+<anchor xml:id="__about_8cs_source_1l00005"/><link linkend="_class_about">00005</link> <emphasis role="keyword">public</emphasis>&#32;<emphasis role="keyword">partial&#32;class&#32;</emphasis><link linkend="_class_about">About</link>&#32;:&#32;Node2D
+<anchor xml:id="__about_8cs_source_1l00006"/>00006 {
+<anchor xml:id="__about_8cs_source_1l00007"/>00007 &#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;Called&#32;when&#32;the&#32;node&#32;enters&#32;the&#32;scene&#32;tree&#32;for&#32;the&#32;first&#32;time.</emphasis>
+<anchor xml:id="__about_8cs_source_1l00008"/>00008 &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keyword">override</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;_Ready()
+<anchor xml:id="__about_8cs_source_1l00009"/>00009 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__about_8cs_source_1l00010"/>00010 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Label&#32;lblAppNameAndVersion&#32;=&#32;(Label)this.FindChild(<emphasis role="stringliteral">&quot;lblAppNameAndVersion&quot;</emphasis>,&#32;<emphasis role="keyword">true</emphasis>);
+<anchor xml:id="__about_8cs_source_1l00011"/>00011 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;GD.Print(<emphasis role="stringliteral">&quot;fff&quot;</emphasis>+<link linkend="_class_e_e_g_gaming_1_1_core_1_1_tools_1_1_common_tools">CommonTools</link>.<link linkend="_class_e_e_g_gaming_1_1_core_1_1_tools_1_1_common_tools_1af25b2229b38ff9fec1e67d2f5560b521">GetBlinkBirdbVersion</link>());
+<anchor xml:id="__about_8cs_source_1l00012"/>00012 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;lblAppNameAndVersion.Text&#32;+=&#32;<link linkend="_class_e_e_g_gaming_1_1_core_1_1_tools_1_1_common_tools">CommonTools</link>.<link linkend="_class_e_e_g_gaming_1_1_core_1_1_tools_1_1_common_tools_1af25b2229b38ff9fec1e67d2f5560b521">GetBlinkBirdbVersion</link>();
+<anchor xml:id="__about_8cs_source_1l00013"/>00013 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Label&#32;lblCoreVersion&#32;=&#32;(Label)this.FindChild(<emphasis role="stringliteral">&quot;lblCoreVersion&quot;</emphasis>,&#32;<emphasis role="keyword">true</emphasis>);
+<anchor xml:id="__about_8cs_source_1l00014"/>00014 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;lblCoreVersion.Text=&#32;<link linkend="_class_e_e_g_gaming_1_1_core_1_1_tools_1_1_common_tools">CommonTools</link>.<link linkend="_class_e_e_g_gaming_1_1_core_1_1_tools_1_1_common_tools_1abc9d2f32eaa71518650c4b010557d60f">GetEEGGamingCoreVersion</link>();
+<anchor xml:id="__about_8cs_source_1l00015"/>00015 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Label&#32;lblCoreCopyright&#32;=&#32;(Label)this.FindChild(<emphasis role="stringliteral">&quot;lblCoreCopyRight&quot;</emphasis>,&#32;<emphasis role="keyword">true</emphasis>);
+<anchor xml:id="__about_8cs_source_1l00016"/>00016 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;lblCoreCopyright.Text&#32;=&#32;<link linkend="_class_e_e_g_gaming_1_1_core_1_1_tools_1_1_common_tools">CommonTools</link>.<link linkend="_class_e_e_g_gaming_1_1_core_1_1_tools_1_1_common_tools_1ac63619323565e63d6a7e4bac1bfdf08a">GetEEGGamingCoreCopyright</link>();
+<anchor xml:id="__about_8cs_source_1l00017"/>00017 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Label&#32;lblDeveloper&#32;=&#32;(Label)this.FindChild(<emphasis role="stringliteral">&quot;lblCoreDeveloper&quot;</emphasis>,&#32;<emphasis role="keyword">true</emphasis>);
+<anchor xml:id="__about_8cs_source_1l00018"/>00018 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;lblDeveloper.Text=<link linkend="_class_e_e_g_gaming_1_1_core_1_1_tools_1_1_common_tools">CommonTools</link>.<link linkend="_class_e_e_g_gaming_1_1_core_1_1_tools_1_1_common_tools_1af122948c33cabf286bc8b242ddbbd87a">GetEEGGamingCoreDeveloper</link>();
+<anchor xml:id="__about_8cs_source_1l00019"/>00019 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
+<anchor xml:id="__about_8cs_source_1l00020"/>00020 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Label&#32;lblCoreLastModified&#32;=&#32;(Label)this.FindChild(<emphasis role="stringliteral">&quot;lblCoreLastModified&quot;</emphasis>,&#32;<emphasis role="keyword">true</emphasis>);
+<anchor xml:id="__about_8cs_source_1l00021"/>00021 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;lblCoreLastModified.Text=&#32;<link linkend="_class_e_e_g_gaming_1_1_core_1_1_tools_1_1_common_tools">CommonTools</link>.<link linkend="_class_e_e_g_gaming_1_1_core_1_1_tools_1_1_common_tools_1af855835037afae36f06cb3ae7e024ce9">GetEEGGamingCoreLastModifiedDateUTC</link>();
+<anchor xml:id="__about_8cs_source_1l00022"/>00022 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
+<anchor xml:id="__about_8cs_source_1l00023"/>00023 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Button&#32;btnClose&#32;=&#32;(Button)this.FindChild(<emphasis role="stringliteral">&quot;btnClose&quot;</emphasis>,&#32;<emphasis role="keyword">true</emphasis>);
+<anchor xml:id="__about_8cs_source_1l00024"/>00024 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;btnClose.Pressed&#32;+=&#32;BtnClose_Pressed;
+<anchor xml:id="__about_8cs_source_1l00025"/>00025 
+<anchor xml:id="__about_8cs_source_1l00026"/>00026 
+<anchor xml:id="__about_8cs_source_1l00027"/>00027 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__about_8cs_source_1l00028"/>00028 
+<anchor xml:id="__about_8cs_source_1l00029"/>00029 &#32;&#32;&#32;&#32;<emphasis role="keyword">private</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;BtnClose_Pressed()
+<anchor xml:id="__about_8cs_source_1l00030"/>00030 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__about_8cs_source_1l00031"/>00031 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.Hide();
+<anchor xml:id="__about_8cs_source_1l00032"/>00032 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__about_8cs_source_1l00033"/>00033 
+<anchor xml:id="__about_8cs_source_1l00034"/>00034 &#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;Called&#32;every&#32;frame.&#32;&apos;delta&apos;&#32;is&#32;the&#32;elapsed&#32;time&#32;since&#32;the&#32;previous&#32;frame.</emphasis>
+<anchor xml:id="__about_8cs_source_1l00035"/>00035 &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keyword">override</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;_Process(<emphasis role="keywordtype">double</emphasis>&#32;delta)
+<anchor xml:id="__about_8cs_source_1l00036"/>00036 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__about_8cs_source_1l00037"/>00037 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__about_8cs_source_1l00038"/>00038 }
+</programlisting></section>

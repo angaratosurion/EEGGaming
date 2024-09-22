@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="dir_ddc1b9a50c1a8bcdc2b3a821494c0caf" kind="dir">
+    <compoundname>EEGGaming.Trainer/obj/x64</compoundname>
+    <innerdir refid="dir_5f8dfe7167af4e1c25cbeba3b139572a">EEGGaming.Trainer/obj/x64/Debug</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="EEGGaming.Trainer/obj/x64/"/>
+  </compounddef>
+</doxygen>

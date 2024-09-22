@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="dir_80a49316f0d2cf83acbe767166d325c0" kind="dir">
+    <compoundname>EEGGaming.Core</compoundname>
+    <innerdir refid="dir_1b21e5647361d8a94b113544cab5ef36">EEGGaming.Core/Data</innerdir>
+    <innerdir refid="dir_98615e7510bb23fa500617d387397243">EEGGaming.Core/Managers</innerdir>
+    <innerdir refid="dir_6e3b6394c3e92d7d774ae2618d1e3c46">EEGGaming.Core/Migrations</innerdir>
+    <innerdir refid="dir_b08e04e99294d88a16ac01b7c22be045">EEGGaming.Core/obj</innerdir>
+    <innerdir refid="dir_c268d6e5faf325aaf57f2e1d27086923">EEGGaming.Core/Tools</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="EEGGaming.Core/"/>
+  </compounddef>
+</doxygen>

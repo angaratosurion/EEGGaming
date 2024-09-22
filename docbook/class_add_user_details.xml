@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_add_user_details" xml:lang="en-US">
+<title>AddUserDetails Class Reference</title>
+<indexterm><primary>AddUserDetails</primary></indexterm>
+<para>Inheritance diagram for AddUserDetails:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_add_user_details.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>override void <link linkend="_class_add_user_details_1ae88360792ced7c96aabbe322902de064">_Ready</link> ()</para>
+</listitem>
+            <listitem><para>override void <link linkend="_class_add_user_details_1ad7ece054e2749da6c9a61454832f517b">_Process</link> (double delta)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+<para>
+Definition at line <link linkend="__add_user_details_8cs_source_1l00007">7</link> of file <link linkend="__add_user_details_8cs_source">AddUserDetails.cs</link>.</para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_add_user_details_1ad7ece054e2749da6c9a61454832f517b"/><section>
+    <title>_Process()</title>
+<indexterm><primary>_Process</primary><secondary>AddUserDetails</secondary></indexterm>
+<indexterm><primary>AddUserDetails</primary><secondary>_Process</secondary></indexterm>
+<para><computeroutput>override void AddUserDetails._Process (double delta)</computeroutput></para><para>
+Definition at line <link linkend="__add_user_details_8cs_source_1l00047">47</link> of file <link linkend="__add_user_details_8cs_source">AddUserDetails.cs</link>.</para>
+</section>
+<anchor xml:id="_class_add_user_details_1ae88360792ced7c96aabbe322902de064"/><section>
+    <title>_Ready()</title>
+<indexterm><primary>_Ready</primary><secondary>AddUserDetails</secondary></indexterm>
+<indexterm><primary>AddUserDetails</primary><secondary>_Ready</secondary></indexterm>
+<para><computeroutput>override void AddUserDetails._Ready ( )</computeroutput></para><para>
+Definition at line <link linkend="__add_user_details_8cs_source_1l00010">10</link> of file <link linkend="__add_user_details_8cs_source">AddUserDetails.cs</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+BlinkBird/Code/AddUserDetails.cs</section>
+</section>

@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="dir_168fb29a19499809bab95bc91b90c33b" kind="dir">
+    <compoundname>EEGGaming.Trainer/obj/Debug/net5.0-windows</compoundname>
+    <innerfile refid="_8_n_e_t_core_app_00_version_0av5_80_8_assembly_attributes_8cs">.NETCoreApp,Version=v5.0.AssemblyAttributes.cs</innerfile>
+    <innerfile refid="_debug_2net5_80-windows_2_e_e_g_gaming_8_trainer_8_assembly_info_8cs">EEGGaming.Trainer.AssemblyInfo.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="EEGGaming.Trainer/obj/Debug/net5.0-windows/"/>
+  </compounddef>
+</doxygen>

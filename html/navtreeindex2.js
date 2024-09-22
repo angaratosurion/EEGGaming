@@ -1,0 +1,20 @@
+var NAVTREEINDEX2 =
+{
+"namespace_e_e_g_gaming_1_1_core_1_1_managers.html":[1,0,0,0,1],
+"namespace_e_e_g_gaming_1_1_core_1_1_managers.html#ac5dfc32818fda85c21b2a13fe1822796":[1,0,0,0,1,4],
+"namespace_e_e_g_gaming_1_1_core_1_1_migrations.html":[1,0,0,0,2],
+"namespace_e_e_g_gaming_1_1_core_1_1_tools.html":[1,0,0,0,3],
+"namespace_e_e_g_gaming_1_1_trainer.html":[1,0,0,1],
+"namespacemembers.html":[1,1,0],
+"namespacemembers_func.html":[1,1,1],
+"namespaces.html":[1,0],
+"pages.html":[],
+"x64_2_debug_2net6_80-windows7_80_2_e_e_g_gaming_8_trainer_8_assembly_info_8cs_source.html":[3,0,2,0,1,0,0,1],
+"x64_2_debug_2net6_80_2_e_e_g_gaming_8_core_8_assembly_info_8cs_source.html":[3,0,1,3,4,0,0,1],
+"x64_2_debug_2net6_80_2_e_e_g_gaming_8_core_8_global_usings_8g_8cs_source.html":[3,0,1,3,4,0,0,2],
+"x64_2_debug_2net8_80-windows7_80_2_e_e_g_gaming_8_trainer_8_assembly_info_8cs_source.html":[3,0,2,0,1,0,1,1],
+"x64_2_debug_2net8_80_2_e_e_g_gaming_8_core_8_assembly_info_8cs_source.html":[3,0,1,3,4,0,1,1],
+"x64_2_debug_2net8_80_2_e_e_g_gaming_8_core_8_global_usings_8g_8cs_source.html":[3,0,1,3,4,0,1,2],
+"x64_2_release_2net8_80_2_e_e_g_gaming_8_core_8_assembly_info_8cs_source.html":[3,0,1,3,4,1,0,1],
+"x64_2_release_2net8_80_2_e_e_g_gaming_8_core_8_global_usings_8g_8cs_source.html":[3,0,1,3,4,1,0,2]
+};

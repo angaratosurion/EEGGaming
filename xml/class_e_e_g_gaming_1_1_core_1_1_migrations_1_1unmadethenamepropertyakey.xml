@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="class_e_e_g_gaming_1_1_core_1_1_migrations_1_1unmadethenamepropertyakey" kind="class" language="C#" prot="public">
+    <compoundname>EEGGaming::Core::Migrations::unmadethenamepropertyakey</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Migration</basecompoundref>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_e_e_g_gaming_1_1_core_1_1_migrations_1_1unmadethenamepropertyakey_1a28987b6bc976760b2c7c0891d632a782" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void EEGGaming.Core.Migrations.unmadethenamepropertyakey.Up</definition>
+        <argsstring>(MigrationBuilder migrationBuilder)</argsstring>
+        <name>Up</name>
+        <qualifiedname>EEGGaming.Core.Migrations.unmadethenamepropertyakey.Up</qualifiedname>
+        <param>
+          <type>MigrationBuilder</type>
+          <declname>migrationBuilder</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Migrations/20240616172542_unmade the name property a key.cs" line="11" column="33" bodyfile="EEGGaming.Core/Migrations/20240616172542_unmade the name property a key.cs" bodystart="11" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="class_e_e_g_gaming_1_1_core_1_1_migrations_1_1unmadethenamepropertyakey_1aab081b70ad2f9f6f12687f42fc57da90" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void EEGGaming.Core.Migrations.unmadethenamepropertyakey.Down</definition>
+        <argsstring>(MigrationBuilder migrationBuilder)</argsstring>
+        <name>Down</name>
+        <qualifiedname>EEGGaming.Core.Migrations.unmadethenamepropertyakey.Down</qualifiedname>
+        <param>
+          <type>MigrationBuilder</type>
+          <declname>migrationBuilder</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Migrations/20240616172542_unmade the name property a key.cs" line="33" column="33" bodyfile="EEGGaming.Core/Migrations/20240616172542_unmade the name property a key.cs" bodystart="33" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="class_e_e_g_gaming_1_1_core_1_1_migrations_1_1unmadethenamepropertyakey_1a6e2b28de47c649a855a5796a5160a99d" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void EEGGaming.Core.Migrations.unmadethenamepropertyakey.BuildTargetModel</definition>
+        <argsstring>(ModelBuilder modelBuilder)</argsstring>
+        <name>BuildTargetModel</name>
+        <qualifiedname>EEGGaming.Core.Migrations.unmadethenamepropertyakey.BuildTargetModel</qualifiedname>
+        <param>
+          <type>ModelBuilder</type>
+          <declname>modelBuilder</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EEGGaming.Core/Migrations/20240616172542_unmade the name property a key.Designer.cs" line="18" column="33" bodyfile="EEGGaming.Core/Migrations/20240616172542_unmade the name property a key.Designer.cs" bodystart="18" bodyend="202"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>EEGGaming.Core.Migrations.unmadethenamepropertyakey</label>
+        <link refid="class_e_e_g_gaming_1_1_core_1_1_migrations_1_1unmadethenamepropertyakey"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Migration</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>EEGGaming.Core.Migrations.unmadethenamepropertyakey</label>
+        <link refid="class_e_e_g_gaming_1_1_core_1_1_migrations_1_1unmadethenamepropertyakey"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Migration</label>
+      </node>
+    </collaborationgraph>
+    <location file="EEGGaming.Core/Migrations/20240616172542_unmade the name property a key.cs" line="8" column="19" bodyfile="EEGGaming.Core/Migrations/20240616172542_unmade the name property a key.Designer.cs" bodystart="16" bodyend="203"/>
+    <listofallmembers>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_migrations_1_1unmadethenamepropertyakey_1a6e2b28de47c649a855a5796a5160a99d" prot="protected" virt="non-virtual"><scope>EEGGaming::Core::Migrations::unmadethenamepropertyakey</scope><name>BuildTargetModel</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_migrations_1_1unmadethenamepropertyakey_1aab081b70ad2f9f6f12687f42fc57da90" prot="protected" virt="non-virtual"><scope>EEGGaming::Core::Migrations::unmadethenamepropertyakey</scope><name>Down</name></member>
+      <member refid="class_e_e_g_gaming_1_1_core_1_1_migrations_1_1unmadethenamepropertyakey_1a28987b6bc976760b2c7c0891d632a782" prot="protected" virt="non-virtual"><scope>EEGGaming::Core::Migrations::unmadethenamepropertyakey</scope><name>Up</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

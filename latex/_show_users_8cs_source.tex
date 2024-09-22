@@ -1,0 +1,111 @@
+\doxysection{Show\+Users.\+cs}
+\hypertarget{_show_users_8cs_source}{}\label{_show_users_8cs_source}\index{BlinkBird/Code/ShowUsers.cs@{BlinkBird/Code/ShowUsers.cs}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_show_users_8cs_source_l00001}00001\ \textcolor{keyword}{using\ }\mbox{\hyperlink{namespace_e_e_g_gaming_1_1_core_1_1_data_1_1_models}{EEGGaming.Core.Data.Models}};}
+\DoxyCodeLine{\Hypertarget{_show_users_8cs_source_l00002}00002\ \textcolor{keyword}{using\ }\mbox{\hyperlink{namespace_e_e_g_gaming_1_1_core_1_1_managers}{EEGGaming.Core.Managers}};}
+\DoxyCodeLine{\Hypertarget{_show_users_8cs_source_l00003}00003\ \textcolor{keyword}{using\ }Godot;}
+\DoxyCodeLine{\Hypertarget{_show_users_8cs_source_l00004}00004\ \textcolor{keyword}{using\ }System;}
+\DoxyCodeLine{\Hypertarget{_show_users_8cs_source_l00005}00005\ }
+\DoxyCodeLine{\Hypertarget{_show_users_8cs_source_l00006}\mbox{\hyperlink{class_show_users}{00006}}\ \textcolor{keyword}{public}\ \textcolor{keyword}{partial\ class\ }\mbox{\hyperlink{class_show_users}{ShowUsers}}\ :\ Window}
+\DoxyCodeLine{\Hypertarget{_show_users_8cs_source_l00007}00007\ \{}
+\DoxyCodeLine{\Hypertarget{_show_users_8cs_source_l00008}00008\ \ \ \ \ \textcolor{comment}{//\ Called\ when\ the\ node\ enters\ the\ scene\ tree\ for\ the\ first\ time.}}
+\DoxyCodeLine{\Hypertarget{_show_users_8cs_source_l00009}00009\ \ \ \ \ ItemList\ lstUser;}
+\DoxyCodeLine{\Hypertarget{_show_users_8cs_source_l00010}00010\ \ \ \ \ Button\ btnShowUserDetails,\ btnAddNew,\ btnCancel;}
+\DoxyCodeLine{\Hypertarget{_show_users_8cs_source_l00011}00011\ \ \ \ \ PackedScene\ \ \ NewUserDetailsPackedScene,\ SelectUserScene\ ;}
+\DoxyCodeLine{\Hypertarget{_show_users_8cs_source_l00012}00012\ }
+\DoxyCodeLine{\Hypertarget{_show_users_8cs_source_l00013}00013\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{override}\ \textcolor{keywordtype}{void}\ \_Ready()}
+\DoxyCodeLine{\Hypertarget{_show_users_8cs_source_l00014}00014\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_show_users_8cs_source_l00015}00015\ \ \ \ \ \ \ \ \ lstUser\ =\ (ItemList)this.FindChild(\textcolor{stringliteral}{"{}lstUsers"{}},\ \textcolor{keyword}{true});}
+\DoxyCodeLine{\Hypertarget{_show_users_8cs_source_l00016}00016\ \ \ \ \ \ \ \ \ btnShowUserDetails\ =\ (Button)this.FindChild(\textcolor{stringliteral}{"{}btnShowUserDetails"{}},\ \textcolor{keyword}{true});}
+\DoxyCodeLine{\Hypertarget{_show_users_8cs_source_l00017}00017\ \ \ \ \ \ \ \ \ btnAddNew\ =\ (Button)this.FindChild(\textcolor{stringliteral}{"{}btnAddNew"{}},\ \textcolor{keyword}{true});}
+\DoxyCodeLine{\Hypertarget{_show_users_8cs_source_l00018}00018\ \ \ \ \ \ \ \ \ btnCancel\ =\ (Button)this.FindChild(\textcolor{stringliteral}{"{}btnCancel"{}},\ \textcolor{keyword}{true});}
+\DoxyCodeLine{\Hypertarget{_show_users_8cs_source_l00019}00019\ \ \ \ \ \ \ \ \ var\ users\ =\ \mbox{\hyperlink{class_menu}{Menu}}.userManager.\mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_managers_1_1_user_manager_a0ae10eef0d5cff01c0ededc365fcbd36}{List}}();}
+\DoxyCodeLine{\Hypertarget{_show_users_8cs_source_l00020}00020\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (users\ !=\ \textcolor{keyword}{null}\ \&\&\ users.Count\ >\ 0)}
+\DoxyCodeLine{\Hypertarget{_show_users_8cs_source_l00021}00021\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_show_users_8cs_source_l00022}00022\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{foreach}\ (var\ user\ \textcolor{keywordflow}{in}\ users)}
+\DoxyCodeLine{\Hypertarget{_show_users_8cs_source_l00023}00023\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_show_users_8cs_source_l00024}00024\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ String\ tex\ =\ String.Format(\textcolor{stringliteral}{"{}\{0\}\ -\/\ \{1\}\ -\/\ \{2\}\ -\/\ \{3\}\ -\/\ \{4\}\ "{}},\ user.Id,\ user.Name,\ user.Sex,\ user.Age,\ user.Education);}
+\DoxyCodeLine{\Hypertarget{_show_users_8cs_source_l00025}00025\ }
+\DoxyCodeLine{\Hypertarget{_show_users_8cs_source_l00026}00026\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ lstUser.AddItem(tex);}
+\DoxyCodeLine{\Hypertarget{_show_users_8cs_source_l00027}00027\ }
+\DoxyCodeLine{\Hypertarget{_show_users_8cs_source_l00028}00028\ }
+\DoxyCodeLine{\Hypertarget{_show_users_8cs_source_l00029}00029\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_show_users_8cs_source_l00030}00030\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_show_users_8cs_source_l00031}00031\ \ \ \ \ \ \ \ \ lstUser.ItemSelected\ +=\ LstUser\_ItemSelected;}
+\DoxyCodeLine{\Hypertarget{_show_users_8cs_source_l00032}00032\ \ \ \ \ \ \ \ \ btnShowUserDetails.Pressed\ +=\ BtnShowUserDetails\_Pressed;}
+\DoxyCodeLine{\Hypertarget{_show_users_8cs_source_l00033}00033\ \ \ \ \ \ \ \ \ btnAddNew.Pressed\ +=\ BtnAddNew\_Pressed;}
+\DoxyCodeLine{\Hypertarget{_show_users_8cs_source_l00034}00034\ \ \ \ \ \ \ \ \ btnCancel.Pressed\ +=\ BtnCancel\_Pressed;}
+\DoxyCodeLine{\Hypertarget{_show_users_8cs_source_l00035}00035\ }
+\DoxyCodeLine{\Hypertarget{_show_users_8cs_source_l00036}00036\ }
+\DoxyCodeLine{\Hypertarget{_show_users_8cs_source_l00037}00037\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_show_users_8cs_source_l00038}00038\ }
+\DoxyCodeLine{\Hypertarget{_show_users_8cs_source_l00039}00039\ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{void}\ BtnCancel\_Pressed()}
+\DoxyCodeLine{\Hypertarget{_show_users_8cs_source_l00040}00040\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_show_users_8cs_source_l00041}00041\ \ \ \ \ \ \ \ \ this.Hide();}
+\DoxyCodeLine{\Hypertarget{_show_users_8cs_source_l00042}00042\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_show_users_8cs_source_l00043}00043\ }
+\DoxyCodeLine{\Hypertarget{_show_users_8cs_source_l00044}00044\ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{void}\ BtnAddNew\_Pressed()}
+\DoxyCodeLine{\Hypertarget{_show_users_8cs_source_l00045}00045\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_show_users_8cs_source_l00046}00046\ \ \ \ \ \ \ \ \ NewUserDetailsPackedScene\ =\ (PackedScene)GD.Load(\textcolor{stringliteral}{"{}res://Scenes/AddUserDetails.tscn"{}});}
+\DoxyCodeLine{\Hypertarget{_show_users_8cs_source_l00047}00047\ \ \ \ \ \ \ \ \ Control\ control\ =\ (Control)NewUserDetailsPackedScene.Instantiate();}
+\DoxyCodeLine{\Hypertarget{_show_users_8cs_source_l00048}00048\ \ \ \ \ \ \ \ \ this.AddSibling(control);}
+\DoxyCodeLine{\Hypertarget{_show_users_8cs_source_l00049}00049\ \ \ \ \ \ \ \ \ this.Hide();}
+\DoxyCodeLine{\Hypertarget{_show_users_8cs_source_l00050}00050\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_show_users_8cs_source_l00051}00051\ }
+\DoxyCodeLine{\Hypertarget{_show_users_8cs_source_l00052}00052\ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{void}\ BtnShowUserDetails\_Pressed()}
+\DoxyCodeLine{\Hypertarget{_show_users_8cs_source_l00053}00053\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_show_users_8cs_source_l00054}00054\ \ \ \ \ \ \ \ \ SelectUserScene\ =\ (PackedScene)GD.Load(\textcolor{stringliteral}{"{}res://Scenes/ShowUserDetails.tscn"{}});}
+\DoxyCodeLine{\Hypertarget{_show_users_8cs_source_l00055}00055\ \ \ \ \ \ \ \ \ Control\ control\ =\ (Control)SelectUserScene.Instantiate();}
+\DoxyCodeLine{\Hypertarget{_show_users_8cs_source_l00056}00056\ \ \ \ \ \ \ \ \ this.AddSibling(control);}
+\DoxyCodeLine{\Hypertarget{_show_users_8cs_source_l00057}00057\ \ \ \ \ \ \ \ \ this.Hide();}
+\DoxyCodeLine{\Hypertarget{_show_users_8cs_source_l00058}00058\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_show_users_8cs_source_l00059}00059\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_show_users_8cs_source_l00060}00060\ }
+\DoxyCodeLine{\Hypertarget{_show_users_8cs_source_l00061}00061\ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{void}\ LstUser\_ItemSelected(\textcolor{keywordtype}{long}\ index)}
+\DoxyCodeLine{\Hypertarget{_show_users_8cs_source_l00062}00062\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_show_users_8cs_source_l00063}00063\ }
+\DoxyCodeLine{\Hypertarget{_show_users_8cs_source_l00064}00064\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}[]\ selecteditem\ =\ this.lstUser.GetSelectedItems();}
+\DoxyCodeLine{\Hypertarget{_show_users_8cs_source_l00065}00065\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(selecteditem\ !=\textcolor{keyword}{null})}
+\DoxyCodeLine{\Hypertarget{_show_users_8cs_source_l00066}00066\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_show_users_8cs_source_l00067}00067\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ seltex=lstUser.GetItemText(selecteditem[0]);}
+\DoxyCodeLine{\Hypertarget{_show_users_8cs_source_l00068}00068\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}[]\ text\ =\ \ \ seltex.Split(\textcolor{stringliteral}{"{}-\/"{}});}
+\DoxyCodeLine{\Hypertarget{_show_users_8cs_source_l00069}00069\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ username\ =\ text[1];}
+\DoxyCodeLine{\Hypertarget{_show_users_8cs_source_l00070}00070\ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_show_users_8cs_source_l00071}00071\ \ \ \ \ \ \ \ \ \ \ \ \ GD.Print(username);}
+\DoxyCodeLine{\Hypertarget{_show_users_8cs_source_l00072}00072\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\ \mbox{\hyperlink{class_menu}{Menu}}.userManager==\textcolor{keyword}{null})}
+\DoxyCodeLine{\Hypertarget{_show_users_8cs_source_l00073}00073\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_show_users_8cs_source_l00074}00074\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Menu.userManager\ =\ \textcolor{keyword}{new}\ \ \mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_managers_1_1_user_manager}{UserManager}}();}
+\DoxyCodeLine{\Hypertarget{_show_users_8cs_source_l00075}00075\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_show_users_8cs_source_l00076}00076\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_user}{User}}\ user=\mbox{\hyperlink{class_menu}{Menu}}.userManager.\mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_managers_1_1_user_manager_a6d1e2fec4d0b142fa2e4696143097dd7}{GetUser}}(username);}
+\DoxyCodeLine{\Hypertarget{_show_users_8cs_source_l00077}00077\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (user\ !=\ \textcolor{keyword}{null})}
+\DoxyCodeLine{\Hypertarget{_show_users_8cs_source_l00078}00078\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_show_users_8cs_source_l00079}00079\ }
+\DoxyCodeLine{\Hypertarget{_show_users_8cs_source_l00080}00080\ }
+\DoxyCodeLine{\Hypertarget{_show_users_8cs_source_l00081}00081\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ GD.Print(user.\mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_user_aa26c5b399972b3fa5cf8950a3c09bc5a}{Name}});}
+\DoxyCodeLine{\Hypertarget{_show_users_8cs_source_l00082}00082\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Menu.SelectedUser\ =\ user;}
+\DoxyCodeLine{\Hypertarget{_show_users_8cs_source_l00083}00083\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_show_users_8cs_source_l00084}00084\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{_show_users_8cs_source_l00085}00085\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_show_users_8cs_source_l00086}00086\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id}=\ \textcolor{keywordtype}{int}.Parse(text[0]);}
+\DoxyCodeLine{\Hypertarget{_show_users_8cs_source_l00087}00087\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ user\ =\ \mbox{\hyperlink{class_menu}{Menu}}.userManager.\mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_managers_1_1_user_manager_a6d1e2fec4d0b142fa2e4696143097dd7}{GetUser}}(\textcolor{keywordtype}{id});}
+\DoxyCodeLine{\Hypertarget{_show_users_8cs_source_l00088}00088\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ GD.Print(text[0]);}
+\DoxyCodeLine{\Hypertarget{_show_users_8cs_source_l00089}00089\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//GD.Print(user.Name);}}
+\DoxyCodeLine{\Hypertarget{_show_users_8cs_source_l00090}00090\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Menu.SelectedUser\ =\ user;}
+\DoxyCodeLine{\Hypertarget{_show_users_8cs_source_l00091}00091\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ GD.Print(\mbox{\hyperlink{class_menu}{Menu}}.SelectedUser);}
+\DoxyCodeLine{\Hypertarget{_show_users_8cs_source_l00092}00092\ }
+\DoxyCodeLine{\Hypertarget{_show_users_8cs_source_l00093}00093\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_show_users_8cs_source_l00094}00094\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_show_users_8cs_source_l00095}00095\ }
+\DoxyCodeLine{\Hypertarget{_show_users_8cs_source_l00096}00096\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_show_users_8cs_source_l00097}00097\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_show_users_8cs_source_l00098}00098\ }
+\DoxyCodeLine{\Hypertarget{_show_users_8cs_source_l00099}00099\ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_show_users_8cs_source_l00100}00100\ }
+\DoxyCodeLine{\Hypertarget{_show_users_8cs_source_l00101}00101\ \ \ \ \ \textcolor{comment}{//\ Called\ every\ frame.\ 'delta'\ is\ the\ elapsed\ time\ since\ the\ previous\ frame.}}
+\DoxyCodeLine{\Hypertarget{_show_users_8cs_source_l00102}00102\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{override}\ \textcolor{keywordtype}{void}\ \_Process(\textcolor{keywordtype}{double}\ delta)}
+\DoxyCodeLine{\Hypertarget{_show_users_8cs_source_l00103}00103\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_show_users_8cs_source_l00104}00104\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_show_users_8cs_source_l00105}00105\ \}}
+
+\end{DoxyCode}
