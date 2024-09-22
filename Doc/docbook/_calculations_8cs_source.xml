@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__calculations_8cs_source" xml:lang="en-US">
 <title>Calculations.cs</title>
-<indexterm><primary>D:/Cloud Folder/OneDrive/My Programs/Post-Graduate/Master in Information Systems (PLS)/Thesis/Code/EEGGaming/EEGGaming.Core/Tools/Calculations.cs</primary></indexterm>
+<indexterm><primary>EEGGaming.Core/Tools/Calculations.cs</primary></indexterm>
 <programlisting linenumbering="unnumbered"><anchor xml:id="__calculations_8cs_source_1l00001"/>00001 <emphasis role="keyword">using&#32;</emphasis>System.Runtime.CompilerServices;
 <anchor xml:id="__calculations_8cs_source_1l00002"/>00002 
 <anchor xml:id="__calculations_8cs_source_1l00003"/><link linkend="_namespace_e_e_g_gaming_1_1_core_1_1_tools">00003</link> <emphasis role="keyword">namespace&#32;</emphasis><link linkend="_namespace_e_e_g_gaming_1_1_core_1_1_tools">EEGGaming.Core.Tools</link>

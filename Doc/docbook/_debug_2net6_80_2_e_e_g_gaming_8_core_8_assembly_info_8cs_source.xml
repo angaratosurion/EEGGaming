@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__debug_2net6_80_2_e_e_g_gaming_8_core_8_assembly_info_8cs_source" xml:lang="en-US">
 <title>EEGGaming.Core.AssemblyInfo.cs</title>
-<indexterm><primary>D:/Cloud Folder/OneDrive/My Programs/Post-Graduate/Master in Information Systems (PLS)/Thesis/Code/EEGGaming/EEGGaming.Core/obj/Debug/net6.0/EEGGaming.Core.AssemblyInfo.cs</primary></indexterm>
+<indexterm><primary>EEGGaming.Core/obj/Debug/net6.0/EEGGaming.Core.AssemblyInfo.cs</primary></indexterm>
 <programlisting linenumbering="unnumbered"><anchor xml:id="__debug_2net6_80_2_e_e_g_gaming_8_core_8_assembly_info_8cs_source_1l00001"/>00001 <emphasis role="comment">//------------------------------------------------------------------------------</emphasis>
 <anchor xml:id="__debug_2net6_80_2_e_e_g_gaming_8_core_8_assembly_info_8cs_source_1l00002"/>00002 <emphasis role="comment">//&#32;&lt;auto-generated&gt;</emphasis>
 <anchor xml:id="__debug_2net6_80_2_e_e_g_gaming_8_core_8_assembly_info_8cs_source_1l00003"/>00003 <emphasis role="comment">//&#32;&#32;&#32;&#32;&#32;This&#32;code&#32;was&#32;generated&#32;by&#32;a&#32;tool.</emphasis>

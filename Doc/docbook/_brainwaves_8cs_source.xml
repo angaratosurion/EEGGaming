@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__brainwaves_8cs_source" xml:lang="en-US">
 <title>Brainwaves.cs</title>
-<indexterm><primary>D:/Cloud Folder/OneDrive/My Programs/Post-Graduate/Master in Information Systems (PLS)/Thesis/Code/EEGGaming/EEGGaming.Core/Data/NonDataModels/Brainwaves.cs</primary></indexterm>
+<indexterm><primary>EEGGaming.Core/Data/NonDataModels/Brainwaves.cs</primary></indexterm>
 <programlisting linenumbering="unnumbered"><anchor xml:id="__brainwaves_8cs_source_1l00001"/>00001 <emphasis role="keyword">using&#32;</emphasis>System;
 <anchor xml:id="__brainwaves_8cs_source_1l00002"/>00002 <emphasis role="keyword">using&#32;</emphasis>System.Collections.Generic;
 <anchor xml:id="__brainwaves_8cs_source_1l00003"/>00003 <emphasis role="keyword">using&#32;</emphasis>System.ComponentModel.DataAnnotations.Schema;

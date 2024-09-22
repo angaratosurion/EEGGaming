@@ -3,7 +3,7 @@ var searchData=
   ['edit_0',['Edit',['../class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager.html#a30ed0888a74e04e4f09919e9d7e5b19c',1,'EEGGaming.Core.Managers.BrainWaveRecordManager.Edit()'],['../class_e_e_g_gaming_1_1_core_1_1_managers_1_1_user_manager.html#ad1823ce41c75fd374eca468c3218617d',1,'EEGGaming.Core.Managers.UserManager.Edit()']]],
   ['editrange_1',['EditRange',['../class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager.html#a6dd4ca73dfa09508fdefff14db59e506',1,'EEGGaming::Core::Managers::BrainWaveRecordManager']]],
   ['education_2',['Education',['../class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_user.html#a98705082d654e8cfe493c3902f95d553',1,'EEGGaming::Core::Data::Models::User']]],
-  ['eeggaming_3',['EEGGaming',['../namespace_e_e_g_gaming.html',1,'EEGGaming'],['../md__d_1_2_cloud_01_folder_2_one_drive_2_my_01_programs_2_post-_graduate_2_master_01in_01_informa347b846a482b3a14cd81b7dec75d443c.html',1,'EEGGaming']]],
+  ['eeggaming_3',['EEGGaming',['../namespace_e_e_g_gaming.html',1,'EEGGaming'],['../md__r_e_a_d_m_e.html',1,'EEGGaming']]],
   ['eeggaming_3a_3acore_4',['Core',['../namespace_e_e_g_gaming_1_1_core.html',1,'EEGGaming']]],
   ['eeggaming_3a_3acore_3a_3adata_5',['Data',['../namespace_e_e_g_gaming_1_1_core_1_1_data.html',1,'EEGGaming::Core']]],
   ['eeggaming_3a_3acore_3a_3adata_3a_3amodels_6',['Models',['../namespace_e_e_g_gaming_1_1_core_1_1_data_1_1_models.html',1,'EEGGaming::Core::Data']]],

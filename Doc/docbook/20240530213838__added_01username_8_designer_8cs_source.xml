@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_20240530213838__added_01username_8_designer_8cs_source" xml:lang="en-US">
 <title>20240530213838_added username.Designer.cs</title>
-<indexterm><primary>D:/Cloud Folder/OneDrive/My Programs/Post-Graduate/Master in Information Systems (PLS)/Thesis/Code/EEGGaming/EEGGaming.Core/Migrations/20240530213838_added username.Designer.cs</primary></indexterm>
+<indexterm><primary>EEGGaming.Core/Migrations/20240530213838_added username.Designer.cs</primary></indexterm>
 <programlisting linenumbering="unnumbered"><anchor xml:id="_20240530213838__added_01username_8_designer_8cs_source_1l00001"/>00001 <emphasis role="comment">//&#32;&lt;auto-generated&#32;/&gt;</emphasis>
 <anchor xml:id="_20240530213838__added_01username_8_designer_8cs_source_1l00002"/>00002 <emphasis role="keyword">using&#32;</emphasis>System;
 <anchor xml:id="_20240530213838__added_01username_8_designer_8cs_source_1l00003"/>00003 <emphasis role="keyword">using&#32;</emphasis><link linkend="_namespace_e_e_g_gaming_1_1_core_1_1_data">EEGGaming.Core.Data</link>;
