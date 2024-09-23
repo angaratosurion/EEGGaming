@@ -31,7 +31,7 @@ script = ExtResource("5_vetoq")
 
 [node name="ScoreandTime" type="HSplitContainer" parent="."]
 offset_top = -1.0
-offset_right = 615.0
+offset_right = 301.0
 offset_bottom = 39.0
 script = ExtResource("4_4cx6w")
 
@@ -68,9 +68,9 @@ texture = ExtResource("3_i5lqk")
 script = ExtResource("2_hdlif")
 
 [node name="HSdrHorizontalSpeed" type="HSlider" parent="."]
-offset_left = 403.0
+offset_left = 454.0
 offset_top = 8.0
-offset_right = 557.0
+offset_right = 608.0
 offset_bottom = 24.0
 value = 10.0
 

@@ -1,6 +1,7 @@
 using EEGGaming.Core.Data.Models;
 using EEGGaming.Core.Managers;
 using Godot;
+using NeuroSDK;
 using System;
 using System.Threading;
 
@@ -12,9 +13,10 @@ public partial class Menu : Control
 	public static BrainWaveRecordManager recordManager = new BrainWaveRecordManager();
 	public static GamingSesionManager gamingSesionManager = new GamingSesionManager();
 	public static UserManager userManager = new UserManager();
+	Label lblDeviceName, lblDeviceState;
 
-	public static User SelectedUser = null;// new User();
-	bool ignoreUserselectionandconstateofdevice = false;
+    public static User SelectedUser = null;// new User();
+	public static bool ignoreUserselectionandconstateofdevice = false;
     public static  void SaveDataToDb()
     {
         if (World.gamingSesion != null)
@@ -56,24 +58,30 @@ public partial class Menu : Control
 		}
  	BrainWaveRecordManager.scanner.Start();
 		var sensors = BrainWaveRecordManager.scanner.Sensors;
-		 
+        lblDeviceName = (Label)this.FindChild("lblDeviceName", true);
 
-		
-		if (  sensors.Count > 0)
+        lblDeviceState = (Label)this.FindChild("lblDeviceState", true);
+        if (  sensors.Count > 0)
 		{
-			Label lblDeviceName = (Label)this.FindChild("lblDeviceName", true);
+			  
 			lblDeviceName.Text = sensors[0].Name;
-			Label lblDeviceState = (Label)this.FindChild("lblDeviceState", true);
+			  
 			recordManager.Connect(sensors[0]);
 			lblDeviceState.Text = recordManager.Sensor.State.ToString();
 			BrainWaveRecordManager.scanner.Stop();
 
 		}
+         if (  ignoreUserselectionandconstateofdevice)
+        {
+            lblDeviceName.Text = "BrainBit";
+            lblDeviceState.Text = SensorState.StateInRange.ToString();
+
+        }
 
 
 
 
-	}
+    }
 
 	private void BtnShowUsers_Pressed()
 	{
@@ -91,13 +99,19 @@ public partial class Menu : Control
 		GD.Print(sensors.Count);
 		if (sensors.Count > 0)
 		{
-			Label lblDeviceName = (Label)this.FindChild("lblDeviceName", true);
+			 lblDeviceName = (Label)this.FindChild("lblDeviceName", true);
 			lblDeviceName.Text = sensors[0].Name;
-			Label lblDeviceState = (Label)this.FindChild("lblDeviceState", true);
+			 lblDeviceState = (Label)this.FindChild("lblDeviceState", true);
 			recordManager.Connect(sensors[0]);
 			lblDeviceState.Text = recordManager.Sensor.State.ToString();
 			BrainWaveRecordManager.scanner.Stop();
 			recordManager.Connect(sensors[0]);
+			if (  ignoreUserselectionandconstateofdevice)
+			{
+				lblDeviceName.Text = "BrainBit";
+                lblDeviceState.Text=SensorState.StateInRange.ToString();	
+
+            }
 			
 
 		}

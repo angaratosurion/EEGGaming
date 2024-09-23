@@ -22,6 +22,7 @@ public partial class World : Node2D
     public static Label speedvalue;
     public static HSlider HslSpeed;
 	public static Camera Camera;
+
     
     private void HSdrHorizontalSpeed_ValueChanged(double value)
     {
@@ -50,6 +51,16 @@ public partial class World : Node2D
 			background.Size = winsize;
              
 
+        }
+		if ( Menu.ignoreUserselectionandconstateofdevice)
+		{
+            started = DateTime.Now;
+
+            timer = (Timer)this.FindChild("TmrTimer", true);
+            timer.Timeout += Timer_Timeout;
+            timer.Start();
+            lblElapsed = (Label)this.FindChild("lblElapsed", true);
+            lblScore = (Label)this.FindChild("lblScore", true);
         }
 		
 		if (Menu.recordManager.Sensor != null &&

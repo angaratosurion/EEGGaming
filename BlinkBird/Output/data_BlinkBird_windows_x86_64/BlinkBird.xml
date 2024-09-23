@@ -474,9 +474,14 @@
             Cached name for the 'btnNewGame' field.
             </summary>
         </member>
-        <member name="F:Menu.PropertyName.ignoreUserselectionandconstateofdevice">
+        <member name="F:Menu.PropertyName.lblDeviceName">
             <summary>
-            Cached name for the 'ignoreUserselectionandconstateofdevice' field.
+            Cached name for the 'lblDeviceName' field.
+            </summary>
+        </member>
+        <member name="F:Menu.PropertyName.lblDeviceState">
+            <summary>
+            Cached name for the 'lblDeviceState' field.
             </summary>
         </member>
         <member name="M:Menu.SetGodotClassPropertyValue(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.godot_variant@)">

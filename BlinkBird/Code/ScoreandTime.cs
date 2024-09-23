@@ -18,7 +18,7 @@ public partial class ScoreandTime : HSplitContainer
         {
             Position = new(World.Camera.Position.X  , 0);
             
-            World.HslSpeed.Position= new(World.Camera.Position.X+this.Size.X, this.Position.Y);
+            World.HslSpeed.Position= new(World.Camera.Position.X+this.Size.X+100, this.Position.Y);
         }
     }
 }

@@ -8,15 +8,27 @@
 script = ExtResource("1_num15")
 
 [node name="PanelContainer" type="PanelContainer" parent="."]
-offset_right = 1153.0
-offset_bottom = 646.0
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 2e+12
+offset_bottom = 9.22337e+18
+grow_horizontal = 2
+grow_vertical = 2
 theme_override_styles/panel = ExtResource("2_w3rsh")
 
 [node name="HSplitContainer" type="HSplitContainer" parent="."]
-offset_left = 406.0
-offset_top = 20.0
-offset_right = 985.0
-offset_bottom = 178.0
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 600.0
+offset_top = 34.0
+offset_right = 1179.0
+offset_bottom = 192.0
+grow_horizontal = 2
+grow_vertical = 2
 
 [node name="logo" type="Sprite2D" parent="HSplitContainer"]
 position = Vector2(56, 84)
@@ -30,10 +42,17 @@ text = "BlinkBird"
 horizontal_alignment = 1
 
 [node name="HSplitContainer2" type="HSplitContainer" parent="."]
-offset_left = 420.0
-offset_top = 245.0
-offset_right = 577.0
-offset_bottom = 268.0
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 724.0
+offset_top = 300.0
+offset_right = 881.0
+offset_bottom = 323.0
+grow_horizontal = 2
+grow_vertical = 2
 
 [node name="Label" type="Label" parent="HSplitContainer2"]
 layout_mode = 2
@@ -44,10 +63,17 @@ layout_mode = 2
 text = "0.0.0.0"
 
 [node name="HSplitContainer3" type="HSplitContainer" parent="."]
-offset_left = 413.0
-offset_top = 284.0
-offset_right = 1551.0
-offset_bottom = 324.0
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 725.0
+offset_top = 346.0
+offset_right = 1863.0
+offset_bottom = 386.0
+grow_horizontal = 2
+grow_vertical = 2
 
 [node name="Label" type="Label" parent="HSplitContainer3"]
 layout_mode = 2
@@ -58,10 +84,17 @@ layout_mode = 2
 text = "copyrgiht"
 
 [node name="HSplitContainer4" type="HSplitContainer" parent="."]
-offset_left = 414.0
-offset_top = 346.0
-offset_right = 1552.0
-offset_bottom = 386.0
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 728.0
+offset_top = 392.0
+offset_right = 1866.0
+offset_bottom = 432.0
+grow_horizontal = 2
+grow_vertical = 2
 
 [node name="Label" type="Label" parent="HSplitContainer4"]
 layout_mode = 2
@@ -72,10 +105,10 @@ layout_mode = 2
 text = "Developer"
 
 [node name="HSplitContainer6" type="HSplitContainer" parent="."]
-offset_left = 413.0
-offset_top = 395.0
-offset_right = 1551.0
-offset_bottom = 435.0
+offset_left = 716.0
+offset_top = 437.0
+offset_right = 1854.0
+offset_bottom = 477.0
 
 [node name="Label" type="Label" parent="HSplitContainer6"]
 layout_mode = 2
@@ -86,8 +119,15 @@ layout_mode = 2
 text = "15/4/2024"
 
 [node name="btnClose" type="Button" parent="."]
-offset_left = 338.0
-offset_top = 467.0
-offset_right = 801.0
-offset_bottom = 507.0
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 635.0
+offset_top = 503.0
+offset_right = 1098.0
+offset_bottom = 543.0
+grow_horizontal = 2
+grow_vertical = 2
 text = "Close"

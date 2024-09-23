@@ -10,11 +10,7 @@ public partial class Camera : Camera2D
 	{ 
 	      
        
-        //if ( player == null)
-        //{
-        //	player = FindChild("Player", true) as Player;
-        //}
-        //Position = new(0, 0);// or whatever the Player Node is named
+        
 
     }
 
