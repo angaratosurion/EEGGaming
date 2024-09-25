@@ -1,10 +1,15 @@
 using EEGGaming.Core.Tools;
 using Godot;
 using System;
-
+/// <summary>
+/// This is the window that shows the info about the app
+/// </summary>
+// Called when the node enters the scene tree for the first time.
 public partial class About : Node2D
 {
-	// Called when the node enters the scene tree for the first time.
+	/// <summary>
+	/// Executes when the node isready andfills the info in the window
+	/// </summary>
 	public override void _Ready()
 	{
 		Label lblAppNameAndVersion = (Label)this.FindChild("lblAppNameAndVersion", true);
@@ -25,7 +30,9 @@ public partial class About : Node2D
 
 
 	}
-
+	/// <summary>
+	/// Closes the window
+	/// </summary>
 	private void BtnClose_Pressed()
 	{
 		this.Hide();

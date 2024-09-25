@@ -27,7 +27,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">EEGGaming And Blinkbird<span id="projectnumber">&#160;0.2.6.0</span>
+   <div id="projectname">EEGGaming And Blinkbird<span id="projectnumber">&#160;0.2.7.5</span>
    </div>
   </td>
  </tr>
@@ -99,59 +99,62 @@ $(function(){initNavTree('_add_user_details_8cs_source.html',''); initResizable(
   <div class="headertitle"><div class="title">AddUserDetails.cs</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_e_e_g_gaming_1_1_core_1_1_data_1_1_models.html">EEGGaming.Core.Data.Models</a>;</div>
+<a href="_add_user_details_8cs.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_e_e_g_gaming_1_1_core_1_1_data_1_1_models.html">EEGGaming.Core.Data.Models</a>;</div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_e_e_g_gaming_1_1_core_1_1_managers.html">EEGGaming.Core.Managers</a>;</div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">using </span>Godot;</div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">using </span>System;</div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">using </span>System.Linq;</div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
-<div class="foldopen" id="foldopen00007" data-start="{" data-end="};">
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="class_add_user_details.html">    7</a></span><span class="keyword">public</span> <span class="keyword">partial class </span><a class="code hl_class" href="class_add_user_details.html">AddUserDetails</a> : Control</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>{</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <span class="comment">// Called when the node enters the scene tree for the first time.</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> _Ready()</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    {</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>        Button btnCancel = (Button)this.FindChild(<span class="stringliteral">&quot;btnCancel&quot;</span>,<span class="keyword">true</span>);</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>             </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>        btnCancel.Pressed += BtnCancel_Pressed;</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        Button btnCreateNewUser= (Button)this.FindChild(<span class="stringliteral">&quot;btnCreate&quot;</span>, <span class="keyword">true</span>);</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        btnCreateNewUser.Pressed += BtnCreateNewUser_Pressed;</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        ;</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    }</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keyword">private</span> <span class="keywordtype">void</span> BtnCreateNewUser_Pressed()</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    {</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        LineEdit txtAge = (LineEdit)this.FindChild(<span class="stringliteral">&quot;txtAge&quot;</span>,<span class="keyword">true</span>);</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        OptionButton optEducation = (OptionButton)this.FindChild(<span class="stringliteral">&quot;optEducation&quot;</span>,<span class="keyword">true</span>);</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        OptionButton optSex= (OptionButton)this.FindChild(<span class="stringliteral">&quot;optionSex&quot;</span>,<span class="keyword">true</span>);</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        LineEdit txtName = (LineEdit)this.FindChild(<span class="stringliteral">&quot;txtName&quot;</span>, <span class="keyword">true</span>);</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        <a class="code hl_class" href="class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_user.html">User</a> user = <span class="keyword">new</span> <a class="code hl_class" href="class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_user.html">User</a>();</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        user.Age = Convert.ToInt32(txtAge.Text);</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        user.<a class="code hl_property" href="class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_user.html#a98705082d654e8cfe493c3902f95d553">Education</a>=optEducation.Text;</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        user.Sex = optSex.Text;</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        user.<a class="code hl_property" href="class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_user.html#aa26c5b399972b3fa5cf8950a3c09bc5a">Name</a>=txtName.Text;</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        </div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        <a class="code hl_class" href="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_user_manager.html">UserManager</a> userManager = <span class="keyword">new</span> <a class="code hl_class" href="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_user_manager.html">UserManager</a>();</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        userManager.<a class="code hl_function" href="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_base_manager.html#a9248c1be1118bf2a1da15a2ba731a4fc">CreateDatabase</a>();</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        userManager.<a class="code hl_function" href="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_user_manager.html#a4cd3ef414b3e41132df928da139f1594">AddNew</a>(user);</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        GD.Print(userManager.<a class="code hl_property" href="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_base_manager.html#ab03ecddd3cb836526101a168e1b408ef">DbContext</a>.Users.ToArray().Length);</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        this.Hide();</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    }</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keyword">private</span> <span class="keywordtype">void</span> BtnCancel_Pressed()</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    {</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        this.Hide();</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    }</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="comment">// Called every frame. &#39;delta&#39; is the elapsed time since the previous frame.</span></div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> _Process(<span class="keywordtype">double</span> delta)</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    {</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    }</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>}</div>
+<div class="foldopen" id="foldopen00009" data-start="{" data-end="};">
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="class_add_user_details.html">    9</a></span><span class="keyword">public</span> <span class="keyword">partial class </span><a class="code hl_class" href="class_add_user_details.html">AddUserDetails</a> : Control</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>{</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="comment">// Called when the node enters the scene tree for the first time.</span></div>
+<div class="foldopen" id="foldopen00015" data-start="{" data-end="}">
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="class_add_user_details.html#ae88360792ced7c96aabbe322902de064">   15</a></span>    <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_add_user_details.html#ae88360792ced7c96aabbe322902de064">_Ready</a>()</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    {</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        Button btnCancel = (Button)this.FindChild(<span class="stringliteral">&quot;btnCancel&quot;</span>,<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>             </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        btnCancel.Pressed += BtnCancel_Pressed;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        Button btnCreateNewUser= (Button)this.FindChild(<span class="stringliteral">&quot;btnCreate&quot;</span>, <span class="keyword">true</span>);</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        btnCreateNewUser.Pressed += BtnCreateNewUser_Pressed;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        ;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    }</div>
 </div>
-<div class="ttc" id="aclass_add_user_details_html"><div class="ttname"><a href="class_add_user_details.html">AddUserDetails</a></div><div class="ttdef"><b>Definition</b> <a href="#l00007">AddUserDetails.cs:8</a></div></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keyword">private</span> <span class="keywordtype">void</span> BtnCreateNewUser_Pressed()</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    {</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        LineEdit txtAge = (LineEdit)this.FindChild(<span class="stringliteral">&quot;txtAge&quot;</span>,<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        OptionButton optEducation = (OptionButton)this.FindChild(<span class="stringliteral">&quot;optEducation&quot;</span>,<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        OptionButton optSex= (OptionButton)this.FindChild(<span class="stringliteral">&quot;optionSex&quot;</span>,<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        LineEdit txtName = (LineEdit)this.FindChild(<span class="stringliteral">&quot;txtName&quot;</span>, <span class="keyword">true</span>);</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        <a class="code hl_class" href="class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_user.html">User</a> user = <span class="keyword">new</span> <a class="code hl_class" href="class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_user.html">User</a>();</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        user.Age = Convert.ToInt32(txtAge.Text);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        user.<a class="code hl_property" href="class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_user.html#a98705082d654e8cfe493c3902f95d553">Education</a>=optEducation.Text;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        user.Sex = optSex.Text;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        user.<a class="code hl_property" href="class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_user.html#aa26c5b399972b3fa5cf8950a3c09bc5a">Name</a>=txtName.Text;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        <a class="code hl_class" href="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_user_manager.html">UserManager</a> userManager = <span class="keyword">new</span> <a class="code hl_class" href="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_user_manager.html">UserManager</a>();</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        userManager.<a class="code hl_function" href="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_base_manager.html#a9248c1be1118bf2a1da15a2ba731a4fc">CreateDatabase</a>();</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        userManager.<a class="code hl_function" href="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_user_manager.html#a4cd3ef414b3e41132df928da139f1594">AddNew</a>(user);</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        GD.Print(userManager.<a class="code hl_property" href="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_base_manager.html#ab03ecddd3cb836526101a168e1b408ef">DbContext</a>.Users.ToArray().Length);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        this.Hide();</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    }</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keyword">private</span> <span class="keywordtype">void</span> BtnCancel_Pressed()</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    {</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        this.Hide();</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    }</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="comment">// Called every frame. &#39;delta&#39; is the elapsed time since the previous frame.</span></div>
+<div class="foldopen" id="foldopen00057" data-start="{" data-end="}">
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="class_add_user_details.html#ad7ece054e2749da6c9a61454832f517b">   57</a></span>    <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_add_user_details.html#ad7ece054e2749da6c9a61454832f517b">_Process</a>(<span class="keywordtype">double</span> delta)</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    {</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    }</div>
+</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>}</div>
+</div>
+<div class="ttc" id="aclass_add_user_details_html"><div class="ttname"><a href="class_add_user_details.html">AddUserDetails</a></div><div class="ttdoc">Adds a new user.</div><div class="ttdef"><b>Definition</b> <a href="#l00009">AddUserDetails.cs:10</a></div></div>
+<div class="ttc" id="aclass_add_user_details_html_ad7ece054e2749da6c9a61454832f517b"><div class="ttname"><a href="class_add_user_details.html#ad7ece054e2749da6c9a61454832f517b">AddUserDetails._Process</a></div><div class="ttdeci">override void _Process(double delta)</div><div class="ttdef"><b>Definition</b> <a href="#l00057">AddUserDetails.cs:57</a></div></div>
+<div class="ttc" id="aclass_add_user_details_html_ae88360792ced7c96aabbe322902de064"><div class="ttname"><a href="class_add_user_details.html#ae88360792ced7c96aabbe322902de064">AddUserDetails._Ready</a></div><div class="ttdeci">override void _Ready()</div><div class="ttdoc">Called when the node enters the scene tree for the first time.</div><div class="ttdef"><b>Definition</b> <a href="#l00015">AddUserDetails.cs:15</a></div></div>
 <div class="ttc" id="aclass_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_user_html"><div class="ttname"><a href="class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_user.html">EEGGaming.Core.Data.Models.User</a></div><div class="ttdef"><b>Definition</b> <a href="_user_8cs_source.html#l00012">User.cs:13</a></div></div>
 <div class="ttc" id="aclass_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_user_html_a98705082d654e8cfe493c3902f95d553"><div class="ttname"><a href="class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_user.html#a98705082d654e8cfe493c3902f95d553">EEGGaming.Core.Data.Models.User.Education</a></div><div class="ttdeci">string Education</div><div class="ttdoc">The education level of the user.</div><div class="ttdef"><b>Definition</b> <a href="_user_8cs_source.html#l00042">User.cs:42</a></div></div>
 <div class="ttc" id="aclass_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_user_html_aa26c5b399972b3fa5cf8950a3c09bc5a"><div class="ttname"><a href="class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_user.html#aa26c5b399972b3fa5cf8950a3c09bc5a">EEGGaming.Core.Data.Models.User.Name</a></div><div class="ttdeci">string Name</div><div class="ttdoc">The name of the user.</div><div class="ttdef"><b>Definition</b> <a href="_user_8cs_source.html#l00027">User.cs:27</a></div></div>
@@ -166,7 +169,7 @@ $(function(){initNavTree('_add_user_details_8cs_source.html',''); initResizable(
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_e86b53971e3ba467f77fc99bb9652cc9.html">BlinkBird</a></li><li class="navelem"><a class="el" href="dir_9fbe364ff72607eecf0611039dde3612.html">Code</a></li><li class="navelem"><b>AddUserDetails.cs</b></li>
+    <li class="navelem"><a class="el" href="dir_e86b53971e3ba467f77fc99bb9652cc9.html">BlinkBird</a></li><li class="navelem"><a class="el" href="dir_9fbe364ff72607eecf0611039dde3612.html">Code</a></li><li class="navelem"><a class="el" href="_add_user_details_8cs.html">AddUserDetails.cs</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
   </ul>
 </div>

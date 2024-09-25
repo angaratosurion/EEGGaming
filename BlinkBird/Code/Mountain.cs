@@ -1,7 +1,9 @@
 using Godot;
 using System;
 using static System.Formats.Asn1.AsnWriter;
-
+/// <summary>
+/// The main obstacle of the avatar
+/// </summary>
 public partial class Mountain : Sprite2D
 {
 	// Called when the node enters the scene tree for the first time.
@@ -15,6 +17,13 @@ public partial class Mountain : Sprite2D
 
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
 	//Timer timer;
+
+	/// <summary>
+	/// It checks whenver the avatar is in the area of the mounntain and 
+	/// after it kills the avatar it shows the gameover screen or it increases the 
+	/// score
+	/// </summary>
+	/// <param name="delta"></param>
 	
     public override void _Process(double delta)
 	{

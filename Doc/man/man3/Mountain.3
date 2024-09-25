@@ -1,8 +1,9 @@
-.TH "Mountain" 3 "Version 0.2.6.0" "EEGGaming And Blinkbird" \" -*- nroff -*-
+.TH "Mountain" 3 "Version 0.2.7.5" "EEGGaming And Blinkbird" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
-Mountain
+Mountain \- The main obstacle of the avatar\&.  
+
 .SH SYNOPSIS
 .br
 .PP
@@ -17,6 +18,7 @@ Inherits Sprite2D\&.
 .ti -1c
 .RI "override void \fB_Process\fP (double delta)"
 .br
+.RI "It checks whenver the avatar is in the area of the mounntain and after it kills the avatar it shows the gameover screen or it increases the score\&. "
 .in -1c
 .SS "Properties"
 
@@ -27,23 +29,34 @@ Inherits Sprite2D\&.
 .in -1c
 .SH "Detailed Description"
 .PP 
-Definition at line \fB5\fP of file \fBMountain\&.cs\fP\&.
+The main obstacle of the avatar\&. 
+.PP
+Definition at line \fB7\fP of file \fBMountain\&.cs\fP\&.
 .SH "Member Function Documentation"
 .PP 
 .SS "override void Mountain\&._Process (double delta)"
 
 .PP
-Definition at line \fB19\fP of file \fBMountain\&.cs\fP\&.
+It checks whenver the avatar is in the area of the mounntain and after it kills the avatar it shows the gameover screen or it increases the score\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIdelta\fP 
+.RE
+.PP
+
+.PP
+Definition at line \fB28\fP of file \fBMountain\&.cs\fP\&.
 .SS "override void Mountain\&._Ready ()"
 
 .PP
-Definition at line \fB10\fP of file \fBMountain\&.cs\fP\&.
+Definition at line \fB12\fP of file \fBMountain\&.cs\fP\&.
 .SH "Property Documentation"
 .PP 
 .SS "PackedScene Mountain\&.packedScene\fR [get]\fP, \fR [set]\fP"
 
 .PP
-Definition at line \fB8\fP of file \fBMountain\&.cs\fP\&.
+Definition at line \fB10\fP of file \fBMountain\&.cs\fP\&.
 
 .SH "Author"
 .PP 

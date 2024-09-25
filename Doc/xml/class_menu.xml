@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="BlinkBird/Code/Menu.cs" line="10" column="13" bodyfile="BlinkBird/Code/Menu.cs" bodystart="10" bodyend="-1"/>
+        <location file="BlinkBird/Code/Menu.cs" line="14" column="13" bodyfile="BlinkBird/Code/Menu.cs" bodystart="14" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_menu_1abcf566ea35f586a3db792bd0b215daa6" prot="private" static="no" mutable="no">
         <type>PackedScene</type>
@@ -30,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="BlinkBird/Code/Menu.cs" line="10" column="31" bodyfile="BlinkBird/Code/Menu.cs" bodystart="10" bodyend="-1"/>
+        <location file="BlinkBird/Code/Menu.cs" line="14" column="31" bodyfile="BlinkBird/Code/Menu.cs" bodystart="14" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_menu_1a77c4e57de9500bb86bb287b15d79db50" prot="private" static="no" mutable="no">
         <type>PackedScene</type>
@@ -44,7 +44,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="BlinkBird/Code/Menu.cs" line="10" column="56" bodyfile="BlinkBird/Code/Menu.cs" bodystart="10" bodyend="-1"/>
+        <location file="BlinkBird/Code/Menu.cs" line="14" column="56" bodyfile="BlinkBird/Code/Menu.cs" bodystart="14" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_menu_1aa2e28765cc50f72020f541868fca8940" prot="private" static="no" mutable="no">
         <type>PackedScene</type>
@@ -58,7 +58,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="BlinkBird/Code/Menu.cs" line="10" column="71" bodyfile="BlinkBird/Code/Menu.cs" bodystart="10" bodyend="-1"/>
+        <location file="BlinkBird/Code/Menu.cs" line="14" column="71" bodyfile="BlinkBird/Code/Menu.cs" bodystart="14" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_menu_1afd554fb1b507dfe296ac6fe056b20b0d" prot="private" static="no" mutable="no">
         <type>PackedScene</type>
@@ -72,7 +72,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="BlinkBird/Code/Menu.cs" line="10" column="81" bodyfile="BlinkBird/Code/Menu.cs" bodystart="10" bodyend="-1"/>
+        <location file="BlinkBird/Code/Menu.cs" line="14" column="81" bodyfile="BlinkBird/Code/Menu.cs" bodystart="14" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_menu_1a1d033880f240c54a8437c65f8e2892a2" prot="private" static="no" mutable="no">
         <type>Button</type>
@@ -86,22 +86,35 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="BlinkBird/Code/Menu.cs" line="11" column="8" bodyfile="BlinkBird/Code/Menu.cs" bodystart="11" bodyend="-1"/>
+        <location file="BlinkBird/Code/Menu.cs" line="15" column="8" bodyfile="BlinkBird/Code/Menu.cs" bodystart="15" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="class_menu_1a0f5f753616914a269e9acad62bee9e1d" prot="private" static="no" mutable="no">
-        <type>bool</type>
-        <definition>bool Menu.ignoreUserselectionandconstateofdevice</definition>
+      <memberdef kind="variable" id="class_menu_1af539f7acc9da8bdffc26eb849ad4a6fe" prot="private" static="no" mutable="no">
+        <type>Label</type>
+        <definition>Label Menu.lblDeviceName</definition>
         <argsstring></argsstring>
-        <name>ignoreUserselectionandconstateofdevice</name>
-        <qualifiedname>Menu.ignoreUserselectionandconstateofdevice</qualifiedname>
-        <initializer>= false</initializer>
+        <name>lblDeviceName</name>
+        <qualifiedname>Menu.lblDeviceName</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="BlinkBird/Code/Menu.cs" line="17" column="6" bodyfile="BlinkBird/Code/Menu.cs" bodystart="17" bodyend="-1"/>
+        <location file="BlinkBird/Code/Menu.cs" line="19" column="7" bodyfile="BlinkBird/Code/Menu.cs" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_menu_1a1092ab9067c1e14cc504d1ed03dcce9f" prot="private" static="no" mutable="no">
+        <type>Label</type>
+        <definition>Label Menu.lblDeviceState</definition>
+        <argsstring></argsstring>
+        <name>lblDeviceState</name>
+        <qualifiedname>Menu.lblDeviceState</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BlinkBird/Code/Menu.cs" line="19" column="21" bodyfile="BlinkBird/Code/Menu.cs" bodystart="19" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-static-attrib">
@@ -118,7 +131,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="BlinkBird/Code/Menu.cs" line="12" column="38" bodyfile="BlinkBird/Code/Menu.cs" bodystart="12" bodyend="-1"/>
+        <location file="BlinkBird/Code/Menu.cs" line="16" column="38" bodyfile="BlinkBird/Code/Menu.cs" bodystart="16" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_menu_1ab91d795226479c5d356b975407d6d456" prot="public" static="yes" mutable="no">
         <type><ref refid="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_gaming_sesion_manager" kindref="compound">GamingSesionManager</ref></type>
@@ -133,7 +146,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="BlinkBird/Code/Menu.cs" line="13" column="35" bodyfile="BlinkBird/Code/Menu.cs" bodystart="13" bodyend="-1"/>
+        <location file="BlinkBird/Code/Menu.cs" line="17" column="35" bodyfile="BlinkBird/Code/Menu.cs" bodystart="17" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_menu_1a6aa76feb83b7956cd553c35b5e926f4e" prot="public" static="yes" mutable="no">
         <type><ref refid="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_user_manager" kindref="compound">UserManager</ref></type>
@@ -148,7 +161,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="BlinkBird/Code/Menu.cs" line="14" column="27" bodyfile="BlinkBird/Code/Menu.cs" bodystart="14" bodyend="-1"/>
+        <location file="BlinkBird/Code/Menu.cs" line="18" column="27" bodyfile="BlinkBird/Code/Menu.cs" bodystart="18" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_menu_1a2cdd0aa13fc2a0c1a0f2fdb2195c475c" prot="public" static="yes" mutable="no">
         <type><ref refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_user" kindref="compound">User</ref></type>
@@ -163,7 +176,22 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="BlinkBird/Code/Menu.cs" line="16" column="20" bodyfile="BlinkBird/Code/Menu.cs" bodystart="16" bodyend="-1"/>
+        <location file="BlinkBird/Code/Menu.cs" line="21" column="24" bodyfile="BlinkBird/Code/Menu.cs" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_menu_1a0f5f753616914a269e9acad62bee9e1d" prot="public" static="yes" mutable="no">
+        <type>bool</type>
+        <definition>bool Menu.ignoreUserselectionandconstateofdevice</definition>
+        <argsstring></argsstring>
+        <name>ignoreUserselectionandconstateofdevice</name>
+        <qualifiedname>Menu.ignoreUserselectionandconstateofdevice</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BlinkBird/Code/Menu.cs" line="22" column="20" bodyfile="BlinkBird/Code/Menu.cs" bodystart="22" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-static-func">
@@ -174,12 +202,13 @@
         <name>SaveDataToDb</name>
         <qualifiedname>Menu.SaveDataToDb</qualifiedname>
         <briefdescription>
+<para>Save the data to database. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="BlinkBird/Code/Menu.cs" line="18" column="25" bodyfile="BlinkBird/Code/Menu.cs" bodystart="18" bodyend="26"/>
+        <location file="BlinkBird/Code/Menu.cs" line="26" column="25" bodyfile="BlinkBird/Code/Menu.cs" bodystart="26" bodyend="34"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -190,12 +219,13 @@
         <name>_Ready</name>
         <qualifiedname>Menu._Ready</qualifiedname>
         <briefdescription>
+<para>Creates the winndow. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="BlinkBird/Code/Menu.cs" line="27" column="26" bodyfile="BlinkBird/Code/Menu.cs" bodystart="27" bodyend="76"/>
+        <location file="BlinkBird/Code/Menu.cs" line="38" column="26" bodyfile="BlinkBird/Code/Menu.cs" bodystart="38" bodyend="93"/>
       </memberdef>
       <memberdef kind="function" id="class_menu_1aa5214bdaf8eaaa4ea25d41c57331c221" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>override void</type>
@@ -208,12 +238,22 @@
           <declname>delta</declname>
         </param>
         <briefdescription>
+<para>checks whever a user is selected or anEEG headest is conencted </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>delta</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="BlinkBird/Code/Menu.cs" line="140" column="22" bodyfile="BlinkBird/Code/Menu.cs" bodystart="140" bodyend="154"/>
+        <location file="BlinkBird/Code/Menu.cs" line="178" column="22" bodyfile="BlinkBird/Code/Menu.cs" bodystart="178" bodyend="192"/>
       </memberdef>
       <memberdef kind="function" id="class_menu_1a9a2ffafb1592a5438156816758e2bd64" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -222,12 +262,13 @@
         <name>bbtnNewGame_pressed</name>
         <qualifiedname>Menu.bbtnNewGame_pressed</qualifiedname>
         <briefdescription>
+<para>Starts new game. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="BlinkBird/Code/Menu.cs" line="155" column="13" bodyfile="BlinkBird/Code/Menu.cs" bodystart="155" bodyend="164"/>
+        <location file="BlinkBird/Code/Menu.cs" line="196" column="13" bodyfile="BlinkBird/Code/Menu.cs" bodystart="196" bodyend="205"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="private-func">
@@ -238,12 +279,13 @@
         <name>BtnShowUsers_Pressed</name>
         <qualifiedname>Menu.BtnShowUsers_Pressed</qualifiedname>
         <briefdescription>
+<para>This shows the window with all the users. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="BlinkBird/Code/Menu.cs" line="78" column="14" bodyfile="BlinkBird/Code/Menu.cs" bodystart="78" bodyend="84"/>
+        <location file="BlinkBird/Code/Menu.cs" line="97" column="14" bodyfile="BlinkBird/Code/Menu.cs" bodystart="97" bodyend="103"/>
       </memberdef>
       <memberdef kind="function" id="class_menu_1ac6e2a243b9faa0307568ac2d52b09c4f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -252,12 +294,13 @@
         <name>BtnConnectEEGDevice_Pressed</name>
         <qualifiedname>Menu.BtnConnectEEGDevice_Pressed</qualifiedname>
         <briefdescription>
+<para>Connects to the EEG headset. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="BlinkBird/Code/Menu.cs" line="86" column="14" bodyfile="BlinkBird/Code/Menu.cs" bodystart="86" bodyend="108"/>
+        <location file="BlinkBird/Code/Menu.cs" line="107" column="14" bodyfile="BlinkBird/Code/Menu.cs" bodystart="107" bodyend="135"/>
       </memberdef>
       <memberdef kind="function" id="class_menu_1a0cb506b1dda91a886d4a71a0a56218c0" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -266,12 +309,13 @@
         <name>BtnAbout_Pressed</name>
         <qualifiedname>Menu.BtnAbout_Pressed</qualifiedname>
         <briefdescription>
+<para>Shows the <ref refid="class_about" kindref="compound">About</ref> window. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="BlinkBird/Code/Menu.cs" line="110" column="14" bodyfile="BlinkBird/Code/Menu.cs" bodystart="110" bodyend="116"/>
+        <location file="BlinkBird/Code/Menu.cs" line="139" column="14" bodyfile="BlinkBird/Code/Menu.cs" bodystart="139" bodyend="145"/>
       </memberdef>
       <memberdef kind="function" id="class_menu_1a70d636a1399c2eca4064452602834353" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -280,12 +324,13 @@
         <name>BtnExit_Pressed</name>
         <qualifiedname>Menu.BtnExit_Pressed</qualifiedname>
         <briefdescription>
+<para>Cloes the game. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="BlinkBird/Code/Menu.cs" line="118" column="14" bodyfile="BlinkBird/Code/Menu.cs" bodystart="118" bodyend="121"/>
+        <location file="BlinkBird/Code/Menu.cs" line="149" column="14" bodyfile="BlinkBird/Code/Menu.cs" bodystart="149" bodyend="152"/>
       </memberdef>
       <memberdef kind="function" id="class_menu_1a0b35e187f66e6fc7442985ebe9549152" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -294,12 +339,13 @@
         <name>BtnSelectUser_Pressed</name>
         <qualifiedname>Menu.BtnSelectUser_Pressed</qualifiedname>
         <briefdescription>
+<para>Shows the user for selection. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="BlinkBird/Code/Menu.cs" line="123" column="14" bodyfile="BlinkBird/Code/Menu.cs" bodystart="123" bodyend="129"/>
+        <location file="BlinkBird/Code/Menu.cs" line="156" column="14" bodyfile="BlinkBird/Code/Menu.cs" bodystart="156" bodyend="162"/>
       </memberdef>
       <memberdef kind="function" id="class_menu_1ad55639725b69dd4723d52cbeeaf89c47" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -308,15 +354,17 @@
         <name>BtnNewuser_Pressed</name>
         <qualifiedname>Menu.BtnNewuser_Pressed</qualifiedname>
         <briefdescription>
+<para>Shwos the new user creation window. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="BlinkBird/Code/Menu.cs" line="131" column="14" bodyfile="BlinkBird/Code/Menu.cs" bodystart="131" bodyend="137"/>
+        <location file="BlinkBird/Code/Menu.cs" line="166" column="14" bodyfile="BlinkBird/Code/Menu.cs" bodystart="166" bodyend="172"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
+<para>The Main menu of the game. </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
@@ -380,7 +428,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="BlinkBird/Code/Menu.cs" line="7" column="15" bodyfile="BlinkBird/Code/Menu.cs" bodystart="8" bodyend="165"/>
+    <location file="BlinkBird/Code/Menu.cs" line="11" column="15" bodyfile="BlinkBird/Code/Menu.cs" bodystart="12" bodyend="206"/>
     <listofallmembers>
       <member refid="class_menu_1aa5214bdaf8eaaa4ea25d41c57331c221" prot="public" virt="non-virtual"><scope>Menu</scope><name>_Process</name></member>
       <member refid="class_menu_1a8749d8124f3d908e7dc30d71c08f6e28" prot="public" virt="non-virtual"><scope>Menu</scope><name>_Ready</name></member>
@@ -394,7 +442,9 @@
       <member refid="class_menu_1a0b35e187f66e6fc7442985ebe9549152" prot="private" virt="non-virtual"><scope>Menu</scope><name>BtnSelectUser_Pressed</name></member>
       <member refid="class_menu_1a1d04bfb0616e2beb46a2af3bc6c6863e" prot="private" virt="non-virtual"><scope>Menu</scope><name>BtnShowUsers_Pressed</name></member>
       <member refid="class_menu_1ab91d795226479c5d356b975407d6d456" prot="public" virt="non-virtual"><scope>Menu</scope><name>gamingSesionManager</name></member>
-      <member refid="class_menu_1a0f5f753616914a269e9acad62bee9e1d" prot="private" virt="non-virtual"><scope>Menu</scope><name>ignoreUserselectionandconstateofdevice</name></member>
+      <member refid="class_menu_1a0f5f753616914a269e9acad62bee9e1d" prot="public" virt="non-virtual"><scope>Menu</scope><name>ignoreUserselectionandconstateofdevice</name></member>
+      <member refid="class_menu_1af539f7acc9da8bdffc26eb849ad4a6fe" prot="private" virt="non-virtual"><scope>Menu</scope><name>lblDeviceName</name></member>
+      <member refid="class_menu_1a1092ab9067c1e14cc504d1ed03dcce9f" prot="private" virt="non-virtual"><scope>Menu</scope><name>lblDeviceState</name></member>
       <member refid="class_menu_1a105d6e2b549cb4235e710c459596f7af" prot="private" virt="non-virtual"><scope>Menu</scope><name>newGamepackedScene</name></member>
       <member refid="class_menu_1abcf566ea35f586a3db792bd0b215daa6" prot="private" virt="non-virtual"><scope>Menu</scope><name>NewUserDetailsPackedScene</name></member>
       <member refid="class_menu_1aa005ebd5a38e50bc52accdb70c081008" prot="public" virt="non-virtual"><scope>Menu</scope><name>recordManager</name></member>

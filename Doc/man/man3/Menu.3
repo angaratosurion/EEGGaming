@@ -1,8 +1,9 @@
-.TH "Menu" 3 "Version 0.2.6.0" "EEGGaming And Blinkbird" \" -*- nroff -*-
+.TH "Menu" 3 "Version 0.2.7.5" "EEGGaming And Blinkbird" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
-Menu
+Menu \- The Main menu of the game\&.  
+
 .SH SYNOPSIS
 .br
 .PP
@@ -14,12 +15,15 @@ Inherits Control\&.
 .ti -1c
 .RI "override void \fB_Ready\fP ()"
 .br
+.RI "Creates the winndow\&. "
 .ti -1c
 .RI "override void \fB_Process\fP (double delta)"
 .br
+.RI "checks whever a user is selected or anEEG headest is conencted "
 .ti -1c
 .RI "void \fBbbtnNewGame_pressed\fP ()"
 .br
+.RI "Starts new game\&. "
 .in -1c
 .SS "Static Public Member Functions"
 
@@ -27,6 +31,7 @@ Inherits Control\&.
 .ti -1c
 .RI "static void \fBSaveDataToDb\fP ()"
 .br
+.RI "Save the data to database\&. "
 .in -1c
 .SS "Static Public Attributes"
 
@@ -43,46 +48,70 @@ Inherits Control\&.
 .ti -1c
 .RI "static \fBUser\fP \fBSelectedUser\fP = null"
 .br
+.ti -1c
+.RI "static bool \fBignoreUserselectionandconstateofdevice\fP = false"
+.br
 .in -1c
 .SH "Detailed Description"
 .PP 
-Definition at line \fB7\fP of file \fBMenu\&.cs\fP\&.
+The Main menu of the game\&. 
+.PP
+Definition at line \fB11\fP of file \fBMenu\&.cs\fP\&.
 .SH "Member Function Documentation"
 .PP 
 .SS "override void Menu\&._Process (double delta)"
 
 .PP
-Definition at line \fB140\fP of file \fBMenu\&.cs\fP\&.
+checks whever a user is selected or anEEG headest is conencted 
+.PP
+\fBParameters\fP
+.RS 4
+\fIdelta\fP 
+.RE
+.PP
+
+.PP
+Definition at line \fB178\fP of file \fBMenu\&.cs\fP\&.
 .SS "override void Menu\&._Ready ()"
 
 .PP
-Definition at line \fB27\fP of file \fBMenu\&.cs\fP\&.
+Creates the winndow\&. 
+.PP
+Definition at line \fB38\fP of file \fBMenu\&.cs\fP\&.
 .SS "void Menu\&.bbtnNewGame_pressed ()"
 
 .PP
-Definition at line \fB155\fP of file \fBMenu\&.cs\fP\&.
+Starts new game\&. 
+.PP
+Definition at line \fB196\fP of file \fBMenu\&.cs\fP\&.
 .SS "static void Menu\&.SaveDataToDb ()\fR [static]\fP"
 
 .PP
-Definition at line \fB18\fP of file \fBMenu\&.cs\fP\&.
+Save the data to database\&. 
+.PP
+Definition at line \fB26\fP of file \fBMenu\&.cs\fP\&.
 .SH "Member Data Documentation"
 .PP 
 .SS "\fBGamingSesionManager\fP Menu\&.gamingSesionManager = new \fBGamingSesionManager\fP()\fR [static]\fP"
 
 .PP
-Definition at line \fB13\fP of file \fBMenu\&.cs\fP\&.
+Definition at line \fB17\fP of file \fBMenu\&.cs\fP\&.
+.SS "bool Menu\&.ignoreUserselectionandconstateofdevice = false\fR [static]\fP"
+
+.PP
+Definition at line \fB22\fP of file \fBMenu\&.cs\fP\&.
 .SS "\fBBrainWaveRecordManager\fP Menu\&.recordManager = new \fBBrainWaveRecordManager\fP()\fR [static]\fP"
 
 .PP
-Definition at line \fB12\fP of file \fBMenu\&.cs\fP\&.
+Definition at line \fB16\fP of file \fBMenu\&.cs\fP\&.
 .SS "\fBUser\fP Menu\&.SelectedUser = null\fR [static]\fP"
 
 .PP
-Definition at line \fB16\fP of file \fBMenu\&.cs\fP\&.
+Definition at line \fB21\fP of file \fBMenu\&.cs\fP\&.
 .SS "\fBUserManager\fP Menu\&.userManager = new \fBUserManager\fP()\fR [static]\fP"
 
 .PP
-Definition at line \fB14\fP of file \fBMenu\&.cs\fP\&.
+Definition at line \fB18\fP of file \fBMenu\&.cs\fP\&.
 
 .SH "Author"
 .PP 

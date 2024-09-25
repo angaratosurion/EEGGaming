@@ -2,6 +2,11 @@
 <section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_camera" xml:lang="en-US">
 <title>Camera Class Reference</title>
 <indexterm><primary>Camera</primary></indexterm>
+<para>
+
+<para>This class controls the <link linkend="_class_camera">Camera</link> of the Game. </para>
+ 
+</para>
 <para>Inheritance diagram for Camera:    <informalfigure>
         <mediaobject>
             <imageobject>
@@ -14,15 +19,21 @@
     <title>Public Member Functions    </title>
         <itemizedlist>
             <listitem><para>override void <link linkend="_class_camera_1a0b82ad1b9831e861ab65711e220d5441">_Ready</link> ()</para>
+
+<para>Called when the node enters the scene tree for the first time. </para>
 </listitem>
             <listitem><para>override void <link linkend="_class_camera_1ad7352cad7a9773f186fe0e341e181e68">_Process</link> (double delta)</para>
+
+<para>Moves the camera and occurs when the frame is produced. </para>
 </listitem>
         </itemizedlist>
 </simplesect>
 <section>
 <title>Detailed Description</title>
+
+<para>This class controls the <link linkend="_class_camera">Camera</link> of the Game. </para>
 <para>
-Definition at line <link linkend="__camera_8cs_source_1l00004">4</link> of file <link linkend="__camera_8cs_source">Camera.cs</link>.</para>
+Definition at line <link linkend="__camera_8cs_source_1l00006">6</link> of file <link linkend="__camera_8cs_source">Camera.cs</link>.</para>
 </section>
 <section>
 <title>Member Function Documentation</title>
@@ -31,16 +42,44 @@ Definition at line <link linkend="__camera_8cs_source_1l00004">4</link> of file 
 <indexterm><primary>_Process</primary><secondary>Camera</secondary></indexterm>
 <indexterm><primary>Camera</primary><secondary>_Process</secondary></indexterm>
 <para><computeroutput>override void Camera._Process (double delta)</computeroutput></para><para>
-Definition at line <link linkend="__camera_8cs_source_1l00022">22</link> of file <link linkend="__camera_8cs_source">Camera.cs</link>.</para>
+
+<para>Moves the camera and occurs when the frame is produced. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>delta</entry><entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line <link linkend="__camera_8cs_source_1l00025">25</link> of file <link linkend="__camera_8cs_source">Camera.cs</link>.</para>
 </section>
 <anchor xml:id="_class_camera_1a0b82ad1b9831e861ab65711e220d5441"/><section>
     <title>_Ready()</title>
 <indexterm><primary>_Ready</primary><secondary>Camera</secondary></indexterm>
 <indexterm><primary>Camera</primary><secondary>_Ready</secondary></indexterm>
 <para><computeroutput>override void Camera._Ready ( )</computeroutput></para><para>
-Definition at line <link linkend="__camera_8cs_source_1l00009">9</link> of file <link linkend="__camera_8cs_source">Camera.cs</link>.</para>
+
+<para>Called when the node enters the scene tree for the first time. </para>
+</para>
+<para>
+Definition at line <link linkend="__camera_8cs_source_1l00013">13</link> of file <link linkend="__camera_8cs_source">Camera.cs</link>.</para>
 </section>
 <para>
 The documentation for this class was generated from the following file:</para>
-BlinkBird/Code/Camera.cs</section>
+BlinkBird/Code/<link linkend="__camera_8cs">Camera.cs</link></section>
 </section>

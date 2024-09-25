@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_1eb452f8a6053b4ae10c6d242293a7d0" xml:lang="en-US">
+<title>EEGGaming.Core/obj/Debug Directory Reference</title>
+<indexterm><primary>EEGGaming.Core/obj/Debug Directory Reference</primary></indexterm>
+<simplesect>
+    <title>Directories    </title>
+        <itemizedlist>
+            <listitem><para>directory <link linkend="_dir_b3ba57126d0d1b5d76989e7fef5c649e">net6.0</link></para>
+</listitem>
+            <listitem><para>directory <link linkend="_dir_bf271919c38eb08d32d779d387ce7be6">net8.0</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

@@ -1,6 +1,6 @@
 \doxysection{App\+Settings\+Manager.\+cs}
 \hypertarget{_app_settings_manager_8cs_source}{}\label{_app_settings_manager_8cs_source}\index{EEGGaming.Core/Managers/AppSettingsManager.cs@{EEGGaming.Core/Managers/AppSettingsManager.cs}}
-
+\mbox{\hyperlink{_app_settings_manager_8cs}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
 \DoxyCodeLine{\Hypertarget{_app_settings_manager_8cs_source_l00001}00001\ \textcolor{keyword}{using\ }\mbox{\hyperlink{namespace_e_e_g_gaming_1_1_core_1_1_tools}{EEGGaming.Core.Tools}};}
 \DoxyCodeLine{\Hypertarget{_app_settings_manager_8cs_source_l00002}00002\ \textcolor{keyword}{using\ }Microsoft.Extensions.Configuration;}
@@ -11,7 +11,7 @@
 \DoxyCodeLine{\Hypertarget{_app_settings_manager_8cs_source_l00007}00007\ \textcolor{keyword}{using\ }System.Runtime.InteropServices;}
 \DoxyCodeLine{\Hypertarget{_app_settings_manager_8cs_source_l00008}00008\ \textcolor{keyword}{using\ }System.Text;}
 \DoxyCodeLine{\Hypertarget{_app_settings_manager_8cs_source_l00009}00009\ \textcolor{keyword}{using\ }System.Threading.Tasks;}
-\DoxyCodeLine{\Hypertarget{_app_settings_manager_8cs_source_l00010}00010\ \textcolor{keyword}{using\ }ConfigurationBuilder\ =\ Microsoft.Extensions.Configuration.ConfigurationBuilder;}
+\DoxyCodeLine{\Hypertarget{_app_settings_manager_8cs_source_l00010}\mbox{\hyperlink{_app_settings_manager_8cs_af73c94da02ddd630d4a203da21d5266a}{00010}}\ \textcolor{keyword}{using\ }\mbox{\hyperlink{_app_settings_manager_8cs_af73c94da02ddd630d4a203da21d5266a}{ConfigurationBuilder}}\ =\ Microsoft.Extensions.Configuration.ConfigurationBuilder;}
 \DoxyCodeLine{\Hypertarget{_app_settings_manager_8cs_source_l00011}00011\ }
 \DoxyCodeLine{\Hypertarget{_app_settings_manager_8cs_source_l00012}\mbox{\hyperlink{namespace_e_e_g_gaming_1_1_core_1_1_managers}{00012}}\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_e_e_g_gaming_1_1_core_1_1_managers}{EEGGaming.Core.Managers}}}
 \DoxyCodeLine{\Hypertarget{_app_settings_manager_8cs_source_l00013}00013\ \{}
@@ -19,7 +19,7 @@
 \DoxyCodeLine{\Hypertarget{_app_settings_manager_8cs_source_l00018}00018\ \ \ \ \ \{}
 \DoxyCodeLine{\Hypertarget{_app_settings_manager_8cs_source_l00019}00019\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{string}\ pathwithextention;}
 \DoxyCodeLine{\Hypertarget{_app_settings_manager_8cs_source_l00020}00020\ }
-\DoxyCodeLine{\Hypertarget{_app_settings_manager_8cs_source_l00021}00021\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ ConfigurationBuilder\ builder;}
+\DoxyCodeLine{\Hypertarget{_app_settings_manager_8cs_source_l00021}00021\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{_app_settings_manager_8cs_af73c94da02ddd630d4a203da21d5266a}{ConfigurationBuilder}}\ builder;}
 \DoxyCodeLine{\Hypertarget{_app_settings_manager_8cs_source_l00022}00022\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ IConfigurationRoot\ config;\ }
 \DoxyCodeLine{\Hypertarget{_app_settings_manager_8cs_source_l00026}00026\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ Init()}
 \DoxyCodeLine{\Hypertarget{_app_settings_manager_8cs_source_l00027}00027\ \ \ \ \ \ \ \ \ \{}
@@ -37,7 +37,7 @@
 \DoxyCodeLine{\Hypertarget{_app_settings_manager_8cs_source_l00039}00039\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ path\ =\ System.IO.Path.GetDirectoryName(pathwithextention).Replace(\textcolor{stringliteral}{"{}file:"{}},\ \textcolor{stringliteral}{"{}"{}});}
 \DoxyCodeLine{\Hypertarget{_app_settings_manager_8cs_source_l00040}00040\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
 \DoxyCodeLine{\Hypertarget{_app_settings_manager_8cs_source_l00041}00041\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//return\ View();}}
-\DoxyCodeLine{\Hypertarget{_app_settings_manager_8cs_source_l00042}00042\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ builder\ =\ (ConfigurationBuilder)\textcolor{keyword}{new}\ ConfigurationBuilder()}
+\DoxyCodeLine{\Hypertarget{_app_settings_manager_8cs_source_l00042}00042\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ builder\ =\ (\mbox{\hyperlink{_app_settings_manager_8cs_af73c94da02ddd630d4a203da21d5266a}{ConfigurationBuilder}})\textcolor{keyword}{new}\ \mbox{\hyperlink{_app_settings_manager_8cs_af73c94da02ddd630d4a203da21d5266a}{ConfigurationBuilder}}()}
 \DoxyCodeLine{\Hypertarget{_app_settings_manager_8cs_source_l00043}00043\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .SetBasePath(path)}
 \DoxyCodeLine{\Hypertarget{_app_settings_manager_8cs_source_l00044}00044\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .AddJsonFile(\textcolor{stringliteral}{"{}appsettings.json"{}},\ optional:\ \textcolor{keyword}{true},\ reloadOnChange:\ \textcolor{keyword}{true});}
 \DoxyCodeLine{\Hypertarget{_app_settings_manager_8cs_source_l00045}00045\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ \ var\ config\ =\ builder.Build();//}}

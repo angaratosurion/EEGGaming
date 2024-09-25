@@ -45,6 +45,8 @@
         </itemizedlist>
 </simplesect>
 Public Member Functions inherited from <link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_base_manager">EEGGaming.Core.Managers.BaseManager</link>        <itemizedlist>
+            <listitem><para><link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_base_manager_1a0698b890b345d2fe9f6b7d0bf762af70">BaseManager</link> ()</para>
+</listitem>
             <listitem><para>void <link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_base_manager_1a9248c1be1118bf2a1da15a2ba731a4fc">CreateDatabase</link> ()</para>
 
 <para>Creates the Database. </para>
@@ -270,5 +272,5 @@ Definition at line <link linkend="__user_manager_8cs_source_1l00048">48</link> o
 </section>
 <para>
 The documentation for this class was generated from the following file:</para>
-EEGGaming.Core/Managers/UserManager.cs</section>
+EEGGaming.Core/Managers/<link linkend="__user_manager_8cs">UserManager.cs</link></section>
 </section>

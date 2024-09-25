@@ -5,6 +5,9 @@ using NeuroSDK;
 using System;
 using System.Threading;
 
+/// <summary>
+/// The Main menu of the game
+/// </summary>
 public partial class Menu : Control
 {
 	// Called when the node enters the scene tree for the first time.
@@ -17,6 +20,9 @@ public partial class Menu : Control
 
     public static User SelectedUser = null;// new User();
 	public static bool ignoreUserselectionandconstateofdevice = false;
+	/// <summary>
+	/// Save the data to database
+	/// </summary>
     public static  void SaveDataToDb()
     {
         if (World.gamingSesion != null)
@@ -26,6 +32,9 @@ public partial class Menu : Control
             recordManager.StopAndSavetoDatabse();
         }
     }
+	/// <summary>
+	/// Creates the winndow
+	/// </summary>
     public override void _Ready()
 	{
 		 
@@ -82,7 +91,9 @@ public partial class Menu : Control
 
 
     }
-
+	/// <summary>
+	/// This shows the window with all the users 
+	/// </summary>
 	private void BtnShowUsers_Pressed()
 	{
 		ShowusersScene = (PackedScene)GD.Load("res://Scenes/ShowUsers.tscn");
@@ -90,7 +101,9 @@ public partial class Menu : Control
 		this.AddSibling(control);
 		
 	}
-
+	/// <summary>
+	/// Connects to the EEG headset
+	/// </summary>
 	private void BtnConnectEEGDevice_Pressed()
 	{
 		var sensors = BrainWaveRecordManager.scanner.Sensors;
@@ -120,7 +133,9 @@ public partial class Menu : Control
 
 		
 	}
-
+	/// <summary>
+	/// Shows the About window
+	/// </summary>
 	private void BtnAbout_Pressed()
 	{
 		AboutScene = (PackedScene)GD.Load("res://Scenes/About.tscn");
@@ -128,12 +143,16 @@ public partial class Menu : Control
 		this.AddSibling(control);
 		//this.Hide();
 	}
-
+	/// <summary>
+	/// Cloes the game
+	/// </summary>
 	private void BtnExit_Pressed()
 	{
 		this.Free();
 	}
-
+	/// <summary>
+	/// Shows the user for selection
+	/// </summary>
 	private void BtnSelectUser_Pressed()
 	{
 		SelectUserScene = (PackedScene)GD.Load("res://Scenes/ShowUserDetails.tscn");
@@ -141,7 +160,9 @@ public partial class Menu : Control
 		this.AddSibling(control);
 		//this.Hide();
 	}
-
+	/// <summary>
+	/// Shwos the new user creation window
+	/// </summary>
 	private void BtnNewuser_Pressed()
 	{
 		 NewUserDetailsPackedScene= (PackedScene)GD.Load("res://Scenes/AddUserDetails.tscn");
@@ -149,7 +170,10 @@ public partial class Menu : Control
 		this.AddSibling(control);
 		 
 	}
-
+	/// <summary>
+	/// checks whever a user is selected or anEEG headest is conencted
+	/// </summary>
+	/// <param name="delta"></param>
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
 	public override void _Process(double delta)
 	{
@@ -166,6 +190,9 @@ public partial class Menu : Control
 		var sensors = BrainWaveRecordManager.scanner.Sensors;
 		 
 	}
+	/// <summary>
+	/// Starts  new game 
+	/// </summary>
 	public void bbtnNewGame_pressed()
 	{
 		newGamepackedScene = (PackedScene)GD.Load("res://Scenes/World.tscn");

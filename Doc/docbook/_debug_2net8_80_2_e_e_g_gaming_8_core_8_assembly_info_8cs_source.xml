@@ -2,7 +2,7 @@
 <section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__debug_2net8_80_2_e_e_g_gaming_8_core_8_assembly_info_8cs_source" xml:lang="en-US">
 <title>EEGGaming.Core.AssemblyInfo.cs</title>
 <indexterm><primary>EEGGaming.Core/obj/Debug/net8.0/EEGGaming.Core.AssemblyInfo.cs</primary></indexterm>
-<programlisting linenumbering="unnumbered"><anchor xml:id="__debug_2net8_80_2_e_e_g_gaming_8_core_8_assembly_info_8cs_source_1l00001"/>00001 <emphasis role="comment">//------------------------------------------------------------------------------</emphasis>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered"><anchor xml:id="__debug_2net8_80_2_e_e_g_gaming_8_core_8_assembly_info_8cs_source_1l00001"/>00001 <emphasis role="comment">//------------------------------------------------------------------------------</emphasis>
 <anchor xml:id="__debug_2net8_80_2_e_e_g_gaming_8_core_8_assembly_info_8cs_source_1l00002"/>00002 <emphasis role="comment">//&#32;&lt;auto-generated&gt;</emphasis>
 <anchor xml:id="__debug_2net8_80_2_e_e_g_gaming_8_core_8_assembly_info_8cs_source_1l00003"/>00003 <emphasis role="comment">//&#32;&#32;&#32;&#32;&#32;This&#32;code&#32;was&#32;generated&#32;by&#32;a&#32;tool.</emphasis>
 <anchor xml:id="__debug_2net8_80_2_e_e_g_gaming_8_core_8_assembly_info_8cs_source_1l00004"/>00004 <emphasis role="comment">//</emphasis>
@@ -17,11 +17,11 @@
 <anchor xml:id="__debug_2net8_80_2_e_e_g_gaming_8_core_8_assembly_info_8cs_source_1l00013"/>00013 [assembly:&#32;System.Reflection.AssemblyCompanyAttribute(<emphasis role="stringliteral">&quot;Kyparissis&#32;Koutsioukis&quot;</emphasis>)]
 <anchor xml:id="__debug_2net8_80_2_e_e_g_gaming_8_core_8_assembly_info_8cs_source_1l00014"/>00014 [assembly:&#32;System.Reflection.AssemblyConfigurationAttribute(<emphasis role="stringliteral">&quot;Debug&quot;</emphasis>)]
 <anchor xml:id="__debug_2net8_80_2_e_e_g_gaming_8_core_8_assembly_info_8cs_source_1l00015"/>00015 [assembly:&#32;System.Reflection.AssemblyCopyrightAttribute(<emphasis role="stringliteral">&quot;Kyparissis&#32;Koutsioukis&quot;</emphasis>)]
-<anchor xml:id="__debug_2net8_80_2_e_e_g_gaming_8_core_8_assembly_info_8cs_source_1l00016"/>00016 [assembly:&#32;System.Reflection.AssemblyFileVersionAttribute(<emphasis role="stringliteral">&quot;0.2.6.0&quot;</emphasis>)]
-<anchor xml:id="__debug_2net8_80_2_e_e_g_gaming_8_core_8_assembly_info_8cs_source_1l00017"/>00017 [assembly:&#32;System.Reflection.AssemblyInformationalVersionAttribute(<emphasis role="stringliteral">&quot;0.2.6.0+e6559b03688ce42f3ad018ddbca21dd2ebe77644&quot;</emphasis>)]
+<anchor xml:id="__debug_2net8_80_2_e_e_g_gaming_8_core_8_assembly_info_8cs_source_1l00016"/>00016 [assembly:&#32;System.Reflection.AssemblyFileVersionAttribute(<emphasis role="stringliteral">&quot;0.2.7.5&quot;</emphasis>)]
+<anchor xml:id="__debug_2net8_80_2_e_e_g_gaming_8_core_8_assembly_info_8cs_source_1l00017"/>00017 [assembly:&#32;System.Reflection.AssemblyInformationalVersionAttribute(<emphasis role="stringliteral">&quot;0.2.7.5+71d867902e398185469f8b21787252ad482bc405&quot;</emphasis>)]
 <anchor xml:id="__debug_2net8_80_2_e_e_g_gaming_8_core_8_assembly_info_8cs_source_1l00018"/>00018 [assembly:&#32;System.Reflection.AssemblyProductAttribute(<emphasis role="stringliteral">&quot;EEGGaming.Core&quot;</emphasis>)]
 <anchor xml:id="__debug_2net8_80_2_e_e_g_gaming_8_core_8_assembly_info_8cs_source_1l00019"/>00019 [assembly:&#32;System.Reflection.AssemblyTitleAttribute(<emphasis role="stringliteral">&quot;EEGGaming.Core&quot;</emphasis>)]
-<anchor xml:id="__debug_2net8_80_2_e_e_g_gaming_8_core_8_assembly_info_8cs_source_1l00020"/>00020 [assembly:&#32;System.Reflection.AssemblyVersionAttribute(<emphasis role="stringliteral">&quot;0.2.6.0&quot;</emphasis>)]
+<anchor xml:id="__debug_2net8_80_2_e_e_g_gaming_8_core_8_assembly_info_8cs_source_1l00020"/>00020 [assembly:&#32;System.Reflection.AssemblyVersionAttribute(<emphasis role="stringliteral">&quot;0.2.7.5&quot;</emphasis>)]
 <anchor xml:id="__debug_2net8_80_2_e_e_g_gaming_8_core_8_assembly_info_8cs_source_1l00021"/>00021 
 <anchor xml:id="__debug_2net8_80_2_e_e_g_gaming_8_core_8_assembly_info_8cs_source_1l00022"/>00022 <emphasis role="comment">//&#32;Generated&#32;by&#32;the&#32;MSBuild&#32;WriteCodeFragment&#32;class.</emphasis>
 <anchor xml:id="__debug_2net8_80_2_e_e_g_gaming_8_core_8_assembly_info_8cs_source_1l00023"/>00023 

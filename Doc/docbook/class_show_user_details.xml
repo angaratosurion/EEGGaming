@@ -2,6 +2,11 @@
 <section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_show_user_details" xml:lang="en-US">
 <title>ShowUserDetails Class Reference</title>
 <indexterm><primary>ShowUserDetails</primary></indexterm>
+<para>
+
+<para>Shows the details fo a user. </para>
+ 
+</para>
 <para>Inheritance diagram for ShowUserDetails:    <informalfigure>
         <mediaobject>
             <imageobject>
@@ -14,6 +19,8 @@
     <title>Public Member Functions    </title>
         <itemizedlist>
             <listitem><para>override void <link linkend="_class_show_user_details_1a10e3332d4510b32618a5ba862a2f5006">_Ready</link> ()</para>
+
+<para>Filsl the objects with user&apos;s info. </para>
 </listitem>
             <listitem><para>override void <link linkend="_class_show_user_details_1a23ef7416452fab3d1d59e6c746957410">_Process</link> (double delta)</para>
 </listitem>
@@ -21,8 +28,10 @@
 </simplesect>
 <section>
 <title>Detailed Description</title>
+
+<para>Shows the details fo a user. </para>
 <para>
-Definition at line <link linkend="__show_user_details_8cs_source_1l00007">7</link> of file <link linkend="__show_user_details_8cs_source">ShowUserDetails.cs</link>.</para>
+Definition at line <link linkend="__show_user_details_8cs_source_1l00009">9</link> of file <link linkend="__show_user_details_8cs_source">ShowUserDetails.cs</link>.</para>
 </section>
 <section>
 <title>Member Function Documentation</title>
@@ -31,16 +40,20 @@ Definition at line <link linkend="__show_user_details_8cs_source_1l00007">7</lin
 <indexterm><primary>_Process</primary><secondary>ShowUserDetails</secondary></indexterm>
 <indexterm><primary>ShowUserDetails</primary><secondary>_Process</secondary></indexterm>
 <para><computeroutput>override void ShowUserDetails._Process (double delta)</computeroutput></para><para>
-Definition at line <link linkend="__show_user_details_8cs_source_1l00162">162</link> of file <link linkend="__show_user_details_8cs_source">ShowUserDetails.cs</link>.</para>
+Definition at line <link linkend="__show_user_details_8cs_source_1l00182">182</link> of file <link linkend="__show_user_details_8cs_source">ShowUserDetails.cs</link>.</para>
 </section>
 <anchor xml:id="_class_show_user_details_1a10e3332d4510b32618a5ba862a2f5006"/><section>
     <title>_Ready()</title>
 <indexterm><primary>_Ready</primary><secondary>ShowUserDetails</secondary></indexterm>
 <indexterm><primary>ShowUserDetails</primary><secondary>_Ready</secondary></indexterm>
 <para><computeroutput>override void ShowUserDetails._Ready ( )</computeroutput></para><para>
-Definition at line <link linkend="__show_user_details_8cs_source_1l00020">20</link> of file <link linkend="__show_user_details_8cs_source">ShowUserDetails.cs</link>.</para>
+
+<para>Filsl the objects with user&apos;s info. </para>
+</para>
+<para>
+Definition at line <link linkend="__show_user_details_8cs_source_1l00025">25</link> of file <link linkend="__show_user_details_8cs_source">ShowUserDetails.cs</link>.</para>
 </section>
 <para>
 The documentation for this class was generated from the following file:</para>
-BlinkBird/Code/ShowUserDetails.cs</section>
+BlinkBird/Code/<link linkend="__show_user_details_8cs">ShowUserDetails.cs</link></section>
 </section>

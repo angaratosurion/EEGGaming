@@ -53,8 +53,8 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "20230828223053__initial_8_designer_8cs_source.html",
-"class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager.html#a6e78a58dad2b6e69a344a2fbf05564bb",
-"namespace_e_e_g_gaming_1_1_core_1_1_managers.html"
+"class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager.html#a6dd4ca73dfa09508fdefff14db59e506",
+"functions_func.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

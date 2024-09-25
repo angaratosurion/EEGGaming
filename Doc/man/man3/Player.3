@@ -1,8 +1,9 @@
-.TH "Player" 3 "Version 0.2.6.0" "EEGGaming And Blinkbird" \" -*- nroff -*-
+.TH "Player" 3 "Version 0.2.7.5" "EEGGaming And Blinkbird" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
-Player
+Player \- Class representation of the avatar\&.  
+
 .SH SYNOPSIS
 .br
 .PP
@@ -17,6 +18,7 @@ Inherits Sprite2D\&.
 .ti -1c
 .RI "override void \fB_Process\fP (double delta)"
 .br
+.RI "checks whenever an eye blink occured and moves the avatar to closer to the top "
 .in -1c
 .SS "Static Public Attributes"
 
@@ -30,27 +32,38 @@ Inherits Sprite2D\&.
 .in -1c
 .SH "Detailed Description"
 .PP 
-Definition at line \fB6\fP of file \fBPlayer\&.cs\fP\&.
+Class representation of the avatar\&. 
+.PP
+Definition at line \fB9\fP of file \fBPlayer\&.cs\fP\&.
 .SH "Member Function Documentation"
 .PP 
 .SS "override void Player\&._Process (double delta)"
+
+.PP
+checks whenever an eye blink occured and moves the avatar to closer to the top 
+.PP
+\fBParameters\fP
+.RS 4
+\fIdelta\fP 
+.RE
+.PP
 14832
 .PP
-Definition at line \fB22\fP of file \fBPlayer\&.cs\fP\&.
+Definition at line \fB29\fP of file \fBPlayer\&.cs\fP\&.
 .SS "override void Player\&._Ready ()"
 
 .PP
-Definition at line \fB14\fP of file \fBPlayer\&.cs\fP\&.
+Definition at line \fB17\fP of file \fBPlayer\&.cs\fP\&.
 .SH "Member Data Documentation"
 .PP 
 .SS "const float Player\&.XMOVEMENT = (0\&.025f)\fR [static]\fP"
 
 .PP
-Definition at line \fB10\fP of file \fBPlayer\&.cs\fP\&.
+Definition at line \fB13\fP of file \fBPlayer\&.cs\fP\&.
 .SS "const float Player\&.YMOVEMENT = (0\&.025f)*16\fR [static]\fP"
 
 .PP
-Definition at line \fB9\fP of file \fBPlayer\&.cs\fP\&.
+Definition at line \fB12\fP of file \fBPlayer\&.cs\fP\&.
 
 .SH "Author"
 .PP 

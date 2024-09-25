@@ -13,6 +13,5 @@ var dir_9fbe364ff72607eecf0611039dde3612 =
     [ "ScoreandTime.cs", "_scoreand_time_8cs_source.html", null ],
     [ "ShowUserDetails.cs", "_show_user_details_8cs_source.html", null ],
     [ "ShowUsers.cs", "_show_users_8cs_source.html", null ],
-    [ "Sky.cs", "_sky_8cs_source.html", null ],
     [ "World.cs", "_world_8cs_source.html", null ]
 ];

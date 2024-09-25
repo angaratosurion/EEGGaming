@@ -4,6 +4,21 @@
         <name>BlinkBird</name>
     </assembly>
     <members>
+        <member name="T:About">
+            <summary>
+            This is the window that shows the info about the app
+            </summary>
+        </member>
+        <member name="M:About._Ready">
+            <summary>
+            Executes when the node isready andfills the info in the window
+            </summary>
+        </member>
+        <member name="M:About.BtnClose_Pressed">
+            <summary>
+            Closes the window
+            </summary>
+        </member>
         <member name="T:About.MethodName">
             <summary>
             Cached StringNames for the methods contained in this class, for fast lookup.
@@ -51,6 +66,28 @@
         <member name="T:About.SignalName">
             <summary>
             Cached StringNames for the signals contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="T:AddUserDetails">
+            <summary>
+            Adds a new user
+            </summary>
+        </member>
+        <member name="M:AddUserDetails._Ready">
+            <summary>
+            Called when the node enters the scene tree for the first time.
+             
+            </summary>
+        </member>
+        <member name="M:AddUserDetails.BtnCreateNewUser_Pressed">
+            <summary>
+            called when the create new user button is pressed and adds the 
+            new user to te database
+            </summary>
+        </member>
+        <member name="M:AddUserDetails.BtnCancel_Pressed">
+            <summary>
+            Closes the window
             </summary>
         </member>
         <member name="T:AddUserDetails.MethodName">
@@ -107,6 +144,22 @@
             Cached StringNames for the signals contained in this class, for fast lookup.
             </summary>
         </member>
+        <member name="T:Camera">
+            <summary>
+             This class controls the Camera of the Game
+            </summary>
+        </member>
+        <member name="M:Camera._Ready">
+            <summary>
+            Called when the node enters the scene tree for the first time.
+            </summary>
+        </member>
+        <member name="M:Camera._Process(System.Double)">
+            <summary>
+            Moves the camera and occurs when the frame is produced
+            </summary>
+            <param name="delta"></param>
+        </member>
         <member name="T:Camera.MethodName">
             <summary>
             Cached StringNames for the methods contained in this class, for fast lookup.
@@ -151,6 +204,16 @@
             Cached StringNames for the signals contained in this class, for fast lookup.
             </summary>
         </member>
+        <member name="T:GameOver">
+            <summary>
+            This window appearswhenn thegame is over
+            </summary>
+        </member>
+        <member name="M:GameOver._Ready">
+            <summary>
+            It shows the score and saves the data to the database
+            </summary>
+        </member>
         <member name="T:GameOver.MethodName">
             <summary>
             Cached StringNames for the methods contained in this class, for fast lookup.
@@ -193,6 +256,48 @@
         <member name="T:GameOver.SignalName">
             <summary>
             Cached StringNames for the signals contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="T:GamingScesions">
+            <summary>
+            Shows the saved gamingsessions
+            </summary>
+        </member>
+        <member name="M:GamingScesions.OpenFileDialog_FileSelected(System.String)">
+            <summary>
+            Selects he file to open
+            </summary>
+            <param name="path"></param>
+        </member>
+        <member name="M:GamingScesions.BtnImportCSV_Pressed">
+            <summary>
+            Imports the selectted csv file to the database
+            </summary>
+        </member>
+        <member name="M:GamingScesions.LstGamingsessions_ItemSelected(System.Int64)">
+            <summary>
+            Selects the gaming Session
+            </summary>
+            <param name="index"></param>
+        </member>
+        <member name="M:GamingScesions.BtnClose_Pressed">
+            <summary>
+            Clsoes the  window
+            </summary>
+        </member>
+        <member name="M:GamingScesions.BtnMakeGraphs_Pressed">
+            <summary>
+            Creates grphs in png image format
+            </summary>
+        </member>
+        <member name="M:GamingScesions.BtnExportToCSV_Pressed">
+            <summary>
+            Exports the  gamingsession data to csv
+            </summary>
+        </member>
+        <member name="M:GamingScesions.BtnDelete_Pressed">
+            <summary>
+            Deletes the selected gamingsession
             </summary>
         </member>
         <member name="T:GamingScesions.MethodName">
@@ -327,6 +432,17 @@
             Cached StringNames for the signals contained in this class, for fast lookup.
             </summary>
         </member>
+        <member name="T:HSdrHorizontalSpeed">
+            <summary>
+            This sldier controls the speed the scenec and the avatar moves
+            </summary>
+        </member>
+        <member name="M:HSdrHorizontalSpeed._Process(System.Double)">
+            <summary>
+            moves the slider when the camera moves
+            </summary>
+            <param name="delta"></param>
+        </member>
         <member name="T:HSdrHorizontalSpeed.MethodName">
             <summary>
             Cached StringNames for the methods contained in this class, for fast lookup.
@@ -369,6 +485,62 @@
         <member name="T:HSdrHorizontalSpeed.SignalName">
             <summary>
             Cached StringNames for the signals contained in this class, for fast lookup.
+            </summary>
+        </member>
+        <member name="T:Menu">
+            <summary>
+            The Main menu of the game
+            </summary>
+        </member>
+        <member name="M:Menu.SaveDataToDb">
+            <summary>
+            Save the data to database
+            </summary>
+        </member>
+        <member name="M:Menu._Ready">
+            <summary>
+            Creates the winndow
+            </summary>
+        </member>
+        <member name="M:Menu.BtnShowUsers_Pressed">
+            <summary>
+            This shows the window with all the users 
+            </summary>
+        </member>
+        <member name="M:Menu.BtnConnectEEGDevice_Pressed">
+            <summary>
+            Connects to the EEG headset
+            </summary>
+        </member>
+        <member name="M:Menu.BtnAbout_Pressed">
+            <summary>
+            Shows the About window
+            </summary>
+        </member>
+        <member name="M:Menu.BtnExit_Pressed">
+            <summary>
+            Cloes the game
+            </summary>
+        </member>
+        <member name="M:Menu.BtnSelectUser_Pressed">
+            <summary>
+            Shows the user for selection
+            </summary>
+        </member>
+        <member name="M:Menu.BtnNewuser_Pressed">
+            <summary>
+            Shwos the new user creation window
+            </summary>
+        </member>
+        <member name="M:Menu._Process(System.Double)">
+            <summary>
+            checks whever a user is selected or anEEG headest is conencted
+            </summary>
+            <param name="delta"></param>
+        </member>
+        <member name="M:Menu.bbtnNewGame_pressed">
+            <summary>
+            Starts  new game 
             </summary>
         </member>
         <member name="T:Menu.MethodName">
@@ -508,6 +680,19 @@
             Cached StringNames for the signals contained in this class, for fast lookup.
             </summary>
         </member>
+        <member name="T:Mountain">
+            <summary>
+            The main obstacle of the avatar
+            </summary>
+        </member>
+        <member name="M:Mountain._Process(System.Double)">
+            <summary>
+            It checks whenver the avatar is in the area of the mounntain and 
+            after it kills the avatar it shows the gameover screen or it increases the 
+            score
+            </summary>
+            <param name="delta"></param>
+        </member>
         <member name="T:Mountain.MethodName">
             <summary>
             Cached StringNames for the methods contained in this class, for fast lookup.
@@ -570,6 +755,11 @@
             Cached StringNames for the signals contained in this class, for fast lookup.
             </summary>
         </member>
+        <member name="T:Mountains">
+            <summary>
+            Manymountainns together
+            </summary>
+        </member>
         <member name="T:Mountains.MethodName">
             <summary>
             Cached StringNames for the methods contained in this class, for fast lookup.
@@ -613,6 +803,18 @@
             <summary>
             Cached StringNames for the signals contained in this class, for fast lookup.
             </summary>
+        </member>
+        <member name="T:Player">
+            <summary>
+            Class representation of the avatar
+            </summary>
+        </member>
+        <member name="M:Player._Process(System.Double)">
+            <summary>
+            checks whenever an eye blink occured and moves the avatar to 
+            closer to the top
+            </summary>
+            <param name="delta"></param>
         </member>
         <member name="T:Player.MethodName">
             <summary>
@@ -676,6 +878,18 @@
             Cached StringNames for the signals contained in this class, for fast lookup.
             </summary>
         </member>
+        <member name="T:ScoreandTime">
+            <summary>
+            The Horizontal Split container that gorupss the scoreand the timer 
+            together
+            </summary>
+        </member>
+        <member name="M:ScoreandTime._Process(System.Double)">
+            <summary>
+            Checks if the camera moves and moves
+            </summary>
+            <param name="delta"></param>
+        </member>
         <member name="T:ScoreandTime.MethodName">
             <summary>
             Cached StringNames for the methods contained in this class, for fast lookup.
@@ -719,6 +933,52 @@
             <summary>
             Cached StringNames for the signals contained in this class, for fast lookup.
             </summary>
+        </member>
+        <member name="T:ShowUserDetails">
+            <summary>
+            Shows the details fo a user
+            </summary>
+        </member>
+        <member name="M:ShowUserDetails._Ready">
+            <summary>
+            Filsl the objects with user's info
+            </summary>
+        </member>
+        <member name="M:ShowUserDetails.BtnGamingSessions_Pressed">
+            <summary>
+            shows the gaming sessions
+            </summary>
+        </member>
+        <member name="M:ShowUserDetails.BtnDelete_Pressed">
+            <summary>
+            deletes the slected user
+            </summary>
+        </member>
+        <member name="M:ShowUserDetails.BtnSelectuser_Pressed">
+            <summary>
+            Selects the user
+            </summary>
+        </member>
+        <member name="M:ShowUserDetails.BtnEdit_Pressed">
+            <summary>
+            Saves the new info to the database
+            </summary>
+        </member>
+        <member name="M:ShowUserDetails.BtnCancel_Pressed">
+            <summary>
+            cancels and clsoes the window
+            </summary>
+        </member>
+        <member name="M:ShowUserDetails.BtnEnableEdit_Pressed">
+            <summary>
+            Gives the ability to edit user's info
+            </summary>
+        </member>
+        <member name="M:ShowUserDetails.OptUsers_ItemSelected(System.Int64)">
+            <summary>
+            Sets the user to the activeoption
+            </summary>
+            <param name="index"></param>
         </member>
         <member name="T:ShowUserDetails.MethodName">
             <summary>
@@ -852,6 +1112,27 @@
             Cached StringNames for the signals contained in this class, for fast lookup.
             </summary>
         </member>
+        <member name="T:ShowUsers">
+            <summary>
+            Shows all the user saved in the database
+            </summary>
+        </member>
+        <member name="M:ShowUsers.BtnAddNew_Pressed">
+            <summary>
+            Shows the user creation window
+            </summary>
+        </member>
+        <member name="M:ShowUsers.BtnShowUserDetails_Pressed">
+            <summary>
+            shows the user details window
+            </summary>
+        </member>
+        <member name="M:ShowUsers.LstUser_ItemSelected(System.Int64)">
+            <summary>
+            makes ti's seected item to be te active user
+            </summary>
+            <param name="index"></param>
+        </member>
         <member name="T:ShowUsers.MethodName">
             <summary>
             Cached StringNames for the methods contained in this class, for fast lookup.
@@ -959,48 +1240,20 @@
             Cached StringNames for the signals contained in this class, for fast lookup.
             </summary>
         </member>
-        <member name="T:Sky.MethodName">
+        <member name="T:World">
             <summary>
-            Cached StringNames for the methods contained in this class, for fast lookup.
+            The class representation for the gaming world 
             </summary>
         </member>
-        <member name="F:Sky.MethodName._Ready">
+        <member name="M:World.HSdrHorizontalSpeed_ValueChanged(System.Double)">
             <summary>
-            Cached name for the '_Ready' method.
+            Changes the speed to the horizontalslider's value
             </summary>
+            <param name="value"></param>
         </member>
-        <member name="F:Sky.MethodName._Process">
+        <member name="M:World.Timer_Timeout">
             <summary>
-            Cached name for the '_Process' method.
-            </summary>
-        </member>
-        <member name="M:Sky.GetGodotMethodList">
-            <summary>
-            Get the method information for all the methods declared in this class.
-            This method is used by Godot to register the available methods in the editor.
-            Do not call this method.
-            </summary>
-        </member>
-        <member name="M:Sky.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.NativeVariantPtrArgs,Godot.NativeInterop.godot_variant@)">
-            <inheritdoc/>
-        </member>
-        <member name="M:Sky.HasGodotClassMethod(Godot.NativeInterop.godot_string_name@)">
-            <inheritdoc/>
-        </member>
-        <member name="T:Sky.PropertyName">
-            <summary>
-            Cached StringNames for the properties and fields contained in this class, for fast lookup.
-            </summary>
-        </member>
-        <member name="M:Sky.SaveGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
-            <inheritdoc/>
-        </member>
-        <member name="M:Sky.RestoreGodotObjectData(Godot.Bridge.GodotSerializationInfo)">
-            <inheritdoc/>
-        </member>
-        <member name="T:Sky.SignalName">
-            <summary>
-            Cached StringNames for the signals contained in this class, for fast lookup.
+            Changes the time that elapsed
             </summary>
         </member>
         <member name="T:World.MethodName">

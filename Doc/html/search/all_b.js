@@ -1,10 +1,10 @@
 var searchData=
 [
-  ['madethenamepropertyakey_0',['madethenamepropertyakey',['../class_e_e_g_gaming_1_1_core_1_1_migrations_1_1madethenamepropertyakey.html',1,'EEGGaming::Core::Migrations']]],
-  ['makegraphs_1',['MakeGraphs',['../class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager.html#aa37393630a5ae47cb49701fcd71e8779',1,'EEGGaming::Core::Managers::BrainWaveRecordManager']]],
-  ['marker_2',['Marker',['../class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves.html#a80f504aeac234e88a8818e6936823ab9',1,'EEGGaming::Core::Data::NonDataModels::Brainwaves']]],
-  ['menu_3',['Menu',['../class_menu.html',1,'']]],
-  ['milisecond_4',['MiliSecond',['../class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_brainwaves.html#ab00930f70ab5d893084ea1fbbd4da426',1,'EEGGaming::Core::Data::NonDataModels::Brainwaves']]],
-  ['mountain_5',['Mountain',['../class_mountain.html',1,'']]],
-  ['mountains_6',['Mountains',['../class_mountains.html',1,'']]]
+  ['id_0',['Id',['../class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_brainwaves_record.html#adc273344349b40b3807431335287f267',1,'EEGGaming.Core.Data.Models.BrainwavesRecord.Id'],['../class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion.html#ae768cd0296695bb3d3f346ae5cb67ab6',1,'EEGGaming.Core.Data.Models.GamingSesion.Id'],['../class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_user.html#ae083eaecb33ccf83b56ae6c0fbb6a118',1,'EEGGaming.Core.Data.Models.User.Id']]],
+  ['ignoreuserselectionandconstateofdevice_1',['ignoreUserselectionandconstateofdevice',['../class_menu.html#a0f5f753616914a269e9acad62bee9e1d',1,'Menu']]],
+  ['importtomodel_2',['ImportToModel',['../class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_brainwaves_record.html#a623f03f99ed42ac24142497ae55890bf',1,'EEGGaming.Core.Data.Models.BrainwavesRecord.ImportToModel()'],['../class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_gming_session_view_model.html#aca2a41f4c7b35096799bb3684c529e8d',1,'EEGGaming.Core.Data.NonDataModels.GmingSessionViewModel.ImportToModel()']]],
+  ['initailcreation_3',['initailcreation',['../class_e_e_g_gaming_1_1_core_1_1_migrations_1_1initailcreation.html',1,'EEGGaming::Core::Migrations']]],
+  ['initfiltering_4',['InitFiltering',['../class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager.html#a3ce8032a1268dfc6cc7c6c2215d62ad3',1,'EEGGaming::Core::Managers::BrainWaveRecordManager']]],
+  ['initial_5',['initial',['../class_e_e_g_gaming_1_1_core_1_1_migrations_1_1initial.html',1,'EEGGaming::Core::Migrations']]],
+  ['isempty_6',['isEmpty',['../class_e_e_g_gaming_1_1_core_1_1_tools_1_1_common_tools.html#aba6000732ddd88a2b590bbfc8b91227c',1,'EEGGaming::Core::Tools::CommonTools']]]
 ];

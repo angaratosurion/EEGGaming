@@ -6,7 +6,6 @@
     <innernamespace refid="namespace_e_e_g_gaming">EEGGaming</innernamespace>
     <innernamespace refid="namespace_e_e_g_gaming_1_1_core">EEGGaming::Core</innernamespace>
     <innernamespace refid="namespace_e_e_g_gaming_1_1_core_1_1_managers">EEGGaming::Core::Managers</innernamespace>
-    <innernamespace refid="namespace_neuro_s_d_k">NeuroSDK</innernamespace>
     <innernamespace refid="namespace_neuro_tech_1_1_spectrum">NeuroTech::Spectrum</innernamespace>
     <innernamespace refid="namespace_csv_helper">CsvHelper</innernamespace>
     <innernamespace refid="namespace_system_1_1_globalization">System::Globalization</innernamespace>

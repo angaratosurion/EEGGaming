@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__app_settings_manager_8cs" xml:lang="en-US">
+<title>EEGGaming.Core/Managers/AppSettingsManager.cs File Reference</title>
+<indexterm><primary>EEGGaming.Core/Managers/AppSettingsManager.cs</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <emphasis role="strong">EEGGaming.Core.Managers.AppSettingsManager</emphasis></para>
+
+<para>This classmanages the settings of the library. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespace_e_e_g_gaming">EEGGaming</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespace_e_e_g_gaming_1_1_core">EEGGaming.Core</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespace_e_e_g_gaming_1_1_core_1_1_managers">EEGGaming.Core.Managers</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Typedefs    </title>
+        <itemizedlist>
+            <listitem><para>using <link linkend="__app_settings_manager_8cs_1af73c94da02ddd630d4a203da21d5266a">ConfigurationBuilder</link> = Microsoft.Extensions.Configuration.ConfigurationBuilder</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Typedef Documentation</title>
+<anchor xml:id="__app_settings_manager_8cs_1af73c94da02ddd630d4a203da21d5266a"/><section>
+    <title>ConfigurationBuilder</title>
+<indexterm><primary>ConfigurationBuilder</primary><secondary>AppSettingsManager.cs</secondary></indexterm>
+<indexterm><primary>AppSettingsManager.cs</primary><secondary>ConfigurationBuilder</secondary></indexterm>
+<para><computeroutput>using <link linkend="__app_settings_manager_8cs_1af73c94da02ddd630d4a203da21d5266a">ConfigurationBuilder</link> = Microsoft.Extensions.Configuration.ConfigurationBuilder</computeroutput></para><para>
+Definition at line <link linkend="__app_settings_manager_8cs_source_1l00010">10</link> of file <link linkend="__app_settings_manager_8cs_source">AppSettingsManager.cs</link>.</para>
+</section>
+</section>
+</section>

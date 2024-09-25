@@ -1,6 +1,6 @@
 \doxysection{Common\+Tools.\+cs}
 \hypertarget{_common_tools_8cs_source}{}\label{_common_tools_8cs_source}\index{EEGGaming.Core/Tools/CommonTools.cs@{EEGGaming.Core/Tools/CommonTools.cs}}
-
+\mbox{\hyperlink{_common_tools_8cs}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
 \DoxyCodeLine{\Hypertarget{_common_tools_8cs_source_l00001}00001\ \textcolor{keyword}{using\ }NLog;}
 \DoxyCodeLine{\Hypertarget{_common_tools_8cs_source_l00002}00002\ \textcolor{keyword}{using\ }System;}
@@ -17,7 +17,7 @@
 \DoxyCodeLine{\Hypertarget{_common_tools_8cs_source_l00013}00013\ \{}
 \DoxyCodeLine{\Hypertarget{_common_tools_8cs_source_l00017}\mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_tools_1_1_common_tools}{00017}}\ \ \ \ \ \textcolor{keyword}{public}\ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_tools_1_1_common_tools}{CommonTools}}}
 \DoxyCodeLine{\Hypertarget{_common_tools_8cs_source_l00018}00018\ \ \ \ \ \{}
-\DoxyCodeLine{\Hypertarget{_common_tools_8cs_source_l00019}00019\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ Logger\ logger;}
+\DoxyCodeLine{\Hypertarget{_common_tools_8cs_source_l00019}\mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_tools_1_1_common_tools_a59b634479a1286147fe0bc7d4f8aab21}{00019}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ Logger\ \mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_tools_1_1_common_tools_a59b634479a1286147fe0bc7d4f8aab21}{logger}};}
 \DoxyCodeLine{\Hypertarget{_common_tools_8cs_source_l00023}\mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_tools_1_1_common_tools_a2a61dee054c1fe610362b6c30c92a4ed}{00023}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_tools_1_1_common_tools_a2a61dee054c1fe610362b6c30c92a4ed}{CreateLogger}}()}
 \DoxyCodeLine{\Hypertarget{_common_tools_8cs_source_l00024}00024\ \ \ \ \ \ \ \ \ \{}
 \DoxyCodeLine{\Hypertarget{_common_tools_8cs_source_l00025}00025\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}}
@@ -31,7 +31,7 @@
 \DoxyCodeLine{\Hypertarget{_common_tools_8cs_source_l00033}00033\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
 \DoxyCodeLine{\Hypertarget{_common_tools_8cs_source_l00034}00034\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .GetCurrentClassLogger();}
 \DoxyCodeLine{\Hypertarget{_common_tools_8cs_source_l00035}00035\ }
-\DoxyCodeLine{\Hypertarget{_common_tools_8cs_source_l00036}00036\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ logger\ =\ tlogger;}
+\DoxyCodeLine{\Hypertarget{_common_tools_8cs_source_l00036}00036\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_tools_1_1_common_tools_a59b634479a1286147fe0bc7d4f8aab21}{logger}}\ =\ tlogger;}
 \DoxyCodeLine{\Hypertarget{_common_tools_8cs_source_l00037}00037\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
 \DoxyCodeLine{\Hypertarget{_common_tools_8cs_source_l00038}00038\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{catch}\ (Exception\ ex)}
 \DoxyCodeLine{\Hypertarget{_common_tools_8cs_source_l00039}00039\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
@@ -68,7 +68,7 @@
 \DoxyCodeLine{\Hypertarget{_common_tools_8cs_source_l00079}00079\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (ex.GetBaseException()\ is\ ValidationException)}
 \DoxyCodeLine{\Hypertarget{_common_tools_8cs_source_l00080}00080\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
 \DoxyCodeLine{\Hypertarget{_common_tools_8cs_source_l00081}00081\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ ValidationErrorReporting((ValidationException)ex);}}
-\DoxyCodeLine{\Hypertarget{_common_tools_8cs_source_l00082}00082\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ logger.Fatal(ex);}
+\DoxyCodeLine{\Hypertarget{_common_tools_8cs_source_l00082}00082\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_tools_1_1_common_tools_a59b634479a1286147fe0bc7d4f8aab21}{logger}}.Fatal(ex);}
 \DoxyCodeLine{\Hypertarget{_common_tools_8cs_source_l00083}00083\ }
 \DoxyCodeLine{\Hypertarget{_common_tools_8cs_source_l00084}00084\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
 \DoxyCodeLine{\Hypertarget{_common_tools_8cs_source_l00085}00085\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
@@ -79,7 +79,7 @@
 \DoxyCodeLine{\Hypertarget{_common_tools_8cs_source_l00090}00090\ }
 \DoxyCodeLine{\Hypertarget{_common_tools_8cs_source_l00091}00091\ }
 \DoxyCodeLine{\Hypertarget{_common_tools_8cs_source_l00092}00092\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
-\DoxyCodeLine{\Hypertarget{_common_tools_8cs_source_l00093}00093\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ logger.Fatal(ex.ToString());}
+\DoxyCodeLine{\Hypertarget{_common_tools_8cs_source_l00093}00093\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_tools_1_1_common_tools_a59b634479a1286147fe0bc7d4f8aab21}{logger}}.Fatal(ex.ToString());}
 \DoxyCodeLine{\Hypertarget{_common_tools_8cs_source_l00094}00094\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ NLog.LogManager.Flush();}
 \DoxyCodeLine{\Hypertarget{_common_tools_8cs_source_l00095}00095\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
 \DoxyCodeLine{\Hypertarget{_common_tools_8cs_source_l00096}00096\ \ \ \ \ \ \ \ \ \ \ \ \ \}}

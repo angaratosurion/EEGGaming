@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__add_user_details_8cs" xml:lang="en-US">
+<title>BlinkBird/Code/AddUserDetails.cs File Reference</title>
+<indexterm><primary>BlinkBird/Code/AddUserDetails.cs</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_add_user_details">AddUserDetails</link></para>
+
+<para>Adds a new user. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

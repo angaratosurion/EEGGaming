@@ -2,7 +2,7 @@
 <section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_20230828223053__initial_8cs_source" xml:lang="en-US">
 <title>20230828223053_initial.cs</title>
 <indexterm><primary>EEGGaming.Core/Migrations/20230828223053_initial.cs</primary></indexterm>
-<programlisting linenumbering="unnumbered"><anchor xml:id="_20230828223053__initial_8cs_source_1l00001"/>00001 <emphasis role="keyword">using&#32;</emphasis>System;
+Go to the documentation of this file.<programlisting linenumbering="unnumbered"><anchor xml:id="_20230828223053__initial_8cs_source_1l00001"/>00001 <emphasis role="keyword">using&#32;</emphasis>System;
 <anchor xml:id="_20230828223053__initial_8cs_source_1l00002"/>00002 <emphasis role="keyword">using&#32;</emphasis>Microsoft.EntityFrameworkCore.Migrations;
 <anchor xml:id="_20230828223053__initial_8cs_source_1l00003"/>00003 
 <anchor xml:id="_20230828223053__initial_8cs_source_1l00004"/>00004 <emphasis role="preprocessor">#nullable&#32;disable</emphasis>

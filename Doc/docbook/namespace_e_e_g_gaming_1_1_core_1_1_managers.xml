@@ -28,10 +28,22 @@
 <simplesect>
     <title>Functions    </title>
         <itemizedlist>
-            <listitem><para><anchor xml:id="_namespace_e_e_g_gaming_1_1_core_1_1_managers_1ac5dfc32818fda85c21b2a13fe1822796"/>delegate void <emphasis role="strong">OnBlinked</emphasis> ()</para>
+            <listitem><para>delegate void <link linkend="_namespace_e_e_g_gaming_1_1_core_1_1_managers_1ac5dfc32818fda85c21b2a13fe1822796">OnBlinked</link> ()</para>
 
 <para>This event occurs when an eye blink occured. </para>
 </listitem>
         </itemizedlist>
 </simplesect>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_namespace_e_e_g_gaming_1_1_core_1_1_managers_1ac5dfc32818fda85c21b2a13fe1822796"/><section>
+    <title>OnBlinked()</title>
+<indexterm><primary>OnBlinked</primary><secondary>EEGGaming.Core.Managers</secondary></indexterm>
+<indexterm><primary>EEGGaming.Core.Managers</primary><secondary>OnBlinked</secondary></indexterm>
+<para><computeroutput>delegate void EEGGaming.Core.Managers.OnBlinked ( )</computeroutput></para><para>
+
+<para>This event occurs when an eye blink occured. </para>
+</para>
+</section>
+</section>
 </section>

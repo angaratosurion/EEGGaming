@@ -1,5 +1,10 @@
 \doxysection{Menu Class Reference}
 \hypertarget{class_menu}{}\label{class_menu}\index{Menu@{Menu}}
+
+
+The Main menu of the game.  
+
+
 Inheritance diagram for Menu\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -10,16 +15,16 @@ Inheritance diagram for Menu\+:\begin{figure}[H]
 \begin{DoxyCompactItemize}
 \item 
 override void \mbox{\hyperlink{class_menu_a8749d8124f3d908e7dc30d71c08f6e28}{\+\_\+\+Ready}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Creates the winndow. \end{DoxyCompactList}\item 
 override void \mbox{\hyperlink{class_menu_aa5214bdaf8eaaa4ea25d41c57331c221}{\+\_\+\+Process}} (double delta)
-\item 
+\begin{DoxyCompactList}\small\item\em checks whever a user is selected or an\+EEG headest is conencted \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_menu_a9a2ffafb1592a5438156816758e2bd64}{bbtn\+New\+Game\+\_\+pressed}} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Starts new game. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 static void \mbox{\hyperlink{class_menu_ab4749d59147615a8d8289be37cb49a83}{Save\+Data\+To\+Db}} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Save the data to database. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Static Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -30,13 +35,15 @@ static \mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_managers_1_1_gaming_sesi
 static \mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_managers_1_1_user_manager}{User\+Manager}} \mbox{\hyperlink{class_menu_a6aa76feb83b7956cd553c35b5e926f4e}{user\+Manager}} = new \mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_managers_1_1_user_manager}{User\+Manager}}()
 \item 
 static \mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_user}{User}} \mbox{\hyperlink{class_menu_a2cdd0aa13fc2a0c1a0f2fdb2195c475c}{Selected\+User}} = null
+\item 
+static bool \mbox{\hyperlink{class_menu_a0f5f753616914a269e9acad62bee9e1d}{ignore\+Userselectionandconstateofdevice}} = false
 \end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
+The Main menu of the game. 
 
-
-Definition at line \mbox{\hyperlink{_menu_8cs_source_l00007}{7}} of file \mbox{\hyperlink{_menu_8cs_source}{Menu.\+cs}}.
+Definition at line \mbox{\hyperlink{_menu_8cs_source_l00011}{11}} of file \mbox{\hyperlink{_menu_8cs_source}{Menu.\+cs}}.
 
 
 
@@ -49,7 +56,16 @@ override void Menu.\+\_\+\+Process (\begin{DoxyParamCaption}\item[{double}]{delt
 
 
 
-Definition at line \mbox{\hyperlink{_menu_8cs_source_l00140}{140}} of file \mbox{\hyperlink{_menu_8cs_source}{Menu.\+cs}}.
+checks whever a user is selected or an\+EEG headest is conencted 
+
+
+\begin{DoxyParams}{Parameters}
+{\em delta} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_menu_8cs_source_l00178}{178}} of file \mbox{\hyperlink{_menu_8cs_source}{Menu.\+cs}}.
 
 \Hypertarget{class_menu_a8749d8124f3d908e7dc30d71c08f6e28}\index{Menu@{Menu}!\_Ready@{\_Ready}}
 \index{\_Ready@{\_Ready}!Menu@{Menu}}
@@ -59,7 +75,11 @@ override void Menu.\+\_\+\+Ready (\begin{DoxyParamCaption}{}{}\end{DoxyParamCapt
 
 
 
-Definition at line \mbox{\hyperlink{_menu_8cs_source_l00027}{27}} of file \mbox{\hyperlink{_menu_8cs_source}{Menu.\+cs}}.
+Creates the winndow. 
+
+
+
+Definition at line \mbox{\hyperlink{_menu_8cs_source_l00038}{38}} of file \mbox{\hyperlink{_menu_8cs_source}{Menu.\+cs}}.
 
 \Hypertarget{class_menu_a9a2ffafb1592a5438156816758e2bd64}\index{Menu@{Menu}!bbtnNewGame\_pressed@{bbtnNewGame\_pressed}}
 \index{bbtnNewGame\_pressed@{bbtnNewGame\_pressed}!Menu@{Menu}}
@@ -69,7 +89,11 @@ void Menu.\+bbtn\+New\+Game\+\_\+pressed (\begin{DoxyParamCaption}{}{}\end{DoxyP
 
 
 
-Definition at line \mbox{\hyperlink{_menu_8cs_source_l00155}{155}} of file \mbox{\hyperlink{_menu_8cs_source}{Menu.\+cs}}.
+Starts new game. 
+
+
+
+Definition at line \mbox{\hyperlink{_menu_8cs_source_l00196}{196}} of file \mbox{\hyperlink{_menu_8cs_source}{Menu.\+cs}}.
 
 \Hypertarget{class_menu_ab4749d59147615a8d8289be37cb49a83}\index{Menu@{Menu}!SaveDataToDb@{SaveDataToDb}}
 \index{SaveDataToDb@{SaveDataToDb}!Menu@{Menu}}
@@ -79,7 +103,11 @@ static void Menu.\+Save\+Data\+To\+Db (\begin{DoxyParamCaption}{}{}\end{DoxyPara
 
 
 
-Definition at line \mbox{\hyperlink{_menu_8cs_source_l00018}{18}} of file \mbox{\hyperlink{_menu_8cs_source}{Menu.\+cs}}.
+Save the data to database. 
+
+
+
+Definition at line \mbox{\hyperlink{_menu_8cs_source_l00026}{26}} of file \mbox{\hyperlink{_menu_8cs_source}{Menu.\+cs}}.
 
 
 
@@ -92,7 +120,17 @@ Definition at line \mbox{\hyperlink{_menu_8cs_source_l00018}{18}} of file \mbox{
 
 
 
-Definition at line \mbox{\hyperlink{_menu_8cs_source_l00013}{13}} of file \mbox{\hyperlink{_menu_8cs_source}{Menu.\+cs}}.
+Definition at line \mbox{\hyperlink{_menu_8cs_source_l00017}{17}} of file \mbox{\hyperlink{_menu_8cs_source}{Menu.\+cs}}.
+
+\Hypertarget{class_menu_a0f5f753616914a269e9acad62bee9e1d}\index{Menu@{Menu}!ignoreUserselectionandconstateofdevice@{ignoreUserselectionandconstateofdevice}}
+\index{ignoreUserselectionandconstateofdevice@{ignoreUserselectionandconstateofdevice}!Menu@{Menu}}
+\doxysubsubsection{\texorpdfstring{ignoreUserselectionandconstateofdevice}{ignoreUserselectionandconstateofdevice}}
+{\footnotesize\ttfamily \label{class_menu_a0f5f753616914a269e9acad62bee9e1d} 
+bool Menu.\+ignore\+Userselectionandconstateofdevice = false\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line \mbox{\hyperlink{_menu_8cs_source_l00022}{22}} of file \mbox{\hyperlink{_menu_8cs_source}{Menu.\+cs}}.
 
 \Hypertarget{class_menu_aa005ebd5a38e50bc52accdb70c081008}\index{Menu@{Menu}!recordManager@{recordManager}}
 \index{recordManager@{recordManager}!Menu@{Menu}}
@@ -102,7 +140,7 @@ Definition at line \mbox{\hyperlink{_menu_8cs_source_l00013}{13}} of file \mbox{
 
 
 
-Definition at line \mbox{\hyperlink{_menu_8cs_source_l00012}{12}} of file \mbox{\hyperlink{_menu_8cs_source}{Menu.\+cs}}.
+Definition at line \mbox{\hyperlink{_menu_8cs_source_l00016}{16}} of file \mbox{\hyperlink{_menu_8cs_source}{Menu.\+cs}}.
 
 \Hypertarget{class_menu_a2cdd0aa13fc2a0c1a0f2fdb2195c475c}\index{Menu@{Menu}!SelectedUser@{SelectedUser}}
 \index{SelectedUser@{SelectedUser}!Menu@{Menu}}
@@ -112,7 +150,7 @@ Definition at line \mbox{\hyperlink{_menu_8cs_source_l00012}{12}} of file \mbox{
 
 
 
-Definition at line \mbox{\hyperlink{_menu_8cs_source_l00016}{16}} of file \mbox{\hyperlink{_menu_8cs_source}{Menu.\+cs}}.
+Definition at line \mbox{\hyperlink{_menu_8cs_source_l00021}{21}} of file \mbox{\hyperlink{_menu_8cs_source}{Menu.\+cs}}.
 
 \Hypertarget{class_menu_a6aa76feb83b7956cd553c35b5e926f4e}\index{Menu@{Menu}!userManager@{userManager}}
 \index{userManager@{userManager}!Menu@{Menu}}
@@ -122,10 +160,10 @@ Definition at line \mbox{\hyperlink{_menu_8cs_source_l00016}{16}} of file \mbox{
 
 
 
-Definition at line \mbox{\hyperlink{_menu_8cs_source_l00014}{14}} of file \mbox{\hyperlink{_menu_8cs_source}{Menu.\+cs}}.
+Definition at line \mbox{\hyperlink{_menu_8cs_source_l00018}{18}} of file \mbox{\hyperlink{_menu_8cs_source}{Menu.\+cs}}.
 
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-Blink\+Bird/\+Code/Menu.\+cs\end{DoxyCompactItemize}
+Blink\+Bird/\+Code/\mbox{\hyperlink{_menu_8cs}{Menu.\+cs}}\end{DoxyCompactItemize}

@@ -11,12 +11,13 @@
         <name>_Ready</name>
         <qualifiedname>About._Ready</qualifiedname>
         <briefdescription>
+<para>Executes when the node isready andfills the info in the window. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="BlinkBird/Code/About.cs" line="8" column="22" bodyfile="BlinkBird/Code/About.cs" bodystart="8" bodyend="27"/>
+        <location file="BlinkBird/Code/About.cs" line="13" column="22" bodyfile="BlinkBird/Code/About.cs" bodystart="13" bodyend="32"/>
       </memberdef>
       <memberdef kind="function" id="class_about_1abdae3e58290a1de1645cd98f573f6f47" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>override void</type>
@@ -34,7 +35,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="BlinkBird/Code/About.cs" line="35" column="22" bodyfile="BlinkBird/Code/About.cs" bodystart="35" bodyend="37"/>
+        <location file="BlinkBird/Code/About.cs" line="42" column="22" bodyfile="BlinkBird/Code/About.cs" bodystart="42" bodyend="44"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="private-func">
@@ -45,15 +46,17 @@
         <name>BtnClose_Pressed</name>
         <qualifiedname>About.BtnClose_Pressed</qualifiedname>
         <briefdescription>
+<para>Closes the window. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="BlinkBird/Code/About.cs" line="29" column="14" bodyfile="BlinkBird/Code/About.cs" bodystart="29" bodyend="32"/>
+        <location file="BlinkBird/Code/About.cs" line="36" column="14" bodyfile="BlinkBird/Code/About.cs" bodystart="36" bodyend="39"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
+<para>This is the window that shows the info about the app. </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
@@ -79,7 +82,7 @@
         <label>Node2D</label>
       </node>
     </collaborationgraph>
-    <location file="BlinkBird/Code/About.cs" line="5" column="15" bodyfile="BlinkBird/Code/About.cs" bodystart="6" bodyend="38"/>
+    <location file="BlinkBird/Code/About.cs" line="8" column="15" bodyfile="BlinkBird/Code/About.cs" bodystart="9" bodyend="45"/>
     <listofallmembers>
       <member refid="class_about_1abdae3e58290a1de1645cd98f573f6f47" prot="public" virt="non-virtual"><scope>About</scope><name>_Process</name></member>
       <member refid="class_about_1a6fd0d191b34bef603946942fd36e9894" prot="public" virt="non-virtual"><scope>About</scope><name>_Ready</name></member>

@@ -1,6 +1,9 @@
 using Godot;
 using System;
 
+/// <summary>
+/// Manymountainns together
+/// </summary>
 public partial class Mountains : Node2D
 {
 	// Called when the node enters the scene tree for the first time.

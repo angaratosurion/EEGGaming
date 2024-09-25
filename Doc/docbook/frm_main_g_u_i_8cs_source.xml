@@ -2,7 +2,7 @@
 <section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_frm_main_g_u_i_8cs_source" xml:lang="en-US">
 <title>frmMainGUI.cs</title>
 <indexterm><primary>EEGGaming.Trainer/frmMainGUI.cs</primary></indexterm>
-<programlisting linenumbering="unnumbered"><anchor xml:id="_frm_main_g_u_i_8cs_source_1l00001"/>00001 <emphasis role="keyword">using&#32;</emphasis><link linkend="_namespace_e_e_g_gaming_1_1_core_1_1_managers">EEGGaming.Core.Managers</link>;
+Go to the documentation of this file.<programlisting linenumbering="unnumbered"><anchor xml:id="_frm_main_g_u_i_8cs_source_1l00001"/>00001 <emphasis role="keyword">using&#32;</emphasis><link linkend="_namespace_e_e_g_gaming_1_1_core_1_1_managers">EEGGaming.Core.Managers</link>;
 <anchor xml:id="_frm_main_g_u_i_8cs_source_1l00002"/>00002 <emphasis role="keyword">using&#32;</emphasis><link linkend="_namespace_e_e_g_gaming_1_1_core_1_1_tools">EEGGaming.Core.Tools</link>;
 <anchor xml:id="_frm_main_g_u_i_8cs_source_1l00003"/>00003 <emphasis role="keyword">using&#32;</emphasis>NeuroSDK;
 <anchor xml:id="_frm_main_g_u_i_8cs_source_1l00004"/>00004 <emphasis role="keyword">using&#32;</emphasis>System;
@@ -30,7 +30,7 @@
 <anchor xml:id="_frm_main_g_u_i_8cs_source_1l00026"/>00026 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_e_e_g_gaming_1_1_core_1_1_tools_1_1_common_tools">CommonTools</link>.<link linkend="_class_e_e_g_gaming_1_1_core_1_1_tools_1_1_common_tools_1abc9d2f32eaa71518650c4b010557d60f">GetEEGGamingCoreVersion</link>();
 <anchor xml:id="_frm_main_g_u_i_8cs_source_1l00027"/>00027 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;DateTime&#32;started;
 <anchor xml:id="_frm_main_g_u_i_8cs_source_1l00028"/>00028 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;SoundPlayer&#32;simpleSound;
-<anchor xml:id="_frm_main_g_u_i_8cs_source_1l00029"/>00029 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<link linkend="_class_e_e_g_gaming_1_1_trainer_1_1frm_main_g_u_i">frmMainGUI</link>()
+<anchor xml:id="_frm_main_g_u_i_8cs_source_1l00029"/><link linkend="_class_e_e_g_gaming_1_1_trainer_1_1frm_main_g_u_i_1a85d75102cec35ab59afc963019517eed">00029</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<link linkend="_class_e_e_g_gaming_1_1_trainer_1_1frm_main_g_u_i_1a85d75102cec35ab59afc963019517eed">frmMainGUI</link>()
 <anchor xml:id="_frm_main_g_u_i_8cs_source_1l00030"/>00030 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
 <anchor xml:id="_frm_main_g_u_i_8cs_source_1l00031"/>00031 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;InitializeComponent();
 <anchor xml:id="_frm_main_g_u_i_8cs_source_1l00032"/>00032 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.Text&#32;=&#32;winTitle;<emphasis role="comment">//&#32;+&quot;&#32;&quot;+Convert.ToString(&#32;recordManager.FFTBinsFor1Hz);</emphasis>

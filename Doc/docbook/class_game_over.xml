@@ -2,6 +2,11 @@
 <section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_game_over" xml:lang="en-US">
 <title>GameOver Class Reference</title>
 <indexterm><primary>GameOver</primary></indexterm>
+<para>
+
+<para>This window appearswhenn thegame is over. </para>
+ 
+</para>
 <para>Inheritance diagram for GameOver:    <informalfigure>
         <mediaobject>
             <imageobject>
@@ -14,6 +19,8 @@
     <title>Public Member Functions    </title>
         <itemizedlist>
             <listitem><para>override void <link linkend="_class_game_over_1a9dff954d9b92b3377bc6c08ad2096d65">_Ready</link> ()</para>
+
+<para>It shows the score and saves the data to the database. </para>
 </listitem>
             <listitem><para>override void <link linkend="_class_game_over_1aaabfb20fa692d869cd2acfe81c3e66c6">_Process</link> (double delta)</para>
 </listitem>
@@ -21,8 +28,10 @@
 </simplesect>
 <section>
 <title>Detailed Description</title>
+
+<para>This window appearswhenn thegame is over. </para>
 <para>
-Definition at line <link linkend="__game_over_8cs_source_1l00004">4</link> of file <link linkend="__game_over_8cs_source">GameOver.cs</link>.</para>
+Definition at line <link linkend="__game_over_8cs_source_1l00006">6</link> of file <link linkend="__game_over_8cs_source">GameOver.cs</link>.</para>
 </section>
 <section>
 <title>Member Function Documentation</title>
@@ -31,16 +40,20 @@ Definition at line <link linkend="__game_over_8cs_source_1l00004">4</link> of fi
 <indexterm><primary>_Process</primary><secondary>GameOver</secondary></indexterm>
 <indexterm><primary>GameOver</primary><secondary>_Process</secondary></indexterm>
 <para><computeroutput>override void GameOver._Process (double delta)</computeroutput></para><para>
-Definition at line <link linkend="__game_over_8cs_source_1l00028">28</link> of file <link linkend="__game_over_8cs_source">GameOver.cs</link>.</para>
+Definition at line <link linkend="__game_over_8cs_source_1l00032">32</link> of file <link linkend="__game_over_8cs_source">GameOver.cs</link>.</para>
 </section>
 <anchor xml:id="_class_game_over_1a9dff954d9b92b3377bc6c08ad2096d65"/><section>
     <title>_Ready()</title>
 <indexterm><primary>_Ready</primary><secondary>GameOver</secondary></indexterm>
 <indexterm><primary>GameOver</primary><secondary>_Ready</secondary></indexterm>
 <para><computeroutput>override void GameOver._Ready ( )</computeroutput></para><para>
-Definition at line <link linkend="__game_over_8cs_source_1l00008">8</link> of file <link linkend="__game_over_8cs_source">GameOver.cs</link>.</para>
+
+<para>It shows the score and saves the data to the database. </para>
+</para>
+<para>
+Definition at line <link linkend="__game_over_8cs_source_1l00012">12</link> of file <link linkend="__game_over_8cs_source">GameOver.cs</link>.</para>
 </section>
 <para>
 The documentation for this class was generated from the following file:</para>
-BlinkBird/Code/GameOver.cs</section>
+BlinkBird/Code/<link linkend="__game_over_8cs">GameOver.cs</link></section>
 </section>

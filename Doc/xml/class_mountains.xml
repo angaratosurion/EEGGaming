@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="BlinkBird/Code/Mountains.cs" line="7" column="22" bodyfile="BlinkBird/Code/Mountains.cs" bodystart="7" bodyend="10"/>
+        <location file="BlinkBird/Code/Mountains.cs" line="10" column="22" bodyfile="BlinkBird/Code/Mountains.cs" bodystart="10" bodyend="13"/>
       </memberdef>
       <memberdef kind="function" id="class_mountains_1a4ecb52376f117d76eecd9069ca06c4b5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>override void</type>
@@ -34,10 +34,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="BlinkBird/Code/Mountains.cs" line="13" column="22" bodyfile="BlinkBird/Code/Mountains.cs" bodystart="13" bodyend="18"/>
+        <location file="BlinkBird/Code/Mountains.cs" line="16" column="22" bodyfile="BlinkBird/Code/Mountains.cs" bodystart="16" bodyend="21"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
+<para>Manymountainns together. </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
@@ -63,7 +64,7 @@
         <label>Node2D</label>
       </node>
     </collaborationgraph>
-    <location file="BlinkBird/Code/Mountains.cs" line="4" column="15" bodyfile="BlinkBird/Code/Mountains.cs" bodystart="5" bodyend="19"/>
+    <location file="BlinkBird/Code/Mountains.cs" line="7" column="15" bodyfile="BlinkBird/Code/Mountains.cs" bodystart="8" bodyend="22"/>
     <listofallmembers>
       <member refid="class_mountains_1a4ecb52376f117d76eecd9069ca06c4b5" prot="public" virt="non-virtual"><scope>Mountains</scope><name>_Process</name></member>
       <member refid="class_mountains_1a8c8af38bc48d253f55690781c6ccf233" prot="public" virt="non-virtual"><scope>Mountains</scope><name>_Ready</name></member>

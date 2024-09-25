@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="BlinkBird/Code/GamingScesions.cs" line="13" column="8" bodyfile="BlinkBird/Code/GamingScesions.cs" bodystart="13" bodyend="-1"/>
+        <location file="BlinkBird/Code/GamingScesions.cs" line="15" column="8" bodyfile="BlinkBird/Code/GamingScesions.cs" bodystart="15" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_gaming_scesions_1a3172af58f04c4831ed31bb9706ab4c23" prot="private" static="no" mutable="no">
         <type>Button</type>
@@ -30,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="BlinkBird/Code/GamingScesions.cs" line="13" column="18" bodyfile="BlinkBird/Code/GamingScesions.cs" bodystart="13" bodyend="-1"/>
+        <location file="BlinkBird/Code/GamingScesions.cs" line="15" column="18" bodyfile="BlinkBird/Code/GamingScesions.cs" bodystart="15" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_gaming_scesions_1ad26f172ea63ef64be3a0b208c45e4eb0" prot="private" static="no" mutable="no">
         <type>Button</type>
@@ -44,7 +44,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="BlinkBird/Code/GamingScesions.cs" line="13" column="33" bodyfile="BlinkBird/Code/GamingScesions.cs" bodystart="13" bodyend="-1"/>
+        <location file="BlinkBird/Code/GamingScesions.cs" line="15" column="33" bodyfile="BlinkBird/Code/GamingScesions.cs" bodystart="15" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_gaming_scesions_1a482c540dcf169bcab3a16ba5e2875380" prot="private" static="no" mutable="no">
         <type>Button</type>
@@ -58,7 +58,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="BlinkBird/Code/GamingScesions.cs" line="13" column="47" bodyfile="BlinkBird/Code/GamingScesions.cs" bodystart="13" bodyend="-1"/>
+        <location file="BlinkBird/Code/GamingScesions.cs" line="15" column="47" bodyfile="BlinkBird/Code/GamingScesions.cs" bodystart="15" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_gaming_scesions_1a7b1f29e41e7a295700197f606d38c35e" prot="private" static="no" mutable="no">
         <type>Button</type>
@@ -72,7 +72,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="BlinkBird/Code/GamingScesions.cs" line="13" column="56" bodyfile="BlinkBird/Code/GamingScesions.cs" bodystart="13" bodyend="-1"/>
+        <location file="BlinkBird/Code/GamingScesions.cs" line="15" column="56" bodyfile="BlinkBird/Code/GamingScesions.cs" bodystart="15" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_gaming_scesions_1a8e684a5e11355d9dbe9b99eb15a17ff2" prot="private" static="no" mutable="no">
         <type>FileDialog</type>
@@ -86,7 +86,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="BlinkBird/Code/GamingScesions.cs" line="14" column="12" bodyfile="BlinkBird/Code/GamingScesions.cs" bodystart="14" bodyend="-1"/>
+        <location file="BlinkBird/Code/GamingScesions.cs" line="16" column="12" bodyfile="BlinkBird/Code/GamingScesions.cs" bodystart="16" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_gaming_scesions_1a65c33fb69d5a8071e4c4c43a5683f7ec" prot="private" static="no" mutable="no">
         <type>ItemList</type>
@@ -100,7 +100,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="BlinkBird/Code/GamingScesions.cs" line="17" column="10" bodyfile="BlinkBird/Code/GamingScesions.cs" bodystart="17" bodyend="-1"/>
+        <location file="BlinkBird/Code/GamingScesions.cs" line="19" column="10" bodyfile="BlinkBird/Code/GamingScesions.cs" bodystart="19" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_gaming_scesions_1a8d1e4c4290b2c059bb0fc59ca79ebdf8" prot="private" static="no" mutable="no">
         <type><ref refid="class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion" kindref="compound">GamingSesion</ref></type>
@@ -114,7 +114,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="BlinkBird/Code/GamingScesions.cs" line="18" column="14" bodyfile="BlinkBird/Code/GamingScesions.cs" bodystart="18" bodyend="-1"/>
+        <location file="BlinkBird/Code/GamingScesions.cs" line="20" column="14" bodyfile="BlinkBird/Code/GamingScesions.cs" bodystart="20" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_gaming_scesions_1a3889ecfab4814a56bef9359c3be5f4b3" prot="private" static="no" mutable="no">
         <type>string</type>
@@ -128,7 +128,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="BlinkBird/Code/GamingScesions.cs" line="19" column="8" bodyfile="BlinkBird/Code/GamingScesions.cs" bodystart="19" bodyend="-1"/>
+        <location file="BlinkBird/Code/GamingScesions.cs" line="21" column="8" bodyfile="BlinkBird/Code/GamingScesions.cs" bodystart="21" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="private-static-attrib">
@@ -145,7 +145,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="BlinkBird/Code/GamingScesions.cs" line="16" column="18" bodyfile="BlinkBird/Code/GamingScesions.cs" bodystart="16" bodyend="-1"/>
+        <location file="BlinkBird/Code/GamingScesions.cs" line="18" column="18" bodyfile="BlinkBird/Code/GamingScesions.cs" bodystart="18" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_gaming_scesions_1aa9f0372ceedd84873fc4fe7deaf5dc0a" prot="private" static="yes" mutable="no">
         <type>const string</type>
@@ -160,7 +160,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="BlinkBird/Code/GamingScesions.cs" line="16" column="28" bodyfile="BlinkBird/Code/GamingScesions.cs" bodystart="16" bodyend="-1"/>
+        <location file="BlinkBird/Code/GamingScesions.cs" line="18" column="28" bodyfile="BlinkBird/Code/GamingScesions.cs" bodystart="18" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -176,7 +176,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="BlinkBird/Code/GamingScesions.cs" line="20" column="22" bodyfile="BlinkBird/Code/GamingScesions.cs" bodystart="20" bodyend="48"/>
+        <location file="BlinkBird/Code/GamingScesions.cs" line="22" column="22" bodyfile="BlinkBird/Code/GamingScesions.cs" bodystart="22" bodyend="50"/>
       </memberdef>
       <memberdef kind="function" id="class_gaming_scesions_1abcb236cb4146954f9a810587dd3a1b2f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>override void</type>
@@ -194,7 +194,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="BlinkBird/Code/GamingScesions.cs" line="141" column="22" bodyfile="BlinkBird/Code/GamingScesions.cs" bodystart="141" bodyend="146"/>
+        <location file="BlinkBird/Code/GamingScesions.cs" line="158" column="22" bodyfile="BlinkBird/Code/GamingScesions.cs" bodystart="158" bodyend="163"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="private-func">
@@ -209,12 +209,22 @@
           <declname>path</declname>
         </param>
         <briefdescription>
+<para>Selects he file to open. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="BlinkBird/Code/GamingScesions.cs" line="50" column="18" bodyfile="BlinkBird/Code/GamingScesions.cs" bodystart="50" bodyend="53"/>
+        <location file="BlinkBird/Code/GamingScesions.cs" line="55" column="18" bodyfile="BlinkBird/Code/GamingScesions.cs" bodystart="55" bodyend="58"/>
       </memberdef>
       <memberdef kind="function" id="class_gaming_scesions_1ae5f66c9e347ee9f60c22110b928ff434" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -223,12 +233,13 @@
         <name>BtnImportCSV_Pressed</name>
         <qualifiedname>GamingScesions.BtnImportCSV_Pressed</qualifiedname>
         <briefdescription>
+<para>Imports the selectted csv file to the database. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="BlinkBird/Code/GamingScesions.cs" line="55" column="18" bodyfile="BlinkBird/Code/GamingScesions.cs" bodystart="55" bodyend="76"/>
+        <location file="BlinkBird/Code/GamingScesions.cs" line="62" column="18" bodyfile="BlinkBird/Code/GamingScesions.cs" bodystart="62" bodyend="83"/>
       </memberdef>
       <memberdef kind="function" id="class_gaming_scesions_1ab2e7cc31d5097f76ae4f10aca87095db" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -241,12 +252,22 @@
           <declname>index</declname>
         </param>
         <briefdescription>
+<para>Selects the gaming Session. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="BlinkBird/Code/GamingScesions.cs" line="78" column="18" bodyfile="BlinkBird/Code/GamingScesions.cs" bodystart="78" bodyend="102"/>
+        <location file="BlinkBird/Code/GamingScesions.cs" line="88" column="18" bodyfile="BlinkBird/Code/GamingScesions.cs" bodystart="88" bodyend="112"/>
       </memberdef>
       <memberdef kind="function" id="class_gaming_scesions_1a3da14dccedda444b92f5903335667d43" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -255,12 +276,13 @@
         <name>BtnClose_Pressed</name>
         <qualifiedname>GamingScesions.BtnClose_Pressed</qualifiedname>
         <briefdescription>
+<para>Clsoes the window. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="BlinkBird/Code/GamingScesions.cs" line="104" column="14" bodyfile="BlinkBird/Code/GamingScesions.cs" bodystart="104" bodyend="107"/>
+        <location file="BlinkBird/Code/GamingScesions.cs" line="117" column="14" bodyfile="BlinkBird/Code/GamingScesions.cs" bodystart="117" bodyend="120"/>
       </memberdef>
       <memberdef kind="function" id="class_gaming_scesions_1aafc66c9a97bf755e022bebcb12e40960" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -269,12 +291,13 @@
         <name>BtnMakeGraphs_Pressed</name>
         <qualifiedname>GamingScesions.BtnMakeGraphs_Pressed</qualifiedname>
         <briefdescription>
+<para>Creates grphs in png image format. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="BlinkBird/Code/GamingScesions.cs" line="109" column="14" bodyfile="BlinkBird/Code/GamingScesions.cs" bodystart="109" bodyend="128"/>
+        <location file="BlinkBird/Code/GamingScesions.cs" line="124" column="14" bodyfile="BlinkBird/Code/GamingScesions.cs" bodystart="124" bodyend="143"/>
       </memberdef>
       <memberdef kind="function" id="class_gaming_scesions_1a8a8b908b3b8299f4cf7d58d03e68a453" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -283,12 +306,13 @@
         <name>BtnExportToCSV_Pressed</name>
         <qualifiedname>GamingScesions.BtnExportToCSV_Pressed</qualifiedname>
         <briefdescription>
+<para>Exports the gamingsession data to csv. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="BlinkBird/Code/GamingScesions.cs" line="130" column="14" bodyfile="BlinkBird/Code/GamingScesions.cs" bodystart="130" bodyend="138"/>
+        <location file="BlinkBird/Code/GamingScesions.cs" line="147" column="14" bodyfile="BlinkBird/Code/GamingScesions.cs" bodystart="147" bodyend="155"/>
       </memberdef>
       <memberdef kind="function" id="class_gaming_scesions_1ab99a9405b86eb20f0c2748b350c7e849" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -297,15 +321,17 @@
         <name>BtnDelete_Pressed</name>
         <qualifiedname>GamingScesions.BtnDelete_Pressed</qualifiedname>
         <briefdescription>
+<para>Deletes the selected gamingsession. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="BlinkBird/Code/GamingScesions.cs" line="147" column="14" bodyfile="BlinkBird/Code/GamingScesions.cs" bodystart="147" bodyend="151"/>
+        <location file="BlinkBird/Code/GamingScesions.cs" line="167" column="14" bodyfile="BlinkBird/Code/GamingScesions.cs" bodystart="167" bodyend="171"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
+<para>Shows the saved gamingsessions. </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
@@ -331,7 +357,7 @@
         <label>Window</label>
       </node>
     </collaborationgraph>
-    <location file="BlinkBird/Code/GamingScesions.cs" line="10" column="15" bodyfile="BlinkBird/Code/GamingScesions.cs" bodystart="11" bodyend="152"/>
+    <location file="BlinkBird/Code/GamingScesions.cs" line="12" column="15" bodyfile="BlinkBird/Code/GamingScesions.cs" bodystart="13" bodyend="172"/>
     <listofallmembers>
       <member refid="class_gaming_scesions_1abcb236cb4146954f9a810587dd3a1b2f" prot="public" virt="non-virtual"><scope>GamingScesions</scope><name>_Process</name></member>
       <member refid="class_gaming_scesions_1a08d5807539c76e8654f506388223ee61" prot="public" virt="non-virtual"><scope>GamingScesions</scope><name>_Ready</name></member>

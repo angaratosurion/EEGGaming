@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_20240831173811__fff_8cs" xml:lang="en-US">
+<title>EEGGaming.Core/Migrations/20240831173811_fff.cs File Reference</title>
+<indexterm><primary>EEGGaming.Core/Migrations/20240831173811_fff.cs</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_e_e_g_gaming_1_1_core_1_1_migrations_1_1fff">EEGGaming.Core.Migrations.fff</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespace_e_e_g_gaming">EEGGaming</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespace_e_e_g_gaming_1_1_core">EEGGaming.Core</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespace_e_e_g_gaming_1_1_core_1_1_migrations">EEGGaming.Core.Migrations</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

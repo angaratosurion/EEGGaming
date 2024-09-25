@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__menu_8cs" xml:lang="en-US">
+<title>BlinkBird/Code/Menu.cs File Reference</title>
+<indexterm><primary>BlinkBird/Code/Menu.cs</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_menu">Menu</link></para>
+
+<para>The Main menu of the game. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

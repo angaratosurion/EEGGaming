@@ -27,7 +27,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">EEGGaming And Blinkbird<span id="projectnumber">&#160;0.2.6.0</span>
+   <div id="projectname">EEGGaming And Blinkbird<span id="projectnumber">&#160;0.2.7.5</span>
    </div>
   </td>
  </tr>
@@ -99,47 +99,47 @@ $(function(){initNavTree('_camera_8cs_source.html',''); initResizable(true); });
   <div class="headertitle"><div class="title">Camera.cs</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span>Godot;</div>
+<a href="_camera_8cs.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span>Godot;</div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">using </span>System;</div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="foldopen" id="foldopen00004" data-start="{" data-end="};">
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno"><a class="line" href="class_camera.html">    4</a></span><span class="keyword">public</span> <span class="keyword">partial class </span><a class="code hl_class" href="class_camera.html">Camera</a> : Camera2D</div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>{</div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>    <span class="comment">// Called when the node enters the scene tree for the first time.</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>     </div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>     </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> _Ready() </div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    { </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>          </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>       </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>        <span class="comment">//if ( player == null)</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>        <span class="comment">//{</span></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>        <span class="comment">//  player = FindChild(&quot;Player&quot;, true) as Player;</span></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        <span class="comment">//}</span></div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        <span class="comment">//Position = new(0, 0);// or whatever the Player Node is named</span></div>
+<div class="foldopen" id="foldopen00006" data-start="{" data-end="};">
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="class_camera.html">    6</a></span><span class="keyword">public</span> <span class="keyword">partial class </span><a class="code hl_class" href="class_camera.html">Camera</a> : Camera2D</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>{</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>     </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>     </div>
+<div class="foldopen" id="foldopen00013" data-start="{" data-end="}">
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="class_camera.html#a0b82ad1b9831e861ab65711e220d5441">   13</a></span>    <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_camera.html#a0b82ad1b9831e861ab65711e220d5441">_Ready</a>() </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    { </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>          </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>       </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        </div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    }</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="comment">// Called every frame. &#39;delta&#39; is the elapsed time since the previous frame.</span></div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> _Process(<span class="keywordtype">double</span> delta) </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    {</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>         <span class="keywordflow">if</span> ((<a class="code hl_class" href="class_world.html">World</a>.player != <span class="keyword">null</span>) &amp;&amp; ((<a class="code hl_class" href="class_world.html">World</a>.player.Position.X - 1000) &gt; 0) </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>            &amp;&amp; (<a class="code hl_class" href="class_world.html">World</a>.player.Position.X&gt;0) &amp;&amp;<a class="code hl_class" href="class_world.html">World</a>.player.Position.X&lt;13800) </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        {</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>            Position = <span class="keyword">new</span>((<a class="code hl_class" href="class_world.html">World</a>.player.Position.X-1000), 0);</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        }</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>  </div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    }</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>}</div>
 </div>
-<div class="ttc" id="aclass_camera_html"><div class="ttname"><a href="class_camera.html">Camera</a></div><div class="ttdef"><b>Definition</b> <a href="#l00004">Camera.cs:5</a></div></div>
-<div class="ttc" id="aclass_world_html"><div class="ttname"><a href="class_world.html">World</a></div><div class="ttdef"><b>Definition</b> <a href="_world_8cs_source.html#l00008">World.cs:9</a></div></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="comment">// Called every frame. &#39;delta&#39; is the elapsed time since the previous frame.</span></div>
+<div class="foldopen" id="foldopen00025" data-start="{" data-end="}">
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="class_camera.html#ad7352cad7a9773f186fe0e341e181e68">   25</a></span>    <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_camera.html#ad7352cad7a9773f186fe0e341e181e68">_Process</a>(<span class="keywordtype">double</span> delta) </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    {</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>         <span class="keywordflow">if</span> ((<a class="code hl_class" href="class_world.html">World</a>.<a class="code hl_variable" href="class_world.html#aa8dddc3497efee297a7ceeea83fd988f">player</a> != <span class="keyword">null</span>) &amp;&amp; ((<a class="code hl_class" href="class_world.html">World</a>.<a class="code hl_variable" href="class_world.html#aa8dddc3497efee297a7ceeea83fd988f">player</a>.Position.X - 1000) &gt; 0) </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>            &amp;&amp; (<a class="code hl_class" href="class_world.html">World</a>.<a class="code hl_variable" href="class_world.html#aa8dddc3497efee297a7ceeea83fd988f">player</a>.Position.X&gt;0) &amp;&amp;<a class="code hl_class" href="class_world.html">World</a>.<a class="code hl_variable" href="class_world.html#aa8dddc3497efee297a7ceeea83fd988f">player</a>.Position.X&lt;13800) </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        {</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>            Position = <span class="keyword">new</span>((<a class="code hl_class" href="class_world.html">World</a>.<a class="code hl_variable" href="class_world.html#aa8dddc3497efee297a7ceeea83fd988f">player</a>.Position.X-1000), 0);</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        }</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>  </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    }</div>
+</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>}</div>
+</div>
+<div class="ttc" id="aclass_camera_html"><div class="ttname"><a href="class_camera.html">Camera</a></div><div class="ttdoc">This class controls the Camera of the Game.</div><div class="ttdef"><b>Definition</b> <a href="#l00006">Camera.cs:7</a></div></div>
+<div class="ttc" id="aclass_camera_html_a0b82ad1b9831e861ab65711e220d5441"><div class="ttname"><a href="class_camera.html#a0b82ad1b9831e861ab65711e220d5441">Camera._Ready</a></div><div class="ttdeci">override void _Ready()</div><div class="ttdoc">Called when the node enters the scene tree for the first time.</div><div class="ttdef"><b>Definition</b> <a href="#l00013">Camera.cs:13</a></div></div>
+<div class="ttc" id="aclass_camera_html_ad7352cad7a9773f186fe0e341e181e68"><div class="ttname"><a href="class_camera.html#ad7352cad7a9773f186fe0e341e181e68">Camera._Process</a></div><div class="ttdeci">override void _Process(double delta)</div><div class="ttdoc">Moves the camera and occurs when the frame is produced.</div><div class="ttdef"><b>Definition</b> <a href="#l00025">Camera.cs:25</a></div></div>
+<div class="ttc" id="aclass_world_html"><div class="ttname"><a href="class_world.html">World</a></div><div class="ttdoc">The class representation for the gaming world.</div><div class="ttdef"><b>Definition</b> <a href="_world_8cs_source.html#l00010">World.cs:11</a></div></div>
+<div class="ttc" id="aclass_world_html_aa8dddc3497efee297a7ceeea83fd988f"><div class="ttname"><a href="class_world.html#aa8dddc3497efee297a7ceeea83fd988f">World.player</a></div><div class="ttdeci">static Player player</div><div class="ttdef"><b>Definition</b> <a href="_world_8cs_source.html#l00022">World.cs:22</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_e86b53971e3ba467f77fc99bb9652cc9.html">BlinkBird</a></li><li class="navelem"><a class="el" href="dir_9fbe364ff72607eecf0611039dde3612.html">Code</a></li><li class="navelem"><b>Camera.cs</b></li>
+    <li class="navelem"><a class="el" href="dir_e86b53971e3ba467f77fc99bb9652cc9.html">BlinkBird</a></li><li class="navelem"><a class="el" href="dir_9fbe364ff72607eecf0611039dde3612.html">Code</a></li><li class="navelem"><a class="el" href="_camera_8cs.html">Camera.cs</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
   </ul>
 </div>

@@ -27,7 +27,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">EEGGaming And Blinkbird<span id="projectnumber">&#160;0.2.6.0</span>
+   <div id="projectname">EEGGaming And Blinkbird<span id="projectnumber">&#160;0.2.7.5</span>
    </div>
   </td>
  </tr>
@@ -104,6 +104,9 @@ $(function(){initNavTree('class_menu.html',''); initResizable(true); });
   <div class="headertitle"><div class="title">Menu Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>The Main menu of the game.  
+ <a href="#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for Menu:</div>
 <div class="dyncontent">
@@ -114,15 +117,19 @@ Inheritance diagram for Menu:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a8749d8124f3d908e7dc30d71c08f6e28" id="r_a8749d8124f3d908e7dc30d71c08f6e28"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8749d8124f3d908e7dc30d71c08f6e28">_Ready</a> ()</td></tr>
+<tr class="memdesc:a8749d8124f3d908e7dc30d71c08f6e28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates the winndow.  <br /></td></tr>
 <tr class="separator:a8749d8124f3d908e7dc30d71c08f6e28"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa5214bdaf8eaaa4ea25d41c57331c221" id="r_aa5214bdaf8eaaa4ea25d41c57331c221"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa5214bdaf8eaaa4ea25d41c57331c221">_Process</a> (double delta)</td></tr>
+<tr class="memdesc:aa5214bdaf8eaaa4ea25d41c57331c221"><td class="mdescLeft">&#160;</td><td class="mdescRight">checks whever a user is selected or anEEG headest is conencted  <br /></td></tr>
 <tr class="separator:aa5214bdaf8eaaa4ea25d41c57331c221"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a2ffafb1592a5438156816758e2bd64" id="r_a9a2ffafb1592a5438156816758e2bd64"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9a2ffafb1592a5438156816758e2bd64">bbtnNewGame_pressed</a> ()</td></tr>
+<tr class="memdesc:a9a2ffafb1592a5438156816758e2bd64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts new game.  <br /></td></tr>
 <tr class="separator:a9a2ffafb1592a5438156816758e2bd64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ab4749d59147615a8d8289be37cb49a83" id="r_ab4749d59147615a8d8289be37cb49a83"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab4749d59147615a8d8289be37cb49a83">SaveDataToDb</a> ()</td></tr>
+<tr class="memdesc:ab4749d59147615a8d8289be37cb49a83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save the data to database.  <br /></td></tr>
 <tr class="separator:ab4749d59147615a8d8289be37cb49a83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
@@ -135,10 +142,13 @@ Static Public Attributes</h2></td></tr>
 <tr class="separator:a6aa76feb83b7956cd553c35b5e926f4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2cdd0aa13fc2a0c1a0f2fdb2195c475c" id="r_a2cdd0aa13fc2a0c1a0f2fdb2195c475c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_user.html">User</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2cdd0aa13fc2a0c1a0f2fdb2195c475c">SelectedUser</a> = null</td></tr>
 <tr class="separator:a2cdd0aa13fc2a0c1a0f2fdb2195c475c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f5f753616914a269e9acad62bee9e1d" id="r_a0f5f753616914a269e9acad62bee9e1d"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0f5f753616914a269e9acad62bee9e1d">ignoreUserselectionandconstateofdevice</a> = false</td></tr>
+<tr class="separator:a0f5f753616914a269e9acad62bee9e1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_menu_8cs_source.html#l00007">7</a> of file <a class="el" href="_menu_8cs_source.html">Menu.cs</a>.</p>
+<div class="textblock"><p>The Main menu of the game. </p>
+
+<p class="definition">Definition at line <a class="el" href="_menu_8cs_source.html#l00011">11</a> of file <a class="el" href="_menu_8cs_source.html">Menu.cs</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="aa5214bdaf8eaaa4ea25d41c57331c221" name="aa5214bdaf8eaaa4ea25d41c57331c221"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa5214bdaf8eaaa4ea25d41c57331c221">&#9670;&#160;</a></span>_Process()</h2>
@@ -155,7 +165,15 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_menu_8cs_source.html#l00140">140</a> of file <a class="el" href="_menu_8cs_source.html">Menu.cs</a>.</p>
+<p>checks whever a user is selected or anEEG headest is conencted </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">delta</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_menu_8cs_source.html#l00178">178</a> of file <a class="el" href="_menu_8cs_source.html">Menu.cs</a>.</p>
 
 </div>
 </div>
@@ -174,7 +192,9 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_menu_8cs_source.html#l00027">27</a> of file <a class="el" href="_menu_8cs_source.html">Menu.cs</a>.</p>
+<p>Creates the winndow. </p>
+
+<p class="definition">Definition at line <a class="el" href="_menu_8cs_source.html#l00038">38</a> of file <a class="el" href="_menu_8cs_source.html">Menu.cs</a>.</p>
 
 </div>
 </div>
@@ -193,7 +213,9 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_menu_8cs_source.html#l00155">155</a> of file <a class="el" href="_menu_8cs_source.html">Menu.cs</a>.</p>
+<p>Starts new game. </p>
+
+<p class="definition">Definition at line <a class="el" href="_menu_8cs_source.html#l00196">196</a> of file <a class="el" href="_menu_8cs_source.html">Menu.cs</a>.</p>
 
 </div>
 </div>
@@ -220,7 +242,9 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_menu_8cs_source.html#l00018">18</a> of file <a class="el" href="_menu_8cs_source.html">Menu.cs</a>.</p>
+<p>Save the data to database. </p>
+
+<p class="definition">Definition at line <a class="el" href="_menu_8cs_source.html#l00026">26</a> of file <a class="el" href="_menu_8cs_source.html">Menu.cs</a>.</p>
 
 </div>
 </div>
@@ -245,7 +269,31 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_menu_8cs_source.html#l00013">13</a> of file <a class="el" href="_menu_8cs_source.html">Menu.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_menu_8cs_source.html#l00017">17</a> of file <a class="el" href="_menu_8cs_source.html">Menu.cs</a>.</p>
+
+</div>
+</div>
+<a id="a0f5f753616914a269e9acad62bee9e1d" name="a0f5f753616914a269e9acad62bee9e1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f5f753616914a269e9acad62bee9e1d">&#9670;&#160;</a></span>ignoreUserselectionandconstateofdevice</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Menu.ignoreUserselectionandconstateofdevice = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_menu_8cs_source.html#l00022">22</a> of file <a class="el" href="_menu_8cs_source.html">Menu.cs</a>.</p>
 
 </div>
 </div>
@@ -269,7 +317,7 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_menu_8cs_source.html#l00012">12</a> of file <a class="el" href="_menu_8cs_source.html">Menu.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_menu_8cs_source.html#l00016">16</a> of file <a class="el" href="_menu_8cs_source.html">Menu.cs</a>.</p>
 
 </div>
 </div>
@@ -293,7 +341,7 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_menu_8cs_source.html#l00016">16</a> of file <a class="el" href="_menu_8cs_source.html">Menu.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_menu_8cs_source.html#l00021">21</a> of file <a class="el" href="_menu_8cs_source.html">Menu.cs</a>.</p>
 
 </div>
 </div>
@@ -317,7 +365,7 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_menu_8cs_source.html#l00014">14</a> of file <a class="el" href="_menu_8cs_source.html">Menu.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_menu_8cs_source.html#l00018">18</a> of file <a class="el" href="_menu_8cs_source.html">Menu.cs</a>.</p>
 
 </div>
 </div>

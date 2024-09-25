@@ -2,4 +2,17 @@
 <section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespace_e_e_g_gaming_1_1_core" xml:lang="en-US">
 <title>EEGGaming.Core Namespace Reference</title>
 <indexterm><primary>EEGGaming.Core</primary></indexterm>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespace_e_e_g_gaming_1_1_core_1_1_data">Data</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespace_e_e_g_gaming_1_1_core_1_1_managers">Managers</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespace_e_e_g_gaming_1_1_core_1_1_migrations">Migrations</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespace_e_e_g_gaming_1_1_core_1_1_tools">Tools</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
 </section>

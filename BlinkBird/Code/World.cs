@@ -4,7 +4,9 @@ using Godot;
 using ScottPlot.AxisRules;
 using System;
 using System.Drawing;
-
+/// <summary>
+/// The class representation for the gaming world 
+/// </summary>
 public partial class World : Node2D
 {
 	// Called when the node enters the scene tree for the first time.
@@ -23,7 +25,10 @@ public partial class World : Node2D
     public static HSlider HslSpeed;
 	public static Camera Camera;
 
-    
+    /// <summary>
+	/// Changes the speed to the horizontalslider's value
+	/// </summary>
+	/// <param name="value"></param>
     private void HSdrHorizontalSpeed_ValueChanged(double value)
     {
          speedvalue.Text = Convert.ToString(HslSpeed.Value);
@@ -108,13 +113,17 @@ public partial class World : Node2D
 
     }
      
-
+	/// <summary>
+	/// Changes the time that elapsed
+	/// </summary>
     private void Timer_Timeout()
 	{
 		if (lblElapsed != null)
 		{
 			TimeSpan timediff = DateTime.Now.Subtract(started);
-			lblElapsed.Text = String.Format("{0} : {1} : {2} : {3}",timediff.Hours, timediff.Minutes,timediff.Seconds,timediff.Milliseconds);
+			lblElapsed.Text = String.Format("{0} : {1} : {2} : {3}",
+				timediff.Hours, timediff.Minutes,timediff.Seconds,
+				timediff.Milliseconds);
 			lblScore.Text = Convert.ToString(World.Score);
 
 

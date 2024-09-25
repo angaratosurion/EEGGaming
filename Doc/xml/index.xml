@@ -310,11 +310,13 @@
     <member refid="class_menu_1aa2e28765cc50f72020f541868fca8940" kind="variable"><name>AboutScene</name></member>
     <member refid="class_menu_1afd554fb1b507dfe296ac6fe056b20b0d" kind="variable"><name>ShowusersScene</name></member>
     <member refid="class_menu_1a1d033880f240c54a8437c65f8e2892a2" kind="variable"><name>btnNewGame</name></member>
-    <member refid="class_menu_1a0f5f753616914a269e9acad62bee9e1d" kind="variable"><name>ignoreUserselectionandconstateofdevice</name></member>
+    <member refid="class_menu_1af539f7acc9da8bdffc26eb849ad4a6fe" kind="variable"><name>lblDeviceName</name></member>
+    <member refid="class_menu_1a1092ab9067c1e14cc504d1ed03dcce9f" kind="variable"><name>lblDeviceState</name></member>
     <member refid="class_menu_1aa005ebd5a38e50bc52accdb70c081008" kind="variable"><name>recordManager</name></member>
     <member refid="class_menu_1ab91d795226479c5d356b975407d6d456" kind="variable"><name>gamingSesionManager</name></member>
     <member refid="class_menu_1a6aa76feb83b7956cd553c35b5e926f4e" kind="variable"><name>userManager</name></member>
     <member refid="class_menu_1a2cdd0aa13fc2a0c1a0f2fdb2195c475c" kind="variable"><name>SelectedUser</name></member>
+    <member refid="class_menu_1a0f5f753616914a269e9acad62bee9e1d" kind="variable"><name>ignoreUserselectionandconstateofdevice</name></member>
     <member refid="class_menu_1ab4749d59147615a8d8289be37cb49a83" kind="function"><name>SaveDataToDb</name></member>
     <member refid="class_menu_1a8749d8124f3d908e7dc30d71c08f6e28" kind="function"><name>_Ready</name></member>
     <member refid="class_menu_1aa5214bdaf8eaaa4ea25d41c57331c221" kind="function"><name>_Process</name></member>
@@ -387,10 +389,6 @@
     <member refid="class_show_users_1a596a977f4283296952352a8f7c3882e7" kind="function"><name>BtnAddNew_Pressed</name></member>
     <member refid="class_show_users_1a5c5ad05f0656187bc4860331340ca480" kind="function"><name>BtnShowUserDetails_Pressed</name></member>
     <member refid="class_show_users_1afb2e1f7bfb32f95861bac65fd3d72b71" kind="function"><name>LstUser_ItemSelected</name></member>
-  </compound>
-  <compound refid="class_sky" kind="class"><name>Sky</name>
-    <member refid="class_sky_1a78597c074f927ab9457bb50f628d579c" kind="function"><name>_Ready</name></member>
-    <member refid="class_sky_1aca70cb0eca672bfdfb92eac9fcc9026d" kind="function"><name>_Process</name></member>
   </compound>
   <compound refid="class_e_e_g_gaming_1_1_core_1_1_migrations_1_1unmadethenamepropertyakey" kind="class"><name>EEGGaming::Core::Migrations::unmadethenamepropertyakey</name>
     <member refid="class_e_e_g_gaming_1_1_core_1_1_migrations_1_1unmadethenamepropertyakey_1a28987b6bc976760b2c7c0891d632a782" kind="function"><name>Up</name></member>
@@ -579,8 +577,6 @@
   <compound refid="_show_user_details_8cs" kind="file"><name>ShowUserDetails.cs</name>
   </compound>
   <compound refid="_show_users_8cs" kind="file"><name>ShowUsers.cs</name>
-  </compound>
-  <compound refid="_sky_8cs" kind="file"><name>Sky.cs</name>
   </compound>
   <compound refid="_world_8cs" kind="file"><name>World.cs</name>
   </compound>

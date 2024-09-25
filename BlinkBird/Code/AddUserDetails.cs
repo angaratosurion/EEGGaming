@@ -3,11 +3,16 @@ using EEGGaming.Core.Managers;
 using Godot;
 using System;
 using System.Linq;
-
+/// <summary>
+/// Adds a new user
+/// </summary>
 public partial class AddUserDetails : Control
-{
-	// Called when the node enters the scene tree for the first time.
-	public override void _Ready()
+{/// <summary>
+ /// Called when the node enters the scene tree for the first time.
+ ///  
+ /// </summary>
+    // Called when the node enters the scene tree for the first time.
+    public override void _Ready()
 	{
 
 		Button btnCancel = (Button)this.FindChild("btnCancel",true);
@@ -17,7 +22,10 @@ public partial class AddUserDetails : Control
 		btnCreateNewUser.Pressed += BtnCreateNewUser_Pressed;
 		;
 	}
-
+	/// <summary>
+	/// called when the create new user button is pressed and adds the 
+	/// new user to te database
+	/// </summary>
 	private void BtnCreateNewUser_Pressed()
 	{
 		LineEdit txtAge = (LineEdit)this.FindChild("txtAge",true);
@@ -37,8 +45,10 @@ public partial class AddUserDetails : Control
 		this.Hide();
 
 	}
-
-	private void BtnCancel_Pressed()
+    /// <summary>
+    /// Closes the window
+    /// </summary>
+    private void BtnCancel_Pressed()
 	{
 		this.Hide();
 	}

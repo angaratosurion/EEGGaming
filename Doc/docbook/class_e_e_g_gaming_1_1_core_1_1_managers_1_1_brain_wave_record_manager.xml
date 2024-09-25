@@ -18,6 +18,8 @@
 <simplesect>
     <title>Public Member Functions    </title>
         <itemizedlist>
+            <listitem><para><link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_1aaa8ebd974e6498603653554f32535359">BrainWaveRecordManager</link> ()</para>
+</listitem>
             <listitem><para>void <link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_1aa3e82a13471314555aecd2b8a31b1122">LoadCsv</link> (string filename)</para>
 
 <para>It Loads thedata from the given file. </para>
@@ -105,6 +107,8 @@
         </itemizedlist>
 </simplesect>
 Public Member Functions inherited from <link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_base_manager">EEGGaming.Core.Managers.BaseManager</link>        <itemizedlist>
+            <listitem><para><link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_base_manager_1a0698b890b345d2fe9f6b7d0bf762af70">BaseManager</link> ()</para>
+</listitem>
             <listitem><para>void <link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_base_manager_1a9248c1be1118bf2a1da15a2ba731a4fc">CreateDatabase</link> ()</para>
 
 <para>Creates the Database. </para>
@@ -981,5 +985,5 @@ Definition at line <link linkend="__brain_wave_record_manager_8cs_source_1l00049
 </section>
 <para>
 The documentation for this class was generated from the following file:</para>
-EEGGaming.Core/Managers/BrainWaveRecordManager.cs</section>
+EEGGaming.Core/Managers/<link linkend="__brain_wave_record_manager_8cs">BrainWaveRecordManager.cs</link></section>
 </section>

@@ -11,6 +11,13 @@
     </informalfigure>
 </para>
 <simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_e_e_g_gaming_1_1_trainer_1_1frm_main_g_u_i_1a85d75102cec35ab59afc963019517eed">frmMainGUI</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
     <title>Protected Member Functions    </title>
         <itemizedlist>
             <listitem><para>override void <link linkend="_class_e_e_g_gaming_1_1_trainer_1_1frm_main_g_u_i_1a54292447bfca15a76021f58b87773368">Dispose</link> (bool disposing)</para>
@@ -71,5 +78,5 @@ Definition at line <link linkend="_frm_main_g_u_i_8_designer_8cs_source_1l00014"
 </section>
 <para>
 The documentation for this class was generated from the following files:</para>
-EEGGaming.Trainer/frmMainGUI.csEEGGaming.Trainer/frmMainGUI.Designer.cs</section>
+EEGGaming.Trainer/<link linkend="_frm_main_g_u_i_8cs">frmMainGUI.cs</link>EEGGaming.Trainer/<link linkend="_frm_main_g_u_i_8_designer_8cs">frmMainGUI.Designer.cs</link></section>
 </section>

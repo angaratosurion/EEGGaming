@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="BlinkBird/Code/Mountain.cs" line="8" column="21" bodyfile="BlinkBird/Code/Mountain.cs" bodystart="8" bodyend="8"/>
+        <location file="BlinkBird/Code/Mountain.cs" line="10" column="21" bodyfile="BlinkBird/Code/Mountain.cs" bodystart="10" bodyend="10"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -32,7 +32,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="BlinkBird/Code/Mountain.cs" line="10" column="22" bodyfile="BlinkBird/Code/Mountain.cs" bodystart="10" bodyend="14"/>
+        <location file="BlinkBird/Code/Mountain.cs" line="12" column="22" bodyfile="BlinkBird/Code/Mountain.cs" bodystart="12" bodyend="16"/>
       </memberdef>
       <memberdef kind="function" id="class_mountain_1a6cfce94e2c1e7e5eddfeb2df09199f01" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>override void</type>
@@ -45,15 +45,26 @@
           <declname>delta</declname>
         </param>
         <briefdescription>
+<para>It checks whenver the avatar is in the area of the mounntain and after it kills the avatar it shows the gameover screen or it increases the score. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>delta</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="BlinkBird/Code/Mountain.cs" line="19" column="26" bodyfile="BlinkBird/Code/Mountain.cs" bodystart="19" bodyend="54"/>
+        <location file="BlinkBird/Code/Mountain.cs" line="28" column="26" bodyfile="BlinkBird/Code/Mountain.cs" bodystart="28" bodyend="63"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
+<para>The main obstacle of the avatar. </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
@@ -79,7 +90,7 @@
         <label>Sprite2D</label>
       </node>
     </collaborationgraph>
-    <location file="BlinkBird/Code/Mountain.cs" line="5" column="15" bodyfile="BlinkBird/Code/Mountain.cs" bodystart="6" bodyend="56"/>
+    <location file="BlinkBird/Code/Mountain.cs" line="7" column="15" bodyfile="BlinkBird/Code/Mountain.cs" bodystart="8" bodyend="65"/>
     <listofallmembers>
       <member refid="class_mountain_1a6cfce94e2c1e7e5eddfeb2df09199f01" prot="public" virt="non-virtual"><scope>Mountain</scope><name>_Process</name></member>
       <member refid="class_mountain_1aaf8eef33d903ed3e49f476d73b3e7eff" prot="public" virt="non-virtual"><scope>Mountain</scope><name>_Ready</name></member>

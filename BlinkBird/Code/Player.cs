@@ -3,6 +3,9 @@ using Godot;
 using System;
 using System.Diagnostics.Eventing.Reader;
 
+/// <summary>
+/// Class representation of the avatar
+/// </summary>
 public partial class Player : Sprite2D
 {
 	// Called when the node enters the scene tree for the first time.
@@ -16,7 +19,11 @@ public partial class Player : Sprite2D
 		 
 	}
 
-	 
+	 /// <summary>
+	 /// checks whenever an eye blink occured and moves the avatar to 
+	 /// closer to the top
+	 /// </summary>
+	 /// <param name="delta"></param>
 
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
 	public override void _Process(double delta)

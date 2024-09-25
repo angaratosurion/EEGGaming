@@ -2,7 +2,7 @@
 <section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__gaming_scesions_8cs_source" xml:lang="en-US">
 <title>GamingScesions.cs</title>
 <indexterm><primary>BlinkBird/Code/GamingScesions.cs</primary></indexterm>
-<programlisting linenumbering="unnumbered"><anchor xml:id="__gaming_scesions_8cs_source_1l00001"/>00001 <emphasis role="keyword">using&#32;</emphasis>CsvHelper.Expressions;
+Go to the documentation of this file.<programlisting linenumbering="unnumbered"><anchor xml:id="__gaming_scesions_8cs_source_1l00001"/>00001 <emphasis role="keyword">using&#32;</emphasis>CsvHelper.Expressions;
 <anchor xml:id="__gaming_scesions_8cs_source_1l00002"/>00002 <emphasis role="keyword">using&#32;</emphasis><link linkend="_namespace_e_e_g_gaming_1_1_core_1_1_data_1_1_models">EEGGaming.Core.Data.Models</link>;
 <anchor xml:id="__gaming_scesions_8cs_source_1l00003"/>00003 <emphasis role="keyword">using&#32;</emphasis><link linkend="_namespace_e_e_g_gaming_1_1_core_1_1_managers">EEGGaming.Core.Managers</link>;
 <anchor xml:id="__gaming_scesions_8cs_source_1l00004"/>00004 <emphasis role="keyword">using&#32;</emphasis><link linkend="_namespace_e_e_g_gaming_1_1_core_1_1_tools">EEGGaming.Core.Tools</link>;
@@ -10,148 +10,142 @@
 <anchor xml:id="__gaming_scesions_8cs_source_1l00006"/>00006 <emphasis role="keyword">using&#32;</emphasis>System;
 <anchor xml:id="__gaming_scesions_8cs_source_1l00007"/>00007 <emphasis role="keyword">using&#32;</emphasis>System.Collections.Generic;
 <anchor xml:id="__gaming_scesions_8cs_source_1l00008"/>00008 <emphasis role="keyword">using&#32;</emphasis>System.IO;
-<anchor xml:id="__gaming_scesions_8cs_source_1l00009"/>00009 
-<anchor xml:id="__gaming_scesions_8cs_source_1l00010"/><link linkend="_class_gaming_scesions">00010</link> <emphasis role="keyword">public</emphasis>&#32;<emphasis role="keyword">partial&#32;class&#32;</emphasis><link linkend="_class_gaming_scesions">GamingScesions</link>&#32;:&#32;Window
-<anchor xml:id="__gaming_scesions_8cs_source_1l00011"/>00011 {
-<anchor xml:id="__gaming_scesions_8cs_source_1l00012"/>00012 &#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;Called&#32;when&#32;the&#32;node&#32;enters&#32;the&#32;scene&#32;tree&#32;for&#32;the&#32;first&#32;time.</emphasis>
-<anchor xml:id="__gaming_scesions_8cs_source_1l00013"/>00013 &#32;&#32;&#32;&#32;Button&#32;btnDelete,&#32;btnExportToCSV,&#32;btnMakeGraphs,&#32;btnClose,&#32;btnImportCSV;
-<anchor xml:id="__gaming_scesions_8cs_source_1l00014"/>00014 &#32;&#32;&#32;&#32;FileDialog&#32;OpenFileDialog;
-<anchor xml:id="__gaming_scesions_8cs_source_1l00015"/>00015 
-<anchor xml:id="__gaming_scesions_8cs_source_1l00016"/>00016 &#32;&#32;&#32;&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">string</emphasis>&#32;Graphsdir&#32;=&#32;<emphasis role="stringliteral">&quot;Graphs&quot;</emphasis>,CSVdir=<emphasis role="stringliteral">&quot;CSV&quot;</emphasis>;
-<anchor xml:id="__gaming_scesions_8cs_source_1l00017"/>00017 &#32;&#32;&#32;&#32;ItemList&#32;lstGamingsessions;
-<anchor xml:id="__gaming_scesions_8cs_source_1l00018"/>00018 &#32;&#32;&#32;&#32;<link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion">GamingSesion</link>&#32;gamingSesion;
-<anchor xml:id="__gaming_scesions_8cs_source_1l00019"/>00019 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">string</emphasis>&#32;filename;
-<anchor xml:id="__gaming_scesions_8cs_source_1l00020"/>00020 &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keyword">override</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;_Ready()
-<anchor xml:id="__gaming_scesions_8cs_source_1l00021"/>00021 &#32;&#32;&#32;&#32;{
-<anchor xml:id="__gaming_scesions_8cs_source_1l00022"/>00022 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(<link linkend="_class_menu">Menu</link>.SelectedUser&#32;!=&#32;<emphasis role="keyword">null</emphasis>)
-<anchor xml:id="__gaming_scesions_8cs_source_1l00023"/>00023 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
-<anchor xml:id="__gaming_scesions_8cs_source_1l00024"/>00024 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;btnDelete&#32;=&#32;(Button)this.FindChild(<emphasis role="stringliteral">&quot;btnDelete&quot;</emphasis>,&#32;<emphasis role="keyword">true</emphasis>);
-<anchor xml:id="__gaming_scesions_8cs_source_1l00025"/>00025 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;btnExportToCSV&#32;=&#32;(Button)this.FindChild(<emphasis role="stringliteral">&quot;btnExportToCSV&quot;</emphasis>,&#32;<emphasis role="keyword">true</emphasis>);
-<anchor xml:id="__gaming_scesions_8cs_source_1l00026"/>00026 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;btnMakeGraphs&#32;=&#32;(Button)this.FindChild(<emphasis role="stringliteral">&quot;btnMakeGraphs&quot;</emphasis>,&#32;<emphasis role="keyword">true</emphasis>);
-<anchor xml:id="__gaming_scesions_8cs_source_1l00027"/>00027 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;btnClose&#32;=&#32;(Button)this.FindChild(<emphasis role="stringliteral">&quot;btnClose&quot;</emphasis>,&#32;<emphasis role="keyword">true</emphasis>);
-<anchor xml:id="__gaming_scesions_8cs_source_1l00028"/>00028 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;btnClose.Pressed&#32;+=&#32;BtnClose_Pressed;
-<anchor xml:id="__gaming_scesions_8cs_source_1l00029"/>00029 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;btnExportToCSV.Pressed&#32;+=&#32;BtnExportToCSV_Pressed;
-<anchor xml:id="__gaming_scesions_8cs_source_1l00030"/>00030 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;btnMakeGraphs.Pressed&#32;+=&#32;BtnMakeGraphs_Pressed;
-<anchor xml:id="__gaming_scesions_8cs_source_1l00031"/>00031 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;btnDelete.Pressed&#32;+=&#32;BtnDelete_Pressed;
-<anchor xml:id="__gaming_scesions_8cs_source_1l00032"/>00032 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;lstGamingsessions&#32;=&#32;(ItemList)this.FindChild(<emphasis role="stringliteral">&quot;lstGamingsessions&quot;</emphasis>,&#32;<emphasis role="keyword">true</emphasis>);
-<anchor xml:id="__gaming_scesions_8cs_source_1l00033"/>00033 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;btnImportCSV&#32;=&#32;(Button)this.FindChild(<emphasis role="stringliteral">&quot;btnImportCSV&quot;</emphasis>);
-<anchor xml:id="__gaming_scesions_8cs_source_1l00034"/>00034 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;btnImportCSV.Pressed&#32;+=&#32;BtnImportCSV_Pressed;
-<anchor xml:id="__gaming_scesions_8cs_source_1l00035"/>00035 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;OpenFileDialog&#32;=(FileDialog)&#32;this.FindChild(<emphasis role="stringliteral">&quot;OpenFileDialog&quot;</emphasis>);
-<anchor xml:id="__gaming_scesions_8cs_source_1l00036"/>00036 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;OpenFileDialog.FileSelected&#32;+=&#32;OpenFileDialog_FileSelected;
-<anchor xml:id="__gaming_scesions_8cs_source_1l00037"/>00037 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;var&#32;sessions&#32;=&#32;<link linkend="_class_menu">Menu</link>.gamingSesionManager.<link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_gaming_sesion_manager_1a7619f530f8ca34c9ad89f88e1a61fcfb">ListasViewModel</link>();
-<anchor xml:id="__gaming_scesions_8cs_source_1l00038"/>00038 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(sessions&#32;!=&#32;<emphasis role="keyword">null</emphasis>)
-<anchor xml:id="__gaming_scesions_8cs_source_1l00039"/>00039 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
-<anchor xml:id="__gaming_scesions_8cs_source_1l00040"/>00040 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">foreach</emphasis>&#32;(var&#32;session&#32;<emphasis role="keywordflow">in</emphasis>&#32;sessions)
-<anchor xml:id="__gaming_scesions_8cs_source_1l00041"/>00041 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
-<anchor xml:id="__gaming_scesions_8cs_source_1l00042"/>00042 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;String&#32;tex&#32;=&#32;String.Format(<emphasis role="stringliteral">&quot;{0}&#32;-&#32;{1}&#32;-&#32;{2}&#32;-&#32;{3}&#32;-&#32;{4}&#32;&#32;&quot;</emphasis>,&#32;session.Id,&#32;session.UserName,session.Start,&#32;session.End,&#32;&#32;session.Score);
-<anchor xml:id="__gaming_scesions_8cs_source_1l00043"/>00043 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;lstGamingsessions.AddItem(tex);
-<anchor xml:id="__gaming_scesions_8cs_source_1l00044"/>00044 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
-<anchor xml:id="__gaming_scesions_8cs_source_1l00045"/>00045 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
-<anchor xml:id="__gaming_scesions_8cs_source_1l00046"/>00046 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;lstGamingsessions.ItemSelected&#32;+=&#32;LstGamingsessions_ItemSelected;
-<anchor xml:id="__gaming_scesions_8cs_source_1l00047"/>00047 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
-<anchor xml:id="__gaming_scesions_8cs_source_1l00048"/>00048 &#32;&#32;&#32;&#32;}
-<anchor xml:id="__gaming_scesions_8cs_source_1l00049"/>00049 
-<anchor xml:id="__gaming_scesions_8cs_source_1l00050"/>00050 &#32;&#32;&#32;&#32;<emphasis role="keyword">private</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;OpenFileDialog_FileSelected(<emphasis role="keywordtype">string</emphasis>&#32;path)
-<anchor xml:id="__gaming_scesions_8cs_source_1l00051"/>00051 &#32;&#32;&#32;&#32;{
-<anchor xml:id="__gaming_scesions_8cs_source_1l00052"/>00052 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;filename&#32;=&#32;path;
-<anchor xml:id="__gaming_scesions_8cs_source_1l00053"/>00053 &#32;&#32;&#32;&#32;}
-<anchor xml:id="__gaming_scesions_8cs_source_1l00054"/>00054 
-<anchor xml:id="__gaming_scesions_8cs_source_1l00055"/>00055 &#32;&#32;&#32;&#32;<emphasis role="keyword">private</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;BtnImportCSV_Pressed()
+<anchor xml:id="__gaming_scesions_8cs_source_1l00012"/><link linkend="_class_gaming_scesions">00012</link> <emphasis role="keyword">public</emphasis>&#32;<emphasis role="keyword">partial&#32;class&#32;</emphasis><link linkend="_class_gaming_scesions">GamingScesions</link>&#32;:&#32;Window
+<anchor xml:id="__gaming_scesions_8cs_source_1l00013"/>00013 {
+<anchor xml:id="__gaming_scesions_8cs_source_1l00014"/>00014 &#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;Called&#32;when&#32;the&#32;node&#32;enters&#32;the&#32;scene&#32;tree&#32;for&#32;the&#32;first&#32;time.</emphasis>
+<anchor xml:id="__gaming_scesions_8cs_source_1l00015"/>00015 &#32;&#32;&#32;&#32;Button&#32;btnDelete,&#32;btnExportToCSV,&#32;btnMakeGraphs,&#32;btnClose,&#32;btnImportCSV;
+<anchor xml:id="__gaming_scesions_8cs_source_1l00016"/>00016 &#32;&#32;&#32;&#32;FileDialog&#32;OpenFileDialog;
+<anchor xml:id="__gaming_scesions_8cs_source_1l00017"/>00017 
+<anchor xml:id="__gaming_scesions_8cs_source_1l00018"/>00018 &#32;&#32;&#32;&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">string</emphasis>&#32;Graphsdir&#32;=&#32;<emphasis role="stringliteral">&quot;Graphs&quot;</emphasis>,CSVdir=<emphasis role="stringliteral">&quot;CSV&quot;</emphasis>;
+<anchor xml:id="__gaming_scesions_8cs_source_1l00019"/>00019 &#32;&#32;&#32;&#32;ItemList&#32;lstGamingsessions;
+<anchor xml:id="__gaming_scesions_8cs_source_1l00020"/>00020 &#32;&#32;&#32;&#32;<link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion">GamingSesion</link>&#32;gamingSesion;
+<anchor xml:id="__gaming_scesions_8cs_source_1l00021"/>00021 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">string</emphasis>&#32;filename;
+<anchor xml:id="__gaming_scesions_8cs_source_1l00022"/><link linkend="_class_gaming_scesions_1a08d5807539c76e8654f506388223ee61">00022</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keyword">override</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_gaming_scesions_1a08d5807539c76e8654f506388223ee61">_Ready</link>()
+<anchor xml:id="__gaming_scesions_8cs_source_1l00023"/>00023 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__gaming_scesions_8cs_source_1l00024"/>00024 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(<link linkend="_class_menu">Menu</link>.<link linkend="_class_menu_1a2cdd0aa13fc2a0c1a0f2fdb2195c475c">SelectedUser</link>&#32;!=&#32;<emphasis role="keyword">null</emphasis>)
+<anchor xml:id="__gaming_scesions_8cs_source_1l00025"/>00025 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__gaming_scesions_8cs_source_1l00026"/>00026 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;btnDelete&#32;=&#32;(Button)this.FindChild(<emphasis role="stringliteral">&quot;btnDelete&quot;</emphasis>,&#32;<emphasis role="keyword">true</emphasis>);
+<anchor xml:id="__gaming_scesions_8cs_source_1l00027"/>00027 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;btnExportToCSV&#32;=&#32;(Button)this.FindChild(<emphasis role="stringliteral">&quot;btnExportToCSV&quot;</emphasis>,&#32;<emphasis role="keyword">true</emphasis>);
+<anchor xml:id="__gaming_scesions_8cs_source_1l00028"/>00028 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;btnMakeGraphs&#32;=&#32;(Button)this.FindChild(<emphasis role="stringliteral">&quot;btnMakeGraphs&quot;</emphasis>,&#32;<emphasis role="keyword">true</emphasis>);
+<anchor xml:id="__gaming_scesions_8cs_source_1l00029"/>00029 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;btnClose&#32;=&#32;(Button)this.FindChild(<emphasis role="stringliteral">&quot;btnClose&quot;</emphasis>,&#32;<emphasis role="keyword">true</emphasis>);
+<anchor xml:id="__gaming_scesions_8cs_source_1l00030"/>00030 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;btnClose.Pressed&#32;+=&#32;BtnClose_Pressed;
+<anchor xml:id="__gaming_scesions_8cs_source_1l00031"/>00031 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;btnExportToCSV.Pressed&#32;+=&#32;BtnExportToCSV_Pressed;
+<anchor xml:id="__gaming_scesions_8cs_source_1l00032"/>00032 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;btnMakeGraphs.Pressed&#32;+=&#32;BtnMakeGraphs_Pressed;
+<anchor xml:id="__gaming_scesions_8cs_source_1l00033"/>00033 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;btnDelete.Pressed&#32;+=&#32;BtnDelete_Pressed;
+<anchor xml:id="__gaming_scesions_8cs_source_1l00034"/>00034 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;lstGamingsessions&#32;=&#32;(ItemList)this.FindChild(<emphasis role="stringliteral">&quot;lstGamingsessions&quot;</emphasis>,&#32;<emphasis role="keyword">true</emphasis>);
+<anchor xml:id="__gaming_scesions_8cs_source_1l00035"/>00035 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;btnImportCSV&#32;=&#32;(Button)this.FindChild(<emphasis role="stringliteral">&quot;btnImportCSV&quot;</emphasis>);
+<anchor xml:id="__gaming_scesions_8cs_source_1l00036"/>00036 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;btnImportCSV.Pressed&#32;+=&#32;BtnImportCSV_Pressed;
+<anchor xml:id="__gaming_scesions_8cs_source_1l00037"/>00037 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;OpenFileDialog&#32;=(FileDialog)&#32;this.FindChild(<emphasis role="stringliteral">&quot;OpenFileDialog&quot;</emphasis>);
+<anchor xml:id="__gaming_scesions_8cs_source_1l00038"/>00038 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;OpenFileDialog.FileSelected&#32;+=&#32;OpenFileDialog_FileSelected;
+<anchor xml:id="__gaming_scesions_8cs_source_1l00039"/>00039 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;var&#32;sessions&#32;=&#32;<link linkend="_class_menu">Menu</link>.<link linkend="_class_menu_1ab91d795226479c5d356b975407d6d456">gamingSesionManager</link>.<link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_gaming_sesion_manager_1a7619f530f8ca34c9ad89f88e1a61fcfb">ListasViewModel</link>();
+<anchor xml:id="__gaming_scesions_8cs_source_1l00040"/>00040 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(sessions&#32;!=&#32;<emphasis role="keyword">null</emphasis>)
+<anchor xml:id="__gaming_scesions_8cs_source_1l00041"/>00041 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__gaming_scesions_8cs_source_1l00042"/>00042 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">foreach</emphasis>&#32;(var&#32;session&#32;<emphasis role="keywordflow">in</emphasis>&#32;sessions)
+<anchor xml:id="__gaming_scesions_8cs_source_1l00043"/>00043 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__gaming_scesions_8cs_source_1l00044"/>00044 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;String&#32;tex&#32;=&#32;String.Format(<emphasis role="stringliteral">&quot;{0}&#32;-&#32;{1}&#32;-&#32;{2}&#32;-&#32;{3}&#32;-&#32;{4}&#32;&#32;&quot;</emphasis>,&#32;session.Id,&#32;session.UserName,session.Start,&#32;session.End,&#32;&#32;session.Score);
+<anchor xml:id="__gaming_scesions_8cs_source_1l00045"/>00045 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;lstGamingsessions.AddItem(tex);
+<anchor xml:id="__gaming_scesions_8cs_source_1l00046"/>00046 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__gaming_scesions_8cs_source_1l00047"/>00047 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__gaming_scesions_8cs_source_1l00048"/>00048 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;lstGamingsessions.ItemSelected&#32;+=&#32;LstGamingsessions_ItemSelected;
+<anchor xml:id="__gaming_scesions_8cs_source_1l00049"/>00049 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__gaming_scesions_8cs_source_1l00050"/>00050 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__gaming_scesions_8cs_source_1l00055"/>00055 &#32;&#32;&#32;&#32;<emphasis role="keyword">private</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;OpenFileDialog_FileSelected(<emphasis role="keywordtype">string</emphasis>&#32;path)
 <anchor xml:id="__gaming_scesions_8cs_source_1l00056"/>00056 &#32;&#32;&#32;&#32;{
-<anchor xml:id="__gaming_scesions_8cs_source_1l00057"/>00057 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;OpenFileDialog.Show();
-<anchor xml:id="__gaming_scesions_8cs_source_1l00058"/>00058 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
-<anchor xml:id="__gaming_scesions_8cs_source_1l00059"/>00059 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;GD.Print(<emphasis role="stringliteral">&quot;FILENAME:&quot;</emphasis>&#32;+&#32;filename);
-<anchor xml:id="__gaming_scesions_8cs_source_1l00060"/>00060 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;GD.Print(<emphasis role="stringliteral">&quot;Gaming&#32;Sesion&#32;id:&quot;</emphasis>&#32;+&#32;Convert.ToString(<emphasis role="keyword">this</emphasis>.gamingSesion.Id));
-<anchor xml:id="__gaming_scesions_8cs_source_1l00061"/>00061 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;GD.Print(<emphasis role="stringliteral">&quot;User&#32;id:&quot;</emphasis>&#32;+&#32;this.gamingSesion.<link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion_1acbce3f3c7d81fe021cca2aba31c1ab6b">User</link>);
-<anchor xml:id="__gaming_scesions_8cs_source_1l00062"/>00062 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
-<anchor xml:id="__gaming_scesions_8cs_source_1l00063"/>00063 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(filename&#32;!=&#32;<emphasis role="keyword">null</emphasis>)
-<anchor xml:id="__gaming_scesions_8cs_source_1l00064"/>00064 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
-<anchor xml:id="__gaming_scesions_8cs_source_1l00065"/>00065 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_menu">Menu</link>.recordManager.<link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_1aa3e82a13471314555aecd2b8a31b1122">LoadCsv</link>(filename);
-<anchor xml:id="__gaming_scesions_8cs_source_1l00066"/>00066 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;GD.Print(<emphasis role="stringliteral">&quot;Recs&#32;count&#32;:&quot;</emphasis>&#32;+&#32;<link linkend="_class_menu">Menu</link>.recordManager.<link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_1a30759f2f9ef705ae50ebf4bfb48102ba">Records</link>.Count);
-<anchor xml:id="__gaming_scesions_8cs_source_1l00067"/>00067 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(&#32;this.gamingSesion!=<emphasis role="keyword">null</emphasis>)
-<anchor xml:id="__gaming_scesions_8cs_source_1l00068"/>00068 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
-<anchor xml:id="__gaming_scesions_8cs_source_1l00069"/>00069 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Menu.recordManager.ActiveGamingSessionId&#32;=&#32;this.gamingSesion.<link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion_1ae768cd0296695bb3d3f346ae5cb67ab6">Id</link>;
-<anchor xml:id="__gaming_scesions_8cs_source_1l00070"/>00070 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Menu.recordManager.ActiveUserId&#32;=&#32;this.gamingSesion.<link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion_1acbce3f3c7d81fe021cca2aba31c1ab6b">User</link>;
-<anchor xml:id="__gaming_scesions_8cs_source_1l00071"/>00071 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_menu">Menu</link>.recordManager.<link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_1a901688dbf85985f42956580b8312cb0b">SavetoDatabse</link>();
-<anchor xml:id="__gaming_scesions_8cs_source_1l00072"/>00072 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
-<anchor xml:id="__gaming_scesions_8cs_source_1l00073"/>00073 
-<anchor xml:id="__gaming_scesions_8cs_source_1l00074"/>00074 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
-<anchor xml:id="__gaming_scesions_8cs_source_1l00075"/>00075 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
-<anchor xml:id="__gaming_scesions_8cs_source_1l00076"/>00076 &#32;&#32;&#32;&#32;}
-<anchor xml:id="__gaming_scesions_8cs_source_1l00077"/>00077 
-<anchor xml:id="__gaming_scesions_8cs_source_1l00078"/>00078 &#32;&#32;&#32;&#32;<emphasis role="keyword">private</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;LstGamingsessions_ItemSelected(<emphasis role="keywordtype">long</emphasis>&#32;index)
-<anchor xml:id="__gaming_scesions_8cs_source_1l00079"/>00079 &#32;&#32;&#32;&#32;{
-<anchor xml:id="__gaming_scesions_8cs_source_1l00080"/>00080 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>[]&#32;selecteditem&#32;=&#32;this.lstGamingsessions.GetSelectedItems();
-<anchor xml:id="__gaming_scesions_8cs_source_1l00081"/>00081 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(selecteditem&#32;!=&#32;<emphasis role="keyword">null</emphasis>)
-<anchor xml:id="__gaming_scesions_8cs_source_1l00082"/>00082 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
-<anchor xml:id="__gaming_scesions_8cs_source_1l00083"/>00083 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">string</emphasis>&#32;seltex&#32;=&#32;lstGamingsessions.GetItemText(selecteditem[0]);
-<anchor xml:id="__gaming_scesions_8cs_source_1l00084"/>00084 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">string</emphasis>[]&#32;text&#32;=&#32;seltex.Split(<emphasis role="stringliteral">&quot;-&quot;</emphasis>);
-<anchor xml:id="__gaming_scesions_8cs_source_1l00085"/>00085 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">string</emphasis>&#32;username&#32;=&#32;text[1];
-<anchor xml:id="__gaming_scesions_8cs_source_1l00086"/>00086 
-<anchor xml:id="__gaming_scesions_8cs_source_1l00087"/>00087 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;GD.Print(username);
-<anchor xml:id="__gaming_scesions_8cs_source_1l00088"/>00088 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(<link linkend="_class_menu">Menu</link>.gamingSesionManager&#32;==&#32;<emphasis role="keyword">null</emphasis>)
-<anchor xml:id="__gaming_scesions_8cs_source_1l00089"/>00089 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
-<anchor xml:id="__gaming_scesions_8cs_source_1l00090"/>00090 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Menu.gamingSesionManager&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;<link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_gaming_sesion_manager">GamingSesionManager</link>();
-<anchor xml:id="__gaming_scesions_8cs_source_1l00091"/>00091 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
-<anchor xml:id="__gaming_scesions_8cs_source_1l00092"/>00092 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
-<anchor xml:id="__gaming_scesions_8cs_source_1l00093"/>00093 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;<emphasis role="keywordtype">id</emphasis>&#32;=&#32;<emphasis role="keywordtype">int</emphasis>.Parse(text[0]);
-<anchor xml:id="__gaming_scesions_8cs_source_1l00094"/>00094 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion">GamingSesion</link>&#32;sesion&#32;=&#32;<link linkend="_class_menu">Menu</link>.gamingSesionManager.<link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_gaming_sesion_manager_1a10e6347d9ac5b94d1cbb262df71ea872">Get</link>(<emphasis role="keywordtype">id</emphasis>);
-<anchor xml:id="__gaming_scesions_8cs_source_1l00095"/>00095 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;GD.Print(text[0]);
-<anchor xml:id="__gaming_scesions_8cs_source_1l00096"/>00096 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//GD.Print(user.Name);</emphasis>
-<anchor xml:id="__gaming_scesions_8cs_source_1l00097"/>00097 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.gamingSesion=sesion;
-<anchor xml:id="__gaming_scesions_8cs_source_1l00098"/>00098 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
-<anchor xml:id="__gaming_scesions_8cs_source_1l00099"/>00099 
-<anchor xml:id="__gaming_scesions_8cs_source_1l00100"/>00100 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
-<anchor xml:id="__gaming_scesions_8cs_source_1l00101"/>00101 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
-<anchor xml:id="__gaming_scesions_8cs_source_1l00102"/>00102 &#32;&#32;&#32;&#32;}
-<anchor xml:id="__gaming_scesions_8cs_source_1l00103"/>00103 
-<anchor xml:id="__gaming_scesions_8cs_source_1l00104"/>00104 &#32;&#32;&#32;&#32;<emphasis role="keyword">private</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;BtnClose_Pressed()
-<anchor xml:id="__gaming_scesions_8cs_source_1l00105"/>00105 &#32;&#32;&#32;&#32;{
-<anchor xml:id="__gaming_scesions_8cs_source_1l00106"/>00106 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.Hide();
-<anchor xml:id="__gaming_scesions_8cs_source_1l00107"/>00107 &#32;&#32;&#32;&#32;}
-<anchor xml:id="__gaming_scesions_8cs_source_1l00108"/>00108 
-<anchor xml:id="__gaming_scesions_8cs_source_1l00109"/>00109 &#32;&#32;&#32;&#32;<emphasis role="keyword">private</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;BtnMakeGraphs_Pressed()
-<anchor xml:id="__gaming_scesions_8cs_source_1l00110"/>00110 &#32;&#32;&#32;&#32;{
-<anchor xml:id="__gaming_scesions_8cs_source_1l00111"/>00111 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">string</emphasis>&#32;filename,&#32;folder&#32;,tfilename;
-<anchor xml:id="__gaming_scesions_8cs_source_1l00112"/>00112 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//CommonTools.GetAppRootDataFolderAbsolutePath()</emphasis>
-<anchor xml:id="__gaming_scesions_8cs_source_1l00113"/>00113 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;folder&#32;=&#32;Path.Combine(<link linkend="_class_e_e_g_gaming_1_1_core_1_1_tools_1_1_common_tools">CommonTools</link>.<link linkend="_class_e_e_g_gaming_1_1_core_1_1_tools_1_1_common_tools_1a3079777a63080f7f88a5f28bb8ac786f">GetAppRootDataFolderAbsolutePath</link>(),&#32;Graphsdir);
-<anchor xml:id="__gaming_scesions_8cs_source_1l00114"/>00114 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(!Directory.Exists(folder))
-<anchor xml:id="__gaming_scesions_8cs_source_1l00115"/>00115 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
-<anchor xml:id="__gaming_scesions_8cs_source_1l00116"/>00116 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Directory.CreateDirectory(folder);
-<anchor xml:id="__gaming_scesions_8cs_source_1l00117"/>00117 
-<anchor xml:id="__gaming_scesions_8cs_source_1l00118"/>00118 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
-<anchor xml:id="__gaming_scesions_8cs_source_1l00119"/>00119 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;tfilename&#32;=&#32;&#32;DateTime.Now.ToString().Replace(<emphasis role="stringliteral">&quot;/&quot;</emphasis>,&#32;<emphasis role="stringliteral">&quot;-&quot;</emphasis>);
-<anchor xml:id="__gaming_scesions_8cs_source_1l00120"/>00120 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;tfilename&#32;=&#32;tfilename.Replace(<emphasis role="stringliteral">&quot;:&quot;</emphasis>,&#32;<emphasis role="stringliteral">&quot;.&quot;</emphasis>);
-<anchor xml:id="__gaming_scesions_8cs_source_1l00121"/>00121 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;filename&#32;=Path.Combine(folder,&#32;tfilename);
-<anchor xml:id="__gaming_scesions_8cs_source_1l00122"/>00122 
-<anchor xml:id="__gaming_scesions_8cs_source_1l00123"/>00123 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_menu">Menu</link>.recordManager.<link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_1a8d0ce0e4599f0280160826f296073fa5">GetBrainwavesFromDBByGamingSessionId</link>(gamingSesion.<link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion_1ae768cd0296695bb3d3f346ae5cb67ab6">Id</link>);
-<anchor xml:id="__gaming_scesions_8cs_source_1l00124"/>00124 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
-<anchor xml:id="__gaming_scesions_8cs_source_1l00125"/>00125 
-<anchor xml:id="__gaming_scesions_8cs_source_1l00126"/>00126 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_menu">Menu</link>.recordManager.<link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_1aa37393630a5ae47cb49701fcd71e8779">MakeGraphs</link>(filename);&#32;
-<anchor xml:id="__gaming_scesions_8cs_source_1l00127"/>00127 
-<anchor xml:id="__gaming_scesions_8cs_source_1l00128"/>00128 &#32;&#32;&#32;&#32;}
-<anchor xml:id="__gaming_scesions_8cs_source_1l00129"/>00129 
-<anchor xml:id="__gaming_scesions_8cs_source_1l00130"/>00130 &#32;&#32;&#32;&#32;<emphasis role="keyword">private</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;BtnExportToCSV_Pressed()
-<anchor xml:id="__gaming_scesions_8cs_source_1l00131"/>00131 &#32;&#32;&#32;&#32;{
-<anchor xml:id="__gaming_scesions_8cs_source_1l00132"/>00132 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">string</emphasis>&#32;path&#32;=&#32;Path.Combine(<link linkend="_class_e_e_g_gaming_1_1_core_1_1_tools_1_1_common_tools">CommonTools</link>.<link linkend="_class_e_e_g_gaming_1_1_core_1_1_tools_1_1_common_tools_1a3079777a63080f7f88a5f28bb8ac786f">GetAppRootDataFolderAbsolutePath</link>(),CSVdir);
-<anchor xml:id="__gaming_scesions_8cs_source_1l00133"/>00133 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">string</emphasis>&#32;filename&#32;=&#32;DateTime.Now.ToString().Replace(<emphasis role="stringliteral">&quot;/&quot;</emphasis>,&#32;<emphasis role="stringliteral">&quot;-&quot;</emphasis>)&#32;+&#32;<emphasis role="stringliteral">&quot;.csv&quot;</emphasis>;
-<anchor xml:id="__gaming_scesions_8cs_source_1l00134"/>00134 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;filename&#32;=&#32;filename.Replace(<emphasis role="stringliteral">&quot;:&quot;</emphasis>,&#32;<emphasis role="stringliteral">&quot;.&quot;</emphasis>);
-<anchor xml:id="__gaming_scesions_8cs_source_1l00135"/>00135 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_menu">Menu</link>.recordManager.<link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_1a8d0ce0e4599f0280160826f296073fa5">GetBrainwavesFromDBByGamingSessionId</link>(gamingSesion.<link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion_1ae768cd0296695bb3d3f346ae5cb67ab6">Id</link>);
-<anchor xml:id="__gaming_scesions_8cs_source_1l00136"/>00136 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_menu">Menu</link>.recordManager.<link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_1a6adbb993f6c7382eb2ac39cbeacd93b0">SaveToCSV</link>(Path.Combine(path,&#32;filename));
+<anchor xml:id="__gaming_scesions_8cs_source_1l00057"/>00057 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;filename&#32;=&#32;path;
+<anchor xml:id="__gaming_scesions_8cs_source_1l00058"/>00058 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__gaming_scesions_8cs_source_1l00062"/>00062 &#32;&#32;&#32;&#32;<emphasis role="keyword">private</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;BtnImportCSV_Pressed()
+<anchor xml:id="__gaming_scesions_8cs_source_1l00063"/>00063 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__gaming_scesions_8cs_source_1l00064"/>00064 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;OpenFileDialog.Show();
+<anchor xml:id="__gaming_scesions_8cs_source_1l00065"/>00065 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
+<anchor xml:id="__gaming_scesions_8cs_source_1l00066"/>00066 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;GD.Print(<emphasis role="stringliteral">&quot;FILENAME:&quot;</emphasis>&#32;+&#32;filename);
+<anchor xml:id="__gaming_scesions_8cs_source_1l00067"/>00067 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;GD.Print(<emphasis role="stringliteral">&quot;Gaming&#32;Sesion&#32;id:&quot;</emphasis>&#32;+&#32;Convert.ToString(<emphasis role="keyword">this</emphasis>.gamingSesion.Id));
+<anchor xml:id="__gaming_scesions_8cs_source_1l00068"/>00068 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;GD.Print(<emphasis role="stringliteral">&quot;User&#32;id:&quot;</emphasis>&#32;+&#32;this.gamingSesion.<link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion_1acbce3f3c7d81fe021cca2aba31c1ab6b">User</link>);
+<anchor xml:id="__gaming_scesions_8cs_source_1l00069"/>00069 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
+<anchor xml:id="__gaming_scesions_8cs_source_1l00070"/>00070 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(filename&#32;!=&#32;<emphasis role="keyword">null</emphasis>)
+<anchor xml:id="__gaming_scesions_8cs_source_1l00071"/>00071 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__gaming_scesions_8cs_source_1l00072"/>00072 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_menu">Menu</link>.<link linkend="_class_menu_1aa005ebd5a38e50bc52accdb70c081008">recordManager</link>.<link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_1aa3e82a13471314555aecd2b8a31b1122">LoadCsv</link>(filename);
+<anchor xml:id="__gaming_scesions_8cs_source_1l00073"/>00073 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;GD.Print(<emphasis role="stringliteral">&quot;Recs&#32;count&#32;:&quot;</emphasis>&#32;+&#32;<link linkend="_class_menu">Menu</link>.<link linkend="_class_menu_1aa005ebd5a38e50bc52accdb70c081008">recordManager</link>.<link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_1a30759f2f9ef705ae50ebf4bfb48102ba">Records</link>.Count);
+<anchor xml:id="__gaming_scesions_8cs_source_1l00074"/>00074 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(&#32;this.gamingSesion!=<emphasis role="keyword">null</emphasis>)
+<anchor xml:id="__gaming_scesions_8cs_source_1l00075"/>00075 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__gaming_scesions_8cs_source_1l00076"/>00076 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Menu.recordManager.ActiveGamingSessionId&#32;=&#32;this.gamingSesion.<link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion_1ae768cd0296695bb3d3f346ae5cb67ab6">Id</link>;
+<anchor xml:id="__gaming_scesions_8cs_source_1l00077"/>00077 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Menu.recordManager.ActiveUserId&#32;=&#32;this.gamingSesion.<link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion_1acbce3f3c7d81fe021cca2aba31c1ab6b">User</link>;
+<anchor xml:id="__gaming_scesions_8cs_source_1l00078"/>00078 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_menu">Menu</link>.<link linkend="_class_menu_1aa005ebd5a38e50bc52accdb70c081008">recordManager</link>.<link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_1a901688dbf85985f42956580b8312cb0b">SavetoDatabse</link>();
+<anchor xml:id="__gaming_scesions_8cs_source_1l00079"/>00079 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__gaming_scesions_8cs_source_1l00080"/>00080 
+<anchor xml:id="__gaming_scesions_8cs_source_1l00081"/>00081 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__gaming_scesions_8cs_source_1l00082"/>00082 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
+<anchor xml:id="__gaming_scesions_8cs_source_1l00083"/>00083 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__gaming_scesions_8cs_source_1l00088"/>00088 &#32;&#32;&#32;&#32;<emphasis role="keyword">private</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;LstGamingsessions_ItemSelected(<emphasis role="keywordtype">long</emphasis>&#32;index)
+<anchor xml:id="__gaming_scesions_8cs_source_1l00089"/>00089 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__gaming_scesions_8cs_source_1l00090"/>00090 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>[]&#32;selecteditem&#32;=&#32;this.lstGamingsessions.GetSelectedItems();
+<anchor xml:id="__gaming_scesions_8cs_source_1l00091"/>00091 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(selecteditem&#32;!=&#32;<emphasis role="keyword">null</emphasis>)
+<anchor xml:id="__gaming_scesions_8cs_source_1l00092"/>00092 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__gaming_scesions_8cs_source_1l00093"/>00093 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">string</emphasis>&#32;seltex&#32;=&#32;lstGamingsessions.GetItemText(selecteditem[0]);
+<anchor xml:id="__gaming_scesions_8cs_source_1l00094"/>00094 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">string</emphasis>[]&#32;text&#32;=&#32;seltex.Split(<emphasis role="stringliteral">&quot;-&quot;</emphasis>);
+<anchor xml:id="__gaming_scesions_8cs_source_1l00095"/>00095 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">string</emphasis>&#32;username&#32;=&#32;text[1];
+<anchor xml:id="__gaming_scesions_8cs_source_1l00096"/>00096 
+<anchor xml:id="__gaming_scesions_8cs_source_1l00097"/>00097 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;GD.Print(username);
+<anchor xml:id="__gaming_scesions_8cs_source_1l00098"/>00098 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(<link linkend="_class_menu">Menu</link>.<link linkend="_class_menu_1ab91d795226479c5d356b975407d6d456">gamingSesionManager</link>&#32;==&#32;<emphasis role="keyword">null</emphasis>)
+<anchor xml:id="__gaming_scesions_8cs_source_1l00099"/>00099 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__gaming_scesions_8cs_source_1l00100"/>00100 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Menu.gamingSesionManager&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;<link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_gaming_sesion_manager">GamingSesionManager</link>();
+<anchor xml:id="__gaming_scesions_8cs_source_1l00101"/>00101 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__gaming_scesions_8cs_source_1l00102"/>00102 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
+<anchor xml:id="__gaming_scesions_8cs_source_1l00103"/>00103 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;<emphasis role="keywordtype">id</emphasis>&#32;=&#32;<emphasis role="keywordtype">int</emphasis>.Parse(text[0]);
+<anchor xml:id="__gaming_scesions_8cs_source_1l00104"/>00104 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion">GamingSesion</link>&#32;sesion&#32;=&#32;<link linkend="_class_menu">Menu</link>.<link linkend="_class_menu_1ab91d795226479c5d356b975407d6d456">gamingSesionManager</link>.<link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_gaming_sesion_manager_1a10e6347d9ac5b94d1cbb262df71ea872">Get</link>(<emphasis role="keywordtype">id</emphasis>);
+<anchor xml:id="__gaming_scesions_8cs_source_1l00105"/>00105 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;GD.Print(text[0]);
+<anchor xml:id="__gaming_scesions_8cs_source_1l00106"/>00106 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//GD.Print(user.Name);</emphasis>
+<anchor xml:id="__gaming_scesions_8cs_source_1l00107"/>00107 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.gamingSesion=sesion;
+<anchor xml:id="__gaming_scesions_8cs_source_1l00108"/>00108 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
+<anchor xml:id="__gaming_scesions_8cs_source_1l00109"/>00109 
+<anchor xml:id="__gaming_scesions_8cs_source_1l00110"/>00110 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
+<anchor xml:id="__gaming_scesions_8cs_source_1l00111"/>00111 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__gaming_scesions_8cs_source_1l00112"/>00112 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__gaming_scesions_8cs_source_1l00116"/>00116 
+<anchor xml:id="__gaming_scesions_8cs_source_1l00117"/>00117 &#32;&#32;&#32;&#32;<emphasis role="keyword">private</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;BtnClose_Pressed()
+<anchor xml:id="__gaming_scesions_8cs_source_1l00118"/>00118 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__gaming_scesions_8cs_source_1l00119"/>00119 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.Hide();
+<anchor xml:id="__gaming_scesions_8cs_source_1l00120"/>00120 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__gaming_scesions_8cs_source_1l00124"/>00124 &#32;&#32;&#32;&#32;<emphasis role="keyword">private</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;BtnMakeGraphs_Pressed()
+<anchor xml:id="__gaming_scesions_8cs_source_1l00125"/>00125 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__gaming_scesions_8cs_source_1l00126"/>00126 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">string</emphasis>&#32;filename,&#32;folder&#32;,tfilename;
+<anchor xml:id="__gaming_scesions_8cs_source_1l00127"/>00127 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//CommonTools.GetAppRootDataFolderAbsolutePath()</emphasis>
+<anchor xml:id="__gaming_scesions_8cs_source_1l00128"/>00128 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;folder&#32;=&#32;Path.Combine(<link linkend="_class_e_e_g_gaming_1_1_core_1_1_tools_1_1_common_tools">CommonTools</link>.<link linkend="_class_e_e_g_gaming_1_1_core_1_1_tools_1_1_common_tools_1a3079777a63080f7f88a5f28bb8ac786f">GetAppRootDataFolderAbsolutePath</link>(),&#32;Graphsdir);
+<anchor xml:id="__gaming_scesions_8cs_source_1l00129"/>00129 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(!Directory.Exists(folder))
+<anchor xml:id="__gaming_scesions_8cs_source_1l00130"/>00130 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__gaming_scesions_8cs_source_1l00131"/>00131 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Directory.CreateDirectory(folder);
+<anchor xml:id="__gaming_scesions_8cs_source_1l00132"/>00132 
+<anchor xml:id="__gaming_scesions_8cs_source_1l00133"/>00133 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__gaming_scesions_8cs_source_1l00134"/>00134 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;tfilename&#32;=&#32;&#32;DateTime.Now.ToString().Replace(<emphasis role="stringliteral">&quot;/&quot;</emphasis>,&#32;<emphasis role="stringliteral">&quot;-&quot;</emphasis>);
+<anchor xml:id="__gaming_scesions_8cs_source_1l00135"/>00135 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;tfilename&#32;=&#32;tfilename.Replace(<emphasis role="stringliteral">&quot;:&quot;</emphasis>,&#32;<emphasis role="stringliteral">&quot;.&quot;</emphasis>);
+<anchor xml:id="__gaming_scesions_8cs_source_1l00136"/>00136 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;filename&#32;=Path.Combine(folder,&#32;tfilename);
 <anchor xml:id="__gaming_scesions_8cs_source_1l00137"/>00137 
-<anchor xml:id="__gaming_scesions_8cs_source_1l00138"/>00138 &#32;&#32;&#32;&#32;}
-<anchor xml:id="__gaming_scesions_8cs_source_1l00139"/>00139 
-<anchor xml:id="__gaming_scesions_8cs_source_1l00140"/>00140 &#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;Called&#32;every&#32;frame.&#32;&apos;delta&apos;&#32;is&#32;the&#32;elapsed&#32;time&#32;since&#32;the&#32;previous&#32;frame.</emphasis>
-<anchor xml:id="__gaming_scesions_8cs_source_1l00141"/>00141 &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keyword">override</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;_Process(<emphasis role="keywordtype">double</emphasis>&#32;delta)
-<anchor xml:id="__gaming_scesions_8cs_source_1l00142"/>00142 &#32;&#32;&#32;&#32;{
-<anchor xml:id="__gaming_scesions_8cs_source_1l00143"/>00143 &#32;&#32;&#32;&#32;&#32;&#32;
-<anchor xml:id="__gaming_scesions_8cs_source_1l00144"/>00144 
-<anchor xml:id="__gaming_scesions_8cs_source_1l00145"/>00145 
-<anchor xml:id="__gaming_scesions_8cs_source_1l00146"/>00146 &#32;&#32;&#32;&#32;}
-<anchor xml:id="__gaming_scesions_8cs_source_1l00147"/>00147 &#32;&#32;&#32;&#32;<emphasis role="keyword">private</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;BtnDelete_Pressed()
+<anchor xml:id="__gaming_scesions_8cs_source_1l00138"/>00138 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_menu">Menu</link>.<link linkend="_class_menu_1aa005ebd5a38e50bc52accdb70c081008">recordManager</link>.<link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_1a8d0ce0e4599f0280160826f296073fa5">GetBrainwavesFromDBByGamingSessionId</link>(gamingSesion.<link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion_1ae768cd0296695bb3d3f346ae5cb67ab6">Id</link>);
+<anchor xml:id="__gaming_scesions_8cs_source_1l00139"/>00139 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
+<anchor xml:id="__gaming_scesions_8cs_source_1l00140"/>00140 
+<anchor xml:id="__gaming_scesions_8cs_source_1l00141"/>00141 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_menu">Menu</link>.<link linkend="_class_menu_1aa005ebd5a38e50bc52accdb70c081008">recordManager</link>.<link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_1aa37393630a5ae47cb49701fcd71e8779">MakeGraphs</link>(filename);&#32;
+<anchor xml:id="__gaming_scesions_8cs_source_1l00142"/>00142 
+<anchor xml:id="__gaming_scesions_8cs_source_1l00143"/>00143 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__gaming_scesions_8cs_source_1l00147"/>00147 &#32;&#32;&#32;&#32;<emphasis role="keyword">private</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;BtnExportToCSV_Pressed()
 <anchor xml:id="__gaming_scesions_8cs_source_1l00148"/>00148 &#32;&#32;&#32;&#32;{
-<anchor xml:id="__gaming_scesions_8cs_source_1l00149"/>00149 
-<anchor xml:id="__gaming_scesions_8cs_source_1l00150"/>00150 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_menu">Menu</link>.gamingSesionManager.<link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_gaming_sesion_manager_1aaa3bdbc922da5afc95591467af76fe92">Delete</link>(gamingSesion.<link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion_1ae768cd0296695bb3d3f346ae5cb67ab6">Id</link>);
-<anchor xml:id="__gaming_scesions_8cs_source_1l00151"/>00151 &#32;&#32;&#32;&#32;}
-<anchor xml:id="__gaming_scesions_8cs_source_1l00152"/>00152 }
+<anchor xml:id="__gaming_scesions_8cs_source_1l00149"/>00149 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">string</emphasis>&#32;path&#32;=&#32;Path.Combine(<link linkend="_class_e_e_g_gaming_1_1_core_1_1_tools_1_1_common_tools">CommonTools</link>.<link linkend="_class_e_e_g_gaming_1_1_core_1_1_tools_1_1_common_tools_1a3079777a63080f7f88a5f28bb8ac786f">GetAppRootDataFolderAbsolutePath</link>(),CSVdir);
+<anchor xml:id="__gaming_scesions_8cs_source_1l00150"/>00150 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">string</emphasis>&#32;filename&#32;=&#32;DateTime.Now.ToString().Replace(<emphasis role="stringliteral">&quot;/&quot;</emphasis>,&#32;<emphasis role="stringliteral">&quot;-&quot;</emphasis>)&#32;+&#32;<emphasis role="stringliteral">&quot;.csv&quot;</emphasis>;
+<anchor xml:id="__gaming_scesions_8cs_source_1l00151"/>00151 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;filename&#32;=&#32;filename.Replace(<emphasis role="stringliteral">&quot;:&quot;</emphasis>,&#32;<emphasis role="stringliteral">&quot;.&quot;</emphasis>);
+<anchor xml:id="__gaming_scesions_8cs_source_1l00152"/>00152 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_menu">Menu</link>.<link linkend="_class_menu_1aa005ebd5a38e50bc52accdb70c081008">recordManager</link>.<link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_1a8d0ce0e4599f0280160826f296073fa5">GetBrainwavesFromDBByGamingSessionId</link>(gamingSesion.<link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion_1ae768cd0296695bb3d3f346ae5cb67ab6">Id</link>);
+<anchor xml:id="__gaming_scesions_8cs_source_1l00153"/>00153 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_menu">Menu</link>.<link linkend="_class_menu_1aa005ebd5a38e50bc52accdb70c081008">recordManager</link>.<link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_1a6adbb993f6c7382eb2ac39cbeacd93b0">SaveToCSV</link>(Path.Combine(path,&#32;filename));
+<anchor xml:id="__gaming_scesions_8cs_source_1l00154"/>00154 
+<anchor xml:id="__gaming_scesions_8cs_source_1l00155"/>00155 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__gaming_scesions_8cs_source_1l00156"/>00156 
+<anchor xml:id="__gaming_scesions_8cs_source_1l00157"/>00157 &#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;Called&#32;every&#32;frame.&#32;&apos;delta&apos;&#32;is&#32;the&#32;elapsed&#32;time&#32;since&#32;the&#32;previous&#32;frame.</emphasis>
+<anchor xml:id="__gaming_scesions_8cs_source_1l00158"/><link linkend="_class_gaming_scesions_1abcb236cb4146954f9a810587dd3a1b2f">00158</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keyword">override</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_gaming_scesions_1abcb236cb4146954f9a810587dd3a1b2f">_Process</link>(<emphasis role="keywordtype">double</emphasis>&#32;delta)
+<anchor xml:id="__gaming_scesions_8cs_source_1l00159"/>00159 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__gaming_scesions_8cs_source_1l00160"/>00160 &#32;&#32;&#32;&#32;&#32;&#32;
+<anchor xml:id="__gaming_scesions_8cs_source_1l00161"/>00161 
+<anchor xml:id="__gaming_scesions_8cs_source_1l00162"/>00162 
+<anchor xml:id="__gaming_scesions_8cs_source_1l00163"/>00163 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__gaming_scesions_8cs_source_1l00167"/>00167 &#32;&#32;&#32;&#32;<emphasis role="keyword">private</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;BtnDelete_Pressed()
+<anchor xml:id="__gaming_scesions_8cs_source_1l00168"/>00168 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__gaming_scesions_8cs_source_1l00169"/>00169 
+<anchor xml:id="__gaming_scesions_8cs_source_1l00170"/>00170 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_menu">Menu</link>.<link linkend="_class_menu_1ab91d795226479c5d356b975407d6d456">gamingSesionManager</link>.<link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_gaming_sesion_manager_1aaa3bdbc922da5afc95591467af76fe92">Delete</link>(gamingSesion.<link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_gaming_sesion_1ae768cd0296695bb3d3f346ae5cb67ab6">Id</link>);
+<anchor xml:id="__gaming_scesions_8cs_source_1l00171"/>00171 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__gaming_scesions_8cs_source_1l00172"/>00172 }
 </programlisting></section>

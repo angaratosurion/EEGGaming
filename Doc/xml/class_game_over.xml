@@ -11,12 +11,13 @@
         <name>_Ready</name>
         <qualifiedname>GameOver._Ready</qualifiedname>
         <briefdescription>
+<para>It shows the score and saves the data to the database. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="BlinkBird/Code/GameOver.cs" line="8" column="22" bodyfile="BlinkBird/Code/GameOver.cs" bodystart="8" bodyend="25"/>
+        <location file="BlinkBird/Code/GameOver.cs" line="12" column="22" bodyfile="BlinkBird/Code/GameOver.cs" bodystart="12" bodyend="29"/>
       </memberdef>
       <memberdef kind="function" id="class_game_over_1aaabfb20fa692d869cd2acfe81c3e66c6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>override void</type>
@@ -34,10 +35,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="BlinkBird/Code/GameOver.cs" line="28" column="26" bodyfile="BlinkBird/Code/GameOver.cs" bodystart="28" bodyend="30"/>
+        <location file="BlinkBird/Code/GameOver.cs" line="32" column="26" bodyfile="BlinkBird/Code/GameOver.cs" bodystart="32" bodyend="34"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
+<para>This window appearswhenn thegame is over. </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
@@ -63,7 +65,7 @@
         <label>Window</label>
       </node>
     </collaborationgraph>
-    <location file="BlinkBird/Code/GameOver.cs" line="4" column="15" bodyfile="BlinkBird/Code/GameOver.cs" bodystart="5" bodyend="31"/>
+    <location file="BlinkBird/Code/GameOver.cs" line="6" column="15" bodyfile="BlinkBird/Code/GameOver.cs" bodystart="7" bodyend="35"/>
     <listofallmembers>
       <member refid="class_game_over_1aaabfb20fa692d869cd2acfe81c3e66c6" prot="public" virt="non-virtual"><scope>GameOver</scope><name>_Process</name></member>
       <member refid="class_game_over_1a9dff954d9b92b3377bc6c08ad2096d65" prot="public" virt="non-virtual"><scope>GameOver</scope><name>_Ready</name></member>

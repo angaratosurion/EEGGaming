@@ -1,9 +1,13 @@
 using Godot;
 using System;
-
+/// <summary>
+///  This class controls the Camera of the Game
+/// </summary>
 public partial class Camera : Camera2D
 {
-	// Called when the node enters the scene tree for the first time.
+	/// <summary>
+	/// Called when the node enters the scene tree for the first time.
+	/// </summary>
 	 
 	 
     public override void _Ready() 
@@ -13,7 +17,10 @@ public partial class Camera : Camera2D
         
 
     }
-
+	/// <summary>
+	/// Moves the camera and occurs when the frame is produced
+	/// </summary>
+	/// <param name="delta"></param>
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
 	public override void _Process(double delta) 
 	{

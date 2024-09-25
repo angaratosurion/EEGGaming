@@ -57,8 +57,7 @@ var hierarchy =
     ] ],
     [ "Sprite2D", null, [
       [ "Mountain", "class_mountain.html", null ],
-      [ "Player", "class_player.html", null ],
-      [ "Sky", "class_sky.html", null ]
+      [ "Player", "class_player.html", null ]
     ] ],
     [ "EEGGaming.Core.Data.Models.User", "class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_user.html", null ],
     [ "Window", null, [

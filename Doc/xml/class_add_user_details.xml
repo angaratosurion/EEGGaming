@@ -11,12 +11,13 @@
         <name>_Ready</name>
         <qualifiedname>AddUserDetails._Ready</qualifiedname>
         <briefdescription>
+<para>Called when the node enters the scene tree for the first time. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="BlinkBird/Code/AddUserDetails.cs" line="10" column="22" bodyfile="BlinkBird/Code/AddUserDetails.cs" bodystart="10" bodyend="19"/>
+        <location file="BlinkBird/Code/AddUserDetails.cs" line="15" column="26" bodyfile="BlinkBird/Code/AddUserDetails.cs" bodystart="15" bodyend="24"/>
       </memberdef>
       <memberdef kind="function" id="class_add_user_details_1ad7ece054e2749da6c9a61454832f517b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>override void</type>
@@ -34,7 +35,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="BlinkBird/Code/AddUserDetails.cs" line="47" column="22" bodyfile="BlinkBird/Code/AddUserDetails.cs" bodystart="47" bodyend="49"/>
+        <location file="BlinkBird/Code/AddUserDetails.cs" line="57" column="22" bodyfile="BlinkBird/Code/AddUserDetails.cs" bodystart="57" bodyend="59"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="private-func">
@@ -45,12 +46,13 @@
         <name>BtnCreateNewUser_Pressed</name>
         <qualifiedname>AddUserDetails.BtnCreateNewUser_Pressed</qualifiedname>
         <briefdescription>
+<para>called when the create new user button is pressed and adds the new user to te database </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="BlinkBird/Code/AddUserDetails.cs" line="21" column="14" bodyfile="BlinkBird/Code/AddUserDetails.cs" bodystart="21" bodyend="39"/>
+        <location file="BlinkBird/Code/AddUserDetails.cs" line="29" column="14" bodyfile="BlinkBird/Code/AddUserDetails.cs" bodystart="29" bodyend="47"/>
       </memberdef>
       <memberdef kind="function" id="class_add_user_details_1a180c6c59ecf27840837d1ec8c954bda0" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -59,15 +61,17 @@
         <name>BtnCancel_Pressed</name>
         <qualifiedname>AddUserDetails.BtnCancel_Pressed</qualifiedname>
         <briefdescription>
+<para>Closes the window. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="BlinkBird/Code/AddUserDetails.cs" line="41" column="14" bodyfile="BlinkBird/Code/AddUserDetails.cs" bodystart="41" bodyend="44"/>
+        <location file="BlinkBird/Code/AddUserDetails.cs" line="51" column="18" bodyfile="BlinkBird/Code/AddUserDetails.cs" bodystart="51" bodyend="54"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
+<para>Adds a new user. </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
@@ -93,7 +97,7 @@
         <label>Control</label>
       </node>
     </collaborationgraph>
-    <location file="BlinkBird/Code/AddUserDetails.cs" line="7" column="15" bodyfile="BlinkBird/Code/AddUserDetails.cs" bodystart="8" bodyend="50"/>
+    <location file="BlinkBird/Code/AddUserDetails.cs" line="9" column="15" bodyfile="BlinkBird/Code/AddUserDetails.cs" bodystart="10" bodyend="60"/>
     <listofallmembers>
       <member refid="class_add_user_details_1ad7ece054e2749da6c9a61454832f517b" prot="public" virt="non-virtual"><scope>AddUserDetails</scope><name>_Process</name></member>
       <member refid="class_add_user_details_1ae88360792ced7c96aabbe322902de064" prot="public" virt="non-virtual"><scope>AddUserDetails</scope><name>_Ready</name></member>

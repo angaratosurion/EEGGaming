@@ -1,10 +1,14 @@
 using Godot;
 using System;
-
+/// <summary>
+/// This window appearswhenn thegame is over
+/// </summary>
 public partial class GameOver :Window// Control
 {
 	// Called when the node enters the scene tree for the first time.
-	 
+	 /// <summary>
+	 /// It shows the score and saves the data to the database
+	 /// </summary>
 	public override void _Ready()
 	{
 		Label lblScore = (Label)this.FindChild("lblScore", true);

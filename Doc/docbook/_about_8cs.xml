@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__about_8cs" xml:lang="en-US">
+<title>BlinkBird/Code/About.cs File Reference</title>
+<indexterm><primary>BlinkBird/Code/About.cs</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_about">About</link></para>
+
+<para>This is the window that shows the info about the app. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

@@ -2,7 +2,7 @@
 <section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_20240616172542__unmade_01the_01name_01property_01a_01key_8_designer_8cs_source" xml:lang="en-US">
 <title>20240616172542_unmade the name property a key.Designer.cs</title>
 <indexterm><primary>EEGGaming.Core/Migrations/20240616172542_unmade the name property a key.Designer.cs</primary></indexterm>
-<programlisting linenumbering="unnumbered"><anchor xml:id="_20240616172542__unmade_01the_01name_01property_01a_01key_8_designer_8cs_source_1l00001"/>00001 <emphasis role="comment">//&#32;&lt;auto-generated&#32;/&gt;</emphasis>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered"><anchor xml:id="_20240616172542__unmade_01the_01name_01property_01a_01key_8_designer_8cs_source_1l00001"/>00001 <emphasis role="comment">//&#32;&lt;auto-generated&#32;/&gt;</emphasis>
 <anchor xml:id="_20240616172542__unmade_01the_01name_01property_01a_01key_8_designer_8cs_source_1l00002"/>00002 <emphasis role="keyword">using&#32;</emphasis>System;
 <anchor xml:id="_20240616172542__unmade_01the_01name_01property_01a_01key_8_designer_8cs_source_1l00003"/>00003 <emphasis role="keyword">using&#32;</emphasis><link linkend="_namespace_e_e_g_gaming_1_1_core_1_1_data">EEGGaming.Core.Data</link>;
 <anchor xml:id="_20240616172542__unmade_01the_01name_01property_01a_01key_8_designer_8cs_source_1l00004"/>00004 <emphasis role="keyword">using&#32;</emphasis>Microsoft.EntityFrameworkCore;

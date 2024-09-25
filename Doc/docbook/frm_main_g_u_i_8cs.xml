@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_frm_main_g_u_i_8cs" xml:lang="en-US">
+<title>EEGGaming.Trainer/frmMainGUI.cs File Reference</title>
+<indexterm><primary>EEGGaming.Trainer/frmMainGUI.cs</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_e_e_g_gaming_1_1_trainer_1_1frm_main_g_u_i">EEGGaming.Trainer.frmMainGUI</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespace_e_e_g_gaming">EEGGaming</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespace_e_e_g_gaming_1_1_trainer">EEGGaming.Trainer</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

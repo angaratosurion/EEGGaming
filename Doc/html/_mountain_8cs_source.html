@@ -27,7 +27,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">EEGGaming And Blinkbird<span id="projectnumber">&#160;0.2.6.0</span>
+   <div id="projectname">EEGGaming And Blinkbird<span id="projectnumber">&#160;0.2.7.5</span>
    </div>
   </td>
  </tr>
@@ -99,73 +99,83 @@ $(function(){initNavTree('_mountain_8cs_source.html',''); initResizable(true); }
   <div class="headertitle"><div class="title">Mountain.cs</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span>Godot;</div>
+<a href="_mountain_8cs.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span>Godot;</div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">using </span>System;</div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">using </span>static System.Formats.Asn1.AsnWriter;</div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
-<div class="foldopen" id="foldopen00005" data-start="{" data-end="};">
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="class_mountain.html">    5</a></span><span class="keyword">public</span> <span class="keyword">partial class </span><a class="code hl_class" href="class_mountain.html">Mountain</a> : Sprite2D</div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>{</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    <span class="comment">// Called when the node enters the scene tree for the first time.</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>  <span class="keyword">public</span>    PackedScene packedScene { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    </div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> _Ready()</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    {</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>        <span class="comment">//timer = World.timer;// (Timer)this.GetNode&lt;Timer&gt;(&quot;/root/World/TmrTimer&quot;);</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>        </div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    }</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="comment">// Called every frame. &#39;delta&#39; is the elapsed time since the previous frame.</span></div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="comment">//Timer timer;</span></div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> _Process(<span class="keywordtype">double</span> delta)</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    {</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        <span class="keywordflow">if</span> (<a class="code hl_class" href="class_world.html">World</a>.player != <span class="keyword">null</span> &amp;&amp; <a class="code hl_class" href="class_world.html">World</a>.player.Visible==<span class="keyword">true</span>)</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        {</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>            <span class="keywordflow">if</span> (GetRect().HasPoint(ToLocal(<a class="code hl_class" href="class_world.html">World</a>.player.Position)) &amp;&amp; <a class="code hl_class" href="class_world.html">World</a>.timer!=<span class="keyword">null</span>)</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>            {</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>                <a class="code hl_class" href="class_world.html">World</a>.player.Hide();</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>                this.packedScene = (PackedScene)GD.Load(<span class="stringliteral">&quot;res://Scenes/GameOver.tscn&quot;</span>);</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>                Window sprite = (Window)this.packedScene.Instantiate();</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>                this.AddSibling(sprite);</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>                <a class="code hl_class" href="class_world.html">World</a>.timer.Stop();</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>                <a class="code hl_class" href="class_menu.html">Menu</a>.SaveDataToDb();</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>                this.Hide();</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>               this.Free();</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> ( GetRect().End.X&lt;= <a class="code hl_class" href="class_world.html">World</a>.player.Position.X)</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>            {</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>                <span class="keywordtype">double</span> score = World.Score + (World.RAISESCOREBY / (40 * 30));</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>                World.Score =  (double)Math.Round(score,3);</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>            }</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        }</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        </div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    }</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>}</div>
+<div class="foldopen" id="foldopen00007" data-start="{" data-end="};">
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="class_mountain.html">    7</a></span><span class="keyword">public</span> <span class="keyword">partial class </span><a class="code hl_class" href="class_mountain.html">Mountain</a> : Sprite2D</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>{</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <span class="comment">// Called when the node enters the scene tree for the first time.</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="class_mountain.html#a9c27e97f1a26c636040b6a7f6bd28164">   10</a></span>  <span class="keyword">public</span>    PackedScene <a class="code hl_property" href="class_mountain.html#a9c27e97f1a26c636040b6a7f6bd28164">packedScene</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    </div>
+<div class="foldopen" id="foldopen00012" data-start="{" data-end="}">
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="class_mountain.html#aaf8eef33d903ed3e49f476d73b3e7eff">   12</a></span>    <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_mountain.html#aaf8eef33d903ed3e49f476d73b3e7eff">_Ready</a>()</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    {</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>        <span class="comment">//timer = World.timer;// (Timer)this.GetNode&lt;Timer&gt;(&quot;/root/World/TmrTimer&quot;);</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>        </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    }</div>
 </div>
-<div class="ttc" id="aclass_menu_html"><div class="ttname"><a href="class_menu.html">Menu</a></div><div class="ttdef"><b>Definition</b> <a href="_menu_8cs_source.html#l00007">Menu.cs:8</a></div></div>
-<div class="ttc" id="aclass_mountain_html"><div class="ttname"><a href="class_mountain.html">Mountain</a></div><div class="ttdef"><b>Definition</b> <a href="#l00005">Mountain.cs:6</a></div></div>
-<div class="ttc" id="aclass_world_html"><div class="ttname"><a href="class_world.html">World</a></div><div class="ttdef"><b>Definition</b> <a href="_world_8cs_source.html#l00008">World.cs:9</a></div></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="comment">// Called every frame. &#39;delta&#39; is the elapsed time since the previous frame.</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="comment">//Timer timer;</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    </div>
+<div class="foldopen" id="foldopen00028" data-start="{" data-end="}">
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="class_mountain.html#a6cfce94e2c1e7e5eddfeb2df09199f01">   28</a></span>    <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_mountain.html#a6cfce94e2c1e7e5eddfeb2df09199f01">_Process</a>(<span class="keywordtype">double</span> delta)</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    {</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        <span class="keywordflow">if</span> (<a class="code hl_class" href="class_world.html">World</a>.<a class="code hl_variable" href="class_world.html#aa8dddc3497efee297a7ceeea83fd988f">player</a> != <span class="keyword">null</span> &amp;&amp; <a class="code hl_class" href="class_world.html">World</a>.<a class="code hl_variable" href="class_world.html#aa8dddc3497efee297a7ceeea83fd988f">player</a>.Visible==<span class="keyword">true</span>)</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        {</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>            <span class="keywordflow">if</span> (GetRect().HasPoint(ToLocal(<a class="code hl_class" href="class_world.html">World</a>.<a class="code hl_variable" href="class_world.html#aa8dddc3497efee297a7ceeea83fd988f">player</a>.Position)) &amp;&amp; <a class="code hl_class" href="class_world.html">World</a>.<a class="code hl_variable" href="class_world.html#a0cf9058ad97c22ccbabfbd13e88898ca">timer</a>!=<span class="keyword">null</span>)</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>            {</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>                <a class="code hl_class" href="class_world.html">World</a>.<a class="code hl_variable" href="class_world.html#aa8dddc3497efee297a7ceeea83fd988f">player</a>.Hide();</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>                this.packedScene = (PackedScene)GD.Load(<span class="stringliteral">&quot;res://Scenes/GameOver.tscn&quot;</span>);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>                Window sprite = (Window)this.<a class="code hl_property" href="class_mountain.html#a9c27e97f1a26c636040b6a7f6bd28164">packedScene</a>.Instantiate();</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>                this.AddSibling(sprite);</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>                <a class="code hl_class" href="class_world.html">World</a>.<a class="code hl_variable" href="class_world.html#a0cf9058ad97c22ccbabfbd13e88898ca">timer</a>.Stop();</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>                <a class="code hl_class" href="class_menu.html">Menu</a>.<a class="code hl_function" href="class_menu.html#ab4749d59147615a8d8289be37cb49a83">SaveDataToDb</a>();</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>                this.Hide();</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>               this.Free();</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> ( GetRect().End.X&lt;= <a class="code hl_class" href="class_world.html">World</a>.<a class="code hl_variable" href="class_world.html#aa8dddc3497efee297a7ceeea83fd988f">player</a>.Position.X)</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            {</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>                <span class="keywordtype">double</span> score = World.Score + (World.RAISESCOREBY / (40 * 30));</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>                World.Score =  (double)Math.Round(score,3);</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            }</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        }</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    }</div>
+</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>}</div>
+</div>
+<div class="ttc" id="aclass_menu_html"><div class="ttname"><a href="class_menu.html">Menu</a></div><div class="ttdoc">The Main menu of the game.</div><div class="ttdef"><b>Definition</b> <a href="_menu_8cs_source.html#l00011">Menu.cs:12</a></div></div>
+<div class="ttc" id="aclass_menu_html_ab4749d59147615a8d8289be37cb49a83"><div class="ttname"><a href="class_menu.html#ab4749d59147615a8d8289be37cb49a83">Menu.SaveDataToDb</a></div><div class="ttdeci">static void SaveDataToDb()</div><div class="ttdoc">Save the data to database.</div><div class="ttdef"><b>Definition</b> <a href="_menu_8cs_source.html#l00026">Menu.cs:26</a></div></div>
+<div class="ttc" id="aclass_mountain_html"><div class="ttname"><a href="class_mountain.html">Mountain</a></div><div class="ttdoc">The main obstacle of the avatar.</div><div class="ttdef"><b>Definition</b> <a href="#l00007">Mountain.cs:8</a></div></div>
+<div class="ttc" id="aclass_mountain_html_a6cfce94e2c1e7e5eddfeb2df09199f01"><div class="ttname"><a href="class_mountain.html#a6cfce94e2c1e7e5eddfeb2df09199f01">Mountain._Process</a></div><div class="ttdeci">override void _Process(double delta)</div><div class="ttdoc">It checks whenver the avatar is in the area of the mounntain and after it kills the avatar it shows t...</div><div class="ttdef"><b>Definition</b> <a href="#l00028">Mountain.cs:28</a></div></div>
+<div class="ttc" id="aclass_mountain_html_a9c27e97f1a26c636040b6a7f6bd28164"><div class="ttname"><a href="class_mountain.html#a9c27e97f1a26c636040b6a7f6bd28164">Mountain.packedScene</a></div><div class="ttdeci">PackedScene packedScene</div><div class="ttdef"><b>Definition</b> <a href="#l00010">Mountain.cs:10</a></div></div>
+<div class="ttc" id="aclass_mountain_html_aaf8eef33d903ed3e49f476d73b3e7eff"><div class="ttname"><a href="class_mountain.html#aaf8eef33d903ed3e49f476d73b3e7eff">Mountain._Ready</a></div><div class="ttdeci">override void _Ready()</div><div class="ttdef"><b>Definition</b> <a href="#l00012">Mountain.cs:12</a></div></div>
+<div class="ttc" id="aclass_world_html"><div class="ttname"><a href="class_world.html">World</a></div><div class="ttdoc">The class representation for the gaming world.</div><div class="ttdef"><b>Definition</b> <a href="_world_8cs_source.html#l00010">World.cs:11</a></div></div>
+<div class="ttc" id="aclass_world_html_a0cf9058ad97c22ccbabfbd13e88898ca"><div class="ttname"><a href="class_world.html#a0cf9058ad97c22ccbabfbd13e88898ca">World.timer</a></div><div class="ttdeci">static Timer timer</div><div class="ttdef"><b>Definition</b> <a href="_world_8cs_source.html#l00020">World.cs:20</a></div></div>
+<div class="ttc" id="aclass_world_html_aa8dddc3497efee297a7ceeea83fd988f"><div class="ttname"><a href="class_world.html#aa8dddc3497efee297a7ceeea83fd988f">World.player</a></div><div class="ttdeci">static Player player</div><div class="ttdef"><b>Definition</b> <a href="_world_8cs_source.html#l00022">World.cs:22</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_e86b53971e3ba467f77fc99bb9652cc9.html">BlinkBird</a></li><li class="navelem"><a class="el" href="dir_9fbe364ff72607eecf0611039dde3612.html">Code</a></li><li class="navelem"><b>Mountain.cs</b></li>
+    <li class="navelem"><a class="el" href="dir_e86b53971e3ba467f77fc99bb9652cc9.html">BlinkBird</a></li><li class="navelem"><a class="el" href="dir_9fbe364ff72607eecf0611039dde3612.html">Code</a></li><li class="navelem"><a class="el" href="_mountain_8cs.html">Mountain.cs</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
   </ul>
 </div>

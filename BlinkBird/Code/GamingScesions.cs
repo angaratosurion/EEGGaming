@@ -6,7 +6,9 @@ using Godot;
 using System;
 using System.Collections.Generic;
 using System.IO;
-
+/// <summary>
+/// Shows the saved gamingsessions
+/// </summary>
 public partial class GamingScesions : Window
 {
 	// Called when the node enters the scene tree for the first time.
@@ -46,12 +48,17 @@ public partial class GamingScesions : Window
 			lstGamingsessions.ItemSelected += LstGamingsessions_ItemSelected;
 		}
 	}
-
+	/// <summary>
+	/// Selects he file to open
+	/// </summary>
+	/// <param name="path"></param>
     private void OpenFileDialog_FileSelected(string path)
     {
 		filename = path;
     }
-
+	/// <summary>
+	/// Imports the selectted csv file to the database
+	/// </summary>
     private void BtnImportCSV_Pressed()
     {
 		OpenFileDialog.Show();
@@ -74,7 +81,10 @@ public partial class GamingScesions : Window
 		}
 		
     }
-
+	/// <summary>
+	/// Selects the gaming Session
+	/// </summary>
+	/// <param name="index"></param>
     private void LstGamingsessions_ItemSelected(long index)
 	{
 		int[] selecteditem = this.lstGamingsessions.GetSelectedItems();
@@ -100,12 +110,17 @@ public partial class GamingScesions : Window
 			
 		}
 	}
+	/// <summary>
+	/// Clsoes the  window
+	/// </summary>
 
 	private void BtnClose_Pressed()
 	{
 		this.Hide();
 	}
-
+	/// <summary>
+	/// Creates grphs in png image format
+	/// </summary>
 	private void BtnMakeGraphs_Pressed()
 	{
 		string filename, folder ,tfilename;
@@ -126,7 +141,9 @@ public partial class GamingScesions : Window
 		Menu.recordManager.MakeGraphs(filename); 
 
 	}
-
+	/// <summary>
+	/// Exports the  gamingsession data to csv
+	/// </summary>
 	private void BtnExportToCSV_Pressed()
 	{
 		string path = Path.Combine(CommonTools.GetAppRootDataFolderAbsolutePath(),CSVdir);
@@ -144,6 +161,9 @@ public partial class GamingScesions : Window
 
 
 	}
+	/// <summary>
+	/// Deletes the selected gamingsession
+	/// </summary>
 	private void BtnDelete_Pressed()
 	{
 

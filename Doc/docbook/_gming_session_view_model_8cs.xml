@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__gming_session_view_model_8cs" xml:lang="en-US">
+<title>EEGGaming.Core/Data/NonDataModels/GmingSessionViewModel.cs File Reference</title>
+<indexterm><primary>EEGGaming.Core/Data/NonDataModels/GmingSessionViewModel.cs</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models_1_1_gming_session_view_model">EEGGaming.Core.Data.NonDataModels.GmingSessionViewModel</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespace_e_e_g_gaming">EEGGaming</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespace_e_e_g_gaming_1_1_core">EEGGaming.Core</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespace_e_e_g_gaming_1_1_core_1_1_data">EEGGaming.Core.Data</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespace_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models">EEGGaming.Core.Data.NonDataModels</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

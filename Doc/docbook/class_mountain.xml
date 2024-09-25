@@ -2,6 +2,11 @@
 <section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_mountain" xml:lang="en-US">
 <title>Mountain Class Reference</title>
 <indexterm><primary>Mountain</primary></indexterm>
+<para>
+
+<para>The main obstacle of the avatar. </para>
+ 
+</para>
 <para>Inheritance diagram for Mountain:    <informalfigure>
         <mediaobject>
             <imageobject>
@@ -16,6 +21,8 @@
             <listitem><para>override void <link linkend="_class_mountain_1aaf8eef33d903ed3e49f476d73b3e7eff">_Ready</link> ()</para>
 </listitem>
             <listitem><para>override void <link linkend="_class_mountain_1a6cfce94e2c1e7e5eddfeb2df09199f01">_Process</link> (double delta)</para>
+
+<para>It checks whenver the avatar is in the area of the mounntain and after it kills the avatar it shows the gameover screen or it increases the score. </para>
 </listitem>
         </itemizedlist>
 </simplesect>
@@ -29,8 +36,10 @@
 </simplesect>
 <section>
 <title>Detailed Description</title>
+
+<para>The main obstacle of the avatar. </para>
 <para>
-Definition at line <link linkend="__mountain_8cs_source_1l00005">5</link> of file <link linkend="__mountain_8cs_source">Mountain.cs</link>.</para>
+Definition at line <link linkend="__mountain_8cs_source_1l00007">7</link> of file <link linkend="__mountain_8cs_source">Mountain.cs</link>.</para>
 </section>
 <section>
 <title>Member Function Documentation</title>
@@ -39,14 +48,38 @@ Definition at line <link linkend="__mountain_8cs_source_1l00005">5</link> of fil
 <indexterm><primary>_Process</primary><secondary>Mountain</secondary></indexterm>
 <indexterm><primary>Mountain</primary><secondary>_Process</secondary></indexterm>
 <para><computeroutput>override void Mountain._Process (double delta)</computeroutput></para><para>
-Definition at line <link linkend="__mountain_8cs_source_1l00019">19</link> of file <link linkend="__mountain_8cs_source">Mountain.cs</link>.</para>
+
+<para>It checks whenver the avatar is in the area of the mounntain and after it kills the avatar it shows the gameover screen or it increases the score. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>delta</entry><entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line <link linkend="__mountain_8cs_source_1l00028">28</link> of file <link linkend="__mountain_8cs_source">Mountain.cs</link>.</para>
 </section>
 <anchor xml:id="_class_mountain_1aaf8eef33d903ed3e49f476d73b3e7eff"/><section>
     <title>_Ready()</title>
 <indexterm><primary>_Ready</primary><secondary>Mountain</secondary></indexterm>
 <indexterm><primary>Mountain</primary><secondary>_Ready</secondary></indexterm>
 <para><computeroutput>override void Mountain._Ready ( )</computeroutput></para><para>
-Definition at line <link linkend="__mountain_8cs_source_1l00010">10</link> of file <link linkend="__mountain_8cs_source">Mountain.cs</link>.</para>
+Definition at line <link linkend="__mountain_8cs_source_1l00012">12</link> of file <link linkend="__mountain_8cs_source">Mountain.cs</link>.</para>
 </section>
 </section>
 <section>
@@ -56,9 +89,9 @@ Definition at line <link linkend="__mountain_8cs_source_1l00010">10</link> of fi
 <indexterm><primary>packedScene</primary><secondary>Mountain</secondary></indexterm>
 <indexterm><primary>Mountain</primary><secondary>packedScene</secondary></indexterm>
 <para><computeroutput>PackedScene Mountain.packedScene<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
-Definition at line <link linkend="__mountain_8cs_source_1l00008">8</link> of file <link linkend="__mountain_8cs_source">Mountain.cs</link>.</para>
+Definition at line <link linkend="__mountain_8cs_source_1l00010">10</link> of file <link linkend="__mountain_8cs_source">Mountain.cs</link>.</para>
 </section>
 <para>
 The documentation for this class was generated from the following file:</para>
-BlinkBird/Code/Mountain.cs</section>
+BlinkBird/Code/<link linkend="__mountain_8cs">Mountain.cs</link></section>
 </section>

@@ -2,7 +2,7 @@
 <section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_20240607134527__removedmode_8cs_source" xml:lang="en-US">
 <title>20240607134527_removedmode.cs</title>
 <indexterm><primary>EEGGaming.Core/Migrations/20240607134527_removedmode.cs</primary></indexterm>
-<programlisting linenumbering="unnumbered"><anchor xml:id="_20240607134527__removedmode_8cs_source_1l00001"/>00001 <emphasis role="keyword">using&#32;</emphasis>Microsoft.EntityFrameworkCore.Migrations;
+Go to the documentation of this file.<programlisting linenumbering="unnumbered"><anchor xml:id="_20240607134527__removedmode_8cs_source_1l00001"/>00001 <emphasis role="keyword">using&#32;</emphasis>Microsoft.EntityFrameworkCore.Migrations;
 <anchor xml:id="_20240607134527__removedmode_8cs_source_1l00002"/>00002 
 <anchor xml:id="_20240607134527__removedmode_8cs_source_1l00003"/>00003 <emphasis role="preprocessor">#nullable&#32;disable</emphasis>
 <anchor xml:id="_20240607134527__removedmode_8cs_source_1l00004"/>00004 

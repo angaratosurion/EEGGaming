@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_1b21e5647361d8a94b113544cab5ef36" xml:lang="en-US">
+<title>EEGGaming.Core/Data Directory Reference</title>
+<indexterm><primary>EEGGaming.Core/Data Directory Reference</primary></indexterm>
+<simplesect>
+    <title>Directories    </title>
+        <itemizedlist>
+            <listitem><para>directory <link linkend="_dir_a82103e4154a47d1d342ceba1325d9b4">Models</link></para>
+</listitem>
+            <listitem><para>directory <link linkend="_dir_44ce50d4ad68b8c710a118649f1f1bd5">NonDataModels</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Files    </title>
+        <itemizedlist>
+            <listitem><para>file <link linkend="__e_e_g_gaming_db_context_8cs">EEGGamingDbContext.cs</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

@@ -17,7 +17,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="BlinkBird/Code/Player.cs" line="9" column="20" bodyfile="BlinkBird/Code/Player.cs" bodystart="9" bodyend="-1"/>
+        <location file="BlinkBird/Code/Player.cs" line="12" column="20" bodyfile="BlinkBird/Code/Player.cs" bodystart="12" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_player_1a534050be6eff4fb0ab280c75eb3c43e4" prot="public" static="yes" mutable="no">
         <type>const float</type>
@@ -32,7 +32,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="BlinkBird/Code/Player.cs" line="10" column="24" bodyfile="BlinkBird/Code/Player.cs" bodystart="10" bodyend="-1"/>
+        <location file="BlinkBird/Code/Player.cs" line="13" column="24" bodyfile="BlinkBird/Code/Player.cs" bodystart="13" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="private-attrib">
@@ -48,7 +48,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="BlinkBird/Code/Player.cs" line="12" column="17" bodyfile="BlinkBird/Code/Player.cs" bodystart="12" bodyend="-1"/>
+        <location file="BlinkBird/Code/Player.cs" line="15" column="17" bodyfile="BlinkBird/Code/Player.cs" bodystart="15" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -64,7 +64,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="BlinkBird/Code/Player.cs" line="14" column="22" bodyfile="BlinkBird/Code/Player.cs" bodystart="14" bodyend="17"/>
+        <location file="BlinkBird/Code/Player.cs" line="17" column="22" bodyfile="BlinkBird/Code/Player.cs" bodystart="17" bodyend="20"/>
       </memberdef>
       <memberdef kind="function" id="class_player_1a81db5dd46c343160498d29f6fa42d611" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>override void</type>
@@ -77,16 +77,27 @@
           <declname>delta</declname>
         </param>
         <briefdescription>
+<para>checks whenever an eye blink occured and moves the avatar to closer to the top </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>delta</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
 <para>14832</para>
         </inbodydescription>
-        <location file="BlinkBird/Code/Player.cs" line="22" column="22" bodyfile="BlinkBird/Code/Player.cs" bodystart="22" bodyend="76"/>
+        <location file="BlinkBird/Code/Player.cs" line="29" column="22" bodyfile="BlinkBird/Code/Player.cs" bodystart="29" bodyend="83"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
+<para>Class representation of the avatar. </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
@@ -112,7 +123,7 @@
         <label>Sprite2D</label>
       </node>
     </collaborationgraph>
-    <location file="BlinkBird/Code/Player.cs" line="6" column="15" bodyfile="BlinkBird/Code/Player.cs" bodystart="7" bodyend="77"/>
+    <location file="BlinkBird/Code/Player.cs" line="9" column="15" bodyfile="BlinkBird/Code/Player.cs" bodystart="10" bodyend="84"/>
     <listofallmembers>
       <member refid="class_player_1a81db5dd46c343160498d29f6fa42d611" prot="public" virt="non-virtual"><scope>Player</scope><name>_Process</name></member>
       <member refid="class_player_1ae192a478a80f0e93e01339d62cdd6f6d" prot="public" virt="non-virtual"><scope>Player</scope><name>_Ready</name></member>

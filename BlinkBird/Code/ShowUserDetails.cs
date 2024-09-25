@@ -3,7 +3,9 @@ using EEGGaming.Core.Managers;
 using Godot;
 using System;
 using System.Collections.Generic;
-
+/// <summary>
+/// Shows the details fo a user
+/// </summary>
 public partial class ShowUserDetails : Control//Node2D
 {
 	LineEdit txtAge;
@@ -17,6 +19,9 @@ public partial class ShowUserDetails : Control//Node2D
 	Button btnEdit;
 	PackedScene packedScene;
 	// Called when the node enters the scene tree for the first time.
+	/// <summary>
+	/// Filsl the objects with user's info
+	/// </summary>
 	public override void _Ready()
 	{
 		this.isInEditMode = false;
@@ -76,7 +81,9 @@ public partial class ShowUserDetails : Control//Node2D
         }
 
     }
-
+	/// <summary>
+	/// shows the gaming sessions
+	/// </summary>
     private void BtnGamingSessions_Pressed()
     {
         string usernmae = this.optUsers.GetItemText(optUsers.Selected);
@@ -88,14 +95,18 @@ public partial class ShowUserDetails : Control//Node2D
         this.Hide();
 
     }
-
+	/// <summary>
+	/// deletes the slected user
+	/// </summary>
     private void BtnDelete_Pressed()
     {
         string usernmae = this.optUsers.GetItemText(optUsers.Selected);
 		this.userManager.Delete(usernmae);
 		this.Hide();
     }
-
+	/// <summary>
+	/// Selects the user
+	/// </summary>
     private void BtnSelectuser_Pressed()
 	{
 		string usernmae = this.optUsers.GetItemText(optUsers.Selected);
@@ -104,7 +115,9 @@ public partial class ShowUserDetails : Control//Node2D
 		this.Hide();
 
 	}
-
+	/// <summary>
+	/// Saves the new info to the database
+	/// </summary>
 	private void BtnEdit_Pressed()
 	{
 		string usernmae = this.optUsers.GetItemText(optUsers.Selected);
@@ -118,7 +131,9 @@ public partial class ShowUserDetails : Control//Node2D
 		this.Hide();
 
 	}
-
+	/// <summary>
+	/// cancels and clsoes the window
+	/// </summary>
 	private void BtnCancel_Pressed()
 	{
 		//Control mainwin = (Control)this.GetNode<Control>("/root/MainWin");
@@ -131,7 +146,9 @@ public partial class ShowUserDetails : Control//Node2D
 		
 
 	}
-
+	/// <summary>
+	/// Gives the ability to edit user's info
+	/// </summary>
 	private void BtnEnableEdit_Pressed()
 	{
 		this.txtAge.Editable = true;
@@ -140,7 +157,10 @@ public partial class ShowUserDetails : Control//Node2D
 		this.isInEditMode = true;
 		
 	}
-
+	/// <summary>
+	/// Sets the user to the activeoption
+	/// </summary>
+	/// <param name="index"></param>
 	private void OptUsers_ItemSelected(long index)
 	{
 		string usernmae=this.optUsers.GetItemText((int)index);

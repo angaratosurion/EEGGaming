@@ -11,12 +11,13 @@
         <name>_Ready</name>
         <qualifiedname>Camera._Ready</qualifiedname>
         <briefdescription>
+<para>Called when the node enters the scene tree for the first time. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="BlinkBird/Code/Camera.cs" line="9" column="26" bodyfile="BlinkBird/Code/Camera.cs" bodystart="9" bodyend="19"/>
+        <location file="BlinkBird/Code/Camera.cs" line="13" column="26" bodyfile="BlinkBird/Code/Camera.cs" bodystart="13" bodyend="19"/>
       </memberdef>
       <memberdef kind="function" id="class_camera_1ad7352cad7a9773f186fe0e341e181e68" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>override void</type>
@@ -29,15 +30,26 @@
           <declname>delta</declname>
         </param>
         <briefdescription>
+<para>Moves the camera and occurs when the frame is produced. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>delta</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="BlinkBird/Code/Camera.cs" line="22" column="22" bodyfile="BlinkBird/Code/Camera.cs" bodystart="22" bodyend="30"/>
+        <location file="BlinkBird/Code/Camera.cs" line="25" column="22" bodyfile="BlinkBird/Code/Camera.cs" bodystart="25" bodyend="33"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
+<para>This class controls the <ref refid="class_camera" kindref="compound">Camera</ref> of the Game. </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
@@ -63,7 +75,7 @@
         <label>Camera2D</label>
       </node>
     </collaborationgraph>
-    <location file="BlinkBird/Code/Camera.cs" line="4" column="15" bodyfile="BlinkBird/Code/Camera.cs" bodystart="5" bodyend="31"/>
+    <location file="BlinkBird/Code/Camera.cs" line="6" column="15" bodyfile="BlinkBird/Code/Camera.cs" bodystart="7" bodyend="34"/>
     <listofallmembers>
       <member refid="class_camera_1ad7352cad7a9773f186fe0e341e181e68" prot="public" virt="non-virtual"><scope>Camera</scope><name>_Process</name></member>
       <member refid="class_camera_1a0b82ad1b9831e861ab65711e220d5441" prot="public" virt="non-virtual"><scope>Camera</scope><name>_Ready</name></member>

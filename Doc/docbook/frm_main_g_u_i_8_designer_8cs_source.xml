@@ -2,7 +2,7 @@
 <section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_frm_main_g_u_i_8_designer_8cs_source" xml:lang="en-US">
 <title>frmMainGUI.Designer.cs</title>
 <indexterm><primary>EEGGaming.Trainer/frmMainGUI.Designer.cs</primary></indexterm>
-<programlisting linenumbering="unnumbered"><anchor xml:id="_frm_main_g_u_i_8_designer_8cs_source_1l00001"/>00001 <emphasis role="keyword">namespace&#32;</emphasis><link linkend="_namespace_e_e_g_gaming_1_1_trainer">EEGGaming.Trainer</link>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered"><anchor xml:id="_frm_main_g_u_i_8_designer_8cs_source_1l00001"/>00001 <emphasis role="keyword">namespace&#32;</emphasis><link linkend="_namespace_e_e_g_gaming_1_1_trainer">EEGGaming.Trainer</link>
 <anchor xml:id="_frm_main_g_u_i_8_designer_8cs_source_1l00002"/>00002 {
 <anchor xml:id="_frm_main_g_u_i_8_designer_8cs_source_1l00003"/><link linkend="_class_e_e_g_gaming_1_1_trainer_1_1frm_main_g_u_i">00003</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">partial&#32;class&#32;</emphasis><link linkend="_class_e_e_g_gaming_1_1_trainer_1_1frm_main_g_u_i">frmMainGUI</link>
 <anchor xml:id="_frm_main_g_u_i_8_designer_8cs_source_1l00004"/>00004 &#32;&#32;&#32;&#32;{

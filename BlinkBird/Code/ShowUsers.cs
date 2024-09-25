@@ -2,7 +2,9 @@ using EEGGaming.Core.Data.Models;
 using EEGGaming.Core.Managers;
 using Godot;
 using System;
-
+/// <summary>
+/// Shows all the user saved in the database
+/// </summary>
 public partial class ShowUsers : Window
 {
     // Called when the node enters the scene tree for the first time.
@@ -35,12 +37,14 @@ public partial class ShowUsers : Window
 
 
     }
-
+    //closes the window
     private void BtnCancel_Pressed()
     {
         this.Hide();
     }
-
+    /// <summary>
+    /// Shows the user creation window
+    /// </summary>
     private void BtnAddNew_Pressed()
     {
         NewUserDetailsPackedScene = (PackedScene)GD.Load("res://Scenes/AddUserDetails.tscn");
@@ -48,7 +52,9 @@ public partial class ShowUsers : Window
         this.AddSibling(control);
         this.Hide();
     }
-
+    /// <summary>
+    /// shows the user details window
+    /// </summary>
     private void BtnShowUserDetails_Pressed()
     {
         SelectUserScene = (PackedScene)GD.Load("res://Scenes/ShowUserDetails.tscn");
@@ -57,7 +63,10 @@ public partial class ShowUsers : Window
         this.Hide();
         
     }
-
+    /// <summary>
+    /// makes ti's seected item to be te active user
+    /// </summary>
+    /// <param name="index"></param>
     private void LstUser_ItemSelected(long index)
 	{
 

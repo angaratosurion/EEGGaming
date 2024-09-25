@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__h_sdr_horizontal_speed_8cs" xml:lang="en-US">
+<title>BlinkBird/Code/HSdrHorizontalSpeed.cs File Reference</title>
+<indexterm><primary>BlinkBird/Code/HSdrHorizontalSpeed.cs</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_h_sdr_horizontal_speed">HSdrHorizontalSpeed</link></para>
+
+<para>This sldier controls the speed the scenec and the avatar moves. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

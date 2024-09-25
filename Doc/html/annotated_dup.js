@@ -44,19 +44,18 @@ var annotated_dup =
         [ "frmMainGUI", "class_e_e_g_gaming_1_1_trainer_1_1frm_main_g_u_i.html", "class_e_e_g_gaming_1_1_trainer_1_1frm_main_g_u_i" ]
       ] ]
     ] ],
-    [ "About", "class_about.html", null ],
-    [ "AddUserDetails", "class_add_user_details.html", null ],
-    [ "Camera", "class_camera.html", null ],
-    [ "GameOver", "class_game_over.html", null ],
+    [ "About", "class_about.html", "class_about" ],
+    [ "AddUserDetails", "class_add_user_details.html", "class_add_user_details" ],
+    [ "Camera", "class_camera.html", "class_camera" ],
+    [ "GameOver", "class_game_over.html", "class_game_over" ],
     [ "GamingScesions", "class_gaming_scesions.html", null ],
-    [ "HSdrHorizontalSpeed", "class_h_sdr_horizontal_speed.html", null ],
-    [ "Menu", "class_menu.html", null ],
-    [ "Mountain", "class_mountain.html", null ],
+    [ "HSdrHorizontalSpeed", "class_h_sdr_horizontal_speed.html", "class_h_sdr_horizontal_speed" ],
+    [ "Menu", "class_menu.html", "class_menu" ],
+    [ "Mountain", "class_mountain.html", "class_mountain" ],
     [ "Mountains", "class_mountains.html", null ],
     [ "Player", "class_player.html", "class_player" ],
-    [ "ScoreandTime", "class_scoreand_time.html", null ],
-    [ "ShowUserDetails", "class_show_user_details.html", null ],
+    [ "ScoreandTime", "class_scoreand_time.html", "class_scoreand_time" ],
+    [ "ShowUserDetails", "class_show_user_details.html", "class_show_user_details" ],
     [ "ShowUsers", "class_show_users.html", null ],
-    [ "Sky", "class_sky.html", null ],
     [ "World", "class_world.html", null ]
 ];

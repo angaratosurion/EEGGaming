@@ -9,6 +9,9 @@
     <programlisting>
 <codeline><highlight class="normal">#<sp/>EEGGaming</highlight></codeline>
 <codeline><highlight class="normal"><sp/>a<sp/>library<sp/>and<sp/>simple<sp/>flappybird<sp/>clone<sp/>that<sp/>is<sp/>controleld<sp/>by<sp/>the<sp/>BrainBit<sp/>Headset</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Todo<sp/></highlight></codeline>
+<codeline><highlight class="normal">Finish<sp/>the<sp/>documentation<sp/>for<sp/>the<sp/>blinkbird<sp/>game</highlight></codeline>
     </programlisting>
     <location file="README.md"/>
   </compounddef>

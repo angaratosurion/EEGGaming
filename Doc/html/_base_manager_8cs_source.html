@@ -27,7 +27,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">EEGGaming And Blinkbird<span id="projectnumber">&#160;0.2.6.0</span>
+   <div id="projectname">EEGGaming And Blinkbird<span id="projectnumber">&#160;0.2.7.5</span>
    </div>
   </td>
  </tr>
@@ -99,7 +99,7 @@ $(function(){initNavTree('_base_manager_8cs_source.html',''); initResizable(true
   <div class="headertitle"><div class="title">BaseManager.cs</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_e_e_g_gaming_1_1_core_1_1_data.html">EEGGaming.Core.Data</a>;</div>
+<a href="_base_manager_8cs.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_e_e_g_gaming_1_1_core_1_1_data.html">EEGGaming.Core.Data</a>;</div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_e_e_g_gaming_1_1_core_1_1_tools.html">EEGGaming.Core.Tools</a>;</div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">using </span>Microsoft.EntityFrameworkCore;</div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">using </span>System;</div>
@@ -114,7 +114,8 @@ $(function(){initNavTree('_base_manager_8cs_source.html',''); initResizable(true
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_base_manager.html">   16</a></span>    <span class="keyword">public</span>  <span class="keyword">class </span><a class="code hl_class" href="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_base_manager.html">BaseManager</a></div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    {</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_base_manager.html#ab03ecddd3cb836526101a168e1b408ef">   21</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_e_e_g_gaming_1_1_core_1_1_data_1_1_e_e_g_gaming_db_context.html">EEGGamingDbContext</a> DbContext { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        <span class="keyword">public</span> <a class="code hl_class" href="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_base_manager.html">BaseManager</a>() </div>
+<div class="foldopen" id="foldopen00022" data-start="{" data-end="}">
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_base_manager.html#a0698b890b345d2fe9f6b7d0bf762af70">   22</a></span>        <span class="keyword">public</span> <a class="code hl_function" href="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_base_manager.html#a0698b890b345d2fe9f6b7d0bf762af70">BaseManager</a>() </div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        {</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>            <span class="keywordflow">if</span> (Directory.Exists(<a class="code hl_class" href="class_e_e_g_gaming_1_1_core_1_1_tools_1_1_common_tools.html">CommonTools</a>.<a class="code hl_function" href="class_e_e_g_gaming_1_1_core_1_1_tools_1_1_common_tools.html#a3079777a63080f7f88a5f28bb8ac786f">GetAppRootDataFolderAbsolutePath</a>()) == <span class="keyword">false</span>)</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>            {</div>
@@ -127,6 +128,7 @@ $(function(){initNavTree('_base_manager_8cs_source.html',''); initResizable(true
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        </div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        }</div>
+</div>
 <div class="foldopen" id="foldopen00038" data-start="{" data-end="}">
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_base_manager.html#a9248c1be1118bf2a1da15a2ba731a4fc">   38</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_base_manager.html#a9248c1be1118bf2a1da15a2ba731a4fc">CreateDatabase</a>()</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        {</div>
@@ -210,6 +212,7 @@ $(function(){initNavTree('_base_manager_8cs_source.html',''); initResizable(true
 <div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>}</div>
 <div class="ttc" id="aclass_e_e_g_gaming_1_1_core_1_1_data_1_1_e_e_g_gaming_db_context_html"><div class="ttname"><a href="class_e_e_g_gaming_1_1_core_1_1_data_1_1_e_e_g_gaming_db_context.html">EEGGaming.Core.Data.EEGGamingDbContext</a></div><div class="ttdoc">DbContext of the EEGGaming library.</div><div class="ttdef"><b>Definition</b> <a href="_e_e_g_gaming_db_context_8cs_source.html#l00015">EEGGamingDbContext.cs:16</a></div></div>
 <div class="ttc" id="aclass_e_e_g_gaming_1_1_core_1_1_managers_1_1_base_manager_html"><div class="ttname"><a href="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_base_manager.html">EEGGaming.Core.Managers.BaseManager</a></div><div class="ttdoc">The class that includes the mostly common methods,properties and fuctions of the Manager classes.</div><div class="ttdef"><b>Definition</b> <a href="#l00016">BaseManager.cs:17</a></div></div>
+<div class="ttc" id="aclass_e_e_g_gaming_1_1_core_1_1_managers_1_1_base_manager_html_a0698b890b345d2fe9f6b7d0bf762af70"><div class="ttname"><a href="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_base_manager.html#a0698b890b345d2fe9f6b7d0bf762af70">EEGGaming.Core.Managers.BaseManager.BaseManager</a></div><div class="ttdeci">BaseManager()</div><div class="ttdef"><b>Definition</b> <a href="#l00022">BaseManager.cs:22</a></div></div>
 <div class="ttc" id="aclass_e_e_g_gaming_1_1_core_1_1_managers_1_1_base_manager_html_a7c286778992f94800563ebdbc55ff778"><div class="ttname"><a href="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_base_manager.html#a7c286778992f94800563ebdbc55ff778">EEGGaming.Core.Managers.BaseManager.PredictLastId</a></div><div class="ttdeci">int PredictLastId(string tablename)</div><div class="ttdoc">It predicts the last value of the id's property from the given table's name.</div><div class="ttdef"><b>Definition</b> <a href="#l00049">BaseManager.cs:49</a></div></div>
 <div class="ttc" id="aclass_e_e_g_gaming_1_1_core_1_1_managers_1_1_base_manager_html_a9248c1be1118bf2a1da15a2ba731a4fc"><div class="ttname"><a href="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_base_manager.html#a9248c1be1118bf2a1da15a2ba731a4fc">EEGGaming.Core.Managers.BaseManager.CreateDatabase</a></div><div class="ttdeci">void CreateDatabase()</div><div class="ttdoc">Creates the Database.</div><div class="ttdef"><b>Definition</b> <a href="#l00038">BaseManager.cs:38</a></div></div>
 <div class="ttc" id="aclass_e_e_g_gaming_1_1_core_1_1_tools_1_1_common_tools_html"><div class="ttname"><a href="class_e_e_g_gaming_1_1_core_1_1_tools_1_1_common_tools.html">EEGGaming.Core.Tools.CommonTools</a></div><div class="ttdoc">Class with some common tools.</div><div class="ttdef"><b>Definition</b> <a href="_common_tools_8cs_source.html#l00017">CommonTools.cs:18</a></div></div>
@@ -224,7 +227,7 @@ $(function(){initNavTree('_base_manager_8cs_source.html',''); initResizable(true
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_80a49316f0d2cf83acbe767166d325c0.html">EEGGaming.Core</a></li><li class="navelem"><a class="el" href="dir_98615e7510bb23fa500617d387397243.html">Managers</a></li><li class="navelem"><b>BaseManager.cs</b></li>
+    <li class="navelem"><a class="el" href="dir_80a49316f0d2cf83acbe767166d325c0.html">EEGGaming.Core</a></li><li class="navelem"><a class="el" href="dir_98615e7510bb23fa500617d387397243.html">Managers</a></li><li class="navelem"><a class="el" href="_base_manager_8cs.html">BaseManager.cs</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
   </ul>
 </div>

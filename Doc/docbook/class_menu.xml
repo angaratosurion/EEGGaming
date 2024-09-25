@@ -2,6 +2,11 @@
 <section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_menu" xml:lang="en-US">
 <title>Menu Class Reference</title>
 <indexterm><primary>Menu</primary></indexterm>
+<para>
+
+<para>The Main menu of the game. </para>
+ 
+</para>
 <para>Inheritance diagram for Menu:    <informalfigure>
         <mediaobject>
             <imageobject>
@@ -14,10 +19,16 @@
     <title>Public Member Functions    </title>
         <itemizedlist>
             <listitem><para>override void <link linkend="_class_menu_1a8749d8124f3d908e7dc30d71c08f6e28">_Ready</link> ()</para>
+
+<para>Creates the winndow. </para>
 </listitem>
             <listitem><para>override void <link linkend="_class_menu_1aa5214bdaf8eaaa4ea25d41c57331c221">_Process</link> (double delta)</para>
+
+<para>checks whever a user is selected or anEEG headest is conencted </para>
 </listitem>
             <listitem><para>void <link linkend="_class_menu_1a9a2ffafb1592a5438156816758e2bd64">bbtnNewGame_pressed</link> ()</para>
+
+<para>Starts new game. </para>
 </listitem>
         </itemizedlist>
 </simplesect>
@@ -25,6 +36,8 @@
     <title>Static Public Member Functions    </title>
         <itemizedlist>
             <listitem><para>static void <link linkend="_class_menu_1ab4749d59147615a8d8289be37cb49a83">SaveDataToDb</link> ()</para>
+
+<para>Save the data to database. </para>
 </listitem>
         </itemizedlist>
 </simplesect>
@@ -39,12 +52,16 @@
 </listitem>
             <listitem><para>static <link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_user">User</link> <link linkend="_class_menu_1a2cdd0aa13fc2a0c1a0f2fdb2195c475c">SelectedUser</link> = null</para>
 </listitem>
+            <listitem><para>static bool <link linkend="_class_menu_1a0f5f753616914a269e9acad62bee9e1d">ignoreUserselectionandconstateofdevice</link> = false</para>
+</listitem>
         </itemizedlist>
 </simplesect>
 <section>
 <title>Detailed Description</title>
+
+<para>The Main menu of the game. </para>
 <para>
-Definition at line <link linkend="__menu_8cs_source_1l00007">7</link> of file <link linkend="__menu_8cs_source">Menu.cs</link>.</para>
+Definition at line <link linkend="__menu_8cs_source_1l00011">11</link> of file <link linkend="__menu_8cs_source">Menu.cs</link>.</para>
 </section>
 <section>
 <title>Member Function Documentation</title>
@@ -53,28 +70,64 @@ Definition at line <link linkend="__menu_8cs_source_1l00007">7</link> of file <l
 <indexterm><primary>_Process</primary><secondary>Menu</secondary></indexterm>
 <indexterm><primary>Menu</primary><secondary>_Process</secondary></indexterm>
 <para><computeroutput>override void Menu._Process (double delta)</computeroutput></para><para>
-Definition at line <link linkend="__menu_8cs_source_1l00140">140</link> of file <link linkend="__menu_8cs_source">Menu.cs</link>.</para>
+
+<para>checks whever a user is selected or anEEG headest is conencted </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>delta</entry><entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line <link linkend="__menu_8cs_source_1l00178">178</link> of file <link linkend="__menu_8cs_source">Menu.cs</link>.</para>
 </section>
 <anchor xml:id="_class_menu_1a8749d8124f3d908e7dc30d71c08f6e28"/><section>
     <title>_Ready()</title>
 <indexterm><primary>_Ready</primary><secondary>Menu</secondary></indexterm>
 <indexterm><primary>Menu</primary><secondary>_Ready</secondary></indexterm>
 <para><computeroutput>override void Menu._Ready ( )</computeroutput></para><para>
-Definition at line <link linkend="__menu_8cs_source_1l00027">27</link> of file <link linkend="__menu_8cs_source">Menu.cs</link>.</para>
+
+<para>Creates the winndow. </para>
+</para>
+<para>
+Definition at line <link linkend="__menu_8cs_source_1l00038">38</link> of file <link linkend="__menu_8cs_source">Menu.cs</link>.</para>
 </section>
 <anchor xml:id="_class_menu_1a9a2ffafb1592a5438156816758e2bd64"/><section>
     <title>bbtnNewGame_pressed()</title>
 <indexterm><primary>bbtnNewGame_pressed</primary><secondary>Menu</secondary></indexterm>
 <indexterm><primary>Menu</primary><secondary>bbtnNewGame_pressed</secondary></indexterm>
 <para><computeroutput>void Menu.bbtnNewGame_pressed ( )</computeroutput></para><para>
-Definition at line <link linkend="__menu_8cs_source_1l00155">155</link> of file <link linkend="__menu_8cs_source">Menu.cs</link>.</para>
+
+<para>Starts new game. </para>
+</para>
+<para>
+Definition at line <link linkend="__menu_8cs_source_1l00196">196</link> of file <link linkend="__menu_8cs_source">Menu.cs</link>.</para>
 </section>
 <anchor xml:id="_class_menu_1ab4749d59147615a8d8289be37cb49a83"/><section>
     <title>SaveDataToDb()</title>
 <indexterm><primary>SaveDataToDb</primary><secondary>Menu</secondary></indexterm>
 <indexterm><primary>Menu</primary><secondary>SaveDataToDb</secondary></indexterm>
 <para><computeroutput>static void Menu.SaveDataToDb ( )<computeroutput>[static]</computeroutput></computeroutput></para><para>
-Definition at line <link linkend="__menu_8cs_source_1l00018">18</link> of file <link linkend="__menu_8cs_source">Menu.cs</link>.</para>
+
+<para>Save the data to database. </para>
+</para>
+<para>
+Definition at line <link linkend="__menu_8cs_source_1l00026">26</link> of file <link linkend="__menu_8cs_source">Menu.cs</link>.</para>
 </section>
 </section>
 <section>
@@ -84,30 +137,37 @@ Definition at line <link linkend="__menu_8cs_source_1l00018">18</link> of file <
 <indexterm><primary>gamingSesionManager</primary><secondary>Menu</secondary></indexterm>
 <indexterm><primary>Menu</primary><secondary>gamingSesionManager</secondary></indexterm>
 <para><computeroutput><link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_gaming_sesion_manager">GamingSesionManager</link> Menu.gamingSesionManager = new <link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_gaming_sesion_manager">GamingSesionManager</link>()<computeroutput>[static]</computeroutput></computeroutput></para><para>
-Definition at line <link linkend="__menu_8cs_source_1l00013">13</link> of file <link linkend="__menu_8cs_source">Menu.cs</link>.</para>
+Definition at line <link linkend="__menu_8cs_source_1l00017">17</link> of file <link linkend="__menu_8cs_source">Menu.cs</link>.</para>
+</section>
+<anchor xml:id="_class_menu_1a0f5f753616914a269e9acad62bee9e1d"/><section>
+    <title>ignoreUserselectionandconstateofdevice</title>
+<indexterm><primary>ignoreUserselectionandconstateofdevice</primary><secondary>Menu</secondary></indexterm>
+<indexterm><primary>Menu</primary><secondary>ignoreUserselectionandconstateofdevice</secondary></indexterm>
+<para><computeroutput>bool Menu.ignoreUserselectionandconstateofdevice = false<computeroutput>[static]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__menu_8cs_source_1l00022">22</link> of file <link linkend="__menu_8cs_source">Menu.cs</link>.</para>
 </section>
 <anchor xml:id="_class_menu_1aa005ebd5a38e50bc52accdb70c081008"/><section>
     <title>recordManager</title>
 <indexterm><primary>recordManager</primary><secondary>Menu</secondary></indexterm>
 <indexterm><primary>Menu</primary><secondary>recordManager</secondary></indexterm>
 <para><computeroutput><link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager">BrainWaveRecordManager</link> Menu.recordManager = new <link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager">BrainWaveRecordManager</link>()<computeroutput>[static]</computeroutput></computeroutput></para><para>
-Definition at line <link linkend="__menu_8cs_source_1l00012">12</link> of file <link linkend="__menu_8cs_source">Menu.cs</link>.</para>
+Definition at line <link linkend="__menu_8cs_source_1l00016">16</link> of file <link linkend="__menu_8cs_source">Menu.cs</link>.</para>
 </section>
 <anchor xml:id="_class_menu_1a2cdd0aa13fc2a0c1a0f2fdb2195c475c"/><section>
     <title>SelectedUser</title>
 <indexterm><primary>SelectedUser</primary><secondary>Menu</secondary></indexterm>
 <indexterm><primary>Menu</primary><secondary>SelectedUser</secondary></indexterm>
 <para><computeroutput><link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_user">User</link> Menu.SelectedUser = null<computeroutput>[static]</computeroutput></computeroutput></para><para>
-Definition at line <link linkend="__menu_8cs_source_1l00016">16</link> of file <link linkend="__menu_8cs_source">Menu.cs</link>.</para>
+Definition at line <link linkend="__menu_8cs_source_1l00021">21</link> of file <link linkend="__menu_8cs_source">Menu.cs</link>.</para>
 </section>
 <anchor xml:id="_class_menu_1a6aa76feb83b7956cd553c35b5e926f4e"/><section>
     <title>userManager</title>
 <indexterm><primary>userManager</primary><secondary>Menu</secondary></indexterm>
 <indexterm><primary>Menu</primary><secondary>userManager</secondary></indexterm>
 <para><computeroutput><link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_user_manager">UserManager</link> Menu.userManager = new <link linkend="_class_e_e_g_gaming_1_1_core_1_1_managers_1_1_user_manager">UserManager</link>()<computeroutput>[static]</computeroutput></computeroutput></para><para>
-Definition at line <link linkend="__menu_8cs_source_1l00014">14</link> of file <link linkend="__menu_8cs_source">Menu.cs</link>.</para>
+Definition at line <link linkend="__menu_8cs_source_1l00018">18</link> of file <link linkend="__menu_8cs_source">Menu.cs</link>.</para>
 </section>
 <para>
 The documentation for this class was generated from the following file:</para>
-BlinkBird/Code/Menu.cs</section>
+BlinkBird/Code/<link linkend="__menu_8cs">Menu.cs</link></section>
 </section>

@@ -18,6 +18,8 @@
 <simplesect>
     <title>Public Member Functions    </title>
         <itemizedlist>
+            <listitem><para><link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_e_e_g_gaming_db_context_1ae748b7eb5ccc9337c15c39e0cb71804c">EEGGamingDbContext</link> ()</para>
+</listitem>
             <listitem><para><link linkend="_class_e_e_g_gaming_1_1_core_1_1_data_1_1_e_e_g_gaming_db_context_1ac0f434effe51dc17c77c82551ed07a1f">EEGGamingDbContext</link> (string DefaultConnection)</para>
 </listitem>
         </itemizedlist>
@@ -129,5 +131,5 @@ Definition at line <link linkend="__e_e_g_gaming_db_context_8cs_source_1l00020">
 </section>
 <para>
 The documentation for this class was generated from the following file:</para>
-EEGGaming.Core/Data/EEGGamingDbContext.cs</section>
+EEGGaming.Core/Data/<link linkend="__e_e_g_gaming_db_context_8cs">EEGGamingDbContext.cs</link></section>
 </section>

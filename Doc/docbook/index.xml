@@ -54,7 +54,6 @@
     <xi:include href="class_scoreand_time.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="class_show_user_details.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="class_show_users.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-    <xi:include href="class_sky.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="class_e_e_g_gaming_1_1_core_1_1_migrations_1_1unmadethenamepropertyakey.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_user.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_user_manager.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
@@ -75,7 +74,6 @@
     <xi:include href="_scoreand_time_8cs_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="_show_user_details_8cs_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="_show_users_8cs_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-    <xi:include href="_sky_8cs_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="_world_8cs_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="_e_e_g_gaming_db_context_8cs_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="_brainwaves_record_8cs_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>

@@ -1,5 +1,15 @@
 var NAVTREEINDEX2 =
 {
+"functions_func.html":[2,3,1],
+"functions_prop.html":[2,3,2],
+"hierarchy.html":[2,2],
+"index.html":[],
+"md__r_e_a_d_m_e.html":[0],
+"namespace_e_e_g_gaming.html":[1,0,0],
+"namespace_e_e_g_gaming_1_1_core.html":[1,0,0,0],
+"namespace_e_e_g_gaming_1_1_core_1_1_data.html":[1,0,0,0,0],
+"namespace_e_e_g_gaming_1_1_core_1_1_data_1_1_models.html":[1,0,0,0,0,0],
+"namespace_e_e_g_gaming_1_1_core_1_1_data_1_1_non_data_models.html":[1,0,0,0,0,1],
 "namespace_e_e_g_gaming_1_1_core_1_1_managers.html":[1,0,0,0,1],
 "namespace_e_e_g_gaming_1_1_core_1_1_managers.html#ac5dfc32818fda85c21b2a13fe1822796":[1,0,0,0,1,4],
 "namespace_e_e_g_gaming_1_1_core_1_1_migrations.html":[1,0,0,0,2],

@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="BlinkBird/Code/ShowUsers.cs" line="9" column="14" bodyfile="BlinkBird/Code/ShowUsers.cs" bodystart="9" bodyend="-1"/>
+        <location file="BlinkBird/Code/ShowUsers.cs" line="11" column="14" bodyfile="BlinkBird/Code/ShowUsers.cs" bodystart="11" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_show_users_1a05e476b8991d11185b17b39665355cd8" prot="private" static="no" mutable="no">
         <type>Button</type>
@@ -30,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="BlinkBird/Code/ShowUsers.cs" line="10" column="8" bodyfile="BlinkBird/Code/ShowUsers.cs" bodystart="10" bodyend="-1"/>
+        <location file="BlinkBird/Code/ShowUsers.cs" line="12" column="8" bodyfile="BlinkBird/Code/ShowUsers.cs" bodystart="12" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_show_users_1a03bc84c584aefe24763d261e87a6e016" prot="private" static="no" mutable="no">
         <type>Button</type>
@@ -44,7 +44,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="BlinkBird/Code/ShowUsers.cs" line="10" column="27" bodyfile="BlinkBird/Code/ShowUsers.cs" bodystart="10" bodyend="-1"/>
+        <location file="BlinkBird/Code/ShowUsers.cs" line="12" column="27" bodyfile="BlinkBird/Code/ShowUsers.cs" bodystart="12" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_show_users_1a0c1f4d9bf292b67e4e95d393880a8d23" prot="private" static="no" mutable="no">
         <type>Button</type>
@@ -58,7 +58,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="BlinkBird/Code/ShowUsers.cs" line="10" column="37" bodyfile="BlinkBird/Code/ShowUsers.cs" bodystart="10" bodyend="-1"/>
+        <location file="BlinkBird/Code/ShowUsers.cs" line="12" column="37" bodyfile="BlinkBird/Code/ShowUsers.cs" bodystart="12" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_show_users_1a8df11d6753239d3d5d468e330b57a503" prot="private" static="no" mutable="no">
         <type>PackedScene</type>
@@ -72,7 +72,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="BlinkBird/Code/ShowUsers.cs" line="11" column="19" bodyfile="BlinkBird/Code/ShowUsers.cs" bodystart="11" bodyend="-1"/>
+        <location file="BlinkBird/Code/ShowUsers.cs" line="13" column="19" bodyfile="BlinkBird/Code/ShowUsers.cs" bodystart="13" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_show_users_1acdb05f4437317a9be4b4bdc42177f7f0" prot="private" static="no" mutable="no">
         <type>PackedScene</type>
@@ -86,7 +86,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="BlinkBird/Code/ShowUsers.cs" line="11" column="45" bodyfile="BlinkBird/Code/ShowUsers.cs" bodystart="11" bodyend="-1"/>
+        <location file="BlinkBird/Code/ShowUsers.cs" line="13" column="45" bodyfile="BlinkBird/Code/ShowUsers.cs" bodystart="13" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -102,7 +102,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="BlinkBird/Code/ShowUsers.cs" line="13" column="26" bodyfile="BlinkBird/Code/ShowUsers.cs" bodystart="13" bodyend="37"/>
+        <location file="BlinkBird/Code/ShowUsers.cs" line="15" column="26" bodyfile="BlinkBird/Code/ShowUsers.cs" bodystart="15" bodyend="39"/>
       </memberdef>
       <memberdef kind="function" id="class_show_users_1a04bdad9e4a9d4eb062d5ad5fd3accee5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>override void</type>
@@ -120,7 +120,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="BlinkBird/Code/ShowUsers.cs" line="102" column="26" bodyfile="BlinkBird/Code/ShowUsers.cs" bodystart="102" bodyend="104"/>
+        <location file="BlinkBird/Code/ShowUsers.cs" line="111" column="26" bodyfile="BlinkBird/Code/ShowUsers.cs" bodystart="111" bodyend="113"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="private-func">
@@ -136,7 +136,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="BlinkBird/Code/ShowUsers.cs" line="39" column="18" bodyfile="BlinkBird/Code/ShowUsers.cs" bodystart="39" bodyend="42"/>
+        <location file="BlinkBird/Code/ShowUsers.cs" line="41" column="18" bodyfile="BlinkBird/Code/ShowUsers.cs" bodystart="41" bodyend="44"/>
       </memberdef>
       <memberdef kind="function" id="class_show_users_1a596a977f4283296952352a8f7c3882e7" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -145,12 +145,13 @@
         <name>BtnAddNew_Pressed</name>
         <qualifiedname>ShowUsers.BtnAddNew_Pressed</qualifiedname>
         <briefdescription>
+<para>Shows the user creation window. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="BlinkBird/Code/ShowUsers.cs" line="44" column="18" bodyfile="BlinkBird/Code/ShowUsers.cs" bodystart="44" bodyend="50"/>
+        <location file="BlinkBird/Code/ShowUsers.cs" line="48" column="18" bodyfile="BlinkBird/Code/ShowUsers.cs" bodystart="48" bodyend="54"/>
       </memberdef>
       <memberdef kind="function" id="class_show_users_1a5c5ad05f0656187bc4860331340ca480" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -159,12 +160,13 @@
         <name>BtnShowUserDetails_Pressed</name>
         <qualifiedname>ShowUsers.BtnShowUserDetails_Pressed</qualifiedname>
         <briefdescription>
+<para>shows the user details window </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="BlinkBird/Code/ShowUsers.cs" line="52" column="18" bodyfile="BlinkBird/Code/ShowUsers.cs" bodystart="52" bodyend="59"/>
+        <location file="BlinkBird/Code/ShowUsers.cs" line="58" column="18" bodyfile="BlinkBird/Code/ShowUsers.cs" bodystart="58" bodyend="65"/>
       </memberdef>
       <memberdef kind="function" id="class_show_users_1afb2e1f7bfb32f95861bac65fd3d72b71" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -177,15 +179,26 @@
           <declname>index</declname>
         </param>
         <briefdescription>
+<para>makes ti&apos;s seected item to be te active user </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="BlinkBird/Code/ShowUsers.cs" line="61" column="18" bodyfile="BlinkBird/Code/ShowUsers.cs" bodystart="61" bodyend="96"/>
+        <location file="BlinkBird/Code/ShowUsers.cs" line="70" column="18" bodyfile="BlinkBird/Code/ShowUsers.cs" bodystart="70" bodyend="105"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
+<para>Shows all the user saved in the database. </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
@@ -211,7 +224,7 @@
         <label>Window</label>
       </node>
     </collaborationgraph>
-    <location file="BlinkBird/Code/ShowUsers.cs" line="6" column="15" bodyfile="BlinkBird/Code/ShowUsers.cs" bodystart="7" bodyend="105"/>
+    <location file="BlinkBird/Code/ShowUsers.cs" line="8" column="15" bodyfile="BlinkBird/Code/ShowUsers.cs" bodystart="9" bodyend="114"/>
     <listofallmembers>
       <member refid="class_show_users_1a04bdad9e4a9d4eb062d5ad5fd3accee5" prot="public" virt="non-virtual"><scope>ShowUsers</scope><name>_Process</name></member>
       <member refid="class_show_users_1a20f553bc69472043e7a7e111d5ab4195" prot="public" virt="non-virtual"><scope>ShowUsers</scope><name>_Ready</name></member>

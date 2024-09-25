@@ -27,7 +27,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">EEGGaming And Blinkbird<span id="projectnumber">&#160;0.2.6.0</span>
+   <div id="projectname">EEGGaming And Blinkbird<span id="projectnumber">&#160;0.2.7.5</span>
    </div>
   </td>
  </tr>
@@ -99,186 +99,213 @@ $(function(){initNavTree('_menu_8cs_source.html',''); initResizable(true); });
   <div class="headertitle"><div class="title">Menu.cs</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_e_e_g_gaming_1_1_core_1_1_data_1_1_models.html">EEGGaming.Core.Data.Models</a>;</div>
+<a href="_menu_8cs.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_e_e_g_gaming_1_1_core_1_1_data_1_1_models.html">EEGGaming.Core.Data.Models</a>;</div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_e_e_g_gaming_1_1_core_1_1_managers.html">EEGGaming.Core.Managers</a>;</div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">using </span>Godot;</div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">using </span>System;</div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">using </span>System.Threading;</div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
-<div class="foldopen" id="foldopen00007" data-start="{" data-end="};">
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="class_menu.html">    7</a></span><span class="keyword">public</span> <span class="keyword">partial class </span><a class="code hl_class" href="class_menu.html">Menu</a> : Control</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>{</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <span class="comment">// Called when the node enters the scene tree for the first time.</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    PackedScene newGamepackedScene,NewUserDetailsPackedScene,SelectUserScene,AboutScene,ShowusersScene;</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    Button btnNewGame;</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <span class="keyword">public</span> <span class="keyword">static</span> <a class="code hl_class" href="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager.html">BrainWaveRecordManager</a> recordManager = <span class="keyword">new</span> <a class="code hl_class" href="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager.html">BrainWaveRecordManager</a>();</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <span class="keyword">public</span> <span class="keyword">static</span> <a class="code hl_class" href="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_gaming_sesion_manager.html">GamingSesionManager</a> gamingSesionManager = <span class="keyword">new</span> <a class="code hl_class" href="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_gaming_sesion_manager.html">GamingSesionManager</a>();</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="keyword">public</span> <span class="keyword">static</span> <a class="code hl_class" href="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_user_manager.html">UserManager</a> userManager = <span class="keyword">new</span> <a class="code hl_class" href="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_user_manager.html">UserManager</a>();</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="keyword">public</span> <span class="keyword">static</span> <a class="code hl_class" href="class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_user.html">User</a> SelectedUser = <span class="keyword">null</span>;<span class="comment">// new User();</span></div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keywordtype">bool</span> ignoreUserselectionandconstateofdevice = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keyword">public</span> <span class="keyword">static</span>  <span class="keywordtype">void</span> SaveDataToDb()</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    {</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        <span class="keywordflow">if</span> (<a class="code hl_class" href="class_world.html">World</a>.gamingSesion != <span class="keyword">null</span>)</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        {</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>            World.gamingSesion.Score = <a class="code hl_class" href="class_world.html">World</a>.Score;</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>             gamingSesionManager.<a class="code hl_function" href="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_gaming_sesion_manager.html#a2d2589c4a290f77f776662e0a2197586">Update</a>(<a class="code hl_class" href="class_world.html">World</a>.gamingSesion);</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>            recordManager.<a class="code hl_function" href="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager.html#ab0cf81d214a96ca2a54fb3a67154271c">StopAndSavetoDatabse</a>();</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        }</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    }</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> _Ready()</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    {</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>         </div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        <a class="code hl_class" href="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_base_manager.html">BaseManager</a> bm= <span class="keyword">new</span> <a class="code hl_class" href="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_base_manager.html">BaseManager</a>();</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        bm.<a class="code hl_function" href="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_base_manager.html#a9248c1be1118bf2a1da15a2ba731a4fc">CreateDatabase</a>();</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        var t = bm.<a class="code hl_property" href="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_base_manager.html#ab03ecddd3cb836526101a168e1b408ef">DbContext</a>.Database.ProviderName;</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        GD.Print(t);</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>          btnNewGame = (Button)this.FindChild(<span class="stringliteral">&quot;btnNewGame&quot;</span>);</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        GD.Print(btnNewGame.Name);</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        btnNewGame.Pressed += bbtnNewGame_pressed;</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        Button btnNewuser= (Button)this.FindChild(<span class="stringliteral">&quot;btnAddNewUser&quot;</span>);</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        btnNewuser.Pressed += BtnNewuser_Pressed;</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        Button btnSelectUser = (Button) this.FindChild(<span class="stringliteral">&quot;btnSelectUser&quot;</span>);</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        btnSelectUser.Pressed += BtnSelectUser_Pressed;</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        Button btnExit = (Button)this.FindChild(<span class="stringliteral">&quot;btnExit&quot;</span>, <span class="keyword">true</span>);</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        btnExit.Pressed += BtnExit_Pressed;</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        Button btnAbout = (Button)this.FindChild(<span class="stringliteral">&quot;btnAbout&quot;</span>, <span class="keyword">true</span>);</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        btnAbout.Pressed += BtnAbout_Pressed;</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        Button btnConnectEEGDevice = (Button)this.FindChild(<span class="stringliteral">&quot;btnConnectEEGDevice&quot;</span>, <span class="keyword">true</span>);</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        btnConnectEEGDevice.Pressed += BtnConnectEEGDevice_Pressed;</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        Button btnShowUsers = (Button)this.FindChild(<span class="stringliteral">&quot;btnShowUsers&quot;</span>, <span class="keyword">true</span>);</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        btnShowUsers.Pressed += BtnShowUsers_Pressed;</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        <span class="keywordflow">if</span> ( <a class="code hl_class" href="class_menu.html">Menu</a>.SelectedUser ==<span class="keyword">null</span>)</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        {</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>            btnNewGame.Disabled = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            </div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        }</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <a class="code hl_class" href="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager.html">BrainWaveRecordManager</a>.scanner.Start();</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        var sensors = <a class="code hl_class" href="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager.html">BrainWaveRecordManager</a>.scanner.Sensors;</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>         </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">using </span>NeuroSDK;</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">using </span>System;</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">using </span>System.Threading;</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="foldopen" id="foldopen00011" data-start="{" data-end="};">
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="class_menu.html">   11</a></span><span class="keyword">public</span> <span class="keyword">partial class </span><a class="code hl_class" href="class_menu.html">Menu</a> : Control</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>{</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <span class="comment">// Called when the node enters the scene tree for the first time.</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    PackedScene newGamepackedScene,NewUserDetailsPackedScene,SelectUserScene,AboutScene,ShowusersScene;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    Button btnNewGame;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="class_menu.html#aa005ebd5a38e50bc52accdb70c081008">   16</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <a class="code hl_class" href="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager.html">BrainWaveRecordManager</a> <a class="code hl_variable" href="class_menu.html#aa005ebd5a38e50bc52accdb70c081008">recordManager</a> = <span class="keyword">new</span> <a class="code hl_class" href="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager.html">BrainWaveRecordManager</a>();</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="class_menu.html#ab91d795226479c5d356b975407d6d456">   17</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <a class="code hl_class" href="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_gaming_sesion_manager.html">GamingSesionManager</a> <a class="code hl_variable" href="class_menu.html#ab91d795226479c5d356b975407d6d456">gamingSesionManager</a> = <span class="keyword">new</span> <a class="code hl_class" href="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_gaming_sesion_manager.html">GamingSesionManager</a>();</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="class_menu.html#a6aa76feb83b7956cd553c35b5e926f4e">   18</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <a class="code hl_class" href="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_user_manager.html">UserManager</a> <a class="code hl_variable" href="class_menu.html#a6aa76feb83b7956cd553c35b5e926f4e">userManager</a> = <span class="keyword">new</span> <a class="code hl_class" href="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_user_manager.html">UserManager</a>();</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    Label lblDeviceName, lblDeviceState;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="class_menu.html#a2cdd0aa13fc2a0c1a0f2fdb2195c475c">   21</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <a class="code hl_class" href="class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_user.html">User</a> <a class="code hl_variable" href="class_menu.html#a2cdd0aa13fc2a0c1a0f2fdb2195c475c">SelectedUser</a> = <span class="keyword">null</span>;<span class="comment">// new User();</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="class_menu.html#a0f5f753616914a269e9acad62bee9e1d">   22</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_variable" href="class_menu.html#a0f5f753616914a269e9acad62bee9e1d">ignoreUserselectionandconstateofdevice</a> = <span class="keyword">false</span>;</div>
+<div class="foldopen" id="foldopen00026" data-start="{" data-end="}">
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="class_menu.html#ab4749d59147615a8d8289be37cb49a83">   26</a></span>    <span class="keyword">public</span> <span class="keyword">static</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="class_menu.html#ab4749d59147615a8d8289be37cb49a83">SaveDataToDb</a>()</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    {</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        <span class="keywordflow">if</span> (<a class="code hl_class" href="class_world.html">World</a>.<a class="code hl_variable" href="class_world.html#a37b77de5165f6890caf1803a2c4d3c09">gamingSesion</a> != <span class="keyword">null</span>)</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        {</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>            World.gamingSesion.Score = <a class="code hl_class" href="class_world.html">World</a>.<a class="code hl_variable" href="class_world.html#a4e1920e53b368896085fc2e3a8e01f9f">Score</a>;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>             <a class="code hl_variable" href="class_menu.html#ab91d795226479c5d356b975407d6d456">gamingSesionManager</a>.<a class="code hl_function" href="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_gaming_sesion_manager.html#a2d2589c4a290f77f776662e0a2197586">Update</a>(<a class="code hl_class" href="class_world.html">World</a>.<a class="code hl_variable" href="class_world.html#a37b77de5165f6890caf1803a2c4d3c09">gamingSesion</a>);</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>            <a class="code hl_variable" href="class_menu.html#aa005ebd5a38e50bc52accdb70c081008">recordManager</a>.<a class="code hl_function" href="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager.html#ab0cf81d214a96ca2a54fb3a67154271c">StopAndSavetoDatabse</a>();</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        }</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    }</div>
+</div>
+<div class="foldopen" id="foldopen00038" data-start="{" data-end="}">
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="class_menu.html#a8749d8124f3d908e7dc30d71c08f6e28">   38</a></span>    <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_menu.html#a8749d8124f3d908e7dc30d71c08f6e28">_Ready</a>()</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    {</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>         </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        <a class="code hl_class" href="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_base_manager.html">BaseManager</a> bm= <span class="keyword">new</span> <a class="code hl_class" href="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_base_manager.html">BaseManager</a>();</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        bm.<a class="code hl_function" href="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_base_manager.html#a9248c1be1118bf2a1da15a2ba731a4fc">CreateDatabase</a>();</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        var t = bm.<a class="code hl_property" href="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_base_manager.html#ab03ecddd3cb836526101a168e1b408ef">DbContext</a>.Database.ProviderName;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        GD.Print(t);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>          btnNewGame = (Button)this.FindChild(<span class="stringliteral">&quot;btnNewGame&quot;</span>);</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        GD.Print(btnNewGame.Name);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        btnNewGame.Pressed += <a class="code hl_function" href="class_menu.html#a9a2ffafb1592a5438156816758e2bd64">bbtnNewGame_pressed</a>;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        Button btnNewuser= (Button)this.FindChild(<span class="stringliteral">&quot;btnAddNewUser&quot;</span>);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        btnNewuser.Pressed += BtnNewuser_Pressed;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        Button btnSelectUser = (Button) this.FindChild(<span class="stringliteral">&quot;btnSelectUser&quot;</span>);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        btnSelectUser.Pressed += BtnSelectUser_Pressed;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        Button btnExit = (Button)this.FindChild(<span class="stringliteral">&quot;btnExit&quot;</span>, <span class="keyword">true</span>);</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        btnExit.Pressed += BtnExit_Pressed;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        Button btnAbout = (Button)this.FindChild(<span class="stringliteral">&quot;btnAbout&quot;</span>, <span class="keyword">true</span>);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        btnAbout.Pressed += BtnAbout_Pressed;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        Button btnConnectEEGDevice = (Button)this.FindChild(<span class="stringliteral">&quot;btnConnectEEGDevice&quot;</span>, <span class="keyword">true</span>);</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        btnConnectEEGDevice.Pressed += BtnConnectEEGDevice_Pressed;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        Button btnShowUsers = (Button)this.FindChild(<span class="stringliteral">&quot;btnShowUsers&quot;</span>, <span class="keyword">true</span>);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        btnShowUsers.Pressed += BtnShowUsers_Pressed;</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        </div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        <span class="keywordflow">if</span> (  sensors.Count &gt; 0)</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        {</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>            Label lblDeviceName = (Label)this.FindChild(<span class="stringliteral">&quot;lblDeviceName&quot;</span>, <span class="keyword">true</span>);</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>            lblDeviceName.Text = sensors[0].Name;</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            Label lblDeviceState = (Label)this.FindChild(<span class="stringliteral">&quot;lblDeviceState&quot;</span>, <span class="keyword">true</span>);</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>            recordManager.<a class="code hl_function" href="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager.html#ab31d23b3a77ce3a8a2f8dd164843e050">Connect</a>(sensors[0]);</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>            lblDeviceState.Text = recordManager.<a class="code hl_property" href="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager.html#aac1139f5f9fcee87ee991987c6f7805b">Sensor</a>.State.ToString();</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>            <a class="code hl_class" href="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager.html">BrainWaveRecordManager</a>.scanner.Stop();</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        }</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    }</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="keyword">private</span> <span class="keywordtype">void</span> BtnShowUsers_Pressed()</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    {</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        ShowusersScene = (PackedScene)GD.Load(<span class="stringliteral">&quot;res://Scenes/ShowUsers.tscn&quot;</span>);</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        Window control = (Window  )ShowusersScene.Instantiate();</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        this.AddSibling(control);</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        </div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    }</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    <span class="keyword">private</span> <span class="keywordtype">void</span> BtnConnectEEGDevice_Pressed()</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    {</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        var sensors = <a class="code hl_class" href="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager.html">BrainWaveRecordManager</a>.scanner.Sensors;</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        <a class="code hl_class" href="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager.html">BrainWaveRecordManager</a>.scanner.Start();</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        Thread.Sleep(1500);</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        GD.Print(sensors.Count);</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        <span class="keywordflow">if</span> (sensors.Count &gt; 0)</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        {</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>            Label lblDeviceName = (Label)this.FindChild(<span class="stringliteral">&quot;lblDeviceName&quot;</span>, <span class="keyword">true</span>);</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>            lblDeviceName.Text = sensors[0].Name;</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>            Label lblDeviceState = (Label)this.FindChild(<span class="stringliteral">&quot;lblDeviceState&quot;</span>, <span class="keyword">true</span>);</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>            recordManager.<a class="code hl_function" href="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager.html#ab31d23b3a77ce3a8a2f8dd164843e050">Connect</a>(sensors[0]);</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>            lblDeviceState.Text = recordManager.<a class="code hl_property" href="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager.html#aac1139f5f9fcee87ee991987c6f7805b">Sensor</a>.State.ToString();</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>            <a class="code hl_class" href="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager.html">BrainWaveRecordManager</a>.scanner.Stop();</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>            recordManager.<a class="code hl_function" href="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager.html#ab31d23b3a77ce3a8a2f8dd164843e050">Connect</a>(sensors[0]);</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>            </div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        }</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>       </div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>           </div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>        </div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    }</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    <span class="keyword">private</span> <span class="keywordtype">void</span> BtnAbout_Pressed()</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    {</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>        AboutScene = (PackedScene)GD.Load(<span class="stringliteral">&quot;res://Scenes/About.tscn&quot;</span>);</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>        Node2D control = (Node2D)AboutScene.Instantiate();</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>        this.AddSibling(control);</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>        <span class="comment">//this.Hide();</span></div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    }</div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    <span class="keyword">private</span> <span class="keywordtype">void</span> BtnExit_Pressed()</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    {</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>        this.Free();</div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    }</div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    <span class="keyword">private</span> <span class="keywordtype">void</span> BtnSelectUser_Pressed()</div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    {</div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>        SelectUserScene = (PackedScene)GD.Load(<span class="stringliteral">&quot;res://Scenes/ShowUserDetails.tscn&quot;</span>);</div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>        Control control = (Control)SelectUserScene.Instantiate();</div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>        this.AddSibling(control);</div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>        <span class="comment">//this.Hide();</span></div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    }</div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span> </div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    <span class="keyword">private</span> <span class="keywordtype">void</span> BtnNewuser_Pressed()</div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>    {</div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>         NewUserDetailsPackedScene= (PackedScene)GD.Load(<span class="stringliteral">&quot;res://Scenes/AddUserDetails.tscn&quot;</span>);</div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>        Control control = (Control)NewUserDetailsPackedScene.Instantiate();</div>
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>        this.AddSibling(control);</div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>         </div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>    }</div>
-<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span> </div>
-<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>    <span class="comment">// Called every frame. &#39;delta&#39; is the elapsed time since the previous frame.</span></div>
-<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>    <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> _Process(<span class="keywordtype">double</span> delta)</div>
-<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>    {</div>
-<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>        <span class="keywordflow">if</span> ((SelectedUser == <span class="keyword">null</span> || <a class="code hl_class" href="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager.html">BrainWaveRecordManager</a>.scanner.Sensors.Count==0) &amp;&amp;(!ignoreUserselectionandconstateofdevice))</div>
-<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>        {</div>
-<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>            btnNewGame.Disabled = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span> </div>
-<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>        }</div>
-<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>        <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>        {</div>
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>            btnNewGame.Disabled = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span> </div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>        }</div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>        var sensors = <a class="code hl_class" href="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager.html">BrainWaveRecordManager</a>.scanner.Sensors;</div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>         </div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>    }</div>
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>    <span class="keyword">public</span> <span class="keywordtype">void</span> bbtnNewGame_pressed()</div>
-<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>    {</div>
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>        newGamepackedScene = (PackedScene)GD.Load(<span class="stringliteral">&quot;res://Scenes/World.tscn&quot;</span>);</div>
-<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>        Node2D sprite = (Node2D)newGamepackedScene.Instantiate();</div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>        this.AddSibling(sprite);</div>
-<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>         </div>
-<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>        </div>
-<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span> </div>
-<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span> </div>
-<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>    }</div>
-<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>}</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        <span class="keywordflow">if</span> ( <a class="code hl_class" href="class_menu.html">Menu</a>.<a class="code hl_variable" href="class_menu.html#a2cdd0aa13fc2a0c1a0f2fdb2195c475c">SelectedUser</a> ==<span class="keyword">null</span>)</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        {</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>            btnNewGame.Disabled = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        }</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <a class="code hl_class" href="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager.html">BrainWaveRecordManager</a>.<a class="code hl_variable" href="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager.html#a62018636cfefd0af1f416df70642ddb5">scanner</a>.Start();</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        var sensors = <a class="code hl_class" href="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager.html">BrainWaveRecordManager</a>.<a class="code hl_variable" href="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager.html#a62018636cfefd0af1f416df70642ddb5">scanner</a>.Sensors;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        lblDeviceName = (Label)this.FindChild(<span class="stringliteral">&quot;lblDeviceName&quot;</span>, <span class="keyword">true</span>);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        lblDeviceState = (Label)this.FindChild(<span class="stringliteral">&quot;lblDeviceState&quot;</span>, <span class="keyword">true</span>);</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        <span class="keywordflow">if</span> (  sensors.Count &gt; 0)</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        {</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>              </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>            lblDeviceName.Text = sensors[0].Name;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>              </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>            <a class="code hl_variable" href="class_menu.html#aa005ebd5a38e50bc52accdb70c081008">recordManager</a>.<a class="code hl_function" href="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager.html#ab31d23b3a77ce3a8a2f8dd164843e050">Connect</a>(sensors[0]);</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>            lblDeviceState.Text = <a class="code hl_variable" href="class_menu.html#aa005ebd5a38e50bc52accdb70c081008">recordManager</a>.<a class="code hl_property" href="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager.html#aac1139f5f9fcee87ee991987c6f7805b">Sensor</a>.State.ToString();</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>            <a class="code hl_class" href="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager.html">BrainWaveRecordManager</a>.<a class="code hl_variable" href="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager.html#a62018636cfefd0af1f416df70642ddb5">scanner</a>.Stop();</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        }</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>         <span class="keywordflow">if</span> (  <a class="code hl_variable" href="class_menu.html#a0f5f753616914a269e9acad62bee9e1d">ignoreUserselectionandconstateofdevice</a>)</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        {</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>            lblDeviceName.Text = <span class="stringliteral">&quot;BrainBit&quot;</span>;</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>            lblDeviceState.Text = SensorState.StateInRange.ToString();</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        }</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    }</div>
+</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    <span class="keyword">private</span> <span class="keywordtype">void</span> BtnShowUsers_Pressed()</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    {</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>        ShowusersScene = (PackedScene)GD.Load(<span class="stringliteral">&quot;res://Scenes/ShowUsers.tscn&quot;</span>);</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        Window control = (Window  )ShowusersScene.Instantiate();</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>        this.AddSibling(control);</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        </div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    }</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    <span class="keyword">private</span> <span class="keywordtype">void</span> BtnConnectEEGDevice_Pressed()</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    {</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>        var sensors = <a class="code hl_class" href="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager.html">BrainWaveRecordManager</a>.<a class="code hl_variable" href="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager.html#a62018636cfefd0af1f416df70642ddb5">scanner</a>.Sensors;</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>        <a class="code hl_class" href="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager.html">BrainWaveRecordManager</a>.<a class="code hl_variable" href="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager.html#a62018636cfefd0af1f416df70642ddb5">scanner</a>.Start();</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>        Thread.Sleep(1500);</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>        GD.Print(sensors.Count);</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>        <span class="keywordflow">if</span> (sensors.Count &gt; 0)</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>        {</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>             lblDeviceName = (Label)this.FindChild(<span class="stringliteral">&quot;lblDeviceName&quot;</span>, <span class="keyword">true</span>);</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>            lblDeviceName.Text = sensors[0].Name;</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>             lblDeviceState = (Label)this.FindChild(<span class="stringliteral">&quot;lblDeviceState&quot;</span>, <span class="keyword">true</span>);</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>            <a class="code hl_variable" href="class_menu.html#aa005ebd5a38e50bc52accdb70c081008">recordManager</a>.<a class="code hl_function" href="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager.html#ab31d23b3a77ce3a8a2f8dd164843e050">Connect</a>(sensors[0]);</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>            lblDeviceState.Text = <a class="code hl_variable" href="class_menu.html#aa005ebd5a38e50bc52accdb70c081008">recordManager</a>.<a class="code hl_property" href="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager.html#aac1139f5f9fcee87ee991987c6f7805b">Sensor</a>.State.ToString();</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>            <a class="code hl_class" href="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager.html">BrainWaveRecordManager</a>.<a class="code hl_variable" href="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager.html#a62018636cfefd0af1f416df70642ddb5">scanner</a>.Stop();</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>            <a class="code hl_variable" href="class_menu.html#aa005ebd5a38e50bc52accdb70c081008">recordManager</a>.<a class="code hl_function" href="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager.html#ab31d23b3a77ce3a8a2f8dd164843e050">Connect</a>(sensors[0]);</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>            <span class="keywordflow">if</span> (  <a class="code hl_variable" href="class_menu.html#a0f5f753616914a269e9acad62bee9e1d">ignoreUserselectionandconstateofdevice</a>)</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>            {</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>                lblDeviceName.Text = <span class="stringliteral">&quot;BrainBit&quot;</span>;</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>                lblDeviceState.Text=SensorState.StateInRange.ToString();    </div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>            }</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>            </div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span> </div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>        }</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>       </div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>           </div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span> </div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>        </div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>    }</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>    <span class="keyword">private</span> <span class="keywordtype">void</span> BtnAbout_Pressed()</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>    {</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>        AboutScene = (PackedScene)GD.Load(<span class="stringliteral">&quot;res://Scenes/About.tscn&quot;</span>);</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>        Node2D control = (Node2D)AboutScene.Instantiate();</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>        this.AddSibling(control);</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>        <span class="comment">//this.Hide();</span></div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>    }</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>    <span class="keyword">private</span> <span class="keywordtype">void</span> BtnExit_Pressed()</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>    {</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>        this.Free();</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>    }</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>    <span class="keyword">private</span> <span class="keywordtype">void</span> BtnSelectUser_Pressed()</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>    {</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>        SelectUserScene = (PackedScene)GD.Load(<span class="stringliteral">&quot;res://Scenes/ShowUserDetails.tscn&quot;</span>);</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>        Control control = (Control)SelectUserScene.Instantiate();</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>        this.AddSibling(control);</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>        <span class="comment">//this.Hide();</span></div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>    }</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>    <span class="keyword">private</span> <span class="keywordtype">void</span> BtnNewuser_Pressed()</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>    {</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>         NewUserDetailsPackedScene= (PackedScene)GD.Load(<span class="stringliteral">&quot;res://Scenes/AddUserDetails.tscn&quot;</span>);</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>        Control control = (Control)NewUserDetailsPackedScene.Instantiate();</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>        this.AddSibling(control);</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>         </div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>    }</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>    <span class="comment">// Called every frame. &#39;delta&#39; is the elapsed time since the previous frame.</span></div>
+<div class="foldopen" id="foldopen00178" data-start="{" data-end="}">
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno"><a class="line" href="class_menu.html#aa5214bdaf8eaaa4ea25d41c57331c221">  178</a></span>    <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_menu.html#aa5214bdaf8eaaa4ea25d41c57331c221">_Process</a>(<span class="keywordtype">double</span> delta)</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>    {</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>        <span class="keywordflow">if</span> ((<a class="code hl_variable" href="class_menu.html#a2cdd0aa13fc2a0c1a0f2fdb2195c475c">SelectedUser</a> == <span class="keyword">null</span> || <a class="code hl_class" href="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager.html">BrainWaveRecordManager</a>.<a class="code hl_variable" href="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager.html#a62018636cfefd0af1f416df70642ddb5">scanner</a>.Sensors.Count==0) &amp;&amp;(!<a class="code hl_variable" href="class_menu.html#a0f5f753616914a269e9acad62bee9e1d">ignoreUserselectionandconstateofdevice</a>))</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>        {</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>            btnNewGame.Disabled = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span> </div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>        }</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>        <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>        {</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>            btnNewGame.Disabled = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span> </div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>        }</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>        var sensors = <a class="code hl_class" href="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager.html">BrainWaveRecordManager</a>.<a class="code hl_variable" href="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager.html#a62018636cfefd0af1f416df70642ddb5">scanner</a>.Sensors;</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>         </div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>    }</div>
+</div>
+<div class="foldopen" id="foldopen00196" data-start="{" data-end="}">
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno"><a class="line" href="class_menu.html#a9a2ffafb1592a5438156816758e2bd64">  196</a></span>    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_menu.html#a9a2ffafb1592a5438156816758e2bd64">bbtnNewGame_pressed</a>()</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>    {</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>        newGamepackedScene = (PackedScene)GD.Load(<span class="stringliteral">&quot;res://Scenes/World.tscn&quot;</span>);</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>        Node2D sprite = (Node2D)newGamepackedScene.Instantiate();</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>        this.AddSibling(sprite);</div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>         </div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>        </div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span> </div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span> </div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>    }</div>
+</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>}</div>
 </div>
 <div class="ttc" id="aclass_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_user_html"><div class="ttname"><a href="class_e_e_g_gaming_1_1_core_1_1_data_1_1_models_1_1_user.html">EEGGaming.Core.Data.Models.User</a></div><div class="ttdef"><b>Definition</b> <a href="_user_8cs_source.html#l00012">User.cs:13</a></div></div>
 <div class="ttc" id="aclass_e_e_g_gaming_1_1_core_1_1_managers_1_1_base_manager_html"><div class="ttname"><a href="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_base_manager.html">EEGGaming.Core.Managers.BaseManager</a></div><div class="ttdoc">The class that includes the mostly common methods,properties and fuctions of the Manager classes.</div><div class="ttdef"><b>Definition</b> <a href="_base_manager_8cs_source.html#l00016">BaseManager.cs:17</a></div></div>
 <div class="ttc" id="aclass_e_e_g_gaming_1_1_core_1_1_managers_1_1_base_manager_html_a9248c1be1118bf2a1da15a2ba731a4fc"><div class="ttname"><a href="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_base_manager.html#a9248c1be1118bf2a1da15a2ba731a4fc">EEGGaming.Core.Managers.BaseManager.CreateDatabase</a></div><div class="ttdeci">void CreateDatabase()</div><div class="ttdoc">Creates the Database.</div><div class="ttdef"><b>Definition</b> <a href="_base_manager_8cs_source.html#l00038">BaseManager.cs:38</a></div></div>
 <div class="ttc" id="aclass_e_e_g_gaming_1_1_core_1_1_managers_1_1_base_manager_html_ab03ecddd3cb836526101a168e1b408ef"><div class="ttname"><a href="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_base_manager.html#ab03ecddd3cb836526101a168e1b408ef">EEGGaming.Core.Managers.BaseManager.DbContext</a></div><div class="ttdeci">EEGGamingDbContext DbContext</div><div class="ttdoc">The DatabaseContext of the library.</div><div class="ttdef"><b>Definition</b> <a href="_base_manager_8cs_source.html#l00021">BaseManager.cs:21</a></div></div>
 <div class="ttc" id="aclass_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_html"><div class="ttname"><a href="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager.html">EEGGaming.Core.Managers.BrainWaveRecordManager</a></div><div class="ttdoc">The Manager that manages the records of the BrainWave table and detectsif an eye blink occured.</div><div class="ttdef"><b>Definition</b> <a href="_brain_wave_record_manager_8cs_source.html#l00026">BrainWaveRecordManager.cs:27</a></div></div>
+<div class="ttc" id="aclass_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_html_a62018636cfefd0af1f416df70642ddb5"><div class="ttname"><a href="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager.html#a62018636cfefd0af1f416df70642ddb5">EEGGaming.Core.Managers.BrainWaveRecordManager.scanner</a></div><div class="ttdeci">static NeuroSDK.Scanner scanner</div><div class="ttdef"><b>Definition</b> <a href="_brain_wave_record_manager_8cs_source.html#l00030">BrainWaveRecordManager.cs:30</a></div></div>
 <div class="ttc" id="aclass_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_html_aac1139f5f9fcee87ee991987c6f7805b"><div class="ttname"><a href="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager.html#aac1139f5f9fcee87ee991987c6f7805b">EEGGaming.Core.Managers.BrainWaveRecordManager.Sensor</a></div><div class="ttdeci">BrainBitSensor? Sensor</div><div class="ttdoc">The Sensor that captures the brainwaves.</div><div class="ttdef"><b>Definition</b> <a href="_brain_wave_record_manager_8cs_source.html#l00078">BrainWaveRecordManager.cs:79</a></div></div>
 <div class="ttc" id="aclass_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_html_ab0cf81d214a96ca2a54fb3a67154271c"><div class="ttname"><a href="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager.html#ab0cf81d214a96ca2a54fb3a67154271c">EEGGaming.Core.Managers.BrainWaveRecordManager.StopAndSavetoDatabse</a></div><div class="ttdeci">void StopAndSavetoDatabse()</div><div class="ttdoc">Stops the capture of brainwaves and saves them to the database.</div><div class="ttdef"><b>Definition</b> <a href="_brain_wave_record_manager_8cs_source.html#l00451">BrainWaveRecordManager.cs:451</a></div></div>
 <div class="ttc" id="aclass_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_html_ab31d23b3a77ce3a8a2f8dd164843e050"><div class="ttname"><a href="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager.html#ab31d23b3a77ce3a8a2f8dd164843e050">EEGGaming.Core.Managers.BrainWaveRecordManager.Connect</a></div><div class="ttdeci">void Connect(SensorInfo sens)</div><div class="ttdoc">Connects to the sensor with the given info.</div><div class="ttdef"><b>Definition</b> <a href="_brain_wave_record_manager_8cs_source.html#l00339">BrainWaveRecordManager.cs:339</a></div></div>
 <div class="ttc" id="aclass_e_e_g_gaming_1_1_core_1_1_managers_1_1_gaming_sesion_manager_html"><div class="ttname"><a href="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_gaming_sesion_manager.html">EEGGaming.Core.Managers.GamingSesionManager</a></div><div class="ttdef"><b>Definition</b> <a href="_gaming_sesion_manager_8cs_source.html#l00015">GamingSesionManager.cs:16</a></div></div>
 <div class="ttc" id="aclass_e_e_g_gaming_1_1_core_1_1_managers_1_1_gaming_sesion_manager_html_a2d2589c4a290f77f776662e0a2197586"><div class="ttname"><a href="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_gaming_sesion_manager.html#a2d2589c4a290f77f776662e0a2197586">EEGGaming.Core.Managers.GamingSesionManager.Update</a></div><div class="ttdeci">void Update(GamingSesion gamingSesion)</div><div class="ttdoc">updates the gamingsession record</div><div class="ttdef"><b>Definition</b> <a href="_gaming_sesion_manager_8cs_source.html#l00125">GamingSesionManager.cs:125</a></div></div>
 <div class="ttc" id="aclass_e_e_g_gaming_1_1_core_1_1_managers_1_1_user_manager_html"><div class="ttname"><a href="class_e_e_g_gaming_1_1_core_1_1_managers_1_1_user_manager.html">EEGGaming.Core.Managers.UserManager</a></div><div class="ttdoc">Class that manages user's and their info.</div><div class="ttdef"><b>Definition</b> <a href="_user_manager_8cs_source.html#l00018">UserManager.cs:19</a></div></div>
-<div class="ttc" id="aclass_menu_html"><div class="ttname"><a href="class_menu.html">Menu</a></div><div class="ttdef"><b>Definition</b> <a href="#l00007">Menu.cs:8</a></div></div>
-<div class="ttc" id="aclass_world_html"><div class="ttname"><a href="class_world.html">World</a></div><div class="ttdef"><b>Definition</b> <a href="_world_8cs_source.html#l00008">World.cs:9</a></div></div>
+<div class="ttc" id="aclass_menu_html"><div class="ttname"><a href="class_menu.html">Menu</a></div><div class="ttdoc">The Main menu of the game.</div><div class="ttdef"><b>Definition</b> <a href="#l00011">Menu.cs:12</a></div></div>
+<div class="ttc" id="aclass_menu_html_a0f5f753616914a269e9acad62bee9e1d"><div class="ttname"><a href="class_menu.html#a0f5f753616914a269e9acad62bee9e1d">Menu.ignoreUserselectionandconstateofdevice</a></div><div class="ttdeci">static bool ignoreUserselectionandconstateofdevice</div><div class="ttdef"><b>Definition</b> <a href="#l00022">Menu.cs:22</a></div></div>
+<div class="ttc" id="aclass_menu_html_a2cdd0aa13fc2a0c1a0f2fdb2195c475c"><div class="ttname"><a href="class_menu.html#a2cdd0aa13fc2a0c1a0f2fdb2195c475c">Menu.SelectedUser</a></div><div class="ttdeci">static User SelectedUser</div><div class="ttdef"><b>Definition</b> <a href="#l00021">Menu.cs:21</a></div></div>
+<div class="ttc" id="aclass_menu_html_a6aa76feb83b7956cd553c35b5e926f4e"><div class="ttname"><a href="class_menu.html#a6aa76feb83b7956cd553c35b5e926f4e">Menu.userManager</a></div><div class="ttdeci">static UserManager userManager</div><div class="ttdef"><b>Definition</b> <a href="#l00018">Menu.cs:18</a></div></div>
+<div class="ttc" id="aclass_menu_html_a8749d8124f3d908e7dc30d71c08f6e28"><div class="ttname"><a href="class_menu.html#a8749d8124f3d908e7dc30d71c08f6e28">Menu._Ready</a></div><div class="ttdeci">override void _Ready()</div><div class="ttdoc">Creates the winndow.</div><div class="ttdef"><b>Definition</b> <a href="#l00038">Menu.cs:38</a></div></div>
+<div class="ttc" id="aclass_menu_html_a9a2ffafb1592a5438156816758e2bd64"><div class="ttname"><a href="class_menu.html#a9a2ffafb1592a5438156816758e2bd64">Menu.bbtnNewGame_pressed</a></div><div class="ttdeci">void bbtnNewGame_pressed()</div><div class="ttdoc">Starts new game.</div><div class="ttdef"><b>Definition</b> <a href="#l00196">Menu.cs:196</a></div></div>
+<div class="ttc" id="aclass_menu_html_aa005ebd5a38e50bc52accdb70c081008"><div class="ttname"><a href="class_menu.html#aa005ebd5a38e50bc52accdb70c081008">Menu.recordManager</a></div><div class="ttdeci">static BrainWaveRecordManager recordManager</div><div class="ttdef"><b>Definition</b> <a href="#l00016">Menu.cs:16</a></div></div>
+<div class="ttc" id="aclass_menu_html_aa5214bdaf8eaaa4ea25d41c57331c221"><div class="ttname"><a href="class_menu.html#aa5214bdaf8eaaa4ea25d41c57331c221">Menu._Process</a></div><div class="ttdeci">override void _Process(double delta)</div><div class="ttdoc">checks whever a user is selected or anEEG headest is conencted</div><div class="ttdef"><b>Definition</b> <a href="#l00178">Menu.cs:178</a></div></div>
+<div class="ttc" id="aclass_menu_html_ab4749d59147615a8d8289be37cb49a83"><div class="ttname"><a href="class_menu.html#ab4749d59147615a8d8289be37cb49a83">Menu.SaveDataToDb</a></div><div class="ttdeci">static void SaveDataToDb()</div><div class="ttdoc">Save the data to database.</div><div class="ttdef"><b>Definition</b> <a href="#l00026">Menu.cs:26</a></div></div>
+<div class="ttc" id="aclass_menu_html_ab91d795226479c5d356b975407d6d456"><div class="ttname"><a href="class_menu.html#ab91d795226479c5d356b975407d6d456">Menu.gamingSesionManager</a></div><div class="ttdeci">static GamingSesionManager gamingSesionManager</div><div class="ttdef"><b>Definition</b> <a href="#l00017">Menu.cs:17</a></div></div>
+<div class="ttc" id="aclass_world_html"><div class="ttname"><a href="class_world.html">World</a></div><div class="ttdoc">The class representation for the gaming world.</div><div class="ttdef"><b>Definition</b> <a href="_world_8cs_source.html#l00010">World.cs:11</a></div></div>
+<div class="ttc" id="aclass_world_html_a37b77de5165f6890caf1803a2c4d3c09"><div class="ttname"><a href="class_world.html#a37b77de5165f6890caf1803a2c4d3c09">World.gamingSesion</a></div><div class="ttdeci">static GamingSesion gamingSesion</div><div class="ttdef"><b>Definition</b> <a href="_world_8cs_source.html#l00019">World.cs:19</a></div></div>
+<div class="ttc" id="aclass_world_html_a4e1920e53b368896085fc2e3a8e01f9f"><div class="ttname"><a href="class_world.html#a4e1920e53b368896085fc2e3a8e01f9f">World.Score</a></div><div class="ttdeci">static double Score</div><div class="ttdef"><b>Definition</b> <a href="_world_8cs_source.html#l00017">World.cs:17</a></div></div>
 <div class="ttc" id="anamespace_e_e_g_gaming_1_1_core_1_1_data_1_1_models_html"><div class="ttname"><a href="namespace_e_e_g_gaming_1_1_core_1_1_data_1_1_models.html">EEGGaming.Core.Data.Models</a></div><div class="ttdef"><b>Definition</b> <a href="_brainwaves_record_8cs_source.html#l00010">BrainwavesRecord.cs:11</a></div></div>
 <div class="ttc" id="anamespace_e_e_g_gaming_1_1_core_1_1_managers_html"><div class="ttname"><a href="namespace_e_e_g_gaming_1_1_core_1_1_managers.html">EEGGaming.Core.Managers</a></div><div class="ttdef"><b>Definition</b> <a href="_app_settings_manager_8cs_source.html#l00012">AppSettingsManager.cs:13</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -286,7 +313,7 @@ $(function(){initNavTree('_menu_8cs_source.html',''); initResizable(true); });
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_e86b53971e3ba467f77fc99bb9652cc9.html">BlinkBird</a></li><li class="navelem"><a class="el" href="dir_9fbe364ff72607eecf0611039dde3612.html">Code</a></li><li class="navelem"><b>Menu.cs</b></li>
+    <li class="navelem"><a class="el" href="dir_e86b53971e3ba467f77fc99bb9652cc9.html">BlinkBird</a></li><li class="navelem"><a class="el" href="dir_9fbe364ff72607eecf0611039dde3612.html">Code</a></li><li class="navelem"><a class="el" href="_menu_8cs.html">Menu.cs</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
   </ul>
 </div>

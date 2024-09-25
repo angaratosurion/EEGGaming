@@ -2,6 +2,11 @@ using Godot;
 using NLog.Targets;
 using System;
 
+
+/// <summary>
+/// The Horizontal Split container that gorupss the scoreand the timer 
+/// together
+/// </summary>
 public partial class ScoreandTime : HSplitContainer
 {
     // Called when the node enters the scene tree for the first time.
@@ -10,7 +15,10 @@ public partial class ScoreandTime : HSplitContainer
 	{
          
     }
-
+    /// <summary>
+    /// Checks if the camera moves and moves
+    /// </summary>
+    /// <param name="delta"></param>
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
 	public override void _Process(double delta)
     {
