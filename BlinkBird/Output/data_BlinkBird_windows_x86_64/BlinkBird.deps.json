@@ -10,7 +10,7 @@
       "BlinkBird/0.0.5.0": {
         "dependencies": {
           "CsvHelper": "32.0.3",
-          "EEGGaming.Core": "0.2.7.5",
+          "EEGGaming.Core": "0.2.8",
           "Godot.SourceGenerators": "4.2.2",
           "GodotSharp": "4.2.2",
           "Microsoft.EntityFrameworkCore.Design": "8.0.6",
@@ -1321,7 +1321,7 @@
           }
         }
       },
-      "EEGGaming.Core/0.2.7.5": {
+      "EEGGaming.Core/0.2.8": {
         "dependencies": {
           "CsvHelper": "32.0.3",
           "FftSharp": "2.1.0",
@@ -1344,8 +1344,8 @@
         },
         "runtime": {
           "EEGGaming.Core.dll": {
-            "assemblyVersion": "0.2.7.5",
-            "fileVersion": "0.2.7.5"
+            "assemblyVersion": "0.2.8",
+            "fileVersion": "0.2.8.0"
           }
         }
       }
@@ -1887,7 +1887,7 @@
       "path": "xneurosdk/1.0.6.25",
       "hashPath": "xneurosdk.1.0.6.25.nupkg.sha512"
     },
-    "EEGGaming.Core/0.2.7.5": {
+    "EEGGaming.Core/0.2.8": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

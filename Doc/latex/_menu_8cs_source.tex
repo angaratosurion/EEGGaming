@@ -52,127 +52,135 @@
 \DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00057}00057\ \ \ \ \ \ \ \ \ btnConnectEEGDevice.Pressed\ +=\ BtnConnectEEGDevice\_Pressed;}
 \DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00058}00058\ \ \ \ \ \ \ \ \ Button\ btnShowUsers\ =\ (Button)this.FindChild(\textcolor{stringliteral}{"{}btnShowUsers"{}},\ \textcolor{keyword}{true});}
 \DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00059}00059\ \ \ \ \ \ \ \ \ btnShowUsers.Pressed\ +=\ BtnShowUsers\_Pressed;}
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00060}00060\ }
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00061}00061\ }
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00062}00062\ }
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00063}00063\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\ \mbox{\hyperlink{class_menu}{Menu}}.\mbox{\hyperlink{class_menu_a2cdd0aa13fc2a0c1a0f2fdb2195c475c}{SelectedUser}}\ ==\textcolor{keyword}{null})}
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00064}00064\ \ \ \ \ \ \ \ \ \{}
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00065}00065\ \ \ \ \ \ \ \ \ \ \ \ \ btnNewGame.Disabled\ =\ \textcolor{keyword}{true};}
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00066}00066\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00060}00060\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\ AppSettingsManager.GetEnableUseOfHeadset())}
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00061}00061\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00062}00062\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_menu_a0f5f753616914a269e9acad62bee9e1d}{ignoreUserselectionandconstateofdevice}}\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00063}00063\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00064}00064\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00065}00065\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00066}00066\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_menu_a0f5f753616914a269e9acad62bee9e1d}{ignoreUserselectionandconstateofdevice}}\ =\ \textcolor{keyword}{true};}
 \DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00067}00067\ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00068}00068\ \ \ \ \ \mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager}{BrainWaveRecordManager}}.\mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_a62018636cfefd0af1f416df70642ddb5}{scanner}}.Start();}
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00069}00069\ \ \ \ \ \ \ \ \ var\ sensors\ =\ \mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager}{BrainWaveRecordManager}}.\mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_a62018636cfefd0af1f416df70642ddb5}{scanner}}.Sensors;}
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00070}00070\ \ \ \ \ \ \ \ \ lblDeviceName\ =\ (Label)this.FindChild(\textcolor{stringliteral}{"{}lblDeviceName"{}},\ \textcolor{keyword}{true});}
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00071}00071\ }
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00072}00072\ \ \ \ \ \ \ \ \ lblDeviceState\ =\ (Label)this.FindChild(\textcolor{stringliteral}{"{}lblDeviceState"{}},\ \textcolor{keyword}{true});}
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00073}00073\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\ \ sensors.Count\ >\ 0)}
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00074}00074\ \ \ \ \ \ \ \ \ \{}
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00075}00075\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00076}00076\ \ \ \ \ \ \ \ \ \ \ \ \ lblDeviceName.Text\ =\ sensors[0].Name;}
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00077}00077\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00078}00078\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_menu_aa005ebd5a38e50bc52accdb70c081008}{recordManager}}.\mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_ab31d23b3a77ce3a8a2f8dd164843e050}{Connect}}(sensors[0]);}
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00079}00079\ \ \ \ \ \ \ \ \ \ \ \ \ lblDeviceState.Text\ =\ \mbox{\hyperlink{class_menu_aa005ebd5a38e50bc52accdb70c081008}{recordManager}}.\mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_aac1139f5f9fcee87ee991987c6f7805b}{Sensor}}.State.ToString();}
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00080}00080\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager}{BrainWaveRecordManager}}.\mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_a62018636cfefd0af1f416df70642ddb5}{scanner}}.Stop();}
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00081}00081\ }
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00082}00082\ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00083}00083\ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\ \ \mbox{\hyperlink{class_menu_a0f5f753616914a269e9acad62bee9e1d}{ignoreUserselectionandconstateofdevice}})}
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00084}00084\ \ \ \ \ \ \ \ \ \{}
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00085}00085\ \ \ \ \ \ \ \ \ \ \ \ \ lblDeviceName.Text\ =\ \textcolor{stringliteral}{"{}BrainBit"{}};}
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00086}00086\ \ \ \ \ \ \ \ \ \ \ \ \ lblDeviceState.Text\ =\ SensorState.StateInRange.ToString();}
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00087}00087\ }
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00088}00088\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00068}00068\ }
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00069}00069\ }
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00070}00070\ }
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00071}00071\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\ \mbox{\hyperlink{class_menu}{Menu}}.\mbox{\hyperlink{class_menu_a2cdd0aa13fc2a0c1a0f2fdb2195c475c}{SelectedUser}}\ ==\textcolor{keyword}{null})}
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00072}00072\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00073}00073\ \ \ \ \ \ \ \ \ \ \ \ \ btnNewGame.Disabled\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00074}00074\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00075}00075\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00076}00076\ \ \ \ \ \mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager}{BrainWaveRecordManager}}.\mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_a62018636cfefd0af1f416df70642ddb5}{scanner}}.Start();}
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00077}00077\ \ \ \ \ \ \ \ \ var\ sensors\ =\ \mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager}{BrainWaveRecordManager}}.\mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_a62018636cfefd0af1f416df70642ddb5}{scanner}}.Sensors;}
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00078}00078\ \ \ \ \ \ \ \ \ lblDeviceName\ =\ (Label)this.FindChild(\textcolor{stringliteral}{"{}lblDeviceName"{}},\ \textcolor{keyword}{true});}
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00079}00079\ }
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00080}00080\ \ \ \ \ \ \ \ \ lblDeviceState\ =\ (Label)this.FindChild(\textcolor{stringliteral}{"{}lblDeviceState"{}},\ \textcolor{keyword}{true});}
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00081}00081\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\ \ sensors.Count\ >\ 0)}
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00082}00082\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00083}00083\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00084}00084\ \ \ \ \ \ \ \ \ \ \ \ \ lblDeviceName.Text\ =\ sensors[0].Name;}
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00085}00085\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00086}00086\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_menu_aa005ebd5a38e50bc52accdb70c081008}{recordManager}}.\mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_ab31d23b3a77ce3a8a2f8dd164843e050}{Connect}}(sensors[0]);}
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00087}00087\ \ \ \ \ \ \ \ \ \ \ \ \ lblDeviceState.Text\ =\ \mbox{\hyperlink{class_menu_aa005ebd5a38e50bc52accdb70c081008}{recordManager}}.\mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_aac1139f5f9fcee87ee991987c6f7805b}{Sensor}}.State.ToString();}
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00088}00088\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager}{BrainWaveRecordManager}}.\mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_a62018636cfefd0af1f416df70642ddb5}{scanner}}.Stop();}
 \DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00089}00089\ }
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00090}00090\ }
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00091}00091\ }
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00092}00092\ }
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00093}00093\ \ \ \ \ \}}
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00097}00097\ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{void}\ BtnShowUsers\_Pressed()}
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00098}00098\ \ \ \ \ \{}
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00099}00099\ \ \ \ \ \ \ \ \ ShowusersScene\ =\ (PackedScene)GD.Load(\textcolor{stringliteral}{"{}res://Scenes/ShowUsers.tscn"{}});}
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00100}00100\ \ \ \ \ \ \ \ \ Window\ control\ =\ (Window\ \ )ShowusersScene.Instantiate();}
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00101}00101\ \ \ \ \ \ \ \ \ this.AddSibling(control);}
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00102}00102\ \ \ \ \ \ \ \ \ }
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00103}00103\ \ \ \ \ \}}
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00107}00107\ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{void}\ BtnConnectEEGDevice\_Pressed()}
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00108}00108\ \ \ \ \ \{}
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00109}00109\ \ \ \ \ \ \ \ \ var\ sensors\ =\ \mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager}{BrainWaveRecordManager}}.\mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_a62018636cfefd0af1f416df70642ddb5}{scanner}}.Sensors;}
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00110}00110\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager}{BrainWaveRecordManager}}.\mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_a62018636cfefd0af1f416df70642ddb5}{scanner}}.Start();}
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00111}00111\ \ \ \ \ \ \ \ \ Thread.Sleep(1500);}
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00112}00112\ \ \ \ \ \ \ \ \ GD.Print(sensors.Count);}
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00113}00113\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (sensors.Count\ >\ 0)}
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00114}00114\ \ \ \ \ \ \ \ \ \{}
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00115}00115\ \ \ \ \ \ \ \ \ \ \ \ \ \ lblDeviceName\ =\ (Label)this.FindChild(\textcolor{stringliteral}{"{}lblDeviceName"{}},\ \textcolor{keyword}{true});}
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00116}00116\ \ \ \ \ \ \ \ \ \ \ \ \ lblDeviceName.Text\ =\ sensors[0].Name;}
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00117}00117\ \ \ \ \ \ \ \ \ \ \ \ \ \ lblDeviceState\ =\ (Label)this.FindChild(\textcolor{stringliteral}{"{}lblDeviceState"{}},\ \textcolor{keyword}{true});}
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00118}00118\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_menu_aa005ebd5a38e50bc52accdb70c081008}{recordManager}}.\mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_ab31d23b3a77ce3a8a2f8dd164843e050}{Connect}}(sensors[0]);}
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00119}00119\ \ \ \ \ \ \ \ \ \ \ \ \ lblDeviceState.Text\ =\ \mbox{\hyperlink{class_menu_aa005ebd5a38e50bc52accdb70c081008}{recordManager}}.\mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_aac1139f5f9fcee87ee991987c6f7805b}{Sensor}}.State.ToString();}
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00120}00120\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager}{BrainWaveRecordManager}}.\mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_a62018636cfefd0af1f416df70642ddb5}{scanner}}.Stop();}
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00121}00121\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_menu_aa005ebd5a38e50bc52accdb70c081008}{recordManager}}.\mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_ab31d23b3a77ce3a8a2f8dd164843e050}{Connect}}(sensors[0]);}
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00122}00122\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\ \ \mbox{\hyperlink{class_menu_a0f5f753616914a269e9acad62bee9e1d}{ignoreUserselectionandconstateofdevice}})}
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00123}00123\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00124}00124\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ lblDeviceName.Text\ =\ \textcolor{stringliteral}{"{}BrainBit"{}};}
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00125}00125\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ lblDeviceState.Text=SensorState.StateInRange.ToString();\ \ \ \ }
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00126}00126\ }
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00127}00127\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00128}00128\ \ \ \ \ \ \ \ \ \ \ \ \ }
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00129}00129\ }
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00130}00130\ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00131}00131\ \ \ \ \ \ \ \ }
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00132}00132\ \ \ \ \ \ \ \ \ \ \ \ }
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00133}00133\ }
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00134}00134\ \ \ \ \ \ \ \ \ }
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00135}00135\ \ \ \ \ \}}
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00139}00139\ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{void}\ BtnAbout\_Pressed()}
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00140}00140\ \ \ \ \ \{}
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00141}00141\ \ \ \ \ \ \ \ \ AboutScene\ =\ (PackedScene)GD.Load(\textcolor{stringliteral}{"{}res://Scenes/About.tscn"{}});}
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00142}00142\ \ \ \ \ \ \ \ \ Node2D\ control\ =\ (Node2D)AboutScene.Instantiate();}
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00143}00143\ \ \ \ \ \ \ \ \ this.AddSibling(control);}
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00144}00144\ \ \ \ \ \ \ \ \ \textcolor{comment}{//this.Hide();}}
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00145}00145\ \ \ \ \ \}}
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00149}00149\ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{void}\ BtnExit\_Pressed()}
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00150}00150\ \ \ \ \ \{}
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00151}00151\ \ \ \ \ \ \ \ \ this.Free();}
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00152}00152\ \ \ \ \ \}}
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00156}00156\ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{void}\ BtnSelectUser\_Pressed()}
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00157}00157\ \ \ \ \ \{}
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00158}00158\ \ \ \ \ \ \ \ \ SelectUserScene\ =\ (PackedScene)GD.Load(\textcolor{stringliteral}{"{}res://Scenes/ShowUserDetails.tscn"{}});}
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00159}00159\ \ \ \ \ \ \ \ \ Control\ control\ =\ (Control)SelectUserScene.Instantiate();}
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00160}00160\ \ \ \ \ \ \ \ \ this.AddSibling(control);}
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00161}00161\ \ \ \ \ \ \ \ \ \textcolor{comment}{//this.Hide();}}
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00162}00162\ \ \ \ \ \}}
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00166}00166\ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{void}\ BtnNewuser\_Pressed()}
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00167}00167\ \ \ \ \ \{}
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00168}00168\ \ \ \ \ \ \ \ \ \ NewUserDetailsPackedScene=\ (PackedScene)GD.Load(\textcolor{stringliteral}{"{}res://Scenes/AddUserDetails.tscn"{}});}
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00169}00169\ \ \ \ \ \ \ \ \ Control\ control\ =\ (Control)NewUserDetailsPackedScene.Instantiate();}
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00170}00170\ \ \ \ \ \ \ \ \ this.AddSibling(control);}
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00171}00171\ \ \ \ \ \ \ \ \ \ }
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00172}00172\ \ \ \ \ \}}
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00177}00177\ \ \ \ \ \textcolor{comment}{//\ Called\ every\ frame.\ 'delta'\ is\ the\ elapsed\ time\ since\ the\ previous\ frame.}}
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00178}\mbox{\hyperlink{class_menu_aa5214bdaf8eaaa4ea25d41c57331c221}{00178}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{override}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_menu_aa5214bdaf8eaaa4ea25d41c57331c221}{\_Process}}(\textcolor{keywordtype}{double}\ delta)}
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00179}00179\ \ \ \ \ \{}
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00180}00180\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ ((\mbox{\hyperlink{class_menu_a2cdd0aa13fc2a0c1a0f2fdb2195c475c}{SelectedUser}}\ ==\ \textcolor{keyword}{null}\ ||\ \mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager}{BrainWaveRecordManager}}.\mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_a62018636cfefd0af1f416df70642ddb5}{scanner}}.Sensors.Count==0)\ \&\&(!\mbox{\hyperlink{class_menu_a0f5f753616914a269e9acad62bee9e1d}{ignoreUserselectionandconstateofdevice}}))}
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00181}00181\ \ \ \ \ \ \ \ \ \{}
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00182}00182\ \ \ \ \ \ \ \ \ \ \ \ \ btnNewGame.Disabled\ =\ \textcolor{keyword}{true};}
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00183}00183\ }
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00184}00184\ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00185}00185\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00186}00186\ \ \ \ \ \ \ \ \ \{}
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00187}00187\ \ \ \ \ \ \ \ \ \ \ \ \ btnNewGame.Disabled\ =\ \textcolor{keyword}{false};}
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00188}00188\ }
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00189}00189\ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00190}00190\ \ \ \ \ \ \ \ \ var\ sensors\ =\ \mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager}{BrainWaveRecordManager}}.\mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_a62018636cfefd0af1f416df70642ddb5}{scanner}}.Sensors;}
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00191}00191\ \ \ \ \ \ \ \ \ \ }
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00192}00192\ \ \ \ \ \}}
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00196}\mbox{\hyperlink{class_menu_a9a2ffafb1592a5438156816758e2bd64}{00196}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_menu_a9a2ffafb1592a5438156816758e2bd64}{bbtnNewGame\_pressed}}()}
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00197}00197\ \ \ \ \ \{}
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00198}00198\ \ \ \ \ \ \ \ \ newGamepackedScene\ =\ (PackedScene)GD.Load(\textcolor{stringliteral}{"{}res://Scenes/World.tscn"{}});}
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00199}00199\ \ \ \ \ \ \ \ \ Node2D\ sprite\ =\ (Node2D)newGamepackedScene.Instantiate();}
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00200}00200\ \ \ \ \ \ \ \ \ this.AddSibling(sprite);}
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00201}00201\ \ \ \ \ \ \ \ \ \ }
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00202}00202\ \ \ \ \ \ \ \ \ }
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00203}00203\ }
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00204}00204\ }
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00205}00205\ \ \ \ \ \}}
-\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00206}00206\ \}}
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00090}00090\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00091}00091\ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\ \ \mbox{\hyperlink{class_menu_a0f5f753616914a269e9acad62bee9e1d}{ignoreUserselectionandconstateofdevice}})}
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00092}00092\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00093}00093\ \ \ \ \ \ \ \ \ \ \ \ \ lblDeviceName.Text\ =\ \textcolor{stringliteral}{"{}BrainBit"{}};}
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00094}00094\ \ \ \ \ \ \ \ \ \ \ \ \ lblDeviceState.Text\ =\ SensorState.StateInRange.ToString();}
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00095}00095\ }
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00096}00096\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00097}00097\ }
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00098}00098\ }
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00099}00099\ }
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00100}00100\ }
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00101}00101\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00105}00105\ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{void}\ BtnShowUsers\_Pressed()}
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00106}00106\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00107}00107\ \ \ \ \ \ \ \ \ ShowusersScene\ =\ (PackedScene)GD.Load(\textcolor{stringliteral}{"{}res://Scenes/ShowUsers.tscn"{}});}
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00108}00108\ \ \ \ \ \ \ \ \ Window\ control\ =\ (Window\ \ )ShowusersScene.Instantiate();}
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00109}00109\ \ \ \ \ \ \ \ \ this.AddSibling(control);}
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00110}00110\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00111}00111\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00115}00115\ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{void}\ BtnConnectEEGDevice\_Pressed()}
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00116}00116\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00117}00117\ \ \ \ \ \ \ \ \ var\ sensors\ =\ \mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager}{BrainWaveRecordManager}}.\mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_a62018636cfefd0af1f416df70642ddb5}{scanner}}.Sensors;}
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00118}00118\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager}{BrainWaveRecordManager}}.\mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_a62018636cfefd0af1f416df70642ddb5}{scanner}}.Start();}
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00119}00119\ \ \ \ \ \ \ \ \ Thread.Sleep(1500);}
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00120}00120\ \ \ \ \ \ \ \ \ GD.Print(sensors.Count);}
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00121}00121\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (sensors.Count\ >\ 0)}
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00122}00122\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00123}00123\ \ \ \ \ \ \ \ \ \ \ \ \ \ lblDeviceName\ =\ (Label)this.FindChild(\textcolor{stringliteral}{"{}lblDeviceName"{}},\ \textcolor{keyword}{true});}
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00124}00124\ \ \ \ \ \ \ \ \ \ \ \ \ lblDeviceName.Text\ =\ sensors[0].Name;}
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00125}00125\ \ \ \ \ \ \ \ \ \ \ \ \ \ lblDeviceState\ =\ (Label)this.FindChild(\textcolor{stringliteral}{"{}lblDeviceState"{}},\ \textcolor{keyword}{true});}
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00126}00126\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_menu_aa005ebd5a38e50bc52accdb70c081008}{recordManager}}.\mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_ab31d23b3a77ce3a8a2f8dd164843e050}{Connect}}(sensors[0]);}
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00127}00127\ \ \ \ \ \ \ \ \ \ \ \ \ lblDeviceState.Text\ =\ \mbox{\hyperlink{class_menu_aa005ebd5a38e50bc52accdb70c081008}{recordManager}}.\mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_aac1139f5f9fcee87ee991987c6f7805b}{Sensor}}.State.ToString();}
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00128}00128\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager}{BrainWaveRecordManager}}.\mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_a62018636cfefd0af1f416df70642ddb5}{scanner}}.Stop();}
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00129}00129\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_menu_aa005ebd5a38e50bc52accdb70c081008}{recordManager}}.\mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_ab31d23b3a77ce3a8a2f8dd164843e050}{Connect}}(sensors[0]);}
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00130}00130\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\ \ \mbox{\hyperlink{class_menu_a0f5f753616914a269e9acad62bee9e1d}{ignoreUserselectionandconstateofdevice}})}
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00131}00131\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00132}00132\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ lblDeviceName.Text\ =\ \textcolor{stringliteral}{"{}BrainBit"{}};}
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00133}00133\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ lblDeviceState.Text=SensorState.StateInRange.ToString();\ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00134}00134\ }
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00135}00135\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00136}00136\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00137}00137\ }
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00138}00138\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00139}00139\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00140}00140\ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00141}00141\ }
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00142}00142\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00143}00143\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00147}00147\ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{void}\ BtnAbout\_Pressed()}
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00148}00148\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00149}00149\ \ \ \ \ \ \ \ \ AboutScene\ =\ (PackedScene)GD.Load(\textcolor{stringliteral}{"{}res://Scenes/About.tscn"{}});}
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00150}00150\ \ \ \ \ \ \ \ \ Node2D\ control\ =\ (Node2D)AboutScene.Instantiate();}
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00151}00151\ \ \ \ \ \ \ \ \ this.AddSibling(control);}
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00152}00152\ \ \ \ \ \ \ \ \ \textcolor{comment}{//this.Hide();}}
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00153}00153\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00157}00157\ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{void}\ BtnExit\_Pressed()}
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00158}00158\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00159}00159\ \ \ \ \ \ \ \ \ this.Free();}
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00160}00160\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00164}00164\ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{void}\ BtnSelectUser\_Pressed()}
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00165}00165\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00166}00166\ \ \ \ \ \ \ \ \ SelectUserScene\ =\ (PackedScene)GD.Load(\textcolor{stringliteral}{"{}res://Scenes/ShowUserDetails.tscn"{}});}
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00167}00167\ \ \ \ \ \ \ \ \ Control\ control\ =\ (Control)SelectUserScene.Instantiate();}
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00168}00168\ \ \ \ \ \ \ \ \ this.AddSibling(control);}
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00169}00169\ \ \ \ \ \ \ \ \ \textcolor{comment}{//this.Hide();}}
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00170}00170\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00174}00174\ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{void}\ BtnNewuser\_Pressed()}
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00175}00175\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00176}00176\ \ \ \ \ \ \ \ \ \ NewUserDetailsPackedScene=\ (PackedScene)GD.Load(\textcolor{stringliteral}{"{}res://Scenes/AddUserDetails.tscn"{}});}
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00177}00177\ \ \ \ \ \ \ \ \ Control\ control\ =\ (Control)NewUserDetailsPackedScene.Instantiate();}
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00178}00178\ \ \ \ \ \ \ \ \ this.AddSibling(control);}
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00179}00179\ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00180}00180\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00185}00185\ \ \ \ \ \textcolor{comment}{//\ Called\ every\ frame.\ 'delta'\ is\ the\ elapsed\ time\ since\ the\ previous\ frame.}}
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00186}\mbox{\hyperlink{class_menu_aa5214bdaf8eaaa4ea25d41c57331c221}{00186}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{override}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_menu_aa5214bdaf8eaaa4ea25d41c57331c221}{\_Process}}(\textcolor{keywordtype}{double}\ delta)}
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00187}00187\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00188}00188\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ ((\mbox{\hyperlink{class_menu_a2cdd0aa13fc2a0c1a0f2fdb2195c475c}{SelectedUser}}\ ==\ \textcolor{keyword}{null}\ ||\ \mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager}{BrainWaveRecordManager}}.\mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_a62018636cfefd0af1f416df70642ddb5}{scanner}}.Sensors.Count==0)\ \&\&(!\mbox{\hyperlink{class_menu_a0f5f753616914a269e9acad62bee9e1d}{ignoreUserselectionandconstateofdevice}}))}
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00189}00189\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00190}00190\ \ \ \ \ \ \ \ \ \ \ \ \ btnNewGame.Disabled\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00191}00191\ }
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00192}00192\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00193}00193\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00194}00194\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00195}00195\ \ \ \ \ \ \ \ \ \ \ \ \ btnNewGame.Disabled\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00196}00196\ }
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00197}00197\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00198}00198\ \ \ \ \ \ \ \ \ var\ sensors\ =\ \mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager}{BrainWaveRecordManager}}.\mbox{\hyperlink{class_e_e_g_gaming_1_1_core_1_1_managers_1_1_brain_wave_record_manager_a62018636cfefd0af1f416df70642ddb5}{scanner}}.Sensors;}
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00199}00199\ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00200}00200\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00204}\mbox{\hyperlink{class_menu_a9a2ffafb1592a5438156816758e2bd64}{00204}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_menu_a9a2ffafb1592a5438156816758e2bd64}{bbtnNewGame\_pressed}}()}
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00205}00205\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00206}00206\ \ \ \ \ \ \ \ \ newGamepackedScene\ =\ (PackedScene)GD.Load(\textcolor{stringliteral}{"{}res://Scenes/World.tscn"{}});}
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00207}00207\ \ \ \ \ \ \ \ \ Node2D\ sprite\ =\ (Node2D)newGamepackedScene.Instantiate();}
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00208}00208\ \ \ \ \ \ \ \ \ this.AddSibling(sprite);}
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00209}00209\ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00210}00210\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00211}00211\ }
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00212}00212\ }
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00213}00213\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_menu_8cs_source_l00214}00214\ \}}
 
 \end{DoxyCode}

@@ -94,7 +94,7 @@ Parameters</title>
                 </formalpara>
                 </para>
 <para>
-Definition at line <link linkend="__menu_8cs_source_1l00178">178</link> of file <link linkend="__menu_8cs_source">Menu.cs</link>.</para>
+Definition at line <link linkend="__menu_8cs_source_1l00186">186</link> of file <link linkend="__menu_8cs_source">Menu.cs</link>.</para>
 </section>
 <anchor xml:id="_class_menu_1a8749d8124f3d908e7dc30d71c08f6e28"/><section>
     <title>_Ready()</title>
@@ -116,7 +116,7 @@ Definition at line <link linkend="__menu_8cs_source_1l00038">38</link> of file <
 <para>Starts new game. </para>
 </para>
 <para>
-Definition at line <link linkend="__menu_8cs_source_1l00196">196</link> of file <link linkend="__menu_8cs_source">Menu.cs</link>.</para>
+Definition at line <link linkend="__menu_8cs_source_1l00204">204</link> of file <link linkend="__menu_8cs_source">Menu.cs</link>.</para>
 </section>
 <anchor xml:id="_class_menu_1ab4749d59147615a8d8289be37cb49a83"/><section>
     <title>SaveDataToDb()</title>

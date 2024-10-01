@@ -87,5 +87,34 @@ namespace EEGGaming.Core.Managers
                 return null;
             }
         }
+        /// <summary>
+        /// Returns the state (enabled or disabled ) in the headset from the config
+        /// </summary>
+        /// <returns>the state (enabled or disabled ) in the headset from the config</returns>
+        public static Boolean GetEnableUseOfHeadset()
+        {
+            try
+            {
+                Boolean ap =false;
+                
+                Init();
+
+
+
+                Boolean enableheadset = config.GetValue<Boolean>("BlinkBird:EnableHeadset");
+                ap=enableheadset;
+
+                 
+                
+
+                return ap;
+            }
+            catch (Exception ex)
+            {
+
+                CommonTools.ErrorReporting(ex);
+                return false;
+            }
+        }
     }
 }

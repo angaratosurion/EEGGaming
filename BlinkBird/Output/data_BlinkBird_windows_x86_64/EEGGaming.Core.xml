@@ -327,6 +327,12 @@
             </summary>
             <returns>the connection string of the database</returns>
         </member>
+        <member name="M:EEGGaming.Core.Managers.AppSettingsManager.GetEnableUseOfHeadset">
+            <summary>
+            Returns the state (enabled or disabled ) in the headset from the config
+            </summary>
+            <returns>the state (enabled or disabled ) in the headset from the config</returns>
+        </member>
         <member name="T:EEGGaming.Core.Managers.BaseManager">
             <summary>
             The  class that includes the mostly common methods,properties and fuctions of the 

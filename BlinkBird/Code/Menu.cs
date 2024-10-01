@@ -19,7 +19,7 @@ public partial class Menu : Control
 	Label lblDeviceName, lblDeviceState;
 
     public static User SelectedUser = null;// new User();
-	public static bool ignoreUserselectionandconstateofdevice = false;
+	public static bool ignoreUserselectionandconstateofdevice = false,enabletheuseofhs=true;
 	/// <summary>
 	/// Save the data to database
 	/// </summary>
@@ -35,19 +35,19 @@ public partial class Menu : Control
 	/// <summary>
 	/// Creates the winndow
 	/// </summary>
-    public override void _Ready()
+	public override void _Ready()
 	{
-		 
-		BaseManager bm= new BaseManager();
+
+		BaseManager bm = new BaseManager();
 		bm.CreateDatabase();
 		var t = bm.DbContext.Database.ProviderName;
 		GD.Print(t);
-		  btnNewGame = (Button)this.FindChild("btnNewGame");
+		btnNewGame = (Button)this.FindChild("btnNewGame");
 		GD.Print(btnNewGame.Name);
 		btnNewGame.Pressed += bbtnNewGame_pressed;
-		Button btnNewuser= (Button)this.FindChild("btnAddNewUser");
+		Button btnNewuser = (Button)this.FindChild("btnAddNewUser");
 		btnNewuser.Pressed += BtnNewuser_Pressed;
-		Button btnSelectUser = (Button) this.FindChild("btnSelectUser");
+		Button btnSelectUser = (Button)this.FindChild("btnSelectUser");
 		btnSelectUser.Pressed += BtnSelectUser_Pressed;
 		Button btnExit = (Button)this.FindChild("btnExit", true);
 		btnExit.Pressed += BtnExit_Pressed;
@@ -57,33 +57,55 @@ public partial class Menu : Control
 		btnConnectEEGDevice.Pressed += BtnConnectEEGDevice_Pressed;
 		Button btnShowUsers = (Button)this.FindChild("btnShowUsers", true);
 		btnShowUsers.Pressed += BtnShowUsers_Pressed;
+		enabletheuseofhs = AppSettingsManager.GetEnableUseOfHeadset();
+		HSplitContainer DeviceInfoPanel = (HSplitContainer)this.FindChild("DeviceInfoPanel");
 
+        if (enabletheuseofhs)
+		{
+			ignoreUserselectionandconstateofdevice = false;
+		}
+		else
+		{
+			ignoreUserselectionandconstateofdevice = true;
+		}
 
+		GD.Print("Enabled Use of Headset :" + AppSettingsManager.GetEnableUseOfHeadset());
 
-		if ( Menu.SelectedUser ==null)
+		if (Menu.SelectedUser == null)
 		{
 			btnNewGame.Disabled = true;
-			
-		}
- 	BrainWaveRecordManager.scanner.Start();
-		var sensors = BrainWaveRecordManager.scanner.Sensors;
-        lblDeviceName = (Label)this.FindChild("lblDeviceName", true);
 
-        lblDeviceState = (Label)this.FindChild("lblDeviceState", true);
-        if (  sensors.Count > 0)
+		}
+		if (enabletheuseofhs)
 		{
-			  
-			lblDeviceName.Text = sensors[0].Name;
-			  
-			recordManager.Connect(sensors[0]);
-			lblDeviceState.Text = recordManager.Sensor.State.ToString();
-			BrainWaveRecordManager.scanner.Stop();
+			BrainWaveRecordManager.scanner.Start();
+			var sensors = BrainWaveRecordManager.scanner.Sensors;
+			lblDeviceName = (Label)this.FindChild("lblDeviceName", true);
 
+			lblDeviceState = (Label)this.FindChild("lblDeviceState", true);
+			if (sensors.Count > 0)
+			{
+
+				lblDeviceName.Text = sensors[0].Name;
+
+				recordManager.Connect(sensors[0]);
+				lblDeviceState.Text = recordManager.Sensor.State.ToString();
+				BrainWaveRecordManager.scanner.Stop();
+
+			}
+
+			//if (ignoreUserselectionandconstateofdevice)
+			//{
+			//	lblDeviceName.Text = "BrainBit";
+			//	lblDeviceState.Text = SensorState.StateInRange.ToString();
+
+			//}
 		}
-         if (  ignoreUserselectionandconstateofdevice)
-        {
-            lblDeviceName.Text = "BrainBit";
-            lblDeviceState.Text = SensorState.StateInRange.ToString();
+		else
+		{
+            btnConnectEEGDevice.Disabled = true;
+
+			DeviceInfoPanel.Hide();
 
         }
 

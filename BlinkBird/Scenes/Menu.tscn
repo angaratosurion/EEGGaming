@@ -80,39 +80,6 @@ offset_right = 758.0
 offset_bottom = 551.0
 text = "Exit"
 
-[node name="Label" type="Label" parent="."]
-layout_mode = 0
-offset_left = 2.0
-offset_top = 590.0
-offset_right = 117.0
-offset_bottom = 613.0
-text = "Device Name : "
-
-[node name="lblDeviceName" type="Label" parent="."]
-layout_mode = 0
-offset_left = 120.0
-offset_top = 592.0
-offset_right = 241.0
-offset_bottom = 615.0
-text = "%devicename%"
-
-[node name="Label2" type="Label" parent="."]
-layout_mode = 0
-offset_left = 6.0
-offset_top = 615.0
-offset_right = 106.0
-offset_bottom = 638.0
-text = "Device State:
-"
-
-[node name="lblDeviceState" type="Label" parent="."]
-layout_mode = 0
-offset_left = 125.0
-offset_top = 617.0
-offset_right = 239.0
-offset_bottom = 640.0
-text = "%Deice state%"
-
 [node name="btnConnectEEGDevice" type="Button" parent="."]
 layout_mode = 0
 offset_left = 301.0
@@ -120,3 +87,36 @@ offset_top = 195.0
 offset_right = 764.0
 offset_bottom = 235.0
 text = "Connect EEGDevice"
+
+[node name="DeviceInfoPanel" type="HSplitContainer" parent="."]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 550.0
+offset_right = 42.0
+offset_bottom = 590.0
+
+[node name="VSplitContainer" type="VSplitContainer" parent="DeviceInfoPanel"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="HBoxContainer" parent="DeviceInfoPanel/VSplitContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="DeviceInfoPanel/VSplitContainer/VBoxContainer"]
+layout_mode = 2
+text = "Device Name : "
+
+[node name="lblDeviceName" type="Label" parent="DeviceInfoPanel/VSplitContainer/VBoxContainer"]
+layout_mode = 2
+text = "%devicename%"
+
+[node name="VBoxContainer2" type="HBoxContainer" parent="DeviceInfoPanel/VSplitContainer"]
+layout_mode = 2
+
+[node name="Label2" type="Label" parent="DeviceInfoPanel/VSplitContainer/VBoxContainer2"]
+layout_mode = 2
+text = "Device State:
+"
+
+[node name="lblDeviceState" type="Label" parent="DeviceInfoPanel/VSplitContainer/VBoxContainer2"]
+layout_mode = 2
+text = "%Deice state%"
