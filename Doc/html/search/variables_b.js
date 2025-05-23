@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['xmovement_0',['XMOVEMENT',['../class_player.html#a534050be6eff4fb0ab280c75eb3c43e4',1,'Player']]]
+  ['usermanager_0',['userManager',['../class_menu.html#a6aa76feb83b7956cd553c35b5e926f4e',1,'Menu']]]
 ];

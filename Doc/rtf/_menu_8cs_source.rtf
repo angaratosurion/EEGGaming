@@ -174,7 +174,7 @@ Go to the documentation of this file.\par
 00019     Label lblDeviceName, lblDeviceState;\par
 00020 \par
 00021     {\cf17 public} {\cf17 static} User SelectedUser = {\cf17 null};{\cf20 // new User();}\par
-00022     {\cf17 public} {\cf17 static} {\cf18 bool} ignoreUserselectionandconstateofdevice = {\cf17 false};\par
+00022     {\cf17 public} {\cf17 static} {\cf18 bool} ignoreUserselectionandconstateofdevice = {\cf17 false},enabletheuseofhs={\cf17 true};\par
 00026     {\cf17 public} {\cf17 static}  {\cf18 void} SaveDataToDb()\par
 00027     \{\par
 00028         {\cf19 if} (World.gamingSesion != {\cf17 null})\par
@@ -186,17 +186,17 @@ Go to the documentation of this file.\par
 00034     \}\par
 00038     {\cf17 public} {\cf17 override} {\cf18 void} _Ready()\par
 00039     \{\par
-00040          \par
-00041         BaseManager bm= {\cf17 new} BaseManager();\par
+00040 \par
+00041         BaseManager bm = {\cf17 new} BaseManager();\par
 00042         bm.CreateDatabase();\par
 00043         var t = bm.DbContext.Database.ProviderName;\par
 00044         GD.Print(t);\par
-00045           btnNewGame = (Button)this.FindChild({\cf22 "btnNewGame"});\par
+00045         btnNewGame = (Button)this.FindChild({\cf22 "btnNewGame"});\par
 00046         GD.Print(btnNewGame.Name);\par
 00047         btnNewGame.Pressed += bbtnNewGame_pressed;\par
-00048         Button btnNewuser= (Button)this.FindChild({\cf22 "btnAddNewUser"});\par
+00048         Button btnNewuser = (Button)this.FindChild({\cf22 "btnAddNewUser"});\par
 00049         btnNewuser.Pressed += BtnNewuser_Pressed;\par
-00050         Button btnSelectUser = (Button) this.FindChild({\cf22 "btnSelectUser"});\par
+00050         Button btnSelectUser = (Button)this.FindChild({\cf22 "btnSelectUser"});\par
 00051         btnSelectUser.Pressed += BtnSelectUser_Pressed;\par
 00052         Button btnExit = (Button)this.FindChild({\cf22 "btnExit"}, {\cf17 true});\par
 00053         btnExit.Pressed += BtnExit_Pressed;\par
@@ -206,135 +206,149 @@ Go to the documentation of this file.\par
 00057         btnConnectEEGDevice.Pressed += BtnConnectEEGDevice_Pressed;\par
 00058         Button btnShowUsers = (Button)this.FindChild({\cf22 "btnShowUsers"}, {\cf17 true});\par
 00059         btnShowUsers.Pressed += BtnShowUsers_Pressed;\par
-00060         {\cf19 if} ( AppSettingsManager.GetEnableUseOfHeadset())\par
-00061         \{\par
-00062             ignoreUserselectionandconstateofdevice = {\cf17 false};\par
-00063         \}\par
-00064         {\cf19 else}\par
-00065         \{\par
-00066             ignoreUserselectionandconstateofdevice = {\cf17 true};\par
-00067         \}\par
-00068 \par
-00069 \par
-00070 \par
-00071         {\cf19 if} ( Menu.SelectedUser =={\cf17 null})\par
-00072         \{\par
-00073             btnNewGame.Disabled = {\cf17 true};\par
-00074             \par
-00075         \}\par
-00076     BrainWaveRecordManager.scanner.Start();\par
-00077         var sensors = BrainWaveRecordManager.scanner.Sensors;\par
-00078         lblDeviceName = (Label)this.FindChild({\cf22 "lblDeviceName"}, {\cf17 true});\par
-00079 \par
-00080         lblDeviceState = (Label)this.FindChild({\cf22 "lblDeviceState"}, {\cf17 true});\par
-00081         {\cf19 if} (  sensors.Count > 0)\par
-00082         \{\par
-00083               \par
-00084             lblDeviceName.Text = sensors[0].Name;\par
-00085               \par
-00086             recordManager.Connect(sensors[0]);\par
-00087             lblDeviceState.Text = recordManager.Sensor.State.ToString();\par
-00088             BrainWaveRecordManager.scanner.Stop();\par
-00089 \par
-00090         \}\par
-00091          {\cf19 if} (  ignoreUserselectionandconstateofdevice)\par
-00092         \{\par
-00093             lblDeviceName.Text = {\cf22 "BrainBit"};\par
-00094             lblDeviceState.Text = SensorState.StateInRange.ToString();\par
-00095 \par
-00096         \}\par
-00097 \par
-00098 \par
-00099 \par
-00100 \par
-00101     \}\par
-00105     {\cf17 private} {\cf18 void} BtnShowUsers_Pressed()\par
-00106     \{\par
-00107         ShowusersScene = (PackedScene)GD.Load({\cf22 "res://Scenes/ShowUsers.tscn"});\par
-00108         Window control = (Window  )ShowusersScene.Instantiate();\par
-00109         this.AddSibling(control);\par
-00110         \par
-00111     \}\par
-00115     {\cf17 private} {\cf18 void} BtnConnectEEGDevice_Pressed()\par
-00116     \{\par
-00117         var sensors = BrainWaveRecordManager.scanner.Sensors;\par
-00118         BrainWaveRecordManager.scanner.Start();\par
-00119         Thread.Sleep(1500);\par
-00120         GD.Print(sensors.Count);\par
-00121         {\cf19 if} (sensors.Count > 0)\par
-00122         \{\par
-00123              lblDeviceName = (Label)this.FindChild({\cf22 "lblDeviceName"}, {\cf17 true});\par
-00124             lblDeviceName.Text = sensors[0].Name;\par
-00125              lblDeviceState = (Label)this.FindChild({\cf22 "lblDeviceState"}, {\cf17 true});\par
-00126             recordManager.Connect(sensors[0]);\par
-00127             lblDeviceState.Text = recordManager.Sensor.State.ToString();\par
-00128             BrainWaveRecordManager.scanner.Stop();\par
-00129             recordManager.Connect(sensors[0]);\par
-00130             {\cf19 if} (  ignoreUserselectionandconstateofdevice)\par
-00131             \{\par
-00132                 lblDeviceName.Text = {\cf22 "BrainBit"};\par
-00133                 lblDeviceState.Text=SensorState.StateInRange.ToString();    \par
-00134 \par
-00135             \}\par
-00136             \par
-00137 \par
-00138         \}\par
-00139        \par
-00140            \par
-00141 \par
-00142         \par
-00143     \}\par
-00147     {\cf17 private} {\cf18 void} BtnAbout_Pressed()\par
-00148     \{\par
-00149         AboutScene = (PackedScene)GD.Load({\cf22 "res://Scenes/About.tscn"});\par
-00150         Node2D control = (Node2D)AboutScene.Instantiate();\par
-00151         this.AddSibling(control);\par
-00152         {\cf20 //this.Hide();}\par
-00153     \}\par
-00157     {\cf17 private} {\cf18 void} BtnExit_Pressed()\par
-00158     \{\par
-00159         this.Free();\par
-00160     \}\par
-00164     {\cf17 private} {\cf18 void} BtnSelectUser_Pressed()\par
-00165     \{\par
-00166         SelectUserScene = (PackedScene)GD.Load({\cf22 "res://Scenes/ShowUserDetails.tscn"});\par
-00167         Control control = (Control)SelectUserScene.Instantiate();\par
-00168         this.AddSibling(control);\par
-00169         {\cf20 //this.Hide();}\par
-00170     \}\par
-00174     {\cf17 private} {\cf18 void} BtnNewuser_Pressed()\par
-00175     \{\par
-00176          NewUserDetailsPackedScene= (PackedScene)GD.Load({\cf22 "res://Scenes/AddUserDetails.tscn"});\par
-00177         Control control = (Control)NewUserDetailsPackedScene.Instantiate();\par
-00178         this.AddSibling(control);\par
-00179          \par
-00180     \}\par
-00185     {\cf20 // Called every frame. 'delta' is the elapsed time since the previous frame.}\par
-00186     {\cf17 public} {\cf17 override} {\cf18 void} _Process({\cf18 double} delta)\par
-00187     \{\par
-00188         {\cf19 if} ((SelectedUser == {\cf17 null} || BrainWaveRecordManager.scanner.Sensors.Count==0) &&(!ignoreUserselectionandconstateofdevice))\par
-00189         \{\par
-00190             btnNewGame.Disabled = {\cf17 true};\par
-00191 \par
-00192         \}\par
-00193         {\cf19 else}\par
-00194         \{\par
-00195             btnNewGame.Disabled = {\cf17 false};\par
-00196 \par
-00197         \}\par
-00198         var sensors = BrainWaveRecordManager.scanner.Sensors;\par
-00199          \par
-00200     \}\par
-00204     {\cf17 public} {\cf18 void} bbtnNewGame_pressed()\par
-00205     \{\par
-00206         newGamepackedScene = (PackedScene)GD.Load({\cf22 "res://Scenes/World.tscn"});\par
-00207         Node2D sprite = (Node2D)newGamepackedScene.Instantiate();\par
-00208         this.AddSibling(sprite);\par
-00209          \par
-00210         \par
-00211 \par
-00212 \par
-00213     \}\par
-00214 \}\par
+00060         enabletheuseofhs = AppSettingsManager.GetEnableUseOfHeadset();\par
+00061         HSplitContainer DeviceInfoPanel = (HSplitContainer)this.FindChild({\cf22 "DeviceInfoPanel"});\par
+00062 \par
+00063         {\cf19 if} (enabletheuseofhs)\par
+00064         \{\par
+00065             ignoreUserselectionandconstateofdevice = {\cf17 false};\par
+00066         \}\par
+00067         {\cf19 else}\par
+00068         \{\par
+00069             ignoreUserselectionandconstateofdevice = {\cf17 true};\par
+00070         \}\par
+00071 \par
+00072         GD.Print({\cf22 "Enabled Use of Headset :"} + AppSettingsManager.GetEnableUseOfHeadset());\par
+00073 \par
+00074         {\cf19 if} (Menu.SelectedUser == {\cf17 null})\par
+00075         \{\par
+00076             btnNewGame.Disabled = {\cf17 true};\par
+00077 \par
+00078         \}\par
+00079         {\cf19 if} (enabletheuseofhs)\par
+00080         \{\par
+00081             BrainWaveRecordManager.scanner.Start();\par
+00082             var sensors = BrainWaveRecordManager.scanner.Sensors;\par
+00083             lblDeviceName = (Label)this.FindChild({\cf22 "lblDeviceName"}, {\cf17 true});\par
+00084 \par
+00085             lblDeviceState = (Label)this.FindChild({\cf22 "lblDeviceState"}, {\cf17 true});\par
+00086             {\cf19 if} (sensors.Count > 0)\par
+00087             \{\par
+00088 \par
+00089                 lblDeviceName.Text = sensors[0].Name;\par
+00090 \par
+00091                 recordManager.Connect(sensors[0]);\par
+00092                 lblDeviceState.Text = recordManager.Sensor.State.ToString();\par
+00093                 BrainWaveRecordManager.scanner.Stop();\par
+00094 \par
+00095             \}\par
+00096 \par
+00097             {\cf20 //if (ignoreUserselectionandconstateofdevice)}\par
+00098             {\cf20 //\{}\par
+00099             {\cf20 //  lblDeviceName.Text = "BrainBit";}\par
+00100             {\cf20 //  lblDeviceState.Text = SensorState.StateInRange.ToString();}\par
+00101 \par
+00102             {\cf20 //\}}\par
+00103         \}\par
+00104         {\cf19 else}\par
+00105         \{\par
+00106             btnConnectEEGDevice.Disabled = {\cf17 true};\par
+00107 \par
+00108             DeviceInfoPanel.Hide();\par
+00109 \par
+00110         \}\par
+00111 \par
+00112 \par
+00113 \par
+00114 \par
+00115     \}\par
+00119     {\cf17 private} {\cf18 void} BtnShowUsers_Pressed()\par
+00120     \{\par
+00121         ShowusersScene = (PackedScene)GD.Load({\cf22 "res://Scenes/ShowUsers.tscn"});\par
+00122         Window control = (Window  )ShowusersScene.Instantiate();\par
+00123         this.AddSibling(control);\par
+00124         \par
+00125     \}\par
+00129     {\cf17 private} {\cf18 void} BtnConnectEEGDevice_Pressed()\par
+00130     \{\par
+00131         var sensors = BrainWaveRecordManager.scanner.Sensors;\par
+00132         BrainWaveRecordManager.scanner.Start();\par
+00133         Thread.Sleep(1500);\par
+00134         GD.Print(sensors.Count);\par
+00135         {\cf19 if} (sensors.Count > 0)\par
+00136         \{\par
+00137              lblDeviceName = (Label)this.FindChild({\cf22 "lblDeviceName"}, {\cf17 true});\par
+00138             lblDeviceName.Text = sensors[0].Name;\par
+00139              lblDeviceState = (Label)this.FindChild({\cf22 "lblDeviceState"}, {\cf17 true});\par
+00140             recordManager.Connect(sensors[0]);\par
+00141             lblDeviceState.Text = recordManager.Sensor.State.ToString();\par
+00142             BrainWaveRecordManager.scanner.Stop();\par
+00143             recordManager.Connect(sensors[0]);\par
+00144             {\cf19 if} (  ignoreUserselectionandconstateofdevice)\par
+00145             \{\par
+00146                 lblDeviceName.Text = {\cf22 "BrainBit"};\par
+00147                 lblDeviceState.Text=SensorState.StateInRange.ToString();    \par
+00148 \par
+00149             \}\par
+00150             \par
+00151 \par
+00152         \}\par
+00153        \par
+00154            \par
+00155 \par
+00156         \par
+00157     \}\par
+00161     {\cf17 private} {\cf18 void} BtnAbout_Pressed()\par
+00162     \{\par
+00163         AboutScene = (PackedScene)GD.Load({\cf22 "res://Scenes/About.tscn"});\par
+00164         Node2D control = (Node2D)AboutScene.Instantiate();\par
+00165         this.AddSibling(control);\par
+00166         {\cf20 //this.Hide();}\par
+00167     \}\par
+00171     {\cf17 private} {\cf18 void} BtnExit_Pressed()\par
+00172     \{\par
+00173         this.Free();\par
+00174     \}\par
+00178     {\cf17 private} {\cf18 void} BtnSelectUser_Pressed()\par
+00179     \{\par
+00180         SelectUserScene = (PackedScene)GD.Load({\cf22 "res://Scenes/ShowUserDetails.tscn"});\par
+00181         Control control = (Control)SelectUserScene.Instantiate();\par
+00182         this.AddSibling(control);\par
+00183         {\cf20 //this.Hide();}\par
+00184     \}\par
+00188     {\cf17 private} {\cf18 void} BtnNewuser_Pressed()\par
+00189     \{\par
+00190          NewUserDetailsPackedScene= (PackedScene)GD.Load({\cf22 "res://Scenes/AddUserDetails.tscn"});\par
+00191         Control control = (Control)NewUserDetailsPackedScene.Instantiate();\par
+00192         this.AddSibling(control);\par
+00193          \par
+00194     \}\par
+00199     {\cf20 // Called every frame. 'delta' is the elapsed time since the previous frame.}\par
+00200     {\cf17 public} {\cf17 override} {\cf18 void} _Process({\cf18 double} delta)\par
+00201     \{\par
+00202         {\cf19 if} ((SelectedUser == {\cf17 null} || BrainWaveRecordManager.scanner.Sensors.Count==0) &&(!ignoreUserselectionandconstateofdevice))\par
+00203         \{\par
+00204             btnNewGame.Disabled = {\cf17 true};\par
+00205 \par
+00206         \}\par
+00207         {\cf19 else}\par
+00208         \{\par
+00209             btnNewGame.Disabled = {\cf17 false};\par
+00210 \par
+00211         \}\par
+00212         var sensors = BrainWaveRecordManager.scanner.Sensors;\par
+00213          \par
+00214     \}\par
+00218     {\cf17 public} {\cf18 void} bbtnNewGame_pressed()\par
+00219     \{\par
+00220         newGamepackedScene = (PackedScene)GD.Load({\cf22 "res://Scenes/World.tscn"});\par
+00221         Node2D sprite = (Node2D)newGamepackedScene.Instantiate();\par
+00222         this.AddSibling(sprite);\par
+00223          \par
+00224         \par
+00225 \par
+00226 \par
+00227     \}\par
+00228 \}\par
 }
 }

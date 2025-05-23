@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['ymovement_0',['YMOVEMENT',['../class_player.html#a9714bf08916ca848e975d59077d10841',1,'Player']]]
+  ['xmovement_0',['XMOVEMENT',['../class_player.html#a534050be6eff4fb0ab280c75eb3c43e4',1,'Player']]]
 ];
